@@ -9,9 +9,9 @@ my resume, and publishes the results to a page I can open on my phone.
 ## Today's top matches
 
 <!-- JOBS:START -->
-**606 matches** as of Oct 13, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
+**612 matches** as of Oct 13, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
 
-Showing postings from the last 30 days. 262 older ones are in their own section on the page.
+Showing postings from the last 30 days. 263 older ones are in their own section on the page.
 
 | Fit | Company | Role | Required quals met | Location | Posted | Apply |
 |---|---|---|---|---|---|---|
@@ -37,9 +37,9 @@ Showing postings from the last 30 days. 262 older ones are in their own section 
 | 91 | Astranis | Thermal Intern (Summer 2027) | 3 of 3 | San Francisco | 2026-09-24 | [Apply](https://job-boards.greenhouse.io/astranis/jobs/4704820006) |
 | 91 | Astranis | Assembly, Integration, and Test Intern (Summer 2027) | 2 of 2 | San Francisco | 2026-09-21 | [Apply](https://job-boards.greenhouse.io/astranis/jobs/4704761006) |
 | 91 | Astranis | Propulsion Manufacturing Intern (Summer 2027) | 3 of 3 | San Francisco | 2026-09-18 | [Apply](https://job-boards.greenhouse.io/astranis/jobs/4705648006) |
+| 90 | Airbus | Aircraft Product Lifecycle Management (PLM) Intern 🆕 | – | Bangalore Area | 2026-10-13 | [Apply](https://ag.wd3.myworkdayjobs.com/Airbus/job/Bangalore-Area/Aircraft-Product-Lifecycle-Management--PLM--Intern_JR10449431) |
 | 90 | Antares | Manufacturing Engineering Intern - Summer 2027 🆕 | 3 of 3 | Los Angeles | 2026-09-14 | [Apply](https://jobs.ashbyhq.com/Antares/d953d3f2-0ca8-4f13-ae88-4d0eb714e851) |
 | 90 | Muon Space | Environmental Test Engineering Intern (Summer 2027) | 3 of 3 | San Jose, CA | 2026-10-02 | [Apply](https://job-boards.greenhouse.io/muonspace/jobs/5256286007) |
-| 90 | Varda Space | Manufacturing Engineering Internship - Summer 2027 | 2 of 2 | El Segundo, California, United States | 2026-10-01 | [Apply](https://job-boards.greenhouse.io/vardaspace/jobs/8010166003) |
 <!-- JOBS:END -->
 
 ---
