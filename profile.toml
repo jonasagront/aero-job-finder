@@ -1,7 +1,7 @@
 # =====================================================================
 #  Your matching profile
 #  Built from your resume. There is NO contact info in here on purpose,
-#  because this repo is public. Edit freely: the next daily run uses it.
+#  because this repo is public. Edit freely: the next run uses it.
 # =====================================================================
 
 [student]
@@ -25,11 +25,10 @@ year = 2027
 include_unstated_season = true
 # Anything scoring below this is hidden from the page.
 min_score = 40
-# Ignore postings older than this many days (when the date is known).
-max_age_days = 150
-# Postings older than this many days go in their own "may already be
-# filled" section at the bottom of the page.
-fresh_days = 30
+# Drop postings older than this many days (when the date is known).
+max_age_days = 30
+# Drop postings outside the U.S. (ones with an unclear location are kept).
+us_only = true
 
 [ai]
 # Optional: a short written fit review by Claude for top matches.

@@ -39,6 +39,50 @@ UNDERCLASS_RX = re.compile(r"(?i)sophomore|freshm[ae]n|first[- ]year|underclass|
 COMPLETED_YEARS_RX = re.compile(r"(?i)complet\w* (?:at least |a minimum of )?(one|two|three|four|1|2|3|4) (?:full )?(?:academic )?years?")
 WORDNUM = {"one": 1, "two": 2, "three": 3, "four": 4, "1": 1, "2": 2, "3": 3, "4": 4}
 
+# ---- where a job is: "us", "foreign", or "unknown" ("16 Locations", "")
+US_STATES = ("AL AK AZ AR CA CO CT DE FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ "
+             "NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY DC PR").split()
+US_RX = re.compile(
+    r"(?i)united states|\busa\b|\bu\.s\.|^us\b|\bus-|remote|any spacex site|"
+    r"\b(alabama|alaska|arizona|arkansas|california|colorado|connecticut|delaware|florida|georgia|hawaii|idaho|"
+    r"illinois|indiana|iowa|kansas|kentucky|louisiana|maine|maryland|massachusetts|michigan|minnesota|"
+    r"mississippi|missouri|montana|nebraska|nevada|new hampshire|new jersey|new mexico|new york|"
+    r"north carolina|north dakota|ohio|oklahoma|oregon|pennsylvania|rhode island|south carolina|"
+    r"south dakota|tennessee|texas|utah|vermont|virginia|washington|west virginia|wisconsin|wyoming)\b|"
+    r"\b(san francisco|sf|los angeles|long beach|pittsburgh|seattle|boston|denver|houston|austin|huntsville|"
+    r"hawthorne|el segundo|mojave|cape canaveral|merritt island|kennedy space center|chicago|san diego|"
+    r"phoenix|tucson|albuquerque|colorado springs|orlando|tampa|miami|atlanta|dallas|fort worth|"
+    r"san antonio|salt lake|las vegas|sacramento|san jose|palo alto|mountain view|sunnyvale|irvine|"
+    r"torrance|costa mesa|pasadena|detroit|cleveland|minneapolis|st\.? louis|wichita|everett|redmond|"
+    r"bothell|chantilly|reston|herndon|huntington beach|idaho falls|bay area)\b")
+US_STATE_RX = re.compile(r"(?:,|\s-)\s*(" + "|".join(US_STATES) + r")\b")
+FOREIGN_RX = re.compile(
+    r"(?i)\b(canada|united kingdom|(?<!new )england|scotland|wales|germany|deutschland|france|poland|turkey|"
+    r"t[uü]rkiye|india|singapore|japan|australia|new zealand|israel|netherlands|spain|italy|(?<!new )mexico|"
+    r"brazil|ireland|"
+    r"luxembourg|switzerland|sweden|norway|denmark|finland|belgium|austria|czech|hungary|romania|portugal|"
+    r"greece|china|korea|taiwan|philippines|malaysia|indonesia|vietnam|thailand|uae|emirates|saudi|qatar|"
+    r"south africa|argentina|chile|colombia|ukraine|estonia|lithuania|latvia|"
+    r"toronto|montreal|vancouver|calgary|ottawa|markham|bengaluru|bangalore|hyderabad|pune|chennai|"
+    r"tel aviv|tokyo|sydney|auckland|christchurch|warsaw|krakow|istanbul|ankara|izmir|gebze|prague|"
+    r"bucharest|madrid|barcelona|milan|amsterdam|dublin|zurich|munich|m[uü]nchen|berlin|bremen|hamburg|stuttgart|"
+    r"toulouse|seoul|shanghai|beijing|dubai|abu dhabi|d[uü]sseldorf|augsburg|ottobrunn|kiruna|lisbon|"
+    r"quer[eé]taro|subang|uk|nz)\b|^(gbr|deu|esp|fra|ita|pol|tur|ind|can|aus|nzl|jpn|sgp|isr|nld|mex|bra|"
+    r"irl|che|swe|nor|dnk|bel|aut|cze|rou|prt|chn|kor|twn|phl|mys|are|sau)\s*-|"
+    r",\s*(ON|BC|QC|AB|MB|NS|NB|SK|NL|PE)\b")
+
+
+def where(location: str) -> str:
+    """Is this location in the U.S.? A posting with any U.S. option counts as U.S."""
+    parts = [p.strip() for p in re.split(r"[;|]| / ", location or "") if p.strip()]
+    seen = set()
+    for p in parts:
+        if FOREIGN_RX.search(p) and not re.search(r"(?i)united states|\busa\b|^us-", p):
+            seen.add("foreign")
+        elif US_RX.search(p) or US_STATE_RX.search(p):
+            seen.add("us")
+    return "us" if "us" in seen else "foreign" if "foreign" in seen else "unknown"
+
 
 class Matcher:
     def __init__(self, profile: dict, sources_cfg: dict):
@@ -52,6 +96,7 @@ class Matcher:
         self.keep_unstated = bool(se.get("include_unstated_season", True))
         self.min_score = int(se.get("min_score", 40))
         self.max_age = int(se.get("max_age_days", 150))
+        self.us_only = bool(se.get("us_only", False))
         # Years of school finished by the internship summer (2029 grad -> 2 -> rising junior)
         self.completed_years = max(0, 4 - (self.grad_year - self.year))
 
@@ -184,6 +229,10 @@ class Matcher:
                     return None, "posting too old"
             except ValueError:
                 pass
+
+        # Outside the U.S.? (unknown locations like "16 Locations" are kept)
+        if self.us_only and where(job.get("location", "")) == "foreign":
+            return None, "outside the U.S."
 
         season_status, season_label = self.season_of(job, full)
         if season_status == "other":

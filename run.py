@@ -1,7 +1,7 @@
-"""Daily aerospace internship scan.
+"""Aerospace internship scan.
 
 Run locally with:   python run.py
-GitHub Actions runs this every morning and publishes docs/index.html.
+GitHub Actions runs this every 6 hours and publishes docs/index.html.
 """
 from __future__ import annotations
 
@@ -144,8 +144,7 @@ def main() -> int:
     save_json(AI_FILE, {k: v for k, v in ai_cache.items() if k in keep})
     (ROOT / "docs").mkdir(exist_ok=True)
     (ROOT / "docs" / "index.html").write_text(build_page(final, status, profile, now), encoding="utf-8")
-    update_readme(ROOT / "README.md", final, PAGE_URL, now,
-                  fresh_days=int(profile["search"].get("fresh_days", 30)))
+    update_readme(ROOT / "README.md", final, PAGE_URL, now)
     new_today = sum(1 for j in final if j["first_seen"] == today)
     print(f"Done: {len(final)} matches on the page, {new_today} new today.")
     return 0

@@ -84,9 +84,7 @@ details.why summary{cursor:pointer;font-size:14px;font-weight:600;color:var(--go
 .ql li{display:grid;grid-template-columns:18px 1fr;gap:6px}
 .ql b{text-align:center} .ql small{display:block;color:var(--muted)}
 .q-met b{color:var(--strong)} .q-partial b{color:var(--look)} .q-missing b{color:var(--warn)} .q-check b,.q-soft b{color:var(--muted)}
-.sect{margin:28px 0 0;padding-top:18px;border-top:2px solid var(--line)}
-.sect h2{font:700 24px/1.2 var(--cond);margin:0 0 4px}
-.sect p{margin:0;color:var(--muted);font-size:14px;max-width:70ch}
+.shown{margin:12px 0 0;font:600 15px/1.3 var(--cond);color:var(--muted)}
 .empty{padding:40px 20px;text-align:center;background:var(--panel);border:1px dashed var(--line);border-radius:8px;color:var(--muted)}
 footer{margin-top:36px;font-size:14px;color:var(--muted)}
 footer details summary{cursor:pointer;font-weight:600}
@@ -136,12 +134,13 @@ footer td,footer th{text-align:left;padding:4px 8px;border-bottom:1px solid var(
       <button data-tier="good" aria-pressed="false">Good fit</button>
       <button data-tier="look" aria-pressed="false">Worth a look</button>
     </div>
-    <label class="tog"><input type="checkbox" id="onlyNew"> New this week</label>
+    <label class="tog"><input type="checkbox" id="onlyNew"> Posted this week</label>
     <label class="tog"><input type="checkbox" id="onlySummer"> Says Summer 2027</label>
     <label class="tog"><input type="checkbox" id="hideDone" checked> Hide applied and dismissed</label>
   </div>
 </div>
 
+<p class="shown" id="shown" aria-live="polite"></p>
 <div id="list"></div>
 
 <footer>
@@ -167,13 +166,14 @@ const $ = id => document.getElementById(id);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const fmt = iso => { if(!iso) return ''; const d = new Date(iso + 'T12:00:00'); return d.toLocaleDateString(undefined,{month:'short',day:'numeric'}); };
 const TIER = {strong:'Strong fit', good:'Good fit', look:'Worth a look'};
-const weekAgo = new Date(Date.now() - 7*864e5).toISOString().slice(0,10);
+const weekAgo = new Date(Date.parse(D.today + 'T12:00:00') - 7*864e5).toISOString().slice(0,10);
 const ageDays = iso => iso ? Math.round((Date.parse(D.today + 'T12:00:00') - Date.parse(iso + 'T12:00:00')) / 864e5) : null;
-const isOld = j => ageDays(j.posted) > D.fresh_days;
+// "This week" goes by the posting date; first_seen only when a source gives no date
+const postedThisWeek = j => (j.posted || j.first_seen) >= weekAgo;
 
 $('sub').textContent = D.sources.length ? `Scored against ${D.name}'s resume. Updated ${D.updated_label}.` : 'Waiting for the first scan.';
 const c = D.counts;
-$('counts').innerHTML = `<span><b>${c.total}</b>matches</span><span><b>${c.strong}</b>strong fits</span><span><b>${c.new_today}</b>new today</span><span><b>${c.old}</b>posted ${D.fresh_days}+ days ago</span>`;
+$('counts').innerHTML = `<span><b>${c.total}</b>matches</span><span><b>${c.strong}</b>strong fits</span><span><b>${c.new_today}</b>new today</span><span><b>${D.jobs.filter(postedThisWeek).length}</b>posted this week</span>`;
 
 function bars(list, color){
   if(!list.length) return '<p style="color:var(--muted);font-size:14px;margin:0">Not enough descriptions yet.</p>';
@@ -211,7 +211,6 @@ function card(j){
   const chips = [];
   if(j.first_seen >= D.today) chips.push('<span class="chip new">New</span>');
   const qc = qualChip(j.quals); if(qc) chips.push(qc);
-  if(isOld(j)) chips.push(`<span class="chip warn">Posted ${ageDays(j.posted)} days ago</span>`);
   for(const f of j.flags) chips.push(`<span class="chip ${f.kind === 'info' ? '' : f.kind}">${esc(f.label)}</span>`);
   const rows = [];
   if(j.matched.length) rows.push(`<dt>Your skills it asks for</dt><dd>${esc(j.matched.join(', '))}</dd>`);
@@ -247,7 +246,7 @@ function render(){
   let jobs = D.jobs.filter(j => {
     if(tier !== 'all' && j.tier !== tier) return false;
     if(hide && status[j.key]) return false;
-    if(onlyNew && j.first_seen < weekAgo) return false;
+    if(onlyNew && !postedThisWeek(j)) return false;
     if(onlySummer && j.season !== 'match') return false;
     if(q){
       const hay = [j.company, j.title, j.location, j.matched.join(' '), j.gaps.join(' ')].join(' ').toLowerCase();
@@ -264,17 +263,9 @@ function render(){
     $('list').innerHTML = `<div class="empty"><p><b>No scan results yet.</b></p><p>In your GitHub repo, open the Actions tab, choose “Daily job scan”, and click “Run workflow”. This page fills in about five minutes later.</p></div>`;
     return;
   }
-  if(!jobs.length){
-    $('list').innerHTML = '<div class="empty">No postings match these filters. Clear the search or choose “All”.</div>';
-    return;
-  }
-  // Recent postings first; older ones get their own section at the bottom
-  const recent = jobs.filter(j => !isOld(j)), old = jobs.filter(isOld);
-  $('list').innerHTML = (recent.length ? recent.map(card).join('') :
-      `<div class="empty">Nothing posted in the last ${D.fresh_days} days matches these filters.</div>`) +
-    (old.length ? `<section class="sect"><h2>Posted over ${D.fresh_days} days ago (${old.length})</h2>
-      <p>These are still listed, so they haven't closed yet, but older postings are more likely to already be filled.
-      Apply to the strong fits, and don't count on hearing back.</p></section>` + old.map(card).join('') : '');
+  $('shown').textContent = `Showing ${jobs.length} of ${D.jobs.length} postings`;
+  $('list').innerHTML = jobs.length ? jobs.map(card).join('') :
+    '<div class="empty">No postings match these filters. Clear the search or choose “All”.</div>';
 }
 
 document.querySelectorAll('.seg button').forEach(b => b.addEventListener('click', () => {
@@ -307,16 +298,7 @@ def _pct_list(counter: dict, total: int, top: int = 8) -> list[dict]:
     return [{"name": k, "count": v, "pct": round(100 * v / total)} for k, v in items if v]
 
 
-def _is_old(job: dict, today: dt.date, fresh_days: int) -> bool:
-    """Posted more than fresh_days ago (unknown dates count as fresh)."""
-    try:
-        return (today - dt.date.fromisoformat((job.get("posted") or "")[:10])).days > fresh_days
-    except ValueError:
-        return False
-
-
 def build_page(jobs: list[dict], sources: list[dict], profile: dict, now: dt.datetime) -> str:
-    fresh_days = int(profile["search"].get("fresh_days", 30))
     with_desc = [j for j in jobs if j.get("has_description")]
     have, need = {}, {}
     for j in with_desc:
@@ -339,7 +321,6 @@ def build_page(jobs: list[dict], sources: list[dict], profile: dict, now: dt.dat
         "updated_label": (f"{eastern:%b} {eastern.day}, {eastern.year} at "
                           f"{eastern.hour % 12 or 12}:{eastern:%M %p} ET") if jobs or sources else "never",
         "today": today,
-        "fresh_days": fresh_days,
         "jobs": page_jobs,
         "have": _pct_list(have, len(with_desc)),
         "need": _pct_list(need, len(with_desc)),
@@ -348,32 +329,26 @@ def build_page(jobs: list[dict], sources: list[dict], profile: dict, now: dt.dat
             "total": len(jobs),
             "strong": sum(1 for j in jobs if j["tier"] == "strong"),
             "new_today": sum(1 for j in jobs if j.get("first_seen") == today),
-            "old": sum(1 for j in jobs if _is_old(j, now.date(), fresh_days)),
         },
     }
     blob = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
     return TEMPLATE.replace("__DATA__", blob)
 
 
-def update_readme(path: Path, jobs: list[dict], page_url: str, now: dt.datetime, top: int = 25,
-                  fresh_days: int = 30) -> None:
+def update_readme(path: Path, jobs: list[dict], page_url: str, now: dt.datetime, top: int = 25) -> None:
     start, end = "<!-- JOBS:START -->", "<!-- JOBS:END -->"
     text = path.read_text(encoding="utf-8")
     if start not in text or end not in text:
         return
     today = now.date().isoformat()
-    fresh = [j for j in jobs if not _is_old(j, now.date(), fresh_days)]
     lines = [
         f"**{len(jobs)} matches** as of {now:%b} {now.day}, {now.year}. "
         f"Full list with filters: **[open the job page]({page_url})**",
         "",
-        f"Showing postings from the last {fresh_days} days. "
-        f"{len(jobs) - len(fresh)} older ones are in their own section on the page.",
-        "",
         "| Fit | Company | Role | Required quals met | Location | Posted | Apply |",
         "|---|---|---|---|---|---|---|",
     ]
-    for j in sorted(fresh, key=lambda j: -j["score"])[:top]:
+    for j in sorted(jobs, key=lambda j: -j["score"])[:top]:
         new = " 🆕" if j.get("first_seen") == today else ""
         loc = re.sub(r"\s+", " ", (j.get("location") or ""))[:40]
         title = (j["title"] or "").replace("|", "/")

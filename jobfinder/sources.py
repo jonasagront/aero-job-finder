@@ -204,10 +204,13 @@ def fetch_workday(host: str, site: str, company: str, max_pages: int = 10) -> li
             info = _workday_detail(host, tenant, site, path)
         except FetchError:
             info = {}
+        loc = p.get("locationsText") or info.get("location", "")
+        if re.fullmatch(r"\d+ Locations", loc.strip()):  # the list only gives a count
+            loc = "; ".join(filter(None, [info.get("location")] + (info.get("additionalLocations") or []))) or loc
         return {
             "company": company,
             "title": (p.get("title") or "").strip(),
-            "location": p.get("locationsText") or info.get("location", ""),
+            "location": loc,
             "url": info.get("externalUrl") or f"https://{host}/{site}{path}",
             "source": f"{company} careers",
             "posted": _date_from_iso(info.get("startDate")),

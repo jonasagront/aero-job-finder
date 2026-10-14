@@ -41,6 +41,10 @@ def request(url: str, method: str = "GET", data=None, headers: dict | None = Non
             last = FetchError(f"HTTP {e.code}")
             if e.code in (400, 401, 403, 404, 405, 410, 422):
                 break  # retrying won't help
+            if e.code == 429 and attempt < retries:  # rate limited: wait as asked, then retry
+                wait = e.headers.get("Retry-After", "")
+                time.sleep(min(60, int(wait)) if wait.isdigit() else 10 * (attempt + 1))
+                continue
         except Exception as e:  # timeouts, DNS, bad SSL...
             last = FetchError(str(e) or e.__class__.__name__)
         time.sleep(1.5 * (attempt + 1))
