@@ -9,11 +9,10 @@ my resume, and publishes the results to a page I can open on my phone.
 ## Today's top matches
 
 <!-- JOBS:START -->
-**348 matches** as of Oct 15, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
+**344 matches** as of Oct 16, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
 
 | Fit | Company | Role | Required quals met | Location | Posted | Apply |
 |---|---|---|---|---|---|---|
-| 100 | Anduril | 2027 Flight Software Engineer Intern | 3 of 3 | Costa Mesa, California, United States | 2026-09-15 | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5239083007?gh_jid=5239083007) |
 | 100 | Anduril | 2027 Flight Test Engineer Intern | 3 of 3 | Costa Mesa, California, United States | 2026-10-14 | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5257709007?gh_jid=5257709007) |
 | 100 | Varda Space | Structures Engineering Internship - Summer 2027 | 2 of 2 | El Segundo, California, United States | 2026-10-01 | [Apply](https://job-boards.greenhouse.io/vardaspace/jobs/8010167003) |
 | 100 | Varda Space | Mechanisms & Payload Internship - Summer 2027 | 2 of 2 | El Segundo, California, United States | 2026-10-01 | [Apply](https://job-boards.greenhouse.io/vardaspace/jobs/8010168003) |
@@ -26,9 +25,9 @@ my resume, and publishes the results to a page I can open on my phone.
 | 95 | RTX (Raytheon, Pratt & Whitney, Collins) | Aero Propulsion Systems Intern (Summer 2027)(Onsite) | 5 of 6 | US-CT-EAST HARTFORD-G ~ 400 Main St ~ BL | 2026-10-13 | [Apply](https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-CT-EAST-HARTFORD-G--400-Main-St--BLDG-G/Aero-Propulsion-Systems-Intern--Summer-2027--Onsite-_01881306) |
 | 95 | Varda Space | Guidance, Navigation & Controls (GNC) Internship - Summer 2027 | 2 of 3 | El Segundo, California, United States | 2026-10-01 | [Apply](https://job-boards.greenhouse.io/vardaspace/jobs/7865601003) |
 | 95 | Zipline | Flight Test Engineer Intern (Summer 2027) | 1 of 1 | South San Francisco, California, USA | 2026-09-21 | [Apply](https://www.zipline.com/open-roles/7999924003?gh_jid=7999924003) |
-| 94 | Anduril | Winter 2027 Manufacturing Engineer Co-op | 3 of 3 | Ashville, Ohio, United States; Lexington | 2026-09-15 | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5236589007?gh_jid=5236589007) |
 | 94 | The Aerospace Corporation | 2027 Space Vehicle and Ground Systems Undergraduate Intern | 4 of 4 | El Segundo, CA; Chantilly, VA | 2026-10-07 | [Apply](https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/XMLNAME-2027-Space-Vehicle-and-Ground-Systems-Undergraduate-Intern_R016691) |
 | 93 | AeroVironment | Mechanical Engineering Intern | 4 of 4 | Petaluma, CA | 2026-10-07 | [Apply](https://avav.wd1.myworkdayjobs.com/AVAV/job/Petaluma-CA/Mechanical-Engineering-Intern_9038) |
+| 93 | Lockheed Martin | Mechanical Design Engineering Intern 🆕 | 3 of 3 | Grand Prairie, TX | 2026-10-15 | [Apply](https://lockheedmartin.eightfold.ai/careers/job/996477394326) |
 | 93 | Muon Space | Spacecraft Test Engineering Intern (Summer 2027) | 2 of 2 | San Jose, CA | 2026-10-13 | [Apply](https://job-boards.greenhouse.io/muonspace/jobs/5256288007) |
 | 93 | Varda Space | Aerodynamics & Analysis Engineering Internship - Summer 2027 | 3 of 4 | El Segundo, California, United States | 2026-10-01 | [Apply](https://job-boards.greenhouse.io/vardaspace/jobs/8010632003) |
 | 92 | AeroVironment | Summer 2027 Aeromechanical Engineering Intern | 3 of 3 | Simi Valley, CA; Huntsville, AL; Pottsto | 2026-10-13 | [Apply](https://avav.wd1.myworkdayjobs.com/AVAV/job/Simi-Valley-CA/Summer-2027-Aeromechanical-Engineering-Intern_8387) |
@@ -38,6 +37,7 @@ my resume, and publishes the results to a page I can open on my phone.
 | 91 | Astranis | Propulsion Manufacturing Intern (Summer 2027) | 3 of 3 | San Francisco | 2026-09-18 | [Apply](https://job-boards.greenhouse.io/astranis/jobs/4705648006) |
 | 90 | Blue Origin | Summer 2027 Test Engineering Internship - Undergraduate | 3 of 3 | Greater Seattle Area; Van Horn, TX; Spac | 2026-10-13 | [Apply](https://blueorigin.wd5.myworkdayjobs.com/BlueOrigin/job/Greater-Seattle-Area/Summer-2027-Test-Engineering-Internship---Undergraduate_R71433) |
 | 90 | Muon Space | Environmental Test Engineering Intern (Summer 2027) | 3 of 3 | San Jose, CA | 2026-10-02 | [Apply](https://job-boards.greenhouse.io/muonspace/jobs/5256286007) |
+| 90 | Varda Space | Manufacturing Engineering Internship - Summer 2027 | 2 of 2 | El Segundo, California, United States | 2026-10-01 | [Apply](https://job-boards.greenhouse.io/vardaspace/jobs/8010166003) |
 <!-- JOBS:END -->
 
 ---

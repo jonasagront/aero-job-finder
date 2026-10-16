@@ -1,126 +1,6 @@
 {
- "updated": "2026-10-15T18:49:28+00:00",
+ "updated": "2026-10-16T00:50:24+00:00",
  "jobs": [
-  {
-   "company": "Anduril",
-   "title": "2027 Flight Software Engineer Intern",
-   "location": "Costa Mesa, California, United States",
-   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5239083007?gh_jid=5239083007",
-   "source": "Anduril careers",
-   "posted": "2026-09-15",
-   "source_id": "Anduril",
-   "key": "gr:5239083007",
-   "score": 100,
-   "tier": "strong",
-   "parts": {
-    "aerospace": 40,
-    "skills": 35,
-    "eligibility": 25,
-    "requirements": 0
-   },
-   "quals": {
-    "required": [
-     {
-      "text": "Must be pursuing a bachelor’s or master’s degree in Aerospace Engineering, Computer Science, Electrical Engineering, or a related field.",
-      "status": "met",
-      "why": "You're Aerospace Engineering"
-     },
-     {
-      "text": "Must be returning to school at the end of the internship to continue academic studies for at least one quarter or semester.",
-      "status": "met",
-      "why": "You'll still be in school (grad 2029)"
-     },
-     {
-      "text": "Must be a U.S. Person due to required access to U.S. export-controlled information or facilities; U.S. clearance eligibility may be required depending on progra",
-      "status": "met",
-      "why": "You're a U.S. citizen"
-     },
-     {
-      "text": "Ability to complete an in-person 12-week internship in one of our offices in summer 2027.",
-      "status": "soft",
-      "why": ""
-     }
-    ],
-    "preferred": [
-     {
-      "text": "A strong foundation in software development (for FSW candidates), control theory (for GNC candidates), or analytical modeling (for MSA candidates).",
-      "status": "missing",
-      "why": "Not on your resume: Controls / GNC"
-     },
-     {
-      "text": "Keen interest in autonomous systems, UAS, and missile technology.",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Excellent communication, teamwork, and problem-solving skills.",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "Hands-on experience with Design-Build-Fly teams, robotics competition teams (such as FIRST or VEX), or collegiate rocketry groups.",
-      "status": "met",
-      "why": "You have: Rocketry & flight simulation, Prototyping & fabrication, Student engineering team"
-     },
-     {
-      "text": "Credible demonstration of aerospace-related hobbies such as high-power rocketry experience/certification, remotely piloted/semi-autonomous aircraft, or software",
-      "status": "met",
-      "why": "You have: Rocketry & flight simulation, Arduino / microcontrollers"
-     },
-     {
-      "text": "Experience with open-source autopilot software suites like ArduPilot or PX4.",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Experience with integrating flight hardware components including servos/actuators, IMUs, magnetometers, GNSS receivers and antennas, and serial communication pr",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "Basic familiarity with electrical test equipment (such as multimeters or oscilloscopes) and post-flight data analysis using tools like Python or MATLAB.",
-      "status": "met",
-      "why": "You have: Python, Excel / data analysis"
-     }
-    ],
-    "summary": {
-     "required_checked": 3,
-     "required_met": 3.0,
-     "required_missing": 0,
-     "to_check": 0,
-     "preferred_met": 3,
-     "preferred_total": 4
-    }
-   },
-   "matched": [
-    "Rocketry & flight simulation",
-    "Python",
-    "Prototyping & fabrication",
-    "Student engineering team",
-    "Arduino / microcontrollers",
-    "Excel / data analysis"
-   ],
-   "related": [],
-   "gaps": [
-    "MATLAB",
-    "Controls / GNC"
-   ],
-   "flags": [
-    {
-     "kind": "good",
-     "label": "Summer 2027"
-    },
-    {
-     "kind": "info",
-     "label": "U.S. person / ITAR",
-     "id": "citizen"
-    }
-   ],
-   "season": "match",
-   "has_description": true,
-   "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
-  },
   {
    "company": "Anduril",
    "title": "2027 Flight Test Engineer Intern",
@@ -237,7 +117,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Varda Space",
@@ -340,7 +220,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Varda Space",
@@ -436,7 +316,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Rocket Lab",
@@ -556,7 +436,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Varda Space",
@@ -690,7 +570,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Varda Space",
@@ -772,7 +652,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "CesiumAstro",
@@ -882,7 +762,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "CesiumAstro",
@@ -992,7 +872,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Muon Space",
@@ -1093,7 +973,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -1198,7 +1078,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Varda Space",
@@ -1297,7 +1177,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Zipline",
@@ -1376,127 +1256,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
-  },
-  {
-   "company": "Anduril",
-   "title": "Winter 2027 Manufacturing Engineer Co-op",
-   "location": "Ashville, Ohio, United States; Lexington, Massachusetts, United States; Quincy, Massachusetts, United States",
-   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5236589007?gh_jid=5236589007",
-   "source": "Anduril careers",
-   "posted": "2026-09-15",
-   "source_id": "Anduril",
-   "key": "gr:5236589007",
-   "score": 94,
-   "tier": "strong",
-   "parts": {
-    "aerospace": 34,
-    "skills": 35,
-    "eligibility": 25,
-    "requirements": 0
-   },
-   "quals": {
-    "required": [
-     {
-      "text": "Must be pursuing a bachelor’s or master’s degree in Mechanical Engineering, Aerospace Engineering, or a related field.",
-      "status": "met",
-      "why": "You're Aerospace Engineering"
-     },
-     {
-      "text": "Must be returning to school at the end of the internship to continue academic studies for at least one quarter or semester.",
-      "status": "met",
-      "why": "You'll still be in school (grad 2029)"
-     },
-     {
-      "text": "Must be a U.S. Person due to required access to U.S. export-controlled information or facilities; U.S. clearance eligibility may be required depending on progra",
-      "status": "met",
-      "why": "You're a U.S. citizen"
-     },
-     {
-      "text": "Ability to complete an in-person 16-24 -week internship in one of our offices in summer 2027.",
-      "status": "soft",
-      "why": ""
-     }
-    ],
-    "preferred": [
-     {
-      "text": "Previous experience leading project and working with data collection, analysis, and driving improvements.",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Hands-on experience with R/C and/or autonomous flight vehicles, flight controllers, or other related control systems",
-      "status": "met",
-      "why": "You have: Prototyping & fabrication"
-     },
-     {
-      "text": "A genuine interest in manufacturing and desire to learn.",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "Coursework, internships, or school-related experience in a relevant field, preferably manufacturing related.",
-      "status": "check",
-      "why": "Coursework or background (check your classes)"
-     },
-     {
-      "text": "Exposure to PCBA fabrication, including coursework or project work with SMT processes.",
-      "status": "met",
-      "why": "You have: Prototyping & fabrication"
-     },
-     {
-      "text": "Hands-on experience physically manufacturing hardware via any means (machining, fabrication, soldering, assembly, etc.), including work on personal or extracurr",
-      "status": "met",
-      "why": "You have: Prototyping & fabrication"
-     },
-     {
-      "text": "Software scripting experience in any language.",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Familiarity with CAD software, Manufacturing Execution Systems, or ERP/MRP systems.",
-      "status": "met",
-      "why": "You have: SolidWorks / CAD"
-     }
-    ],
-    "summary": {
-     "required_checked": 3,
-     "required_met": 3.0,
-     "required_missing": 0,
-     "to_check": 1,
-     "preferred_met": 4,
-     "preferred_total": 4
-    }
-   },
-   "matched": [
-    "SolidWorks / CAD",
-    "Composites (carbon fiber)",
-    "Prototyping & fabrication",
-    "Parametric / trade studies"
-   ],
-   "related": [
-    "C (close to C++)"
-   ],
-   "gaps": [
-    "Machining / CNC",
-    "Controls / GNC"
-   ],
-   "flags": [
-    {
-     "kind": "good",
-     "label": "Summer 2027"
-    },
-    {
-     "kind": "info",
-     "label": "U.S. person / ITAR",
-     "id": "citizen"
-    }
-   ],
-   "season": "match",
-   "has_description": true,
-   "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "The Aerospace Corporation",
@@ -1606,7 +1366,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "AeroVironment",
@@ -1736,7 +1496,123 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
+  },
+  {
+   "company": "Lockheed Martin",
+   "title": "Mechanical Design Engineering Intern",
+   "location": "Grand Prairie, TX",
+   "url": "https://lockheedmartin.eightfold.ai/careers/job/996477394326",
+   "source": "Lockheed Martin careers",
+   "posted": "2026-10-15",
+   "source_id": "Lockheed Martin",
+   "key": "url:https://lockheedmartin.eightfold.ai/careers/job/996477394326",
+   "score": 93,
+   "tier": "strong",
+   "parts": {
+    "aerospace": 36,
+    "skills": 35,
+    "eligibility": 22,
+    "requirements": 0
+   },
+   "quals": {
+    "required": [
+     {
+      "text": "Pursuing a Bachelors in Mechanical Engineering or similar degree.",
+      "status": "met",
+      "why": "You're Aerospace Engineering"
+     },
+     {
+      "text": "Basic understanding of CAD design tools, such as PTC Creo, 3DX/CATIA, Solidworks, Siemens NX etc.",
+      "status": "met",
+      "why": "You have: SolidWorks / CAD"
+     },
+     {
+      "text": "Demonstrated successful group collaboration and/ or individual project work, ideally in a mechanics or design area.",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Excellent problem-solving skills, with the ability to diagnose and troubleshoot complex mechanical issues, work with system integration issues, design challenge",
+      "status": "met",
+      "why": "You have: Prototyping & fabrication"
+     }
+    ],
+    "preferred": [
+     {
+      "text": "Hands‑on experience with machining, rapid prototyping, or lab equipment (CNC, 3‑D printers, test rigs)",
+      "status": "met",
+      "why": "You have: Prototyping & fabrication"
+     },
+     {
+      "text": "Experienced with GD&T, sketching, technical drawing standards, or similar hands-on hardware support.",
+      "status": "met",
+      "why": "You have: Prototyping & fabrication"
+     },
+     {
+      "text": "Basic FEA/CFD exposure (ANSYS, Abaqus, COMSOL).",
+      "status": "met",
+      "why": "You have: CFD (STAR-CCM+)"
+     },
+     {
+      "text": "Participation in engineering clubs, competitions (e.g. SAE, ASME competitions).",
+      "status": "met",
+      "why": "Your Formula SAE, rocketry, and rover projects"
+     },
+     {
+      "text": "Basic understanding of industry standards (ISO, ASME, ASTM).",
+      "status": "check",
+      "why": "Coursework or background (check your classes)"
+     },
+     {
+      "text": "Experience with MATLAB.",
+      "status": "missing",
+      "why": "Not on your resume: MATLAB"
+     },
+     {
+      "text": "Experience with Microsoft Office Suite.",
+      "status": "met",
+      "why": "You have: Excel / data analysis"
+     }
+    ],
+    "summary": {
+     "required_checked": 3,
+     "required_met": 3.0,
+     "required_missing": 0,
+     "to_check": 1,
+     "preferred_met": 5,
+     "preferred_total": 6
+    }
+   },
+   "matched": [
+    "CFD (STAR-CCM+)",
+    "SolidWorks / CAD",
+    "Prototyping & fabrication",
+    "Parametric / trade studies",
+    "Excel / data analysis"
+   ],
+   "related": [],
+   "gaps": [
+    "MATLAB",
+    "FEA / stress analysis",
+    "GD&T",
+    "Siemens NX",
+    "CATIA",
+    "Creo",
+    "ANSYS",
+    "Machining / CNC",
+    "Drawings / drafting"
+   ],
+   "flags": [
+    {
+     "kind": "info",
+     "label": "Season not stated"
+    }
+   ],
+   "season": "unstated",
+   "has_description": true,
+   "first_seen": "2026-10-16",
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Muon Space",
@@ -1840,7 +1716,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Varda Space",
@@ -1955,7 +1831,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "AeroVironment",
@@ -2093,7 +1969,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Voyager Technologies",
@@ -2211,7 +2087,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Astranis",
@@ -2315,7 +2191,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Astranis",
@@ -2426,7 +2302,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Astranis",
@@ -2530,7 +2406,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Blue Origin",
@@ -2626,7 +2502,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Muon Space",
@@ -2763,7 +2639,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Varda Space",
@@ -2875,7 +2751,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Varda Space",
@@ -3003,7 +2879,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "AeroVironment",
@@ -3150,7 +3026,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "AeroVironment",
@@ -3297,7 +3173,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Astranis",
@@ -3393,7 +3269,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Freeform",
@@ -3503,7 +3379,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Muon Space",
@@ -3594,7 +3470,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -3712,7 +3588,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Apex Space",
@@ -3815,7 +3691,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Lockheed Martin",
@@ -3944,7 +3820,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Lockheed Martin",
@@ -4073,7 +3949,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Muon Space",
@@ -4212,7 +4088,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Muon Space",
@@ -4321,7 +4197,105 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
+  },
+  {
+   "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
+   "title": "Mechanical Design Engineering Intern (Summer 2027)",
+   "location": "US-MN-BURNSVILLE-WEST ~ 14300 Judicial Rd ~ WEST BLDG",
+   "url": "https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-MN-BURNSVILLE-WEST--14300-Judicial-Rd--WEST-BLDG/Mechanical-Design-Engineering-Intern--Summer-2027-_01870956",
+   "source": "RTX (Raytheon, Pratt & Whitney, Collins) careers",
+   "posted": "2026-10-15",
+   "source_id": "RTX (Raytheon, Pratt & Whitney, Collins)",
+   "key": "wd:globalhr:01870956",
+   "score": 88,
+   "tier": "strong",
+   "parts": {
+    "aerospace": 40,
+    "skills": 28,
+    "eligibility": 25,
+    "requirements": -5
+   },
+   "quals": {
+    "required": [
+     {
+      "text": "U.S. citizenship is required, as only U.S. citizens are authorized to access information under this program/contract.",
+      "status": "met",
+      "why": "You're a U.S. citizen"
+     },
+     {
+      "text": "Must be pursuing Bachelor’s or Advanced degree in Mechanical Engineering, Aerospace Engineering, or related Science, Technology, Engineering or Mathematics (STE",
+      "status": "met",
+      "why": "You're Aerospace Engineering"
+     },
+     {
+      "text": "Experience with MATLAB",
+      "status": "missing",
+      "why": "Not on your resume: MATLAB"
+     },
+     {
+      "text": "Experience with Microsoft Office (Excel, Word, and/or PowerPoint)",
+      "status": "met",
+      "why": "You have: Excel / data analysis"
+     },
+     {
+      "text": "Experience with CAD tools such as NX, Solidworks, AutoCAD, Creo, Fusion 360, or equivalent",
+      "status": "met",
+      "why": "You have: SolidWorks / CAD"
+     },
+     {
+      "text": "Experience working on cross-functional teams",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Prior RTX internship, co-op, or work experience",
+      "status": "check",
+      "why": ""
+     }
+    ],
+    "preferred": [],
+    "summary": {
+     "required_checked": 5,
+     "required_met": 4.0,
+     "required_missing": 1,
+     "to_check": 0,
+     "preferred_met": 0,
+     "preferred_total": 0
+    }
+   },
+   "matched": [
+    "SolidWorks / CAD",
+    "Prototyping & fabrication",
+    "Excel / data analysis"
+   ],
+   "related": [],
+   "gaps": [
+    "MATLAB",
+    "Siemens NX",
+    "Creo",
+    "Heat transfer / thermal"
+   ],
+   "flags": [
+    {
+     "kind": "good",
+     "label": "Summer 2027"
+    },
+    {
+     "kind": "info",
+     "label": "U.S. person / ITAR",
+     "id": "citizen"
+    },
+    {
+     "kind": "info",
+     "label": "Clearance",
+     "id": "clearance"
+    }
+   ],
+   "season": "match",
+   "has_description": true,
+   "first_seen": "2026-10-16",
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Rocket Lab",
@@ -4439,7 +4413,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Varda Space",
@@ -4536,7 +4510,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Blue Origin",
@@ -4626,7 +4600,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Cowboy Space Corporation",
@@ -4739,7 +4713,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "GE Aerospace",
@@ -4871,7 +4845,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "HawkEye 360",
@@ -4958,7 +4932,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Rocket Lab",
@@ -5073,7 +5047,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Star Catcher",
@@ -5145,22 +5119,22 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Draper",
-   "title": "Mechanical Engineering & System Packaging Intern (Summer 2027)",
+   "title": "Operations Engineering Intern (Summer 2027)",
    "location": "Cambridge, MA",
-   "url": "https://draper.wd5.myworkdayjobs.com/Draper_Careers/job/Cambridge-MA/Mechanical-Engineering---System-Packaging-Intern--Summer-2027-_JR002943",
+   "url": "https://draper.wd5.myworkdayjobs.com/Draper_Careers/job/Cambridge-MA/Operations-Engineering-Intern--Summer-2027-_JR003037",
    "source": "Draper careers",
-   "posted": "2026-09-21",
+   "posted": "2026-10-15",
    "source_id": "Draper",
-   "key": "wd:draper:jr002943",
-   "score": 85,
+   "key": "wd:draper:jr003037",
+   "score": 84,
    "tier": "strong",
    "parts": {
-    "aerospace": 30,
-    "skills": 30,
+    "aerospace": 26,
+    "skills": 33,
     "eligibility": 25,
     "requirements": 0
    },
@@ -5195,12 +5169,42 @@
       "text": "Strong computer skills including MS Word, PowerPoint and Excel.",
       "status": "met",
       "why": "You have: Excel / data analysis"
+     },
+     {
+      "text": "· Excellent written and oral communication skills.",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "· Excellent work ethic with the ability to work independently or in a team environment.",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "· Ability to adapt to ever-changing environments, risks, and vulnerabilities.",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "· Strong computer skills including MS Word, PowerPoint and Excel.",
+      "status": "met",
+      "why": "You have: Excel / data analysis"
+     },
+     {
+      "text": "· College student in Mechanical Engineering, Industrial Engineering, Materials Science, Aerospace Engineering, or Manufacturing Engineering",
+      "status": "met",
+      "why": "You're Aerospace Engineering"
+     },
+     {
+      "text": "· Must be a US citizen and enrolled in an accredited Engineering curriculum",
+      "status": "met",
+      "why": "You're a U.S. citizen"
      }
     ],
     "preferred": [],
     "summary": {
-     "required_checked": 2,
-     "required_met": 2.0,
+     "required_checked": 5,
+     "required_met": 5.0,
      "required_missing": 0,
      "to_check": 0,
      "preferred_met": 0,
@@ -5212,11 +5216,12 @@
     "Prototyping & fabrication",
     "Excel / data analysis"
    ],
-   "related": [],
+   "related": [
+    "C (close to C++)"
+   ],
    "gaps": [
-    "FEA / stress analysis",
+    "GD&T",
     "Creo",
-    "ANSYS",
     "Machining / CNC"
    ],
    "flags": [
@@ -5226,14 +5231,14 @@
     },
     {
      "kind": "info",
-     "label": "Clearance",
-     "id": "clearance"
+     "label": "U.S. person / ITAR",
+     "id": "citizen"
     }
    ],
    "season": "match",
    "has_description": true,
-   "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "first_seen": "2026-10-16",
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Lockheed Martin",
@@ -5341,7 +5346,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -5438,7 +5443,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Varda Space",
@@ -5541,7 +5546,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Voyager Technologies",
@@ -5674,7 +5679,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Boeing",
@@ -5802,7 +5807,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Boeing",
@@ -5933,7 +5938,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Boeing",
@@ -6037,7 +6042,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Muon Space",
@@ -6118,7 +6123,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -6228,7 +6233,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -6323,7 +6328,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Varda Space",
@@ -6430,7 +6435,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "AeroVironment",
@@ -6554,113 +6559,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
-  },
-  {
-   "company": "CesiumAstro",
-   "title": "Summer 2027 - GNC Internship",
-   "location": "Westminster, CO",
-   "url": "https://jobs.lever.co/CesiumAstro/e18ce6a5-32ed-468e-a39e-28de9eb16872",
-   "source": "CesiumAstro careers",
-   "posted": "2026-09-15",
-   "source_id": "CesiumAstro",
-   "key": "le:e18ce6a5-32ed-468e-a39e-28de9eb16872",
-   "score": 81,
-   "tier": "strong",
-   "parts": {
-    "aerospace": 40,
-    "skills": 21,
-    "eligibility": 25,
-    "requirements": -5
-   },
-   "quals": {
-    "required": [
-     {
-      "text": "Current enrollment in a Master of Science (MS), or PhD program in Aerospace Engineering.",
-      "status": "missing",
-      "why": "Asks for graduate-level experience"
-     },
-     {
-      "text": "Completed coursework in orbits, GNC, and mission design.",
-      "status": "check",
-      "why": "Coursework: Controls / GNC (check your classes)"
-     },
-     {
-      "text": "Hands on experience with python for simulation and scripting.",
-      "status": "met",
-      "why": "You have: Python"
-     },
-     {
-      "text": "Proven motivation to build and explore via personal, work, or school projects.",
-      "status": "met",
-      "why": "Your Formula SAE, rocketry, and rover projects"
-     },
-     {
-      "text": "Excellent written and verbal communication skills.",
-      "status": "soft",
-      "why": ""
-     }
-    ],
-    "preferred": [
-     {
-      "text": "Graduate coursework officially focused on Space Mission Design",
-      "status": "missing",
-      "why": "Asks for graduate-level experience"
-     },
-     {
-      "text": "Familiarity with Basilisk Framework, GMAT, or STK for mission simulation",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Programming ability in C++",
-      "status": "met",
-      "why": "You have: C++"
-     },
-     {
-      "text": "A minor or coursework in finance or business accompanying an undergraduate engineering or physics degree",
-      "status": "check",
-      "why": "Coursework or background (check your classes)"
-     },
-     {
-      "text": "Advanced coursework space mission design, satellite business models, or related areas",
-      "status": "check",
-      "why": "Coursework or background (check your classes)"
-     }
-    ],
-    "summary": {
-     "required_checked": 3,
-     "required_met": 2.0,
-     "required_missing": 1,
-     "to_check": 3,
-     "preferred_met": 1,
-     "preferred_total": 2
-    }
-   },
-   "matched": [
-    "Python",
-    "C++",
-    "Prototyping & fabrication"
-   ],
-   "related": [],
-   "gaps": [
-    "Controls / GNC"
-   ],
-   "flags": [
-    {
-     "kind": "good",
-     "label": "Summer 2027"
-    },
-    {
-     "kind": "info",
-     "label": "U.S. person / ITAR",
-     "id": "citizen"
-    }
-   ],
-   "season": "match",
-   "has_description": true,
-   "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "The Aerospace Corporation",
@@ -6793,7 +6692,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "CesiumAstro",
@@ -6909,7 +6808,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "CesiumAstro",
@@ -7025,7 +6924,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "CesiumAstro",
@@ -7137,7 +7036,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "JetZero",
@@ -7238,7 +7137,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Lockheed Martin",
@@ -7341,7 +7240,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -7438,7 +7337,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Lockheed Martin",
@@ -7553,7 +7452,104 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
+  },
+  {
+   "company": "Lockheed Martin",
+   "title": "Systems Engineer (Integration and Test) - Intern",
+   "location": "Moorestown, NJ",
+   "url": "https://lockheedmartin.eightfold.ai/careers/job/996477267744",
+   "source": "Lockheed Martin careers",
+   "posted": "2026-10-15",
+   "source_id": "Lockheed Martin",
+   "key": "url:https://lockheedmartin.eightfold.ai/careers/job/996477267744",
+   "score": 79,
+   "tier": "strong",
+   "parts": {
+    "aerospace": 36,
+    "skills": 18,
+    "eligibility": 25,
+    "requirements": 0
+   },
+   "quals": {
+    "required": [
+     {
+      "text": "Pursuing Bachelor of Science in Systems Engineering, Aerospace Engineering, Computer Engineering, Mechanical Engineering, Electrical Engineering, Physics, Mathe",
+      "status": "met",
+      "why": "You're Aerospace Engineering"
+     },
+     {
+      "text": "Basic understanding of any of the following: engineering principles, testing methodologies, software development methodologies, system architecture, system inte",
+      "status": "check",
+      "why": "Coursework or background (check your classes)"
+     },
+     {
+      "text": "Flexibility to work non-standard work shifts as required by the supported program including Fridays and occasional off hours.",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Must be a US Citizen; this position will require a government security clearance. This position is located at a facility that requires special access.",
+      "status": "met",
+      "why": "You're a U.S. citizen"
+     }
+    ],
+    "preferred": [
+     {
+      "text": "Strong analytical, problem solving and leadership skills.",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Proficient in the use/working knowledge of Unix, Linux, C++,Java, Python, and Matlab.",
+      "status": "met",
+      "why": "You have: Python, C++"
+     },
+     {
+      "text": "Experience in multiple languages and/or familiarity with software code review, software troubleshooting, software integration, and software test is desired.",
+      "status": "check",
+      "why": ""
+     }
+    ],
+    "summary": {
+     "required_checked": 2,
+     "required_met": 2.0,
+     "required_missing": 0,
+     "to_check": 1,
+     "preferred_met": 1,
+     "preferred_total": 1
+    }
+   },
+   "matched": [
+    "Python",
+    "C++",
+    "Excel / data analysis"
+   ],
+   "related": [],
+   "gaps": [
+    "MATLAB",
+    "Linux"
+   ],
+   "flags": [
+    {
+     "kind": "good",
+     "label": "Summer 2027"
+    },
+    {
+     "kind": "info",
+     "label": "U.S. person / ITAR",
+     "id": "citizen"
+    },
+    {
+     "kind": "info",
+     "label": "Clearance",
+     "id": "clearance"
+    }
+   ],
+   "season": "match",
+   "has_description": true,
+   "first_seen": "2026-10-16",
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Muon Space",
@@ -7639,7 +7635,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Rocket Lab",
@@ -7754,7 +7750,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "AeroVironment",
@@ -7854,7 +7850,124 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
+  },
+  {
+   "company": "AeroVironment",
+   "title": "Manufacturing Engineering Intern",
+   "location": "Pottstown, PA",
+   "url": "https://avav.wd1.myworkdayjobs.com/AVAV/job/Pottstown-PA/Manufacturing-Engineering-Intern_9104",
+   "source": "AeroVironment careers",
+   "posted": "2026-10-15",
+   "source_id": "AeroVironment",
+   "key": "wd:avav:9104",
+   "score": 78,
+   "tier": "strong",
+   "parts": {
+    "aerospace": 24,
+    "skills": 32,
+    "eligibility": 22,
+    "requirements": 0
+   },
+   "quals": {
+    "required": [
+     {
+      "text": "Currently pursuing a Bachelor’s degree in Industrial, Mechanical, or a related engineering field",
+      "status": "met",
+      "why": "You're Aerospace Engineering"
+     },
+     {
+      "text": "Some coursework or experience related to manufacturing, process improvement, or quality control",
+      "status": "check",
+      "why": "Coursework or background (check your classes)"
+     },
+     {
+      "text": "Ability to travel occasionally to supplier sites (up to 10%)",
+      "status": "soft",
+      "why": ""
+     }
+    ],
+    "preferred": [
+     {
+      "text": "Familiarity with Lean Manufacturing and Six Sigma principles is a plus",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Basic knowledge of electro-mechanical manufacturing, technical drawings, and Bill of Materials is preferred",
+      "status": "check",
+      "why": "Coursework: Drawings / drafting (check your classes)"
+     },
+     {
+      "text": "Proficient in Microsoft Office (Word, Excel, PowerPoint, Outlook); experience with Visio, Minitab, or CAD software (e.g., SolidWorks) is a plus",
+      "status": "met",
+      "why": "You have: SolidWorks / CAD, Excel / data analysis"
+     },
+     {
+      "text": "Strong problem-solving and analytical skills",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Interest in root cause analysis and continuous improvement techniques",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Effective teamwork and communication skills",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Ability to manage multiple tasks in a fast-paced, deadline-driven environment",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Demonstrates initiative and responsibility for assigned work",
+      "status": "soft",
+      "why": ""
+     }
+    ],
+    "summary": {
+     "required_checked": 1,
+     "required_met": 1.0,
+     "required_missing": 0,
+     "to_check": 2,
+     "preferred_met": 1,
+     "preferred_total": 1
+    }
+   },
+   "matched": [
+    "SolidWorks / CAD",
+    "Prototyping & fabrication",
+    "Excel / data analysis"
+   ],
+   "related": [
+    "C (close to C++)"
+   ],
+   "gaps": [
+    "Drawings / drafting"
+   ],
+   "flags": [
+    {
+     "kind": "info",
+     "label": "Summer (year not stated)"
+    },
+    {
+     "kind": "info",
+     "label": "Min GPA 3.0"
+    },
+    {
+     "kind": "info",
+     "label": "U.S. person / ITAR",
+     "id": "citizen"
+    }
+   ],
+   "season": "unstated",
+   "has_description": true,
+   "first_seen": "2026-10-16",
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Astranis",
@@ -7959,7 +8072,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Rocket Lab",
@@ -8069,7 +8182,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Shield AI",
@@ -8177,7 +8290,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Astranis",
@@ -8262,7 +8375,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Astranis",
@@ -8376,7 +8489,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Hermeus",
@@ -8481,7 +8594,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Hermeus",
@@ -8631,7 +8744,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Lockheed Martin",
@@ -8742,7 +8855,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "AeroVironment",
@@ -8838,249 +8951,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
-  },
-  {
-   "company": "CesiumAstro",
-   "title": "Summer 2027 - Electrical Engineering Internship, Hardware",
-   "location": "Austin, TX",
-   "url": "https://jobs.lever.co/CesiumAstro/6a953cbc-af69-452c-b357-1a0a3db80bbf",
-   "source": "CesiumAstro careers",
-   "posted": "2026-09-15",
-   "source_id": "CesiumAstro",
-   "key": "le:6a953cbc-af69-452c-b357-1a0a3db80bbf",
-   "score": 76,
-   "tier": "strong",
-   "parts": {
-    "aerospace": 28,
-    "skills": 28,
-    "eligibility": 25,
-    "requirements": -5
-   },
-   "quals": {
-    "required": [
-     {
-      "text": "Current enrollment in a Bachelor of Science (BS), Master of Science (MS), or PhD program in Electrical Engineering or Computer Engineering from an accredited un",
-      "status": "missing",
-      "why": "Wants a different major"
-     },
-     {
-      "text": "GPA of 3.5 or higher.",
-      "status": "check",
-      "why": "Needs GPA 3.5+"
-     },
-     {
-      "text": "Strong fundamentals in EE topics covered in coursework.",
-      "status": "check",
-      "why": "Coursework or background (check your classes)"
-     },
-     {
-      "text": "Practical experience designing and building electronics hardware for a research project, competition team, extracurricular activity, prior internship, or advanc",
-      "status": "met",
-      "why": "You have: Student engineering team"
-     },
-     {
-      "text": "Experience with schematic capture, PCB layout, bring-up, and debugging.",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Hands-on experience with lab instruments such as oscilloscopes, spectrum analyzers, electronic loads, and signal generators.",
-      "status": "met",
-      "why": "You have: Prototyping & fabrication"
-     },
-     {
-      "text": "Excellent written and verbal communication skills. Cesium interns regularly present their work to peers, mentors, and Cesium executive leadership throughout the",
-      "status": "soft",
-      "why": ""
-     }
-    ],
-    "preferred": [
-     {
-      "text": "Strong extracurricular involvement, such as in competition teams or research",
-      "status": "met",
-      "why": "You have: Student engineering team"
-     },
-     {
-      "text": "Aerospace experience, such as a previous internship or school CubeSat project.",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Advanced coursework or research experience in digital, power, analog, and/or RF circuit design.",
-      "status": "check",
-      "why": "Coursework or background (check your classes)"
-     },
-     {
-      "text": "Strong programming skills to support hardware bring-up and test (C/C++, Python, MATLAB, etc.).",
-      "status": "met",
-      "why": "You have: Python, C++"
-     },
-     {
-      "text": "Experience with SPICE-based circuit simulation.",
-      "status": "check",
-      "why": ""
-     }
-    ],
-    "summary": {
-     "required_checked": 3,
-     "required_met": 2.0,
-     "required_missing": 1,
-     "to_check": 3,
-     "preferred_met": 2,
-     "preferred_total": 2
-    }
-   },
-   "matched": [
-    "Python",
-    "C++",
-    "Prototyping & fabrication",
-    "Student engineering team"
-   ],
-   "related": [],
-   "gaps": [
-    "MATLAB"
-   ],
-   "flags": [
-    {
-     "kind": "good",
-     "label": "Summer 2027"
-    },
-    {
-     "kind": "info",
-     "label": "Min GPA 3.5"
-    },
-    {
-     "kind": "info",
-     "label": "U.S. person / ITAR",
-     "id": "citizen"
-    }
-   ],
-   "season": "match",
-   "has_description": true,
-   "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
-  },
-  {
-   "company": "CesiumAstro",
-   "title": "Summer 2027 - Electrical Engineering Internship, Hardware",
-   "location": "Westminster, CO",
-   "url": "https://jobs.lever.co/CesiumAstro/ccb0f99f-0cc7-4517-8d1c-faeca53b5e5c",
-   "source": "CesiumAstro careers",
-   "posted": "2026-09-15",
-   "source_id": "CesiumAstro",
-   "key": "le:ccb0f99f-0cc7-4517-8d1c-faeca53b5e5c",
-   "score": 76,
-   "tier": "strong",
-   "parts": {
-    "aerospace": 28,
-    "skills": 28,
-    "eligibility": 25,
-    "requirements": -5
-   },
-   "quals": {
-    "required": [
-     {
-      "text": "Current enrollment in a Bachelor of Science (BS), Master of Science (MS), or PhD program in Electrical Engineering or Computer Engineering from an accredited un",
-      "status": "missing",
-      "why": "Wants a different major"
-     },
-     {
-      "text": "GPA of 3.5 or higher.",
-      "status": "check",
-      "why": "Needs GPA 3.5+"
-     },
-     {
-      "text": "Strong fundamentals in EE topics covered in coursework.",
-      "status": "check",
-      "why": "Coursework or background (check your classes)"
-     },
-     {
-      "text": "Practical experience designing and building electronics hardware for a research project, competition team, extracurricular activity, prior internship, or advanc",
-      "status": "met",
-      "why": "You have: Student engineering team"
-     },
-     {
-      "text": "Experience with schematic capture, PCB layout, bring-up, and debugging.",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Hands-on experience with lab instruments such as oscilloscopes, spectrum analyzers, electronic loads, and signal generators.",
-      "status": "met",
-      "why": "You have: Prototyping & fabrication"
-     },
-     {
-      "text": "Excellent written and verbal communication skills. Cesium interns regularly present their work to peers, mentors, and Cesium executive leadership throughout the",
-      "status": "soft",
-      "why": ""
-     }
-    ],
-    "preferred": [
-     {
-      "text": "Strong extracurricular involvement, such as in competition teams or research",
-      "status": "met",
-      "why": "You have: Student engineering team"
-     },
-     {
-      "text": "Aerospace experience, such as a previous internship or school CubeSat project.",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Advanced coursework or research experience in digital, power, analog, and/or RF circuit design.",
-      "status": "check",
-      "why": "Coursework or background (check your classes)"
-     },
-     {
-      "text": "Strong programming skills to support hardware bring-up and test (C/C++, Python, MATLAB, etc.).",
-      "status": "met",
-      "why": "You have: Python, C++"
-     },
-     {
-      "text": "Experience with SPICE-based circuit simulation.",
-      "status": "check",
-      "why": ""
-     }
-    ],
-    "summary": {
-     "required_checked": 3,
-     "required_met": 2.0,
-     "required_missing": 1,
-     "to_check": 3,
-     "preferred_met": 2,
-     "preferred_total": 2
-    }
-   },
-   "matched": [
-    "Python",
-    "C++",
-    "Prototyping & fabrication",
-    "Student engineering team"
-   ],
-   "related": [],
-   "gaps": [
-    "MATLAB"
-   ],
-   "flags": [
-    {
-     "kind": "good",
-     "label": "Summer 2027"
-    },
-    {
-     "kind": "info",
-     "label": "Min GPA 3.5"
-    },
-    {
-     "kind": "info",
-     "label": "U.S. person / ITAR",
-     "id": "citizen"
-    }
-   ],
-   "season": "match",
-   "has_description": true,
-   "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -9158,7 +9029,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Astranis",
@@ -9247,7 +9118,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "GE Aerospace",
@@ -9382,7 +9253,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "GE Aerospace",
@@ -9517,7 +9388,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -9635,7 +9506,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -9753,7 +9624,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -9856,7 +9727,150 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
+  },
+  {
+   "company": "Airbus",
+   "title": "Long-term Internship - Engineering",
+   "location": "Wichita, KS",
+   "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Wichita-KS/Long-Term---Engineering_JR10411965",
+   "source": "Airbus careers",
+   "posted": "2026-10-15",
+   "source_id": "Airbus",
+   "key": "wd:ag:jr10411965",
+   "score": 74,
+   "tier": "strong",
+   "parts": {
+    "aerospace": 22,
+    "skills": 35,
+    "eligibility": 22,
+    "requirements": -5
+   },
+   "quals": {
+    "required": [
+     {
+      "text": "Must be currently located and attending school in the Wichita, KS metro area.",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Ability to work in a dynamic team environment.",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Ability to interpret and follow verbal and written instructions.",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Ability to read, analyze, and interpret technical procedures.",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Ability to read and interpret engineering drawings and bill of material systems.",
+      "status": "missing",
+      "why": "Not on your resume: Drawings / drafting"
+     },
+     {
+      "text": "Ability to write reports and business correspondence.",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Dependable, self-motivated and accessible.",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Knowledge of maintenance repair shop practices, equipment and capabilities.",
+      "status": "check",
+      "why": "Coursework or background (check your classes)"
+     },
+     {
+      "text": "A strong computer background, including MS Office application experience (Outlook, Excel, Word, Power Point) and Google Suite application experience (Docs, Shee",
+      "status": "met",
+      "why": "You have: Excel / data analysis"
+     },
+     {
+      "text": "Interpersonal abilities to effectively work with all levels of personnel and fields.",
+      "status": "met",
+      "why": "Open to underclassmen"
+     },
+     {
+      "text": "Able communicate in English (verbal and written)",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Onsite or remote: Full-time onsite unless otherwise approved by management and human resources.",
+      "status": "soft",
+      "why": ""
+     }
+    ],
+    "preferred": [
+     {
+      "text": "Current student pursuing a Bachelor of Science in Aerospace/Mechanical/Civil Engineering/Software Engineering/Computer Engineering/Computer Science degree. Curr",
+      "status": "met",
+      "why": "You're Aerospace Engineering"
+     },
+     {
+      "text": "Proficiency with MS Office, G-Suite is a plus.",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Currently pursuing a Minor in Computer Science",
+      "status": "missing",
+      "why": "Wants a different major"
+     },
+     {
+      "text": "Previous Airbus experience in engineering",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Airframe design, MRB, CATIA, Isami, NASTRAN, and PATRAN is desired.",
+      "status": "partial",
+      "why": "Close: CATIA ≈ SolidWorks / CAD"
+     }
+    ],
+    "summary": {
+     "required_checked": 3,
+     "required_met": 2.0,
+     "required_missing": 1,
+     "to_check": 1,
+     "preferred_met": 1,
+     "preferred_total": 3
+    }
+   },
+   "matched": [
+    "SolidWorks / CAD",
+    "Composites (carbon fiber)",
+    "Parametric / trade studies",
+    "Excel / data analysis"
+   ],
+   "related": [],
+   "gaps": [
+    "FEA / stress analysis",
+    "CATIA",
+    "Drawings / drafting"
+   ],
+   "flags": [
+    {
+     "kind": "info",
+     "label": "Season not stated"
+    },
+    {
+     "kind": "good",
+     "label": "Open to underclassmen"
+    }
+   ],
+   "season": "unstated",
+   "has_description": true,
+   "first_seen": "2026-10-16",
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Apex Space",
@@ -9946,7 +9960,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Astranis",
@@ -10034,7 +10048,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Rocket Lab",
@@ -10141,7 +10155,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Rocket Lab",
@@ -10263,7 +10277,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Astranis",
@@ -10348,7 +10362,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Muon Space",
@@ -10450,7 +10464,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Muon Space",
@@ -10557,7 +10571,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -10674,7 +10688,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-15",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -10785,7 +10799,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Rocket Lab",
@@ -10895,7 +10909,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Anduril",
@@ -11012,7 +11026,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Antares",
@@ -11116,7 +11130,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Blue Origin",
@@ -11247,7 +11261,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Blue Origin",
@@ -11342,7 +11356,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Blue Origin",
@@ -11427,7 +11441,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Hermeus",
@@ -11523,7 +11537,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -11646,7 +11660,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "AeroVironment",
@@ -11788,7 +11802,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "K2 Space",
@@ -11901,7 +11915,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Muon Space",
@@ -12010,7 +12024,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Reflect Orbital",
@@ -12119,7 +12133,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "The Aerospace Corporation",
@@ -12243,7 +12257,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "AeroVironment",
@@ -12362,7 +12376,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "GE Aerospace",
@@ -12491,7 +12505,132 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
+  },
+  {
+   "company": "Airbus",
+   "title": "Short-term Internship - Tool Technology and Development Engineering",
+   "location": "Mobile Area, AL",
+   "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Mobile-Area-AL/Short-term-Internship---Tool-Technology-and-Development-Engineering_JR10451236",
+   "source": "Airbus careers",
+   "posted": "2026-10-15",
+   "source_id": "Airbus",
+   "key": "wd:ag:jr10451236",
+   "score": 69,
+   "tier": "good",
+   "parts": {
+    "aerospace": 26,
+    "skills": 23,
+    "eligibility": 25,
+    "requirements": -5
+   },
+   "quals": {
+    "required": [
+     {
+      "text": "Onsite or remote: 100% Onsite",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Vision: able to see and read computer screen and other electronic equipment with screens, able to read documents, reports and engineering drawings.",
+      "status": "missing",
+      "why": "Not on your resume: Drawings / drafting"
+     },
+     {
+      "text": "Hearing: able to hear to participate in conversations in person and via teleconference or phone and to hear sounds on production floor including safety warnings",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Speaking: able to speak in conversations and meetings, deliver information and participate in communications.",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Equipment Operation (personal computer, telephone, copies, fax machine, and related office equipment and using electronic identification card to enter building ",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Carrying: able to carry documents, tools, drawings, electronic equipment up to 30lbs/14kgs.",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Lifting: able to lift documents, tools, drawings, electronic equipment up to 30lbs/14kgs.",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Pushing / Pulling: able to push and pull small office furniture and some equipment and tools.",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Sitting: able to sit for long periods of time in meetings, working on computer.",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Squatting / Kneeling: able to squat or kneel to retrieve or replace items stored on low shelving.",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Standing: able to stand for discussions in offices or on production floor.",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Travel: able to travel independently and at short notice, potentially internationally.",
+      "status": "soft",
+      "why": ""
+     }
+    ],
+    "preferred": [
+     {
+      "text": "School projects in related fields.",
+      "status": "met",
+      "why": "Your Formula SAE, rocketry, and rover projects"
+     },
+     {
+      "text": "Familiarity with CAD software (e.g., CATIA, SolidWorks, or AutoCAD) is a plus.",
+      "status": "met",
+      "why": "You have: SolidWorks / CAD"
+     }
+    ],
+    "summary": {
+     "required_checked": 1,
+     "required_met": 0.0,
+     "required_missing": 1,
+     "to_check": 0,
+     "preferred_met": 2,
+     "preferred_total": 2
+    }
+   },
+   "matched": [
+    "SolidWorks / CAD",
+    "Prototyping & fabrication"
+   ],
+   "related": [],
+   "gaps": [
+    "CATIA",
+    "Drawings / drafting"
+   ],
+   "flags": [
+    {
+     "kind": "good",
+     "label": "Summer 2027"
+    },
+    {
+     "kind": "good",
+     "label": "Open to underclassmen"
+    }
+   ],
+   "season": "match",
+   "has_description": true,
+   "first_seen": "2026-10-16",
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Astranis",
@@ -12606,7 +12745,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Astranis",
@@ -12706,7 +12845,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Lockheed Martin",
@@ -12810,7 +12949,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -12919,7 +13058,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "AeroVironment",
@@ -13057,7 +13196,149 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
+  },
+  {
+   "company": "AeroVironment",
+   "title": "Electrical Engineer Intern",
+   "location": "Pottstown, PA",
+   "url": "https://avav.wd1.myworkdayjobs.com/AVAV/job/Pottstown-PA/Electrical-Engineer-Intern_9103",
+   "source": "AeroVironment careers",
+   "posted": "2026-10-15",
+   "source_id": "AeroVironment",
+   "key": "wd:avav:9103",
+   "score": 68,
+   "tier": "good",
+   "parts": {
+    "aerospace": 20,
+    "skills": 26,
+    "eligibility": 22,
+    "requirements": 0
+   },
+   "quals": {
+    "required": [
+     {
+      "text": "Currently pursuing a Bachelor’s degree in Electrical Engineering, Computer Engineering, or a related field",
+      "status": "partial",
+      "why": "Other majors listed; Aerospace Engineering may count as related"
+     },
+     {
+      "text": "Power electronics, battery systems, or electric motors",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Embedded systems, FPGA, or RF systems",
+      "status": "partial",
+      "why": "Close: Embedded ≈ Arduino / microcontrollers"
+     },
+     {
+      "text": "Digital and analog circuit design",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Familiarity with electrical protocols such as I2C, SPI, UART, USB, CAN, or LVDS",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Basic programming knowledge in C, C++, or C#",
+      "status": "met",
+      "why": "You have: C++"
+     },
+     {
+      "text": "Exposure to test equipment like oscilloscopes, multimeters, and power supplies",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Strong analytical and troubleshooting skills",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Effective communication skills and ability to work well in a team",
+      "status": "soft",
+      "why": ""
+     }
+    ],
+    "preferred": [
+     {
+      "text": "Hands-on experience with PCB testing, debugging, or electronics prototyping",
+      "status": "met",
+      "why": "You have: Prototyping & fabrication"
+     },
+     {
+      "text": "Exposure to Visual Studio, Git, or hardware/software integration environments",
+      "status": "missing",
+      "why": "Not on your resume: Git / version control"
+     },
+     {
+      "text": "Familiarity with version control and defect tracking tools",
+      "status": "missing",
+      "why": "Not on your resume: Git / version control"
+     },
+     {
+      "text": "Experience with scripting or automation for test procedures (e.g., Python)",
+      "status": "met",
+      "why": "You have: Python"
+     },
+     {
+      "text": "Passion for aerospace, robotics, or defense-related systems",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Demonstrated initiative, accountability, and a willingness to learn",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Ability to manage time effectively and adapt in a fast-paced, team-oriented environment",
+      "status": "soft",
+      "why": ""
+     }
+    ],
+    "summary": {
+     "required_checked": 3,
+     "required_met": 2.0,
+     "required_missing": 0,
+     "to_check": 0,
+     "preferred_met": 2,
+     "preferred_total": 4
+    }
+   },
+   "matched": [
+    "Python",
+    "C++",
+    "Prototyping & fabrication"
+   ],
+   "related": [
+    "Embedded (close to Arduino / microcontrollers)"
+   ],
+   "gaps": [
+    "Git / version control"
+   ],
+   "flags": [
+    {
+     "kind": "info",
+     "label": "Summer (year not stated)"
+    },
+    {
+     "kind": "info",
+     "label": "Min GPA 3.0"
+    },
+    {
+     "kind": "info",
+     "label": "U.S. person / ITAR",
+     "id": "citizen"
+    }
+   ],
+   "season": "unstated",
+   "has_description": true,
+   "first_seen": "2026-10-16",
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Blue Origin",
@@ -13142,7 +13423,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Lockheed Martin",
@@ -13229,7 +13510,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Lockheed Martin",
@@ -13313,7 +13594,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Lockheed Martin",
@@ -13418,7 +13699,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX",
@@ -13503,7 +13784,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "AeroVironment",
@@ -13623,7 +13904,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Astranis",
@@ -13712,7 +13993,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Astroforge",
@@ -13748,7 +14029,7 @@
    "season": "unstated",
    "has_description": false,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "GE Aerospace",
@@ -13899,7 +14180,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -13984,7 +14265,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Impulse Space",
@@ -14020,7 +14301,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "K2 Space",
@@ -14110,155 +14391,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
-  },
-  {
-   "company": "Lockheed Martin",
-   "title": "Systems Integration and Test Engineer Intern",
-   "location": "Chelmsford, MA",
-   "url": "https://lockheedmartin.eightfold.ai/careers/job/996476689035",
-   "source": "Lockheed Martin careers",
-   "posted": "2026-10-08",
-   "source_id": "Lockheed Martin",
-   "key": "url:https://lockheedmartin.eightfold.ai/careers/job/996476689035",
-   "score": 65,
-   "tier": "good",
-   "parts": {
-    "aerospace": 36,
-    "skills": 7,
-    "eligibility": 22,
-    "requirements": 0
-   },
-   "quals": {
-    "required": [
-     {
-      "text": "Currently enrolled in an accredited Bachelor or Master program pursuing a degree in Electrical Engineering, Computer Science, Aerospace Engineering or related d",
-      "status": "met",
-      "why": "You're Aerospace Engineering"
-     },
-     {
-      "text": "Ability to obtain and maintain security clearance; interim required to start.",
-      "status": "met",
-      "why": "You're a U.S. citizen"
-     }
-    ],
-    "preferred": [
-     {
-      "text": "Experience and/or coursework in Electrical Engineering, Computer Science or Aerospace Engineering.",
-      "status": "check",
-      "why": "Coursework or background (check your classes)"
-     },
-     {
-      "text": "Willing to work in a hands-on environment performing assembly, test, and measurement in addition to documentation.",
-      "status": "met",
-      "why": "You have: Prototyping & fabrication"
-     }
-    ],
-    "summary": {
-     "required_checked": 2,
-     "required_met": 2.0,
-     "required_missing": 0,
-     "to_check": 1,
-     "preferred_met": 1,
-     "preferred_total": 1
-    }
-   },
-   "matched": [
-    "Prototyping & fabrication"
-   ],
-   "related": [],
-   "gaps": [
-    "Data acquisition / test"
-   ],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "Season not stated"
-    },
-    {
-     "kind": "info",
-     "label": "Clearance",
-     "id": "clearance"
-    }
-   ],
-   "season": "unstated",
-   "has_description": true,
-   "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
-  },
-  {
-   "company": "Lockheed Martin",
-   "title": "Systems Integration and Test Engineer Intern",
-   "location": "Chelmsford, MA",
-   "url": "https://lockheedmartin.eightfold.ai/careers/job/996476690621",
-   "source": "Lockheed Martin careers",
-   "posted": "2026-10-08",
-   "source_id": "Lockheed Martin",
-   "key": "url:https://lockheedmartin.eightfold.ai/careers/job/996476690621",
-   "score": 65,
-   "tier": "good",
-   "parts": {
-    "aerospace": 36,
-    "skills": 7,
-    "eligibility": 22,
-    "requirements": 0
-   },
-   "quals": {
-    "required": [
-     {
-      "text": "Currently enrolled in an accredited Bachelor or Master program pursuing a degree in Electrical Engineering, Computer Science, Aerospace Engineering or related d",
-      "status": "met",
-      "why": "You're Aerospace Engineering"
-     },
-     {
-      "text": "Ability to obtain and maintain security clearance; interim required to start.",
-      "status": "met",
-      "why": "You're a U.S. citizen"
-     }
-    ],
-    "preferred": [
-     {
-      "text": "Experience and/or coursework in Electrical Engineering, Computer Science or Aerospace Engineering.",
-      "status": "check",
-      "why": "Coursework or background (check your classes)"
-     },
-     {
-      "text": "Willing to work in a hands-on environment performing assembly, test, and measurement in addition to documentation.",
-      "status": "met",
-      "why": "You have: Prototyping & fabrication"
-     }
-    ],
-    "summary": {
-     "required_checked": 2,
-     "required_met": 2.0,
-     "required_missing": 0,
-     "to_check": 1,
-     "preferred_met": 1,
-     "preferred_total": 1
-    }
-   },
-   "matched": [
-    "Prototyping & fabrication"
-   ],
-   "related": [],
-   "gaps": [
-    "Data acquisition / test"
-   ],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "Season not stated"
-    },
-    {
-     "kind": "info",
-     "label": "Clearance",
-     "id": "clearance"
-    }
-   ],
-   "season": "unstated",
-   "has_description": true,
-   "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Lockheed Martin",
@@ -14332,7 +14465,155 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
+  },
+  {
+   "company": "Lockheed Martin",
+   "title": "Systems Integration and Test Engineer Intern",
+   "location": "Chelmsford, MA",
+   "url": "https://lockheedmartin.eightfold.ai/careers/job/996476690621",
+   "source": "Lockheed Martin careers",
+   "posted": "2026-10-08",
+   "source_id": "Lockheed Martin",
+   "key": "url:https://lockheedmartin.eightfold.ai/careers/job/996476690621",
+   "score": 65,
+   "tier": "good",
+   "parts": {
+    "aerospace": 36,
+    "skills": 7,
+    "eligibility": 22,
+    "requirements": 0
+   },
+   "quals": {
+    "required": [
+     {
+      "text": "Currently enrolled in an accredited Bachelor or Master program pursuing a degree in Electrical Engineering, Computer Science, Aerospace Engineering or related d",
+      "status": "met",
+      "why": "You're Aerospace Engineering"
+     },
+     {
+      "text": "Ability to obtain and maintain security clearance; interim required to start.",
+      "status": "met",
+      "why": "You're a U.S. citizen"
+     }
+    ],
+    "preferred": [
+     {
+      "text": "Experience and/or coursework in Electrical Engineering, Computer Science or Aerospace Engineering.",
+      "status": "check",
+      "why": "Coursework or background (check your classes)"
+     },
+     {
+      "text": "Willing to work in a hands-on environment performing assembly, test, and measurement in addition to documentation.",
+      "status": "met",
+      "why": "You have: Prototyping & fabrication"
+     }
+    ],
+    "summary": {
+     "required_checked": 2,
+     "required_met": 2.0,
+     "required_missing": 0,
+     "to_check": 1,
+     "preferred_met": 1,
+     "preferred_total": 1
+    }
+   },
+   "matched": [
+    "Prototyping & fabrication"
+   ],
+   "related": [],
+   "gaps": [
+    "Data acquisition / test"
+   ],
+   "flags": [
+    {
+     "kind": "info",
+     "label": "Season not stated"
+    },
+    {
+     "kind": "info",
+     "label": "Clearance",
+     "id": "clearance"
+    }
+   ],
+   "season": "unstated",
+   "has_description": true,
+   "first_seen": "2026-10-11",
+   "last_seen": "2026-10-16"
+  },
+  {
+   "company": "Lockheed Martin",
+   "title": "Systems Integration and Test Engineer Intern",
+   "location": "Chelmsford, MA",
+   "url": "https://lockheedmartin.eightfold.ai/careers/job/996476689035",
+   "source": "Lockheed Martin careers",
+   "posted": "2026-10-08",
+   "source_id": "Lockheed Martin",
+   "key": "url:https://lockheedmartin.eightfold.ai/careers/job/996476689035",
+   "score": 65,
+   "tier": "good",
+   "parts": {
+    "aerospace": 36,
+    "skills": 7,
+    "eligibility": 22,
+    "requirements": 0
+   },
+   "quals": {
+    "required": [
+     {
+      "text": "Currently enrolled in an accredited Bachelor or Master program pursuing a degree in Electrical Engineering, Computer Science, Aerospace Engineering or related d",
+      "status": "met",
+      "why": "You're Aerospace Engineering"
+     },
+     {
+      "text": "Ability to obtain and maintain security clearance; interim required to start.",
+      "status": "met",
+      "why": "You're a U.S. citizen"
+     }
+    ],
+    "preferred": [
+     {
+      "text": "Experience and/or coursework in Electrical Engineering, Computer Science or Aerospace Engineering.",
+      "status": "check",
+      "why": "Coursework or background (check your classes)"
+     },
+     {
+      "text": "Willing to work in a hands-on environment performing assembly, test, and measurement in addition to documentation.",
+      "status": "met",
+      "why": "You have: Prototyping & fabrication"
+     }
+    ],
+    "summary": {
+     "required_checked": 2,
+     "required_met": 2.0,
+     "required_missing": 0,
+     "to_check": 1,
+     "preferred_met": 1,
+     "preferred_total": 1
+    }
+   },
+   "matched": [
+    "Prototyping & fabrication"
+   ],
+   "related": [],
+   "gaps": [
+    "Data acquisition / test"
+   ],
+   "flags": [
+    {
+     "kind": "info",
+     "label": "Season not stated"
+    },
+    {
+     "kind": "info",
+     "label": "Clearance",
+     "id": "clearance"
+    }
+   ],
+   "season": "unstated",
+   "has_description": true,
+   "first_seen": "2026-10-11",
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Lunar Outpost",
@@ -14368,7 +14649,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -14464,7 +14745,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-15",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -14553,7 +14834,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "AeroVironment",
@@ -14668,7 +14949,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Blue Origin",
@@ -14784,7 +15065,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "JetZero",
@@ -14872,7 +15153,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -14986,7 +15267,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -15070,7 +15351,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -15154,7 +15435,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Rocket Lab",
@@ -15256,7 +15537,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Anduril",
@@ -15374,7 +15655,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Blue Origin",
@@ -15459,7 +15740,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "OCC",
@@ -15496,7 +15777,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -15616,7 +15897,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -15731,7 +16012,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -15846,7 +16127,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "AeroVironment",
@@ -15961,7 +16242,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Airbus",
@@ -16066,7 +16347,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-15",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Antares",
@@ -16174,7 +16455,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Blue Canyon",
@@ -16210,139 +16491,7 @@
    "season": "unstated",
    "has_description": false,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
-  },
-  {
-   "company": "CesiumAstro",
-   "title": "Summer 2027 - Electrical Engineering Internship, RF",
-   "location": "Westminster, CO",
-   "url": "https://jobs.lever.co/CesiumAstro/8eb71502-4374-45aa-82fa-2b62a42cd8e9",
-   "source": "CesiumAstro careers",
-   "posted": "2026-09-15",
-   "source_id": "CesiumAstro",
-   "key": "le:8eb71502-4374-45aa-82fa-2b62a42cd8e9",
-   "score": 62,
-   "tier": "good",
-   "parts": {
-    "aerospace": 18,
-    "skills": 24,
-    "eligibility": 25,
-    "requirements": -5
-   },
-   "quals": {
-    "required": [
-     {
-      "text": "Current enrollment in a Bachelor of Science (BS), Master of Science (MS), or PhD program in Electrical Engineering or Physics from an accredited university.",
-      "status": "missing",
-      "why": "Wants a different major"
-     },
-     {
-      "text": "GPA of 3.5 or higher.",
-      "status": "check",
-      "why": "Needs GPA 3.5+"
-     },
-     {
-      "text": "Advanced coursework in RF & microwave engineering.",
-      "status": "check",
-      "why": "Coursework or background (check your classes)"
-     },
-     {
-      "text": "Upper-level undergraduate coursework in electromagnetics.",
-      "status": "check",
-      "why": "Coursework or background (check your classes)"
-     },
-     {
-      "text": "Practical experience designing and building electronics hardware for a research project, competition team, extracurricular activity, or advanced engineering cou",
-      "status": "met",
-      "why": "You have: Student engineering team"
-     },
-     {
-      "text": "Hands-on experience with lab instruments such as network analyzers, power sensors, oscilloscopes, spectrum analyzers, electronic loads, and signal generators.",
-      "status": "met",
-      "why": "You have: Prototyping & fabrication"
-     },
-     {
-      "text": "Excellent written and verbal communication skills.",
-      "status": "soft",
-      "why": ""
-     }
-    ],
-    "preferred": [
-     {
-      "text": "Familiarity with electronics schematic and layout tools such as Altium.",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Advanced coursework in antennas.",
-      "status": "check",
-      "why": "Coursework or background (check your classes)"
-     },
-     {
-      "text": "Advanced coursework in communication systems.",
-      "status": "check",
-      "why": "Coursework or background (check your classes)"
-     },
-     {
-      "text": "Advanced coursework in electromagnetics.",
-      "status": "check",
-      "why": "Coursework or background (check your classes)"
-     },
-     {
-      "text": "Familiarity with circuit and physics simulation tools such as Ansys HFSS and ADS.",
-      "status": "missing",
-      "why": "Not on your resume: ANSYS"
-     },
-     {
-      "text": "Familiarity with programming languages such as Python.",
-      "status": "met",
-      "why": "You have: Python"
-     },
-     {
-      "text": "Aerospace or automotive electronics design and development.",
-      "status": "check",
-      "why": ""
-     }
-    ],
-    "summary": {
-     "required_checked": 3,
-     "required_met": 2.0,
-     "required_missing": 1,
-     "to_check": 6,
-     "preferred_met": 1,
-     "preferred_total": 2
-    }
-   },
-   "matched": [
-    "Python",
-    "Prototyping & fabrication",
-    "Student engineering team"
-   ],
-   "related": [
-    "C (close to C++)"
-   ],
-   "gaps": [
-    "ANSYS"
-   ],
-   "flags": [
-    {
-     "kind": "good",
-     "label": "Summer 2027"
-    },
-    {
-     "kind": "info",
-     "label": "Min GPA 3.5"
-    },
-    {
-     "kind": "info",
-     "label": "U.S. person / ITAR",
-     "id": "citizen"
-    }
-   ],
-   "season": "match",
-   "has_description": true,
-   "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "CesiumAstro",
@@ -16474,7 +16623,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Lockheed Martin",
@@ -16595,7 +16744,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -16694,7 +16843,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -16793,7 +16942,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Blue Origin",
@@ -16880,7 +17029,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Blue Origin",
@@ -16958,7 +17107,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "GE Aerospace",
@@ -17093,43 +17242,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
-  },
-  {
-   "company": "Impulse Space",
-   "title": "Avionics Mechanical Engineering Intern (Summer 2027)",
-   "location": "",
-   "url": "https://impulsespace.pinpointhq.com/en/postings/fd2eb19d-dcbf-4153-a2d3-c6c107dc0560",
-   "source": "Space Capital job board",
-   "posted": "2026-09-15",
-   "source_id": "Space Capital job board",
-   "key": "url:https://impulsespace.pinpointhq.com/en/postings/fd2eb19d-dcbf-4153-a2d3-c6c107dc0560",
-   "score": 61,
-   "tier": "good",
-   "parts": {
-    "aerospace": 24,
-    "skills": 12,
-    "eligibility": 25,
-    "requirements": 0
-   },
-   "quals": null,
-   "matched": [],
-   "related": [],
-   "gaps": [],
-   "flags": [
-    {
-     "kind": "good",
-     "label": "Summer 2027"
-    },
-    {
-     "kind": "info",
-     "label": "Full description not loaded"
-    }
-   ],
-   "season": "match",
-   "has_description": false,
-   "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "The Aerospace Corporation",
@@ -17253,7 +17366,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "The Aerospace Corporation",
@@ -17377,7 +17490,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Blue Origin",
@@ -17474,7 +17587,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Boeing",
@@ -17562,7 +17675,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Boeing (intern site)",
@@ -17650,7 +17763,177 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
+  },
+  {
+   "company": "Lockheed Martin",
+   "title": "Test Engineering Intern",
+   "location": "Owego, NY",
+   "url": "https://lockheedmartin.eightfold.ai/careers/job/996477364315",
+   "source": "Lockheed Martin careers",
+   "posted": "2026-10-15",
+   "source_id": "Lockheed Martin",
+   "key": "url:https://lockheedmartin.eightfold.ai/careers/job/996477364315",
+   "score": 60,
+   "tier": "good",
+   "parts": {
+    "aerospace": 22,
+    "skills": 16,
+    "eligibility": 22,
+    "requirements": 0
+   },
+   "quals": {
+    "required": [
+     {
+      "text": "Currently enrolled in Electrical Engineering, Electrical Engineering Technology, or a closely related discipline; pursuing a Bachelor’s degree.",
+      "status": "partial",
+      "why": "Other majors listed; Aerospace Engineering may count as related"
+     },
+     {
+      "text": "Strong academic foundation in analog/digital circuit design, signal processing, and systems communication.",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Hands‑on laboratory experience: soldering, using test equipment, and prototype building.",
+      "status": "met",
+      "why": "You have: Prototyping & fabrication"
+     },
+     {
+      "text": "Must be a US Citizen.; This position is located at a facility that requires special access",
+      "status": "met",
+      "why": "You're a U.S. citizen"
+     }
+    ],
+    "preferred": [
+     {
+      "text": "Familiarity with microcontroller development (Arduino, STM32, PIC, etc.)",
+      "status": "met",
+      "why": "You have: Arduino / microcontrollers"
+     },
+     {
+      "text": "Familiarity with RF communication concepts and protocols",
+      "status": "soft",
+      "why": ""
+     }
+    ],
+    "summary": {
+     "required_checked": 3,
+     "required_met": 2.5,
+     "required_missing": 0,
+     "to_check": 0,
+     "preferred_met": 1,
+     "preferred_total": 1
+    }
+   },
+   "matched": [
+    "Prototyping & fabrication",
+    "Arduino / microcontrollers"
+   ],
+   "related": [],
+   "gaps": [
+    "Data acquisition / test"
+   ],
+   "flags": [
+    {
+     "kind": "info",
+     "label": "Season not stated"
+    },
+    {
+     "kind": "info",
+     "label": "U.S. person / ITAR",
+     "id": "citizen"
+    }
+   ],
+   "season": "unstated",
+   "has_description": true,
+   "first_seen": "2026-10-16",
+   "last_seen": "2026-10-16"
+  },
+  {
+   "company": "Lockheed Martin",
+   "title": "Test Engineering Intern",
+   "location": "Owego, NY",
+   "url": "https://lockheedmartin.eightfold.ai/careers/job/996477364317",
+   "source": "Lockheed Martin careers",
+   "posted": "2026-10-15",
+   "source_id": "Lockheed Martin",
+   "key": "url:https://lockheedmartin.eightfold.ai/careers/job/996477364317",
+   "score": 60,
+   "tier": "good",
+   "parts": {
+    "aerospace": 22,
+    "skills": 16,
+    "eligibility": 22,
+    "requirements": 0
+   },
+   "quals": {
+    "required": [
+     {
+      "text": "Currently enrolled in Electrical Engineering, Electrical Engineering Technology, or a closely related discipline; pursuing a Bachelor’s degree.",
+      "status": "partial",
+      "why": "Other majors listed; Aerospace Engineering may count as related"
+     },
+     {
+      "text": "Strong academic foundation in analog/digital circuit design, signal processing, and systems communication.",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Hands‑on laboratory experience: soldering, using test equipment, and prototype building.",
+      "status": "met",
+      "why": "You have: Prototyping & fabrication"
+     },
+     {
+      "text": "Must be a US Citizen.; This position is located at a facility that requires special access",
+      "status": "met",
+      "why": "You're a U.S. citizen"
+     }
+    ],
+    "preferred": [
+     {
+      "text": "Familiarity with microcontroller development (Arduino, STM32, PIC, etc.)",
+      "status": "met",
+      "why": "You have: Arduino / microcontrollers"
+     },
+     {
+      "text": "Familiarity with RF communication concepts and protocols",
+      "status": "soft",
+      "why": ""
+     }
+    ],
+    "summary": {
+     "required_checked": 3,
+     "required_met": 2.5,
+     "required_missing": 0,
+     "to_check": 0,
+     "preferred_met": 1,
+     "preferred_total": 1
+    }
+   },
+   "matched": [
+    "Prototyping & fabrication",
+    "Arduino / microcontrollers"
+   ],
+   "related": [],
+   "gaps": [
+    "Data acquisition / test"
+   ],
+   "flags": [
+    {
+     "kind": "info",
+     "label": "Season not stated"
+    },
+    {
+     "kind": "info",
+     "label": "U.S. person / ITAR",
+     "id": "citizen"
+    }
+   ],
+   "season": "unstated",
+   "has_description": true,
+   "first_seen": "2026-10-16",
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Lockheed Martin",
@@ -17740,7 +18023,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Lockheed Martin",
@@ -17830,7 +18113,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -17927,7 +18210,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -18047,91 +18330,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
-  },
-  {
-   "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
-   "title": "Safety and Reliability Intern (Onsite)",
-   "location": "US-CT-EAST HARTFORD-ETC ~ 400 Main St ~ BLDG ETC",
-   "url": "https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-CT-EAST-HARTFORD-ETC--400-Main-St--BLDG-ETC/Safety-and-Reliability-Intern--Onsite-_01873849",
-   "source": "RTX (Raytheon, Pratt & Whitney, Collins) careers",
-   "posted": "2026-10-06",
-   "source_id": "RTX (Raytheon, Pratt & Whitney, Collins)",
-   "key": "wd:globalhr:01873849",
-   "score": 60,
-   "tier": "good",
-   "parts": {
-    "aerospace": 20,
-    "skills": 18,
-    "eligibility": 22,
-    "requirements": 0
-   },
-   "quals": {
-    "required": [
-     {
-      "text": "U.S. citizenship is required, as only U.S. citizens are authorized to access information under this program/contract.",
-      "status": "met",
-      "why": "You're a U.S. citizen"
-     },
-     {
-      "text": "Must be pursuing Bachelor’s or Advanced degree in STEM or Mathematics field and actively enrolled through the completion of the internship/co-op session.",
-      "status": "met",
-      "why": "You're Aerospace Engineering"
-     },
-     {
-      "text": "This position requires a strong desire to learn about the safety process as it impacts the aerospace industry.",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Course work exposure (operational Safety) includes Matlab, Pyton, C++, VBA, Minitab or related programming software and general propulsion system (jet engine ba",
-      "status": "met",
-      "why": "You have: C++"
-     },
-     {
-      "text": "Course work exposure (reliability) includes VBA, mechanical design projects, statistics, and general propulsion system (jet engine basics)",
-      "status": "check",
-      "why": "Coursework or background (check your classes)"
-     }
-    ],
-    "preferred": [],
-    "summary": {
-     "required_checked": 3,
-     "required_met": 3.0,
-     "required_missing": 0,
-     "to_check": 1,
-     "preferred_met": 0,
-     "preferred_total": 0
-    }
-   },
-   "matched": [
-    "C++",
-    "Parametric / trade studies"
-   ],
-   "related": [],
-   "gaps": [
-    "MATLAB"
-   ],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "Season not stated"
-    },
-    {
-     "kind": "info",
-     "label": "U.S. person / ITAR",
-     "id": "citizen"
-    },
-    {
-     "kind": "info",
-     "label": "Clearance",
-     "id": "clearance"
-    }
-   ],
-   "season": "unstated",
-   "has_description": true,
-   "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "The Aerospace Corporation",
@@ -18255,7 +18454,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Varda Space",
@@ -18378,7 +18577,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Astranis",
@@ -18483,7 +18682,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Astranis",
@@ -18583,7 +18782,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Blue Origin",
@@ -18668,7 +18867,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Epic Games",
@@ -18705,114 +18904,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
-  },
-  {
-   "company": "Muon Space",
-   "title": "Applied Science Intern (Summer 2027)",
-   "location": "Woodbridge, VA",
-   "url": "https://job-boards.greenhouse.io/muonspace/jobs/5244641007",
-   "source": "Muon Space careers",
-   "posted": "2026-09-23",
-   "source_id": "Muon Space",
-   "key": "gr:5244641007",
-   "score": 59,
-   "tier": "good",
-   "parts": {
-    "aerospace": 16,
-    "skills": 18,
-    "eligibility": 25,
-    "requirements": 0
-   },
-   "quals": {
-    "required": [
-     {
-      "text": "Currently pursuing a Master's or PhD in Earth Science, Physics, Remote Sensing, Computer Science, or a related technical or scientific field.",
-      "status": "missing",
-      "why": "Asks for a graduate degree"
-     },
-     {
-      "text": "Strong foundation in scientific and engineering first principles and problem solving, with the ability to reason through novel, ambiguous problems.",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "Demonstrated proficiency in a programming or scripting language for data and image analysis and modeling (e.g., Python, MATLAB, Julia).",
-      "status": "met",
-      "why": "You have: Python"
-     },
-     {
-      "text": "Curiosity-driven and creative mindset with a willingness to explore unconventional ideas and challenge assumptions.",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "Strong written and verbal communication skills, with the ability to distill complex technical concepts for diverse audiences.",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "Self-motivated and adaptable, with the ability to thrive in a fast-paced, collaborative, small-team environment.",
-      "status": "soft",
-      "why": ""
-     }
-    ],
-    "preferred": [
-     {
-      "text": "Experience with remote sensing data, Earth observation, or geospatial analysis (e.g., satellite imagery, climate data, GIS tools) and GEOINT principles.",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Experience with image processing fundamentals and tools.",
-      "status": "check",
-      "why": "Coursework or background (check your classes)"
-     },
-     {
-      "text": "Background or coursework in Earth science, atmospheric science, environmental monitoring, or related domains.",
-      "status": "check",
-      "why": "Coursework or background (check your classes)"
-     },
-     {
-      "text": "Experience engaging with customers, stakeholders, or cross-functional collaborators in a technical setting.",
-      "status": "soft",
-      "why": ""
-     }
-    ],
-    "summary": {
-     "required_checked": 2,
-     "required_met": 1.0,
-     "required_missing": 1,
-     "to_check": 2,
-     "preferred_met": 0,
-     "preferred_total": 0
-    }
-   },
-   "matched": [
-    "Python",
-    "Parametric / trade studies"
-   ],
-   "related": [
-    "C (close to C++)"
-   ],
-   "gaps": [
-    "MATLAB"
-   ],
-   "flags": [
-    {
-     "kind": "good",
-     "label": "Summer 2027"
-    },
-    {
-     "kind": "info",
-     "label": "U.S. person / ITAR",
-     "id": "citizen"
-    }
-   ],
-   "season": "match",
-   "has_description": true,
-   "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -18917,7 +19009,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-15",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -18998,7 +19090,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Red Ventures",
@@ -19035,87 +19127,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
-  },
-  {
-   "company": "Zipline",
-   "title": "Electrical Project Engineer Intern (Summer 2027)",
-   "location": "South San Francisco, California, USA",
-   "url": "https://www.zipline.com/open-roles/7980932003?gh_jid=7980932003",
-   "source": "Zipline careers",
-   "posted": "2026-09-15",
-   "source_id": "Zipline",
-   "key": "gr:7980932003",
-   "score": 59,
-   "tier": "good",
-   "parts": {
-    "aerospace": 16,
-    "skills": 18,
-    "eligibility": 25,
-    "requirements": 0
-   },
-   "quals": {
-    "required": [
-     {
-      "text": "You must have completed the second year of your undergraduate studies, with relevant coursework (e.g., circuits, power systems, construction). Master's and PhD ",
-      "status": "check",
-      "why": "Coursework or background (check your classes)"
-     },
-     {
-      "text": "Strong analytical skills, attention to detail, and a willingness to ask questions and learn.",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "Familiarity with engineering tools or concepts such as CAD/ECAD, electrical modeling, or basic simulation software. (Revit, Bluebeam Revu, AutoCAD, NX)",
-      "status": "met",
-      "why": "You have: SolidWorks / CAD"
-     },
-     {
-      "text": "Clear written and verbal communication skills, especially when summarizing technical information.",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "Ability to work collaboratively in a fast-paced environment and support a wide range of tasks.",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "Curiosity, initiative, and a proactive approach to problem-solving.",
-      "status": "soft",
-      "why": ""
-     }
-    ],
-    "preferred": [],
-    "summary": {
-     "required_checked": 1,
-     "required_met": 1.0,
-     "required_missing": 0,
-     "to_check": 1,
-     "preferred_met": 0,
-     "preferred_total": 0
-    }
-   },
-   "matched": [
-    "SolidWorks / CAD",
-    "Prototyping & fabrication"
-   ],
-   "related": [],
-   "gaps": [
-    "Siemens NX",
-    "Drawings / drafting"
-   ],
-   "flags": [
-    {
-     "kind": "good",
-     "label": "Summer 2027"
-    }
-   ],
-   "season": "match",
-   "has_description": true,
-   "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Astroforge",
@@ -19151,7 +19163,7 @@
    "season": "unstated",
    "has_description": false,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Northrop Grumman",
@@ -19280,7 +19292,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -19398,7 +19410,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Draper",
@@ -19527,7 +19539,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Impulse Space",
@@ -19563,79 +19575,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
-  },
-  {
-   "company": "Impulse Space",
-   "title": "Development Test Engineering Intern (Summer 2027)",
-   "location": "",
-   "url": "https://impulsespace.pinpointhq.com/en/postings/8b8a0693-fcf2-4cc4-8e2d-130d68fd6566",
-   "source": "Space Capital job board",
-   "posted": "2026-09-15",
-   "source_id": "Space Capital job board",
-   "key": "url:https://impulsespace.pinpointhq.com/en/postings/8b8a0693-fcf2-4cc4-8e2d-130d68fd6566",
-   "score": 57,
-   "tier": "good",
-   "parts": {
-    "aerospace": 20,
-    "skills": 12,
-    "eligibility": 25,
-    "requirements": 0
-   },
-   "quals": null,
-   "matched": [],
-   "related": [],
-   "gaps": [],
-   "flags": [
-    {
-     "kind": "good",
-     "label": "Summer 2027"
-    },
-    {
-     "kind": "info",
-     "label": "Full description not loaded"
-    }
-   ],
-   "season": "match",
-   "has_description": false,
-   "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
-  },
-  {
-   "company": "Impulse Space",
-   "title": "Test Automation Intern (Summer 2027)",
-   "location": "",
-   "url": "https://impulsespace.pinpointhq.com/en/postings/f43f718d-d6ef-4586-a1e5-f6de230bf7d2",
-   "source": "Space Capital job board",
-   "posted": "2026-09-15",
-   "source_id": "Space Capital job board",
-   "key": "url:https://impulsespace.pinpointhq.com/en/postings/f43f718d-d6ef-4586-a1e5-f6de230bf7d2",
-   "score": 57,
-   "tier": "good",
-   "parts": {
-    "aerospace": 20,
-    "skills": 12,
-    "eligibility": 25,
-    "requirements": 0
-   },
-   "quals": null,
-   "matched": [],
-   "related": [],
-   "gaps": [],
-   "flags": [
-    {
-     "kind": "good",
-     "label": "Summer 2027"
-    },
-    {
-     "kind": "info",
-     "label": "Full description not loaded"
-    }
-   ],
-   "season": "match",
-   "has_description": false,
-   "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Lockheed Martin",
@@ -19736,44 +19676,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
-  },
-  {
-   "company": "Lunar Outpost",
-   "title": "Test Engineering Intern",
-   "location": "Golden, CO",
-   "url": "https://lunaroutpost.bamboohr.com/careers/399/",
-   "source": "Simplify Summer 2027 list",
-   "posted": "2026-09-15",
-   "sponsorship": "Other",
-   "source_id": "Simplify Summer 2027 list",
-   "key": "url:https://lunaroutpost.bamboohr.com/careers/399",
-   "score": 57,
-   "tier": "good",
-   "parts": {
-    "aerospace": 20,
-    "skills": 12,
-    "eligibility": 25,
-    "requirements": 0
-   },
-   "quals": null,
-   "matched": [],
-   "related": [],
-   "gaps": [],
-   "flags": [
-    {
-     "kind": "good",
-     "label": "Summer 2027"
-    },
-    {
-     "kind": "info",
-     "label": "Full description not loaded"
-    }
-   ],
-   "season": "match",
-   "has_description": false,
-   "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Lunar Outpost",
@@ -19809,7 +19712,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX",
@@ -19892,7 +19795,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -19980,7 +19883,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Rocket Lab",
@@ -20092,7 +19995,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Rocket Lab",
@@ -20204,7 +20107,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Rocket Lab",
@@ -20312,7 +20215,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Astranis",
@@ -20416,7 +20319,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Lockheed Martin",
@@ -20529,48 +20432,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
-  },
-  {
-   "company": "Moog",
-   "title": "Intern, Test Equipment Sustainment",
-   "location": "Torrance, CA",
-   "url": "https://moog.wd5.myworkdayjobs.com/MOOG_External_Career_Site/job/Torrance-CA/Intern--Test-Equipment-Sustainment_R-26-19821",
-   "source": "Moog careers",
-   "posted": "2026-09-15",
-   "source_id": "Moog",
-   "key": "wd:moog:intern--test-equipment-sustainment_r-26-19821",
-   "score": 56,
-   "tier": "good",
-   "parts": {
-    "aerospace": 34,
-    "skills": 0,
-    "eligibility": 22,
-    "requirements": 0
-   },
-   "quals": null,
-   "matched": [],
-   "related": [],
-   "gaps": [],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "Summer (year not stated)"
-    },
-    {
-     "kind": "info",
-     "label": "Min GPA 3.0"
-    },
-    {
-     "kind": "info",
-     "label": "U.S. person / ITAR",
-     "id": "citizen"
-    }
-   ],
-   "season": "unstated",
-   "has_description": true,
-   "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Northrop Grumman",
@@ -20665,7 +20527,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Northrop Grumman",
@@ -20753,7 +20615,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Northrop Grumman",
@@ -20841,7 +20703,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Northrop Grumman",
@@ -20929,7 +20791,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "OHB SE",
@@ -20965,7 +20827,7 @@
    "season": "unstated",
    "has_description": false,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -21063,7 +20925,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -21153,7 +21015,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -21269,7 +21131,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Reflect Orbital",
@@ -21325,7 +21187,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Blue Origin",
@@ -21441,118 +21303,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
-  },
-  {
-   "company": "CesiumAstro",
-   "title": "Summer 2027 - Electrical Engineering Internship, FPGA",
-   "location": "Westminster, CO",
-   "url": "https://jobs.lever.co/CesiumAstro/e6d87528-5da1-4970-9e42-7b224cfa63a9",
-   "source": "CesiumAstro careers",
-   "posted": "2026-09-15",
-   "source_id": "CesiumAstro",
-   "key": "le:e6d87528-5da1-4970-9e42-7b224cfa63a9",
-   "score": 55,
-   "tier": "look",
-   "parts": {
-    "aerospace": 16,
-    "skills": 19,
-    "eligibility": 25,
-    "requirements": -5
-   },
-   "quals": {
-    "required": [
-     {
-      "text": "Current enrollment in a Bachelor of Science (BS), Master of Science (MS), or PhD program in Electrical Engineering or Computer Engineering from an accredited un",
-      "status": "missing",
-      "why": "Wants a different major"
-     },
-     {
-      "text": "Understanding of fundamental digital design concepts, such as combinational and sequential logic, finite state machines, timing, and synchronous digital systems",
-      "status": "check",
-      "why": "Coursework or background (check your classes)"
-     },
-     {
-      "text": "Digital design or hardware-description experience gained through coursework, research, personal projects, competition teams, internships, or other technical act",
-      "status": "met",
-      "why": "You have: Student engineering team"
-     },
-     {
-      "text": "Demonstrated ability to approach technical problems methodically, learn new concepts, and debug complex systems.",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Excellent written and verbal communication skills.",
-      "status": "soft",
-      "why": ""
-     }
-    ],
-    "preferred": [
-     {
-      "text": "FPGA development or verification experience through coursework, research, internships, personal projects, or extracurricular activities.",
-      "status": "met",
-      "why": "Your Formula SAE, rocketry, and rover projects"
-     },
-     {
-      "text": "Experience with SystemVerilog, Verilog, VHDL, or UVM.",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Experience with FPGA or HDL development tools such as AMD/Xilinx Vivado, Questa/ModelSim, or similar tools.",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Experience in digital signal processing.",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Experience with embedded systems or board-level digital hardware.",
-      "status": "partial",
-      "why": "Close: Embedded ≈ Arduino / microcontrollers"
-     },
-     {
-      "text": "Coursework or experience in communication systems.",
-      "status": "check",
-      "why": "Coursework or background (check your classes)"
-     }
-    ],
-    "summary": {
-     "required_checked": 2,
-     "required_met": 1.0,
-     "required_missing": 1,
-     "to_check": 2,
-     "preferred_met": 1,
-     "preferred_total": 2
-    }
-   },
-   "matched": [
-    "Prototyping & fabrication",
-    "Student engineering team"
-   ],
-   "related": [
-    "C (close to C++)",
-    "Embedded (close to Arduino / microcontrollers)"
-   ],
-   "gaps": [],
-   "flags": [
-    {
-     "kind": "good",
-     "label": "Summer 2027"
-    },
-    {
-     "kind": "info",
-     "label": "U.S. person / ITAR",
-     "id": "citizen"
-    }
-   ],
-   "season": "match",
-   "has_description": true,
-   "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "CesiumAstro",
@@ -21663,7 +21414,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Formlabs",
@@ -21700,7 +21451,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "GE Aerospace",
@@ -21836,7 +21587,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "General Motors",
@@ -21873,18 +21624,18 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
-   "company": "Keysight Technologies",
-   "title": "ASIC Design-for-Test Engineer Intern - DFT",
-   "location": "Colorado Springs, CO",
-   "url": "https://jobs.keysight.com/jobs/54276?icims=1",
+   "company": "Leidos",
+   "title": "Electrical Hardware Design Engineer Intern",
+   "location": "Huntsville, AL",
+   "url": "https://leidos.wd5.myworkdayjobs.com/External/job/Huntsville-AL/Electrical-Hardware-Design-Engineering-Intern_R-00193394",
    "source": "Simplify Summer 2027 list",
-   "posted": "2026-09-15",
+   "posted": "2026-10-15",
    "sponsorship": "Other",
    "source_id": "Simplify Summer 2027 list",
-   "key": "url:https://jobs.keysight.com/jobs/54276",
+   "key": "wd:leidos:r-00193394",
    "score": 55,
    "tier": "look",
    "parts": {
@@ -21909,122 +21660,8 @@
    ],
    "season": "match",
    "has_description": false,
-   "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
-  },
-  {
-   "company": "Lockheed Martin",
-   "title": "AI/ML Engineering Intern - Summer 2027",
-   "location": "King of Prussia, PA; Littleton, CO",
-   "url": "https://lockheedmartin.eightfold.ai/careers/job/996477278559",
-   "source": "Lockheed Martin careers",
-   "posted": "2026-10-08",
-   "source_id": "Lockheed Martin",
-   "key": "url:https://lockheedmartin.eightfold.ai/careers/job/996477278559",
-   "score": 55,
-   "tier": "look",
-   "parts": {
-    "aerospace": 12,
-    "skills": 18,
-    "eligibility": 25,
-    "requirements": 0
-   },
-   "quals": {
-    "required": [
-     {
-      "text": "Pursuing degree in a STEM discipline (e.g. Electrical Engineering, Computer Science, Computer Engineering, Mathematics, Physics, etc.)",
-      "status": "met",
-      "why": "You're Aerospace Engineering"
-     },
-     {
-      "text": "Knowledge of Artificial Intelligence, Machine Learning, Deep Learning, Computer Vision, or Image Processing",
-      "status": "check",
-      "why": "Coursework or background (check your classes)"
-     },
-     {
-      "text": "Familiarity with modern software development tools and practices",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Must be a US Citizen; this position will require a government security clearance.",
-      "status": "met",
-      "why": "You're a U.S. citizen"
-     }
-    ],
-    "preferred": [
-     {
-      "text": "Proficiency in one or more of the following programming languages: Python, Java, C++, or C#",
-      "status": "met",
-      "why": "You have: Python, C++"
-     },
-     {
-      "text": "Experience with PyTorch",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Experience with DevSecOps",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Experience with cloud computing platforms or services",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Excellent written and verbal communication skills",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "Ability to work in a collaborative and team-based environment",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "Proficient with Microsoft Office",
-      "status": "met",
-      "why": "You have: Excel / data analysis"
-     }
-    ],
-    "summary": {
-     "required_checked": 2,
-     "required_met": 2.0,
-     "required_missing": 0,
-     "to_check": 1,
-     "preferred_met": 2,
-     "preferred_total": 2
-    }
-   },
-   "matched": [
-    "Python",
-    "C++",
-    "Excel / data analysis"
-   ],
-   "related": [],
-   "gaps": [],
-   "flags": [
-    {
-     "kind": "good",
-     "label": "Summer 2027"
-    },
-    {
-     "kind": "info",
-     "label": "U.S. person / ITAR",
-     "id": "citizen"
-    },
-    {
-     "kind": "info",
-     "label": "Clearance",
-     "id": "clearance"
-    }
-   ],
-   "season": "match",
-   "has_description": true,
-   "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "first_seen": "2026-10-16",
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Lockheed Martin",
@@ -22156,7 +21793,121 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
+  },
+  {
+   "company": "Lockheed Martin",
+   "title": "AI/ML Engineering Intern - Summer 2027",
+   "location": "King of Prussia, PA; Littleton, CO",
+   "url": "https://lockheedmartin.eightfold.ai/careers/job/996477278559",
+   "source": "Lockheed Martin careers",
+   "posted": "2026-10-08",
+   "source_id": "Lockheed Martin",
+   "key": "url:https://lockheedmartin.eightfold.ai/careers/job/996477278559",
+   "score": 55,
+   "tier": "look",
+   "parts": {
+    "aerospace": 12,
+    "skills": 18,
+    "eligibility": 25,
+    "requirements": 0
+   },
+   "quals": {
+    "required": [
+     {
+      "text": "Pursuing degree in a STEM discipline (e.g. Electrical Engineering, Computer Science, Computer Engineering, Mathematics, Physics, etc.)",
+      "status": "met",
+      "why": "You're Aerospace Engineering"
+     },
+     {
+      "text": "Knowledge of Artificial Intelligence, Machine Learning, Deep Learning, Computer Vision, or Image Processing",
+      "status": "check",
+      "why": "Coursework or background (check your classes)"
+     },
+     {
+      "text": "Familiarity with modern software development tools and practices",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Must be a US Citizen; this position will require a government security clearance.",
+      "status": "met",
+      "why": "You're a U.S. citizen"
+     }
+    ],
+    "preferred": [
+     {
+      "text": "Proficiency in one or more of the following programming languages: Python, Java, C++, or C#",
+      "status": "met",
+      "why": "You have: Python, C++"
+     },
+     {
+      "text": "Experience with PyTorch",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Experience with DevSecOps",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Experience with cloud computing platforms or services",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Excellent written and verbal communication skills",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Ability to work in a collaborative and team-based environment",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Proficient with Microsoft Office",
+      "status": "met",
+      "why": "You have: Excel / data analysis"
+     }
+    ],
+    "summary": {
+     "required_checked": 2,
+     "required_met": 2.0,
+     "required_missing": 0,
+     "to_check": 1,
+     "preferred_met": 2,
+     "preferred_total": 2
+    }
+   },
+   "matched": [
+    "Python",
+    "C++",
+    "Excel / data analysis"
+   ],
+   "related": [],
+   "gaps": [],
+   "flags": [
+    {
+     "kind": "good",
+     "label": "Summer 2027"
+    },
+    {
+     "kind": "info",
+     "label": "U.S. person / ITAR",
+     "id": "citizen"
+    },
+    {
+     "kind": "info",
+     "label": "Clearance",
+     "id": "clearance"
+    }
+   ],
+   "season": "match",
+   "has_description": true,
+   "first_seen": "2026-10-11",
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Marvell",
@@ -22193,7 +21944,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Marvell",
@@ -22230,7 +21981,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Rocket Lab",
@@ -22335,7 +22086,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "ispace",
@@ -22421,7 +22172,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "ispace",
@@ -22507,7 +22258,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Blue Canyon",
@@ -22543,7 +22294,7 @@
    "season": "unstated",
    "has_description": false,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Blue Canyon",
@@ -22579,7 +22330,7 @@
    "season": "unstated",
    "has_description": false,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Blue Origin",
@@ -22659,7 +22410,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "GE Aerospace",
@@ -22815,7 +22566,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Boeing",
@@ -22953,7 +22704,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "GE Aerospace",
@@ -23088,7 +22839,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "GE Aerospace",
@@ -23229,7 +22980,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Lockheed Martin",
@@ -23316,7 +23067,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Lockheed Martin",
@@ -23403,7 +23154,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Moog",
@@ -23452,7 +23203,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -23541,7 +23292,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Sierra Space",
@@ -23644,7 +23395,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Sierra Space",
@@ -23747,7 +23498,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Voyager Technologies",
@@ -23874,7 +23625,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -23972,7 +23723,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-15",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -24073,7 +23824,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Amazon",
@@ -24110,7 +23861,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Amazon",
@@ -24147,7 +23898,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Applied Materials",
@@ -24184,7 +23935,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Arc",
@@ -24221,7 +23972,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Charter Manufacturing",
@@ -24258,7 +24009,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Charter Manufacturing",
@@ -24295,7 +24046,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Cirrus Logic",
@@ -24332,7 +24083,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Cirrus Logic",
@@ -24369,7 +24120,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Cirrus Logic",
@@ -24406,7 +24157,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Cirrus Logic",
@@ -24443,7 +24194,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Flex",
@@ -24480,7 +24231,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "GE Aerospace",
@@ -24615,7 +24366,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "General Motors",
@@ -24652,7 +24403,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "General Motors",
@@ -24689,7 +24440,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "General Motors",
@@ -24726,7 +24477,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "General Motors",
@@ -24763,7 +24514,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Marvell",
@@ -24800,7 +24551,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Marvell",
@@ -24837,7 +24588,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Marvell",
@@ -24874,7 +24625,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Marvell",
@@ -24911,7 +24662,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Marvell",
@@ -24948,7 +24699,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Marvell",
@@ -24985,7 +24736,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Moog",
@@ -25026,7 +24777,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "NVIDIA",
@@ -25063,7 +24814,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "NVIDIA",
@@ -25100,7 +24851,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "NVIDIA",
@@ -25137,7 +24888,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Nissan Global",
@@ -25174,7 +24925,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Nokia",
@@ -25211,7 +24962,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Nokia",
@@ -25248,7 +24999,188 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
+  },
+  {
+   "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
+   "title": "Quality Assurance Intern (Summer 2027)",
+   "location": "US-CT-CHESHIRE-250 ~ 250 Knotter Dr ~ GOODRICH CORP",
+   "url": "https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-CT-CHESHIRE-250--250-Knotter-Dr--GOODRICH-CORP/Quality-Assurance-Intern--Summer-2027-_01882553",
+   "source": "RTX (Raytheon, Pratt & Whitney, Collins) careers",
+   "posted": "2026-10-15",
+   "source_id": "RTX (Raytheon, Pratt & Whitney, Collins)",
+   "key": "wd:globalhr:01882553",
+   "score": 51,
+   "tier": "look",
+   "parts": {
+    "aerospace": 14,
+    "skills": 12,
+    "eligibility": 25,
+    "requirements": 0
+   },
+   "quals": {
+    "required": [
+     {
+      "text": "U.S. citizenship is required, as only U.S. citizens are authorized to access information under this program/contract.",
+      "status": "met",
+      "why": "You're a U.S. citizen"
+     },
+     {
+      "text": "Actively pursuing a Bachelor’s or advanced degree in Quality, Mechanical, Industrial, Manufacturing Engineering, or a related discipline, and enrolled through t",
+      "status": "met",
+      "why": "You're Aerospace Engineering"
+     },
+     {
+      "text": "Experience using Microsoft Office applications, including Word, Excel, and PowerPoint.",
+      "status": "met",
+      "why": "You have: Excel / data analysis"
+     },
+     {
+      "text": "Exposure to quality assurance processes or methodologies.",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Understanding of calibration systems or inspection workflows.",
+      "status": "check",
+      "why": "Coursework or background (check your classes)"
+     }
+    ],
+    "preferred": [],
+    "summary": {
+     "required_checked": 3,
+     "required_met": 3.0,
+     "required_missing": 0,
+     "to_check": 1,
+     "preferred_met": 0,
+     "preferred_total": 0
+    }
+   },
+   "matched": [
+    "Prototyping & fabrication",
+    "Excel / data analysis"
+   ],
+   "related": [],
+   "gaps": [],
+   "flags": [
+    {
+     "kind": "good",
+     "label": "Summer 2027"
+    },
+    {
+     "kind": "info",
+     "label": "U.S. person / ITAR",
+     "id": "citizen"
+    },
+    {
+     "kind": "info",
+     "label": "Clearance",
+     "id": "clearance"
+    }
+   ],
+   "season": "match",
+   "has_description": true,
+   "first_seen": "2026-10-16",
+   "last_seen": "2026-10-16"
+  },
+  {
+   "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
+   "title": "Quality Engineering Intern (Summer 2027)",
+   "location": "US-NH-DURHAM-121 ~ 121 Technology Dr ~ BLDG 125",
+   "url": "https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-NH-DURHAM-121--121-Technology-Dr--BLDG-125/Quality-Engineering-Intern--Summer-2027-_01882570",
+   "source": "RTX (Raytheon, Pratt & Whitney, Collins) careers",
+   "posted": "2026-10-15",
+   "source_id": "RTX (Raytheon, Pratt & Whitney, Collins)",
+   "key": "wd:globalhr:01882570",
+   "score": 51,
+   "tier": "look",
+   "parts": {
+    "aerospace": 14,
+    "skills": 12,
+    "eligibility": 25,
+    "requirements": 0
+   },
+   "quals": {
+    "required": [
+     {
+      "text": "U.S. citizenship is required, as only U.S. citizens are authorized to access information under this program/contract.",
+      "status": "met",
+      "why": "You're a U.S. citizen"
+     },
+     {
+      "text": "Actively pursuing a degree in Mechanical, Industrial, Aerospace, Manufacturing Engineering or a related discipline and enrolled through the duration of the inte",
+      "status": "met",
+      "why": "You're Aerospace Engineering"
+     },
+     {
+      "text": "Experience with Microsoft Excel for data analysis and visualization.",
+      "status": "met",
+      "why": "You have: Excel / data analysis"
+     },
+     {
+      "text": "Knowledge of root cause analysis techniques.",
+      "status": "check",
+      "why": "Coursework or background (check your classes)"
+     },
+     {
+      "text": "Experience with Production Part Approval Process (PPAP) elements, such as PFMEA, MSA, and Control Plans.",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Background in metals manufacturing and process improvement.",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Advanced coding skills for data analysis and visualization.",
+      "status": "met",
+      "why": "You have: Excel / data analysis"
+     },
+     {
+      "text": "Exposure to continuous improvement tools and methods.",
+      "status": "check",
+      "why": ""
+     }
+    ],
+    "preferred": [],
+    "summary": {
+     "required_checked": 4,
+     "required_met": 4.0,
+     "required_missing": 0,
+     "to_check": 1,
+     "preferred_met": 0,
+     "preferred_total": 0
+    }
+   },
+   "matched": [
+    "Prototyping & fabrication",
+    "Excel / data analysis"
+   ],
+   "related": [],
+   "gaps": [
+    "Controls / GNC"
+   ],
+   "flags": [
+    {
+     "kind": "good",
+     "label": "Summer 2027"
+    },
+    {
+     "kind": "info",
+     "label": "U.S. person / ITAR",
+     "id": "citizen"
+    },
+    {
+     "kind": "info",
+     "label": "Clearance",
+     "id": "clearance"
+    }
+   ],
+   "season": "match",
+   "has_description": true,
+   "first_seen": "2026-10-16",
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -25332,7 +25264,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -25438,7 +25370,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Rivian",
@@ -25475,7 +25407,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Rockwell Automation",
@@ -25512,7 +25444,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Rockwell Automation",
@@ -25549,7 +25481,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Rockwell Automation",
@@ -25586,7 +25518,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Rockwell Automation",
@@ -25623,7 +25555,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "S&C Electric Company",
@@ -25660,7 +25592,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Two Sigma",
@@ -25697,7 +25629,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Vertiv",
@@ -25734,7 +25666,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Waymo",
@@ -25771,7 +25703,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Zurn Elkay Water Solutions",
@@ -25808,44 +25740,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
-  },
-  {
-   "company": "onsemi",
-   "title": "Reliability Testing and Failure Analysis Intern",
-   "location": "Hopewell Junction, NY",
-   "url": "https://hctz.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/2506613",
-   "source": "Simplify Summer 2027 list",
-   "posted": "2026-09-15",
-   "sponsorship": "Other",
-   "source_id": "Simplify Summer 2027 list",
-   "key": "url:https://hctz.fa.us2.oraclecloud.com/hcmui/candidateexperience/en/sites/cx_1001/job/2506613",
-   "score": 51,
-   "tier": "look",
-   "parts": {
-    "aerospace": 14,
-    "skills": 12,
-    "eligibility": 25,
-    "requirements": 0
-   },
-   "quals": null,
-   "matched": [],
-   "related": [],
-   "gaps": [],
-   "flags": [
-    {
-     "kind": "good",
-     "label": "Summer 2027"
-    },
-    {
-     "kind": "info",
-     "label": "Full description not loaded"
-    }
-   ],
-   "season": "match",
-   "has_description": false,
-   "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "onsemi",
@@ -25882,7 +25777,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "onsemi",
@@ -25919,7 +25814,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Blue Origin",
@@ -26007,7 +25902,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -26107,7 +26002,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Impulse Space",
@@ -26143,7 +26038,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Iridium",
@@ -26179,7 +26074,111 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
+  },
+  {
+   "company": "Lockheed Martin",
+   "title": "Mechanical Engineering - Intern",
+   "location": "Stratford, CT",
+   "url": "https://lockheedmartin.eightfold.ai/careers/job/996477265044",
+   "source": "Lockheed Martin careers",
+   "posted": "2026-10-07",
+   "source_id": "Lockheed Martin",
+   "key": "url:https://lockheedmartin.eightfold.ai/careers/job/996477265044",
+   "score": 49,
+   "tier": "look",
+   "parts": {
+    "aerospace": 20,
+    "skills": 4,
+    "eligibility": 25,
+    "requirements": 0
+   },
+   "quals": {
+    "required": [
+     {
+      "text": "Inspect or direct the inspection of construction and installation progress to ensure conformance to established drawings, specifications, and schedules.",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Work independently, under direction, and as a supporting member of the design team.",
+      "status": "met",
+      "why": "Your Formula SAE, rocketry, and rover projects"
+     },
+     {
+      "text": "Must be enrolled in an accredited 4-yr college program pursuing a degree in Engineering",
+      "status": "met",
+      "why": "Engineering degree: Aerospace Engineering counts"
+     },
+     {
+      "text": "Strong knowledge of AutoCAD and architectural drafting",
+      "status": "check",
+      "why": "Coursework: Drawings / drafting (check your classes)"
+     },
+     {
+      "text": "Experience in other computer applications including MS Word, Excel, and PowerPoint",
+      "status": "met",
+      "why": "You have: Excel / data analysis"
+     }
+    ],
+    "preferred": [
+     {
+      "text": "Mechanical or electrical engineering student",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Knowledge of engineering design and construction",
+      "status": "check",
+      "why": "Coursework or background (check your classes)"
+     },
+     {
+      "text": "Excellent communication and teamwork skills; enjoys to work as a team player in a creative, fast paced atmosphere.",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Knowledge in the bidding and review process",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Knowledge in project design, specification preparation and review, project scheduling, and some project cost estimating.",
+      "status": "check",
+      "why": ""
+     }
+    ],
+    "summary": {
+     "required_checked": 3,
+     "required_met": 3.0,
+     "required_missing": 0,
+     "to_check": 2,
+     "preferred_met": 0,
+     "preferred_total": 0
+    }
+   },
+   "matched": [
+    "Excel / data analysis"
+   ],
+   "related": [],
+   "gaps": [
+    "Drawings / drafting"
+   ],
+   "flags": [
+    {
+     "kind": "good",
+     "label": "Summer 2027"
+    },
+    {
+     "kind": "info",
+     "label": "U.S. person / ITAR",
+     "id": "citizen"
+    }
+   ],
+   "season": "match",
+   "has_description": true,
+   "first_seen": "2026-10-11",
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Lockheed Martin",
@@ -26288,185 +26287,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
-  },
-  {
-   "company": "Lockheed Martin",
-   "title": "Mechanical Engineering - Intern",
-   "location": "Stratford, CT",
-   "url": "https://lockheedmartin.eightfold.ai/careers/job/996477265044",
-   "source": "Lockheed Martin careers",
-   "posted": "2026-10-07",
-   "source_id": "Lockheed Martin",
-   "key": "url:https://lockheedmartin.eightfold.ai/careers/job/996477265044",
-   "score": 49,
-   "tier": "look",
-   "parts": {
-    "aerospace": 20,
-    "skills": 4,
-    "eligibility": 25,
-    "requirements": 0
-   },
-   "quals": {
-    "required": [
-     {
-      "text": "Inspect or direct the inspection of construction and installation progress to ensure conformance to established drawings, specifications, and schedules.",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Work independently, under direction, and as a supporting member of the design team.",
-      "status": "met",
-      "why": "Your Formula SAE, rocketry, and rover projects"
-     },
-     {
-      "text": "Must be enrolled in an accredited 4-yr college program pursuing a degree in Engineering",
-      "status": "met",
-      "why": "Engineering degree: Aerospace Engineering counts"
-     },
-     {
-      "text": "Strong knowledge of AutoCAD and architectural drafting",
-      "status": "check",
-      "why": "Coursework: Drawings / drafting (check your classes)"
-     },
-     {
-      "text": "Experience in other computer applications including MS Word, Excel, and PowerPoint",
-      "status": "met",
-      "why": "You have: Excel / data analysis"
-     }
-    ],
-    "preferred": [
-     {
-      "text": "Mechanical or electrical engineering student",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Knowledge of engineering design and construction",
-      "status": "check",
-      "why": "Coursework or background (check your classes)"
-     },
-     {
-      "text": "Excellent communication and teamwork skills; enjoys to work as a team player in a creative, fast paced atmosphere.",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "Knowledge in the bidding and review process",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Knowledge in project design, specification preparation and review, project scheduling, and some project cost estimating.",
-      "status": "check",
-      "why": ""
-     }
-    ],
-    "summary": {
-     "required_checked": 3,
-     "required_met": 3.0,
-     "required_missing": 0,
-     "to_check": 2,
-     "preferred_met": 0,
-     "preferred_total": 0
-    }
-   },
-   "matched": [
-    "Excel / data analysis"
-   ],
-   "related": [],
-   "gaps": [
-    "Drawings / drafting"
-   ],
-   "flags": [
-    {
-     "kind": "good",
-     "label": "Summer 2027"
-    },
-    {
-     "kind": "info",
-     "label": "U.S. person / ITAR",
-     "id": "citizen"
-    }
-   ],
-   "season": "match",
-   "has_description": true,
-   "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
-  },
-  {
-   "company": "Lunar Outpost",
-   "title": "Robotics Engineer Intern",
-   "location": "Golden, CO",
-   "url": "https://lunaroutpost.bamboohr.com/careers/391/",
-   "source": "Simplify Summer 2027 list",
-   "posted": "2026-09-15",
-   "sponsorship": "Other",
-   "source_id": "Simplify Summer 2027 list",
-   "key": "url:https://lunaroutpost.bamboohr.com/careers/391",
-   "score": 49,
-   "tier": "look",
-   "parts": {
-    "aerospace": 12,
-    "skills": 12,
-    "eligibility": 25,
-    "requirements": 0
-   },
-   "quals": null,
-   "matched": [],
-   "related": [],
-   "gaps": [],
-   "flags": [
-    {
-     "kind": "good",
-     "label": "Summer 2027"
-    },
-    {
-     "kind": "info",
-     "label": "Full description not loaded"
-    }
-   ],
-   "season": "match",
-   "has_description": false,
-   "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
-  },
-  {
-   "company": "Lunar Outpost",
-   "title": "Simulation Engineering Intern",
-   "location": "Golden, CO",
-   "url": "https://lunaroutpost.bamboohr.com/careers/390/",
-   "source": "Simplify Summer 2027 list",
-   "posted": "2026-09-15",
-   "sponsorship": "Other",
-   "source_id": "Simplify Summer 2027 list",
-   "key": "url:https://lunaroutpost.bamboohr.com/careers/390",
-   "score": 49,
-   "tier": "look",
-   "parts": {
-    "aerospace": 12,
-    "skills": 12,
-    "eligibility": 25,
-    "requirements": 0
-   },
-   "quals": null,
-   "matched": [],
-   "related": [],
-   "gaps": [],
-   "flags": [
-    {
-     "kind": "good",
-     "label": "Summer 2027"
-    },
-    {
-     "kind": "info",
-     "label": "Full description not loaded"
-    }
-   ],
-   "season": "match",
-   "has_description": false,
-   "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Lunar Outpost",
@@ -26502,7 +26323,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Lunar Outpost",
@@ -26538,7 +26359,7 @@
    "season": "match",
    "has_description": false,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Muon Space",
@@ -26642,7 +26463,89 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
+  },
+  {
+   "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
+   "title": "Quality Engineering Intern (Summer 2027)",
+   "location": "US-IA-CORALVILLE-155 ~ 2855 Heartland Dr ~ HEARTLAND BLDG 155",
+   "url": "https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-IA-CORALVILLE-155--2855-Heartland-Dr--HEARTLAND-BLDG-155/Quality-Engineering-Intern--Summer-2027-_01882628",
+   "source": "RTX (Raytheon, Pratt & Whitney, Collins) careers",
+   "posted": "2026-10-15",
+   "source_id": "RTX (Raytheon, Pratt & Whitney, Collins)",
+   "key": "wd:globalhr:01882628",
+   "score": 49,
+   "tier": "look",
+   "parts": {
+    "aerospace": 14,
+    "skills": 10,
+    "eligibility": 25,
+    "requirements": 0
+   },
+   "quals": {
+    "required": [
+     {
+      "text": "U.S. citizenship is required, as only U.S. citizens are authorized to access information under this program/contract.",
+      "status": "met",
+      "why": "You're a U.S. citizen"
+     },
+     {
+      "text": "Must be actively pursuing a technical degree (e.g., Engineering, Science, or related field) and enrolled through the duration of the internship.",
+      "status": "met",
+      "why": "Engineering degree: Aerospace Engineering counts"
+     },
+     {
+      "text": "Experience working with data analysis tools or coursework involving data analysis.",
+      "status": "met",
+      "why": "You have: Excel / data analysis"
+     },
+     {
+      "text": "Experience or coursework involving problem-solving methodologies.",
+      "status": "check",
+      "why": "Coursework or background (check your classes)"
+     },
+     {
+      "text": "Knowledge of data analysis tools and techniques.",
+      "status": "met",
+      "why": "You have: Excel / data analysis"
+     }
+    ],
+    "preferred": [],
+    "summary": {
+     "required_checked": 4,
+     "required_met": 4.0,
+     "required_missing": 0,
+     "to_check": 1,
+     "preferred_met": 0,
+     "preferred_total": 0
+    }
+   },
+   "matched": [
+    "Prototyping & fabrication",
+    "Excel / data analysis"
+   ],
+   "related": [],
+   "gaps": [],
+   "flags": [
+    {
+     "kind": "good",
+     "label": "Summer 2027"
+    },
+    {
+     "kind": "info",
+     "label": "U.S. person / ITAR",
+     "id": "citizen"
+    },
+    {
+     "kind": "info",
+     "label": "Clearance",
+     "id": "clearance"
+    }
+   ],
+   "season": "match",
+   "has_description": true,
+   "first_seen": "2026-10-16",
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -26730,7 +26633,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -26841,7 +26744,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -26934,7 +26837,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "The Aerospace Corporation",
@@ -27058,7 +26961,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Inversion",
@@ -27094,7 +26997,7 @@
    "season": "unstated",
    "has_description": false,
    "first_seen": "2026-10-15",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Inversion",
@@ -27130,7 +27033,7 @@
    "season": "unstated",
    "has_description": false,
    "first_seen": "2026-10-15",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Moog",
@@ -27171,7 +27074,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Moog",
@@ -27212,7 +27115,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Moog",
@@ -27253,48 +27156,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
-  },
-  {
-   "company": "Moog",
-   "title": "Intern, Engineering",
-   "location": "Buffalo, NY",
-   "url": "https://moog.wd5.myworkdayjobs.com/MOOG_External_Career_Site/job/Buffalo-NY/Intern--Engineering_R-26-19391",
-   "source": "Moog careers",
-   "posted": "2026-09-15",
-   "source_id": "Moog",
-   "key": "wd:moog:intern--engineering_r-26-19391",
-   "score": 48,
-   "tier": "look",
-   "parts": {
-    "aerospace": 26,
-    "skills": 0,
-    "eligibility": 22,
-    "requirements": 0
-   },
-   "quals": null,
-   "matched": [],
-   "related": [],
-   "gaps": [],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "Season not stated"
-    },
-    {
-     "kind": "info",
-     "label": "Min GPA 3.0"
-    },
-    {
-     "kind": "info",
-     "label": "U.S. person / ITAR",
-     "id": "citizen"
-    }
-   ],
-   "season": "unstated",
-   "has_description": true,
-   "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Overview Energy",
@@ -27330,7 +27192,7 @@
    "season": "unstated",
    "has_description": false,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -27431,7 +27293,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Rocket Lab",
@@ -27535,7 +27397,92 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
+  },
+  {
+   "company": "Lockheed Martin",
+   "title": "Systems Engineer - Intern",
+   "location": "Fort Worth, TX",
+   "url": "https://lockheedmartin.eightfold.ai/careers/job/996476853481",
+   "source": "Lockheed Martin careers",
+   "posted": "2026-10-15",
+   "source_id": "Lockheed Martin",
+   "key": "url:https://lockheedmartin.eightfold.ai/careers/job/996476853481",
+   "score": 47,
+   "tier": "look",
+   "parts": {
+    "aerospace": 22,
+    "skills": 0,
+    "eligibility": 25,
+    "requirements": 0
+   },
+   "quals": {
+    "required": [
+     {
+      "text": "Pursuing a Bachelors degree from an accredited university in systems engineering, aeronautical engineering, electrical engineering, computer science, or in any ",
+      "status": "met",
+      "why": "You're Aerospace Engineering"
+     },
+     {
+      "text": "Familiar with Systems Engineering principals",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Familiar with commercial hardware systems (computers, servers, networks)",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Must be a US Citizen; this position will require a government security clearance. This position is located at a facility that requires special access",
+      "status": "met",
+      "why": "You're a U.S. citizen"
+     }
+    ],
+    "preferred": [
+     {
+      "text": "Excellent written and verbal communication skills",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Ability to work in a collaborative and team based environment",
+      "status": "soft",
+      "why": ""
+     }
+    ],
+    "summary": {
+     "required_checked": 2,
+     "required_met": 2.0,
+     "required_missing": 0,
+     "to_check": 0,
+     "preferred_met": 0,
+     "preferred_total": 0
+    }
+   },
+   "matched": [],
+   "related": [],
+   "gaps": [],
+   "flags": [
+    {
+     "kind": "good",
+     "label": "Summer 2027"
+    },
+    {
+     "kind": "info",
+     "label": "U.S. person / ITAR",
+     "id": "citizen"
+    },
+    {
+     "kind": "info",
+     "label": "Clearance",
+     "id": "clearance"
+    }
+   ],
+   "season": "match",
+   "has_description": true,
+   "first_seen": "2026-10-16",
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Moog",
@@ -27576,7 +27523,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Northrop Grumman",
@@ -27648,7 +27595,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-15",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Northrop Grumman",
@@ -27715,7 +27662,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-15",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Anduril",
@@ -27815,7 +27762,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Astroforge",
@@ -27851,7 +27798,7 @@
    "season": "unstated",
    "has_description": false,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Blue Canyon",
@@ -27887,7 +27834,7 @@
    "season": "unstated",
    "has_description": false,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Blue Origin",
@@ -27979,7 +27926,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Blue Origin",
@@ -28090,7 +28037,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "GE Aerospace",
@@ -28199,7 +28146,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Lockheed Martin",
@@ -28287,7 +28234,102 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
+  },
+  {
+   "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
+   "title": "Quality Engineering Intern (Summer 2027)",
+   "location": "US-CA-FAIRFIELD-3530 ~ 3530 Branscombe Rd ~ BRANSCOMBE",
+   "url": "https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-CA-FAIRFIELD-3530--3530-Branscombe-Rd--BRANSCOMBE/Quality-Engineering-Intern--Summer-2027-_01882706",
+   "source": "RTX (Raytheon, Pratt & Whitney, Collins) careers",
+   "posted": "2026-10-15",
+   "source_id": "RTX (Raytheon, Pratt & Whitney, Collins)",
+   "key": "wd:globalhr:01882706",
+   "score": 46,
+   "tier": "look",
+   "parts": {
+    "aerospace": 16,
+    "skills": 10,
+    "eligibility": 25,
+    "requirements": -5
+   },
+   "quals": {
+    "required": [
+     {
+      "text": "U.S. citizenship is required, as only U.S. citizens are authorized to access information under this program/contract.",
+      "status": "met",
+      "why": "You're a U.S. citizen"
+     },
+     {
+      "text": "Actively enrolled in a Mechanical, Industrial, Aerospace or Manufacturing Engineering degree or a related field through the duration of the internship.",
+      "status": "met",
+      "why": "You're Aerospace Engineering"
+     },
+     {
+      "text": "Experience with inspection tooling and quality assurance processes.",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Knowledge of root cause analysis techniques.",
+      "status": "check",
+      "why": "Coursework or background (check your classes)"
+     },
+     {
+      "text": "Experience reading and interpret engineering drawings and specifications.",
+      "status": "missing",
+      "why": "Not on your resume: Drawings / drafting"
+     },
+     {
+      "text": "Experience with Power BI for data analysis and visualization.",
+      "status": "met",
+      "why": "You have: Excel / data analysis"
+     },
+     {
+      "text": "Knowledge of Geometric Dimensioning and Tolerancing (GD&T).",
+      "status": "check",
+      "why": "Coursework: GD&T (check your classes)"
+     }
+    ],
+    "preferred": [],
+    "summary": {
+     "required_checked": 4,
+     "required_met": 3.0,
+     "required_missing": 1,
+     "to_check": 2,
+     "preferred_met": 0,
+     "preferred_total": 0
+    }
+   },
+   "matched": [
+    "Prototyping & fabrication",
+    "Excel / data analysis"
+   ],
+   "related": [],
+   "gaps": [
+    "GD&T",
+    "Drawings / drafting"
+   ],
+   "flags": [
+    {
+     "kind": "good",
+     "label": "Summer 2027"
+    },
+    {
+     "kind": "info",
+     "label": "U.S. person / ITAR",
+     "id": "citizen"
+    },
+    {
+     "kind": "info",
+     "label": "Clearance",
+     "id": "clearance"
+    }
+   ],
+   "season": "match",
+   "has_description": true,
+   "first_seen": "2026-10-16",
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -28365,7 +28407,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Blue Origin",
@@ -28445,7 +28487,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "The Aerospace Corporation",
@@ -28569,7 +28611,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Anduril",
@@ -28683,7 +28725,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Moog",
@@ -28724,7 +28766,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Northrop Grumman",
@@ -28841,7 +28883,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -28956,7 +28998,102 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
+  },
+  {
+   "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
+   "title": "Quality Engineering Intern (Summer 2027)",
+   "location": "US-CT-WINDSOR LOCKS-B1A ~ 1 Hamilton Rd ~ BLDG 1A",
+   "url": "https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-CT-WINDSOR-LOCKS-B1A--1-Hamilton-Rd--BLDG-1A/Quality-Engineering-Intern--Summer-2027-_01882452",
+   "source": "RTX (Raytheon, Pratt & Whitney, Collins) careers",
+   "posted": "2026-10-15",
+   "source_id": "RTX (Raytheon, Pratt & Whitney, Collins)",
+   "key": "wd:globalhr:01882452",
+   "score": 44,
+   "tier": "look",
+   "parts": {
+    "aerospace": 14,
+    "skills": 10,
+    "eligibility": 25,
+    "requirements": -5
+   },
+   "quals": {
+    "required": [
+     {
+      "text": "U.S. citizenship is required, as only U.S. citizens are authorized to access information under this program/contract.",
+      "status": "met",
+      "why": "You're a U.S. citizen"
+     },
+     {
+      "text": "Actively enrolled in a Mechanical, Industrial, Aerospace or Manufacturing Engineering degree or a related field through the duration of the internship.",
+      "status": "met",
+      "why": "You're Aerospace Engineering"
+     },
+     {
+      "text": "Experience with inspection tooling and quality assurance processes.",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Knowledge of root cause analysis techniques.",
+      "status": "check",
+      "why": "Coursework or background (check your classes)"
+     },
+     {
+      "text": "Experience reading and interpret engineering drawings and specifications.",
+      "status": "missing",
+      "why": "Not on your resume: Drawings / drafting"
+     },
+     {
+      "text": "Experience with Power BI for data analysis and visualization.",
+      "status": "met",
+      "why": "You have: Excel / data analysis"
+     },
+     {
+      "text": "Knowledge of Geometric Dimensioning and Tolerancing (GD&T).",
+      "status": "check",
+      "why": "Coursework: GD&T (check your classes)"
+     }
+    ],
+    "preferred": [],
+    "summary": {
+     "required_checked": 4,
+     "required_met": 3.0,
+     "required_missing": 1,
+     "to_check": 2,
+     "preferred_met": 0,
+     "preferred_total": 0
+    }
+   },
+   "matched": [
+    "Prototyping & fabrication",
+    "Excel / data analysis"
+   ],
+   "related": [],
+   "gaps": [
+    "GD&T",
+    "Drawings / drafting"
+   ],
+   "flags": [
+    {
+     "kind": "good",
+     "label": "Summer 2027"
+    },
+    {
+     "kind": "info",
+     "label": "U.S. person / ITAR",
+     "id": "citizen"
+    },
+    {
+     "kind": "info",
+     "label": "Clearance",
+     "id": "clearance"
+    }
+   ],
+   "season": "match",
+   "has_description": true,
+   "first_seen": "2026-10-16",
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -29032,7 +29169,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Blue Origin",
@@ -29148,7 +29285,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "JetZero",
@@ -29230,7 +29367,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Lockheed Martin",
@@ -29324,7 +29461,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Muon Space",
@@ -29426,7 +29563,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Northrop Grumman",
@@ -29525,7 +29662,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Northrop Grumman",
@@ -29597,7 +29734,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-15",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Northrop Grumman",
@@ -29669,7 +29806,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -29747,7 +29884,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -29828,7 +29965,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Rocket Lab",
@@ -29929,7 +30066,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "ispace",
@@ -30015,7 +30152,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-13",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Lockheed Martin",
@@ -30107,7 +30244,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -30176,7 +30313,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Boeing",
@@ -30282,7 +30419,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "JetZero",
@@ -30363,109 +30500,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
-  },
-  {
-   "company": "Lockheed Martin",
-   "title": "Engineering Intern",
-   "location": "Mount Laurel, NJ",
-   "url": "https://lockheedmartin.eightfold.ai/careers/job/996477363008",
-   "source": "Lockheed Martin careers",
-   "posted": "2026-10-14",
-   "source_id": "Lockheed Martin",
-   "key": "url:https://lockheedmartin.eightfold.ai/careers/job/996477363008",
-   "score": 41,
-   "tier": "look",
-   "parts": {
-    "aerospace": 12,
-    "skills": 4,
-    "eligibility": 25,
-    "requirements": 0
-   },
-   "quals": {
-    "required": [
-     {
-      "text": "Pursuing BS Degree in Engineering or related STEM field",
-      "status": "met",
-      "why": "You're Aerospace Engineering"
-     },
-     {
-      "text": "Strong organizational and time management abilities",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "Team-based experience",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Able to work independently and handle confidential information appropriately",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "Must be a US Citizen; this position will require a government security clearance. This position is located at a facility that requires special access.",
-      "status": "met",
-      "why": "You're a U.S. citizen"
-     }
-    ],
-    "preferred": [
-     {
-      "text": "Demonstrated analytical, applied mathematics and problem-solving skills",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "Active security clearance",
-      "status": "missing",
-      "why": "Needs a clearance you'd already have to hold"
-     },
-     {
-      "text": "Previous experience working in defense industry",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Previous experience in JIRA and/or Confluence",
-      "status": "check",
-      "why": ""
-     }
-    ],
-    "summary": {
-     "required_checked": 2,
-     "required_met": 2.0,
-     "required_missing": 0,
-     "to_check": 0,
-     "preferred_met": 0,
-     "preferred_total": 1
-    }
-   },
-   "matched": [
-    "Excel / data analysis"
-   ],
-   "related": [],
-   "gaps": [],
-   "flags": [
-    {
-     "kind": "good",
-     "label": "Summer 2027"
-    },
-    {
-     "kind": "info",
-     "label": "U.S. person / ITAR",
-     "id": "citizen"
-    },
-    {
-     "kind": "info",
-     "label": "Clearance",
-     "id": "clearance"
-    }
-   ],
-   "season": "match",
-   "has_description": true,
-   "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Lockheed Martin",
@@ -30567,17 +30602,17 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Lockheed Martin",
-   "title": "Engineering - Intern",
+   "title": "Engineering Intern",
    "location": "Mount Laurel, NJ",
-   "url": "https://lockheedmartin.eightfold.ai/careers/job/996477288622",
+   "url": "https://lockheedmartin.eightfold.ai/careers/job/996477363008",
    "source": "Lockheed Martin careers",
    "posted": "2026-10-14",
    "source_id": "Lockheed Martin",
-   "key": "url:https://lockheedmartin.eightfold.ai/careers/job/996477288622",
+   "key": "url:https://lockheedmartin.eightfold.ai/careers/job/996477363008",
    "score": 41,
    "tier": "look",
    "parts": {
@@ -30609,7 +30644,7 @@
       "why": ""
      },
      {
-      "text": "Must be a US Citizen.; This position will require a government security clearance.; This position is located at a facility that requires special access.",
+      "text": "Must be a US Citizen; this position will require a government security clearance. This position is located at a facility that requires special access.",
       "status": "met",
       "why": "You're a U.S. citizen"
      }
@@ -30669,7 +30704,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Lockheed Martin",
@@ -30761,16 +30796,85 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
-   "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
-   "title": "FPGA Engineering Intern (Summer 2027)(Onsite)",
-   "location": "US-TX-MCKINNEY-513WD ~ 2501 W University Dr ~ WING D BLDG",
-   "url": "https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-TX-MCKINNEY-513WD--2501-W-University-Dr--WING-D-BLDG/FPGA-Engineering-Intern--Summer-2027--Onsite-_01880037",
-   "source": "RTX (Raytheon, Pratt & Whitney, Collins) careers",
+   "company": "Northrop Grumman",
+   "title": "2027 Engineering Internship (Dulles VA / Baltimore MD)",
+   "location": "United States-Virginia-Dulles; United States-Maryland-Baltimore",
+   "url": "https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site/job/United-States-Virginia-Dulles/XMLNAME-2027-Engineering-Internship--Dulles-VA---Baltimore-MD-_R10256270",
+   "source": "Northrop Grumman careers",
+   "posted": "2026-10-15",
+   "source_id": "Northrop Grumman",
+   "key": "wd:ngc:r10256270",
+   "score": 41,
+   "tier": "look",
+   "parts": {
+    "aerospace": 16,
+    "skills": 0,
+    "eligibility": 25,
+    "requirements": 0
+   },
+   "quals": {
+    "required": [],
+    "preferred": [
+     {
+      "text": "Have an overall cumulative GPA of 3.7 out of 4.0 or higher",
+      "status": "check",
+      "why": "Needs GPA 3.7+"
+     },
+     {
+      "text": "Previous internship/co-op experience, leadership & teamwork capabilities, interpersonal communication skills, and activities (professional/community/extracurric",
+      "status": "soft",
+      "why": ""
+     }
+    ],
+    "summary": {
+     "required_checked": 0,
+     "required_met": 0.0,
+     "required_missing": 0,
+     "to_check": 1,
+     "preferred_met": 0,
+     "preferred_total": 0
+    }
+   },
+   "matched": [],
+   "related": [],
+   "gaps": [],
+   "flags": [
+    {
+     "kind": "good",
+     "label": "Summer 2027"
+    },
+    {
+     "kind": "info",
+     "label": "Min GPA 3.7"
+    },
+    {
+     "kind": "info",
+     "label": "U.S. person / ITAR",
+     "id": "citizen"
+    },
+    {
+     "kind": "info",
+     "label": "Clearance",
+     "id": "clearance"
+    }
+   ],
+   "season": "match",
+   "has_description": true,
+   "first_seen": "2026-10-16",
+   "last_seen": "2026-10-16"
+  },
+  {
+   "company": "RTX",
+   "title": "FPGA Engineer Intern",
+   "location": "McKinney, TX",
+   "url": "https://globalhr.wd5.myworkdayjobs.com/rec_rtx_ext_gateway/job/US-TX-MCKINNEY-513WD--2501-W-University-Dr--WING-D-BLDG/FPGA-Engineering-Intern--Summer-2027--Onsite-_01880037",
+   "source": "Simplify Summer 2027 list",
    "posted": "2026-10-06",
-   "source_id": "RTX (Raytheon, Pratt & Whitney, Collins)",
+   "sponsorship": "Other",
+   "source_id": "Simplify Summer 2027 list",
    "key": "wd:globalhr:01880037",
    "score": 41,
    "tier": "look",
@@ -30852,7 +30956,7 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -30943,7 +31047,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-14",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   },
   {
    "company": "Lockheed Martin",
@@ -31041,7 +31145,7 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-15"
+   "last_seen": "2026-10-16"
   }
  ]
 }
