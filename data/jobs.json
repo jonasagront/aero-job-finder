@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-17T12:44:17+00:00",
+ "updated": "2026-10-17T18:39:32+00:00",
  "jobs": [
   {
    "company": "Anduril",
@@ -13054,6 +13054,80 @@
    "company": "Lockheed Martin",
    "title": "Systems Integration and Test Engineer Intern",
    "location": "Chelmsford, MA",
+   "url": "https://lockheedmartin.eightfold.ai/careers/job/996476689035",
+   "source": "Lockheed Martin careers",
+   "posted": "2026-10-08",
+   "source_id": "Lockheed Martin",
+   "key": "url:https://lockheedmartin.eightfold.ai/careers/job/996476689035",
+   "score": 65,
+   "tier": "good",
+   "parts": {
+    "aerospace": 36,
+    "skills": 7,
+    "eligibility": 22,
+    "requirements": 0
+   },
+   "quals": {
+    "required": [
+     {
+      "text": "Currently enrolled in an accredited Bachelor or Master program pursuing a degree in Electrical Engineering, Computer Science, Aerospace Engineering or related d",
+      "status": "met",
+      "why": "You're Aerospace Engineering"
+     },
+     {
+      "text": "Ability to obtain and maintain security clearance; interim required to start.",
+      "status": "met",
+      "why": "You're a U.S. citizen"
+     }
+    ],
+    "preferred": [
+     {
+      "text": "Experience and/or coursework in Electrical Engineering, Computer Science or Aerospace Engineering.",
+      "status": "check",
+      "why": "Coursework or background (check your classes)"
+     },
+     {
+      "text": "Willing to work in a hands-on environment performing assembly, test, and measurement in addition to documentation.",
+      "status": "met",
+      "why": "You have: Prototyping & fabrication"
+     }
+    ],
+    "summary": {
+     "required_checked": 2,
+     "required_met": 2.0,
+     "required_missing": 0,
+     "to_check": 1,
+     "preferred_met": 1,
+     "preferred_total": 1
+    }
+   },
+   "matched": [
+    "Prototyping & fabrication"
+   ],
+   "related": [],
+   "gaps": [
+    "Data acquisition / test"
+   ],
+   "flags": [
+    {
+     "kind": "info",
+     "label": "Season not stated"
+    },
+    {
+     "kind": "info",
+     "label": "Clearance",
+     "id": "clearance"
+    }
+   ],
+   "season": "unstated",
+   "has_description": true,
+   "first_seen": "2026-10-17",
+   "last_seen": "2026-10-17"
+  },
+  {
+   "company": "Lockheed Martin",
+   "title": "Systems Integration and Test Engineer Intern",
+   "location": "Chelmsford, MA",
    "url": "https://lockheedmartin.eightfold.ai/careers/job/996476688735",
    "source": "Lockheed Martin careers",
    "posted": "2026-10-08",
@@ -13196,80 +13270,6 @@
    "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-17"
-  },
-  {
-   "company": "Lockheed Martin",
-   "title": "Systems Integration and Test Engineer Intern",
-   "location": "Chelmsford, MA",
-   "url": "https://lockheedmartin.eightfold.ai/careers/job/996476689035",
-   "source": "Lockheed Martin careers",
-   "posted": "2026-10-08",
-   "source_id": "Lockheed Martin",
-   "key": "url:https://lockheedmartin.eightfold.ai/careers/job/996476689035",
-   "score": 65,
-   "tier": "good",
-   "parts": {
-    "aerospace": 36,
-    "skills": 7,
-    "eligibility": 22,
-    "requirements": 0
-   },
-   "quals": {
-    "required": [
-     {
-      "text": "Currently enrolled in an accredited Bachelor or Master program pursuing a degree in Electrical Engineering, Computer Science, Aerospace Engineering or related d",
-      "status": "met",
-      "why": "You're Aerospace Engineering"
-     },
-     {
-      "text": "Ability to obtain and maintain security clearance; interim required to start.",
-      "status": "met",
-      "why": "You're a U.S. citizen"
-     }
-    ],
-    "preferred": [
-     {
-      "text": "Experience and/or coursework in Electrical Engineering, Computer Science or Aerospace Engineering.",
-      "status": "check",
-      "why": "Coursework or background (check your classes)"
-     },
-     {
-      "text": "Willing to work in a hands-on environment performing assembly, test, and measurement in addition to documentation.",
-      "status": "met",
-      "why": "You have: Prototyping & fabrication"
-     }
-    ],
-    "summary": {
-     "required_checked": 2,
-     "required_met": 2.0,
-     "required_missing": 0,
-     "to_check": 1,
-     "preferred_met": 1,
-     "preferred_total": 1
-    }
-   },
-   "matched": [
-    "Prototyping & fabrication"
-   ],
-   "related": [],
-   "gaps": [
-    "Data acquisition / test"
-   ],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "Season not stated"
-    },
-    {
-     "kind": "info",
-     "label": "Clearance",
-     "id": "clearance"
-    }
-   ],
-   "season": "unstated",
-   "has_description": true,
-   "first_seen": "2026-10-17",
    "last_seen": "2026-10-17"
   },
   {
@@ -16026,6 +16026,176 @@
   },
   {
    "company": "Lockheed Martin",
+   "title": "Test Engineering Intern",
+   "location": "Owego, NY",
+   "url": "https://lockheedmartin.eightfold.ai/careers/job/996477364317",
+   "source": "Lockheed Martin careers",
+   "posted": "2026-10-15",
+   "source_id": "Lockheed Martin",
+   "key": "url:https://lockheedmartin.eightfold.ai/careers/job/996477364317",
+   "score": 60,
+   "tier": "good",
+   "parts": {
+    "aerospace": 22,
+    "skills": 16,
+    "eligibility": 22,
+    "requirements": 0
+   },
+   "quals": {
+    "required": [
+     {
+      "text": "Currently enrolled in Electrical Engineering, Electrical Engineering Technology, or a closely related discipline; pursuing a Bachelor’s degree.",
+      "status": "partial",
+      "why": "Other majors listed; Aerospace Engineering may count as related"
+     },
+     {
+      "text": "Strong academic foundation in analog/digital circuit design, signal processing, and systems communication.",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Hands‑on laboratory experience: soldering, using test equipment, and prototype building.",
+      "status": "met",
+      "why": "You have: Prototyping & fabrication"
+     },
+     {
+      "text": "Must be a US Citizen.; This position is located at a facility that requires special access",
+      "status": "met",
+      "why": "You're a U.S. citizen"
+     }
+    ],
+    "preferred": [
+     {
+      "text": "Familiarity with microcontroller development (Arduino, STM32, PIC, etc.)",
+      "status": "met",
+      "why": "You have: Arduino / microcontrollers"
+     },
+     {
+      "text": "Familiarity with RF communication concepts and protocols",
+      "status": "soft",
+      "why": ""
+     }
+    ],
+    "summary": {
+     "required_checked": 3,
+     "required_met": 2.5,
+     "required_missing": 0,
+     "to_check": 0,
+     "preferred_met": 1,
+     "preferred_total": 1
+    }
+   },
+   "matched": [
+    "Prototyping & fabrication",
+    "Arduino / microcontrollers"
+   ],
+   "related": [],
+   "gaps": [
+    "Data acquisition / test"
+   ],
+   "flags": [
+    {
+     "kind": "info",
+     "label": "Season not stated"
+    },
+    {
+     "kind": "info",
+     "label": "U.S. person / ITAR",
+     "id": "citizen"
+    }
+   ],
+   "season": "unstated",
+   "has_description": true,
+   "first_seen": "2026-10-16",
+   "last_seen": "2026-10-17"
+  },
+  {
+   "company": "Lockheed Martin",
+   "title": "Test Engineering Intern",
+   "location": "Owego, NY",
+   "url": "https://lockheedmartin.eightfold.ai/careers/job/996477364315",
+   "source": "Lockheed Martin careers",
+   "posted": "2026-10-15",
+   "source_id": "Lockheed Martin",
+   "key": "url:https://lockheedmartin.eightfold.ai/careers/job/996477364315",
+   "score": 60,
+   "tier": "good",
+   "parts": {
+    "aerospace": 22,
+    "skills": 16,
+    "eligibility": 22,
+    "requirements": 0
+   },
+   "quals": {
+    "required": [
+     {
+      "text": "Currently enrolled in Electrical Engineering, Electrical Engineering Technology, or a closely related discipline; pursuing a Bachelor’s degree.",
+      "status": "partial",
+      "why": "Other majors listed; Aerospace Engineering may count as related"
+     },
+     {
+      "text": "Strong academic foundation in analog/digital circuit design, signal processing, and systems communication.",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Hands‑on laboratory experience: soldering, using test equipment, and prototype building.",
+      "status": "met",
+      "why": "You have: Prototyping & fabrication"
+     },
+     {
+      "text": "Must be a US Citizen.; This position is located at a facility that requires special access",
+      "status": "met",
+      "why": "You're a U.S. citizen"
+     }
+    ],
+    "preferred": [
+     {
+      "text": "Familiarity with microcontroller development (Arduino, STM32, PIC, etc.)",
+      "status": "met",
+      "why": "You have: Arduino / microcontrollers"
+     },
+     {
+      "text": "Familiarity with RF communication concepts and protocols",
+      "status": "soft",
+      "why": ""
+     }
+    ],
+    "summary": {
+     "required_checked": 3,
+     "required_met": 2.5,
+     "required_missing": 0,
+     "to_check": 0,
+     "preferred_met": 1,
+     "preferred_total": 1
+    }
+   },
+   "matched": [
+    "Prototyping & fabrication",
+    "Arduino / microcontrollers"
+   ],
+   "related": [],
+   "gaps": [
+    "Data acquisition / test"
+   ],
+   "flags": [
+    {
+     "kind": "info",
+     "label": "Season not stated"
+    },
+    {
+     "kind": "info",
+     "label": "U.S. person / ITAR",
+     "id": "citizen"
+    }
+   ],
+   "season": "unstated",
+   "has_description": true,
+   "first_seen": "2026-10-16",
+   "last_seen": "2026-10-17"
+  },
+  {
+   "company": "Lockheed Martin",
    "title": "Systems Engineer - Intern",
    "location": "Fort Worth, TX",
    "url": "https://lockheedmartin.eightfold.ai/careers/job/996477286684",
@@ -16124,176 +16294,6 @@
     }
    ],
    "season": "match",
-   "has_description": true,
-   "first_seen": "2026-10-16",
-   "last_seen": "2026-10-17"
-  },
-  {
-   "company": "Lockheed Martin",
-   "title": "Test Engineering Intern",
-   "location": "Owego, NY",
-   "url": "https://lockheedmartin.eightfold.ai/careers/job/996477364315",
-   "source": "Lockheed Martin careers",
-   "posted": "2026-10-15",
-   "source_id": "Lockheed Martin",
-   "key": "url:https://lockheedmartin.eightfold.ai/careers/job/996477364315",
-   "score": 60,
-   "tier": "good",
-   "parts": {
-    "aerospace": 22,
-    "skills": 16,
-    "eligibility": 22,
-    "requirements": 0
-   },
-   "quals": {
-    "required": [
-     {
-      "text": "Currently enrolled in Electrical Engineering, Electrical Engineering Technology, or a closely related discipline; pursuing a Bachelor’s degree.",
-      "status": "partial",
-      "why": "Other majors listed; Aerospace Engineering may count as related"
-     },
-     {
-      "text": "Strong academic foundation in analog/digital circuit design, signal processing, and systems communication.",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "Hands‑on laboratory experience: soldering, using test equipment, and prototype building.",
-      "status": "met",
-      "why": "You have: Prototyping & fabrication"
-     },
-     {
-      "text": "Must be a US Citizen.; This position is located at a facility that requires special access",
-      "status": "met",
-      "why": "You're a U.S. citizen"
-     }
-    ],
-    "preferred": [
-     {
-      "text": "Familiarity with microcontroller development (Arduino, STM32, PIC, etc.)",
-      "status": "met",
-      "why": "You have: Arduino / microcontrollers"
-     },
-     {
-      "text": "Familiarity with RF communication concepts and protocols",
-      "status": "soft",
-      "why": ""
-     }
-    ],
-    "summary": {
-     "required_checked": 3,
-     "required_met": 2.5,
-     "required_missing": 0,
-     "to_check": 0,
-     "preferred_met": 1,
-     "preferred_total": 1
-    }
-   },
-   "matched": [
-    "Prototyping & fabrication",
-    "Arduino / microcontrollers"
-   ],
-   "related": [],
-   "gaps": [
-    "Data acquisition / test"
-   ],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "Season not stated"
-    },
-    {
-     "kind": "info",
-     "label": "U.S. person / ITAR",
-     "id": "citizen"
-    }
-   ],
-   "season": "unstated",
-   "has_description": true,
-   "first_seen": "2026-10-16",
-   "last_seen": "2026-10-17"
-  },
-  {
-   "company": "Lockheed Martin",
-   "title": "Test Engineering Intern",
-   "location": "Owego, NY",
-   "url": "https://lockheedmartin.eightfold.ai/careers/job/996477364317",
-   "source": "Lockheed Martin careers",
-   "posted": "2026-10-15",
-   "source_id": "Lockheed Martin",
-   "key": "url:https://lockheedmartin.eightfold.ai/careers/job/996477364317",
-   "score": 60,
-   "tier": "good",
-   "parts": {
-    "aerospace": 22,
-    "skills": 16,
-    "eligibility": 22,
-    "requirements": 0
-   },
-   "quals": {
-    "required": [
-     {
-      "text": "Currently enrolled in Electrical Engineering, Electrical Engineering Technology, or a closely related discipline; pursuing a Bachelor’s degree.",
-      "status": "partial",
-      "why": "Other majors listed; Aerospace Engineering may count as related"
-     },
-     {
-      "text": "Strong academic foundation in analog/digital circuit design, signal processing, and systems communication.",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "Hands‑on laboratory experience: soldering, using test equipment, and prototype building.",
-      "status": "met",
-      "why": "You have: Prototyping & fabrication"
-     },
-     {
-      "text": "Must be a US Citizen.; This position is located at a facility that requires special access",
-      "status": "met",
-      "why": "You're a U.S. citizen"
-     }
-    ],
-    "preferred": [
-     {
-      "text": "Familiarity with microcontroller development (Arduino, STM32, PIC, etc.)",
-      "status": "met",
-      "why": "You have: Arduino / microcontrollers"
-     },
-     {
-      "text": "Familiarity with RF communication concepts and protocols",
-      "status": "soft",
-      "why": ""
-     }
-    ],
-    "summary": {
-     "required_checked": 3,
-     "required_met": 2.5,
-     "required_missing": 0,
-     "to_check": 0,
-     "preferred_met": 1,
-     "preferred_total": 1
-    }
-   },
-   "matched": [
-    "Prototyping & fabrication",
-    "Arduino / microcontrollers"
-   ],
-   "related": [],
-   "gaps": [
-    "Data acquisition / test"
-   ],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "Season not stated"
-    },
-    {
-     "kind": "info",
-     "label": "U.S. person / ITAR",
-     "id": "citizen"
-    }
-   ],
-   "season": "unstated",
    "has_description": true,
    "first_seen": "2026-10-16",
    "last_seen": "2026-10-17"
@@ -28006,108 +28006,6 @@
   },
   {
    "company": "Lockheed Martin",
-   "title": "Engineering Intern",
-   "location": "Mount Laurel, NJ",
-   "url": "https://lockheedmartin.eightfold.ai/careers/job/996477363008",
-   "source": "Lockheed Martin careers",
-   "posted": "2026-10-14",
-   "source_id": "Lockheed Martin",
-   "key": "url:https://lockheedmartin.eightfold.ai/careers/job/996477363008",
-   "score": 41,
-   "tier": "look",
-   "parts": {
-    "aerospace": 12,
-    "skills": 4,
-    "eligibility": 25,
-    "requirements": 0
-   },
-   "quals": {
-    "required": [
-     {
-      "text": "Pursuing BS Degree in Engineering or related STEM field",
-      "status": "met",
-      "why": "You're Aerospace Engineering"
-     },
-     {
-      "text": "Strong organizational and time management abilities",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "Team-based experience",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Able to work independently and handle confidential information appropriately",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "Must be a US Citizen; this position will require a government security clearance. This position is located at a facility that requires special access.",
-      "status": "met",
-      "why": "You're a U.S. citizen"
-     }
-    ],
-    "preferred": [
-     {
-      "text": "Demonstrated analytical, applied mathematics and problem-solving skills",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "Active security clearance",
-      "status": "missing",
-      "why": "Needs a clearance you'd already have to hold"
-     },
-     {
-      "text": "Previous experience working in defense industry",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Previous experience in JIRA and/or Confluence",
-      "status": "check",
-      "why": ""
-     }
-    ],
-    "summary": {
-     "required_checked": 2,
-     "required_met": 2.0,
-     "required_missing": 0,
-     "to_check": 0,
-     "preferred_met": 0,
-     "preferred_total": 1
-    }
-   },
-   "matched": [
-    "Excel / data analysis"
-   ],
-   "related": [],
-   "gaps": [],
-   "flags": [
-    {
-     "kind": "good",
-     "label": "Summer 2027"
-    },
-    {
-     "kind": "info",
-     "label": "U.S. person / ITAR",
-     "id": "citizen"
-    },
-    {
-     "kind": "info",
-     "label": "Clearance",
-     "id": "clearance"
-    }
-   ],
-   "season": "match",
-   "has_description": true,
-   "first_seen": "2026-10-14",
-   "last_seen": "2026-10-17"
-  },
-  {
-   "company": "Lockheed Martin",
    "title": "Engineering - Intern",
    "location": "Mount Laurel, NJ",
    "url": "https://lockheedmartin.eightfold.ai/careers/job/996477288560",
@@ -28308,6 +28206,108 @@
    "season": "match",
    "has_description": true,
    "first_seen": "2026-10-16",
+   "last_seen": "2026-10-17"
+  },
+  {
+   "company": "Lockheed Martin",
+   "title": "Engineering Intern",
+   "location": "Mount Laurel, NJ",
+   "url": "https://lockheedmartin.eightfold.ai/careers/job/996477363008",
+   "source": "Lockheed Martin careers",
+   "posted": "2026-10-14",
+   "source_id": "Lockheed Martin",
+   "key": "url:https://lockheedmartin.eightfold.ai/careers/job/996477363008",
+   "score": 41,
+   "tier": "look",
+   "parts": {
+    "aerospace": 12,
+    "skills": 4,
+    "eligibility": 25,
+    "requirements": 0
+   },
+   "quals": {
+    "required": [
+     {
+      "text": "Pursuing BS Degree in Engineering or related STEM field",
+      "status": "met",
+      "why": "You're Aerospace Engineering"
+     },
+     {
+      "text": "Strong organizational and time management abilities",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Team-based experience",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Able to work independently and handle confidential information appropriately",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Must be a US Citizen; this position will require a government security clearance. This position is located at a facility that requires special access.",
+      "status": "met",
+      "why": "You're a U.S. citizen"
+     }
+    ],
+    "preferred": [
+     {
+      "text": "Demonstrated analytical, applied mathematics and problem-solving skills",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Active security clearance",
+      "status": "missing",
+      "why": "Needs a clearance you'd already have to hold"
+     },
+     {
+      "text": "Previous experience working in defense industry",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Previous experience in JIRA and/or Confluence",
+      "status": "check",
+      "why": ""
+     }
+    ],
+    "summary": {
+     "required_checked": 2,
+     "required_met": 2.0,
+     "required_missing": 0,
+     "to_check": 0,
+     "preferred_met": 0,
+     "preferred_total": 1
+    }
+   },
+   "matched": [
+    "Excel / data analysis"
+   ],
+   "related": [],
+   "gaps": [],
+   "flags": [
+    {
+     "kind": "good",
+     "label": "Summer 2027"
+    },
+    {
+     "kind": "info",
+     "label": "U.S. person / ITAR",
+     "id": "citizen"
+    },
+    {
+     "kind": "info",
+     "label": "Clearance",
+     "id": "clearance"
+    }
+   ],
+   "season": "match",
+   "has_description": true,
+   "first_seen": "2026-10-14",
    "last_seen": "2026-10-17"
   },
   {
