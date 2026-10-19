@@ -9,7 +9,7 @@ my resume, and publishes the results to a page I can open on my phone.
 ## Today's top matches
 
 <!-- JOBS:START -->
-**309 matches** as of Oct 18, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
+**300 matches** as of Oct 19, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
 
 | Fit | Company | Role | Required quals met | Location | Posted | Apply |
 |---|---|---|---|---|---|---|
@@ -27,17 +27,17 @@ my resume, and publishes the results to a page I can open on my phone.
 | 94 | The Aerospace Corporation | 2027 Space Vehicle and Ground Systems Undergraduate Intern | 4 of 4 | El Segundo, CA; Chantilly, VA | 2026-10-07 | [Apply](https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/XMLNAME-2027-Space-Vehicle-and-Ground-Systems-Undergraduate-Intern_R016691) |
 | 93 | AeroVironment | Mechanical Engineering Intern | 4 of 4 | Petaluma, CA | 2026-10-07 | [Apply](https://avav.wd1.myworkdayjobs.com/AVAV/job/Petaluma-CA/Mechanical-Engineering-Intern_9038) |
 | 93 | Lockheed Martin | Mechanical Design Engineering Intern | 3 of 3 | Grand Prairie, TX | 2026-10-15 | [Apply](https://lockheedmartin.eightfold.ai/careers/job/996477394326) |
-| 93 | Lockheed Martin | Mechanical Design Engineering Intern 🆕 | 3 of 3 | Orlando, FL | 2026-10-18 | [Apply](https://lockheedmartin.eightfold.ai/careers/job/996477394527) |
+| 93 | Lockheed Martin | Mechanical Design Engineering Intern | 3 of 3 | Orlando, FL | 2026-10-18 | [Apply](https://lockheedmartin.eightfold.ai/careers/job/996477394527) |
 | 93 | Muon Space | Spacecraft Test Engineering Intern (Summer 2027) | 2 of 2 | San Jose, CA | 2026-10-13 | [Apply](https://job-boards.greenhouse.io/muonspace/jobs/5256288007) |
 | 93 | Varda Space | Aerodynamics & Analysis Engineering Internship - Summer 2027 | 3 of 4 | El Segundo, California, United States | 2026-10-01 | [Apply](https://job-boards.greenhouse.io/vardaspace/jobs/8010632003) |
 | 92 | AeroVironment | Summer 2027 Aeromechanical Engineering Intern | 3 of 3 | Simi Valley, CA; Huntsville, AL; Pottsto | 2026-10-13 | [Apply](https://avav.wd1.myworkdayjobs.com/AVAV/job/Simi-Valley-CA/Summer-2027-Aeromechanical-Engineering-Intern_8387) |
 | 92 | Voyager Technologies | 2027 Mechanical Engineering Intern | 1 of 1 | Long Beach  | 2026-09-28 | [Apply](https://job-boards.greenhouse.io/voyagertechnologiesinc/jobs/4423308009) |
 | 91 | Astranis | Thermal Intern (Summer 2027) | 3 of 3 | San Francisco | 2026-09-24 | [Apply](https://job-boards.greenhouse.io/astranis/jobs/4704820006) |
 | 91 | Astranis | Assembly, Integration, and Test Intern (Summer 2027) | 2 of 2 | San Francisco | 2026-09-21 | [Apply](https://job-boards.greenhouse.io/astranis/jobs/4704761006) |
-| 91 | Astranis | Propulsion Manufacturing Intern (Summer 2027) | 3 of 3 | San Francisco | 2026-09-18 | [Apply](https://job-boards.greenhouse.io/astranis/jobs/4705648006) |
 | 90 | Blue Origin | Summer 2027 Test Engineering Internship - Undergraduate | 3 of 3 | Greater Seattle Area; Van Horn, TX; Spac | 2026-10-13 | [Apply](https://blueorigin.wd5.myworkdayjobs.com/BlueOrigin/job/Greater-Seattle-Area/Summer-2027-Test-Engineering-Internship---Undergraduate_R71433) |
 | 90 | Muon Space | Environmental Test Engineering Intern (Summer 2027) | 3 of 3 | San Jose, CA | 2026-10-02 | [Apply](https://job-boards.greenhouse.io/muonspace/jobs/5256286007) |
 | 90 | Varda Space | Manufacturing Engineering Internship - Summer 2027 | 2 of 2 | El Segundo, California, United States | 2026-10-01 | [Apply](https://job-boards.greenhouse.io/vardaspace/jobs/8010166003) |
+| 90 | Varda Space | Propulsion Engineering Internship - Summer 2027 | 4 of 6 | El Segundo, California, United States | 2026-10-01 | [Apply](https://job-boards.greenhouse.io/vardaspace/jobs/8010169003) |
 <!-- JOBS:END -->
 
 ---
