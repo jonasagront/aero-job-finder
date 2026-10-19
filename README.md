@@ -9,7 +9,7 @@ my resume, and publishes the results to a page I can open on my phone.
 ## Today's top matches
 
 <!-- JOBS:START -->
-**289 matches** as of Oct 19, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
+**300 matches** as of Oct 19, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
 
 | Fit | Company | Role | Required quals met | Location | Posted | Apply |
 |---|---|---|---|---|---|---|
