@@ -9,7 +9,7 @@ my resume, and publishes the results to a page I can open on my phone.
 ## Today's top matches
 
 <!-- JOBS:START -->
-**319 matches** as of Oct 22, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
+**311 matches** as of Oct 22, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
 
 | Fit | Company | Role | Required quals met | Location | Posted | Apply |
 |---|---|---|---|---|---|---|
@@ -24,8 +24,8 @@ my resume, and publishes the results to a page I can open on my phone.
 | 95 | RTX (Raytheon, Pratt & Whitney, Collins) | Turbine Aero-Thermal Systems Intern (Summer 2027) (Onsite) | 5 of 6 | US-CT-EAST HARTFORD-ETC ~ 400 Main St ~  | 2026-10-20 | [Apply](https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-CT-EAST-HARTFORD-ETC--400-Main-St--BLDG-ETC/Turbine-Aero-Thermal-Systems-Intern--Summer-2027---Onsite-_01882307) |
 | 95 | Varda Space | Guidance, Navigation & Controls (GNC) Internship - Summer 2027 | 2 of 3 | El Segundo, California, United States | 2026-10-01 | [Apply](https://job-boards.greenhouse.io/vardaspace/jobs/7865601003) |
 | 93 | AeroVironment | Mechanical Engineering Intern | 4 of 4 | Petaluma, CA | 2026-10-07 | [Apply](https://avav.wd1.myworkdayjobs.com/AVAV/job/Petaluma-CA/Mechanical-Engineering-Intern_9038) |
-| 93 | Lockheed Martin | Mechanical Design Engineering Intern 🆕 | 3 of 3 | Orlando, FL | 2026-10-18 | [Apply](https://lockheedmartin.eightfold.ai/careers/job/996477394527) |
 | 93 | Lockheed Martin | Mechanical Design Engineering Intern 🆕 | 3 of 3 | Grand Prairie, TX | 2026-10-15 | [Apply](https://lockheedmartin.eightfold.ai/careers/job/996477394326) |
+| 93 | Lockheed Martin | Mechanical Design Engineering Intern 🆕 | 3 of 3 | Orlando, FL | 2026-10-18 | [Apply](https://lockheedmartin.eightfold.ai/careers/job/996477394527) |
 | 93 | Muon Space | Spacecraft Test Engineering Intern (Summer 2027) | 2 of 2 | San Jose, CA | 2026-10-13 | [Apply](https://job-boards.greenhouse.io/muonspace/jobs/5256288007) |
 | 93 | Varda Space | Aerodynamics & Analysis Engineering Internship - Summer 2027 | 3 of 4 | El Segundo, California, United States | 2026-10-01 | [Apply](https://job-boards.greenhouse.io/vardaspace/jobs/8010632003) |
 | 92 | AeroVironment | Summer 2027 Aeromechanical Engineering Intern | 3 of 3 | Simi Valley, CA; Huntsville, AL; Pottsto | 2026-10-13 | [Apply](https://avav.wd1.myworkdayjobs.com/AVAV/job/Simi-Valley-CA/Summer-2027-Aeromechanical-Engineering-Intern_8387) |
