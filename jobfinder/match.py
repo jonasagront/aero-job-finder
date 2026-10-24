@@ -97,6 +97,7 @@ class Matcher:
         self.min_score = int(se.get("min_score", 40))
         self.max_age = int(se.get("max_age_days", 150))
         self.us_only = bool(se.get("us_only", False))
+        self.aero_only = bool(se.get("aerospace_companies_only", False))
         # Years of school finished by the internship summer (2029 grad -> 2 -> rising junior)
         self.completed_years = max(0, 4 - (self.grad_year - self.year))
 
@@ -118,7 +119,13 @@ class Matcher:
             })
         self.gaps = [{"name": g["name"], "aliases": compile_terms(g.get("aliases", []))}
                      for g in profile.get("gap", [])]
-        self.aero_companies = [n.lower() for n in sources_cfg.get("aerospace_companies", {}).get("names", [])]
+        names = [n.lower() for n in sources_cfg.get("aerospace_companies", {}).get("names", [])]
+        # "=name" must match the whole company name (so "=vast" skips "VAST Data")
+        self.aero_exact = {n[1:] for n in names if n.startswith("=")}
+        self.aero_companies = [n for n in names if not n.startswith("=")]
+        # Every company whose own career board we scan counts as aerospace
+        for kind in ("greenhouse", "lever", "ashby", "workday", "eightfold", "clearcompany"):
+            self.aero_exact.update(c["name"].lower() for c in sources_cfg.get(kind, []))
         self.qc = None  # set by run.py to a quals.QualChecker
 
     # ---------------------------------------------------------- quick filter
@@ -135,8 +142,15 @@ class Matcher:
         return True, ""
 
     def is_aero_company(self, company: str) -> bool:
-        c = company.lower()
-        return any(n in c for n in self.aero_companies)
+        c = company.lower().strip()
+        return c in self.aero_exact or any(n in c for n in self.aero_companies)
+
+    def company_ok(self, job: dict) -> bool:
+        """With aerospace_companies_only on, keep only listed aerospace companies
+        (and federal jobs, which come from agencies like NASA and the Air Force)."""
+        if not self.aero_only or job.get("source") == "USAJOBS":
+            return True
+        return self.is_aero_company(job.get("company", ""))
 
     # ---------------------------------------------------------- season
 
@@ -220,6 +234,8 @@ class Matcher:
         ok, why = self.title_ok(title)
         if not ok:
             return None, why
+        if not self.company_ok(job):
+            return None, "not an aerospace company"
 
         # Too old?
         if job.get("posted"):

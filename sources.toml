@@ -39,6 +39,8 @@ greenhouse = [
   { name = "GITAI", board = "gitai" },
   { name = "AST SpaceMobile", board = "astspacemobile" },
   { name = "HawkEye 360", board = "hawkeye360" },
+  { name = "Inversion Space", board = "inversionspace" },
+  { name = "Regent", board = "regent" },
   # Removed Oct 2026 (board gone): Axiom Space -> now on Workday below,
   # Boom Supersonic -> moved to Rippling (not supported).
 ]
@@ -49,6 +51,9 @@ lever = [
   { name = "CesiumAstro", board = "CesiumAstro" },
   { name = "ispace", board = "ispace-inc" },
   { name = "Layup Parts", board = "layup" },
+  { name = "Pyka", board = "pyka" },
+  { name = "Merlin Labs", board = "merlinlabs" },
+  { name = "Loft Orbital", board = "loftorbital" },
 ]
 
 ashby = [
@@ -60,6 +65,9 @@ ashby = [
   { name = "Reflect Orbital", board = "reflect-orbital" },
   { name = "The Exploration Company", board = "the-exploration-company" },
   { name = "WindBorne Systems", board = "windborne-systems" },
+  { name = "Skydio", board = "skydio" },
+  { name = "Xona Space Systems", board = "xona-space" },
+  { name = "Reliable Robotics", board = "reliable-robotics" },
 ]
 
 # Workday career sites (most large aerospace/defense companies).
@@ -81,6 +89,7 @@ workday = [
   { name = "Moog", host = "moog.wd5.myworkdayjobs.com", site = "moog_external_career_site" },
   { name = "NASA Jet Propulsion Laboratory", host = "citjpl.wd5.myworkdayjobs.com", site = "Jobs" },
   { name = "The Aerospace Corporation", host = "aero.wd5.myworkdayjobs.com", site = "external" },
+  { name = "Woodward", host = "woodward.wd5.myworkdayjobs.com", site = "Woodward" },
 ]
 
 # Eightfold career sites: host is the *.eightfold.ai address, domain is the
@@ -124,12 +133,16 @@ keywords = ["aerospace engineering student", "engineering student trainee", "aer
 
 # --- Companies treated as aerospace, even when a posting is vague -------
 # Matched against company names (lowercase, partial match is fine).
+# Start a name with = to match the whole company name only ("=vast" keeps
+# Vast but not VAST Data). With aerospace_companies_only = true in
+# profile.toml, postings from companies not listed here are dropped.
+# Companies with a career board above are always included.
 [aerospace_companies]
 names = [
   "spacex", "blue origin", "northrop", "lockheed", "boeing", "rtx", "raytheon",
-  "pratt", "collins aerospace", "l3harris", "ge aerospace", "rocket lab",
+  "pratt & whitney", "pratt and whitney", "collins aerospace", "l3harris", "ge aerospace", "rocket lab",
   "relativity", "firefly", "sierra space", "anduril", "general atomics",
-  "general dynamics", "textron", "bell flight", "sikorsky", "gulfstream",
+  "general dynamics mission", "general dynamics ordnance", "textron", "bell flight", "bell textron", "sikorsky", "gulfstream",
   "honeywell aerospace", "axiom", "astranis", "joby", "archer aviation",
   "boom supersonic", "hermeus", "varda", "stoke space", "impulse space",
   "ursa major", "aerojet", "nasa", "jet propulsion", "virgin galactic",
@@ -144,4 +157,11 @@ names = [
   "layup parts", "windborne", "ast spacemobile", "hawkeye 360", "star catcher",
   "cowboy space", "gravitics", "katalyst space", "starpath", "array labs", "lynk global",
   "e-space", "blue canyon", "viasat", "iridium", "lunar outpost", "astroforge", "offworld",
+  # Added Oct 2026: reputable aerospace employers that post on the big lists
+  "=vast", "=apex", "=astra", "inversion", "xona space", "skydio", "stratolaunch", "bluehalo",
+  "leolabs", "astroscale", "zin technologies", "loft orbital", "merlin labs", "reliable robotics",
+  "beta technologies", "wisk aero", "=wisk", "venus aerospace", "starfish space", "turion space",
+  "woodward", "rolls-royce", "parker aerospace", "safran", "leonardo drs",
+  "applied physics lab", "lincoln laboratory", "united launch alliance", "=ula",
+  "eve air mobility", "supernal", "natilus", "pyka", "=regent", "regent craft",
 ]

@@ -58,7 +58,8 @@ def main() -> int:
     candidates: dict[str, dict] = {}
     for j in raw:
         ok, _ = matcher.title_ok(j.get("title", ""))
-        if not ok or not j.get("url"):
+        # Skipping non-aerospace companies here also saves description lookups
+        if not ok or not j.get("url") or not matcher.company_ok(j):
             continue
         j["key"] = job_key(j["url"], j.get("company", ""), j.get("title", ""))
         prev = candidates.get(j["key"])

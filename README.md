@@ -105,8 +105,11 @@ they don't change the score.
 
 - **`profile.toml`**: my skills, the aerospace keywords, titles to skip, the minimum score.
   Add a skill when I learn one (MATLAB next!) and future scores pick it up.
+  `aerospace_companies_only = true` hides postings from companies that aren't on the
+  aerospace list (the big lists otherwise pull in chip makers, carmakers, and so on).
 - **`sources.toml`**: which companies and lists get checked. The bottom of the job page
-  shows which sources worked on the last run, so I know what to fix or remove.
+  shows which sources worked on the last run, so I know what to fix or remove. To let a
+  company through the aerospace-only filter, add it to `[aerospace_companies]`.
 
 ## Files
 
