@@ -9,12 +9,11 @@ my resume, and publishes the results to a page I can open on my phone.
 ## Today's top matches
 
 <!-- JOBS:START -->
-**251 matches** as of Oct 24, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
+**255 matches** as of Oct 24, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
 
 | Fit | Company | Role | Required quals met | Location | Posted | Apply |
 |---|---|---|---|---|---|---|
 | 100 | Anduril | 2027 Flight Test Engineer Intern | 3 of 3 | Costa Mesa, California, United States | 2026-10-14 | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5257709007?gh_jid=5257709007) |
-| 100 | Axiom Space | Mechanical/Aerospace Engineering Intern (Summer 2027) | 2 of 2 | Houston | 2026-10-15 | [Apply](https://axiomspace.wd5.myworkdayjobs.com/External_Career_Site/job/Houston/Mechanical-Aerospace-Engineering-Intern--Summer-2027-_JR100766) |
 | 100 | CesiumAstro | Summer 2027 - Flight Dynamics Internship | 3 of 3 | Huntsville, AL | 2026-10-16 | [Apply](https://jobs.lever.co/CesiumAstro/385a6217-7931-4bb4-861a-1e5651e3a998) |
 | 100 | RTX (Raytheon, Pratt & Whitney, Collins) | Aero Thermal Fluids Intern (Summer 2027) (Onsite) | 9 of 9 | US-CT-EAST HARTFORD-ETC ~ 400 Main St ~  | 2026-10-22 | [Apply](https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-CT-EAST-HARTFORD-ETC--400-Main-St--BLDG-ETC/Aero-Thermal-Fluids-Intern--Summer-2027---Onsite-_01882602) |
 | 100 | Varda Space | Structures Engineering Internship - Summer 2027 | 2 of 2 | El Segundo, California, United States | 2026-10-01 | [Apply](https://job-boards.greenhouse.io/vardaspace/jobs/8010167003) |
@@ -27,7 +26,6 @@ my resume, and publishes the results to a page I can open on my phone.
 | 95 | Ursa Major | 2027 Summer Embedded Flight Software Intern | 2 of 3 | Longmont, Colorado | 2026-10-22 | [Apply](https://ursamajor.com/careers/?gh_jid=4746825005) |
 | 95 | Ursa Major | 2027 Summer Propulsion Engineer, Hypersonic Vehicle Intern | 4 of 5 | Berthoud, Colorado | 2026-10-22 | [Apply](https://ursamajor.com/careers/?gh_jid=4746882005) |
 | 95 | Varda Space | Guidance, Navigation & Controls (GNC) Internship - Summer 2027 | 2 of 3 | El Segundo, California, United States | 2026-10-01 | [Apply](https://job-boards.greenhouse.io/vardaspace/jobs/7865601003) |
-| 93 | AeroVironment | Mechanical Engineering Intern | 4 of 4 | Petaluma, CA | 2026-10-07 | [Apply](https://avav.wd1.myworkdayjobs.com/AVAV/job/Petaluma-CA/Mechanical-Engineering-Intern_9038) |
 | 93 | Lockheed Martin | Mechanical Design Intern | 3 of 3 | Grand Prairie, TX | 2026-10-22 | [Apply](https://lockheedmartin.eightfold.ai/careers/job/996477505085) |
 | 93 | Lockheed Martin | Mechanical Design Engineering Intern | 3 of 3 | Grand Prairie, TX | 2026-10-15 | [Apply](https://lockheedmartin.eightfold.ai/careers/job/996477394326) |
 | 93 | Lockheed Martin | Mechanical Design Engineering Intern | 3 of 3 | Orlando, FL | 2026-10-18 | [Apply](https://lockheedmartin.eightfold.ai/careers/job/996477394527) |
@@ -38,6 +36,8 @@ my resume, and publishes the results to a page I can open on my phone.
 | 91 | Astranis | Thermal Intern (Summer 2027) | 3 of 3 | San Francisco | 2026-09-24 | [Apply](https://job-boards.greenhouse.io/astranis/jobs/4704820006) |
 | 90 | Anduril | 2027 Low Observables Engineer Intern | 3 of 3 | Costa Mesa, California, United States | 2026-10-19 | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5268752007?gh_jid=5268752007) |
 | 90 | Blue Origin | Summer 2027 Test Engineering Internship - Undergraduate | 3 of 3 | Greater Seattle Area; Van Horn, TX; Spac | 2026-10-13 | [Apply](https://blueorigin.wd5.myworkdayjobs.com/BlueOrigin/job/Greater-Seattle-Area/Summer-2027-Test-Engineering-Internship---Undergraduate_R71433) |
+| 90 | Muon Space | Environmental Test Engineering Intern (Summer 2027) | 3 of 3 | San Jose, CA | 2026-10-02 | [Apply](https://job-boards.greenhouse.io/muonspace/jobs/5256286007) |
+| 90 | RTX (Raytheon, Pratt & Whitney, Collins) | Manufacturing Engineering Co-Op (Spring/Summer 2027) | 6 of 6 | US-IA-MANCHESTER-185 ~ 901 S 10th St ~ S | 2026-10-20 | [Apply](https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-IA-MANCHESTER-185--901-S-10th-St--S-10TH/Manufacturing-Engineering-Co-Op--Spring-Summer-2027-_01876132) |
 <!-- JOBS:END -->
 
 ---
