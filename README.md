@@ -9,7 +9,7 @@ my resume, and publishes the results to a page I can open on my phone.
 ## Today's top matches
 
 <!-- JOBS:START -->
-**241 matches** as of Oct 24, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
+**235 matches** as of Oct 25, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
 
 | Fit | Company | Role | Required quals met | Location | Posted | Apply |
 |---|---|---|---|---|---|---|
@@ -35,9 +35,9 @@ my resume, and publishes the results to a page I can open on my phone.
 | 93 | Varda Space | Aerodynamics & Analysis Engineering Internship - Summer 2027 | 3 of 4 | El Segundo, California, United States | 2026-10-01 | [Apply](https://job-boards.greenhouse.io/vardaspace/jobs/8010632003) |
 | 92 | AeroVironment | Summer 2027 Aeromechanical Engineering Intern | 3 of 3 | Simi Valley, CA; Huntsville, AL; Pottsto | 2026-10-13 | [Apply](https://avav.wd1.myworkdayjobs.com/AVAV/job/Simi-Valley-CA/Summer-2027-Aeromechanical-Engineering-Intern_8387) |
 | 92 | Voyager Technologies | 2027 Mechanical Engineering Intern | 1 of 1 | Long Beach  | 2026-09-28 | [Apply](https://job-boards.greenhouse.io/voyagertechnologiesinc/jobs/4423308009) |
-| 91 | Astranis | Thermal Intern (Summer 2027) | 3 of 3 | San Francisco | 2026-09-24 | [Apply](https://job-boards.greenhouse.io/astranis/jobs/4704820006) |
 | 90 | Anduril | 2027 Low Observables Engineer Intern | 3 of 3 | Costa Mesa, California, United States | 2026-10-19 | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5268752007?gh_jid=5268752007) |
 | 90 | Blue Origin | Summer 2027 Test Engineering Internship - Undergraduate | 3 of 3 | Greater Seattle Area; Van Horn, TX; Spac | 2026-10-13 | [Apply](https://blueorigin.wd5.myworkdayjobs.com/BlueOrigin/job/Greater-Seattle-Area/Summer-2027-Test-Engineering-Internship---Undergraduate_R71433) |
+| 90 | Muon Space | Environmental Test Engineering Intern (Summer 2027) | 3 of 3 | San Jose, CA | 2026-10-02 | [Apply](https://job-boards.greenhouse.io/muonspace/jobs/5256286007) |
 <!-- JOBS:END -->
 
 ---
