@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T05:04:52+00:00",
+ "updated": "2026-10-26T05:12:06+00:00",
  "jobs": [
   {
    "company": "Anduril",
@@ -5608,6 +5608,91 @@
    "last_seen": "2026-10-26"
   },
   {
+   "company": "Bluecrest Partners",
+   "title": "Civil & Construction Engineer Intern",
+   "location": "Long Beach, CA, United States",
+   "url": "https://jobright.ai/jobs/info/6ade4e38389e06bb41ada853",
+   "source": "Jobright engineering list",
+   "posted": "2026-10-25",
+   "source_id": "Jobright engineering list",
+   "key": "url:https://jobright.ai/jobs/info/6ade4e38389e06bb41ada853",
+   "tracks": {
+    "broad": {
+     "score": 89,
+     "tier": "strong",
+     "parts": {
+      "fit": 32,
+      "skills": 35,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Season not stated"
+    }
+   },
+   "score": 89,
+   "tier": "strong",
+   "discipline": "Civil & construction",
+   "quals": {
+    "required": [
+     {
+      "text": "Current undergraduate or graduate student earning degree in mechanical engineering, civil engineering, construction management or a related technical field",
+      "status": "met",
+      "why": "You're Aerospace Engineering"
+     },
+     {
+      "text": "Ability to work in a fast-paced and intense startup environment",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Experience with 3D Computer-Aided Design (CAD)",
+      "status": "met",
+      "why": "You have: SolidWorks / CAD"
+     },
+     {
+      "text": "Basic knowledge of common construction and engineering principles",
+      "status": "check",
+      "why": "Coursework or background (check your classes)"
+     },
+     {
+      "text": "Ownership of technical projects from beginning to end, with minimal oversight",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Coursework that includes thermodynamics, heat transfer and fluid mechanics",
+      "status": "met",
+      "why": "You have: Aerodynamics"
+     }
+    ],
+    "preferred": [],
+    "summary": {
+     "required_checked": 3,
+     "required_met": 3.0,
+     "required_missing": 0,
+     "to_check": 1,
+     "preferred_met": 0,
+     "preferred_total": 0
+    }
+   },
+   "matched": [
+    "Aerodynamics",
+    "SolidWorks / CAD",
+    "Prototyping & fabrication"
+   ],
+   "related": [],
+   "gaps": [
+    "FEA / stress analysis",
+    "Heat transfer / thermal",
+    "Data acquisition / test"
+   ],
+   "flags": [],
+   "has_description": true,
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-10-26"
+  },
+  {
    "company": "Ferrovias",
    "title": "Civil & Construction Engineer Intern",
    "location": "California, United States",
@@ -6340,6 +6425,138 @@
    ],
    "has_description": true,
    "first_seen": "2026-10-11",
+   "last_seen": "2026-10-26"
+  },
+  {
+   "company": "Panthalassa",
+   "title": "Summer 2027 Engineering Internship",
+   "location": "Portland, OR, USA",
+   "url": "https://boards.greenhouse.io/panthalassa/jobs/6217929004",
+   "source": "Space Capital job board",
+   "posted": "2026-10-06",
+   "source_id": "Space Capital job board",
+   "key": "gr:6217929004",
+   "tracks": {
+    "broad": {
+     "score": 88,
+     "tier": "strong",
+     "parts": {
+      "fit": 28,
+      "skills": 35,
+      "eligibility": 25,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    }
+   },
+   "score": 88,
+   "tier": "strong",
+   "discipline": "General engineering",
+   "quals": {
+    "required": [
+     {
+      "text": "Currently pursuing a bachelor’s, master’s, or doctoral degree in an engineering, computer science, physics, or other closely related technical field.",
+      "status": "met",
+      "why": "Engineering degree: Aerospace Engineering counts"
+     },
+     {
+      "text": "Strong technical fundamentals relevant to your area of study.",
+      "status": "check",
+      "why": "Coursework or background (check your classes)"
+     },
+     {
+      "text": "Demonstrated experience applying technical skills through coursework, research, internships, student teams, independent projects, or other hands-on work.",
+      "status": "met",
+      "why": "You have: Prototyping & fabrication, Student engineering team"
+     },
+     {
+      "text": "Strong analytical and problem-solving skills.",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Comfortable working on problems where requirements or solutions may initially be ambiguous.",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Able to work full-time and on-site in Portland, Oregon for the duration of the internship, approximately mid-June through early September 2027.",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Authorization to work in the United States for the full duration of the internship.",
+      "status": "check",
+      "why": ""
+     }
+    ],
+    "preferred": [
+     {
+      "text": "Mechanical design, CAD, structural or thermal analysis, or hardware testing.",
+      "status": "met",
+      "why": "You have: SolidWorks / CAD"
+     },
+     {
+      "text": "Manufacturing engineering, process development, tooling, automation, quality, production systems, or design for manufacturability.",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Software development, data systems, automation, simulation, controls, infrastructure, or developer tooling.",
+      "status": "missing",
+      "why": "Not on your resume: Controls / GNC"
+     },
+     {
+      "text": "Skills with machining, fabrication, welding, electronics assembly, and prototyping.",
+      "status": "met",
+      "why": "You have: Prototyping & fabrication"
+     },
+     {
+      "text": "Designing and executing technical tests and analyzing the resulting data.",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Participation in technically demanding student teams or projects such as Formula SAE, Baja SAE, robotics, rocketry, solar car, marine engineering, or similar pr",
+      "status": "met",
+      "why": "You have: Rocketry & flight simulation, Student engineering team"
+     },
+     {
+      "text": "Experience taking a project from an ambiguous initial problem through implementation and validation.",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Exposure to renewable energy, marine systems, robotics, aerospace, industrial systems, manufacturing, or other complex hardware environments.",
+      "status": "check",
+      "why": ""
+     }
+    ],
+    "summary": {
+     "required_checked": 2,
+     "required_met": 2.0,
+     "required_missing": 0,
+     "to_check": 1,
+     "preferred_met": 3,
+     "preferred_total": 4
+    }
+   },
+   "matched": [
+    "SolidWorks / CAD",
+    "Rocketry & flight simulation",
+    "Prototyping & fabrication",
+    "Student engineering team"
+   ],
+   "related": [],
+   "gaps": [
+    "Machining / CNC",
+    "Heat transfer / thermal",
+    "Controls / GNC"
+   ],
+   "flags": [],
+   "has_description": true,
+   "first_seen": "2026-10-26",
    "last_seen": "2026-10-26"
   },
   {
@@ -9343,6 +9560,139 @@
    ],
    "has_description": true,
    "first_seen": "2026-10-11",
+   "last_seen": "2026-10-26"
+  },
+  {
+   "company": "Orbital Operations",
+   "title": "Summer 2027 Internship - Engineering",
+   "location": "Long Beach, CA, USA",
+   "url": "https://boards.greenhouse.io/orbitaloperations/jobs/4375099009",
+   "source": "Space Capital job board",
+   "posted": "2026-10-20",
+   "source_id": "Space Capital job board",
+   "key": "gr:4375099009",
+   "tracks": {
+    "broad": {
+     "score": 83,
+     "tier": "strong",
+     "parts": {
+      "fit": 28,
+      "skills": 35,
+      "eligibility": 25,
+      "requirements": -5
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    }
+   },
+   "score": 83,
+   "tier": "strong",
+   "discipline": "General engineering",
+   "quals": {
+    "required": [
+     {
+      "text": "Currently pursuing a bachelor’s or master’s degree in mechanical engineering, aerospace engineering, electrical engineering, computer engineering, computer scie",
+      "status": "met",
+      "why": "You're Aerospace Engineering"
+     },
+     {
+      "text": "Demonstrated ownership of at least one hands on engineering project from concept or requirements through fabrication, assembly, testing, and iteration",
+      "status": "met",
+      "why": "You have: Prototyping & fabrication"
+     },
+     {
+      "text": "Strong command of engineering fundamentals and the ability to apply them to practical, open ended problems",
+      "status": "check",
+      "why": "Coursework or background (check your classes)"
+     },
+     {
+      "text": "Experience designing, building, integrating, or testing physical hardware through a student team, internship, research program, employment, or personal project",
+      "status": "met",
+      "why": "You have: Student engineering team"
+     },
+     {
+      "text": "Ability to make engineering tradeoffs and move forward when requirements or information are incomplete",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Willingness to work directly with hardware, including assembly, instrumentation, troubleshooting, and test operations",
+      "status": "missing",
+      "why": "Not on your resume: Data acquisition / test"
+     },
+     {
+      "text": "Ability to independently plan and execute a complex technical project while identifying and communicating risks and blockers",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Resourceful, self-directed, and comfortable learning unfamiliar tools or technical subjects quickly",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Strong written and verbal communication skills, including the ability to document designs, test results, failures, and lessons learned",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Able to work full-time and onsite in Long Beach, California, for a minimum of 10–12 consecutive weeks",
+      "status": "soft",
+      "why": ""
+     }
+    ],
+    "preferred": [
+     {
+      "text": "Experience with CAD, engineering drawings, tolerance analysis, machining, additive manufacturing, composite fabrication, electronics, instrumentation, or fluid-",
+      "status": "met",
+      "why": "You have: SolidWorks / CAD, Composites (carbon fiber), Prototyping & fabrication"
+     },
+     {
+      "text": "Experience creating and executing test plans, collecting data, and comparing results against analytical predictions or requirements",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Participation in a hands-on engineering organization such as Formula SAE, Baja SAE, liquid or solid rocketry, CubeSat, robotics, Design/Build/Fly, or a similar ",
+      "status": "met",
+      "why": "You have: Rocketry & flight simulation, Prototyping & fabrication, Student engineering team"
+     },
+     {
+      "text": "A portfolio, technical report, project page, or other work sample that clearly demonstrates your individual contribution to completed hardware",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Experience diagnosing a hardware failure and carrying the resulting lessons into a successful design iteration",
+      "status": "check",
+      "why": ""
+     }
+    ],
+    "summary": {
+     "required_checked": 4,
+     "required_met": 3.0,
+     "required_missing": 1,
+     "to_check": 1,
+     "preferred_met": 2,
+     "preferred_total": 2
+    }
+   },
+   "matched": [
+    "SolidWorks / CAD",
+    "Composites (carbon fiber)",
+    "Rocketry & flight simulation",
+    "Prototyping & fabrication",
+    "Student engineering team"
+   ],
+   "related": [],
+   "gaps": [
+    "Machining / CNC",
+    "Data acquisition / test",
+    "Drawings / drafting"
+   ],
+   "flags": [],
+   "has_description": true,
+   "first_seen": "2026-10-26",
    "last_seen": "2026-10-26"
   },
   {
@@ -17112,6 +17462,97 @@
    ],
    "has_description": true,
    "first_seen": "2026-10-11",
+   "last_seen": "2026-10-26"
+  },
+  {
+   "company": "First Order Effects",
+   "title": "Engineering Operations Intern",
+   "location": "Austin, TX, USA",
+   "url": "https://jobs.ashbyhq.com/firstordereffects/21601331-5541-4362-ab04-b347ecf1a4f2",
+   "source": "Space Capital job board",
+   "posted": "2026-09-28",
+   "source_id": "Space Capital job board",
+   "key": "as:21601331-5541-4362-ab04-b347ecf1a4f2",
+   "tracks": {
+    "broad": {
+     "score": 69,
+     "tier": "good",
+     "parts": {
+      "fit": 12,
+      "skills": 35,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Summer (year not stated)"
+    }
+   },
+   "score": 69,
+   "tier": "good",
+   "discipline": "General engineering",
+   "quals": {
+    "required": [
+     {
+      "text": "Pursuing a degree in mechanical, electrical, aerospace, industrial, or a related engineering field.",
+      "status": "met",
+      "why": "You're Aerospace Engineering"
+     },
+     {
+      "text": "Evidence you build things outside of class: FSAE, rocketry, robotics, solar car, a shop job, a garage project that got out of hand. Show us, don't tell us.",
+      "status": "met",
+      "why": "You have: Rocketry & flight simulation, Student engineering team"
+     },
+     {
+      "text": "Raw horsepower, judgment, ownership, and execution. These matter more than your GPA or which classes you've taken.",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Comfort with ambiguity. You'd rather be handed a problem than a procedure.",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Willingness to get your hands dirty - literally. Warehouses, waterfronts, weather.",
+      "status": "check",
+      "why": ""
+     }
+    ],
+    "preferred": [
+     {
+      "text": "Command of English at a CEFR Level C1 (C2 Preferred). Bonus points for speaking a second language fluently.",
+      "status": "check",
+      "why": ""
+     }
+    ],
+    "summary": {
+     "required_checked": 2,
+     "required_met": 2.0,
+     "required_missing": 0,
+     "to_check": 0,
+     "preferred_met": 0,
+     "preferred_total": 0
+    }
+   },
+   "matched": [
+    "SolidWorks / CAD",
+    "Rocketry & flight simulation",
+    "Student engineering team",
+    "Excel / data analysis"
+   ],
+   "related": [
+    "C (close to C++)"
+   ],
+   "gaps": [],
+   "flags": [
+    {
+     "kind": "info",
+     "label": "U.S. person / ITAR",
+     "id": "citizen"
+    }
+   ],
+   "has_description": true,
+   "first_seen": "2026-10-26",
    "last_seen": "2026-10-26"
   },
   {
@@ -26592,46 +27033,6 @@
    "last_seen": "2026-10-26"
   },
   {
-   "company": "Koch Engineered Solutions",
-   "title": "Quality & Manufacturing Engineering Internship Summer 2027",
-   "location": "Eau Claire, Wisconsin, United States",
-   "url": "https://jobright.ai/jobs/info/6ade7852c5c64fa3d9cb81b3",
-   "source": "Jobright engineering list",
-   "posted": "2026-10-25",
-   "source_id": "Jobright engineering list",
-   "key": "url:https://jobright.ai/jobs/info/6ade7852c5c64fa3d9cb81b3",
-   "tracks": {
-    "broad": {
-     "score": 59,
-     "tier": "good",
-     "parts": {
-      "fit": 22,
-      "skills": 12,
-      "eligibility": 25,
-      "requirements": 0
-     },
-     "season": "match",
-     "season_label": "Summer 2027"
-    }
-   },
-   "score": 59,
-   "tier": "good",
-   "discipline": "Manufacturing & industrial",
-   "quals": null,
-   "matched": [],
-   "related": [],
-   "gaps": [],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "Full description not loaded"
-    }
-   ],
-   "has_description": false,
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-26"
-  },
-  {
    "company": "Micron Technology",
    "title": "Design Engineer Intern, Pathfinding",
    "location": "San Jose, CA; Folsom, CA",
@@ -28706,46 +29107,6 @@
     }
    ],
    "has_description": true,
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-26"
-  },
-  {
-   "company": "AZEK Exteriors",
-   "title": "NPI (New Product Introduction) Process Engineering Intern",
-   "location": "Wilmington, OH, United States",
-   "url": "https://jobright.ai/jobs/info/6ade55cb46a8cabdc1ffb720",
-   "source": "Jobright engineering list",
-   "posted": "2026-10-25",
-   "source_id": "Jobright engineering list",
-   "key": "url:https://jobright.ai/jobs/info/6ade55cb46a8cabdc1ffb720",
-   "tracks": {
-    "broad": {
-     "score": 56,
-     "tier": "good",
-     "parts": {
-      "fit": 22,
-      "skills": 12,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Season not stated"
-    }
-   },
-   "score": 56,
-   "tier": "good",
-   "discipline": "Manufacturing & industrial",
-   "quals": null,
-   "matched": [],
-   "related": [],
-   "gaps": [],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "Full description not loaded"
-    }
-   ],
-   "has_description": false,
    "first_seen": "2026-10-26",
    "last_seen": "2026-10-26"
   },
@@ -31041,46 +31402,6 @@
    "last_seen": "2026-10-26"
   },
   {
-   "company": "Waymo",
-   "title": "2027 Summer Intern, BS, Depot Automation",
-   "location": "San Francisco, CA, USA",
-   "url": "https://careers.withwaymo.com/jobs/2027-summer-intern-bs-depot-automation-san-francisco-california-united-states",
-   "source": "Space Capital job board",
-   "posted": "2026-09-29",
-   "source_id": "Space Capital job board",
-   "key": "url:https://careers.withwaymo.com/jobs/2027-summer-intern-bs-depot-automation-san-francisco-california-united-states",
-   "tracks": {
-    "broad": {
-     "score": 55,
-     "tier": "look",
-     "parts": {
-      "fit": 18,
-      "skills": 12,
-      "eligibility": 25,
-      "requirements": 0
-     },
-     "season": "match",
-     "season_label": "Summer 2027"
-    }
-   },
-   "score": 55,
-   "tier": "look",
-   "discipline": "Manufacturing & industrial",
-   "quals": null,
-   "matched": [],
-   "related": [],
-   "gaps": [],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "Full description not loaded"
-    }
-   ],
-   "has_description": false,
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-26"
-  },
-  {
    "company": "onsemi",
    "title": "Manufacturing AI Engineering Intern",
    "location": "Hopewell Junction, NY",
@@ -31159,6 +31480,110 @@
     }
    ],
    "has_description": false,
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-10-26"
+  },
+  {
+   "company": "AZEK Exteriors",
+   "title": "NPI (New Product Introduction) Process Engineering Intern",
+   "location": "Wilmington, OH, United States",
+   "url": "https://jobright.ai/jobs/info/6ade55cb46a8cabdc1ffb720",
+   "source": "Jobright engineering list",
+   "posted": "2026-10-25",
+   "source_id": "Jobright engineering list",
+   "key": "url:https://jobright.ai/jobs/info/6ade55cb46a8cabdc1ffb720",
+   "tracks": {
+    "broad": {
+     "score": 54,
+     "tier": "look",
+     "parts": {
+      "fit": 22,
+      "skills": 10,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Season not stated"
+    }
+   },
+   "score": 54,
+   "tier": "look",
+   "discipline": "Manufacturing & industrial",
+   "quals": {
+    "required": [
+     {
+      "text": "Currently enrolled in a bachelor's degree program in Engineering or a related discipline at an accredited university, with an anticipated graduation date betwee",
+      "status": "met",
+      "why": "Grad date rule (2027–2029) fits your 2029"
+     },
+     {
+      "text": "Strong academic performance with a minimum GPA of 3.0",
+      "status": "check",
+      "why": "Needs GPA 3.0+"
+     },
+     {
+      "text": "Authorization to work in the United States",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Pursuing a degree in Chemical, Mechanical, Plastics, Polymer, Materials, Manufacturing, or a related engineering discipline",
+      "status": "met",
+      "why": "You're Aerospace Engineering"
+     },
+     {
+      "text": "Strong communication skills and ability to collaborate with cross-functional teams",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Experience with statistical analysis software such as Minitab",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Ability to manage multiple priorities in a fast-paced environment",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Hands-on approach to learning and developing skills in a manufacturing setting",
+      "status": "met",
+      "why": "You have: Prototyping & fabrication"
+     },
+     {
+      "text": "Experience developing technical documentation and presenting to a technical audience",
+      "status": "check",
+      "why": ""
+     }
+    ],
+    "preferred": [],
+    "summary": {
+     "required_checked": 3,
+     "required_met": 3.0,
+     "required_missing": 0,
+     "to_check": 1,
+     "preferred_met": 0,
+     "preferred_total": 0
+    }
+   },
+   "matched": [
+    "Prototyping & fabrication",
+    "Excel / data analysis"
+   ],
+   "related": [],
+   "gaps": [],
+   "flags": [
+    {
+     "kind": "good",
+     "label": "Grad window 2027–2029 fits"
+    },
+    {
+     "kind": "info",
+     "label": "Min GPA 3.0"
+    }
+   ],
+   "has_description": true,
    "first_seen": "2026-10-26",
    "last_seen": "2026-10-26"
   },
@@ -33065,6 +33490,87 @@
    "last_seen": "2026-10-26"
   },
   {
+   "company": "Conlon Construction",
+   "title": "2027 Summer Construction Internship - Dubuque, IA",
+   "location": "Dubuque, IA, United States",
+   "url": "https://jobright.ai/jobs/info/6ab2ebc81e4847ddae9170c6",
+   "source": "Jobright engineering list",
+   "posted": "2026-10-25",
+   "source_id": "Jobright engineering list",
+   "key": "url:https://jobright.ai/jobs/info/6ab2ebc81e4847ddae9170c6",
+   "tracks": {
+    "broad": {
+     "score": 52,
+     "tier": "look",
+     "parts": {
+      "fit": 8,
+      "skills": 19,
+      "eligibility": 25,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    }
+   },
+   "score": 52,
+   "tier": "look",
+   "discipline": "Civil & construction",
+   "quals": {
+    "required": [
+     {
+      "text": "Ability to maintain a positive attitude and professional demeanor and appearance and perform well under project constraints and deadlines",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Strong computer skills with Microsoft Office (Excel, Word, Outlook, PowerPoint) working knowledge of project management software",
+      "status": "met",
+      "why": "You have: Excel / data analysis"
+     },
+     {
+      "text": "Willingness to test and implement new technologies as they become available",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Solid numerical and analytical skills and ability to apply these skills to achieve accurate project budgeting and basic estimating for project scope changes",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Valid Driver's License",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Currently enrolled in a Construction Management, Construction Engineering, Civil Engineering, or related degree program",
+      "status": "met",
+      "why": "Engineering degree: Aerospace Engineering counts"
+     }
+    ],
+    "preferred": [],
+    "summary": {
+     "required_checked": 2,
+     "required_met": 2.0,
+     "required_missing": 0,
+     "to_check": 0,
+     "preferred_met": 0,
+     "preferred_total": 0
+    }
+   },
+   "matched": [
+    "Prototyping & fabrication",
+    "Student engineering team",
+    "Excel / data analysis"
+   ],
+   "related": [],
+   "gaps": [],
+   "flags": [],
+   "has_description": true,
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-10-26"
+  },
+  {
    "company": "GE Vernova",
    "title": "Field Engineer Intern",
    "location": "Remote; Remote",
@@ -33624,46 +34130,6 @@
     }
    ],
    "has_description": true,
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-26"
-  },
-  {
-   "company": "Graycor",
-   "title": "Project Engineer Internship, Commercial/Industrial Construction",
-   "location": "Oakbrook Terrace, IL, United States",
-   "url": "https://jobright.ai/jobs/info/6ad271fb25289a0b3bf56d05",
-   "source": "Jobright engineering list",
-   "posted": "2026-10-25",
-   "source_id": "Jobright engineering list",
-   "key": "url:https://jobright.ai/jobs/info/6ad271fb25289a0b3bf56d05",
-   "tracks": {
-    "broad": {
-     "score": 52,
-     "tier": "look",
-     "parts": {
-      "fit": 18,
-      "skills": 12,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Season not stated"
-    }
-   },
-   "score": 52,
-   "tier": "look",
-   "discipline": "Manufacturing & industrial",
-   "quals": null,
-   "matched": [],
-   "related": [],
-   "gaps": [],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "Full description not loaded"
-    }
-   ],
-   "has_description": false,
    "first_seen": "2026-10-26",
    "last_seen": "2026-10-26"
   },
@@ -36849,6 +37315,75 @@
    "last_seen": "2026-10-26"
   },
   {
+   "company": "Waymo",
+   "title": "2027 Summer Intern, BS, Depot Automation",
+   "location": "San Francisco, CA, USA",
+   "url": "https://careers.withwaymo.com/jobs/2027-summer-intern-bs-depot-automation-san-francisco-california-united-states",
+   "source": "Space Capital job board",
+   "posted": "2026-09-29",
+   "source_id": "Space Capital job board",
+   "key": "url:https://careers.withwaymo.com/jobs/2027-summer-intern-bs-depot-automation-san-francisco-california-united-states",
+   "tracks": {
+    "broad": {
+     "score": 50,
+     "tier": "look",
+     "parts": {
+      "fit": 18,
+      "skills": 7,
+      "eligibility": 25,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    }
+   },
+   "score": 50,
+   "tier": "look",
+   "discipline": "Manufacturing & industrial",
+   "quals": {
+    "required": [
+     {
+      "text": "Currently pursuing a Bachelor's degree.",
+      "status": "met",
+      "why": "You're enrolled in a degree program"
+     },
+     {
+      "text": "Data Architecture & Processing: Demonstrated capability in conceptualizing and writing efficient data transformation pipelines (C++/SQL).",
+      "status": "met",
+      "why": "You have: C++"
+     },
+     {
+      "text": "Full-Stack & UI Implementation: Experience converting backend data streams into actionable, user-centric visualizations.",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Testing Rigor: Strong grasp of integration testing and ensuring reliability in critical systems.",
+      "status": "check",
+      "why": ""
+     }
+    ],
+    "preferred": [],
+    "summary": {
+     "required_checked": 2,
+     "required_met": 2.0,
+     "required_missing": 0,
+     "to_check": 0,
+     "preferred_met": 0,
+     "preferred_total": 0
+    }
+   },
+   "matched": [
+    "C++"
+   ],
+   "related": [],
+   "gaps": [],
+   "flags": [],
+   "has_description": true,
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-10-26"
+  },
+  {
    "company": "Anduril",
    "title": "2027 Product Sourcing Engineer Intern",
    "location": "Costa Mesa, California, United States; Irvine, California, United States; Santa Ana, California, United States",
@@ -37284,6 +37819,87 @@
     {
      "kind": "warn",
      "label": "Grad window 2030"
+    }
+   ],
+   "has_description": true,
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-10-26"
+  },
+  {
+   "company": "Koch Engineered Solutions",
+   "title": "Quality & Manufacturing Engineering Internship Summer 2027",
+   "location": "Eau Claire, Wisconsin, United States",
+   "url": "https://jobright.ai/jobs/info/6ade7852c5c64fa3d9cb81b3",
+   "source": "Jobright engineering list",
+   "posted": "2026-10-25",
+   "source_id": "Jobright engineering list",
+   "key": "url:https://jobright.ai/jobs/info/6ade7852c5c64fa3d9cb81b3",
+   "tracks": {
+    "broad": {
+     "score": 49,
+     "tier": "look",
+     "parts": {
+      "fit": 24,
+      "skills": 0,
+      "eligibility": 25,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    }
+   },
+   "score": 49,
+   "tier": "look",
+   "discipline": "Manufacturing & industrial",
+   "quals": {
+    "required": [
+     {
+      "text": "Enrolled in an Engineering degree or alternative program. (e.g., 2-year technical college program, certificate program, upskilling program, etc",
+      "status": "met",
+      "why": "You're Aerospace Engineering"
+     },
+     {
+      "text": "Eligible for full-time employment on or before Summer 2029",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Legal authorization to work permanently in the United States for any employer without requiring a visa transfer or visa sponsorship",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "In order to comply with U.S. export control laws and regulations, this position requires applicants to either provide proof of U.S. citizenship or lawful perman",
+      "status": "met",
+      "why": "You're a U.S. citizen"
+     },
+     {
+      "text": "Enrolled in a Mechanical, Biomedical, Industrial, Plastics, Manufacturing, or related Engineering degree program",
+      "status": "met",
+      "why": "You're Aerospace Engineering"
+     }
+    ],
+    "preferred": [],
+    "summary": {
+     "required_checked": 3,
+     "required_met": 3.0,
+     "required_missing": 0,
+     "to_check": 0,
+     "preferred_met": 0,
+     "preferred_total": 0
+    }
+   },
+   "matched": [],
+   "related": [],
+   "gaps": [
+    "Heat transfer / thermal",
+    "Controls / GNC"
+   ],
+   "flags": [
+    {
+     "kind": "info",
+     "label": "U.S. person / ITAR",
+     "id": "citizen"
     }
    ],
    "has_description": true,
@@ -37736,206 +38352,6 @@
     }
    ],
    "has_description": true,
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-26"
-  },
-  {
-   "company": "Sargent & Lundy",
-   "title": "Transmission & Distribution Engineer Intern - Grid (Summer 2027)",
-   "location": "Houston, TX, United States",
-   "url": "https://jobright.ai/jobs/info/6aa41fc7f3aa936e2cdafdfc",
-   "source": "Jobright engineering list",
-   "posted": "2026-10-25",
-   "source_id": "Jobright engineering list",
-   "key": "url:https://jobright.ai/jobs/info/6aa41fc7f3aa936e2cdafdfc",
-   "tracks": {
-    "broad": {
-     "score": 49,
-     "tier": "look",
-     "parts": {
-      "fit": 12,
-      "skills": 12,
-      "eligibility": 25,
-      "requirements": 0
-     },
-     "season": "match",
-     "season_label": "Summer 2027"
-    }
-   },
-   "score": 49,
-   "tier": "look",
-   "discipline": "Energy & nuclear",
-   "quals": null,
-   "matched": [],
-   "related": [],
-   "gaps": [],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "Full description not loaded"
-    }
-   ],
-   "has_description": false,
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-26"
-  },
-  {
-   "company": "Skanska",
-   "title": "Summer 2027 Construction Project Engineer Intern",
-   "location": "Portland, OR, United States",
-   "url": "https://jobright.ai/jobs/info/6aa87b76930bff471a2a79c1",
-   "source": "Jobright engineering list",
-   "posted": "2026-10-25",
-   "source_id": "Jobright engineering list",
-   "key": "url:https://jobright.ai/jobs/info/6aa87b76930bff471a2a79c1",
-   "tracks": {
-    "broad": {
-     "score": 49,
-     "tier": "look",
-     "parts": {
-      "fit": 12,
-      "skills": 12,
-      "eligibility": 25,
-      "requirements": 0
-     },
-     "season": "match",
-     "season_label": "Summer 2027"
-    }
-   },
-   "score": 49,
-   "tier": "look",
-   "discipline": "Civil & construction",
-   "quals": null,
-   "matched": [],
-   "related": [],
-   "gaps": [],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "Full description not loaded"
-    }
-   ],
-   "has_description": false,
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-26"
-  },
-  {
-   "company": "Skanska",
-   "title": "Summer 2027 Construction Project Engineer Intern",
-   "location": "Seattle, WA, United States",
-   "url": "https://jobright.ai/jobs/info/6aa187e33272060a8e3f0386",
-   "source": "Jobright engineering list",
-   "posted": "2026-10-25",
-   "source_id": "Jobright engineering list",
-   "key": "url:https://jobright.ai/jobs/info/6aa187e33272060a8e3f0386",
-   "tracks": {
-    "broad": {
-     "score": 49,
-     "tier": "look",
-     "parts": {
-      "fit": 12,
-      "skills": 12,
-      "eligibility": 25,
-      "requirements": 0
-     },
-     "season": "match",
-     "season_label": "Summer 2027"
-    }
-   },
-   "score": 49,
-   "tier": "look",
-   "discipline": "Civil & construction",
-   "quals": null,
-   "matched": [],
-   "related": [],
-   "gaps": [],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "Full description not loaded"
-    }
-   ],
-   "has_description": false,
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-26"
-  },
-  {
-   "company": "Skanska",
-   "title": "Summer 2027 Construction Project Engineer Intern",
-   "location": "Bend, OR, United States",
-   "url": "https://jobright.ai/jobs/info/6aa87b712ed333b4ea5cfc75",
-   "source": "Jobright engineering list",
-   "posted": "2026-10-25",
-   "source_id": "Jobright engineering list",
-   "key": "url:https://jobright.ai/jobs/info/6aa87b712ed333b4ea5cfc75",
-   "tracks": {
-    "broad": {
-     "score": 49,
-     "tier": "look",
-     "parts": {
-      "fit": 12,
-      "skills": 12,
-      "eligibility": 25,
-      "requirements": 0
-     },
-     "season": "match",
-     "season_label": "Summer 2027"
-    }
-   },
-   "score": 49,
-   "tier": "look",
-   "discipline": "Civil & construction",
-   "quals": null,
-   "matched": [],
-   "related": [],
-   "gaps": [],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "Full description not loaded"
-    }
-   ],
-   "has_description": false,
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-26"
-  },
-  {
-   "company": "Skanska",
-   "title": "Summer 2027 Construction Project Engineer Intern",
-   "location": "Boise, ID, United States",
-   "url": "https://jobright.ai/jobs/info/6aa49a411d92e2d05d11572f",
-   "source": "Jobright engineering list",
-   "posted": "2026-10-25",
-   "source_id": "Jobright engineering list",
-   "key": "url:https://jobright.ai/jobs/info/6aa49a411d92e2d05d11572f",
-   "tracks": {
-    "broad": {
-     "score": 49,
-     "tier": "look",
-     "parts": {
-      "fit": 12,
-      "skills": 12,
-      "eligibility": 25,
-      "requirements": 0
-     },
-     "season": "match",
-     "season_label": "Summer 2027"
-    }
-   },
-   "score": 49,
-   "tier": "look",
-   "discipline": "Civil & construction",
-   "quals": null,
-   "matched": [],
-   "related": [],
-   "gaps": [],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "Full description not loaded"
-    }
-   ],
-   "has_description": false,
    "first_seen": "2026-10-26",
    "last_seen": "2026-10-26"
   },
@@ -40358,6 +40774,76 @@
    "last_seen": "2026-10-26"
   },
   {
+   "company": "General Galactic",
+   "title": "Summer Engineering Internship",
+   "location": "El Segundo, CA, USA",
+   "url": "https://boards.greenhouse.io/generalgalactic/jobs/4429027009",
+   "source": "Space Capital job board",
+   "posted": "2026-10-09",
+   "source_id": "Space Capital job board",
+   "key": "gr:4429027009",
+   "tracks": {
+    "broad": {
+     "score": 47,
+     "tier": "look",
+     "parts": {
+      "fit": 18,
+      "skills": 7,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Summer (year not stated)"
+    }
+   },
+   "score": 47,
+   "tier": "look",
+   "discipline": "General engineering",
+   "quals": {
+    "required": [
+     {
+      "text": "Currently pursuing a Bachelor's or Master's degree in Mechanical Engineering, Aerospace Engineering, Electrical Engineering, Systems Engineering, Computer Scien",
+      "status": "met",
+      "why": "You're Aerospace Engineering"
+     },
+     {
+      "text": "Comfortable working in a fast-paced, ambiguous, early-stage startup environment",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Strong communicator, self-starter, curious",
+      "status": "soft",
+      "why": ""
+     }
+    ],
+    "preferred": [],
+    "summary": {
+     "required_checked": 1,
+     "required_met": 1.0,
+     "required_missing": 0,
+     "to_check": 0,
+     "preferred_met": 0,
+     "preferred_total": 0
+    }
+   },
+   "matched": [
+    "Prototyping & fabrication"
+   ],
+   "related": [],
+   "gaps": [],
+   "flags": [
+    {
+     "kind": "info",
+     "label": "U.S. person / ITAR",
+     "id": "citizen"
+    }
+   ],
+   "has_description": true,
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-10-26"
+  },
+  {
    "company": "GlobalFoundries",
    "title": "Circuit Design Intern",
    "location": "Austin, TX",
@@ -40505,6 +40991,85 @@
      "label": "Min GPA 3.0"
     }
    ],
+   "has_description": true,
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-10-26"
+  },
+  {
+   "company": "Graycor",
+   "title": "Project Engineer Internship, Commercial/Industrial Construction",
+   "location": "Oakbrook Terrace, IL, United States",
+   "url": "https://jobright.ai/jobs/info/6ad271fb25289a0b3bf56d05",
+   "source": "Jobright engineering list",
+   "posted": "2026-10-25",
+   "source_id": "Jobright engineering list",
+   "key": "url:https://jobright.ai/jobs/info/6ad271fb25289a0b3bf56d05",
+   "tracks": {
+    "broad": {
+     "score": 47,
+     "tier": "look",
+     "parts": {
+      "fit": 18,
+      "skills": 7,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Season not stated"
+    }
+   },
+   "score": 47,
+   "tier": "look",
+   "discipline": "Manufacturing & industrial",
+   "quals": {
+    "required": [
+     {
+      "text": "Be currently enrolled as an undergraduate or graduate student, actively pursuing a degree in construction management, engineering, or other relevant technical d",
+      "status": "met",
+      "why": "Engineering degree: Aerospace Engineering counts"
+     },
+     {
+      "text": "Ambition to grow professionally and acquire new knowledge and skills",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "The fortitude to juggle competing priorities in a fast-paced environment",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Multi-tasking with a sense of urgency while maintaining strong attention to detail and accuracy is crucial",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Effective communication skills, with the ability to interact professionally with managers, co-workers, subcontractors, and construction craft employees",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Problem solving and critical thinking skills",
+      "status": "soft",
+      "why": ""
+     }
+    ],
+    "preferred": [],
+    "summary": {
+     "required_checked": 1,
+     "required_met": 1.0,
+     "required_missing": 0,
+     "to_check": 0,
+     "preferred_met": 0,
+     "preferred_total": 0
+    }
+   },
+   "matched": [
+    "Prototyping & fabrication"
+   ],
+   "related": [],
+   "gaps": [],
+   "flags": [],
    "has_description": true,
    "first_seen": "2026-10-26",
    "last_seen": "2026-10-26"
@@ -41477,6 +42042,324 @@
    "last_seen": "2026-10-26"
   },
   {
+   "company": "Skanska",
+   "title": "Summer 2027 Construction Project Engineer Intern",
+   "location": "Portland, OR, United States",
+   "url": "https://jobright.ai/jobs/info/6aa87b76930bff471a2a79c1",
+   "source": "Jobright engineering list",
+   "posted": "2026-10-25",
+   "source_id": "Jobright engineering list",
+   "key": "url:https://jobright.ai/jobs/info/6aa87b76930bff471a2a79c1",
+   "tracks": {
+    "broad": {
+     "score": 47,
+     "tier": "look",
+     "parts": {
+      "fit": 22,
+      "skills": 0,
+      "eligibility": 25,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    }
+   },
+   "score": 47,
+   "tier": "look",
+   "discipline": "Civil & construction",
+   "quals": {
+    "required": [
+     {
+      "text": "Knowledge of basic phases of construction projects",
+      "status": "check",
+      "why": "Coursework or background (check your classes)"
+     },
+     {
+      "text": "Knowledge of mathematics functions (geometry, basic algebra)",
+      "status": "check",
+      "why": "Coursework or background (check your classes)"
+     },
+     {
+      "text": "Computer skills (MS Office, HCSS, CGC, etc)",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Ability to perform all work in a timely, professional, and efficient manner while effectively communicating and interacting with customers, clients, subcontract",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Ability to present information in a clear and understandable manner in both written and verbal form",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Working towards a bachelor's in Construction Management, Engineering, Mechanical Engineering, Civil Engineering, or related field or equivalent through experien",
+      "status": "met",
+      "why": "You're Aerospace Engineering"
+     },
+     {
+      "text": "Currently, the company is not considering applicants for this position who now or in the future require employment sponsorship by the company",
+      "status": "soft",
+      "why": ""
+     }
+    ],
+    "preferred": [],
+    "summary": {
+     "required_checked": 1,
+     "required_met": 1.0,
+     "required_missing": 0,
+     "to_check": 2,
+     "preferred_met": 0,
+     "preferred_total": 0
+    }
+   },
+   "matched": [],
+   "related": [],
+   "gaps": [],
+   "flags": [],
+   "has_description": true,
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-10-26"
+  },
+  {
+   "company": "Skanska",
+   "title": "Summer 2027 Construction Project Engineer Intern",
+   "location": "Seattle, WA, United States",
+   "url": "https://jobright.ai/jobs/info/6aa187e33272060a8e3f0386",
+   "source": "Jobright engineering list",
+   "posted": "2026-10-25",
+   "source_id": "Jobright engineering list",
+   "key": "url:https://jobright.ai/jobs/info/6aa187e33272060a8e3f0386",
+   "tracks": {
+    "broad": {
+     "score": 47,
+     "tier": "look",
+     "parts": {
+      "fit": 22,
+      "skills": 0,
+      "eligibility": 25,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    }
+   },
+   "score": 47,
+   "tier": "look",
+   "discipline": "Civil & construction",
+   "quals": {
+    "required": [
+     {
+      "text": "Knowledge of basic phases of construction projects",
+      "status": "check",
+      "why": "Coursework or background (check your classes)"
+     },
+     {
+      "text": "Knowledge of mathematics functions (geometry, basic algebra)",
+      "status": "check",
+      "why": "Coursework or background (check your classes)"
+     },
+     {
+      "text": "Computer skills (MS Office, HCSS, CGC, etc)",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Ability to perform all work in a timely, professional, and efficient manner while effectively communicating and interacting with customers, clients, subcontract",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Ability to present information in a clear and understandable manner in both written and verbal form",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Working towards a bachelor's in Construction Management, Engineering, Mechanical Engineering, Civil Engineering, or related field or equivalent through experien",
+      "status": "met",
+      "why": "You're Aerospace Engineering"
+     }
+    ],
+    "preferred": [],
+    "summary": {
+     "required_checked": 1,
+     "required_met": 1.0,
+     "required_missing": 0,
+     "to_check": 2,
+     "preferred_met": 0,
+     "preferred_total": 0
+    }
+   },
+   "matched": [],
+   "related": [],
+   "gaps": [],
+   "flags": [],
+   "has_description": true,
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-10-26"
+  },
+  {
+   "company": "Skanska",
+   "title": "Summer 2027 Construction Project Engineer Intern",
+   "location": "Bend, OR, United States",
+   "url": "https://jobright.ai/jobs/info/6aa87b712ed333b4ea5cfc75",
+   "source": "Jobright engineering list",
+   "posted": "2026-10-25",
+   "source_id": "Jobright engineering list",
+   "key": "url:https://jobright.ai/jobs/info/6aa87b712ed333b4ea5cfc75",
+   "tracks": {
+    "broad": {
+     "score": 47,
+     "tier": "look",
+     "parts": {
+      "fit": 22,
+      "skills": 0,
+      "eligibility": 25,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    }
+   },
+   "score": 47,
+   "tier": "look",
+   "discipline": "Civil & construction",
+   "quals": {
+    "required": [
+     {
+      "text": "Knowledge of basic phases of construction projects",
+      "status": "check",
+      "why": "Coursework or background (check your classes)"
+     },
+     {
+      "text": "Knowledge of mathematics functions (geometry, basic algebra)",
+      "status": "check",
+      "why": "Coursework or background (check your classes)"
+     },
+     {
+      "text": "Computer skills (MS Office, HCSS, CGC, etc)",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Ability to perform all work in a timely, professional, and efficient manner while effectively communicating and interacting with customers, clients, subcontract",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Ability to present information in a clear and understandable manner in both written and verbal form",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Working towards a bachelor's in Construction Management, Engineering, Mechanical Engineering, Civil Engineering, or related field or equivalent through experien",
+      "status": "met",
+      "why": "You're Aerospace Engineering"
+     },
+     {
+      "text": "Currently, the company is not considering applicants for this position who now or in the future require employment sponsorship by the company",
+      "status": "soft",
+      "why": ""
+     }
+    ],
+    "preferred": [],
+    "summary": {
+     "required_checked": 1,
+     "required_met": 1.0,
+     "required_missing": 0,
+     "to_check": 2,
+     "preferred_met": 0,
+     "preferred_total": 0
+    }
+   },
+   "matched": [],
+   "related": [],
+   "gaps": [],
+   "flags": [],
+   "has_description": true,
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-10-26"
+  },
+  {
+   "company": "Skanska",
+   "title": "Summer 2027 Construction Project Engineer Intern",
+   "location": "Boise, ID, United States",
+   "url": "https://jobright.ai/jobs/info/6aa49a411d92e2d05d11572f",
+   "source": "Jobright engineering list",
+   "posted": "2026-10-25",
+   "source_id": "Jobright engineering list",
+   "key": "url:https://jobright.ai/jobs/info/6aa49a411d92e2d05d11572f",
+   "tracks": {
+    "broad": {
+     "score": 47,
+     "tier": "look",
+     "parts": {
+      "fit": 22,
+      "skills": 0,
+      "eligibility": 25,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    }
+   },
+   "score": 47,
+   "tier": "look",
+   "discipline": "Civil & construction",
+   "quals": {
+    "required": [
+     {
+      "text": "Knowledge of basic phases of construction projects",
+      "status": "check",
+      "why": "Coursework or background (check your classes)"
+     },
+     {
+      "text": "Knowledge of mathematics functions (geometry, basic algebra)",
+      "status": "check",
+      "why": "Coursework or background (check your classes)"
+     },
+     {
+      "text": "Computer skills (MS Office, HCSS, CGC, etc)",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Ability to perform all work in a timely, professional, and efficient manner while effectively communicating and interacting with customers, clients, subcontract",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Ability to present information in a clear and understandable manner in both written and verbal form",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Working towards a bachelor's in Construction Management, Engineering, Mechanical Engineering, Civil Engineering, or related field or equivalent through experien",
+      "status": "met",
+      "why": "You're Aerospace Engineering"
+     }
+    ],
+    "preferred": [],
+    "summary": {
+     "required_checked": 1,
+     "required_met": 1.0,
+     "required_missing": 0,
+     "to_check": 2,
+     "preferred_met": 0,
+     "preferred_total": 0
+    }
+   },
+   "matched": [],
+   "related": [],
+   "gaps": [],
+   "flags": [],
+   "has_description": true,
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-10-26"
+  },
+  {
    "company": "Together AI",
    "title": "Hardware Security Engineer Intern",
    "location": "San Francisco, CA",
@@ -41972,46 +42855,6 @@
    "last_seen": "2026-10-26"
   },
   {
-   "company": "Bluecrest Partners",
-   "title": "Civil & Construction Engineer Intern",
-   "location": "Long Beach, CA, United States",
-   "url": "https://jobright.ai/jobs/info/6ade4e38389e06bb41ada853",
-   "source": "Jobright engineering list",
-   "posted": "2026-10-25",
-   "source_id": "Jobright engineering list",
-   "key": "url:https://jobright.ai/jobs/info/6ade4e38389e06bb41ada853",
-   "tracks": {
-    "broad": {
-     "score": 46,
-     "tier": "look",
-     "parts": {
-      "fit": 12,
-      "skills": 12,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Season not stated"
-    }
-   },
-   "score": 46,
-   "tier": "look",
-   "discipline": "Civil & construction",
-   "quals": null,
-   "matched": [],
-   "related": [],
-   "gaps": [],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "Full description not loaded"
-    }
-   ],
-   "has_description": false,
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-26"
-  },
-  {
    "company": "GE Vernova",
    "title": "Power System Intern",
    "location": "Bellevue, WA",
@@ -42483,86 +43326,6 @@
    "last_seen": "2026-10-26"
   },
   {
-   "company": "AE2S (Advanced Engineering and Environmental Services, LLC)",
-   "title": "Civil Engineering Internship - Summer 2027",
-   "location": "Bismarck, ND, United States",
-   "url": "https://jobright.ai/jobs/info/6a95a752f28891320e85cf02",
-   "source": "Jobright engineering list",
-   "posted": "2026-10-25",
-   "source_id": "Jobright engineering list",
-   "key": "url:https://jobright.ai/jobs/info/6a95a752f28891320e85cf02",
-   "tracks": {
-    "broad": {
-     "score": 45,
-     "tier": "look",
-     "parts": {
-      "fit": 8,
-      "skills": 12,
-      "eligibility": 25,
-      "requirements": 0
-     },
-     "season": "match",
-     "season_label": "Summer 2027"
-    }
-   },
-   "score": 45,
-   "tier": "look",
-   "discipline": "Civil & construction",
-   "quals": null,
-   "matched": [],
-   "related": [],
-   "gaps": [],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "Full description not loaded"
-    }
-   ],
-   "has_description": false,
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-26"
-  },
-  {
-   "company": "AE2S (Advanced Engineering and Environmental Services, LLC)",
-   "title": "Rural Water Engineering Internship - Summer 2027",
-   "location": "Williston, ND, United States",
-   "url": "https://jobright.ai/jobs/info/6a9ad0cefe45b8490f6047a2",
-   "source": "Jobright engineering list",
-   "posted": "2026-10-25",
-   "source_id": "Jobright engineering list",
-   "key": "url:https://jobright.ai/jobs/info/6a9ad0cefe45b8490f6047a2",
-   "tracks": {
-    "broad": {
-     "score": 45,
-     "tier": "look",
-     "parts": {
-      "fit": 8,
-      "skills": 12,
-      "eligibility": 25,
-      "requirements": 0
-     },
-     "season": "match",
-     "season_label": "Summer 2027"
-    }
-   },
-   "score": 45,
-   "tier": "look",
-   "discipline": "Civil & construction",
-   "quals": null,
-   "matched": [],
-   "related": [],
-   "gaps": [],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "Full description not loaded"
-    }
-   ],
-   "has_description": false,
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-26"
-  },
-  {
    "company": "Affirm",
    "title": "IT Engineer Intern",
    "location": "San Francisco, CA",
@@ -42726,86 +43489,6 @@
    "last_seen": "2026-10-26"
   },
   {
-   "company": "Arup",
-   "title": "Tunneling Engineering Intern (Available Summer 2027)",
-   "location": "Los Angeles, CA, United States",
-   "url": "https://jobright.ai/jobs/info/6acbd281ddd23cce28a0d9e6",
-   "source": "Jobright engineering list",
-   "posted": "2026-10-25",
-   "source_id": "Jobright engineering list",
-   "key": "url:https://jobright.ai/jobs/info/6acbd281ddd23cce28a0d9e6",
-   "tracks": {
-    "broad": {
-     "score": 45,
-     "tier": "look",
-     "parts": {
-      "fit": 8,
-      "skills": 12,
-      "eligibility": 25,
-      "requirements": 0
-     },
-     "season": "match",
-     "season_label": "Summer 2027"
-    }
-   },
-   "score": 45,
-   "tier": "look",
-   "discipline": "General engineering",
-   "quals": null,
-   "matched": [],
-   "related": [],
-   "gaps": [],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "Full description not loaded"
-    }
-   ],
-   "has_description": false,
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-26"
-  },
-  {
-   "company": "Arup",
-   "title": "Ground Engineering Intern (Summer 2027)",
-   "location": "San Francisco, CA, United States",
-   "url": "https://jobright.ai/jobs/info/6acbd280002e496d4beed7d6",
-   "source": "Jobright engineering list",
-   "posted": "2026-10-25",
-   "source_id": "Jobright engineering list",
-   "key": "url:https://jobright.ai/jobs/info/6acbd280002e496d4beed7d6",
-   "tracks": {
-    "broad": {
-     "score": 45,
-     "tier": "look",
-     "parts": {
-      "fit": 8,
-      "skills": 12,
-      "eligibility": 25,
-      "requirements": 0
-     },
-     "season": "match",
-     "season_label": "Summer 2027"
-    }
-   },
-   "score": 45,
-   "tier": "look",
-   "discipline": "General engineering",
-   "quals": null,
-   "matched": [],
-   "related": [],
-   "gaps": [],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "Full description not loaded"
-    }
-   ],
-   "has_description": false,
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-26"
-  },
-  {
    "company": "Blue Origin",
    "title": "Summer 2027 Materials & Processes Internship - Graduate",
    "location": "Greater Seattle Area; Space Coast, FL; Huntsville, AL",
@@ -42928,46 +43611,6 @@
    "score": 45,
    "tier": "look",
    "discipline": "General engineering",
-   "quals": null,
-   "matched": [],
-   "related": [],
-   "gaps": [],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "Full description not loaded"
-    }
-   ],
-   "has_description": false,
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-26"
-  },
-  {
-   "company": "Conlon Construction",
-   "title": "2027 Summer Construction Internship - Dubuque, IA",
-   "location": "Dubuque, IA, United States",
-   "url": "https://jobright.ai/jobs/info/6ab2ebc81e4847ddae9170c6",
-   "source": "Jobright engineering list",
-   "posted": "2026-10-25",
-   "source_id": "Jobright engineering list",
-   "key": "url:https://jobright.ai/jobs/info/6ab2ebc81e4847ddae9170c6",
-   "tracks": {
-    "broad": {
-     "score": 45,
-     "tier": "look",
-     "parts": {
-      "fit": 8,
-      "skills": 12,
-      "eligibility": 25,
-      "requirements": 0
-     },
-     "season": "match",
-     "season_label": "Summer 2027"
-    }
-   },
-   "score": 45,
-   "tier": "look",
-   "discipline": "Civil & construction",
    "quals": null,
    "matched": [],
    "related": [],
@@ -43620,46 +44263,6 @@
    "last_seen": "2026-10-26"
   },
   {
-   "company": "Orbital Operations",
-   "title": "Summer 2027 Internship - Engineering",
-   "location": "Long Beach, CA, USA",
-   "url": "https://boards.greenhouse.io/orbitaloperations/jobs/4375099009",
-   "source": "Space Capital job board",
-   "posted": "2026-10-20",
-   "source_id": "Space Capital job board",
-   "key": "gr:4375099009",
-   "tracks": {
-    "broad": {
-     "score": 45,
-     "tier": "look",
-     "parts": {
-      "fit": 8,
-      "skills": 12,
-      "eligibility": 25,
-      "requirements": 0
-     },
-     "season": "match",
-     "season_label": "Summer 2027"
-    }
-   },
-   "score": 45,
-   "tier": "look",
-   "discipline": "General engineering",
-   "quals": null,
-   "matched": [],
-   "related": [],
-   "gaps": [],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "Full description not loaded"
-    }
-   ],
-   "has_description": false,
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-26"
-  },
-  {
    "company": "Paccar",
    "title": "Engineering Operations Intern",
    "location": "Kirkland, WA",
@@ -43669,46 +44272,6 @@
    "sponsorship": "Other",
    "source_id": "Simplify Summer 2027 list",
    "key": "url:https://jobs.paccar.com/job/kirkland-summer-2027-engineering-operations-intern-wa-98033/1449526733",
-   "tracks": {
-    "broad": {
-     "score": 45,
-     "tier": "look",
-     "parts": {
-      "fit": 8,
-      "skills": 12,
-      "eligibility": 25,
-      "requirements": 0
-     },
-     "season": "match",
-     "season_label": "Summer 2027"
-    }
-   },
-   "score": 45,
-   "tier": "look",
-   "discipline": "General engineering",
-   "quals": null,
-   "matched": [],
-   "related": [],
-   "gaps": [],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "Full description not loaded"
-    }
-   ],
-   "has_description": false,
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-26"
-  },
-  {
-   "company": "Panthalassa",
-   "title": "Summer 2027 Engineering Internship",
-   "location": "Portland, OR, USA",
-   "url": "https://boards.greenhouse.io/panthalassa/jobs/6217929004",
-   "source": "Space Capital job board",
-   "posted": "2026-10-06",
-   "source_id": "Space Capital job board",
-   "key": "gr:6217929004",
    "tracks": {
     "broad": {
      "score": 45,
@@ -43823,46 +44386,6 @@
    "gaps": [],
    "flags": [],
    "has_description": true,
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-26"
-  },
-  {
-   "company": "Texas-New Mexico Power (TNMP)",
-   "title": "2027 Summer Engineering Internship (DFW Area)",
-   "location": "Lewisville, TX, United States",
-   "url": "https://jobright.ai/jobs/info/6adbbda20a4cc7090f9747b5",
-   "source": "Jobright engineering list",
-   "posted": "2026-10-25",
-   "source_id": "Jobright engineering list",
-   "key": "url:https://jobright.ai/jobs/info/6adbbda20a4cc7090f9747b5",
-   "tracks": {
-    "broad": {
-     "score": 45,
-     "tier": "look",
-     "parts": {
-      "fit": 8,
-      "skills": 12,
-      "eligibility": 25,
-      "requirements": 0
-     },
-     "season": "match",
-     "season_label": "Summer 2027"
-    }
-   },
-   "score": 45,
-   "tier": "look",
-   "discipline": "General engineering",
-   "quals": null,
-   "matched": [],
-   "related": [],
-   "gaps": [],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "Full description not loaded"
-    }
-   ],
-   "has_description": false,
    "first_seen": "2026-10-26",
    "last_seen": "2026-10-26"
   },
@@ -45968,46 +46491,6 @@
    "last_seen": "2026-10-26"
   },
   {
-   "company": "AE2S (Advanced Engineering and Environmental Services, LLC)",
-   "title": "Rural Water Engineering Internship",
-   "location": "Fargo, ND, United States",
-   "url": "https://jobright.ai/jobs/info/6aaabf39c85610f4a4841538",
-   "source": "Jobright engineering list",
-   "posted": "2026-10-25",
-   "source_id": "Jobright engineering list",
-   "key": "url:https://jobright.ai/jobs/info/6aaabf39c85610f4a4841538",
-   "tracks": {
-    "broad": {
-     "score": 42,
-     "tier": "look",
-     "parts": {
-      "fit": 8,
-      "skills": 12,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Season not stated"
-    }
-   },
-   "score": 42,
-   "tier": "look",
-   "discipline": "Civil & construction",
-   "quals": null,
-   "matched": [],
-   "related": [],
-   "gaps": [],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "Full description not loaded"
-    }
-   ],
-   "has_description": false,
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-26"
-  },
-  {
    "company": "Airbus",
    "title": "Society of Women Engineers Conference Summer Internship - Engineering 2027",
    "location": "Mobile Area, AL",
@@ -46139,46 +46622,6 @@
     }
    ],
    "has_description": true,
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-26"
-  },
-  {
-   "company": "First Order Effects",
-   "title": "Engineering Operations Intern",
-   "location": "Austin, TX, USA",
-   "url": "https://jobs.ashbyhq.com/firstordereffects/21601331-5541-4362-ab04-b347ecf1a4f2",
-   "source": "Space Capital job board",
-   "posted": "2026-09-28",
-   "source_id": "Space Capital job board",
-   "key": "as:21601331-5541-4362-ab04-b347ecf1a4f2",
-   "tracks": {
-    "broad": {
-     "score": 42,
-     "tier": "look",
-     "parts": {
-      "fit": 8,
-      "skills": 12,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Season not stated"
-    }
-   },
-   "score": 42,
-   "tier": "look",
-   "discipline": "General engineering",
-   "quals": null,
-   "matched": [],
-   "related": [],
-   "gaps": [],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "Full description not loaded"
-    }
-   ],
-   "has_description": false,
    "first_seen": "2026-10-26",
    "last_seen": "2026-10-26"
   },
@@ -46340,46 +46783,6 @@
    "last_seen": "2026-10-26"
   },
   {
-   "company": "General Galactic",
-   "title": "Summer Engineering Internship",
-   "location": "El Segundo, CA, USA",
-   "url": "https://boards.greenhouse.io/generalgalactic/jobs/4429027009",
-   "source": "Space Capital job board",
-   "posted": "2026-10-09",
-   "source_id": "Space Capital job board",
-   "key": "gr:4429027009",
-   "tracks": {
-    "broad": {
-     "score": 42,
-     "tier": "look",
-     "parts": {
-      "fit": 8,
-      "skills": 12,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Summer (year not stated)"
-    }
-   },
-   "score": 42,
-   "tier": "look",
-   "discipline": "General engineering",
-   "quals": null,
-   "matched": [],
-   "related": [],
-   "gaps": [],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "Full description not loaded"
-    }
-   ],
-   "has_description": false,
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-26"
-  },
-  {
    "company": "Humana",
    "title": "Technology Intern - Society of Women Engineers Conference",
    "location": "Louisville, KY",
@@ -46507,246 +46910,6 @@
     }
    ],
    "has_description": true,
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-26"
-  },
-  {
-   "company": "Kimley-Horn",
-   "title": "Environmental Science Intern",
-   "location": "Fort Worth, TX, United States",
-   "url": "https://jobright.ai/jobs/info/6abd1187d9621c5b28389dc6",
-   "source": "Jobright engineering list",
-   "posted": "2026-10-25",
-   "source_id": "Jobright engineering list",
-   "key": "url:https://jobright.ai/jobs/info/6abd1187d9621c5b28389dc6",
-   "tracks": {
-    "broad": {
-     "score": 42,
-     "tier": "look",
-     "parts": {
-      "fit": 8,
-      "skills": 12,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Season not stated"
-    }
-   },
-   "score": 42,
-   "tier": "look",
-   "discipline": "Civil & construction",
-   "quals": null,
-   "matched": [],
-   "related": [],
-   "gaps": [],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "Full description not loaded"
-    }
-   ],
-   "has_description": false,
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-26"
-  },
-  {
-   "company": "Kimley-Horn",
-   "title": "Environmental Science Intern",
-   "location": "Reston, VA, United States",
-   "url": "https://jobright.ai/jobs/info/6a8e0ac5d34f700f87fd7a2b",
-   "source": "Jobright engineering list",
-   "posted": "2026-10-25",
-   "source_id": "Jobright engineering list",
-   "key": "url:https://jobright.ai/jobs/info/6a8e0ac5d34f700f87fd7a2b",
-   "tracks": {
-    "broad": {
-     "score": 42,
-     "tier": "look",
-     "parts": {
-      "fit": 8,
-      "skills": 12,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Season not stated"
-    }
-   },
-   "score": 42,
-   "tier": "look",
-   "discipline": "Civil & construction",
-   "quals": null,
-   "matched": [],
-   "related": [],
-   "gaps": [],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "Full description not loaded"
-    }
-   ],
-   "has_description": false,
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-26"
-  },
-  {
-   "company": "Kimley-Horn",
-   "title": "Environmental Science Intern",
-   "location": "Apple Valley, MN, United States",
-   "url": "https://jobright.ai/jobs/info/6acd75e8002e496d4bef2565",
-   "source": "Jobright engineering list",
-   "posted": "2026-10-25",
-   "source_id": "Jobright engineering list",
-   "key": "url:https://jobright.ai/jobs/info/6acd75e8002e496d4bef2565",
-   "tracks": {
-    "broad": {
-     "score": 42,
-     "tier": "look",
-     "parts": {
-      "fit": 8,
-      "skills": 12,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Season not stated"
-    }
-   },
-   "score": 42,
-   "tier": "look",
-   "discipline": "Civil & construction",
-   "quals": null,
-   "matched": [],
-   "related": [],
-   "gaps": [],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "Full description not loaded"
-    }
-   ],
-   "has_description": false,
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-26"
-  },
-  {
-   "company": "Kimley-Horn",
-   "title": "Environmental Science Intern",
-   "location": "Fort Mill, SC, United States",
-   "url": "https://jobright.ai/jobs/info/6acece7770e50ec1b37f1dc9",
-   "source": "Jobright engineering list",
-   "posted": "2026-10-25",
-   "source_id": "Jobright engineering list",
-   "key": "url:https://jobright.ai/jobs/info/6acece7770e50ec1b37f1dc9",
-   "tracks": {
-    "broad": {
-     "score": 42,
-     "tier": "look",
-     "parts": {
-      "fit": 8,
-      "skills": 12,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Season not stated"
-    }
-   },
-   "score": 42,
-   "tier": "look",
-   "discipline": "Civil & construction",
-   "quals": null,
-   "matched": [],
-   "related": [],
-   "gaps": [],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "Full description not loaded"
-    }
-   ],
-   "has_description": false,
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-26"
-  },
-  {
-   "company": "Kimley-Horn",
-   "title": "Environmental Science Intern",
-   "location": "Greenville, SC, United States",
-   "url": "https://jobright.ai/jobs/info/6aceb25f680c80c8753be55a",
-   "source": "Jobright engineering list",
-   "posted": "2026-10-25",
-   "source_id": "Jobright engineering list",
-   "key": "url:https://jobright.ai/jobs/info/6aceb25f680c80c8753be55a",
-   "tracks": {
-    "broad": {
-     "score": 42,
-     "tier": "look",
-     "parts": {
-      "fit": 8,
-      "skills": 12,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Season not stated"
-    }
-   },
-   "score": 42,
-   "tier": "look",
-   "discipline": "Civil & construction",
-   "quals": null,
-   "matched": [],
-   "related": [],
-   "gaps": [],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "Full description not loaded"
-    }
-   ],
-   "has_description": false,
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-26"
-  },
-  {
-   "company": "Kimley-Horn",
-   "title": "Environmental Science Intern",
-   "location": "Cary, NC, United States",
-   "url": "https://jobright.ai/jobs/info/6ac5b5f0064da25272e18399",
-   "source": "Jobright engineering list",
-   "posted": "2026-10-25",
-   "source_id": "Jobright engineering list",
-   "key": "url:https://jobright.ai/jobs/info/6ac5b5f0064da25272e18399",
-   "tracks": {
-    "broad": {
-     "score": 42,
-     "tier": "look",
-     "parts": {
-      "fit": 8,
-      "skills": 12,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Season not stated"
-    }
-   },
-   "score": 42,
-   "tier": "look",
-   "discipline": "Civil & construction",
-   "quals": null,
-   "matched": [],
-   "related": [],
-   "gaps": [],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "Full description not loaded"
-    }
-   ],
-   "has_description": false,
    "first_seen": "2026-10-26",
    "last_seen": "2026-10-26"
   },
@@ -47657,6 +47820,120 @@
    "last_seen": "2026-10-26"
   },
   {
+   "company": "AE2S (Advanced Engineering and Environmental Services, LLC)",
+   "title": "Civil Engineering Internship - Summer 2027",
+   "location": "Bismarck, ND, United States",
+   "url": "https://jobright.ai/jobs/info/6a95a752f28891320e85cf02",
+   "source": "Jobright engineering list",
+   "posted": "2026-10-25",
+   "source_id": "Jobright engineering list",
+   "key": "url:https://jobright.ai/jobs/info/6a95a752f28891320e85cf02",
+   "tracks": {
+    "broad": {
+     "score": 40,
+     "tier": "look",
+     "parts": {
+      "fit": 8,
+      "skills": 7,
+      "eligibility": 25,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    }
+   },
+   "score": 40,
+   "tier": "look",
+   "discipline": "Civil & construction",
+   "quals": {
+    "required": [
+     {
+      "text": "Completion of at least one semester towards a bachelor degree in Civil Engineering, Environmental Engineering or related field",
+      "status": "partial",
+      "why": "Other majors listed; Aerospace Engineering may count as related"
+     },
+     {
+      "text": "Minimum GPA of 3.0",
+      "status": "check",
+      "why": "Needs GPA 3.0+"
+     },
+     {
+      "text": "Ability to travel as required",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Ability to stand or sit for prolonged periods of time",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Occasionally climb, stoop, bend, kneel, crouch, reach, and twist",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Ability to walk up to 3-miles on uneven terrain",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Occasionally lift, carry, push, and pull light to moderate amounts of weight",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "May require lifting and carrying up to 20 pounds, with rare lifting of up to 50 pounds",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Ability to work in adverse weather conditions",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Ability to inspect equipment, structures, or materials to identify the cause of errors or other problems or defects",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "May be required to wear Personal Protection Equipment (PPE) including but not limited to, flame resistant clothing, hard hat, and protective footwear",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Completion of at least 4 semesters towards a bachelor degree in Civil Engineer, Environmental Engineering or related field",
+      "status": "partial",
+      "why": "Other majors listed; Aerospace Engineering may count as related"
+     }
+    ],
+    "preferred": [],
+    "summary": {
+     "required_checked": 2,
+     "required_met": 1.0,
+     "required_missing": 0,
+     "to_check": 1,
+     "preferred_met": 0,
+     "preferred_total": 0
+    }
+   },
+   "matched": [
+    "Prototyping & fabrication"
+   ],
+   "related": [],
+   "gaps": [],
+   "flags": [
+    {
+     "kind": "info",
+     "label": "Min GPA 3.0"
+    }
+   ],
+   "has_description": true,
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-10-26"
+  },
+  {
    "company": "Adobe",
    "title": "Security Engineer Intern",
    "location": "Lehi, UT",
@@ -47815,6 +48092,98 @@
      "label": "Grad window 2027 fits"
     }
    ],
+   "has_description": true,
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-10-26"
+  },
+  {
+   "company": "Arup",
+   "title": "Tunneling Engineering Intern (Available Summer 2027)",
+   "location": "Los Angeles, CA, United States",
+   "url": "https://jobright.ai/jobs/info/6acbd281ddd23cce28a0d9e6",
+   "source": "Jobright engineering list",
+   "posted": "2026-10-25",
+   "source_id": "Jobright engineering list",
+   "key": "url:https://jobright.ai/jobs/info/6acbd281ddd23cce28a0d9e6",
+   "tracks": {
+    "broad": {
+     "score": 40,
+     "tier": "look",
+     "parts": {
+      "fit": 8,
+      "skills": 7,
+      "eligibility": 25,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    }
+   },
+   "score": 40,
+   "tier": "look",
+   "discipline": "General engineering",
+   "quals": {
+    "required": [
+     {
+      "text": "Pursuing Masters or PhD in Underground Construction/Tunneling, Civil (with a geotechnical focus), Geotechnical, Structural, Geological, or Mining Engineering",
+      "status": "missing",
+      "why": "Asks for a graduate degree"
+     },
+     {
+      "text": "Sound knowledge of civil engineering fundamentals, soil and rock mechanics, and tunneling methods",
+      "status": "check",
+      "why": "Coursework or background (check your classes)"
+     },
+     {
+      "text": "Good time-management habits, ability to multi-task, ability to sustain focus on long tasks",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Ability to communicate thoughts and ideas in an accessible way – distill design tasks and solutions into concise text and presentation slides",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Attitude of taking initiative, enthusiasm, eagerness to learn, teamwork, creativity",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Proficient in developing code and common coding languages",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Candidate must be eligible to work in the United States without the need for employer sponsored work authorization now or in the future",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Proficient in geotechnical engineering analysis software",
+      "status": "check",
+      "why": ""
+     }
+    ],
+    "preferred": [],
+    "summary": {
+     "required_checked": 1,
+     "required_met": 0.0,
+     "required_missing": 1,
+     "to_check": 1,
+     "preferred_met": 0,
+     "preferred_total": 0
+    }
+   },
+   "matched": [
+    "Student engineering team"
+   ],
+   "related": [],
+   "gaps": [
+    "FEA / stress analysis",
+    "Data acquisition / test"
+   ],
+   "flags": [],
    "has_description": true,
    "first_seen": "2026-10-26",
    "last_seen": "2026-10-26"
@@ -50263,6 +50632,104 @@
    "last_seen": "2026-10-26"
   },
   {
+   "company": "Sargent & Lundy",
+   "title": "Transmission & Distribution Engineer Intern - Grid (Summer 2027)",
+   "location": "Houston, TX, United States",
+   "url": "https://jobright.ai/jobs/info/6aa41fc7f3aa936e2cdafdfc",
+   "source": "Jobright engineering list",
+   "posted": "2026-10-25",
+   "source_id": "Jobright engineering list",
+   "key": "url:https://jobright.ai/jobs/info/6aa41fc7f3aa936e2cdafdfc",
+   "tracks": {
+    "broad": {
+     "score": 37,
+     "tier": "look",
+     "parts": {
+      "fit": 12,
+      "skills": 0,
+      "eligibility": 25,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    }
+   },
+   "score": 37,
+   "tier": "look",
+   "discipline": "Energy & nuclear",
+   "quals": {
+    "required": [
+     {
+      "text": "Active enrollment in a Bachelor of Science or Master of Science in Civil, Structural, Mechanical, or Electrical Engineering with a strong academic background",
+      "status": "met",
+      "why": "You're Aerospace Engineering"
+     },
+     {
+      "text": "Candidates pursuing other engineering degrees may also be considered if they have relevant coursework in civil, geotechnical, strength of materials, statics, or",
+      "status": "check",
+      "why": "Coursework or background (check your classes)"
+     },
+     {
+      "text": "Strong organizational skills with high attention to detail",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Self-Starter, proactive, able to work independently with minimal direction",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Ability to quickly identify and prioritize issues, create solutions, and meet deadlines",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Active enrollment in a BS or MS ABET Engineering Accreditation Commission-approved program",
+      "status": "met",
+      "why": "Engineering degree: Aerospace Engineering counts"
+     },
+     {
+      "text": "Demonstrated leadership experience within campus and/or the community",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Prior, related internship or co-op experience in our business area",
+      "status": "check",
+      "why": ""
+     }
+    ],
+    "preferred": [
+     {
+      "text": "Minimum of a 3.0 GPA strongly preferred",
+      "status": "check",
+      "why": "Needs GPA 3.0+"
+     }
+    ],
+    "summary": {
+     "required_checked": 2,
+     "required_met": 2.0,
+     "required_missing": 0,
+     "to_check": 2,
+     "preferred_met": 0,
+     "preferred_total": 0
+    }
+   },
+   "matched": [],
+   "related": [],
+   "gaps": [],
+   "flags": [
+    {
+     "kind": "info",
+     "label": "Min GPA 3.0"
+    }
+   ],
+   "has_description": true,
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-10-26"
+  },
+  {
    "company": "ABB",
    "title": "Power BI Intern",
    "location": "Cary, NC",
@@ -51334,6 +51801,190 @@
    "last_seen": "2026-10-26"
   },
   {
+   "company": "AE2S (Advanced Engineering and Environmental Services, LLC)",
+   "title": "Rural Water Engineering Internship - Summer 2027",
+   "location": "Williston, ND, United States",
+   "url": "https://jobright.ai/jobs/info/6a9ad0cefe45b8490f6047a2",
+   "source": "Jobright engineering list",
+   "posted": "2026-10-25",
+   "source_id": "Jobright engineering list",
+   "key": "url:https://jobright.ai/jobs/info/6a9ad0cefe45b8490f6047a2",
+   "tracks": {
+    "broad": {
+     "score": 33,
+     "tier": "look",
+     "parts": {
+      "fit": 8,
+      "skills": 0,
+      "eligibility": 25,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    }
+   },
+   "score": 33,
+   "tier": "look",
+   "discipline": "Civil & construction",
+   "quals": {
+    "required": [
+     {
+      "text": "Completion of at least one semester towards a bachelor degree in Civil Engineering or related field",
+      "status": "partial",
+      "why": "Other majors listed; Aerospace Engineering may count as related"
+     },
+     {
+      "text": "Minimum GPA of 3.0",
+      "status": "check",
+      "why": "Needs GPA 3.0+"
+     },
+     {
+      "text": "Ability to travel as required",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Completion of at least 4 semesters towards a bachelor degree in Civil Engineering or related field",
+      "status": "partial",
+      "why": "Other majors listed; Aerospace Engineering may count as related"
+     },
+     {
+      "text": "AutoCAD experience",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Experience on civil, water, wastewater, or rural water projects",
+      "status": "check",
+      "why": ""
+     }
+    ],
+    "preferred": [],
+    "summary": {
+     "required_checked": 2,
+     "required_met": 1.0,
+     "required_missing": 0,
+     "to_check": 1,
+     "preferred_met": 0,
+     "preferred_total": 0
+    }
+   },
+   "matched": [],
+   "related": [],
+   "gaps": [],
+   "flags": [
+    {
+     "kind": "info",
+     "label": "Min GPA 3.0"
+    }
+   ],
+   "has_description": true,
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-10-26"
+  },
+  {
+   "company": "Arup",
+   "title": "Ground Engineering Intern (Summer 2027)",
+   "location": "San Francisco, CA, United States",
+   "url": "https://jobright.ai/jobs/info/6acbd280002e496d4beed7d6",
+   "source": "Jobright engineering list",
+   "posted": "2026-10-25",
+   "source_id": "Jobright engineering list",
+   "key": "url:https://jobright.ai/jobs/info/6acbd280002e496d4beed7d6",
+   "tracks": {
+    "broad": {
+     "score": 33,
+     "tier": "look",
+     "parts": {
+      "fit": 8,
+      "skills": 0,
+      "eligibility": 25,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    }
+   },
+   "score": 33,
+   "tier": "look",
+   "discipline": "General engineering",
+   "quals": {
+    "required": [
+     {
+      "text": "Currently pursuing a bachelor's or master's degree in Geotechnical Engineering, Civil Engineering (with focus on Geotech), or Geological Engineering",
+      "status": "met",
+      "why": "Engineering degree: Aerospace Engineering counts"
+     },
+     {
+      "text": "Sound knowledge of civil engineering fundamentals, soil, and rock mechanics",
+      "status": "check",
+      "why": "Coursework or background (check your classes)"
+     },
+     {
+      "text": "Professional demeanor",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Good interpersonal skills needed for team-based working",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Excellent planning and organization skills required for our fast-paced environment",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Must be highly motivated, proactive, and willing to handle new challenges",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Candidate must be eligible to work in Canada without the need for employer sponsored work authorization now or in the future",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "A passion for sustainable development and creating a better world is key",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "We're looking for critical thinkers who embrace new ideas and challenge the status quo",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "You have a growth mindset, always eager to learn and explore new ways of working",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "You're ready to take on any challenge that comes your way",
+      "status": "check",
+      "why": ""
+     }
+    ],
+    "preferred": [],
+    "summary": {
+     "required_checked": 1,
+     "required_met": 1.0,
+     "required_missing": 0,
+     "to_check": 1,
+     "preferred_met": 0,
+     "preferred_total": 0
+    }
+   },
+   "matched": [],
+   "related": [],
+   "gaps": [],
+   "flags": [],
+   "has_description": true,
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-10-26"
+  },
+  {
    "company": "Duke Energy",
    "title": "Waste & Groundwater Programs Summer Engineering Internship 2027",
    "location": "Charlotte, NC; Owensville, IN; Edwardsport, IN; Arden, NC; Salisbury, NC; Stanley, NC; Roxboro, NC; Trenton, FL; Union, KY; Tuckasegee, NC; Crystal River, FL; Noblesville, IN",
@@ -51801,6 +52452,41 @@
      "preferred_total": 0
     }
    },
+   "matched": [],
+   "related": [],
+   "gaps": [],
+   "flags": [],
+   "has_description": true,
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-10-26"
+  },
+  {
+   "company": "Texas-New Mexico Power (TNMP)",
+   "title": "2027 Summer Engineering Internship (DFW Area)",
+   "location": "Lewisville, TX, United States",
+   "url": "https://jobright.ai/jobs/info/6adbbda20a4cc7090f9747b5",
+   "source": "Jobright engineering list",
+   "posted": "2026-10-25",
+   "source_id": "Jobright engineering list",
+   "key": "url:https://jobright.ai/jobs/info/6adbbda20a4cc7090f9747b5",
+   "tracks": {
+    "broad": {
+     "score": 33,
+     "tier": "look",
+     "parts": {
+      "fit": 8,
+      "skills": 0,
+      "eligibility": 25,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    }
+   },
+   "score": 33,
+   "tier": "look",
+   "discipline": "General engineering",
+   "quals": null,
    "matched": [],
    "related": [],
    "gaps": [],
@@ -52388,6 +53074,450 @@
      "label": "Min GPA 3.0"
     }
    ],
+   "has_description": true,
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-10-26"
+  },
+  {
+   "company": "AE2S (Advanced Engineering and Environmental Services, LLC)",
+   "title": "Rural Water Engineering Internship",
+   "location": "Fargo, ND, United States",
+   "url": "https://jobright.ai/jobs/info/6aaabf39c85610f4a4841538",
+   "source": "Jobright engineering list",
+   "posted": "2026-10-25",
+   "source_id": "Jobright engineering list",
+   "key": "url:https://jobright.ai/jobs/info/6aaabf39c85610f4a4841538",
+   "tracks": {
+    "broad": {
+     "score": 30,
+     "tier": "look",
+     "parts": {
+      "fit": 8,
+      "skills": 0,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Season not stated"
+    }
+   },
+   "score": 30,
+   "tier": "look",
+   "discipline": "Civil & construction",
+   "quals": {
+    "required": [
+     {
+      "text": "Completion of at least one semester towards a bachelor degree in Civil Engineering or related field",
+      "status": "partial",
+      "why": "Other majors listed; Aerospace Engineering may count as related"
+     },
+     {
+      "text": "Minimum GPA of 3.0",
+      "status": "check",
+      "why": "Needs GPA 3.0+"
+     },
+     {
+      "text": "Ability to travel as required",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Ability to walk up to 3-miles on uneven terrain",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Ability to stand or sit for prolonged periods of time",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Occasionally climb, stoop, bend, kneel, crouch, reach, and twist",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Occasionally lift, carry, push, and pull light to moderate amounts of weight",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "May require lifting and carrying up to 20 pounds, with rare lifting of up to 50 pounds",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Ability to inspect equipment, structures, or materials to identify the cause of errors or other problems or defects",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "May be required to wear Personal Protection Equipment (PPE) including but not limited to, flame resistant clothing, hard hat, and protective footwear",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "May require occasional evenings and weekends with overtime expectations varying with workload",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "May be required to travel to off-site locations including occasional overnight stays out of town",
+      "status": "soft",
+      "why": ""
+     }
+    ],
+    "preferred": [],
+    "summary": {
+     "required_checked": 1,
+     "required_met": 0.5,
+     "required_missing": 0,
+     "to_check": 1,
+     "preferred_met": 0,
+     "preferred_total": 0
+    }
+   },
+   "matched": [],
+   "related": [],
+   "gaps": [],
+   "flags": [
+    {
+     "kind": "info",
+     "label": "Min GPA 3.0"
+    }
+   ],
+   "has_description": true,
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-10-26"
+  },
+  {
+   "company": "Kimley-Horn",
+   "title": "Environmental Science Intern",
+   "location": "Fort Worth, TX, United States",
+   "url": "https://jobright.ai/jobs/info/6abd1187d9621c5b28389dc6",
+   "source": "Jobright engineering list",
+   "posted": "2026-10-25",
+   "source_id": "Jobright engineering list",
+   "key": "url:https://jobright.ai/jobs/info/6abd1187d9621c5b28389dc6",
+   "tracks": {
+    "broad": {
+     "score": 30,
+     "tier": "look",
+     "parts": {
+      "fit": 8,
+      "skills": 0,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Season not stated"
+    }
+   },
+   "score": 30,
+   "tier": "look",
+   "discipline": "Civil & construction",
+   "quals": {
+    "required": [
+     {
+      "text": "The opportunity to gain knowledge in one or more of the following: natural resource regulations, water quality regulatory programs, wetlands identification incl",
+      "status": "check",
+      "why": "Coursework or background (check your classes)"
+     },
+     {
+      "text": "In the process of receiving a Bachelors or Masters Degree in Biology, Environmental Science, or other related majors",
+      "status": "partial",
+      "why": "Other majors listed; Aerospace Engineering may count as related"
+     }
+    ],
+    "preferred": [],
+    "summary": {
+     "required_checked": 1,
+     "required_met": 0.5,
+     "required_missing": 0,
+     "to_check": 1,
+     "preferred_met": 0,
+     "preferred_total": 0
+    }
+   },
+   "matched": [],
+   "related": [],
+   "gaps": [],
+   "flags": [],
+   "has_description": true,
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-10-26"
+  },
+  {
+   "company": "Kimley-Horn",
+   "title": "Environmental Science Intern",
+   "location": "Reston, VA, United States",
+   "url": "https://jobright.ai/jobs/info/6a8e0ac5d34f700f87fd7a2b",
+   "source": "Jobright engineering list",
+   "posted": "2026-10-25",
+   "source_id": "Jobright engineering list",
+   "key": "url:https://jobright.ai/jobs/info/6a8e0ac5d34f700f87fd7a2b",
+   "tracks": {
+    "broad": {
+     "score": 30,
+     "tier": "look",
+     "parts": {
+      "fit": 8,
+      "skills": 0,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Season not stated"
+    }
+   },
+   "score": 30,
+   "tier": "look",
+   "discipline": "Civil & construction",
+   "quals": {
+    "required": [
+     {
+      "text": "The opportunity to gain knowledge in one or more of the following: natural resource regulations, water quality regulatory programs, wetlands identification incl",
+      "status": "check",
+      "why": "Coursework or background (check your classes)"
+     },
+     {
+      "text": "In the process of receiving a Bachelors or Masters Degree in Biology, Environmental Science, or other related majors",
+      "status": "partial",
+      "why": "Other majors listed; Aerospace Engineering may count as related"
+     },
+     {
+      "text": "Some travel and fieldwork may be required (approximately 10-30%)",
+      "status": "soft",
+      "why": ""
+     }
+    ],
+    "preferred": [],
+    "summary": {
+     "required_checked": 1,
+     "required_met": 0.5,
+     "required_missing": 0,
+     "to_check": 1,
+     "preferred_met": 0,
+     "preferred_total": 0
+    }
+   },
+   "matched": [],
+   "related": [],
+   "gaps": [],
+   "flags": [],
+   "has_description": true,
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-10-26"
+  },
+  {
+   "company": "Kimley-Horn",
+   "title": "Environmental Science Intern",
+   "location": "Apple Valley, MN, United States",
+   "url": "https://jobright.ai/jobs/info/6acd75e8002e496d4bef2565",
+   "source": "Jobright engineering list",
+   "posted": "2026-10-25",
+   "source_id": "Jobright engineering list",
+   "key": "url:https://jobright.ai/jobs/info/6acd75e8002e496d4bef2565",
+   "tracks": {
+    "broad": {
+     "score": 30,
+     "tier": "look",
+     "parts": {
+      "fit": 8,
+      "skills": 0,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Season not stated"
+    }
+   },
+   "score": 30,
+   "tier": "look",
+   "discipline": "Civil & construction",
+   "quals": {
+    "required": [
+     {
+      "text": "In the process of receiving a Bachelors or Masters Degree in Biology, Environmental Science, or other related majors",
+      "status": "partial",
+      "why": "Other majors listed; Aerospace Engineering may count as related"
+     }
+    ],
+    "preferred": [],
+    "summary": {
+     "required_checked": 1,
+     "required_met": 0.5,
+     "required_missing": 0,
+     "to_check": 0,
+     "preferred_met": 0,
+     "preferred_total": 0
+    }
+   },
+   "matched": [],
+   "related": [],
+   "gaps": [],
+   "flags": [],
+   "has_description": true,
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-10-26"
+  },
+  {
+   "company": "Kimley-Horn",
+   "title": "Environmental Science Intern",
+   "location": "Fort Mill, SC, United States",
+   "url": "https://jobright.ai/jobs/info/6acece7770e50ec1b37f1dc9",
+   "source": "Jobright engineering list",
+   "posted": "2026-10-25",
+   "source_id": "Jobright engineering list",
+   "key": "url:https://jobright.ai/jobs/info/6acece7770e50ec1b37f1dc9",
+   "tracks": {
+    "broad": {
+     "score": 30,
+     "tier": "look",
+     "parts": {
+      "fit": 8,
+      "skills": 0,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Season not stated"
+    }
+   },
+   "score": 30,
+   "tier": "look",
+   "discipline": "Civil & construction",
+   "quals": {
+    "required": [
+     {
+      "text": "In the process of receiving a Bachelors or Masters Degree in Biology, Environmental Science, or other related majors",
+      "status": "partial",
+      "why": "Other majors listed; Aerospace Engineering may count as related"
+     }
+    ],
+    "preferred": [],
+    "summary": {
+     "required_checked": 1,
+     "required_met": 0.5,
+     "required_missing": 0,
+     "to_check": 0,
+     "preferred_met": 0,
+     "preferred_total": 0
+    }
+   },
+   "matched": [],
+   "related": [],
+   "gaps": [],
+   "flags": [],
+   "has_description": true,
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-10-26"
+  },
+  {
+   "company": "Kimley-Horn",
+   "title": "Environmental Science Intern",
+   "location": "Greenville, SC, United States",
+   "url": "https://jobright.ai/jobs/info/6aceb25f680c80c8753be55a",
+   "source": "Jobright engineering list",
+   "posted": "2026-10-25",
+   "source_id": "Jobright engineering list",
+   "key": "url:https://jobright.ai/jobs/info/6aceb25f680c80c8753be55a",
+   "tracks": {
+    "broad": {
+     "score": 30,
+     "tier": "look",
+     "parts": {
+      "fit": 8,
+      "skills": 0,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Season not stated"
+    }
+   },
+   "score": 30,
+   "tier": "look",
+   "discipline": "Civil & construction",
+   "quals": {
+    "required": [
+     {
+      "text": "In the process of receiving a Bachelors or Masters Degree in Biology, Environmental Science, or other related majors",
+      "status": "partial",
+      "why": "Other majors listed; Aerospace Engineering may count as related"
+     }
+    ],
+    "preferred": [],
+    "summary": {
+     "required_checked": 1,
+     "required_met": 0.5,
+     "required_missing": 0,
+     "to_check": 0,
+     "preferred_met": 0,
+     "preferred_total": 0
+    }
+   },
+   "matched": [],
+   "related": [],
+   "gaps": [],
+   "flags": [],
+   "has_description": true,
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-10-26"
+  },
+  {
+   "company": "Kimley-Horn",
+   "title": "Environmental Science Intern",
+   "location": "Cary, NC, United States",
+   "url": "https://jobright.ai/jobs/info/6ac5b5f0064da25272e18399",
+   "source": "Jobright engineering list",
+   "posted": "2026-10-25",
+   "source_id": "Jobright engineering list",
+   "key": "url:https://jobright.ai/jobs/info/6ac5b5f0064da25272e18399",
+   "tracks": {
+    "broad": {
+     "score": 30,
+     "tier": "look",
+     "parts": {
+      "fit": 8,
+      "skills": 0,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Season not stated"
+    }
+   },
+   "score": 30,
+   "tier": "look",
+   "discipline": "Civil & construction",
+   "quals": {
+    "required": [
+     {
+      "text": "Environmental Science students",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "In the process of receiving a Bachelors or Masters Degree in Biology, Environmental Science, or other related majors",
+      "status": "partial",
+      "why": "Other majors listed; Aerospace Engineering may count as related"
+     }
+    ],
+    "preferred": [],
+    "summary": {
+     "required_checked": 1,
+     "required_met": 0.5,
+     "required_missing": 0,
+     "to_check": 0,
+     "preferred_met": 0,
+     "preferred_total": 0
+    }
+   },
+   "matched": [],
+   "related": [],
+   "gaps": [],
+   "flags": [],
    "has_description": true,
    "first_seen": "2026-10-26",
    "last_seen": "2026-10-26"
