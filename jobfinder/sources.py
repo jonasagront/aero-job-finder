@@ -44,16 +44,12 @@ def fetch_simplify_list(src: dict) -> list[dict]:
             err = e
     if data is None:
         raise FetchError(f"list not reachable ({err})")
-    # Lists in the older format give only "season": "Summer"; season_map adds the year
-    season_map = {k.lower(): v for k, v in (src.get("season_map") or {}).items()}
     jobs = []
     for item in data:
         if not item.get("active", True) or not item.get("is_visible", True):
             continue
         terms = item.get("terms") or []
         season = ", ".join(terms) if isinstance(terms, list) else str(terms)
-        if not season and item.get("season"):
-            season = season_map.get(str(item["season"]).lower(), str(item["season"]))
         locs = item.get("locations") or []
         jobs.append({
             "company": item.get("company_name", "").strip(),
@@ -65,66 +61,6 @@ def fetch_simplify_list(src: dict) -> list[dict]:
             "description": "",
             "season_hint": season,
             "sponsorship": item.get("sponsorship", ""),
-        })
-    return jobs
-
-
-_MD_LINK = re.compile(r"\[([^\]]*)\]\(([^)\s]*)\)")
-_MONTHS = {m: i for i, m in enumerate("jan feb mar apr may jun jul aug sep oct nov dec".split(), 1)}
-
-
-def _md_date(s: str) -> str:
-    """'Oct 25' -> the most recent such date (the tables leave out the year)."""
-    m = re.match(r"([A-Za-z]{3})\w*\s+(\d{1,2})", s.strip())
-    if not m or m.group(1).lower() not in _MONTHS:
-        return ""
-    today = dt.date.today()
-    try:
-        d = dt.date(today.year, _MONTHS[m.group(1).lower()], int(m.group(2)))
-    except ValueError:
-        return ""
-    if d > today + dt.timedelta(days=1):
-        d = d.replace(year=today.year - 1)
-    return d.isoformat()
-
-
-def fetch_markdown_table(src: dict) -> list[dict]:
-    """Lists published as a README table (Jobright's daily engineering list):
-    | Company | Job Title | Location | Work Model | Date Posted |
-    "↳" in the company column means the same company as the row above.
-    These lists only show the last few days, so run.py remembers older rows."""
-    text, err = None, None
-    for url in src["urls"]:
-        try:
-            text = request(url, headers={"Accept": "text/plain"}, timeout=60)
-            break
-        except FetchError as e:
-            err = e
-    if text is None:
-        raise FetchError(f"list not reachable ({err})")
-    jobs, company = [], ""
-    for line in text.splitlines():
-        cells = [c.strip() for c in line.strip().strip("|").split("|")]
-        if len(cells) < 5 or cells[0].lower() in ("company", "") or set(cells[0]) <= set("-: "):
-            continue
-        if cells[0] not in ("↳", "â†³"):
-            m = _MD_LINK.search(cells[0])
-            company = (m.group(1) if m else cells[0]).strip("* ")
-        m = _MD_LINK.search(cells[1])
-        if not m or not company:
-            continue
-        location = cells[2]
-        if "remote" in cells[3].lower() and "remote" not in location.lower():
-            location += "; Remote"
-        jobs.append({
-            "company": company,
-            "title": m.group(1).strip("* "),
-            "location": location,
-            "url": strip_tracking(m.group(2)),
-            "source": src["name"],
-            "posted": _md_date(cells[4]),
-            "description": "",
-            "season_hint": "",
         })
     return jobs
 
@@ -403,8 +339,6 @@ def fetch_all(cfg: dict, keep=_keep_all) -> tuple[list[dict], list[dict]]:
     tasks = []  # (label, kind, callable)
     for src in cfg.get("list", []):
         tasks.append((src["name"], "Internship list", lambda s=src: fetch_simplify_list(s)))
-    for src in cfg.get("table", []):
-        tasks.append((src["name"], "Internship list", lambda s=src: fetch_markdown_table(s)))
     for src in cfg.get("getro", []):
         tasks.append((src["name"], "Job board", lambda s=src: fetch_getro(s)))
     for c in cfg.get("greenhouse", []):
@@ -470,7 +404,7 @@ _LD_JSON = re.compile(r'(?is)<script[^>]*application/ld\+json[^>]*>(.*?)</script
 
 
 def fetch_page_description(url: str) -> str:
-    """Any other job page: most hiring sites (iCIMS, SuccessFactors, Jobright...)
+    """Any other job page: most hiring sites (iCIMS, SuccessFactors, Oracle...)
     embed the posting as schema.org JobPosting data, which includes the text."""
     if not url.startswith("http"):
         return ""

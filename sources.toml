@@ -8,6 +8,16 @@
 # [[table]] header. TOML attaches anything below a header to that table,
 # which silently hid every company board from the scan.
 
+# --- Links never to show ------------------------------------------------
+# Postings whose Apply link goes to one of these sites are skipped, so every
+# Apply button opens the company's own posting. These are AI job sites,
+# aggregators, and redirect shorteners that sit between you and the company.
+blocked_link_domains = [
+  "jobright.ai", "go.vansh.nyc", "simplify.jobs", "ziprecruiter.com", "lensa.com",
+  "jooble.org", "talent.com", "adzuna.com", "jobgether.com", "jobleads.com",
+  "learn4good.com", "careerbuilder.com", "monster.com", "snagajob.com",
+]
+
 # --- Company career boards ---------------------------------------------
 # board = the company's ID on that hiring system (the part of their
 # careers URL after greenhouse.io/, jobs.lever.co/, or jobs.ashbyhq.com/).
@@ -156,25 +166,8 @@ urls = [
   "https://raw.githubusercontent.com/SimplifyJobs/Summer2027-Internships/main/.github/scripts/listings.json",
 ]
 
-# vanshb03's 2027 list (~800 roles, mostly tech, some hardware). Its entries
-# only say "Summer"/"Fall"; season_map adds the year where it's certain.
-[[list]]
-name = "vanshb03 2027 list"
-urls = [
-  "https://raw.githubusercontent.com/vanshb03/Summer2027-Internships/dev/.github/scripts/listings.json",
-  "https://raw.githubusercontent.com/vanshb03/Summer2027-Internships/main/.github/scripts/listings.json",
-]
-season_map = { Summer = "Summer 2027" }
-
-# Jobright's daily engineering internship list: mechanical, aerospace, civil,
-# electrical, manufacturing... It's a README table that only shows the last
-# few days, so the scan remembers rows until they're max_age_days old.
-[[table]]
-name = "Jobright engineering list"
-urls = [
-  "https://raw.githubusercontent.com/jobright-ai/2026-Engineer-Internship/master/README.md",
-  "https://raw.githubusercontent.com/jobright-ai/2026-Engineer-Internship/main/README.md",
-]
+# Removed Oct 2026: Jobright's engineering list (links to jobright.ai, an AI job
+# site, not the company) and vanshb03's list (links through a redirect shortener).
 
 # --- Job boards that collect postings from many companies ----------------
 # Space Capital's board (formerly Space Talent): ~1,300 internships from

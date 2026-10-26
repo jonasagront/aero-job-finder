@@ -7,11 +7,11 @@ from __future__ import annotations
 
 import datetime as dt
 import json
-import re
 import sys
 import tomllib
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
+from urllib.parse import urlparse
 
 from jobfinder.ai import review_jobs
 from jobfinder.match import Matcher
@@ -25,7 +25,6 @@ DATA = ROOT / "data"
 JOBS_FILE = DATA / "jobs.json"
 DESC_FILE = DATA / "descriptions.json"
 AI_FILE = DATA / "ai_reviews.json"
-ROLLING_FILE = DATA / "rolling_lists.json"
 MISS_FILE = DATA / "description_misses.json"
 PAGE_URL = "https://jonasagront.github.io/aero-job-finder/"
 
@@ -77,26 +76,21 @@ def main() -> int:
     raw, status = fetch_all(sources_cfg, keep=keep)
     print(f"   {len(raw)} postings read")
 
-    # Rolling lists (README tables) only show the last few days, so remember
-    # their rows and keep offering them until they age out.
-    rolling_names = {s["name"] for s in sources_cfg.get("table", [])}
-    rolling: dict = load_json(ROLLING_FILE, {})
-    seen_now = set()
-    for j in raw:
-        if j.get("source_id") in rolling_names and j.get("url"):
-            k = job_key(j["url"], j.get("company", ""), j.get("title", ""))
-            seen_now.add(k)
-            rolling[k] = {kk: v for kk, v in j.items() if kk != "description"} | {"last_seen": today}
-    for k, j in list(rolling.items()):
-        if (now.date() - dt.date.fromisoformat(j.get("posted") or j["last_seen"])).days > matcher.max_age:
-            del rolling[k]
-        elif k not in seen_now:
-            raw.append(dict(j))
+    # Apply links must open the company's own posting, not an AI job site or aggregator
+    blocked = tuple(d.lower() for d in sources_cfg.get("blocked_link_domains", []))
+
+    def link_ok(url: str) -> bool:
+        host = urlparse(url).netloc.lower()
+        return not any(host == d or host.endswith("." + d) for d in blocked)
 
     # 2) Quick title filter, then de-duplicate across sources
     candidates: dict[str, dict] = {}
+    n_blocked = 0
     for j in raw:
         if not j.get("url") or not keep(j.get("title", "")):
+            continue
+        if not link_ok(j["url"]):
+            n_blocked += 1
             continue
         j["key"] = job_key(j["url"], j.get("company", ""), j.get("title", ""))
         prev = candidates.get(j["key"])
@@ -107,12 +101,8 @@ def main() -> int:
             candidates[j["key"]] = j
         elif j.get("season_hint") and not prev.get("season_hint"):
             prev["season_hint"] = j["season_hint"]
-    # A rolling list links to its own site, so the same job found elsewhere has another key
-    norm = lambda j: re.sub(r"\W+", " ", f"{j.get('company', '')}|{j.get('title', '')}".lower()).strip()  # noqa: E731
-    elsewhere = {norm(j) for j in candidates.values() if j.get("source_id") not in rolling_names}
-    for k in [k for k, j in candidates.items() if j.get("source_id") in rolling_names and norm(j) in elsewhere]:
-        del candidates[k]
-    print(f"2) {len(candidates)} engineering internship postings after removing duplicates")
+    print(f"2) {len(candidates)} engineering internship postings after removing duplicates"
+          f" ({n_blocked} skipped for linking to a blocked site)")
 
     # 3) Fill in descriptions for list postings (cached between runs)
     desc_cache: dict = load_json(DESC_FILE, {})
@@ -192,7 +182,6 @@ def main() -> int:
     save_json(JOBS_FILE, {"updated": now.isoformat(timespec="seconds"), "jobs": final})
     save_json(DESC_FILE, {k: v for k, v in desc_cache.items() if k in keep_keys or k in candidates})
     save_json(AI_FILE, {k: v for k, v in ai_cache.items() if k in keep_keys})
-    save_json(ROLLING_FILE, rolling)
     save_json(MISS_FILE, {k: v for k, v in misses.items() if k in candidates})
     (ROOT / "docs").mkdir(exist_ok=True)
     (ROOT / "docs" / "index.html").write_text(build_page(final, status, profile, now), encoding="utf-8")
