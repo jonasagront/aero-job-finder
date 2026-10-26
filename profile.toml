@@ -16,8 +16,14 @@ gpa = 0.0
 # leave it commented out and they show as "confirm".
 us_citizen = true
 
+# The job page has four tabs:
+#   New this week    everything below that was posted in the last 7 days
+#   Summer 2027      aerospace (and mechanical) internships      -> [search]
+#   Fall 2027        any engineering, near home                  -> [fall]
+#   All engineering  any engineering major, mechanical first     -> [broad]
+
 [search]
-# The season you're hunting for. Postings that clearly name a different
+# The Summer 2027 aerospace section. Postings that clearly name a different
 # season (Fall 2026, Spring 2027, Summer 2026...) are dropped.
 season = "summer"
 year = 2027
@@ -25,14 +31,44 @@ year = 2027
 include_unstated_season = true
 # Anything scoring below this is hidden from the page.
 min_score = 40
-# Drop postings older than this many days (when the date is known).
+# Drop postings older than this many days (when the date is known). Applies to every section.
 max_age_days = 30
-# Drop postings outside the U.S. (ones with an unclear location are kept).
+# Drop postings outside the U.S. (ones with an unclear location are kept). Applies to every section.
 us_only = true
 # Only show companies listed under [aerospace_companies] in sources.toml
 # (plus every company whose career board is scanned, and federal jobs).
 # Keeps the big internship lists from adding chip makers, carmakers, etc.
+# Summer section only: the All engineering and Fall sections take any company.
 aerospace_companies_only = true
+
+[fall]
+# Fall 2027 internships and co-ops within a radius of home, any engineering
+# discipline (mechanical and aerospace score highest). Fall co-ops are mostly
+# posted January to April, so expect this tab to be short until then.
+enabled = true
+season = "fall"
+year = 2027
+home_name = "UCF"
+home_lat = 28.6024
+home_lon = -81.2001
+# Straight-line miles. 55 reaches Melbourne (51 mi: L3Harris, Northrop, Collins,
+# Embraer) and Palm Bay (54 mi); Titusville/KSC 24-34, Cape Canaveral 39, Daytona 43.
+radius_miles = 55
+# Remote postings can be done from anywhere, so they're included and tagged "Remote".
+include_remote = true
+min_score = 30
+
+[broad]
+# All engineering: Summer 2027 internships for any engineering major from any
+# company, scored against your resume, so mechanical work rises to the top.
+season = "summer"
+year = 2027
+include_unstated_season = true
+min_score = 30
+
+[page]
+# Postings older than this get an "Older than 15 days" tag (and can be hidden).
+old_after_days = 15
 
 [ai]
 # Optional: a short written fit review by Claude for top matches.
@@ -94,9 +130,106 @@ title = [
   "quant*", "trading", "investment", "ux", "graphic design", "web", "frontend",
   "backend", "full stack", "devops", "security analyst", "paralegal",
   "facilities", "environmental health", "ehs", "audit", "tax", "payroll",
+  # Computing roles (they'd otherwise slip into All engineering as "engineering")
+  "cloud", "developer", "database", "data engineer*", "analytics", "artificial intelligence", "ai/ml",
+  "information technology", "it intern", "computer science", "site reliability", "devsecops",
+  "mobile", "android", "ios", "game", "solutions architect", "prompt", "desktop", "help desk",
+  "administrator",
 ]
 # Titles containing these are always dropped (roles for grad students).
 title_always = ["phd", "ph.d", "master's", "masters", "mba", "graduate intern", "graduate student", "doctoral"]
+
+# ---------------------------------------------------------------------
+#  The All engineering and Fall sections: any engineering discipline.
+#  Each title gets the first discipline below that matches, and its points
+#  (out of 40, plus description keywords and majors) put mechanical and
+#  aerospace work first. The All engineering tab can filter by discipline.
+# ---------------------------------------------------------------------
+[engineering]
+# A title with only these words counts as "General engineering" (8 points)
+title_generic = ["engineer*", "engineering", "technical intern", "r&d"]
+# Description words that mean hands-on mechanical work (2 points each, up to 10)
+text_keywords = [
+  "solidworks", "cad", "gd&t", "fea", "finite element", "thermodynamic*", "heat transfer",
+  "fluid mechanics", "fluid dynamics", "mechanical design", "prototyp*", "machining", "cnc",
+  "3d print*", "additive manufacturing", "tolerance*", "dfm", "design for manufactur*",
+  "creo", "catia", "ansys", "composite*", "test stand*", "fixture*", "mechanism*",
+]
+
+[engineering.majors]
+"mechanical engineering" = 10
+"aerospace engineering" = 10
+"aeronautical engineering" = 10
+"manufacturing engineering" = 6
+"industrial engineering" = 4
+"materials science" = 4
+"engineering mechanics" = 6
+
+[[engineering.discipline]]
+name = "Aerospace"
+points = 24
+title = [
+  "aerospace", "aeronautic*", "astronautic*", "propulsion", "aerodynamic*", "aero", "aerostructure*",
+  "flight", "rocket*", "spacecraft", "launch", "airframe", "gnc", "satellite*", "space vehicle*",
+  "aircraft", "rotorcraft", "uas", "missile*", "hypersonic*", "orbital", "avionics", "space",
+]
+
+[[engineering.discipline]]
+name = "Mechanical"
+points = 24
+title = [
+  "mechanical", "mechatronic*", "mechanism*", "thermal", "fluid*", "hvac", "structures",
+  "stress", "design engineer*", "design engineering", "product design", "product development",
+  "tooling", "composite*", "additive", "prototyp*", "test engineer*", "test engineering", "testing",
+  "hardware engineer*", "hardware engineering", "engines", "engine", "powertrain", "vehicle*",
+  "robotic*", "turbine*", "packaging engineer*", "cfd", "combustion",
+]
+
+[[engineering.discipline]]
+name = "Manufacturing & industrial"
+points = 18
+title = [
+  "manufacturing", "industrial", "process engineer*", "process engineering", "production",
+  "quality", "reliability", "operations engineer*", "continuous improvement", "lean", "automation",
+  "plant engineer*", "maintenance engineer*", "field engineer*", "field service", "assembly",
+]
+
+[[engineering.discipline]]
+name = "Materials & chemical"
+points = 12
+title = ["materials", "material", "metallurg*", "polymer*", "chemical", "ceramic*", "welding", "corrosion"]
+
+[[engineering.discipline]]
+name = "Electrical"
+points = 10
+title = [
+  "electrical", "electronics", "electronic", "power", "controls", "control systems", "embedded",
+  "firmware", "rf", "circuit*", "pcb", "asic", "fpga", "semiconductor", "optical", "photonics",
+  "hardware", "electro-mechanical", "instrumentation",
+]
+
+[[engineering.discipline]]
+name = "Civil & construction"
+points = 8
+title = [
+  "civil", "structural", "construction", "geotechnical", "transportation", "water", "wastewater",
+  "environmental", "surveying", "traffic", "estimating", "project engineer*",
+]
+
+[[engineering.discipline]]
+name = "Biomedical"
+points = 10
+title = ["biomedical", "medical device*", "bioengineering", "biomechanic*", "clinical engineer*"]
+
+[[engineering.discipline]]
+name = "Energy & nuclear"
+points = 12
+title = ["nuclear", "energy", "fusion", "battery", "batteries", "solar", "wind", "grid", "utility"]
+
+[[engineering.discipline]]
+name = "Systems"
+points = 10
+title = ["systems", "integration", "verification", "validation", "v&v", "test"]
 
 # ---------------------------------------------------------------------
 #  Your skills (from your resume)

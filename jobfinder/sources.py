@@ -7,11 +7,12 @@ Each fetcher returns a list of job dicts with these keys:
 from __future__ import annotations
 
 import datetime as dt
+import json
 import os
 import re
 from concurrent.futures import ThreadPoolExecutor
 
-from .util import FetchError, get_json, html_to_text, parse_ats_url, post_json, strip_tracking
+from .util import FetchError, get_json, html_to_text, parse_ats_url, post_json, request, strip_tracking
 
 
 def _date_from_iso(s) -> str:
@@ -43,12 +44,16 @@ def fetch_simplify_list(src: dict) -> list[dict]:
             err = e
     if data is None:
         raise FetchError(f"list not reachable ({err})")
+    # Lists in the older format give only "season": "Summer"; season_map adds the year
+    season_map = {k.lower(): v for k, v in (src.get("season_map") or {}).items()}
     jobs = []
     for item in data:
         if not item.get("active", True) or not item.get("is_visible", True):
             continue
         terms = item.get("terms") or []
         season = ", ".join(terms) if isinstance(terms, list) else str(terms)
+        if not season and item.get("season"):
+            season = season_map.get(str(item["season"]).lower(), str(item["season"]))
         locs = item.get("locations") or []
         jobs.append({
             "company": item.get("company_name", "").strip(),
@@ -60,6 +65,66 @@ def fetch_simplify_list(src: dict) -> list[dict]:
             "description": "",
             "season_hint": season,
             "sponsorship": item.get("sponsorship", ""),
+        })
+    return jobs
+
+
+_MD_LINK = re.compile(r"\[([^\]]*)\]\(([^)\s]*)\)")
+_MONTHS = {m: i for i, m in enumerate("jan feb mar apr may jun jul aug sep oct nov dec".split(), 1)}
+
+
+def _md_date(s: str) -> str:
+    """'Oct 25' -> the most recent such date (the tables leave out the year)."""
+    m = re.match(r"([A-Za-z]{3})\w*\s+(\d{1,2})", s.strip())
+    if not m or m.group(1).lower() not in _MONTHS:
+        return ""
+    today = dt.date.today()
+    try:
+        d = dt.date(today.year, _MONTHS[m.group(1).lower()], int(m.group(2)))
+    except ValueError:
+        return ""
+    if d > today + dt.timedelta(days=1):
+        d = d.replace(year=today.year - 1)
+    return d.isoformat()
+
+
+def fetch_markdown_table(src: dict) -> list[dict]:
+    """Lists published as a README table (Jobright's daily engineering list):
+    | Company | Job Title | Location | Work Model | Date Posted |
+    "↳" in the company column means the same company as the row above.
+    These lists only show the last few days, so run.py remembers older rows."""
+    text, err = None, None
+    for url in src["urls"]:
+        try:
+            text = request(url, headers={"Accept": "text/plain"}, timeout=60)
+            break
+        except FetchError as e:
+            err = e
+    if text is None:
+        raise FetchError(f"list not reachable ({err})")
+    jobs, company = [], ""
+    for line in text.splitlines():
+        cells = [c.strip() for c in line.strip().strip("|").split("|")]
+        if len(cells) < 5 or cells[0].lower() in ("company", "") or set(cells[0]) <= set("-: "):
+            continue
+        if cells[0] not in ("↳", "â†³"):
+            m = _MD_LINK.search(cells[0])
+            company = (m.group(1) if m else cells[0]).strip("* ")
+        m = _MD_LINK.search(cells[1])
+        if not m or not company:
+            continue
+        location = cells[2]
+        if "remote" in cells[3].lower() and "remote" not in location.lower():
+            location += "; Remote"
+        jobs.append({
+            "company": company,
+            "title": m.group(1).strip("* "),
+            "location": location,
+            "url": strip_tracking(m.group(2)),
+            "source": src["name"],
+            "posted": _md_date(cells[4]),
+            "description": "",
+            "season_hint": "",
         })
     return jobs
 
@@ -178,7 +243,11 @@ def _workday_detail(host: str, tenant: str, site: str, path: str) -> dict:
     return data.get("jobPostingInfo") or {}
 
 
-def fetch_workday(host: str, site: str, company: str, max_pages: int = 10) -> list[dict]:
+def _keep_all(title: str) -> bool:
+    return True
+
+
+def fetch_workday(host: str, site: str, company: str, max_pages: int = 10, keep=_keep_all) -> list[dict]:
     tenant = host.split(".")[0]
     api = f"https://{host}/wday/cxs/{tenant}/{site}/jobs"
     postings, seen_paths = [], set()
@@ -195,8 +264,9 @@ def fetch_workday(host: str, site: str, company: str, max_pages: int = 10) -> li
             offset += len(batch)
             if not batch or offset >= int(page.get("total") or 0):
                 break
-    # Workday's list has no descriptions, so only open internship-looking ones.
-    wanted = [p for p in postings if _INTERNISH.search(p.get("title", ""))]
+    # Workday's list has no descriptions, so only open internship-looking ones
+    # (and skip titles the scan would drop anyway, like "Finance Intern").
+    wanted = [p for p in postings if _INTERNISH.search(p.get("title", "")) and keep(p.get("title", ""))]
 
     def detail(p):
         path = p.get("externalPath", "")
@@ -222,7 +292,7 @@ def fetch_workday(host: str, site: str, company: str, max_pages: int = 10) -> li
         return list(pool.map(detail, wanted))
 
 
-def fetch_eightfold(host: str, domain: str, company: str, max_pages: int = 15) -> list[dict]:
+def fetch_eightfold(host: str, domain: str, company: str, max_pages: int = 15, keep=_keep_all) -> list[dict]:
     """Eightfold career sites (e.g. lockheedmartin.eightfold.ai). Search pages hold
     10 postings and no description, so each internship is opened for its text."""
     api = f"https://{host}/api/pcsx"
@@ -240,7 +310,7 @@ def fetch_eightfold(host: str, domain: str, company: str, max_pages: int = 15) -
             start += len(batch)
             if not batch or start >= int(page.get("count") or 0):
                 break
-    wanted = [p for p in postings if _INTERNISH.search(p.get("name", ""))]
+    wanted = [p for p in postings if _INTERNISH.search(p.get("name", "")) and keep(p.get("name", ""))]
 
     def detail(p):
         try:
@@ -327,11 +397,14 @@ def fetch_usajobs(cfg: dict) -> list[dict]:
 
 # ------------------------------------------------------------ run them all
 
-def fetch_all(cfg: dict) -> tuple[list[dict], list[dict]]:
-    """Returns (jobs, source_status). One broken source never stops the rest."""
+def fetch_all(cfg: dict, keep=_keep_all) -> tuple[list[dict], list[dict]]:
+    """Returns (jobs, source_status). One broken source never stops the rest.
+    keep(title) lets sites that need one request per posting skip unwanted titles."""
     tasks = []  # (label, kind, callable)
     for src in cfg.get("list", []):
         tasks.append((src["name"], "Internship list", lambda s=src: fetch_simplify_list(s)))
+    for src in cfg.get("table", []):
+        tasks.append((src["name"], "Internship list", lambda s=src: fetch_markdown_table(s)))
     for src in cfg.get("getro", []):
         tasks.append((src["name"], "Job board", lambda s=src: fetch_getro(s)))
     for c in cfg.get("greenhouse", []):
@@ -341,9 +414,9 @@ def fetch_all(cfg: dict) -> tuple[list[dict], list[dict]]:
     for c in cfg.get("ashby", []):
         tasks.append((c["name"], "Ashby", lambda c=c: fetch_ashby(c["board"], c["name"])))
     for c in cfg.get("workday", []):
-        tasks.append((c["name"], "Workday", lambda c=c: fetch_workday(c["host"], c["site"], c["name"])))
+        tasks.append((c["name"], "Workday", lambda c=c: fetch_workday(c["host"], c["site"], c["name"], keep=keep)))
     for c in cfg.get("eightfold", []):
-        tasks.append((c["name"], "Eightfold", lambda c=c: fetch_eightfold(c["host"], c["domain"], c["name"])))
+        tasks.append((c["name"], "Eightfold", lambda c=c: fetch_eightfold(c["host"], c["domain"], c["name"], keep=keep)))
     for c in cfg.get("clearcompany", []):
         tasks.append((c["name"], "ClearCompany", lambda c=c: fetch_clearcompany(c["site_id"], c["name"])))
     if "usajobs" in cfg:
@@ -375,7 +448,7 @@ def fetch_description(url: str) -> str:
     """Get the full posting text for a link from a list (lists only give titles)."""
     info = parse_ats_url(url)
     if not info:
-        return ""
+        return fetch_page_description(url)
     if info["ats"] == "greenhouse":
         j = get_json(f"https://boards-api.greenhouse.io/v1/boards/{info['board']}/jobs/{info['id']}", timeout=30)
         return html_to_text(j.get("content"))
@@ -390,4 +463,26 @@ def fetch_description(url: str) -> str:
     if info["ats"] == "workday":
         d = _workday_detail(info["host"], info["tenant"], info["site"], info["path"])
         return html_to_text(d.get("jobDescription"))
+    return ""
+
+
+_LD_JSON = re.compile(r'(?is)<script[^>]*application/ld\+json[^>]*>(.*?)</script>')
+
+
+def fetch_page_description(url: str) -> str:
+    """Any other job page: most hiring sites (iCIMS, SuccessFactors, Jobright...)
+    embed the posting as schema.org JobPosting data, which includes the text."""
+    if not url.startswith("http"):
+        return ""
+    page = request(url, headers={"Accept": "text/html", "User-Agent": "Mozilla/5.0 (compatible; aero-job-finder)"},
+                   timeout=20, retries=0)
+    for m in _LD_JSON.finditer(page):
+        try:
+            data = json.loads(m.group(1).strip())
+        except ValueError:
+            continue
+        items = data if isinstance(data, list) else data.get("@graph", [data]) if isinstance(data, dict) else []
+        for it in items:
+            if isinstance(it, dict) and it.get("@type") == "JobPosting" and it.get("description"):
+                return html_to_text(it["description"])
     return ""

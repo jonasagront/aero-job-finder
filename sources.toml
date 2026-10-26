@@ -41,8 +41,23 @@ greenhouse = [
   { name = "HawkEye 360", board = "hawkeye360" },
   { name = "Inversion Space", board = "inversionspace" },
   { name = "Regent", board = "regent" },
+  { name = "Stratolaunch", board = "stratolaunch" },
+  { name = "Mach Industries", board = "machindustries" },
   # Removed Oct 2026 (board gone): Axiom Space -> now on Workday below,
   # Boom Supersonic -> moved to Rippling (not supported).
+
+  # Mechanical / general engineering employers (Oct 2026). aero = false keeps
+  # them out of the Summer aerospace section; they show in All engineering and Fall.
+  { name = "Pacific Fusion", board = "pacificfusion", aero = false },
+  { name = "Kairos Power", board = "kairospower", aero = false },
+  { name = "Divergent", board = "divergent", aero = false },
+  { name = "Figure AI", board = "figureai", aero = false },
+  { name = "Formlabs", board = "formlabs", aero = false },
+  { name = "Neuralink", board = "neuralink", aero = false },
+  { name = "Waymo", board = "waymo", aero = false },
+  { name = "Path Robotics", board = "pathrobotics", aero = false },
+  { name = "Oklo", board = "oklo", aero = false },
+  { name = "Lucid Motors", board = "lucidmotors", aero = false },
 ]
 
 lever = [
@@ -90,6 +105,27 @@ workday = [
   { name = "NASA Jet Propulsion Laboratory", host = "citjpl.wd5.myworkdayjobs.com", site = "Jobs" },
   { name = "The Aerospace Corporation", host = "aero.wd5.myworkdayjobs.com", site = "external" },
   { name = "Woodward", host = "woodward.wd5.myworkdayjobs.com", site = "Woodward" },
+
+  # Mechanical / general engineering employers (Oct 2026), aero = false (see above).
+  # Several have Central Florida sites: Disney (Lake Buena Vista), Leidos and
+  # Oshkosh (Orlando), Duke Energy (Florida).
+  { name = "Disney", host = "disney.wd5.myworkdayjobs.com", site = "disneycareer", aero = false },
+  { name = "Leidos", host = "leidos.wd5.myworkdayjobs.com", site = "External", aero = false },
+  { name = "Oshkosh", host = "oshkoshcorporation.wd5.myworkdayjobs.com", site = "Oshkosh", aero = false },
+  { name = "Duke Energy", host = "dukeenergy.wd1.myworkdayjobs.com", site = "search", aero = false },
+  { name = "General Motors", host = "generalmotors.wd5.myworkdayjobs.com", site = "Careers_GM", aero = false },
+  { name = "Caterpillar", host = "cat.wd5.myworkdayjobs.com", site = "CaterpillarCareers", aero = false },
+  { name = "Medtronic", host = "medtronic.wd1.myworkdayjobs.com", site = "MedtronicCareers", aero = false },
+  { name = "Stryker", host = "stryker.wd1.myworkdayjobs.com", site = "StrykerCareers", aero = false },
+  { name = "3M", host = "3m.wd1.myworkdayjobs.com", site = "Search", aero = false },
+  { name = "GE Vernova", host = "gevernova.wd5.myworkdayjobs.com", site = "Vernova_ExternalSite", aero = false },
+  { name = "GE HealthCare", host = "gehc.wd5.myworkdayjobs.com", site = "GEHC_ExternalSite", aero = false },
+  { name = "Applied Materials", host = "amat.wd1.myworkdayjobs.com", site = "External", aero = false },
+  { name = "Carrier", host = "carrier.wd5.myworkdayjobs.com", site = "jobs", aero = false },
+  { name = "Rockwell Automation", host = "rockwellautomation.wd1.myworkdayjobs.com", site = "External_Rockwell_Automation", aero = false },
+  { name = "Intel", host = "intel.wd1.myworkdayjobs.com", site = "External", aero = false },
+  { name = "Abbott", host = "abbott.wd5.myworkdayjobs.com", site = "abbottcareers", aero = false },
+  { name = "Dow", host = "dow.wd1.myworkdayjobs.com", site = "ExternalCareers", aero = false },
 ]
 
 # Eightfold career sites: host is the *.eightfold.ai address, domain is the
@@ -104,17 +140,40 @@ clearcompany = [
   { name = "Firefly Aerospace", site_id = "00ed92c3-5bfb-7bfb-456d-4d9d77fef9a5" },
 ]
 
-# Not supported (no public job API), so they rely on the Simplify list:
+# Not supported (no public job API), so they rely on the lists below:
 #   L3Harris (SuccessFactors behind careers.l3harris.com), Joby Aviation (iCIMS),
-#   Boom Supersonic (Rippling), BAE Systems / Textron (Taleo), General Dynamics (iCIMS).
+#   Boom Supersonic (Rippling), BAE Systems / Textron (Taleo), General Dynamics (iCIMS),
+#   Siemens Energy (Avature), Qorvo (SuccessFactors). Their list postings still get
+#   full descriptions when the page includes standard job-posting data.
 
 # --- Big student internship lists maintained on GitHub ----------------
 # Simplify + Pitt CSC's Summer 2027 list (thousands of roles, updated daily).
+# Includes off-season terms, which is where most Fall 2027 postings come from.
 [[list]]
 name = "Simplify Summer 2027 list"
 urls = [
   "https://raw.githubusercontent.com/SimplifyJobs/Summer2027-Internships/dev/.github/scripts/listings.json",
   "https://raw.githubusercontent.com/SimplifyJobs/Summer2027-Internships/main/.github/scripts/listings.json",
+]
+
+# vanshb03's 2027 list (~800 roles, mostly tech, some hardware). Its entries
+# only say "Summer"/"Fall"; season_map adds the year where it's certain.
+[[list]]
+name = "vanshb03 2027 list"
+urls = [
+  "https://raw.githubusercontent.com/vanshb03/Summer2027-Internships/dev/.github/scripts/listings.json",
+  "https://raw.githubusercontent.com/vanshb03/Summer2027-Internships/main/.github/scripts/listings.json",
+]
+season_map = { Summer = "Summer 2027" }
+
+# Jobright's daily engineering internship list: mechanical, aerospace, civil,
+# electrical, manufacturing... It's a README table that only shows the last
+# few days, so the scan remembers rows until they're max_age_days old.
+[[table]]
+name = "Jobright engineering list"
+urls = [
+  "https://raw.githubusercontent.com/jobright-ai/2026-Engineer-Internship/master/README.md",
+  "https://raw.githubusercontent.com/jobright-ai/2026-Engineer-Internship/main/README.md",
 ]
 
 # --- Job boards that collect postings from many companies ----------------

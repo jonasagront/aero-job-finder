@@ -1,4 +1,4 @@
-"""Aerospace internship scan.
+"""Internship scan: Summer 2027 aerospace, Fall 2027 near home, and all engineering.
 
 Run locally with:   python run.py
 GitHub Actions runs this every 6 hours and publishes docs/index.html.
@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import datetime as dt
 import json
+import re
 import sys
 import tomllib
 from concurrent.futures import ThreadPoolExecutor
@@ -24,10 +25,13 @@ DATA = ROOT / "data"
 JOBS_FILE = DATA / "jobs.json"
 DESC_FILE = DATA / "descriptions.json"
 AI_FILE = DATA / "ai_reviews.json"
+ROLLING_FILE = DATA / "rolling_lists.json"
+MISS_FILE = DATA / "description_misses.json"
 PAGE_URL = "https://jonasagront.github.io/aero-job-finder/"
 
 MAX_NEW_LOOKUPS = 500   # full-description lookups per run for list-only postings
 KEEP_MISSING_DAYS = 5   # keep a job this long if its source failed to load
+RETRY_MISS_DAYS = 7     # wait this long before retrying a page that had no description
 
 
 def load_json(path: Path, default):
@@ -42,6 +46,20 @@ def save_json(path: Path, data) -> None:
     path.write_text(json.dumps(data, indent=1, ensure_ascii=False), encoding="utf-8")
 
 
+def upgrade_old(j: dict) -> dict:
+    """Saved results from before the page had sections were all Summer 2027 aerospace."""
+    if "tracks" not in j:
+        flags = j.get("flags") or []
+        label = flags[0]["label"] if flags else ""
+        parts = dict(j.get("parts") or {})
+        parts["fit"] = parts.pop("aerospace", 0)
+        j["tracks"] = {"summer": {"score": j["score"], "tier": j["tier"], "parts": parts,
+                                  "season": j.get("season", "unstated"), "season_label": label}}
+        j["flags"] = flags[1:]
+        j.setdefault("discipline", "Aerospace")
+    return j
+
+
 def main() -> int:
     now = dt.datetime.now(dt.timezone.utc)
     today = now.date().isoformat()
@@ -50,16 +68,35 @@ def main() -> int:
     matcher = Matcher(profile, sources_cfg)
     matcher.qc = QualChecker(matcher, profile)
 
+    def keep(title: str) -> bool:
+        """Internship with an engineering-looking title (any section could use it)."""
+        return matcher.title_ok(title)[0] and bool(
+            matcher.discipline(title)[0] or matcher.aero_relevance(title.lower(), "", False, True) is not None)
+
     print("1) Reading job sources")
-    raw, status = fetch_all(sources_cfg)
+    raw, status = fetch_all(sources_cfg, keep=keep)
     print(f"   {len(raw)} postings read")
+
+    # Rolling lists (README tables) only show the last few days, so remember
+    # their rows and keep offering them until they age out.
+    rolling_names = {s["name"] for s in sources_cfg.get("table", [])}
+    rolling: dict = load_json(ROLLING_FILE, {})
+    seen_now = set()
+    for j in raw:
+        if j.get("source_id") in rolling_names and j.get("url"):
+            k = job_key(j["url"], j.get("company", ""), j.get("title", ""))
+            seen_now.add(k)
+            rolling[k] = {kk: v for kk, v in j.items() if kk != "description"} | {"last_seen": today}
+    for k, j in list(rolling.items()):
+        if (now.date() - dt.date.fromisoformat(j.get("posted") or j["last_seen"])).days > matcher.max_age:
+            del rolling[k]
+        elif k not in seen_now:
+            raw.append(dict(j))
 
     # 2) Quick title filter, then de-duplicate across sources
     candidates: dict[str, dict] = {}
     for j in raw:
-        ok, _ = matcher.title_ok(j.get("title", ""))
-        # Skipping non-aerospace companies here also saves description lookups
-        if not ok or not j.get("url") or not matcher.company_ok(j):
+        if not j.get("url") or not keep(j.get("title", "")):
             continue
         j["key"] = job_key(j["url"], j.get("company", ""), j.get("title", ""))
         prev = candidates.get(j["key"])
@@ -70,17 +107,26 @@ def main() -> int:
             candidates[j["key"]] = j
         elif j.get("season_hint") and not prev.get("season_hint"):
             prev["season_hint"] = j["season_hint"]
-    print(f"2) {len(candidates)} internship-titled postings after removing duplicates")
+    # A rolling list links to its own site, so the same job found elsewhere has another key
+    norm = lambda j: re.sub(r"\W+", " ", f"{j.get('company', '')}|{j.get('title', '')}".lower()).strip()  # noqa: E731
+    elsewhere = {norm(j) for j in candidates.values() if j.get("source_id") not in rolling_names}
+    for k in [k for k, j in candidates.items() if j.get("source_id") in rolling_names and norm(j) in elsewhere]:
+        del candidates[k]
+    print(f"2) {len(candidates)} engineering internship postings after removing duplicates")
 
     # 3) Fill in descriptions for list postings (cached between runs)
     desc_cache: dict = load_json(DESC_FILE, {})
+    misses: dict = load_json(MISS_FILE, {})  # key -> date a lookup last came back empty
     need = [j for j in candidates.values() if not j.get("description")]
     for j in need:
         if j["key"] in desc_cache:
             j["description"] = desc_cache[j["key"]]
-    lookup = [j for j in need if not j.get("description")]
-    # Look up the most promising ones first (aerospace words in title / aerospace company)
-    lookup.sort(key=lambda j: (not matcher.is_aero_company(j.get("company", "")),))
+    lookup = [j for j in need if not j.get("description")
+              and (now.date() - dt.date.fromisoformat(misses.get(j["key"], "2000-01-01"))).days >= RETRY_MISS_DAYS]
+    # Look up the most promising ones first: aerospace companies, then mechanical/aerospace titles
+    first = ("Aerospace", "Mechanical")
+    lookup.sort(key=lambda j: (not matcher.is_aero_company(j.get("company", "")),
+                               matcher.discipline(j.get("title", ""))[0] not in first))
     lookup = lookup[:MAX_NEW_LOOKUPS]
 
     def get_desc(j):
@@ -95,7 +141,10 @@ def main() -> int:
             if text:
                 j["description"] = text
                 desc_cache[j["key"]] = text[:12000]
+                misses.pop(j["key"], None)
                 got += 1
+            else:
+                misses[j["key"]] = today
     print(f"3) Loaded {got} full descriptions ({len(lookup)} tried)")
 
     # 4) Score
@@ -125,7 +174,7 @@ def main() -> int:
             continue  # gone from a working source = posting closed
         last = dt.date.fromisoformat(j.get("last_seen", today))
         if (now.date() - last).days <= KEEP_MISSING_DAYS:
-            final.append(j)  # source hiccup: keep for now
+            final.append(upgrade_old(j))  # source hiccup: keep for now
 
     # 6) Optional Claude reviews
     ai_cache = load_json(AI_FILE, {})
@@ -139,15 +188,18 @@ def main() -> int:
     final.sort(key=lambda j: (-j["score"], j["company"]))
 
     # 7) Save + publish
-    keep = {j["key"] for j in final}
+    keep_keys = {j["key"] for j in final}
     save_json(JOBS_FILE, {"updated": now.isoformat(timespec="seconds"), "jobs": final})
-    save_json(DESC_FILE, {k: v for k, v in desc_cache.items() if k in keep or k in candidates})
-    save_json(AI_FILE, {k: v for k, v in ai_cache.items() if k in keep})
+    save_json(DESC_FILE, {k: v for k, v in desc_cache.items() if k in keep_keys or k in candidates})
+    save_json(AI_FILE, {k: v for k, v in ai_cache.items() if k in keep_keys})
+    save_json(ROLLING_FILE, rolling)
+    save_json(MISS_FILE, {k: v for k, v in misses.items() if k in candidates})
     (ROOT / "docs").mkdir(exist_ok=True)
     (ROOT / "docs" / "index.html").write_text(build_page(final, status, profile, now), encoding="utf-8")
     update_readme(ROOT / "README.md", final, PAGE_URL, now)
     new_today = sum(1 for j in final if j["first_seen"] == today)
-    print(f"Done: {len(final)} matches on the page, {new_today} new today.")
+    per = ", ".join(f"{sum(1 for j in final if t in j['tracks'])} {t}" for t in matcher.tracks)
+    print(f"Done: {len(final)} postings on the page ({per}), {new_today} new today.")
     return 0
 
 

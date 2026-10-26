@@ -1,15 +1,26 @@
 # Aero Job Finder
 
 Every 6 hours this repo scans company career sites and internship lists for
-**Summer 2027 aerospace engineering internships**, scores each one against
-my resume, and publishes the results to a page I can open on my phone.
+engineering internships, scores each one against my resume, and publishes the
+results to a page I can open on my phone.
 
 **Job page:** https://jonasagront.github.io/aero-job-finder/
+
+The page has four tabs:
+
+| Tab | What's in it |
+|---|---|
+| **New this week** | Everything from the other tabs posted in the last 7 days |
+| **Summer 2027** | Aerospace and mechanical internships at aerospace companies (the main list) |
+| **Fall 2027 near UCF** | Fall 2027 internships and co-ops within 55 miles of UCF (Orlando to the Space Coast, Melbourne included), plus remote ones, any engineering discipline |
+| **All engineering** | Every Summer 2027 engineering internship from any company or major, with mechanical and aerospace ranked first and a discipline filter |
+
+Postings more than 15 days old get an **Older than 15 days** tag, and a checkbox hides them.
 
 ## Today's top matches
 
 <!-- JOBS:START -->
-**233 matches** as of Oct 26, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
+**232 Summer 2027 aerospace matches** (11 Fall 2027 near home, 561 in All engineering) as of Oct 26, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
 
 | Fit | Company | Role | Required quals met | Location | Posted | Apply |
 |---|---|---|---|---|---|---|
@@ -28,16 +39,16 @@ my resume, and publishes the results to a page I can open on my phone.
 | 95 | Ursa Major | 2027 Summer Propulsion Engineer, Hypersonic Vehicle Intern | 4 of 5 | Berthoud, Colorado | 2026-10-22 | [Apply](https://ursamajor.com/careers/?gh_jid=4746882005) |
 | 95 | Varda Space | Guidance, Navigation & Controls (GNC) Internship - Summer 2027 | 2 of 3 | El Segundo, California, United States | 2026-10-01 | [Apply](https://job-boards.greenhouse.io/vardaspace/jobs/7865601003) |
 | 93 | AeroVironment | Mechanical Engineering Intern | 4 of 4 | Petaluma, CA | 2026-10-07 | [Apply](https://avav.wd1.myworkdayjobs.com/AVAV/job/Petaluma-CA/Mechanical-Engineering-Intern_9038) |
+| 93 | Lockheed Martin | Mechanical Design Intern | 3 of 3 | Grand Prairie, TX | 2026-10-22 | [Apply](https://lockheedmartin.eightfold.ai/careers/job/996477505085) |
 | 93 | Lockheed Martin | Mechanical Design Engineering Intern | 3 of 3 | Grand Prairie, TX | 2026-10-15 | [Apply](https://lockheedmartin.eightfold.ai/careers/job/996477394326) |
 | 93 | Lockheed Martin | Mechanical Design Engineering Intern | 3 of 3 | Orlando, FL | 2026-10-18 | [Apply](https://lockheedmartin.eightfold.ai/careers/job/996477394527) |
-| 93 | Lockheed Martin | Mechanical Design Intern | 3 of 3 | Grand Prairie, TX | 2026-10-22 | [Apply](https://lockheedmartin.eightfold.ai/careers/job/996477505085) |
 | 93 | Muon Space | Spacecraft Test Engineering Intern (Summer 2027) | 2 of 2 | San Jose, CA | 2026-10-13 | [Apply](https://job-boards.greenhouse.io/muonspace/jobs/5256288007) |
 | 93 | Varda Space | Aerodynamics & Analysis Engineering Internship - Summer 2027 | 3 of 4 | El Segundo, California, United States | 2026-10-01 | [Apply](https://job-boards.greenhouse.io/vardaspace/jobs/8010632003) |
-| 92 | AeroVironment | Summer 2027 Aeromechanical Engineering Intern | 3 of 3 | Simi Valley, CA; Huntsville, AL; Pottsto | 2026-10-13 | [Apply](https://avav.wd1.myworkdayjobs.com/AVAV/job/Simi-Valley-CA/Summer-2027-Aeromechanical-Engineering-Intern_8387) |
 | 92 | Voyager Technologies | 2027 Mechanical Engineering Intern | 1 of 1 | Long Beach  | 2026-09-28 | [Apply](https://job-boards.greenhouse.io/voyagertechnologiesinc/jobs/4423308009) |
-| 90 | Anduril | 2027 Low Observables Engineer Intern | 3 of 3 | Costa Mesa, California, United States | 2026-10-19 | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5268752007?gh_jid=5268752007) |
+| 92 | AeroVironment | Summer 2027 Aeromechanical Engineering Intern | 3 of 3 | Simi Valley, CA; Huntsville, AL; Pottsto | 2026-10-13 | [Apply](https://avav.wd1.myworkdayjobs.com/AVAV/job/Simi-Valley-CA/Summer-2027-Aeromechanical-Engineering-Intern_8387) |
 | 90 | Blue Origin | Summer 2027 Test Engineering Internship - Undergraduate | 3 of 3 | Greater Seattle Area; Van Horn, TX; Spac | 2026-10-13 | [Apply](https://blueorigin.wd5.myworkdayjobs.com/BlueOrigin/job/Greater-Seattle-Area/Summer-2027-Test-Engineering-Internship---Undergraduate_R71433) |
-| 90 | Muon Space | Environmental Test Engineering Intern (Summer 2027) | 3 of 3 | San Jose, CA | 2026-10-02 | [Apply](https://job-boards.greenhouse.io/muonspace/jobs/5256286007) |
+| 90 | RTX (Raytheon, Pratt & Whitney, Collins) | Manufacturing Engineering Co-Op (Spring/Summer 2027) | 6 of 6 | US-IA-MANCHESTER-185 ~ 901 S 10th St ~ S | 2026-10-20 | [Apply](https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-IA-MANCHESTER-185--901-S-10th-St--S-10TH/Manufacturing-Engineering-Co-Op--Spring-Summer-2027-_01876132) |
+| 90 | Varda Space | Manufacturing Engineering Internship - Summer 2027 | 2 of 2 | El Segundo, California, United States | 2026-10-01 | [Apply](https://job-boards.greenhouse.io/vardaspace/jobs/8010166003) |
 <!-- JOBS:END -->
 
 ---
@@ -85,9 +96,13 @@ Secrets stay private even though the repo is public.
 
 ## How the score works (out of 100)
 
-- **Aerospace, up to 40.** Words in the title and description (propulsion, structures,
-  CFD, composites, flight test...), majors listed (Aerospace Engineering earns the most), and
-  whether the company is an aerospace company.
+- **Aerospace, up to 40** (Summer 2027 tab). Words in the title and description (propulsion,
+  structures, CFD, composites, flight test...), majors listed (Aerospace Engineering earns the
+  most), and whether the company is an aerospace company.
+- **Engineering fit, up to 40** (Fall and All engineering tabs, in place of Aerospace). The
+  title's discipline (aerospace and mechanical 24, manufacturing 18, electrical 10, civil 8,
+  plain "engineering" 8...), hands-on mechanical words in the description (SolidWorks, GD&T,
+  FEA, prototyping...), and whether Mechanical or Aerospace Engineering is a listed major.
 - **Your skills, up to 35.** How many of my resume skills the posting asks for, weighted by
   how strong each one is. Close substitutes (NX instead of SolidWorks, Fluent instead of
   STAR-CCM+) get half credit.
@@ -95,8 +110,8 @@ Secrets stay private even though the repo is public.
   2029, senior-only or grad-student-only roles, a GPA minimum (if a GPA is set), or a
   posting that never says what season it's for.
 
-Fit labels: **Strong fit** 72+, **Good fit** 56 to 71, **Worth a look** 40 to 55.
-Anything below 40 is hidden.
+Fit labels: **Strong fit** 72+, **Good fit** 56 to 71, **Worth a look** below 56.
+Anything below 40 is hidden from Summer 2027, and below 30 from the other tabs.
 
 Tags like **U.S. person / ITAR** and **Clearance** are shown so I can filter quickly;
 they don't change the score.
@@ -106,10 +121,15 @@ they don't change the score.
 - **`profile.toml`**: my skills, the aerospace keywords, titles to skip, the minimum score.
   Add a skill when I learn one (MATLAB next!) and future scores pick it up.
   `aerospace_companies_only = true` hides postings from companies that aren't on the
-  aerospace list (the big lists otherwise pull in chip makers, carmakers, and so on).
+  aerospace list from the Summer 2027 tab (the big lists otherwise pull in chip makers,
+  carmakers, and so on); All engineering and Fall take any company.
+  `[fall]` sets the home point and radius, `[broad]` the All engineering tab, and
+  `[engineering]` the disciplines and their points.
 - **`sources.toml`**: which companies and lists get checked. The bottom of the job page
   shows which sources worked on the last run, so I know what to fix or remove. To let a
-  company through the aerospace-only filter, add it to `[aerospace_companies]`.
+  company through the aerospace-only filter, add it to `[aerospace_companies]`. Career
+  boards marked `aero = false` (GM, Caterpillar, Disney, Stryker...) only feed the
+  All engineering and Fall tabs.
 
 ## Files
 

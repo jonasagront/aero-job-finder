@@ -1,8 +1,14 @@
-"""Decide whether a posting is a Summer 2027 aerospace internship, and how
-well it fits your resume.
+"""Decide which sections of the job page a posting belongs in, and how well
+it fits your resume.
+
+Sections ("tracks"):
+  summer  Summer 2027, aerospace (and mechanical) work, aerospace companies
+  fall    Fall 2027, any engineering, within a radius of home (or remote)
+  broad   Summer 2027, any engineering major, mechanical ranked first
 
 Score out of 100:
-  up to 40  how clearly it's aerospace engineering work
+  up to 40  how clearly it's the right kind of work (aerospace for summer,
+            engineering with mechanical first for the other two)
   up to 35  how many of your skills the posting asks for
   up to 25  eligibility (season, class year, grad date, degree level)
 """
@@ -11,6 +17,7 @@ from __future__ import annotations
 import datetime as dt
 import re
 
+from .geo import is_remote, nearest
 from .util import compile_terms, hits
 
 INTERN_RX = re.compile(r"(?i)(?<![a-z])(intern|interns|internship|internships|co-?op|co op|student trainee|student)(?![a-z])")
@@ -18,7 +25,9 @@ INTERN_RX = re.compile(r"(?i)(?<![a-z])(intern|interns|internship|internships|co
 SEASON_WORDS = r"(summer|fall|autumn|spring|winter)"
 SEASON_RX = re.compile(rf"(?i)(?<![a-z]){SEASON_WORDS}\s*(?:of\s*)?'?(20)?(2[5-9]|3[0-1])(?![0-9])"
                        rf"|(?<![0-9])(20)?(2[5-9]|3[0-1])\s*{SEASON_WORDS}")
-MONTH_START_RX = re.compile(r"(?i)(may|june)\s+(?:\d{1,2},?\s+)?(20\d\d)")
+MONTH_START_RX = re.compile(r"(?i)(may|june|september)\s+(?:\d{1,2},?\s+)?(20\d\d)")
+# Not August: summer internships often run "through August"
+MONTH_SEASON = {"may": "summer", "june": "summer", "september": "fall"}
 GRAD_RX = re.compile(r"(?i)graduat\w*")
 YEAR_RX = re.compile(r"(?<![0-9])(20[2-3]\d)(?![0-9])")
 GPA_RX = re.compile(
@@ -123,10 +132,38 @@ class Matcher:
         # "=name" must match the whole company name (so "=vast" skips "VAST Data")
         self.aero_exact = {n[1:] for n in names if n.startswith("=")}
         self.aero_companies = [n for n in names if not n.startswith("=")]
-        # Every company whose own career board we scan counts as aerospace
+        # Every company whose own career board we scan counts as aerospace,
+        # except boards marked aero = false (carmakers, medical devices...)
         for kind in ("greenhouse", "lever", "ashby", "workday", "eightfold", "clearcompany"):
-            self.aero_exact.update(c["name"].lower() for c in sources_cfg.get(kind, []))
+            self.aero_exact.update(c["name"].lower() for c in sources_cfg.get(kind, []) if c.get("aero", True))
         self.qc = None  # set by run.py to a quals.QualChecker
+
+        # ---- "All engineering" / Fall relevance: discipline from the title
+        eng = profile.get("engineering", {})
+        self.disciplines = [{"name": d["name"], "points": int(d.get("points", 8)),
+                             "terms": compile_terms(d.get("title", []))}
+                            for d in eng.get("discipline", [])]
+        self.eng_generic = compile_terms(eng.get("title_generic", ["engineer*", "engineering"]))
+        self.eng_text_kw = compile_terms(eng.get("text_keywords", []))
+        self.eng_majors = {k.lower(): v for k, v in eng.get("majors", {}).items()}
+
+        # ---- the three sections
+        fa, br = profile.get("fall", {}), profile.get("broad", {})
+        self.tracks = {
+            "summer": {"season": self.season, "year": self.year, "keep_unstated": self.keep_unstated,
+                       "min_score": self.min_score, "relevance": "aero", "aero_only": self.aero_only},
+            "broad": {"season": br.get("season", self.season).lower(), "year": int(br.get("year", self.year)),
+                      "keep_unstated": bool(br.get("include_unstated_season", True)),
+                      "min_score": int(br.get("min_score", 30)), "relevance": "eng", "aero_only": False},
+        }
+        if fa.get("enabled", True) and "home_lat" in fa:
+            self.tracks["fall"] = {
+                "season": fa.get("season", "fall").lower(), "year": int(fa.get("year", self.year)),
+                # Kept so the page can offer them behind a checkbox, off by default
+                "keep_unstated": True, "min_score": int(fa.get("min_score", 30)), "relevance": "eng",
+                "aero_only": False, "home": (float(fa["home_lat"]), float(fa["home_lon"])),
+                "radius": float(fa.get("radius_miles", 50)), "remote": bool(fa.get("include_remote", True)),
+            }
 
     # ---------------------------------------------------------- quick filter
 
@@ -152,33 +189,51 @@ class Matcher:
             return True
         return self.is_aero_company(job.get("company", ""))
 
+    def discipline(self, title: str) -> tuple[str, int, int]:
+        """(name, points, number of discipline words) from the title. The first
+        listed discipline that matches wins, so "Mechanical/Electrical" is Mechanical."""
+        t = title.lower()
+        for d in self.disciplines:
+            found = hits(d["terms"], t)
+            if found:
+                return d["name"], d["points"], len(found)
+        if hits(self.eng_generic, t):
+            return "General engineering", 8, 0
+        return "", 0, 0
+
     # ---------------------------------------------------------- season
 
-    def season_of(self, job: dict, text: str) -> tuple[str, str]:
+    @staticmethod
+    def _seasons_named(text: str, year: int) -> set[tuple[str, int]]:
+        found = set()
+        for m in SEASON_RX.finditer(text):
+            s1, _c1, y1, _c2, y2, s2 = m.groups()
+            found.add(((s1 or s2 or "").lower().replace("autumn", "fall"), 2000 + int(y1 or y2)))
+        for m in MONTH_START_RX.finditer(text):
+            if int(m.group(2)) == year:  # "May 2026" is usually a grad date, so only the target year counts
+                found.add((MONTH_SEASON[m.group(1).lower()], year))
+        return found
+
+    def season_of(self, job: dict, text: str, season: str | None = None, year: int | None = None) -> tuple[str, str]:
         """Returns (status, label). status: match | unstated | other"""
+        season, year = season or self.season, year or self.year
         hint = (job.get("season_hint") or "").lower()
-        target = f"{self.season} {self.year}"
+        target = f"{season} {year}"
         if hint:
             if target in hint:
                 return "match", target.title()
             return "other", hint.title()
-        found = set()
-        for m in SEASON_RX.finditer(text):
-            s1, _c1, y1, _c2, y2, s2 = m.groups()
-            season = (s1 or s2 or "").lower().replace("autumn", "fall")
-            year = 2000 + int(y1 or y2)
-            found.add((season, year))
-        for m in MONTH_START_RX.finditer(text):
-            if int(m.group(2)) == self.year:
-                found.add(("summer", self.year))
-        if (self.season, self.year) in found:
+        # A season in the title ("... - Spring 2027") outranks the description,
+        # which often mentions other terms ("graduating Fall 2027").
+        found = self._seasons_named(job.get("title", ""), year) or self._seasons_named(text, year)
+        if (season, year) in found:
             return "match", target.title()
         if found:
             # Only another season/year named, like "Fall 2026" or "Summer 2026"
             s, y = sorted(found, key=lambda x: (x[1], x[0]))[-1]
             return "other", f"{s.title()} {y}"
-        if re.search(rf"(?i)(?<![a-z]){self.season}(?![a-z])", text):
-            return "unstated", f"{self.season.title()} (year not stated)"
+        if re.search(rf"(?i)(?<![a-z]){season}(?![a-z])", text):
+            return "unstated", f"{season.title()} (year not stated)"
         return "unstated", "Season not stated"
 
     # ---------------------------------------------------------- eligibility
@@ -221,10 +276,47 @@ class Matcher:
             return "warn", "Seniors only?"
         return None
 
+    # ---------------------------------------------------------- relevance
+
+    def aero_relevance(self, t: str, d: str, has_desc: bool, aero_co: bool) -> int | None:
+        """0-40 for the Summer section, or None when it isn't aerospace work."""
+        strong, medium, weak = hits(self.t_strong, t), hits(self.t_medium, t), hits(self.t_weak, t)
+        best = 3 if strong else 2 if medium else 1 if weak else 0
+        text_hits = hits(self.text_kw, d)
+        major_pts = max([v for k, v in self.majors.items() if k in d] or [0])
+        if has_desc:
+            if best == 0 and len(text_hits) < 3 and major_pts < 6:
+                return None
+            if best == 1 and len(text_hits) < 2 and major_pts < 6 and not aero_co:
+                return None
+        elif best == 0 or (best == 1 and not aero_co):
+            return None
+        relevance = {3: 22, 2: 14, 1: 6, 0: 0}[best]
+        relevance += 4 * min(2, max(0, len(strong) + len(medium) - 1))
+        relevance += min(10, 2 * len(text_hits))
+        relevance += major_pts
+        relevance += 6 if aero_co else 0
+        return min(40, relevance)
+
+    def eng_relevance(self, disc: tuple[str, int, int], d: str, aero_co: bool) -> int | None:
+        """0-40 for the All engineering and Fall sections. Any engineering title
+        counts; mechanical and aerospace work and majors score highest."""
+        name, pts, n = disc
+        if not name:
+            return None
+        relevance = pts + 4 * min(2, max(0, n - 1))
+        relevance += min(10, 2 * len(hits(self.eng_text_kw, d)))
+        relevance += max([v for k, v in self.eng_majors.items() if k in d] or [0])
+        relevance += 4 if aero_co else 0
+        return min(40, relevance)
+
     # ---------------------------------------------------------- main
 
     def analyze(self, job: dict) -> tuple[dict | None, str]:
-        """Returns (analysis, drop_reason). analysis is None when the job is dropped."""
+        """Returns (analysis, drop_reason). analysis is None when the job fits no section.
+
+        analysis["tracks"] holds one entry per section the job belongs in, each
+        with its own score, tier, and season; everything else is shared."""
         title = job.get("title", "")
         desc = job.get("description") or ""
         t = title.lower()
@@ -234,50 +326,20 @@ class Matcher:
         ok, why = self.title_ok(title)
         if not ok:
             return None, why
-        if not self.company_ok(job):
-            return None, "not an aerospace company"
 
         # Too old?
+        age = None
         if job.get("posted"):
             try:
                 age = (dt.date.today() - dt.date.fromisoformat(job["posted"][:10])).days
-                if age > self.max_age:
-                    return None, "posting too old"
             except ValueError:
                 pass
+        if age is not None and age > self.max_age:
+            return None, "posting too old"
 
         # Outside the U.S.? (unknown locations like "16 Locations" are kept)
         if self.us_only and where(job.get("location", "")) == "foreign":
             return None, "outside the U.S."
-
-        season_status, season_label = self.season_of(job, full)
-        if season_status == "other":
-            return None, "different season"
-        if season_status == "unstated" and not self.keep_unstated:
-            return None, "season not stated"
-
-        # ---- relevance (0-40)
-        strong, medium, weak = hits(self.t_strong, t), hits(self.t_medium, t), hits(self.t_weak, t)
-        best = 3 if strong else 2 if medium else 1 if weak else 0
-        text_hits = hits(self.text_kw, d)
-        major_pts = max([v for k, v in self.majors.items() if k in d] or [0])
-        aero_co = self.is_aero_company(job.get("company", ""))
-
-        if desc:
-            if best == 0 and len(text_hits) < 3 and major_pts < 6:
-                return None, "not aerospace"
-            if best == 1 and len(text_hits) < 2 and major_pts < 6 and not aero_co:
-                return None, "not aerospace"
-        else:
-            if best == 0 or (best == 1 and not aero_co):
-                return None, "not aerospace"
-
-        relevance = {3: 22, 2: 14, 1: 6, 0: 0}[best]
-        relevance += 4 * min(2, max(0, len(strong) + len(medium) - 1))
-        relevance += min(10, 2 * len(text_hits))
-        relevance += major_pts
-        relevance += 6 if aero_co else 0
-        relevance = min(40, relevance)
 
         # ---- skills (0-35)
         matched, related, gaps = [], [], []
@@ -306,14 +368,9 @@ class Matcher:
         else:
             skills_pts = 12  # unknown: neutral
 
-        # ---- eligibility (0-25)
+        # ---- eligibility (0-25), before the season (which differs by section)
         flags = []
         elig = 25
-        if season_status == "match":
-            flags.append({"kind": "good", "label": season_label})
-        else:
-            flags.append({"kind": "info", "label": season_label})
-            elig -= 3
         if desc:
             g = self.grad_check(desc)
             if g:
@@ -346,7 +403,6 @@ class Matcher:
                 flags.append({"kind": "info", "label": "Clearance", "id": "clearance"})
         else:
             flags.append({"kind": "info", "label": "Full description not loaded"})
-        elig = max(0, elig)
 
         # ---- qualification-by-qualification check (see quals.py)
         quals = self.qc.check(desc) if (self.qc and desc) else None
@@ -358,21 +414,59 @@ class Matcher:
                     if r["status"] == "missing" and not r["why"].startswith(already)]
             req_penalty = min(15, 5 * len(hard))
 
-        score = int(max(0, min(100, relevance + skills_pts + elig) - req_penalty))
-        if score < self.min_score:
-            return None, "low score"
-        tier = "strong" if score >= 72 else "good" if score >= 56 else "look"
+        # ---- each section
+        aero_co = self.is_aero_company(job.get("company", ""))
+        disc = self.discipline(t)
+        tracks, reasons = {}, {}
+        for name, tr in self.tracks.items():
+            if tr["aero_only"] and not self.company_ok(job):
+                reasons[name] = "not an aerospace company"
+                continue
+            miles = None
+            if "home" in tr:
+                loc = job.get("location", "")
+                near = nearest(loc, tr["home"])
+                if near and near[0] <= tr["radius"]:
+                    miles = round(near[0])
+                elif not (tr["remote"] and is_remote(loc)):
+                    reasons[name] = "not near home"
+                    continue
+            status, label = self.season_of(job, full, tr["season"], tr["year"])
+            if status == "other" or (status == "unstated" and not tr["keep_unstated"]):
+                reasons[name] = "different season" if status == "other" else "season not stated"
+                continue
+            fit = (self.aero_relevance(t, d, bool(desc), aero_co) if tr["relevance"] == "aero"
+                   else self.eng_relevance(disc, d, aero_co))
+            if fit is None:
+                reasons[name] = "not aerospace" if tr["relevance"] == "aero" else "not engineering"
+                continue
+            e = max(0, elig - (0 if status == "match" else 3))
+            score = int(max(0, min(100, fit + skills_pts + e) - req_penalty))
+            if score < tr["min_score"]:
+                reasons[name] = "low score"
+                continue
+            tracks[name] = {
+                "score": score,
+                "tier": "strong" if score >= 72 else "good" if score >= 56 else "look",
+                "parts": {"fit": fit, "skills": skills_pts, "eligibility": e, "requirements": -req_penalty},
+                "season": status,
+                "season_label": label,
+                **({"miles": miles if miles is not None else "remote"} if "home" in tr else {}),
+            }
+        if not tracks:
+            return None, reasons.get("summer") or next(iter(reasons.values()), "no section")
 
+        best = max(tracks.values(), key=lambda x: x["score"])
         return {
-            "score": score,
-            "tier": tier,
-            "parts": {"aerospace": relevance, "skills": skills_pts, "eligibility": elig,
-                      "requirements": -req_penalty},
+            "tracks": tracks,
+            # Best score across sections, for sorting, the README, and Claude reviews
+            "score": best["score"],
+            "tier": best["tier"],
+            "discipline": disc[0] or "Aerospace",
             "quals": quals,
             "matched": matched,
             "related": related,
             "gaps": gaps,
             "flags": flags,
-            "season": season_status,
             "has_description": bool(desc),
         }, ""
