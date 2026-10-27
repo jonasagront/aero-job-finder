@@ -1,0 +1,657 @@
+{
+ "ashby:antares": {
+  "kind": "ashby",
+  "board": "Antares",
+  "name": "Antares Nuclear",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "ashby:apex-technology-inc": {
+  "kind": "ashby",
+  "board": "apex-technology-inc",
+  "name": "Apex",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "ashby:cowboyspace": {
+  "kind": "ashby",
+  "board": "cowboyspace",
+  "name": "Cowboy Space",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "ashby:elveo": {
+  "kind": "ashby",
+  "board": "Elveo",
+  "name": "Lynk Global",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "ashby:hadrian-automation": {
+  "kind": "ashby",
+  "board": "hadrian-automation",
+  "name": "Hadrian",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "ashby:mach": {
+  "kind": "ashby",
+  "board": "mach",
+  "name": "Mach Industries",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "ashby:northwoodspace": {
+  "kind": "ashby",
+  "board": "NorthwoodSpace",
+  "name": "Northwood Space",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "ashby:reflect-orbital": {
+  "kind": "ashby",
+  "board": "reflect-orbital",
+  "name": "Reflect Orbital",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "ashby:saronic": {
+  "kind": "ashby",
+  "board": "saronic",
+  "name": "Saronic",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "ashby:skydio": {
+  "kind": "ashby",
+  "board": "skydio",
+  "name": "Skydio",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "ashby:starpath.space": {
+  "kind": "ashby",
+  "board": "starpath.space",
+  "name": "Starpath",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "ashby:the-exploration-company": {
+  "kind": "ashby",
+  "board": "the-exploration-company",
+  "name": "The Exploration Company",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "ashby:windborne-systems": {
+  "kind": "ashby",
+  "board": "windborne-systems",
+  "name": "WindBorne Systems",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "ashby:xona-space": {
+  "kind": "ashby",
+  "board": "xona-space",
+  "name": "Xona Space Systems",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "greenhouse:andurilindustries": {
+  "kind": "greenhouse",
+  "board": "andurilindustries",
+  "name": "Anduril",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "greenhouse:astranis": {
+  "kind": "greenhouse",
+  "board": "astranis",
+  "name": "Astranis",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "greenhouse:astspacemobile": {
+  "kind": "greenhouse",
+  "board": "astspacemobile",
+  "name": "AST SpaceMobile",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "greenhouse:flyzipline": {
+  "kind": "greenhouse",
+  "board": "flyzipline",
+  "name": "Zipline",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "greenhouse:freeformfuturecorp": {
+  "kind": "greenhouse",
+  "board": "freeformfuturecorp",
+  "name": "Freeform",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "greenhouse:gitai": {
+  "kind": "greenhouse",
+  "board": "gitai",
+  "name": "GITAI",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "greenhouse:graviticsinc": {
+  "kind": "greenhouse",
+  "board": "graviticsinc",
+  "name": "Gravitics",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "greenhouse:hawkeye360": {
+  "kind": "greenhouse",
+  "board": "hawkeye360",
+  "name": "HawkEye 360",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "greenhouse:inversionspace": {
+  "kind": "greenhouse",
+  "board": "inversionspace",
+  "name": "Inversion Space",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "greenhouse:k2spacecorporation": {
+  "kind": "greenhouse",
+  "board": "k2spacecorporation",
+  "name": "K2 Space",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "greenhouse:katalyst": {
+  "kind": "greenhouse",
+  "board": "katalyst",
+  "name": "Katalyst Space Technologies",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "greenhouse:leolabsinc": {
+  "kind": "greenhouse",
+  "board": "leolabsinc",
+  "name": "LeoLabs",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "greenhouse:muonspace": {
+  "kind": "greenhouse",
+  "board": "muonspace",
+  "name": "Muon Space",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "greenhouse:planetlabs": {
+  "kind": "greenhouse",
+  "board": "planetlabs",
+  "name": "Planet",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "greenhouse:relativity": {
+  "kind": "greenhouse",
+  "board": "relativity",
+  "name": "Relativity Space",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "greenhouse:rocketlab": {
+  "kind": "greenhouse",
+  "board": "rocketlab",
+  "name": "Rocket Lab USA",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "greenhouse:spacekinetic": {
+  "kind": "greenhouse",
+  "board": "spacekinetic",
+  "name": "Space Kinetic",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "greenhouse:spacex": {
+  "kind": "greenhouse",
+  "board": "spacex",
+  "name": "SpaceX",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "greenhouse:star-catcher": {
+  "kind": "greenhouse",
+  "board": "star-catcher",
+  "name": "Star Catcher",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "greenhouse:stokespacetechnologies": {
+  "kind": "greenhouse",
+  "board": "stokespacetechnologies",
+  "name": "STOKE Space Technologies",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "greenhouse:stratolaunch": {
+  "kind": "greenhouse",
+  "board": "stratolaunch",
+  "name": "Stratolaunch",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "greenhouse:terranorbitalcorporation": {
+  "kind": "greenhouse",
+  "board": "terranorbitalcorporation",
+  "name": "Terran Orbital",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "greenhouse:trueanomalyinc": {
+  "kind": "greenhouse",
+  "board": "trueanomalyinc",
+  "name": "True Anomaly",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "greenhouse:ursamajor": {
+  "kind": "greenhouse",
+  "board": "ursamajor",
+  "name": "Ursa Major Technologies",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "greenhouse:vardaspace": {
+  "kind": "greenhouse",
+  "board": "vardaspace",
+  "name": "Varda Space",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "greenhouse:vast": {
+  "kind": "greenhouse",
+  "board": "vast",
+  "name": "Vast",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "greenhouse:voyagertechnologiesinc": {
+  "kind": "greenhouse",
+  "board": "voyagertechnologiesinc",
+  "name": "Voyager Technologies",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "jibe:careers.jhuapl.edu": {
+  "kind": "jibe",
+  "host": "careers.jhuapl.edu",
+  "name": "Johns Hopkins Applied Physics Laboratory",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "jibe:careers.spiritaero.com": {
+  "kind": "jibe",
+  "host": "careers.spiritaero.com",
+  "name": "Spirit AeroSystems",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "lever:arraylabs.io": {
+  "kind": "lever",
+  "board": "arraylabs.io",
+  "name": "Array Labs",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "lever:cesiumastro": {
+  "kind": "lever",
+  "board": "CesiumAstro",
+  "name": "CesiumAstro",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "lever:espace": {
+  "kind": "lever",
+  "board": "espace",
+  "name": "E-Space",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "lever:hermeus": {
+  "kind": "lever",
+  "board": "hermeus",
+  "name": "Hermeus",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "lever:ispace-inc": {
+  "kind": "lever",
+  "board": "ispace-inc",
+  "name": "Ispace Technologies",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "lever:layup": {
+  "kind": "lever",
+  "board": "layup",
+  "name": "Layup Parts",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "lever:loftorbital": {
+  "kind": "lever",
+  "board": "loftorbital",
+  "name": "Loft Orbital",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "lever:saronic": {
+  "kind": "lever",
+  "board": "saronic",
+  "name": "Saronic",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "lever:shieldai": {
+  "kind": "lever",
+  "board": "shieldai",
+  "name": "Shield AI",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "oracle:fa-exty-saasfaprod1.fa.ocs.oraclecloud.com/cx_1": {
+  "kind": "oracle",
+  "host": "fa-exty-saasfaprod1.fa.ocs.oraclecloud.com",
+  "site": "CX_1",
+  "name": "Howmet Aerospace",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "oracle:ibqbjb.fa.ocs.oraclecloud.com/honeywell": {
+  "kind": "oracle",
+  "host": "ibqbjb.fa.ocs.oraclecloud.com",
+  "site": "Honeywell",
+  "name": "Honeywell",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "successfactors:careers.gulfstream.com": {
+  "kind": "successfactors",
+  "host": "careers.gulfstream.com",
+  "name": "Gulfstream",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "successfactors:careers.safran-dsi.com": {
+  "kind": "successfactors",
+  "host": "careers.safran-dsi.com",
+  "name": "Safran",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "successfactors:jobs.l3harris.com": {
+  "kind": "successfactors",
+  "host": "jobs.l3harris.com",
+  "name": "L3Harris Technologies",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "successfactors:jobs.ulalaunch.com": {
+  "kind": "successfactors",
+  "host": "jobs.ulalaunch.com",
+  "name": "United Launch Alliance",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "workday:aero.wd5.myworkdayjobs.com/external": {
+  "kind": "workday",
+  "host": "aero.wd5.myworkdayjobs.com",
+  "site": "external",
+  "name": "The Aerospace Corporation",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "workday:ag.wd3.myworkdayjobs.com/airbus": {
+  "kind": "workday",
+  "host": "ag.wd3.myworkdayjobs.com",
+  "site": "Airbus",
+  "name": "Airbus",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "workday:avav.wd1.myworkdayjobs.com/avav": {
+  "kind": "workday",
+  "host": "avav.wd1.myworkdayjobs.com",
+  "site": "avav",
+  "name": "AeroVironment",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "workday:axiomspace.wd5.myworkdayjobs.com/external_career_site": {
+  "kind": "workday",
+  "host": "axiomspace.wd5.myworkdayjobs.com",
+  "site": "External_Career_Site",
+  "name": "Axiom Space",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "workday:blueorigin.wd5.myworkdayjobs.com/blueorigin": {
+  "kind": "workday",
+  "host": "blueorigin.wd5.myworkdayjobs.com",
+  "site": "blueorigin",
+  "name": "Blue Origin",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "workday:boeing.wd1.myworkdayjobs.com/external_careers": {
+  "kind": "workday",
+  "host": "boeing.wd1.myworkdayjobs.com",
+  "site": "EXTERNAL_CAREERS",
+  "name": "The Boeing Company",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "workday:boeing.wd1.myworkdayjobs.com/external_subsidiary": {
+  "kind": "workday",
+  "host": "boeing.wd1.myworkdayjobs.com",
+  "site": "external_subsidiary",
+  "name": "The Boeing Company",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "workday:boeing.wd1.myworkdayjobs.com/intern": {
+  "kind": "workday",
+  "host": "boeing.wd1.myworkdayjobs.com",
+  "site": "INTERN",
+  "name": "The Boeing Company",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "workday:citjpl.wd5.myworkdayjobs.com/jobs": {
+  "kind": "workday",
+  "host": "citjpl.wd5.myworkdayjobs.com",
+  "site": "Jobs",
+  "name": "NASA Jet Propulsion Laboratory",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "workday:curtisswright.wd1.myworkdayjobs.com/cw_external_career_site": {
+  "kind": "workday",
+  "host": "curtisswright.wd1.myworkdayjobs.com",
+  "site": "cw_external_career_site",
+  "name": "Curtiss-Wright",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "workday:draper.wd5.myworkdayjobs.com/draper_careers": {
+  "kind": "workday",
+  "host": "draper.wd5.myworkdayjobs.com",
+  "site": "Draper_Careers",
+  "name": "Draper",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "workday:fireflyspace.wd115.myworkdayjobs.com/firefly": {
+  "kind": "workday",
+  "host": "fireflyspace.wd115.myworkdayjobs.com",
+  "site": "Firefly",
+  "name": "Firefly Aerospace",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "workday:flir.wd1.myworkdayjobs.com/flircareers": {
+  "kind": "workday",
+  "host": "flir.wd1.myworkdayjobs.com",
+  "site": "flircareers",
+  "name": "Teledyne",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "workday:geaerospace.wd5.myworkdayjobs.com/ge_externalsite": {
+  "kind": "workday",
+  "host": "geaerospace.wd5.myworkdayjobs.com",
+  "site": "ge_externalsite",
+  "name": "GE Aerospace",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "workday:globalhr.wd5.myworkdayjobs.com/rec_rtx_ext_gateway": {
+  "kind": "workday",
+  "host": "globalhr.wd5.myworkdayjobs.com",
+  "site": "rec_rtx_ext_gateway",
+  "name": "RTX",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "workday:moog.wd5.myworkdayjobs.com/moog_external_career_site": {
+  "kind": "workday",
+  "host": "moog.wd5.myworkdayjobs.com",
+  "site": "moog_external_career_site",
+  "name": "Moog",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "workday:ngc.wd1.myworkdayjobs.com/northrop_grumman_external_site": {
+  "kind": "workday",
+  "host": "ngc.wd1.myworkdayjobs.com",
+  "site": "Northrop_Grumman_External_Site",
+  "name": "Northrop Grumman",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "workday:rollsroyce.wd3.myworkdayjobs.com/intern_graduate": {
+  "kind": "workday",
+  "host": "rollsroyce.wd3.myworkdayjobs.com",
+  "site": "Intern_Graduate",
+  "name": "Rolls-Royce",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "workday:sierraspace.wd1.myworkdayjobs.com/sierra_space_external_career_site": {
+  "kind": "workday",
+  "host": "sierraspace.wd1.myworkdayjobs.com",
+  "site": "Sierra_Space_External_Career_Site",
+  "name": "Sierra Space",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "workday:snc.wd1.myworkdayjobs.com/snc_external_career_site": {
+  "kind": "workday",
+  "host": "snc.wd1.myworkdayjobs.com",
+  "site": "snc_external_career_site",
+  "name": "Sierra Nevada Corporation",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ },
+ "workday:woodward.wd5.myworkdayjobs.com/woodward": {
+  "kind": "workday",
+  "host": "woodward.wd5.myworkdayjobs.com",
+  "site": "woodward",
+  "name": "Woodward Governor",
+  "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-10-27"
+ }
+}
