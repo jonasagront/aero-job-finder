@@ -19,7 +19,7 @@ from jobfinder.match import Matcher
 from jobfinder.quals import QualChecker
 from jobfinder.render import build_page, update_readme
 from jobfinder.sources import fetch_all, fetch_description
-from jobfinder.util import FetchError, job_key
+from jobfinder.util import FetchError, job_key, resolve_short_link, strip_tracking
 
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data"
@@ -100,13 +100,32 @@ def main() -> int:
         host = urlparse(url).netloc.lower()
         return not any(host == d or host.endswith("." + d) for d in blocked)
 
+    # Short links (go.vansh.nyc/BX) become the company posting they redirect to,
+    # so the blocked-site check and de-duplication below see the real link.
+    # One that can't be read is dropped like a blocked link.
+    shorteners = tuple(d.lower() for d in sources_cfg.get("short_link_domains", []))
+
+    def is_short(url: str) -> bool:
+        host = urlparse(url).netloc.lower()
+        return any(host == d or host.endswith("." + d) for d in shorteners)
+
+    short = sorted({j["url"] for j in raw
+                    if j.get("url") and is_short(j["url"]) and keep(j.get("title", ""))})
+    if short:
+        with ThreadPoolExecutor(max_workers=8) as pool:
+            target = dict(zip(short, pool.map(lambda u: resolve_short_link(u, shorteners), short)))
+        for j in raw:
+            if j.get("url") in target:
+                j["url"] = strip_tracking(target[j["url"]])
+        print(f"   {sum(map(bool, target.values()))}/{len(short)} short links resolved")
+
     # 2) Quick title filter, then de-duplicate across sources
     candidates: dict[str, dict] = {}
     n_blocked = 0
     for j in raw:
         if not j.get("url") or not keep(j.get("title", "")):
             continue
-        if not link_ok(j["url"]):
+        if not j["url"] or not link_ok(j["url"]):
             n_blocked += 1
             continue
         j["key"] = job_key(j["url"], j.get("company", ""), j.get("title", ""))

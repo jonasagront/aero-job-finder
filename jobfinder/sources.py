@@ -45,12 +45,16 @@ def fetch_simplify_list(src: dict) -> list[dict]:
             err = e
     if data is None:
         raise FetchError(f"list not reachable ({err})")
+    # Lists in the older format give only "season": "Summer"; season_map adds the year
+    season_map = {k.lower(): v for k, v in (src.get("season_map") or {}).items()}
     jobs = []
     for item in data:
         if not item.get("active", True) or not item.get("is_visible", True):
             continue
         terms = item.get("terms") or []
         season = ", ".join(terms) if isinstance(terms, list) else str(terms)
+        if not season and item.get("season"):
+            season = season_map.get(str(item["season"]).lower(), str(item["season"]))
         locs = item.get("locations") or []
         jobs.append({
             "company": item.get("company_name", "").strip(),
