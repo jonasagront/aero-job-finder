@@ -10,6 +10,7 @@ import json
 import re
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 
 USER_AGENT = "aero-job-finder/1.0 (personal internship search; github.com/jonasagront/aero-job-finder)"
@@ -49,6 +50,36 @@ def request(url: str, method: str = "GET", data=None, headers: dict | None = Non
             last = FetchError(str(e) or e.__class__.__name__)
         time.sleep(1.5 * (attempt + 1))
     raise last
+
+
+class _NoRedirect(urllib.request.HTTPRedirectHandler):
+    def redirect_request(self, *args, **kwargs):
+        return None  # let the 30x surface as an HTTPError so its Location can be read
+
+
+_no_redirect = urllib.request.build_opener(_NoRedirect)
+
+
+def resolve_short_link(url: str, domains: tuple[str, ...], timeout: int = 10, hops: int = 3) -> str:
+    """Where a redirect-shortener link (go.vansh.nyc/BX) leads, read from the
+    Location of a HEAD request without following it. "" if it can't be read."""
+    current = url
+    for _ in range(hops):
+        req = urllib.request.Request(current, headers={"User-Agent": USER_AGENT}, method="HEAD")
+        try:
+            with _no_redirect.open(req, timeout=timeout):
+                return ""  # answered without redirecting: not a short link that works
+        except urllib.error.HTTPError as e:
+            location = e.headers.get("Location") if 300 <= e.code < 400 else None
+            if not location:
+                return ""
+        except Exception:  # timeouts, DNS, bad SSL...
+            return ""
+        current = urllib.parse.urljoin(current, location)
+        host = (urllib.parse.urlsplit(current).hostname or "").lower()
+        if not any(host == d or host.endswith("." + d) for d in domains):
+            return current
+    return ""
 
 
 def get_json(url: str, **kw):

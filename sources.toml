@@ -13,10 +13,14 @@
 # Apply button opens the company's own posting. These are AI job sites,
 # aggregators, and redirect shorteners that sit between you and the company.
 blocked_link_domains = [
-  "jobright.ai", "go.vansh.nyc", "simplify.jobs", "ziprecruiter.com", "lensa.com",
+  "jobright.ai", "simplify.jobs", "ziprecruiter.com", "lensa.com",
   "jooble.org", "talent.com", "adzuna.com", "jobgether.com", "jobleads.com",
   "learn4good.com", "careerbuilder.com", "monster.com", "snagajob.com",
 ]
+
+# Redirect shorteners: each link is swapped for the page it redirects to before
+# the check above, so a posting is kept only if it lands on the company's site.
+short_link_domains = ["go.vansh.nyc"]
 
 # --- Company career boards ---------------------------------------------
 # board = the company's ID on that hiring system (the part of their
@@ -166,8 +170,20 @@ urls = [
   "https://raw.githubusercontent.com/SimplifyJobs/Summer2027-Internships/main/.github/scripts/listings.json",
 ]
 
+# vanshb03's 2027 list (~1,500 roles, mostly tech, some hardware). Its links go
+# through go.vansh.nyc, which redirects to the company's posting; run.py swaps
+# each one for that URL (see short_link_domains). Its entries only say
+# "Summer"/"Fall"; season_map adds the year where it's certain.
+[[list]]
+name = "vanshb03 2027 list"
+urls = [
+  "https://raw.githubusercontent.com/vanshb03/Summer2027-Internships/dev/.github/scripts/listings.json",
+  "https://raw.githubusercontent.com/vanshb03/Summer2027-Internships/main/.github/scripts/listings.json",
+]
+season_map = { Summer = "Summer 2027" }
+
 # Removed Oct 2026: Jobright's engineering list (links to jobright.ai, an AI job
-# site, not the company) and vanshb03's list (links through a redirect shortener).
+# site, not the company).
 
 # --- Job boards that collect postings from many companies ----------------
 # Space Capital's board (formerly Space Talent): ~1,300 internships from
