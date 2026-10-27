@@ -130,6 +130,11 @@ they don't change the score.
   company through the aerospace-only filter, add it to `[aerospace_companies]`. Career
   boards marked `aero = false` (GM, Caterpillar, Disney, Stryker...) only feed the
   All engineering and Fall tabs.
+- **Career sites found automatically**: when a company on the aerospace list shows up on
+  any internship list (this year's or last year's) with a link to a hiring system the scan
+  can read, its whole career site is scanned from then on. Adding a name to
+  `[aerospace_companies]` is usually enough to get a company fully covered. Found sites
+  are saved in `data/discovered_boards.json` and drop out on their own if they keep failing.
 
 ## Files
 
