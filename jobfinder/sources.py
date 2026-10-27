@@ -7,6 +7,7 @@ Each fetcher returns a list of job dicts with these keys:
 from __future__ import annotations
 
 import datetime as dt
+import html
 import json
 import os
 import re
@@ -293,6 +294,191 @@ def fetch_clearcompany(site_id: str, company: str) -> list[dict]:
             return out
 
 
+def fetch_jibe(host: str, company: str, max_pages: int = 30) -> list[dict]:
+    """iCIMS career sites built on Jibe (careers.jhuapl.edu, careers.spiritaero.com):
+    a JSON search API that includes each posting's full text."""
+    out, page = [], 1
+    while page <= max_pages:
+        data = get_json(f"https://{host}/api/jobs?keywords=intern&page={page}", timeout=40)
+        batch = [b.get("data") or {} for b in data.get("jobs") or []]
+        for j in batch:
+            out.append({
+                "company": company,
+                "title": (j.get("title") or "").strip(),
+                "location": j.get("full_location") or ", ".join(filter(None, [j.get("city"), j.get("state")])),
+                "url": f"https://{host}/jobs/{j.get('slug') or j.get('req_id')}",
+                "source": f"{company} careers",
+                "posted": _date_from_iso(j.get("posted_date") or j.get("create_date")),
+                "description": html_to_text(j.get("description")),
+                "season_hint": "",
+            })
+        page += 1
+        if not batch or len(out) >= int(data.get("totalCount") or 0):
+            break
+    return out
+
+
+def fetch_oracle(host: str, site: str, company: str, max_pages: int = 40, keep=_keep_all) -> list[dict]:
+    """Oracle Recruiting Cloud sites (Honeywell, Howmet): host is the
+    *.oraclecloud.com address, site the name after /sites/ in a job link."""
+    api = f"https://{host}/hcmRestApi/resources/latest"
+    reqs, offset = [], 0
+    for _ in range(max_pages):
+        data = get_json(f"{api}/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList"
+                        f"&finder=findReqs;siteNumber={site},keyword=intern,limit=25,offset={offset}", timeout=40)
+        item = (data.get("items") or [{}])[0]
+        batch = item.get("requisitionList") or []
+        reqs.extend(batch)
+        offset += len(batch)
+        if not batch or offset >= int(item.get("TotalJobsCount") or 0):
+            break
+    # The keyword also matches descriptions, so only open internship titles
+    wanted = [r for r in reqs if _INTERNISH.search(r.get("Title", "")) and keep(r.get("Title", ""))]
+
+    def detail(r):
+        try:
+            d = get_json(f'{api}/recruitingCEJobRequisitionDetails?expand=all&onlyData=true'
+                         f'&finder=ById;Id=%22{r["Id"]}%22,siteNumber={site}', timeout=30)
+            d = (d.get("items") or [{}])[0]
+        except FetchError:
+            d = {}
+        text = "\n".join(html_to_text(d.get(k)) for k in
+                         ("ExternalDescriptionStr", "ExternalResponsibilitiesStr", "ExternalQualificationsStr"))
+        return {
+            "company": company,
+            "title": (r.get("Title") or "").strip(),
+            "location": r.get("PrimaryLocation", ""),
+            "url": f"https://{host}/hcmUI/CandidateExperience/en/sites/{site}/job/{r['Id']}",
+            "source": f"{company} careers",
+            "posted": _date_from_iso(r.get("PostedDate")),
+            "description": text.strip(),
+            "season_hint": "",
+        }
+
+    with ThreadPoolExecutor(max_workers=6) as pool:
+        return list(pool.map(detail, wanted))
+
+
+# ------------------------------------------------------------ career sites read from their pages
+# SuccessFactors and Phenom sites have no open JSON search, so these read
+# the search result pages, then open each internship's own page, which carries
+# the posting as schema.org JobPosting data (text, location, date).
+
+_BROWSER = {"Accept": "text/html", "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+            "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"}
+
+
+def _page(url: str) -> str:
+    return request(url, headers=_BROWSER, timeout=30, retries=1)
+
+
+def _postings_from_pages(company: str, links: dict[str, str], keep) -> list[dict]:
+    """links: {url: title}. Opens each internship-titled link for its full posting."""
+    wanted = [(u, t) for u, t in links.items() if _INTERNISH.search(t) and keep(t)]
+
+    def detail(item):
+        url, title = item
+        try:
+            page = _page(url)
+            p = _job_posting(page) or _microdata_posting(page) or _phenom_posting(page)
+        except FetchError:
+            p = {}
+        return {
+            "company": company,
+            "title": title,
+            "location": _posting_location(p),
+            "url": url,
+            "source": f"{company} careers",
+            "posted": _date_from_iso(p.get("datePosted")),
+            "description": html_to_text(p.get("description")),
+            "season_hint": "",
+        }
+
+    with ThreadPoolExecutor(max_workers=6) as pool:
+        return list(pool.map(detail, wanted))
+
+
+def _microdata_posting(page: str) -> dict:
+    """SuccessFactors job pages mark the posting up with itemprop attributes
+    instead of JobPosting JSON. Returned in the same shape as _job_posting."""
+    i = page.find('class="jobdescription"')
+    if i < 0:
+        return {}
+    # The text is the element with class="jobdescription": walk to its closing tag
+    start = page.rfind("<", 0, i)
+    tag = re.match(r"<(\w+)", page[start:]).group(1)
+    depth, end = 0, len(page)
+    for m in re.finditer(rf"<(/?){tag}\b", page[start:]):
+        depth += -1 if m.group(1) else 1
+        if depth == 0:
+            end = start + m.end()
+            break
+
+    def prop(name: str) -> str:
+        m = re.search(rf'itemprop="{name}"[^>]*content="([^"]*)"', page)
+        return html.unescape(m.group(1)) if m else ""
+
+    posted = prop("datePosted")  # like "Wed Oct 07 07:00:00 UTC 2026"
+    try:
+        posted = dt.datetime.strptime(posted, "%a %b %d %H:%M:%S UTC %Y").date().isoformat()
+    except ValueError:
+        pass
+    return {"description": page[start:end], "datePosted": posted,
+            "jobLocation": {"address": {k: prop(k) for k in ("addressLocality", "addressRegion", "addressCountry")}}}
+
+
+_SF_LINK = re.compile(r'class="jobTitle-link[^"]*"[^>]*href="(/job/[^"]+)"[^>]*>\s*([^<]+?)\s*<')
+
+
+def fetch_successfactors(host: str, company: str, max_pages: int = 40, keep=_keep_all) -> list[dict]:
+    """SuccessFactors career sites (jobs.l3harris.com, jobs.ulalaunch.com):
+    links look like /job/<city-title>/<id>/."""
+    links: dict[str, str] = {}
+    for n in range(max_pages):
+        found = {f"https://{host}{html.unescape(u)}": html.unescape(t)
+                 for u, t in _SF_LINK.findall(_page(f"https://{host}/search/?q=intern&startrow={25 * n}"))}
+        if not set(found) - set(links):
+            break
+        links.update(found)
+    return _postings_from_pages(company, links, keep)
+
+
+def _phenom_ddo(page: str) -> dict:
+    """The JSON a Phenom page embeds in phApp.ddo, or {}."""
+    i = page.find("phApp.ddo = ")
+    if i < 0:
+        return {}
+    try:
+        return json.JSONDecoder().raw_decode(page[i + len("phApp.ddo = "):])[0]
+    except ValueError:
+        return {}
+
+
+def _phenom_posting(page: str) -> dict:
+    """Phenom job pages that skip JobPosting data still embed the job in phApp.ddo."""
+    job = ((_phenom_ddo(page).get("jobDetail") or {}).get("data") or {}).get("job") or {}
+    if not job.get("description"):
+        return {}
+    return {"description": job["description"], "datePosted": job.get("postedDate", ""),
+            "jobLocation": {"address": job.get("location", "")}}
+
+
+def fetch_phenom(base: str, company: str, max_pages: int = 20, keep=_keep_all) -> list[dict]:
+    """Phenom career sites (jobs.baesystems.com/global/en): each search page
+    embeds its results as JSON in phApp.ddo."""
+    links: dict[str, str] = {}
+    for n in range(max_pages):
+        ddo = _phenom_ddo(_page(f"{base}/search-results?keywords=intern&from={20 * n}"))
+        if not ddo:
+            raise FetchError("search page has no job data")
+        found = ((ddo.get("eagerLoadRefineSearch") or {}).get("data") or {}).get("jobs") or []
+        for j in found:
+            links[f"{base}/job/{j.get('jobSeqNo')}"] = (j.get("title") or "").strip()
+        if len(found) < 20:
+            break
+    return _postings_from_pages(company, links, keep)
+
+
 # ------------------------------------------------------------ USAJOBS
 
 def fetch_usajobs(cfg: dict) -> list[dict]:
@@ -353,6 +539,14 @@ def fetch_all(cfg: dict, keep=_keep_all) -> tuple[list[dict], list[dict]]:
         tasks.append((c["name"], "Eightfold", lambda c=c: fetch_eightfold(c["host"], c["domain"], c["name"], keep=keep)))
     for c in cfg.get("clearcompany", []):
         tasks.append((c["name"], "ClearCompany", lambda c=c: fetch_clearcompany(c["site_id"], c["name"])))
+    for c in cfg.get("jibe", []):
+        tasks.append((c["name"], "iCIMS (Jibe)", lambda c=c: fetch_jibe(c["host"], c["name"])))
+    for c in cfg.get("oracle", []):
+        tasks.append((c["name"], "Oracle", lambda c=c: fetch_oracle(c["host"], c["site"], c["name"], keep=keep)))
+    for c in cfg.get("successfactors", []):
+        tasks.append((c["name"], "SuccessFactors", lambda c=c: fetch_successfactors(c["host"], c["name"], keep=keep)))
+    for c in cfg.get("phenom", []):
+        tasks.append((c["name"], "Phenom", lambda c=c: fetch_phenom(c["base"], c["name"], keep=keep)))
     if "usajobs" in cfg:
         tasks.append(("USAJOBS", "Federal", lambda: fetch_usajobs(cfg["usajobs"])))
 
@@ -403,13 +597,8 @@ def fetch_description(url: str) -> str:
 _LD_JSON = re.compile(r'(?is)<script[^>]*application/ld\+json[^>]*>(.*?)</script>')
 
 
-def fetch_page_description(url: str) -> str:
-    """Any other job page: most hiring sites (iCIMS, SuccessFactors, Oracle...)
-    embed the posting as schema.org JobPosting data, which includes the text."""
-    if not url.startswith("http"):
-        return ""
-    page = request(url, headers={"Accept": "text/html", "User-Agent": "Mozilla/5.0 (compatible; aero-job-finder)"},
-                   timeout=20, retries=0)
+def _job_posting(page: str) -> dict:
+    """The schema.org JobPosting data embedded in a job page, or {}."""
     for m in _LD_JSON.finditer(page):
         try:
             data = json.loads(m.group(1).strip())
@@ -418,5 +607,30 @@ def fetch_page_description(url: str) -> str:
         items = data if isinstance(data, list) else data.get("@graph", [data]) if isinstance(data, dict) else []
         for it in items:
             if isinstance(it, dict) and it.get("@type") == "JobPosting" and it.get("description"):
-                return html_to_text(it["description"])
-    return ""
+                return it
+    return {}
+
+
+def _posting_location(p: dict) -> str:
+    locs = p.get("jobLocation") or []
+    out = []
+    for loc in locs if isinstance(locs, list) else [locs]:
+        a = (loc or {}).get("address") or {} if isinstance(loc, dict) else {}
+        if isinstance(a, str):
+            out.append(a)
+            continue
+        country = a.get("addressCountry")
+        if isinstance(country, dict):
+            country = country.get("name")
+        out.append(", ".join(filter(None, [a.get("addressLocality"), a.get("addressRegion"), country])))
+    return "; ".join(dict.fromkeys(filter(None, out)))
+
+
+def fetch_page_description(url: str) -> str:
+    """Any other job page: most hiring sites (iCIMS, SuccessFactors, Oracle...)
+    embed the posting as schema.org JobPosting data, which includes the text."""
+    if not url.startswith("http"):
+        return ""
+    page = request(url, headers={"Accept": "text/html", "User-Agent": "Mozilla/5.0 (compatible; aero-job-finder)"},
+                   timeout=20, retries=0)
+    return html_to_text(_job_posting(page).get("description"))

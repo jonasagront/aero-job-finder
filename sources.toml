@@ -115,6 +115,9 @@ workday = [
   { name = "NASA Jet Propulsion Laboratory", host = "citjpl.wd5.myworkdayjobs.com", site = "Jobs" },
   { name = "The Aerospace Corporation", host = "aero.wd5.myworkdayjobs.com", site = "external" },
   { name = "Woodward", host = "woodward.wd5.myworkdayjobs.com", site = "Woodward" },
+  { name = "Sierra Nevada Corporation", host = "snc.wd1.myworkdayjobs.com", site = "snc_external_career_site" },
+  { name = "Curtiss-Wright", host = "curtisswright.wd1.myworkdayjobs.com", site = "cw_external_career_site" },
+  { name = "Teledyne", host = "flir.wd1.myworkdayjobs.com", site = "flircareers" },
 
   # Mechanical / general engineering employers (Oct 2026), aero = false (see above).
   # Several have Central Florida sites: Disney (Lake Buena Vista), Leidos and
@@ -150,11 +153,37 @@ clearcompany = [
   { name = "Firefly Aerospace", site_id = "00ed92c3-5bfb-7bfb-456d-4d9d77fef9a5" },
 ]
 
-# Not supported (no public job API), so they rely on the lists below:
-#   L3Harris (SuccessFactors behind careers.l3harris.com), Joby Aviation (iCIMS),
-#   Boom Supersonic (Rippling), BAE Systems / Textron (Taleo), General Dynamics (iCIMS),
-#   Siemens Energy (Avature), Qorvo (SuccessFactors). Their list postings still get
-#   full descriptions when the page includes standard job-posting data.
+# iCIMS sites built on Jibe: host is the careers site (links look like /jobs/<id>).
+jibe = [
+  { name = "Johns Hopkins APL", host = "careers.jhuapl.edu" },
+  { name = "Spirit AeroSystems", host = "careers.spiritaero.com" },
+]
+
+# Oracle Recruiting Cloud: host is the *.oraclecloud.com address, site is the
+# name after /sites/ in a job link (.../sites/Honeywell/job/148650).
+oracle = [
+  { name = "Honeywell", host = "ibqbjb.fa.ocs.oraclecloud.com", site = "Honeywell" },
+  { name = "Howmet Aerospace", host = "fa-exty-saasfaprod1.fa.ocs.oraclecloud.com", site = "CX_1" },
+]
+
+# SuccessFactors career sites: job links look like https://<host>/job/<title>/<id>/
+successfactors = [
+  { name = "L3Harris", host = "jobs.l3harris.com" },
+  { name = "United Launch Alliance", host = "jobs.ulalaunch.com" },
+  { name = "Leonardo DRS", host = "careers.leonardodrs.com" },
+]
+
+# Phenom career sites: base is the site address up to the language part
+# (job links look like <base>/job/<id>/<title>).
+phenom = [
+  { name = "BAE Systems", base = "https://jobs.baesystems.com/global/en" },
+]
+
+# Not supported yet, so they rely on the lists below: General Dynamics (its
+# iCIMS sites refuse scripted requests), Gulfstream (search loads by script),
+# Joby Aviation (iCIMS without search), Boom Supersonic (Rippling), Textron /
+# Bell / Textron Aviation (Taleo), Siemens Energy (Avature). Their list postings still get
+# full descriptions when the page includes standard job-posting data.
 
 # --- Big student internship lists maintained on GitHub ----------------
 # Simplify + Pitt CSC's Summer 2027 list (thousands of roles, updated daily).

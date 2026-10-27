@@ -134,7 +134,8 @@ class Matcher:
         self.aero_companies = [n for n in names if not n.startswith("=")]
         # Every company whose own career board we scan counts as aerospace,
         # except boards marked aero = false (carmakers, medical devices...)
-        for kind in ("greenhouse", "lever", "ashby", "workday", "eightfold", "clearcompany"):
+        for kind in ("greenhouse", "lever", "ashby", "workday", "eightfold", "clearcompany",
+                     "jibe", "oracle", "successfactors", "phenom"):
             self.aero_exact.update(c["name"].lower() for c in sources_cfg.get(kind, []) if c.get("aero", True))
         self.qc = None  # set by run.py to a quals.QualChecker
 
