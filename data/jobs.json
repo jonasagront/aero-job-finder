@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-27T06:51:20+00:00",
+ "updated": "2026-10-27T07:16:07+00:00",
  "jobs": [
   {
    "company": "Anduril",
@@ -15108,133 +15108,6 @@
    "last_seen": "2026-10-27"
   },
   {
-   "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
-   "title": "Mechanical - Structural/Thermal Engineering Intern (Summer 2027)",
-   "location": "US-AZ-TUCSON-805 ~ 1151 E Hermans Rd ~ BLDG 805",
-   "url": "https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-AZ-TUCSON-805--1151-E-Hermans-Rd--BLDG-805/Mechanical---Structural-Thermal-Engineering-Intern--Summer-2027-_01882958",
-   "source": "RTX (Raytheon, Pratt & Whitney, Collins) careers",
-   "posted": "2026-10-21",
-   "source_id": "RTX (Raytheon, Pratt & Whitney, Collins)",
-   "key": "wd:globalhr:01882958",
-   "tracks": {
-    "summer": {
-     "score": 71,
-     "tier": "good",
-     "parts": {
-      "fit": 40,
-      "skills": 16,
-      "eligibility": 25,
-      "requirements": -10
-     },
-     "season": "match",
-     "season_label": "Summer 2027"
-    },
-    "broad": {
-     "score": 71,
-     "tier": "good",
-     "parts": {
-      "fit": 40,
-      "skills": 16,
-      "eligibility": 25,
-      "requirements": -10
-     },
-     "season": "match",
-     "season_label": "Summer 2027"
-    }
-   },
-   "score": 71,
-   "tier": "good",
-   "discipline": "Mechanical",
-   "quals": {
-    "required": [
-     {
-      "text": "Active and transferable U.S. government issued security clearance is required prior to start date.​ U.S. citizenship is required, as only U.S. citizens are elig",
-      "status": "missing",
-      "why": "Needs a clearance you'd already have to hold"
-     },
-     {
-      "text": "Must be pursuing Bachelor’s or Advanced degree in Mechanical Engineering, Aerospace Engineering or related (STEM) major and actively",
-      "status": "met",
-      "why": "You're Aerospace Engineering"
-     },
-     {
-      "text": "Must have a minimum of 60 hours of credit by the start of the internship / co-op session.",
-      "status": "met",
-      "why": "You'll have about 60 credits"
-     },
-     {
-      "text": "Experience with finite element analysis (FEA) tools such as ANSYS Workbench, Patran, Nastran, or Thermal Desktop.",
-      "status": "missing",
-      "why": "Not on your resume: FEA / stress analysis, ANSYS, Heat transfer / thermal"
-     },
-     {
-      "text": "Experience may be obtained through on-the-job experience, research, coursework, or projects",
-      "status": "check",
-      "why": "Coursework or background (check your classes)"
-     },
-     {
-      "text": "Experience with Microsoft Office tools: Word, Excel, Outlook, PowerPoint",
-      "status": "met",
-      "why": "You have: Excel / data analysis"
-     },
-     {
-      "text": "Experience with CAD tools such as CREO",
-      "status": "met",
-      "why": "You have: SolidWorks / CAD"
-     },
-     {
-      "text": "Experience solving problems using data‑driven approaches",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "GPA of 3.0",
-      "status": "check",
-      "why": "Needs GPA 3.0+"
-     }
-    ],
-    "preferred": [],
-    "summary": {
-     "required_checked": 6,
-     "required_met": 4.0,
-     "required_missing": 2,
-     "to_check": 2,
-     "preferred_met": 0,
-     "preferred_total": 0
-    }
-   },
-   "matched": [
-    "SolidWorks / CAD",
-    "Excel / data analysis"
-   ],
-   "related": [],
-   "gaps": [
-    "FEA / stress analysis",
-    "Creo",
-    "ANSYS",
-    "Heat transfer / thermal"
-   ],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "Min GPA 3.0"
-    },
-    {
-     "kind": "info",
-     "label": "U.S. person / ITAR",
-     "id": "citizen"
-    },
-    {
-     "kind": "info",
-     "label": "Clearance",
-     "id": "clearance"
-    }
-   ],
-   "has_description": true,
-   "first_seen": "2026-10-21",
-   "last_seen": "2026-10-27"
-  },
-  {
    "company": "GE Vernova",
    "title": "GE Vernova Nuclear Lean and Operations Internship - Summer 2027",
    "location": "Wilmington NC USA",
@@ -25905,71 +25778,6 @@
    "last_seen": "2026-10-27"
   },
   {
-   "company": "Moog",
-   "title": "Intern, Electrical Engineering",
-   "location": "Torrance, CA",
-   "url": "https://moog.wd5.myworkdayjobs.com/MOOG_External_Career_Site/job/Torrance-CA/Intern--Electrical-Engineering_R-26-19827",
-   "source": "Moog careers",
-   "posted": "2026-10-20",
-   "source_id": "Moog",
-   "key": "wd:moog:intern--electrical-engineering_r-26-19827",
-   "tracks": {
-    "summer": {
-     "score": 53,
-     "tier": "look",
-     "parts": {
-      "fit": 14,
-      "skills": 14,
-      "eligibility": 25,
-      "requirements": 0
-     },
-     "season": "match",
-     "season_label": "Summer 2027"
-    },
-    "broad": {
-     "score": 57,
-     "tier": "good",
-     "parts": {
-      "fit": 18,
-      "skills": 14,
-      "eligibility": 25,
-      "requirements": 0
-     },
-     "season": "match",
-     "season_label": "Summer 2027"
-    }
-   },
-   "score": 57,
-   "tier": "good",
-   "discipline": "Electrical",
-   "quals": null,
-   "matched": [
-    "C++"
-   ],
-   "related": [
-    "NX (close to SolidWorks / CAD)",
-    "Embedded (close to Arduino / microcontrollers)"
-   ],
-   "gaps": [
-    "MATLAB",
-    "ANSYS"
-   ],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "Min GPA 3.0"
-    },
-    {
-     "kind": "info",
-     "label": "U.S. person / ITAR",
-     "id": "citizen"
-    }
-   ],
-   "has_description": true,
-   "first_seen": "2026-10-20",
-   "last_seen": "2026-10-27"
-  },
-  {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
    "title": "Systems Engineering Intern",
    "location": "US-MA-MARLBOROUGH-MA1 ~ 1001 Boston Post Rd ~ BLDG 1",
@@ -31633,6 +31441,59 @@
    "last_seen": "2026-10-27"
   },
   {
+   "company": "Moog",
+   "title": "Electrical Engineer Intern",
+   "location": "Torrance, CA",
+   "url": "https://moog.wd5.myworkdayjobs.com/moog_external_career_site/job/Torrance-CA/Intern--Electrical-Engineering_R-26-19827",
+   "source": "Simplify Summer 2027 list",
+   "posted": "2026-10-06",
+   "sponsorship": "Other",
+   "source_id": "Simplify Summer 2027 list",
+   "key": "wd:moog:intern--electrical-engineering_r-26-19827",
+   "tracks": {
+    "summer": {
+     "score": 49,
+     "tier": "look",
+     "parts": {
+      "fit": 12,
+      "skills": 12,
+      "eligibility": 25,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    },
+    "broad": {
+     "score": 51,
+     "tier": "look",
+     "parts": {
+      "fit": 14,
+      "skills": 12,
+      "eligibility": 25,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    }
+   },
+   "score": 51,
+   "tier": "look",
+   "discipline": "Electrical",
+   "quals": null,
+   "matched": [],
+   "related": [],
+   "gaps": [],
+   "flags": [
+    {
+     "kind": "info",
+     "label": "Full description not loaded"
+    }
+   ],
+   "has_description": false,
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-27"
+  },
+  {
    "company": "Nissan Global",
    "title": "Systems Engineer Intern - Summer 2027",
    "location": "Canton, MS",
@@ -32389,153 +32250,6 @@
   },
   {
    "company": "Lockheed Martin",
-   "title": "Electrical Engineer Intern",
-   "location": "Orlando, FL",
-   "url": "https://lockheedmartin.eightfold.ai/careers/job/996477518099",
-   "source": "Lockheed Martin careers",
-   "posted": "2026-10-23",
-   "source_id": "Lockheed Martin",
-   "key": "url:https://lockheedmartin.eightfold.ai/careers/job/996477518099",
-   "tracks": {
-    "summer": {
-     "score": 48,
-     "tier": "look",
-     "parts": {
-      "fit": 14,
-      "skills": 12,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Season not stated"
-    },
-    "broad": {
-     "score": 50,
-     "tier": "look",
-     "parts": {
-      "fit": 16,
-      "skills": 12,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Season not stated"
-    },
-    "fall": {
-     "score": 50,
-     "tier": "look",
-     "parts": {
-      "fit": 16,
-      "skills": 12,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Season not stated",
-     "miles": 12
-    }
-   },
-   "score": 50,
-   "tier": "look",
-   "discipline": "Electrical",
-   "quals": {
-    "required": [
-     {
-      "text": "Pursuing a bachelor's degree in Electrical Engineering or a closely related STEM field from an accredited university.",
-      "status": "met",
-      "why": "You're Aerospace Engineering"
-     },
-     {
-      "text": "Familiarity with test equipment (This may include oscilloscope, multimeter, function generator, signal generator, network analyzer, spectrum analyzer, logic ana",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Must be a US Citizen; must be able to obtain/maintain a DoD Secret clearance.",
-      "status": "met",
-      "why": "You're a U.S. citizen"
-     }
-    ],
-    "preferred": [
-     {
-      "text": "Related Electrical Engineering (EE) undergrad internship experience and/or electronic hands-on experience in an internship is a plus",
-      "status": "met",
-      "why": "You have: Prototyping & fabrication"
-     },
-     {
-      "text": "Ability to interpret technical documentation such as electronic data sheets, schematic diagrams, and test data is desired.",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Experience with schematic capture and/ or PCB layout tools (e.g., Altium Designer, Eagle, KiCad, Mentor Graphics, Cadence, etc.)",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Experience with simulation tools (LTspice, PSpice, Simulink, NI Multisim, MATLAB, etc.).",
-      "status": "missing",
-      "why": "Not on your resume: MATLAB, Simulink"
-     },
-     {
-      "text": "Experience with digital/analog design (PSpice, LTspice, TINA-TI).",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Exposure to a laboratory, design, or testing environment, engaging with hardware hands-on (soldering, breadboarding, prototype assembly, or similar)",
-      "status": "met",
-      "why": "You have: Prototyping & fabrication"
-     },
-     {
-      "text": "Excellent problem-solving skills with the ability to diagnose and troubleshoot complex electrical issues demonstrated through hands-on experience.",
-      "status": "met",
-      "why": "You have: Prototyping & fabrication"
-     },
-     {
-      "text": "Understanding of electromagnetic compatibility (EMC) and electromagnetic interference (EMI) principles.",
-      "status": "check",
-      "why": "Coursework or background (check your classes)"
-     }
-    ],
-    "summary": {
-     "required_checked": 2,
-     "required_met": 2.0,
-     "required_missing": 0,
-     "to_check": 1,
-     "preferred_met": 3,
-     "preferred_total": 4
-    }
-   },
-   "matched": [
-    "Prototyping & fabrication"
-   ],
-   "related": [
-    "Embedded (close to Arduino / microcontrollers)"
-   ],
-   "gaps": [
-    "MATLAB",
-    "Simulink",
-    "Drawings / drafting"
-   ],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "U.S. person / ITAR",
-     "id": "citizen"
-    },
-    {
-     "kind": "info",
-     "label": "Clearance",
-     "id": "clearance"
-    }
-   ],
-   "has_description": true,
-   "first_seen": "2026-10-23",
-   "last_seen": "2026-10-27"
-  },
-  {
-   "company": "Lockheed Martin",
    "title": "Electrical Engineering Intern",
    "location": "Andover, MA",
    "url": "https://lockheedmartin.eightfold.ai/careers/job/996477244312",
@@ -32786,6 +32500,153 @@
      "to_check": 1,
      "preferred_met": 3,
      "preferred_total": 5
+    }
+   },
+   "matched": [
+    "Prototyping & fabrication"
+   ],
+   "related": [
+    "Embedded (close to Arduino / microcontrollers)"
+   ],
+   "gaps": [
+    "MATLAB",
+    "Simulink",
+    "Drawings / drafting"
+   ],
+   "flags": [
+    {
+     "kind": "info",
+     "label": "U.S. person / ITAR",
+     "id": "citizen"
+    },
+    {
+     "kind": "info",
+     "label": "Clearance",
+     "id": "clearance"
+    }
+   ],
+   "has_description": true,
+   "first_seen": "2026-10-23",
+   "last_seen": "2026-10-27"
+  },
+  {
+   "company": "Lockheed Martin",
+   "title": "Electrical Engineer Intern",
+   "location": "Orlando, FL",
+   "url": "https://lockheedmartin.eightfold.ai/careers/job/996477518099",
+   "source": "Lockheed Martin careers",
+   "posted": "2026-10-23",
+   "source_id": "Lockheed Martin",
+   "key": "url:https://lockheedmartin.eightfold.ai/careers/job/996477518099",
+   "tracks": {
+    "summer": {
+     "score": 48,
+     "tier": "look",
+     "parts": {
+      "fit": 14,
+      "skills": 12,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Season not stated"
+    },
+    "broad": {
+     "score": 50,
+     "tier": "look",
+     "parts": {
+      "fit": 16,
+      "skills": 12,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Season not stated"
+    },
+    "fall": {
+     "score": 50,
+     "tier": "look",
+     "parts": {
+      "fit": 16,
+      "skills": 12,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Season not stated",
+     "miles": 12
+    }
+   },
+   "score": 50,
+   "tier": "look",
+   "discipline": "Electrical",
+   "quals": {
+    "required": [
+     {
+      "text": "Pursuing a bachelor's degree in Electrical Engineering or a closely related STEM field from an accredited university.",
+      "status": "met",
+      "why": "You're Aerospace Engineering"
+     },
+     {
+      "text": "Familiarity with test equipment (This may include oscilloscope, multimeter, function generator, signal generator, network analyzer, spectrum analyzer, logic ana",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Must be a US Citizen; must be able to obtain/maintain a DoD Secret clearance.",
+      "status": "met",
+      "why": "You're a U.S. citizen"
+     }
+    ],
+    "preferred": [
+     {
+      "text": "Related Electrical Engineering (EE) undergrad internship experience and/or electronic hands-on experience in an internship is a plus",
+      "status": "met",
+      "why": "You have: Prototyping & fabrication"
+     },
+     {
+      "text": "Ability to interpret technical documentation such as electronic data sheets, schematic diagrams, and test data is desired.",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Experience with schematic capture and/ or PCB layout tools (e.g., Altium Designer, Eagle, KiCad, Mentor Graphics, Cadence, etc.)",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Experience with simulation tools (LTspice, PSpice, Simulink, NI Multisim, MATLAB, etc.).",
+      "status": "missing",
+      "why": "Not on your resume: MATLAB, Simulink"
+     },
+     {
+      "text": "Experience with digital/analog design (PSpice, LTspice, TINA-TI).",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Exposure to a laboratory, design, or testing environment, engaging with hardware hands-on (soldering, breadboarding, prototype assembly, or similar)",
+      "status": "met",
+      "why": "You have: Prototyping & fabrication"
+     },
+     {
+      "text": "Excellent problem-solving skills with the ability to diagnose and troubleshoot complex electrical issues demonstrated through hands-on experience.",
+      "status": "met",
+      "why": "You have: Prototyping & fabrication"
+     },
+     {
+      "text": "Understanding of electromagnetic compatibility (EMC) and electromagnetic interference (EMI) principles.",
+      "status": "check",
+      "why": "Coursework or background (check your classes)"
+     }
+    ],
+    "summary": {
+     "required_checked": 2,
+     "required_met": 2.0,
+     "required_missing": 0,
+     "to_check": 1,
+     "preferred_met": 3,
+     "preferred_total": 4
     }
    },
    "matched": [
