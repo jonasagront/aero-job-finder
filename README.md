@@ -20,7 +20,7 @@ Postings more than 15 days old get an **Older than 15 days** tag, and a checkbox
 ## Today's top matches
 
 <!-- JOBS:START -->
-**222 Summer 2027 aerospace matches** (8 Fall 2027 near home, 437 in All engineering) as of Oct 26, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
+**227 Summer 2027 aerospace matches** (9 Fall 2027 near home, 455 in All engineering) as of Oct 27, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
 
 | Fit | Company | Role | Required quals met | Location | Posted | Apply |
 |---|---|---|---|---|---|---|
