@@ -29,7 +29,7 @@ came from). Postings with no date anywhere go in **Posted date unknown**.
 ## Today's top matches
 
 <!-- JOBS:START -->
-**375 Summer 2027 aerospace matches** (11 Fall 2027 near home, 595 in All engineering) as of Oct 28, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
+**370 Summer 2027 aerospace matches** (11 Fall 2027 near home, 588 in All engineering) as of Oct 28, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
 
 | Fit | Company | Role | Required quals met | Location | Posted | Apply |
 |---|---|---|---|---|---|---|
@@ -44,9 +44,9 @@ came from). Postings with no date anywhere go in **Posted date unknown**.
 | 97 | Johns Hopkins Applied Physics Laboratory | 2027 Internship - Missile, Reentry, and Hypersonics Systems Performance | – | Laurel, Maryland | 2026-10-27 | [Apply](https://careers.jhuapl.edu/jobs/60578) |
 | 95 | Ursa Major | 2027 Summer Embedded Flight Software Intern | 2 of 3 | Longmont, Colorado | 2026-10-22 | [Apply](https://ursamajor.com/careers/?gh_jid=4746825005) |
 | 95 | Ursa Major | 2027 Summer Propulsion Engineer, Hypersonic Vehicle Intern | 4 of 5 | Berthoud, Colorado | 2026-10-22 | [Apply](https://ursamajor.com/careers/?gh_jid=4746882005) |
-| 93 | Lockheed Martin | Mechanical Design Intern | 3 of 3 | Grand Prairie, TX | 2026-10-22 | [Apply](https://lockheedmartin.eightfold.ai/careers/job/996477505085) |
 | 93 | Lockheed Martin | Mechanical Design Engineering Intern | 3 of 3 | Grand Prairie, TX | 2026-10-15 | [Apply](https://lockheedmartin.eightfold.ai/careers/job/996477394326) |
 | 93 | Lockheed Martin | Mechanical Design Engineering Intern | 3 of 3 | Orlando, FL | 2026-10-18 | [Apply](https://lockheedmartin.eightfold.ai/careers/job/996477394527) |
+| 93 | Lockheed Martin | Mechanical Design Intern | 3 of 3 | Grand Prairie, TX | 2026-10-22 | [Apply](https://lockheedmartin.eightfold.ai/careers/job/996477505085) |
 | 93 | Muon Space | Spacecraft Test Engineering Intern (Summer 2027) | 2 of 2 | San Jose, CA | 2026-10-13 | [Apply](https://job-boards.greenhouse.io/muonspace/jobs/5256288007) |
 | 92 | AeroVironment | Summer 2027 Aeromechanical Engineering Intern | 3 of 3 | Simi Valley, CA; Huntsville, AL; Pottsto | 2026-10-13 | [Apply](https://avav.wd1.myworkdayjobs.com/AVAV/job/Simi-Valley-CA/Summer-2027-Aeromechanical-Engineering-Intern_8387) |
 | 91 | Inversion | Mechanical Engineer - Internship 🆕 | – | Playa Vista, California, United States | 2026-10-14 | [Find posting](https://www.google.com/search?q=Inversion+%22Mechanical+Engineer+-+Internship%22) |
@@ -56,8 +56,8 @@ came from). Postings with no date anywhere go in **Posted date unknown**.
 | 90 | Anduril | 2027 Low Observables Engineer Intern | 3 of 3 | Costa Mesa, California, United States | 2026-10-19 | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5268752007?gh_jid=5268752007) |
 | 89 | Ursa Major | 2027 Summer Materials & Processes Intern | 3 of 3 | Berthoud, Colorado | 2026-10-19 | [Apply](https://ursamajor.com/careers/?gh_jid=4745105005) |
 | 88 | CACI | Mechanical Engineering Intern - Summer 2027 🆕 | 2 of 2 | Dulles, VA, US | 2026-10-19 | [Apply](https://caci.wd1.myworkdayjobs.com/External/job/Dulles-VA-US/Mechanical-Engineering-Intern---Summer-2027_333564) |
-| 88 | Lockheed Martin | Systems Integration/Electrical Test Engineer-INTERN | 2 of 2 | Cape Canaveral, FL | 2026-10-13 | [Apply](https://lockheedmartin.eightfold.ai/careers/job/996477337909) |
 | 88 | Lockheed Martin | Systems Integration/Electrical Test Engineer-INTERN | 2 of 2 | Cape Canaveral, FL | 2026-10-19 | [Apply](https://lockheedmartin.eightfold.ai/careers/job/996477338210) |
+| 88 | Lockheed Martin | Systems Integration/Electrical Test Engineer-INTERN | 2 of 2 | Cape Canaveral, FL | 2026-10-13 | [Apply](https://lockheedmartin.eightfold.ai/careers/job/996477337909) |
 <!-- JOBS:END -->
 
 ---
