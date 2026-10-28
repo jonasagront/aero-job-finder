@@ -29,7 +29,7 @@ came from). Postings with no date anywhere go in **Posted date unknown**.
 ## Today's top matches
 
 <!-- JOBS:START -->
-**373 Summer 2027 aerospace matches** (11 Fall 2027 near home, 594 in All engineering) as of Oct 28, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
+**375 Summer 2027 aerospace matches** (11 Fall 2027 near home, 595 in All engineering) as of Oct 28, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
 
 | Fit | Company | Role | Required quals met | Location | Posted | Apply |
 |---|---|---|---|---|---|---|
@@ -38,7 +38,6 @@ came from). Postings with no date anywhere go in **Posted date unknown**.
 | 100 | CACI | Aerospace Engineer Intern - Summer 2027 🆕 | 5 of 5 | Aberdeen Proving Ground, MD, US | 2026-10-16 | [Apply](https://caci.wd1.myworkdayjobs.com/External/job/Aberdeen-Proving-Ground-MD-US/Aerospace-Engineer-Intern---Summer-2027_333648) |
 | 100 | CACI | Aerospace Engineer Intern - Summer 2027 🆕 | 5 of 5 | Aberdeen Proving Ground, MD, US | 2026-10-16 | [Apply](https://caci.wd1.myworkdayjobs.com/External/job/Aberdeen-Proving-Ground-MD-US/Aerospace-Engineer-Intern---Summer-2027_333570) |
 | 100 | CesiumAstro | Summer 2027 - Flight Dynamics Internship | 3 of 3 | Huntsville, AL | 2026-10-16 | [Apply](https://jobs.lever.co/CesiumAstro/385a6217-7931-4bb4-861a-1e5651e3a998) |
-| 100 | RTX (Raytheon, Pratt & Whitney, Collins) | Aero Thermal Fluids Intern (Summer 2027) (Onsite) | 9 of 9 | US-CT-EAST HARTFORD-ETC ~ 400 Main St ~  | 2026-10-22 | [Apply](https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-CT-EAST-HARTFORD-ETC--400-Main-St--BLDG-ETC/Aero-Thermal-Fluids-Intern--Summer-2027---Onsite-_01882602) |
 | 97 | Inversion Space | Avionics Mechanical Engineer - Summer Internship 2027 | 3 of 3 | Playa Vista, California, United States | 2026-10-15 | [Apply](https://job-boards.greenhouse.io/inversionspace/jobs/4744390005) |
 | 97 | Inversion Space | Mechanical Engineer - Summer Internship 2027 | 3 of 3 | Playa Vista, California, United States | 2026-10-14 | [Apply](https://job-boards.greenhouse.io/inversionspace/jobs/4743740005) |
 | 97 | Johns Hopkins Applied Physics Laboratory | 2027 Internship - Mechanical Engineering Intern | – | Laurel, Maryland | 2026-10-26 | [Apply](https://careers.jhuapl.edu/jobs/60389) |
@@ -58,6 +57,7 @@ came from). Postings with no date anywhere go in **Posted date unknown**.
 | 89 | Ursa Major | 2027 Summer Materials & Processes Intern | 3 of 3 | Berthoud, Colorado | 2026-10-19 | [Apply](https://ursamajor.com/careers/?gh_jid=4745105005) |
 | 88 | CACI | Mechanical Engineering Intern - Summer 2027 🆕 | 2 of 2 | Dulles, VA, US | 2026-10-19 | [Apply](https://caci.wd1.myworkdayjobs.com/External/job/Dulles-VA-US/Mechanical-Engineering-Intern---Summer-2027_333564) |
 | 88 | Lockheed Martin | Systems Integration/Electrical Test Engineer-INTERN | 2 of 2 | Cape Canaveral, FL | 2026-10-13 | [Apply](https://lockheedmartin.eightfold.ai/careers/job/996477337909) |
+| 88 | Lockheed Martin | Systems Integration/Electrical Test Engineer-INTERN | 2 of 2 | Cape Canaveral, FL | 2026-10-19 | [Apply](https://lockheedmartin.eightfold.ai/careers/job/996477338210) |
 <!-- JOBS:END -->
 
 ---
