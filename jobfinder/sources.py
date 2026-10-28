@@ -232,13 +232,24 @@ def fetch_workday(host: str, site: str, company: str, max_pages: int = 50, keep=
             "location": loc,
             "url": info.get("externalUrl") or f"https://{host}/{site}{path}",
             "source": f"{company} careers",
-            "posted": _date_from_iso(info.get("startDate")),
+            "posted": _date_from_iso(info.get("startDate")) or _workday_posted_on(p.get("postedOn", "")),
             "description": html_to_text(info.get("jobDescription")),
             "season_hint": "",
         }
 
     with ThreadPoolExecutor(max_workers=6) as pool:
         return list(pool.map(detail, wanted))
+
+
+def _workday_posted_on(text: str) -> str:
+    """Workday's list says "Posted Today", "Posted Yesterday" or "Posted 3 Days Ago"
+    ("30+ Days Ago" is too vague to use)."""
+    t = text.lower()
+    days = 0 if "today" in t else 1 if "yesterday" in t else None
+    m = re.search(r"posted (\d+) days? ago", t)
+    if m:
+        days = int(m.group(1))
+    return (dt.date.today() - dt.timedelta(days=days)).isoformat() if days is not None else ""
 
 
 def fetch_eightfold(host: str, domain: str, company: str, max_pages: int = 40, keep=_keep_all) -> list[dict]:
@@ -424,10 +435,12 @@ def fetch_icims(host: str, company: str, max_pages: int = 15, keep=_keep_all) ->
 
     def detail(p):
         try:
-            text = fetch_page_description(p["url"] + "?in_iframe=1")
+            text, posted = fetch_page_posting(p["url"] + "?in_iframe=1")
         except FetchError:
-            text = ""
-        return {"company": company, "source": f"{company} careers", "description": text, "season_hint": "", **p}
+            text, posted = "", ""
+        # Some iCIMS search pages show no date; the job page usually has one
+        return {"company": company, "source": f"{company} careers", "description": text, "season_hint": "",
+                **p, "posted": p["posted"] or posted}
 
     return _open_each(wanted, detail)
 
@@ -532,16 +545,16 @@ def fetch_phenom(base: str, company: str, max_pages: int = 15, keep=_keep_all) -
     def detail(j):
         url = f"{base}/job/{j['jobId']}"
         try:
-            text = fetch_page_description(url)
+            text, posted = fetch_page_posting(url)
         except FetchError:
-            text = ""
+            text, posted = "", ""
         return {
             "company": company,
             "title": (j.get("title") or "").strip(),
             "location": "; ".join(j.get("multi_location") or []) or j.get("location", ""),
             "url": url,
             "source": f"{company} careers",
-            "posted": _date_from_iso(j.get("postedDate")),
+            "posted": _date_from_iso(j.get("postedDate")) or posted,
             "description": text or j.get("descriptionTeaser", ""),
             "season_hint": "",
         }
@@ -549,7 +562,9 @@ def fetch_phenom(base: str, company: str, max_pages: int = 15, keep=_keep_all) -
     return _open_each(wanted, detail)
 
 
-def fetch_pinpoint(board: str, company: str) -> list[dict]:
+def fetch_pinpoint(board: str, company: str, keep=_keep_all) -> list[dict]:
+    """Pinpoint boards. The JSON has full postings but no dates, so each
+    internship's page is opened for its posted date."""
     data = get_json(f"https://{board}.pinpointhq.com/postings.json", timeout=60)
     out = []
     for j in data.get("data", []):
@@ -566,6 +581,16 @@ def fetch_pinpoint(board: str, company: str) -> list[dict]:
             "description": "\n".join(parts),
             "season_hint": "",
         })
+
+    def dated(p):
+        try:
+            p["posted"] = fetch_page_posting(p["url"])[1]
+        except FetchError:
+            pass
+        return p
+
+    wanted = [p for p in out if p["url"] and _wanted(p["title"], keep)]
+    _open_each(wanted, dated)
     return out
 
 
@@ -752,10 +777,10 @@ def fetch_jazzhr(board: str, company: str, keep=_keep_all) -> list[dict]:
 
     def detail(p):
         try:
-            text = fetch_page_description(p["url"])
+            text, posted = fetch_page_posting(p["url"])
         except FetchError:
-            text = ""
-        return {"company": company, "source": f"{company} careers", "posted": "", "description": text,
+            text, posted = "", ""
+        return {"company": company, "source": f"{company} careers", "posted": posted, "description": text,
                 "season_hint": "", **p}
 
     return _open_each(postings, detail)
@@ -910,7 +935,7 @@ def fetch_all(cfg: dict, keep=_keep_all) -> tuple[list[dict], list[dict]]:
     for c in cfg.get("phenom", []):
         tasks.append((c["name"], "Phenom", lambda c=c: fetch_phenom(c["base"].rstrip("/"), c["name"], keep=keep)))
     for c in cfg.get("pinpoint", []):
-        tasks.append((c["name"], "Pinpoint", lambda c=c: fetch_pinpoint(c["board"], c["name"])))
+        tasks.append((c["name"], "Pinpoint", lambda c=c: fetch_pinpoint(c["board"], c["name"], keep=keep)))
     for c in cfg.get("bamboohr", []):
         tasks.append((c["name"], "BambooHR", lambda c=c: fetch_bamboohr(c["board"], c["name"], keep=keep)))
     for c in cfg.get("rippling", []):
@@ -977,13 +1002,8 @@ def fetch_description(url: str) -> str:
 _LD_JSON = re.compile(r'(?is)<script[^>]*application/ld\+json[^>]*>(.*?)</script>')
 
 
-def fetch_page_description(url: str) -> str:
-    """Any other job page: most hiring sites (iCIMS, SuccessFactors, Oracle...)
-    embed the posting as schema.org JobPosting data, which includes the text."""
-    if not url.startswith("http"):
-        return ""
-    page = request(url, headers={"Accept": "text/html", "User-Agent": "Mozilla/5.0 (compatible; aero-job-finder)"},
-                   timeout=20, retries=0)
+def _job_posting(page: str) -> dict:
+    """The schema.org JobPosting data embedded in a job page, or {}."""
     for m in _LD_JSON.finditer(page):
         try:
             data = json.loads(m.group(1).strip())
@@ -991,6 +1011,32 @@ def fetch_page_description(url: str) -> str:
             continue
         items = data if isinstance(data, list) else data.get("@graph", [data]) if isinstance(data, dict) else []
         for it in items:
-            if isinstance(it, dict) and it.get("@type") == "JobPosting" and it.get("description"):
-                return html_to_text(it["description"])
-    return _rmk_text(page) or _taleo_text(page)  # SuccessFactors and Taleo pages don't
+            if isinstance(it, dict) and it.get("@type") == "JobPosting":
+                return it
+    return {}
+
+
+def _plausible_date(iso: str) -> str:
+    """A posted date from page data, or "" when it can't be right. Some iCIMS
+    sites stamp every posting exactly two years before today."""
+    try:
+        age = (dt.date.today() - dt.date.fromisoformat(iso)).days
+    except ValueError:
+        return ""
+    return iso if -2 <= age <= 400 else ""
+
+
+def fetch_page_posting(url: str) -> tuple[str, str]:
+    """(text, posted date) from a job page. Most hiring sites (iCIMS, JazzHR,
+    Pinpoint, Phenom...) embed the posting as schema.org JobPosting data."""
+    if not url.startswith("http"):
+        return "", ""
+    page = request(url, headers={"Accept": "text/html", "User-Agent": "Mozilla/5.0 (compatible; aero-job-finder)"},
+                   timeout=20, retries=0)
+    p = _job_posting(page)
+    text = html_to_text(p.get("description")) or _rmk_text(page) or _taleo_text(page)  # those two don't
+    return text, _plausible_date(_date_from_iso(p.get("datePosted")))
+
+
+def fetch_page_description(url: str) -> str:
+    return fetch_page_posting(url)[0]

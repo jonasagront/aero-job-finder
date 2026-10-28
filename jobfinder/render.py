@@ -13,27 +13,29 @@ TEMPLATE = r"""<!doctype html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Internship scan</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23111316'/%3E%3Cpath d='M8 23 16 7l8 16-8-4z' fill='%23FF7B3A'/%3E%3C/svg%3E">
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('ajf-theme')||'light')}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#F2F2EE; --surface:#FAFAF7; --ink:#111316; --ink2:#3B4046; --muted:#686E74; --faint:#9A9FA4;
-  --line:#DCDCD5; --line2:#C7C7BF; --accent:#C2410C; --accent-bg:rgba(194,65,12,.09);
+  --bg:#F7F7F4; --surface:#FFFFFF; --ink:#111316; --ink2:#3B4046; --muted:#686E74; --faint:#9A9FA4;
+  --line:#DFDFD8; --line2:#C9C9C1; --accent:#C2410C; --accent-bg:rgba(194,65,12,.09);
   --pos:#1D7348; --mid:#2B579A; --low:#8A6510; --neg:#B0361F;
   --sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
   --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
   color-scheme:light;
 }
-@media (prefers-color-scheme:dark){:root:not([data-theme=light]){
-  --bg:#0C0E11; --surface:#121519; --ink:#E6E8EB; --ink2:#B5BBC2; --muted:#80878F; --faint:#5A6068;
-  --line:#20242A; --line2:#2E333A; --accent:#FF7B3A; --accent-bg:rgba(255,123,58,.11);
-  --pos:#46BE84; --mid:#79A6EE; --low:#D6AE48; --neg:#EE7560; color-scheme:dark;
+/* Dark is a soft slate, not black; the page opens in light unless dark is picked */
+@media (prefers-color-scheme:dark){:root[data-theme=auto]{
+  --bg:#1D2127; --surface:#252A31; --ink:#E9ECEF; --ink2:#C5CBD2; --muted:#9BA3AC; --faint:#717A84;
+  --line:#343A42; --line2:#424951; --accent:#FF8A4C; --accent-bg:rgba(255,138,76,.13);
+  --pos:#5CCB95; --mid:#8DB4F2; --low:#DDB95A; --neg:#F28A76; color-scheme:dark;
 }}
 :root[data-theme=dark]{
-  --bg:#0C0E11; --surface:#121519; --ink:#E6E8EB; --ink2:#B5BBC2; --muted:#80878F; --faint:#5A6068;
-  --line:#20242A; --line2:#2E333A; --accent:#FF7B3A; --accent-bg:rgba(255,123,58,.11);
-  --pos:#46BE84; --mid:#79A6EE; --low:#D6AE48; --neg:#EE7560; color-scheme:dark;
+  --bg:#1D2127; --surface:#252A31; --ink:#E9ECEF; --ink2:#C5CBD2; --muted:#9BA3AC; --faint:#717A84;
+  --line:#343A42; --line2:#424951; --accent:#FF8A4C; --accent-bg:rgba(255,138,76,.13);
+  --pos:#5CCB95; --mid:#8DB4F2; --low:#DDB95A; --neg:#F28A76; color-scheme:dark;
 }
 *{box-sizing:border-box}
 [hidden]{display:none!important}
@@ -315,13 +317,12 @@ const postedThisWeek = j => (j.posted || j.first_seen) >= weekAgo;
 const isOld = j => (j.posted || j.first_seen) < oldCut;
 const coMatch = (company, terms) => { const c = (company || '').toLowerCase(); return terms.some(t => t[0] === '=' ? c === t.slice(1) : c.includes(t)); };
 
-// ---- theme: follows the system unless picked here
-const THEMES = ['auto', 'light', 'dark'];
-let theme = pref.get('theme', 'auto');
+// ---- theme: light unless dark (or the system's setting) is picked here
+const THEMES = ['light', 'dark', 'auto'];
+let theme = THEMES.includes(pref.get('theme', 'light')) ? pref.get('theme', 'light') : 'light';
 function applyTheme(){
-  if(theme === 'auto') document.documentElement.removeAttribute('data-theme');
-  else document.documentElement.setAttribute('data-theme', theme);
-  $('theme').textContent = 'Theme: ' + theme;
+  document.documentElement.setAttribute('data-theme', theme);
+  $('theme').textContent = 'Theme: ' + (theme === 'auto' ? 'system' : theme);
 }
 $('theme').addEventListener('click', () => { theme = THEMES[(THEMES.indexOf(theme) + 1) % 3]; pref.set('theme', theme); applyTheme(); });
 applyTheme();
@@ -424,7 +425,12 @@ function card(j){
   rows.push(`<dt>Found via</dt><dd>${esc(j.source)}${j.lead ? ' (no direct link: the button searches for the company\'s own posting)' : ''}</dd>`);
   const ai = j.ai ? `<div class="ai"><b>Claude's take (${esc(j.ai.fit)}):</b> ${esc(j.ai.summary)}${j.ai.talking_point ? '<br><b>Lead with:</b> ' + esc(j.ai.talking_point) : ''}</div>` : '';
   const age = ageDays(j.posted);
-  const meta = [j.location && `<span>${esc(j.location)}</span>`, j.posted && `<span>Posted ${fmt(j.posted)} (${age === 0 ? 'today' : age + 'd ago'})</span>`, `<span>Found ${fmt(j.first_seen)}</span>`].filter(Boolean).join('');
+  // Every posting gets a date: the site's own, or "by" the day the scan first found it
+  const seenAge = ageDays(j.first_seen);
+  const when = j.posted
+    ? `<span>Posted ${fmt(j.posted)} (${age === 0 ? 'today' : age + 'd ago'})</span><span>Found ${fmt(j.first_seen)}</span>`
+    : `<span title="This site doesn't list a post date, so this is the day the scan first found it">Posted by ${fmt(j.first_seen)} (${seenAge === 0 ? 'today' : seenAge + 'd ago'})</span>`;
+  const meta = [j.location && `<span>${esc(j.location)}</span>`, when].filter(Boolean).join('');
   const apply = j.lead
     ? `<a class="btn find" href="${esc(j.url)}" target="_blank" rel="noopener">Find posting ↗</a>`
     : `<a class="btn" href="${esc(j.url)}" target="_blank" rel="noopener">Apply ↗</a>`;
@@ -672,7 +678,7 @@ def update_readme(path: Path, jobs: list[dict], page_url: str, now: dt.datetime,
         reqs = f"{s['required_met']:g} of {s['required_checked']}" if s.get("required_checked") else "–"
         link = f"[Find posting]({j['url']})" if j.get("lead") else f"[Apply]({j['url']})"
         lines.append(f"| {j['tracks']['summer']['score']} | {j['company'].replace('|', '/')} | {title}{new} | {reqs} "
-                     f"| {loc} | {j.get('posted') or '?'} | {link} |")
+                     f"| {loc} | {j.get('posted') or 'by ' + j.get('first_seen', '?')} | {link} |")
     if not summer:
         lines.append("| | No matches yet | Run the workflow from the Actions tab | | | | |")
     block = start + "\n" + "\n".join(lines) + "\n" + end
