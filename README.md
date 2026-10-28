@@ -20,7 +20,8 @@ Postings marked **Lead from intern-list** come from intern-list.com, which links
 instead of the company. Their **Find posting** button searches for the company's own posting;
 tick **Only direct company links** to hide them.
 
-Postings more than 15 days old get an **Older than 15 days** tag, and a checkbox hides them.
+Postings more than 15 days old are left off the page (`max_age_days` in `profile.toml`).
+Postings with no date on their site show **Posted by** the day the scan first found them.
 
 ## Today's top matches
 

@@ -32,7 +32,7 @@ include_unstated_season = true
 # Anything scoring below this is hidden from the page.
 min_score = 40
 # Drop postings older than this many days (when the date is known). Applies to every section.
-max_age_days = 30
+max_age_days = 15
 # Drop postings outside the U.S. (ones with an unclear location are kept). Applies to every section.
 us_only = true
 # Only show companies listed under [aerospace_companies] in sources.toml

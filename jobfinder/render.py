@@ -499,7 +499,9 @@ function setupTab(){
   $('disc').hidden = tab === 'summer';
   $('sort').querySelector('[value=near]').hidden = tab !== 'fall';
   $('sort').value = tab === 'new' ? 'new' : 'score';
-  $('seasonTog').hidden = $('hideOld').parentNode.hidden = tab === 'new';
+  $('seasonTog').hidden = tab === 'new';
+  // Only offer to hide old postings when the age limit in profile.toml lets some through
+  $('hideOld').parentNode.hidden = tab === 'new' || !inThis.some(isOld);
   $('season').checked = !!seasonChk[tab];
   if(tab !== 'new') $('seasonLabel').textContent = tab === 'fall' ? 'Include nearby postings that don\'t name a season' : `Only ones that say ${T[tab].season_label}`;
   $('have').innerHTML = bars(topSkills(inThis, 'matched'), 'var(--pos)');
