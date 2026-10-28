@@ -53,6 +53,21 @@ greenhouse = [
   { name = "Regent", board = "regent" },
   { name = "Stratolaunch", board = "stratolaunch" },
   { name = "Mach Industries", board = "machindustries" },
+  # Added Oct 2026: boards found behind aerospace postings on the big lists
+  { name = "Aevex Aerospace", board = "aevexaerospace" },
+  { name = "Capella Space", board = "capellaspace" },
+  { name = "Momentus", board = "momentus" },
+  { name = "LeoLabs", board = "leolabsinc" },
+  { name = "Star Catcher", board = "star-catcher" },
+  { name = "Gravitics", board = "graviticsinc" },
+  { name = "Katalyst Space", board = "katalyst" },
+  { name = "Defense Unicorns", board = "defenseunicorns" },
+  { name = "Bluestaq", board = "bluestaq" },
+  { name = "Orbital Operations", board = "orbitaloperations" },
+  { name = "General Galactic", board = "generalgalactic" },
+  { name = "Mantari", board = "mantari" },
+  { name = "Dawn Aerospace", board = "dawnaerospace" },
+  { name = "Advanced Space", board = "advancedspace" },
   # Removed Oct 2026 (board gone): Axiom Space -> now on Workday below,
   # Boom Supersonic -> moved to Rippling (not supported).
 
@@ -79,6 +94,9 @@ lever = [
   { name = "Pyka", board = "pyka" },
   { name = "Merlin Labs", board = "merlinlabs" },
   { name = "Loft Orbital", board = "loftorbital" },
+  { name = "Array Labs", board = "arraylabs.io" },
+  { name = "E-Space", board = "espace" },
+  { name = "Western Aircraft", board = "westair" },
 ]
 
 ashby = [
@@ -93,6 +111,14 @@ ashby = [
   { name = "Skydio", board = "skydio" },
   { name = "Xona Space Systems", board = "xona-space" },
   { name = "Reliable Robotics", board = "reliable-robotics" },
+  { name = "Cowboy Space", board = "cowboyspace" },
+  { name = "Starpath", board = "starpath.space" },
+  { name = "Lynk Global", board = "elveo" },
+  { name = "Constellation Space", board = "constellationspace" },
+  { name = "Scout AI", board = "scout-ai" },
+  { name = "First Order Effects", board = "firstordereffects" },
+  { name = "Distributed Spectrum", board = "distributed-spectrum" },
+  { name = "Swarm Aero", board = "swarmaero" },
 ]
 
 # Workday career sites (most large aerospace/defense companies).
@@ -115,6 +141,22 @@ workday = [
   { name = "NASA Jet Propulsion Laboratory", host = "citjpl.wd5.myworkdayjobs.com", site = "Jobs" },
   { name = "The Aerospace Corporation", host = "aero.wd5.myworkdayjobs.com", site = "external" },
   { name = "Woodward", host = "woodward.wd5.myworkdayjobs.com", site = "Woodward" },
+  # Added Oct 2026: defense primes, contractors, and suppliers
+  { name = "Firefly Aerospace", host = "fireflyspace.wd115.myworkdayjobs.com", site = "Firefly" },
+  { name = "Sierra Nevada Corporation", host = "snc.wd1.myworkdayjobs.com", site = "SNC_External_Career_Site" },
+  { name = "General Dynamics IT", host = "gdit.wd5.myworkdayjobs.com", site = "External_Career_Site" },
+  { name = "Booz Allen Hamilton", host = "bah.wd1.myworkdayjobs.com", site = "BAH_Jobs" },
+  { name = "CACI", host = "caci.wd1.myworkdayjobs.com", site = "External" },
+  { name = "KBR", host = "kbr.wd5.myworkdayjobs.com", site = "KBR_Careers" },
+  { name = "MITRE", host = "mitre.wd5.myworkdayjobs.com", site = "MITRE" },
+  { name = "Curtiss-Wright", host = "curtisswright.wd1.myworkdayjobs.com", site = "CW_External_Career_Site" },
+  { name = "Hexcel", host = "hexcel.wd5.myworkdayjobs.com", site = "HexcelCareers" },
+  { name = "Hexcel (early careers)", host = "hexcel.wd5.myworkdayjobs.com", site = "EarlyHexcelCareers" },
+  { name = "Rolls-Royce", host = "rollsroyce.wd3.myworkdayjobs.com", site = "Intern_Graduate" },
+  { name = "Ensign-Bickford Aerospace & Defense", host = "ebi.wd5.myworkdayjobs.com", site = "ebadcareers" },
+  { name = "Teledyne FLIR", host = "flir.wd1.myworkdayjobs.com", site = "flircareers" },
+  { name = "Parsons", host = "parsons.wd5.myworkdayjobs.com", site = "search" },
+  { name = "Amentum", host = "pae.wd1.myworkdayjobs.com", site = "amentum_careers" },
 
   # Mechanical / general engineering employers (Oct 2026), aero = false (see above).
   # Several have Central Florida sites: Disney (Lake Buena Vista), Leidos and
@@ -147,14 +189,97 @@ eightfold = [
 # ClearCompany career sites: site_id is the GUID in the page's
 # careers-api.clearcompany.com/v1/<site_id> request.
 clearcompany = [
-  { name = "Firefly Aerospace", site_id = "00ed92c3-5bfb-7bfb-456d-4d9d77fef9a5" },
+  # Firefly Aerospace moved its internships to Workday (above) in Oct 2026; its
+  # old ClearCompany site (site_id 00ed92c3-5bfb-7bfb-456d-4d9d77fef9a5) had none.
 ]
 
-# Not supported (no public job API), so they rely on the lists below:
-#   L3Harris (SuccessFactors behind careers.l3harris.com), Joby Aviation (iCIMS),
-#   Boom Supersonic (Rippling), BAE Systems / Textron (Taleo), General Dynamics (iCIMS),
-#   Siemens Energy (Avature), Qorvo (SuccessFactors). Their list postings still get
-#   full descriptions when the page includes standard job-posting data.
+# SuccessFactors career sites: host is the site whose job links look like
+# <host>/job/<City-Title>/<number>/
+successfactors = [
+  { name = "L3Harris", host = "jobs.l3harris.com" },
+  { name = "United Launch Alliance", host = "jobs.ulalaunch.com" },
+  { name = "Huntington Ingalls Industries", host = "careers.huntingtoningalls.com" },
+  { name = "Leonardo DRS", host = "careers.leonardodrs.com" },
+  { name = "Safran Defense & Space", host = "careers.safran-dsi.com" },
+]
+
+# Taleo career sections: section = the part after /careersection/ in a job link,
+# portal = the long number in that section's portal= requests.
+taleo = [
+  { name = "Textron", host = "textron.taleo.net", section = "textron", portal = "8140753014" },
+  { name = "Bell", host = "textron.taleo.net", section = "bell", portal = "20140753014" },
+]
+
+# JazzHR boards: board = the part before .applytojob.com
+jazzhr = [
+  { name = "Space Dynamics Laboratory", board = "spacedynamicslaboratory" },
+  { name = "Aerotech", board = "aerotech", aero = false },
+]
+
+# iCIMS career sites: host is the careers-<company>.icims.com address.
+icims = [
+  { name = "General Dynamics Mission Systems", host = "careers-gdms.icims.com" },
+  { name = "General Dynamics OTS", host = "careers-gd-ots.icims.com" },
+  { name = "MAG Aerospace", host = "careers-magaero.icims.com" },
+  { name = "Joby Aviation", host = "careers-jobyaviation.icims.com" },
+  { name = "Peraton", host = "careers-peraton.icims.com" },
+  { name = "Iridium", host = "careers-iridium.icims.com" },
+]
+
+# Jibe career sites (the site answers <host>/api/jobs).
+jibe = [
+  { name = "Johns Hopkins Applied Physics Laboratory", host = "careers.jhuapl.edu" },
+  { name = "Spirit AeroSystems", host = "careers.spiritaero.com" },
+  { name = "Viasat", host = "careers.viasat.com" },
+]
+
+# Oracle Recruiting Cloud: host + site from a job link, e.g.
+#   https://ibqbjb.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/Honeywell/job/155522
+oracle = [
+  { name = "Honeywell", host = "ibqbjb.fa.ocs.oraclecloud.com", site = "Honeywell" },
+  { name = "Howmet Aerospace", host = "fa-exty-saasfaprod1.fa.ocs.oraclecloud.com", site = "CX_1" },
+]
+
+# Phenom career sites: base = the site address up to the language part.
+phenom = [
+  { name = "BAE Systems", base = "https://jobs.baesystems.com/global/en" },
+]
+
+# Smaller hiring systems: board = the company's part of its job links
+#   <board>.pinpointhq.com, <board>.bamboohr.com, ats.rippling.com/<board>,
+#   jobs.smartrecruiters.com/<board>, apply.workable.com/<board>, jobs.gem.com/<board>
+pinpoint = [
+  { name = "Impulse Space", board = "impulsespace" },
+  { name = "Astrolab", board = "astrolab" },
+  { name = "Innovative Defense Technologies", board = "idtus" },
+]
+bamboohr = [
+  { name = "Lunar Outpost", board = "lunaroutpost" },
+  { name = "Sedaro", board = "sedarotech" },
+  { name = "Specter Aerospace", board = "specteraerospace" },
+  { name = "Astroscale", board = "astroscale" },
+  { name = "Satellogic", board = "satellogic" },
+]
+rippling = [
+  { name = "Boom Supersonic", board = "boom-supersonic" },
+  { name = "Collier Aerospace", board = "collieraerospace" },
+  { name = "Overland AI", board = "overland-ai" },
+]
+smartrecruiters = [
+  { name = "Lawrence Livermore National Laboratory", board = "LLNL" },
+]
+gem = [
+  { name = "Astroforge", board = "astroforge-io" },
+  { name = "Nominal", board = "nominal" },
+  { name = "Andrenam", board = "andrenam" },
+]
+
+# Not supported yet (no public job API), so they rely on the lists below:
+#   Sandia / ManTech (Avature), MDA (UKG, Canada only), York Space (Paycor),
+#   Intuitive Machines (ADP), MIT Lincoln Laboratory, Gulfstream and Bombardier
+#   (sites without a standard search page). intern-list.com covers several of
+#   these, and list postings still get full descriptions when the page includes
+#   standard job-posting data.
 
 # --- Big student internship lists maintained on GitHub ----------------
 # Simplify + Pitt CSC's Summer 2027 list (thousands of roles, updated daily).
@@ -176,6 +301,17 @@ urls = [
 [[getro]]
 name = "Space Capital job board"
 collection = 338
+
+# intern-list.com: about 19,000 U.S. engineering internships in a public Airtable
+# table on the site. Its Apply links go to jobright.ai, which hides the company's
+# link behind a sign-in, so its postings show as leads with a "Find posting"
+# button. A lead is kept only when the company is in [aerospace_companies] below
+# (or has a board above) and no company board already has the same job.
+# views = the app.../shr... part of the table's airtable.com/embed/ address on
+# intern-list.com (the "Engineering and Development" table, United States).
+[[internlist]]
+name = "intern-list.com"
+views = ["appmXHK6JoqQcSKf6/shruwVkAKPjHFdVJu"]
 
 # --- Federal jobs (DoD, Air Force, Navy, NASA) via USAJOBS --------------
 # Free API key: https://developer.usajobs.gov/apirequest/
@@ -216,4 +352,161 @@ names = [
   "woodward", "rolls-royce", "parker aerospace", "safran", "leonardo drs",
   "applied physics lab", "lincoln laboratory", "united launch alliance", "=ula",
   "eve air mobility", "supernal", "natilus", "pyka", "=regent", "regent craft",
+  # Added Oct 2026 for intern-list.com postings
+  "general dynamics", "electric boat", "huntington ingalls", "=bell", "advanced space",
 ]
+
+# --- Big names: when well-known employers usually recruit ------------------
+# Shown in the "Big names" tab with what this cycle's scans have found from each.
+#   match  = company-name pieces, as in [aerospace_companies] (= for the whole name)
+#   window = [first month, last month] summer interns are usually recruited
+#            (typical pattern from past cycles, an estimate; it can wrap the year)
+#   dates  = a published date, when the program announces one
+#   scanned = false when no source here reads that program (apply on its own site)
+[[popular]]
+name = "SpaceX"
+match = ["spacex"]
+careers = "https://www.spacex.com/careers/"
+window = [8, 11]
+note = "Summer roles go up in late summer and fill on a rolling basis, so apply in the first few weeks."
+
+[[popular]]
+name = "Blue Origin"
+match = ["blue origin"]
+careers = "https://www.blueorigin.com/careers"
+window = [8, 11]
+note = "Summer internships have opened around September 1 in recent years and close within weeks."
+
+[[popular]]
+name = "NASA internships (OSTEM)"
+match = ["=nasa"]
+careers = "https://www.nasa.gov/learning-resources/internship-programs/"
+window = [11, 2]
+dates = "Summer 2027 deadline around Feb 26 to Mar 1, 2027; Fall 2027 around May 21 to 24. U.S. citizens only."
+scanned = false
+note = "Apply on NASA STEM Gateway. Projects post on a rolling basis before the deadline."
+
+[[popular]]
+name = "NASA JPL"
+match = ["jet propulsion"]
+careers = "https://www.jpl.nasa.gov/edu/internships/"
+window = [10, 3]
+
+[[popular]]
+name = "Lockheed Martin"
+match = ["lockheed", "sikorsky"]
+careers = "https://www.lockheedmartinjobs.com/college-students"
+window = [8, 12]
+note = "Hires thousands of interns across hundreds of sites; many keep posting into spring. Big Orlando presence."
+
+[[popular]]
+name = "Northrop Grumman"
+match = ["northrop"]
+careers = "https://www.northropgrumman.com/careers/students-and-early-careers"
+window = [8, 12]
+note = "Rolling: each posting opens and closes on its own, often within about three weeks."
+
+[[popular]]
+name = "Boeing"
+match = ["boeing"]
+careers = "https://jobs.boeing.com/internships"
+window = [8, 11]
+
+[[popular]]
+name = "RTX (Raytheon, Pratt & Whitney, Collins)"
+match = ["rtx", "raytheon", "pratt", "collins aerospace"]
+careers = "https://careers.rtx.com/global/en/students-and-early-careers"
+window = [8, 12]
+note = "Collins has a large Melbourne, FL site, 51 miles from UCF."
+
+[[popular]]
+name = "L3Harris"
+match = ["l3harris"]
+careers = "https://careers.l3harris.com/en/students"
+window = [8, 1]
+note = "Headquartered in Melbourne, FL, 51 miles from UCF."
+
+[[popular]]
+name = "General Dynamics"
+match = ["general dynamics", "gulfstream", "electric boat"]
+careers = "https://www.gd.com/careers"
+window = [9, 2]
+note = "Mission Systems, Electric Boat, Land Systems, OTS, and Gulfstream all hire interns separately."
+
+[[popular]]
+name = "BAE Systems"
+match = ["bae systems"]
+careers = "https://jobs.baesystems.com/global/en/students"
+window = [9, 2]
+
+[[popular]]
+name = "Anduril"
+match = ["anduril"]
+careers = "https://www.anduril.com/careers"
+window = [8, 10]
+note = "Very competitive and fills fast; apply as soon as roles appear."
+
+[[popular]]
+name = "Rocket Lab"
+match = ["rocket lab"]
+careers = "https://www.rocketlabusa.com/careers/"
+window = [9, 12]
+
+[[popular]]
+name = "United Launch Alliance"
+match = ["united launch", "=ula"]
+careers = "https://www.ulalaunch.com/careers"
+window = [9, 11]
+note = "Cape Canaveral site, 39 miles from UCF."
+
+[[popular]]
+name = "GE Aerospace"
+match = ["ge aerospace"]
+careers = "https://careers.geaerospace.com/"
+window = [8, 11]
+
+[[popular]]
+name = "Honeywell"
+match = ["honeywell"]
+careers = "https://careers.honeywell.com/"
+window = [8, 11]
+
+[[popular]]
+name = "Sierra Space"
+match = ["sierra space"]
+careers = "https://www.sierraspace.com/careers/"
+window = [9, 1]
+
+[[popular]]
+name = "Johns Hopkins APL"
+match = ["applied physics lab"]
+careers = "https://www.jhuapl.edu/careers/internships"
+window = [9, 2]
+
+[[popular]]
+name = "MIT Lincoln Laboratory"
+match = ["lincoln laboratory"]
+careers = "https://www.ll.mit.edu/careers/student-opportunities"
+window = [9, 1]
+note = "Its site isn't scanned directly; postings come from intern-list.com and the lists."
+
+[[popular]]
+name = "The Aerospace Corporation"
+match = ["aerospace corporation"]
+careers = "https://aerospace.org/careers/students"
+window = [9, 1]
+
+[[popular]]
+name = "Joby Aviation"
+match = ["joby"]
+careers = "https://www.jobyaviation.com/careers"
+window = [9, 12]
+
+[[popular]]
+name = "DoD SMART Scholarship"
+match = ["=smart scholarship"]
+careers = "https://www.smartscholarship.org/smart"
+window = [8, 12]
+dates = "Applications open Aug 1 and close the first Friday in December (Dec 4, 2026, 5 p.m. ET)."
+scanned = false
+note = "Full tuition plus paid summer internships at DoD labs, with a job after graduation. U.S. citizens."

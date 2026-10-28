@@ -6,7 +6,7 @@ results to a page I can open on my phone.
 
 **Job page:** https://jonasagront.github.io/aero-job-finder/
 
-The page has four tabs:
+The page has five tabs:
 
 | Tab | What's in it |
 |---|---|
@@ -14,6 +14,11 @@ The page has four tabs:
 | **Summer 2027** | Aerospace and mechanical internships at aerospace companies (the main list) |
 | **Fall 2027 near UCF** | Fall 2027 internships and co-ops within 55 miles of UCF (Orlando to the Space Coast, Melbourne included), plus remote ones, any engineering discipline |
 | **All engineering** | Every Summer 2027 engineering internship from any company or major, with mechanical and aerospace ranked first and a discipline filter |
+| **Big names** | SpaceX, NASA, Lockheed, Northrop, RTX and other well-known employers: when each usually recruits (a typical window from past cycles; NASA and SMART deadlines are the published ones), how many of its postings are open now, and the earliest posting seen this cycle |
+
+Postings marked **Lead from intern-list** come from intern-list.com, which links to jobright.ai
+instead of the company. Their **Find posting** button searches for the company's own posting;
+tick **Only direct company links** to hide them.
 
 Postings more than 15 days old get an **Older than 15 days** tag, and a checkbox hides them.
 
@@ -125,7 +130,13 @@ they don't change the score.
   carmakers, and so on); All engineering and Fall take any company.
   `[fall]` sets the home point and radius, `[broad]` the All engineering tab, and
   `[engineering]` the disciplines and their points.
-- **`sources.toml`**: which companies and lists get checked. The bottom of the job page
+- **`sources.toml`**: which companies and lists get checked. It reads company career sites on
+  Greenhouse, Lever, Ashby, Workday, Eightfold, SuccessFactors (L3Harris, ULA, HII, Leonardo DRS),
+  iCIMS (GD Mission Systems, Joby, Peraton), Jibe (JHU APL, Spirit), Oracle (Honeywell, Howmet),
+  Phenom (BAE Systems), Taleo (Textron, Bell), Pinpoint, BambooHR, Rippling, SmartRecruiters,
+  Workable, Gem and JazzHR, plus the Simplify list, the Space Capital board and intern-list.com;
+  each section of the file explains which part of a company's job link to copy. The `[[popular]]`
+  entries at the bottom set the Big names tab (companies and their usual recruiting months). The bottom of the job page
   shows which sources worked on the last run, so I know what to fix or remove. To let a
   company through the aerospace-only filter, add it to `[aerospace_companies]`. Career
   boards marked `aero = false` (GM, Caterpillar, Disney, Stryker...) only feed the

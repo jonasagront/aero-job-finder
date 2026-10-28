@@ -106,6 +106,7 @@ def hits(compiled, text: str) -> list[str]:
 _GH_PATH = re.compile(r"greenhouse\.io/([\w-]+)/jobs/(\d+)")
 _GH_EMBED = re.compile(r"greenhouse\.io/embed/job_app\?(?:.*&)?for=([\w-]+).*?token=(\d+)")
 _GH_JID = re.compile(r"[?&]gh_jid=(\d+)")
+_TALEO = re.compile(r"taleo\.net/careersection/[^?#]*\?(?:[^#]*&)?job=(\w+)")
 _LEVER = re.compile(r"jobs\.lever\.co/([\w.-]+)/([0-9a-f-]{36})")
 _ASHBY = re.compile(r"jobs\.ashbyhq\.com/([^/?#]+)/([0-9a-f-]{36})")
 _WORKDAY = re.compile(
@@ -145,6 +146,9 @@ def job_key(url: str, company: str, title: str) -> str:
     m = _GH_JID.search(url or "")
     if m:
         return f"gr:{m.group(1)}"
+    m = _TALEO.search(url or "")
+    if m:  # every Taleo posting shares one path; the job number is in the query
+        return f"ta:{m.group(1)}"
     clean = re.sub(r"[?#].*$", "", (url or "").strip().lower()).rstrip("/")
     clean = re.sub(r"/apply$", "", clean)
     if clean:

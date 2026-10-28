@@ -7,12 +7,20 @@ Each fetcher returns a list of job dicts with these keys:
 from __future__ import annotations
 
 import datetime as dt
+import html
 import json
 import os
 import re
+import urllib.parse
 from concurrent.futures import ThreadPoolExecutor
 
 from .util import FetchError, get_json, html_to_text, parse_ats_url, post_json, request, strip_tracking
+
+
+# sources.toml sections that are one company's own career board
+BOARD_KINDS = ("greenhouse", "lever", "ashby", "workday", "eightfold", "clearcompany", "successfactors",
+               "icims", "jibe", "oracle", "phenom", "pinpoint", "bamboohr", "rippling", "smartrecruiters",
+               "workable", "gem", "taleo", "jazzhr")
 
 
 def _date_from_iso(s) -> str:
@@ -183,15 +191,16 @@ def _keep_all(title: str) -> bool:
     return True
 
 
-def fetch_workday(host: str, site: str, company: str, max_pages: int = 10, keep=_keep_all) -> list[dict]:
+def fetch_workday(host: str, site: str, company: str, max_pages: int = 50, keep=_keep_all) -> list[dict]:
     tenant = host.split(".")[0]
     api = f"https://{host}/wday/cxs/{tenant}/{site}/jobs"
     postings, seen_paths = [], set()
     for term in ("intern", "internship", "co-op"):
         offset = 0
         for _ in range(max_pages):
+            # Workday rate-limits busy runs (HTTP 429); request() waits and retries
             page = post_json(api, {"appliedFacets": {}, "limit": 20, "offset": offset,
-                                   "searchText": term}, timeout=40)
+                                   "searchText": term}, timeout=40, retries=4)
             batch = page.get("jobPostings") or []
             for p in batch:
                 if p.get("externalPath") not in seen_paths:
@@ -199,6 +208,10 @@ def fetch_workday(host: str, site: str, company: str, max_pages: int = 10, keep=
                     postings.append(p)
             offset += len(batch)
             if not batch or offset >= int(page.get("total") or 0):
+                break
+            # Results are by relevance (big sites match thousands on "intern" in
+            # the text), so stop once a whole page has no internship titles
+            if not any(_INTERNISH.search(p.get("title", "")) for p in batch):
                 break
     # Workday's list has no descriptions, so only open internship-looking ones
     # (and skip titles the scan would drop anyway, like "Finance Intern").
@@ -228,7 +241,7 @@ def fetch_workday(host: str, site: str, company: str, max_pages: int = 10, keep=
         return list(pool.map(detail, wanted))
 
 
-def fetch_eightfold(host: str, domain: str, company: str, max_pages: int = 15, keep=_keep_all) -> list[dict]:
+def fetch_eightfold(host: str, domain: str, company: str, max_pages: int = 40, keep=_keep_all) -> list[dict]:
     """Eightfold career sites (e.g. lockheedmartin.eightfold.ai). Search pages hold
     10 postings and no description, so each internship is opened for its text."""
     api = f"https://{host}/api/pcsx"
@@ -293,6 +306,539 @@ def fetch_clearcompany(site_id: str, company: str) -> list[dict]:
             return out
 
 
+# ------------------------------------------------------------ more hiring systems
+# Big defense/aerospace employers on systems with no Greenhouse-style API. Most
+# list pages carry no description, so (like Workday) only internship-looking
+# titles that keep() wants get their posting opened.
+
+_PAGE_HEADERS = {"Accept": "text/html", "User-Agent": "Mozilla/5.0 (compatible; aero-job-finder)"}
+
+
+def _get_page(url: str, timeout: int = 40) -> str:
+    return request(url, headers=_PAGE_HEADERS, timeout=timeout)
+
+
+def _wanted(title: str, keep) -> bool:
+    return bool(_INTERNISH.search(title or "")) and keep(title or "")
+
+
+def _open_each(postings: list, detail) -> list[dict]:
+    with ThreadPoolExecutor(max_workers=6) as pool:
+        return list(pool.map(detail, postings))
+
+
+_RMK_LINK = re.compile(r'(?s)<a\b([^>]*\bjobTitle-link\b[^>]*)>(.*?)</a>')
+_RMK_DESC = re.compile(r'<span[^>]*\bclass="jobdescription"[^>]*>')
+_SPAN_TAG = re.compile(r'<(/?)span\b[^>]*>')
+
+
+def _rmk_text(page: str) -> str:
+    """The posting sits in <span class="jobdescription">, which holds more spans,
+    so find its matching </span> by counting."""
+    m = _RMK_DESC.search(page)
+    if not m:
+        return ""
+    depth = 1
+    for tag in _SPAN_TAG.finditer(page, m.end()):
+        depth += -1 if tag.group(1) else 1
+        if depth == 0:
+            return html_to_text(page[m.end():tag.start()])
+    return ""
+
+
+def fetch_successfactors(host: str, company: str, max_pages: int = 20, keep=_keep_all) -> list[dict]:
+    """SuccessFactors career sites (jobs.l3harris.com, jobs.ulalaunch.com...): links
+    look like <host>/job/<City-Title>/<id>/. The search is full text, so it also
+    returns non-intern jobs; titles are filtered before any posting is opened."""
+    postings: dict[str, tuple[str, str]] = {}  # id -> (path, title)
+    for term in ("intern", "co-op"):
+        start = 0
+        for _ in range(max_pages):
+            page = _get_page(f"https://{host}/search/?q={term}&startrow={start}")
+            new = 0
+            for attrs, title in _RMK_LINK.findall(page):
+                m = re.search(r'href="(/job/[^"]+?/(\d+)/?)"', attrs)
+                if m and m.group(2) not in postings:
+                    postings[m.group(2)] = (html.unescape(m.group(1)), html_to_text(title))
+                    new += 1
+            if not new:
+                break
+            start += new
+    wanted = [(path, title) for path, title in postings.values() if _wanted(title, keep)]
+
+    def detail(p):
+        path, title = p
+        url = f"https://{host}{path}"
+        try:
+            page = _get_page(url, timeout=30)
+        except FetchError:
+            page = ""
+        loc = re.search(r'class="jobGeoLocation"[^>]*>([^<]+)', page)
+        posted = re.search(r'itemprop="datePosted" content="([^"]+)"', page)
+        try:
+            posted = dt.datetime.strptime(posted.group(1), "%a %b %d %H:%M:%S UTC %Y").date().isoformat() if posted else ""
+        except ValueError:
+            posted = ""
+        return {
+            "company": company,
+            "title": title,
+            "location": loc.group(1).strip() if loc else "",
+            "url": url,
+            "source": f"{company} careers",
+            "posted": posted,
+            "description": _rmk_text(page),
+            "season_hint": "",
+        }
+
+    return _open_each(wanted, detail)
+
+
+_ICIMS_CARD = re.compile(r'(?s)<li class="iCIMS_JobCardItem">(.*?)</li>')
+
+
+def fetch_icims(host: str, company: str, max_pages: int = 15, keep=_keep_all) -> list[dict]:
+    """iCIMS career sites (careers-<company>.icims.com). The search page lists 20
+    postings; each internship is opened for its full text (schema.org data)."""
+    postings: dict[str, dict] = {}
+    for term in ("intern", "co-op"):
+        for pr in range(max_pages):
+            page = _get_page(f"https://{host}/jobs/search?ss=1&searchKeyword={term}&in_iframe=1&pr={pr}")
+            for card in _ICIMS_CARD.findall(page):
+                link = re.search(r'href="(https://[^"]+?/jobs/\d+/[^"?]+/job)', card)
+                title = re.search(r'(?s)<h3[^>]*>(.*?)</h3>', card)
+                if not link or not title or link.group(1) in postings:
+                    continue
+                # In the card header on some sites, in the field list on others
+                loc = re.search(r'(?s)Job Locations?</span>\s*(?:</dt>\s*<dd[^>]*>\s*)?<span[^>]*>(.*?)</span>', card)
+                posted = re.search(r'<span title="(\d+)/(\d+)/(\d{4})', card)
+                postings[link.group(1)] = {
+                    "url": link.group(1),
+                    "title": html_to_text(title.group(1)),
+                    "location": html_to_text(loc.group(1)) if loc else "",
+                    "posted": f"{posted.group(3)}-{int(posted.group(1)):02d}-{int(posted.group(2)):02d}" if posted else "",
+                }
+            pages = re.search(r"Page \d+ of (\d+)", page)
+            if not pages or pr + 1 >= int(pages.group(1)):
+                break
+    wanted = [p for p in postings.values() if _wanted(p["title"], keep)]
+
+    def detail(p):
+        try:
+            text = fetch_page_description(p["url"] + "?in_iframe=1")
+        except FetchError:
+            text = ""
+        return {"company": company, "source": f"{company} careers", "description": text, "season_hint": "", **p}
+
+    return _open_each(wanted, detail)
+
+
+def fetch_jibe(host: str, company: str, max_pages: int = 10) -> list[dict]:
+    """Jibe career sites (careers.jhuapl.edu, careers.viasat.com...), which answer
+    <host>/api/jobs with full postings."""
+    out, seen = [], set()
+    for term in ("intern", "co-op"):
+        for page in range(1, max_pages + 1):
+            data = get_json(f"https://{host}/api/jobs?keywords={term}&limit=100&page={page}", timeout=60)
+            batch = data.get("jobs") or []
+            for item in batch:
+                j = item.get("data") or {}
+                if j.get("slug") in seen:
+                    continue
+                seen.add(j.get("slug"))
+                out.append({
+                    "company": company,
+                    "title": (j.get("title") or "").strip(),
+                    "location": j.get("full_location") or ", ".join(filter(None, [j.get("city"), j.get("state")])),
+                    "url": f"https://{host}/jobs/{j.get('slug')}",
+                    "source": f"{company} careers",
+                    "posted": _date_from_iso(j.get("posted_date")),
+                    "description": "\n".join(html_to_text(j.get(k)) for k in
+                                             ("description", "responsibilities", "qualifications") if j.get(k)),
+                    "season_hint": "",
+                })
+            if not batch or page * 100 >= int(data.get("totalCount") or 0):
+                break
+    return out
+
+
+def fetch_oracle(host: str, site: str, company: str, max_pages: int = 12, keep=_keep_all) -> list[dict]:
+    """Oracle Recruiting Cloud sites (<pod>.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/
+    en/sites/<site>). The keyword search is fuzzy ("intern" also finds "internal"),
+    so titles are filtered before each posting is opened."""
+    api = f"https://{host}/hcmRestApi/resources/latest"
+    postings: dict[str, dict] = {}
+    for term in ("intern", "co-op"):
+        for page in range(max_pages):
+            data = get_json(f"{api}/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList"
+                            f"&finder=findReqs;siteNumber={site},"
+                            f"keyword={term},limit=25,offset={page * 25}", timeout=40)
+            found = (data.get("items") or [{}])[0]
+            batch = found.get("requisitionList") or []
+            for r in batch:
+                postings.setdefault(r.get("Id"), r)
+            if not batch or (page + 1) * 25 >= int(found.get("TotalJobsCount") or 0):
+                break
+    wanted = [r for r in postings.values() if _wanted(r.get("Title", ""), keep)]
+
+    def detail(r):
+        try:
+            d = get_json(f'{api}/recruitingCEJobRequisitionDetails?expand=all&onlyData=true'
+                         f'&finder=ById;Id=%22{r["Id"]}%22,siteNumber={site}', timeout=30)
+            d = (d.get("items") or [{}])[0]
+        except FetchError:
+            d = {}
+        return {
+            "company": company,
+            "title": (r.get("Title") or "").strip(),
+            "location": r.get("PrimaryLocation", ""),
+            "url": f"https://{host}/hcmUI/CandidateExperience/en/sites/{site}/job/{r['Id']}",
+            "source": f"{company} careers",
+            "posted": _date_from_iso(r.get("PostedDate")),
+            "description": "\n".join(html_to_text(d.get(k)) for k in
+                                     ("ExternalDescriptionStr", "ExternalResponsibilitiesStr",
+                                      "ExternalQualificationsStr") if d.get(k)) or r.get("ShortDescriptionStr", ""),
+            "season_hint": "",
+        }
+
+    return _open_each(wanted, detail)
+
+
+_PHENOM_SEARCH = '"eagerLoadRefineSearch":'
+
+
+def fetch_phenom(base: str, company: str, max_pages: int = 15, keep=_keep_all) -> list[dict]:
+    """Phenom career sites (jobs.baesystems.com/global/en...). Search results are
+    embedded in the page as JSON, 20 at a time; postings are opened for full text."""
+    postings: dict[str, dict] = {}
+    for term in ("intern", "co-op"):
+        total = None
+        for page in range(max_pages):
+            text = _get_page(f"{base}/search-results?keywords={term}&from={page * 20}")
+            i = text.find(_PHENOM_SEARCH)
+            if i < 0:
+                raise FetchError("no search results in page")
+            res, _ = json.JSONDecoder().raw_decode(text, i + len(_PHENOM_SEARCH))
+            if total is None:
+                total = int(res.get("totalHits") or 0)
+            elif int(res.get("totalHits") or 0) != total:
+                break  # site dropped the keyword for later pages
+            batch = (res.get("data") or {}).get("jobs") or []
+            for j in batch:
+                postings.setdefault(j.get("jobId"), j)
+            if not batch or (page + 1) * 20 >= total:
+                break
+    wanted = [j for j in postings.values() if _wanted(j.get("title", ""), keep)]
+
+    def detail(j):
+        url = f"{base}/job/{j['jobId']}"
+        try:
+            text = fetch_page_description(url)
+        except FetchError:
+            text = ""
+        return {
+            "company": company,
+            "title": (j.get("title") or "").strip(),
+            "location": "; ".join(j.get("multi_location") or []) or j.get("location", ""),
+            "url": url,
+            "source": f"{company} careers",
+            "posted": _date_from_iso(j.get("postedDate")),
+            "description": text or j.get("descriptionTeaser", ""),
+            "season_hint": "",
+        }
+
+    return _open_each(wanted, detail)
+
+
+def fetch_pinpoint(board: str, company: str) -> list[dict]:
+    data = get_json(f"https://{board}.pinpointhq.com/postings.json", timeout=60)
+    out = []
+    for j in data.get("data", []):
+        parts = [(j.get(k + "_header") or "") + "\n" + html_to_text(j.get(k)) if k != "description"
+                 else html_to_text(j.get(k))
+                 for k in ("description", "key_responsibilities", "skills_knowledge_expertise", "benefits") if j.get(k)]
+        out.append({
+            "company": company,
+            "title": (j.get("title") or "").strip(),
+            "location": (j.get("location") or {}).get("name", ""),
+            "url": j.get("url", ""),
+            "source": f"{company} careers",
+            "posted": "",
+            "description": "\n".join(parts),
+            "season_hint": "",
+        })
+    return out
+
+
+def fetch_bamboohr(board: str, company: str, keep=_keep_all) -> list[dict]:
+    base = f"https://{board}.bamboohr.com/careers"
+    wanted = [j for j in get_json(f"{base}/list", timeout=40).get("result", [])
+              if _wanted(j.get("jobOpeningName", ""), keep)]
+
+    def detail(j):
+        try:
+            d = get_json(f"{base}/{j['id']}/detail", timeout=30).get("result", {}).get("jobOpening", {})
+        except FetchError:
+            d = {}
+        loc = j.get("location") or {}
+        return {
+            "company": company,
+            "title": (j.get("jobOpeningName") or "").strip(),
+            "location": "Remote" if j.get("isRemote") else ", ".join(filter(None, [loc.get("city"), loc.get("state")])),
+            "url": f"{base}/{j['id']}",
+            "source": f"{company} careers",
+            "posted": _date_from_iso(d.get("datePosted")),
+            "description": html_to_text(d.get("description")),
+            "season_hint": "",
+        }
+
+    return _open_each(wanted, detail)
+
+
+def fetch_rippling(board: str, company: str, keep=_keep_all) -> list[dict]:
+    api = f"https://api.rippling.com/platform/api/ats/v1/board/{board}/jobs"
+    wanted = [j for j in get_json(api, timeout=40) if _wanted(j.get("name", ""), keep)]
+
+    def detail(j):
+        try:
+            d = get_json(f"{api}/{j['uuid']}", timeout=30)
+        except FetchError:
+            d = {}
+        desc = d.get("description") or {}
+        return {
+            "company": company,
+            "title": (j.get("name") or "").strip(),
+            "location": (j.get("workLocation") or {}).get("label", ""),
+            "url": j.get("url", ""),
+            "source": f"{company} careers",
+            "posted": _date_from_iso(d.get("createdOn")),
+            "description": "\n".join(html_to_text(v) for v in desc.values() if isinstance(v, str)),
+            "season_hint": "",
+        }
+
+    return _open_each(wanted, detail)
+
+
+def fetch_smartrecruiters(board: str, company: str, keep=_keep_all) -> list[dict]:
+    api = f"https://api.smartrecruiters.com/v1/companies/{board}/postings"
+    postings: dict = {}
+    for term in ("intern", "co-op"):
+        offset = 0
+        while offset < 1000:
+            data = get_json(f"{api}?q={term}&limit=100&offset={offset}", timeout=40)
+            batch = data.get("content") or []
+            for p in batch:
+                postings.setdefault(p.get("id"), p)
+            offset += len(batch)
+            if not batch or offset >= int(data.get("totalFound") or 0):
+                break
+    wanted = [p for p in postings.values() if _wanted(p.get("name", ""), keep)]
+
+    def detail(p):
+        try:
+            d = get_json(f"{api}/{p['id']}", timeout=30)
+        except FetchError:
+            d = {}
+        sections = ((d.get("jobAd") or {}).get("sections") or {})
+        return {
+            "company": company,
+            "title": (p.get("name") or "").strip(),
+            "location": (p.get("location") or {}).get("fullLocation", ""),
+            "url": d.get("postingUrl") or f"https://jobs.smartrecruiters.com/{board}/{p['id']}",
+            "source": f"{company} careers",
+            "posted": _date_from_iso(p.get("releasedDate")),
+            "description": "\n".join(html_to_text(s.get("text")) for k, s in sections.items()
+                                     if k != "companyDescription" and isinstance(s, dict)),
+            "season_hint": "",
+        }
+
+    return _open_each(wanted, detail)
+
+
+def fetch_workable(board: str, company: str) -> list[dict]:
+    data = get_json(f"https://apply.workable.com/api/v1/widget/accounts/{board}?details=true", timeout=60)
+    out = []
+    for j in data.get("jobs", []):
+        out.append({
+            "company": company,
+            "title": (j.get("title") or "").strip(),
+            "location": "Remote" if j.get("telecommuting") else ", ".join(
+                filter(None, [j.get("city"), j.get("state"), j.get("country")])),
+            "url": j.get("url", ""),
+            "source": f"{company} careers",
+            "posted": _date_from_iso(j.get("published_on")),
+            "description": html_to_text(j.get("description")),
+            "season_hint": "",
+        })
+    return out
+
+
+_TALEO_SEARCH = {
+    "multilineEnabled": False,
+    "sortingSelection": {"sortBySelectionParam": "3", "ascendingSortingOrder": "false"},
+    "filterSelectionParam": {"searchFilterSelections": []},
+    "advancedSearchFiltersSelectionParam": {"searchFilterSelections": []},
+}
+
+
+def _taleo_text(page: str) -> str:
+    """Taleo pages ship the posting URL-encoded inside a hidden "initialHistory"
+    field, split by !|!; the posting is the longest piece."""
+    m = re.search(r'id="initialHistory"[^>]*value="([^"]*)"', page)
+    if not m:
+        return ""
+    parts = urllib.parse.unquote(m.group(1)).split("!|!")
+    return html_to_text(max(parts, key=len).replace("!*!", ""))
+
+
+def fetch_taleo(host: str, section: str, portal: str, company: str, max_pages: int = 10, keep=_keep_all) -> list[dict]:
+    """Taleo career sections (textron.taleo.net/careersection/<section>/...). portal
+    is the number in the section page's portal= requests."""
+    api = f"https://{host}/careersection/rest/jobboard/searchjobs?lang=en&portal={portal}"
+    headers = {"tz": "GMT-05:00", "tzname": "America/New_York"}
+    postings: dict[str, dict] = {}
+    for term in ("intern", "co-op"):
+        for page in range(1, max_pages + 1):
+            data = post_json(api, {**_TALEO_SEARCH, "pageNo": page,
+                                   "fieldData": {"fields": {"KEYWORD": term, "LOCATION": ""}, "valid": True}},
+                             headers=headers, timeout=40)
+            batch = data.get("requisitionList") or []
+            for r in batch:
+                postings.setdefault(r.get("contestNo"), r)
+            paging = data.get("pagingData") or {}
+            if not batch or page * int(paging.get("pageSize") or 25) >= int(paging.get("totalCount") or 0):
+                break
+    wanted = [r for r in postings.values() if _wanted((r.get("column") or [""])[0], keep)]
+
+    def detail(r):
+        col = r.get("column") or []
+        url = f"https://{host}/careersection/{section}/jobdetail.ftl?job={r['contestNo']}&lang=en"
+        try:
+            locs = "; ".join(json.loads(col[1])) if len(col) > 1 else ""
+        except ValueError:
+            locs = col[1] if len(col) > 1 else ""
+        posted = re.fullmatch(r"(\d+)/(\d+)/(\d{4})", col[2] if len(col) > 2 else "")
+        try:
+            text = _taleo_text(_get_page(url, timeout=30))
+        except FetchError:
+            text = ""
+        return {
+            "company": company,
+            "title": (col[0] if col else "").strip(),
+            "location": locs.replace("Multiple Locations", "").strip("; ") or locs,
+            "url": url,
+            "source": f"{company} careers",
+            "posted": f"{posted.group(3)}-{int(posted.group(1)):02d}-{int(posted.group(2)):02d}" if posted else "",
+            "description": text,
+            "season_hint": "",
+        }
+
+    return _open_each(wanted, detail)
+
+
+_JAZZ_ROW = re.compile(r'(?s)<li class="list-group-item">(.*?)</li>\s*(?=<li class="list-group-item">|</ul>)')
+
+
+def fetch_jazzhr(board: str, company: str, keep=_keep_all) -> list[dict]:
+    """JazzHR boards (<board>.applytojob.com/apply)."""
+    page = _get_page(f"https://{board}.applytojob.com/apply")
+    postings = []
+    for row in _JAZZ_ROW.findall(page):
+        link = re.search(r'href="(https://[^"]+/apply/\w+/[^"]+)"[^>]*>\s*(.*?)\s*</a>', row)
+        if not link or not _wanted(html_to_text(link.group(2)), keep):
+            continue
+        loc = re.search(r"fa-map-marker'></i>\s*([^<]+)", row)
+        postings.append({"url": link.group(1), "title": html_to_text(link.group(2)),
+                         "location": loc.group(1).strip() if loc else ""})
+
+    def detail(p):
+        try:
+            text = fetch_page_description(p["url"])
+        except FetchError:
+            text = ""
+        return {"company": company, "source": f"{company} careers", "posted": "", "description": text,
+                "season_hint": "", **p}
+
+    return _open_each(postings, detail)
+
+
+def fetch_internlist(src: dict) -> list[dict]:
+    """intern-list.com's tables (public Airtable views embedded on the site).
+    Its Apply links go to jobright.ai, which hides the company's link behind a
+    sign-in, so these become leads: the button searches for the company's own
+    posting, and run.py drops any lead a company board already supplied."""
+    out = []
+    for view in src["views"]:
+        app = view.split("/")[0]
+        embed = _get_page(f"https://airtable.com/embed/{view}")
+        m = re.search(r'urlWithParams:\s*"([^"]+)"', embed)
+        if not m:
+            raise FetchError(f"view {view} has no shared data (the site may have replaced it)")
+        data = get_json("https://airtable.com" + m.group(1).encode().decode("unicode_escape"), timeout=90, headers={
+            "x-airtable-application-id": app, "x-requested-with": "XMLHttpRequest",
+            "x-time-zone": "America/New_York", "x-user-locale": "en", "User-Agent": _PAGE_HEADERS["User-Agent"]})
+        table = data["data"]["table"]
+        cols = {c["id"]: c["name"] for c in table["columns"]}
+        for r in table["rows"]:
+            row = {cols.get(k, k): v for k, v in r["cellValuesByColumnId"].items()}
+            company = (row.get("Company") or "").strip()
+            # Some titles were scraped with the page name: "... Job Details | L3HHCM20"
+            title = re.sub(r"\s*Job Details\s*(\|.*)?$", "", (row.get("Position Title") or "").strip())
+            link = (row.get("Apply") or {}).get("url", "") if isinstance(row.get("Apply"), dict) else ""
+            listing = re.search(r"/jobs/info/(\w+)", link)
+            if not company or not title or not listing:
+                continue
+            query = urllib.parse.quote_plus(f'{company} "{title}"')
+            out.append({
+                "company": company,
+                "title": title,
+                "location": row.get("Location", ""),
+                "url": f"https://www.google.com/search?q={query}",
+                "key": "il:" + listing.group(1),
+                "lead": True,
+                "source": src["name"],
+                "posted": _date_from_iso(row.get("Date")),
+                "description": "\n".join(filter(None, [
+                    row.get("Qualifications", ""),
+                    f"Graduation: {row['Graduate Time']}" if row.get("Graduate Time") else "",
+                    f"Pay: {row['Salary']}" if row.get("Salary") else "",
+                ])),
+                "season_hint": _start_to_season(row.get("Hire Time") or ""),
+            })
+    return out
+
+
+_MONTH_SEASON = {"january": "Spring", "february": "Spring", "march": "Spring", "april": "Spring",
+                 "may": "Summer", "june": "Summer", "july": "Summer", "august": "Summer",
+                 "september": "Fall", "october": "Fall", "november": "Fall", "december": "Fall"}
+
+
+def _start_to_season(start: str) -> str:
+    """intern-list start dates ("2027-Summer", "2027-May") as "Summer 2027"."""
+    m = re.fullmatch(r"(\d{4})-(\w+)", start.strip())
+    if not m:
+        return ""
+    word = m.group(2).lower()
+    season = _MONTH_SEASON.get(word) or (word.title() if word in ("spring", "summer", "fall", "winter") else "")
+    return f"{season} {m.group(1)}" if season else ""
+
+
+def fetch_gem(board: str, company: str) -> list[dict]:
+    out = []
+    for j in get_json(f"https://api.gem.com/job_board/v0/{board}/job_posts/", timeout=60):
+        loc = j.get("location") or {}
+        out.append({
+            "company": company,
+            "title": (j.get("title") or "").strip(),
+            "location": loc.get("name", "") if isinstance(loc, dict) else str(loc),
+            "url": j.get("absolute_url", ""),
+            "source": f"{company} careers",
+            "posted": _date_from_iso(j.get("first_published_at") or j.get("updated_at")),
+            "description": html_to_text(j.get("content")),
+            "season_hint": "",
+        })
+    return out
+
+
 # ------------------------------------------------------------ USAJOBS
 
 def fetch_usajobs(cfg: dict) -> list[dict]:
@@ -353,6 +899,34 @@ def fetch_all(cfg: dict, keep=_keep_all) -> tuple[list[dict], list[dict]]:
         tasks.append((c["name"], "Eightfold", lambda c=c: fetch_eightfold(c["host"], c["domain"], c["name"], keep=keep)))
     for c in cfg.get("clearcompany", []):
         tasks.append((c["name"], "ClearCompany", lambda c=c: fetch_clearcompany(c["site_id"], c["name"])))
+    for c in cfg.get("successfactors", []):
+        tasks.append((c["name"], "SuccessFactors", lambda c=c: fetch_successfactors(c["host"], c["name"], keep=keep)))
+    for c in cfg.get("icims", []):
+        tasks.append((c["name"], "iCIMS", lambda c=c: fetch_icims(c["host"], c["name"], keep=keep)))
+    for c in cfg.get("jibe", []):
+        tasks.append((c["name"], "Jibe", lambda c=c: fetch_jibe(c["host"], c["name"])))
+    for c in cfg.get("oracle", []):
+        tasks.append((c["name"], "Oracle", lambda c=c: fetch_oracle(c["host"], c["site"], c["name"], keep=keep)))
+    for c in cfg.get("phenom", []):
+        tasks.append((c["name"], "Phenom", lambda c=c: fetch_phenom(c["base"].rstrip("/"), c["name"], keep=keep)))
+    for c in cfg.get("pinpoint", []):
+        tasks.append((c["name"], "Pinpoint", lambda c=c: fetch_pinpoint(c["board"], c["name"])))
+    for c in cfg.get("bamboohr", []):
+        tasks.append((c["name"], "BambooHR", lambda c=c: fetch_bamboohr(c["board"], c["name"], keep=keep)))
+    for c in cfg.get("rippling", []):
+        tasks.append((c["name"], "Rippling", lambda c=c: fetch_rippling(c["board"], c["name"], keep=keep)))
+    for c in cfg.get("smartrecruiters", []):
+        tasks.append((c["name"], "SmartRecruiters", lambda c=c: fetch_smartrecruiters(c["board"], c["name"], keep=keep)))
+    for c in cfg.get("workable", []):
+        tasks.append((c["name"], "Workable", lambda c=c: fetch_workable(c["board"], c["name"])))
+    for c in cfg.get("gem", []):
+        tasks.append((c["name"], "Gem", lambda c=c: fetch_gem(c["board"], c["name"])))
+    for c in cfg.get("taleo", []):
+        tasks.append((c["name"], "Taleo", lambda c=c: fetch_taleo(c["host"], c["section"], c["portal"], c["name"], keep=keep)))
+    for c in cfg.get("jazzhr", []):
+        tasks.append((c["name"], "JazzHR", lambda c=c: fetch_jazzhr(c["board"], c["name"], keep=keep)))
+    for src in cfg.get("internlist", []):
+        tasks.append((src["name"], "Internship list", lambda s=src: fetch_internlist(s)))
     if "usajobs" in cfg:
         tasks.append(("USAJOBS", "Federal", lambda: fetch_usajobs(cfg["usajobs"])))
 
@@ -419,4 +993,4 @@ def fetch_page_description(url: str) -> str:
         for it in items:
             if isinstance(it, dict) and it.get("@type") == "JobPosting" and it.get("description"):
                 return html_to_text(it["description"])
-    return ""
+    return _rmk_text(page) or _taleo_text(page)  # SuccessFactors and Taleo pages don't

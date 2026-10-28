@@ -7,12 +7,14 @@ from __future__ import annotations
 
 import datetime as dt
 import json
+import re
 import sys
 import tomllib
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from urllib.parse import urlparse
 
+from jobfinder import popular
 from jobfinder.ai import review_jobs
 from jobfinder.match import Matcher
 from jobfinder.quals import QualChecker
@@ -26,6 +28,7 @@ JOBS_FILE = DATA / "jobs.json"
 DESC_FILE = DATA / "descriptions.json"
 AI_FILE = DATA / "ai_reviews.json"
 MISS_FILE = DATA / "description_misses.json"
+POPULAR_FILE = DATA / "popular_seen.json"
 PAGE_URL = "https://jonasagront.github.io/aero-job-finder/"
 
 MAX_NEW_LOOKUPS = 500   # full-description lookups per run for list-only postings
@@ -43,6 +46,16 @@ def load_json(path: Path, default):
 def save_json(path: Path, data) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(data, indent=1, ensure_ascii=False), encoding="utf-8")
+
+
+_CO_SUFFIX = re.compile(r"\b(inc|llc|corp|corporation|company|co|the|technologies|industries)\b")
+
+
+def same_job(j: dict) -> tuple[str, str]:
+    """Company + title, loosely, to spot the same posting listed under different links."""
+    norm = lambda s: re.sub(r"[^a-z0-9]+", " ", (s or "").lower()).strip()
+    words = _CO_SUFFIX.sub("", norm(j.get("company"))).split()
+    return (words[0] if words else "", norm(j.get("title")))
 
 
 def upgrade_old(j: dict) -> dict:
@@ -92,7 +105,7 @@ def main() -> int:
         if not link_ok(j["url"]):
             n_blocked += 1
             continue
-        j["key"] = job_key(j["url"], j.get("company", ""), j.get("title", ""))
+        j["key"] = j.get("key") or job_key(j["url"], j.get("company", ""), j.get("title", ""))
         prev = candidates.get(j["key"])
         # Prefer the copy that has a description (company board over list)
         if prev is None or (not prev.get("description") and j.get("description")):
@@ -101,13 +114,21 @@ def main() -> int:
             candidates[j["key"]] = j
         elif j.get("season_hint") and not prev.get("season_hint"):
             prev["season_hint"] = j["season_hint"]
+    # Leads (postings with no direct link) only stay when they're at an aerospace/defense
+    # company and no source with a real link has the same job
+    direct = {same_job(j) for j in candidates.values() if not j.get("lead")}
+    n_leads = sum(1 for j in candidates.values() if j.get("lead"))
+    candidates = {k: j for k, j in candidates.items() if not j.get("lead")
+                  or (same_job(j) not in direct and matcher.is_aero_company(j.get("company", "")))}
+    n_new_leads = sum(1 for j in candidates.values() if j.get("lead"))
     print(f"2) {len(candidates)} engineering internship postings after removing duplicates"
-          f" ({n_blocked} skipped for linking to a blocked site)")
+          f" ({n_blocked} skipped for linking to a blocked site; {n_new_leads} of {n_leads} leads"
+          f" weren't on any company board)")
 
     # 3) Fill in descriptions for list postings (cached between runs)
     desc_cache: dict = load_json(DESC_FILE, {})
     misses: dict = load_json(MISS_FILE, {})  # key -> date a lookup last came back empty
-    need = [j for j in candidates.values() if not j.get("description")]
+    need = [j for j in candidates.values() if not j.get("description") and not j.get("lead")]
     for j in need:
         if j["key"] in desc_cache:
             j["description"] = desc_cache[j["key"]]
@@ -183,8 +204,11 @@ def main() -> int:
     save_json(DESC_FILE, {k: v for k, v in desc_cache.items() if k in keep_keys or k in candidates})
     save_json(AI_FILE, {k: v for k, v in ai_cache.items() if k in keep_keys})
     save_json(MISS_FILE, {k: v for k, v in misses.items() if k in candidates})
+    seen = load_json(POPULAR_FILE, {})
+    big = popular.build(sources_cfg.get("popular", []), final, seen, today, str(profile["search"].get("year", "")))
+    save_json(POPULAR_FILE, seen)
     (ROOT / "docs").mkdir(exist_ok=True)
-    (ROOT / "docs" / "index.html").write_text(build_page(final, status, profile, now), encoding="utf-8")
+    (ROOT / "docs" / "index.html").write_text(build_page(final, status, profile, now, big), encoding="utf-8")
     update_readme(ROOT / "README.md", final, PAGE_URL, now)
     new_today = sum(1 for j in final if j["first_seen"] == today)
     per = ", ".join(f"{sum(1 for j in final if t in j['tracks'])} {t}" for t in matcher.tracks)
