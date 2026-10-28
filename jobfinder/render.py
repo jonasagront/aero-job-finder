@@ -312,9 +312,9 @@ const todayMs = Date.parse(D.today + 'T12:00:00');
 const daysBack = n => new Date(todayMs - n*864e5).toISOString().slice(0,10);
 const weekAgo = daysBack(7), oldCut = daysBack(D.old_after);
 const ageDays = iso => iso ? Math.round((todayMs - Date.parse(iso + 'T12:00:00')) / 864e5) : null;
-// "This week" and "old" go by the posting date; first_seen only when a source gives no date
-const postedThisWeek = j => (j.posted || j.first_seen) >= weekAgo;
-const isOld = j => (j.posted || j.first_seen) < oldCut;
+// "This week" and "old" go by the posting date; undated postings have their own section
+const postedThisWeek = j => !!j.posted && j.posted >= weekAgo;
+const isOld = j => !!j.posted && j.posted < oldCut;
 const coMatch = (company, terms) => { const c = (company || '').toLowerCase(); return terms.some(t => t[0] === '=' ? c === t.slice(1) : c.includes(t)); };
 
 // ---- theme: light unless dark (or the system's setting) is picked here
@@ -328,19 +328,21 @@ $('theme').addEventListener('click', () => { theme = THEMES[(THEMES.indexOf(them
 applyTheme();
 
 // ---- sections
-const ORDER = ['new', 'summer', 'fall', 'broad', 'big'].filter(k => k === 'new' || (k === 'big' ? D.popular.length : T[k]));
-const HASH = {new:'new', summer:'summer', fall:'fall', broad:'all', big:'big-names'};
-const NAME = {new:'New this week', big:'Big names'};
+const ORDER = ['new', 'summer', 'fall', 'broad', 'undated', 'big'].filter(k => k === 'new' || k === 'undated' || (k === 'big' ? D.popular.length : T[k]));
+const HASH = {new:'new', summer:'summer', fall:'fall', broad:'all', undated:'date-unknown', big:'big-names'};
+const NAME = {new:'New this week', undated:'Posted date unknown', big:'Big names'};
 for(const k in T) NAME[k] = T[k].tab;
 const best = j => Object.entries(j.tracks).reduce((a, b) => !a || b[1].score > a[1].score ? b : a, null);
-const inTab = (j, t) => t === 'new' ? postedThisWeek(j) : t !== 'big' && !!j.tracks[t];
+// "New this week" and "Posted date unknown" gather postings from every other section
+const mixed = t => t === 'new' || t === 'undated';
+const inTab = (j, t) => t === 'undated' ? !j.posted : t === 'new' ? postedThisWeek(j) : t !== 'big' && !!j.posted && !!j.tracks[t];
 let tab = (() => {
   const h = location.hash.slice(1);
   const fromHash = Object.keys(HASH).find(k => HASH[k] === h);
   const saved = pref.get('tab', 'summer');
   return fromHash && ORDER.includes(fromHash) ? fromHash : (ORDER.includes(saved) ? saved : 'summer');
 })();
-const trackKey = j => tab === 'new' ? best(j)[0] : tab;
+const trackKey = j => mixed(tab) ? best(j)[0] : tab;
 const seasonChk = {};
 
 $('stamp').textContent = D.sources.length ? `Updated ${D.updated_label}` : '';
@@ -348,7 +350,7 @@ $('sub').textContent = D.sources.length
   ? `Scored against ${D.name}'s resume. ${D.sources.filter(s => s.ok).length} company career sites and internship lists checked every 6 hours.`
   : 'Waiting for the first scan.';
 const c = D.counts;
-const nSummer = D.jobs.filter(j => j.tracks.summer).length;
+const nSummer = D.jobs.filter(j => inTab(j, 'summer')).length;
 $('stats').innerHTML = [
   [T.summer ? T.summer.tab + ' aerospace' : 'Postings', T.summer ? nSummer : D.jobs.length, ''],
   ['Strong summer fits', c.strong, ''],
@@ -407,7 +409,7 @@ function card(j){
   if(j.first_seen >= D.today) tags.push('<span class="tag new">New</span>');
   if(j.lead) tags.push('<span class="tag lead" title="intern-list.com lists this posting but links to jobright.ai, not the company">Lead from intern-list</span>');
   if(isOld(j)) tags.push(`<span class="tag old">Older than ${D.old_after} days</span>`);
-  if(tab === 'new'){
+  if(mixed(tab)){
     for(const t of ORDER) if(j.tracks[t]) tags.push(`<span class="tag sec">${esc(t === 'fall' ? NAME[t] + ' · ' + where(j.tracks[t]) : NAME[t])}</span>`);
   } else if(k === 'fall'){
     tags.push(`<span class="tag sec">${esc(where(tr))}</span>`);
@@ -425,12 +427,11 @@ function card(j){
   rows.push(`<dt>Found via</dt><dd>${esc(j.source)}${j.lead ? ' (no direct link: the button searches for the company\'s own posting)' : ''}</dd>`);
   const ai = j.ai ? `<div class="ai"><b>Claude's take (${esc(j.ai.fit)}):</b> ${esc(j.ai.summary)}${j.ai.talking_point ? '<br><b>Lead with:</b> ' + esc(j.ai.talking_point) : ''}</div>` : '';
   const age = ageDays(j.posted);
-  // Every posting gets a date: the site's own, or "by" the day the scan first found it
-  const seenAge = ageDays(j.first_seen);
+  // posted_from names the list the date came from when the company's own site gave none
   const when = j.posted
-    ? `<span>Posted ${fmt(j.posted)} (${age === 0 ? 'today' : age + 'd ago'})</span><span>Found ${fmt(j.first_seen)}</span>`
-    : `<span title="This site doesn't list a post date, so this is the day the scan first found it">Posted by ${fmt(j.first_seen)} (${seenAge === 0 ? 'today' : seenAge + 'd ago'})</span>`;
-  const meta = [j.location && `<span>${esc(j.location)}</span>`, when].filter(Boolean).join('');
+    ? `<span>Posted ${fmt(j.posted)} (${age <= 0 ? 'today' : age + 'd ago'}${j.posted_from ? ', per ' + esc(j.posted_from) : ''})</span>`
+    : `<span title="Not on its source, its own listing page, or any internship list the scan reads">Posted date unknown</span>`;
+  const meta = [j.location && `<span>${esc(j.location)}</span>`, when, `<span>Found ${fmt(j.first_seen)}</span>`].filter(Boolean).join('');
   const apply = j.lead
     ? `<a class="btn find" href="${esc(j.url)}" target="_blank" rel="noopener">Find posting ↗</a>`
     : `<a class="btn" href="${esc(j.url)}" target="_blank" rel="noopener">Apply ↗</a>`;
@@ -459,7 +460,7 @@ const RECRUIT_YEAR = [7,8,9,10,11,12,1,2,3,4,5,6];
 function renderBig(){
   const m = +D.today.slice(5, 7);
   $('bigList').innerHTML = D.popular.map((p, i) => {
-    const mine = D.jobs.filter(j => j.tracks.broad && coMatch(j.company, p.match));
+    const mine = D.jobs.filter(j => inTab(j, 'broad') && coMatch(j.company, p.match));
     const strong = mine.filter(j => Object.values(j.tracks).some(t => t.tier === 'strong')).length;
     const live = inWin(p.window, m);
     const opens = p.window.length ? MON[p.window[0] - 1] : '';
@@ -490,7 +491,9 @@ function setupTab(){
   $('bigView').hidden = !big;
   $('tabnote').hidden = big;
   if(big){ renderBig(); return; }
-  $('tabnote').textContent = tab === 'new' ? `Everything posted in the last 7 days, from every section, best fit first.` : T[tab].note;
+  $('tabnote').textContent = tab === 'new' ? `Everything posted in the last 7 days, from every section, best fit first.`
+    : tab === 'undated' ? `Postings with no posted date on their source, their own listing page, or any internship list the scan reads. They stay out of the other sections until a date turns up.`
+    : T[tab].note;
   const inThis = D.jobs.filter(j => inTab(j, tab));
   const counts = {};
   for(const j of inThis) if(j.discipline) counts[j.discipline] = (counts[j.discipline] || 0) + 1;
@@ -499,11 +502,11 @@ function setupTab(){
   $('disc').hidden = tab === 'summer';
   $('sort').querySelector('[value=near]').hidden = tab !== 'fall';
   $('sort').value = tab === 'new' ? 'new' : 'score';
-  $('seasonTog').hidden = tab === 'new';
+  $('seasonTog').hidden = mixed(tab);
   // Only offer to hide old postings when the age limit in profile.toml lets some through
-  $('hideOld').parentNode.hidden = tab === 'new' || !inThis.some(isOld);
+  $('hideOld').parentNode.hidden = mixed(tab) || !inThis.some(isOld);
   $('season').checked = !!seasonChk[tab];
-  if(tab !== 'new') $('seasonLabel').textContent = tab === 'fall' ? 'Include nearby postings that don\'t name a season' : `Only ones that say ${T[tab].season_label}`;
+  if(!mixed(tab)) $('seasonLabel').textContent = tab === 'fall' ? 'Include nearby postings that don\'t name a season' : `Only ones that say ${T[tab].season_label}`;
   $('have').innerHTML = bars(topSkills(inThis, 'matched'), 'var(--pos)');
   $('need').innerHTML = bars(topSkills(inThis, 'gaps'), 'var(--neg)');
   limit = PAGE;
@@ -544,7 +547,8 @@ function render(){
          : (a,b) => sc(b) - sc(a));
   $('shown').innerHTML = `<span>Showing ${Math.min(limit, jobs.length)} of ${jobs.length} matching / ${pool.length} in this section</span>` +
     (pick ? `<span class="pick">${esc(pick.name)}<button id="unpick" aria-label="Show all companies">×</button></span>` : '');
-  const emptyMsg = tab === 'fall' && !pool.some(j => j.tracks.fall.season === 'match') ? T.fall.empty
+  const emptyMsg = tab === 'undated' && !pool.length ? 'Every posting on the page has a posted date.'
+    : tab === 'fall' && !pool.some(j => j.tracks.fall.season === 'match') ? T.fall.empty
     : 'No postings match these filters. Clear the search or choose “All”.';
   $('list').innerHTML = jobs.length ? jobs.slice(0, limit).map(card).join('') : `<div class="empty">${esc(emptyMsg)}</div>`;
   $('more').hidden = jobs.length <= limit;
@@ -628,7 +632,7 @@ def build_page(jobs: list[dict], sources: list[dict], profile: dict, now: dt.dat
                popular: list[dict] | None = None) -> str:
     today = now.date().isoformat()
     page_jobs = [{k: j.get(k) for k in (
-        "key", "company", "title", "location", "url", "source", "posted", "first_seen", "tracks",
+        "key", "company", "title", "location", "url", "source", "posted", "posted_from", "first_seen", "tracks",
         "discipline", "matched", "related", "gaps", "flags", "ai", "quals", "has_description", "lead")} for j in jobs]
     try:
         from zoneinfo import ZoneInfo
@@ -680,7 +684,7 @@ def update_readme(path: Path, jobs: list[dict], page_url: str, now: dt.datetime,
         reqs = f"{s['required_met']:g} of {s['required_checked']}" if s.get("required_checked") else "–"
         link = f"[Find posting]({j['url']})" if j.get("lead") else f"[Apply]({j['url']})"
         lines.append(f"| {j['tracks']['summer']['score']} | {j['company'].replace('|', '/')} | {title}{new} | {reqs} "
-                     f"| {loc} | {j.get('posted') or 'by ' + j.get('first_seen', '?')} | {link} |")
+                     f"| {loc} | {j.get('posted') or 'unknown'} | {link} |")
     if not summer:
         lines.append("| | No matches yet | Run the workflow from the Actions tab | | | | |")
     block = start + "\n" + "\n".join(lines) + "\n" + end

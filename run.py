@@ -20,7 +20,7 @@ from jobfinder.discover import as_sources, learn, learn_from_lists, record_resul
 from jobfinder.match import Matcher
 from jobfinder.quals import QualChecker
 from jobfinder.render import build_page, update_readme
-from jobfinder.sources import fetch_all, fetch_description
+from jobfinder.sources import fetch_all, fetch_description, fetch_posted_date
 from jobfinder.util import FetchError, job_key
 
 ROOT = Path(__file__).resolve().parent
@@ -29,13 +29,16 @@ JOBS_FILE = DATA / "jobs.json"
 DESC_FILE = DATA / "descriptions.json"
 AI_FILE = DATA / "ai_reviews.json"
 MISS_FILE = DATA / "description_misses.json"
+DATE_MISS_FILE = DATA / "date_misses.json"
 POPULAR_FILE = DATA / "popular_seen.json"
 FOUND_FILE = DATA / "discovered_boards.json"
 PAGE_URL = "https://jonasagront.github.io/aero-job-finder/"
 
 MAX_NEW_LOOKUPS = 500   # full-description lookups per run for list-only postings
+MAX_DATE_LOOKUPS = 300  # posting pages opened per run to find a missing posted date
 KEEP_MISSING_DAYS = 5   # keep a job this long if its source failed to load
 RETRY_MISS_DAYS = 7     # wait this long before retrying a page that had no description
+RETRY_DATE_DAYS = 2     # wait this long before retrying a page that had no posted date
 
 
 def load_json(path: Path, default):
@@ -58,6 +61,16 @@ def same_job(j: dict) -> tuple[str, str]:
     norm = lambda s: re.sub(r"[^a-z0-9]+", " ", (s or "").lower()).strip()
     words = _CO_SUFFIX.sub("", norm(j.get("company"))).split()
     return (words[0] if words else "", norm(j.get("title")))
+
+
+def fill_in(dst: dict, src: dict) -> None:
+    """Copy what another source knows about the same posting onto the copy being kept."""
+    if src.get("season_hint") and not dst.get("season_hint"):
+        dst["season_hint"] = src["season_hint"]
+    if src.get("posted") and not dst.get("posted"):
+        dst["posted"] = src["posted"]
+        if src.get("source") != dst.get("source"):
+            dst["posted_from"] = src.get("posted_from") or src.get("source", "")
 
 
 def upgrade_old(j: dict) -> dict:
@@ -126,11 +139,19 @@ def main() -> int:
         prev = candidates.get(j["key"])
         # Prefer the copy that has a description (company board over list)
         if prev is None or (not prev.get("description") and j.get("description")):
-            if prev and prev.get("season_hint") and not j.get("season_hint"):
-                j["season_hint"] = prev["season_hint"]
+            if prev:
+                fill_in(j, prev)
             candidates[j["key"]] = j
-        elif j.get("season_hint") and not prev.get("season_hint"):
-            prev["season_hint"] = j["season_hint"]
+        else:
+            fill_in(prev, j)
+    # Each company + title's earliest date on any source, for postings whose own site
+    # gives none (taken before leads are dropped: intern-list dates count too)
+    listed: dict[tuple[str, str], dict] = {}
+    for j in raw:
+        if j.get("posted") and j.get("title"):
+            k = same_job(j)
+            if k not in listed or j["posted"] < listed[k]["posted"]:
+                listed[k] = j
     # Leads (postings with no direct link) only stay when they're at an aerospace/defense
     # company and no source with a real link has the same job
     direct = {same_job(j) for j in candidates.values() if not j.get("lead")}
@@ -175,6 +196,44 @@ def main() -> int:
                 misses[j["key"]] = today
     print(f"3) Loaded {got} full descriptions ({len(lookup)} tried)")
 
+    # Posted dates for postings whose source gave none: the date its own page gave
+    # on an earlier run, then its page now, then a list with the same company + title.
+    # Anything still undated goes in the page's "Posted date unknown" section.
+    old = {j["key"]: j for j in load_json(JOBS_FILE, {}).get("jobs", [])}
+    date_misses: dict = load_json(DATE_MISS_FILE, {})  # key -> date a page last showed no date
+    undated = [j for j in candidates.values() if not j.get("posted")]
+    for j in undated:
+        prev = old.get(j["key"], {})
+        if prev.get("posted") and not prev.get("posted_from"):
+            j["posted"] = prev["posted"]
+    look = [j for j in undated if not j.get("posted") and not j.get("lead") and j["url"].startswith("http")
+            and (now.date() - dt.date.fromisoformat(date_misses.get(j["key"], "2000-01-01"))).days >= RETRY_DATE_DAYS]
+    look = look[:MAX_DATE_LOOKUPS]
+
+    def get_date(j):
+        try:
+            return j, fetch_posted_date(j["url"])
+        except (FetchError, ValueError):
+            return j, ""
+
+    on_page = 0
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        for j, posted in pool.map(get_date, look):
+            if posted:
+                j["posted"] = posted
+                date_misses.pop(j["key"], None)
+                on_page += 1
+            else:
+                date_misses[j["key"]] = today
+    from_list = 0
+    for j in undated:
+        other = listed.get(same_job(j))
+        if not j.get("posted") and other:
+            j["posted"], j["posted_from"] = other["posted"], other.get("source", "")
+            from_list += 1
+    print(f"   {len(undated)} postings had no posted date: {on_page} found on their own page ({len(look)} opened), "
+          f"{from_list} from another list, {sum(1 for j in undated if not j.get('posted'))} still unknown")
+
     # 4) Score
     drops: dict[str, int] = {}
     scored = []
@@ -189,7 +248,6 @@ def main() -> int:
     print(f"4) {len(scored)} matches. Dropped: " + ", ".join(f"{v} {k}" for k, v in sorted(drops.items())))
 
     # 5) Merge with yesterday's results (keeps "first seen" dates)
-    old = {j["key"]: j for j in load_json(JOBS_FILE, {}).get("jobs", [])}
     failed_sources = {s["name"] for s in status if not s["ok"]}
     final = []
     for j in scored:
@@ -221,6 +279,7 @@ def main() -> int:
     save_json(DESC_FILE, {k: v for k, v in desc_cache.items() if k in keep_keys or k in candidates})
     save_json(AI_FILE, {k: v for k, v in ai_cache.items() if k in keep_keys})
     save_json(MISS_FILE, {k: v for k, v in misses.items() if k in candidates})
+    save_json(DATE_MISS_FILE, {k: v for k, v in date_misses.items() if k in candidates})
     save_json(FOUND_FILE, dict(sorted(found.items())))
     seen = load_json(POPULAR_FILE, {})
     big = popular.build(sources_cfg.get("popular", []), final, seen, today, str(profile["search"].get("year", "")))

@@ -999,6 +999,26 @@ def fetch_description(url: str) -> str:
     return ""
 
 
+def fetch_posted_date(url: str) -> str:
+    """The posted date from a posting's own page, for postings whose source gave
+    none. Hiring systems with an API are asked directly."""
+    info = parse_ats_url(url)
+    if info and info["ats"] == "greenhouse":
+        j = get_json(f"https://boards-api.greenhouse.io/v1/boards/{info['board']}/jobs/{info['id']}", timeout=30)
+        return _date_from_iso(j.get("first_published") or j.get("updated_at"))
+    if info and info["ats"] == "lever":
+        j = get_json(f"https://api.lever.co/v0/postings/{info['board']}/{info['id']}?mode=json", timeout=30)
+        return _date_from_epoch(j.get("createdAt"), ms=True)
+    if info and info["ats"] == "ashby":
+        return next((_date_from_iso(j.get("publishedAt")) for j in _ashby_board(info["board"])
+                     if j.get("id") == info["id"]), "")
+    if info and info["ats"] == "workday":
+        return _date_from_iso(_workday_detail(info["host"], info["tenant"], info["site"], info["path"]).get("startDate"))
+    if ".icims.com/" in url and "in_iframe=" not in url:
+        url += ("&" if "?" in url else "?") + "in_iframe=1"  # the page around the frame has no posting data
+    return fetch_page_posting(url)[1]
+
+
 _LD_JSON = re.compile(r'(?is)<script[^>]*application/ld\+json[^>]*>(.*?)</script>')
 
 
@@ -1011,9 +1031,37 @@ def _job_posting(page: str) -> dict:
             continue
         items = data if isinstance(data, list) else data.get("@graph", [data]) if isinstance(data, dict) else []
         for it in items:
-            if isinstance(it, dict) and it.get("@type") == "JobPosting":
+            kind = it.get("@type") if isinstance(it, dict) else None
+            if kind == "JobPosting" or (isinstance(kind, list) and "JobPosting" in kind):
                 return it
     return {}
+
+
+def _date_any(s) -> str:
+    """YYYY-MM-DD from the date formats job pages use, or ""."""
+    s = str(s or "").strip()
+    if re.match(r"\d{4}-\d{2}-\d{2}", s):
+        return _date_from_iso(s)
+    for f in ("%a %b %d %H:%M:%S UTC %Y", "%m/%d/%Y", "%B %d, %Y", "%b %d, %Y"):
+        try:
+            return dt.datetime.strptime(s, f).date().isoformat()
+        except ValueError:
+            pass
+    return ""
+
+
+_ITEMPROP_DATE = re.compile(r'itemprop="datePosted"[^>]*?content="([^"]+)"')
+_JSON_DATE = re.compile(r'"datePosted"\s*:\s*"([^"]+)"')
+
+
+def _page_date(page: str, posting: dict) -> str:
+    """The posted date a job page gives: its schema.org data, or the same field
+    in the page's markup or embedded JSON when that data is missing or broken."""
+    for raw in [posting.get("datePosted"), *_ITEMPROP_DATE.findall(page), *_JSON_DATE.findall(page)]:
+        d = _plausible_date(_date_any(raw))
+        if d:
+            return d
+    return ""
 
 
 def _plausible_date(iso: str) -> str:
@@ -1035,7 +1083,7 @@ def fetch_page_posting(url: str) -> tuple[str, str]:
                    timeout=20, retries=0)
     p = _job_posting(page)
     text = html_to_text(p.get("description")) or _rmk_text(page) or _taleo_text(page)  # those two don't
-    return text, _plausible_date(_date_from_iso(p.get("datePosted")))
+    return text, _page_date(page, p)
 
 
 def fetch_page_description(url: str) -> str:

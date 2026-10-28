@@ -6,7 +6,7 @@ results to a page I can open on my phone.
 
 **Job page:** https://jonasagront.github.io/aero-job-finder/
 
-The page has five tabs:
+The page has six tabs:
 
 | Tab | What's in it |
 |---|---|
@@ -14,6 +14,7 @@ The page has five tabs:
 | **Summer 2027** | Aerospace and mechanical internships at aerospace companies (the main list) |
 | **Fall 2027 near UCF** | Fall 2027 internships and co-ops within 55 miles of UCF (Orlando to the Space Coast, Melbourne included), plus remote ones, any engineering discipline |
 | **All engineering** | Every Summer 2027 engineering internship from any company or major, with mechanical and aerospace ranked first and a discipline filter |
+| **Posted date unknown** | Postings whose posted date couldn't be found anywhere (see below); they're kept out of the other tabs until one turns up |
 | **Big names** | SpaceX, NASA, Lockheed, Northrop, RTX and other well-known employers: when each usually recruits (a typical window from past cycles; NASA and SMART deadlines are the published ones), how many of its postings are open now, and the earliest posting seen this cycle |
 
 Postings marked **Lead from intern-list** come from intern-list.com, which links to jobright.ai
@@ -21,7 +22,9 @@ instead of the company. Their **Find posting** button searches for the company's
 tick **Only direct company links** to hide them.
 
 Postings more than 15 days old are left off the page (`max_age_days` in `profile.toml`).
-Postings with no date on their site show **Posted by** the day the scan first found them.
+When a posting's source gives no posted date, the scan opens the posting's own page for one, then
+checks the internship lists for the same company and title (the page then says which list the date
+came from). Postings with no date anywhere go in **Posted date unknown**.
 
 ## Today's top matches
 
