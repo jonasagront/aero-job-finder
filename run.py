@@ -16,6 +16,7 @@ from urllib.parse import urlparse
 
 from jobfinder import popular
 from jobfinder.ai import review_jobs
+from jobfinder.discover import as_sources, learn, learn_from_lists, record_results
 from jobfinder.match import Matcher
 from jobfinder.quals import QualChecker
 from jobfinder.render import build_page, update_readme
@@ -29,6 +30,7 @@ DESC_FILE = DATA / "descriptions.json"
 AI_FILE = DATA / "ai_reviews.json"
 MISS_FILE = DATA / "description_misses.json"
 POPULAR_FILE = DATA / "popular_seen.json"
+FOUND_FILE = DATA / "discovered_boards.json"
 PAGE_URL = "https://jonasagront.github.io/aero-job-finder/"
 
 MAX_NEW_LOOKUPS = 500   # full-description lookups per run for list-only postings
@@ -85,9 +87,24 @@ def main() -> int:
         return matcher.title_ok(title)[0] and bool(
             matcher.discipline(title)[0] or matcher.aero_relevance(title.lower(), "", False, True) is not None)
 
-    print("1) Reading job sources")
-    raw, status = fetch_all(sources_cfg, keep=keep)
-    print(f"   {len(raw)} postings read")
+    # Career sites found through aerospace companies' list postings (see discover.py).
+    # Sites first linked this run are scanned from the next run on.
+    found: dict = load_json(FOUND_FILE, {})
+    n_new = learn_from_lists(found, sources_cfg.get("discover", {}).get("urls", []), matcher.is_aero_company, today)
+    extra = as_sources(found, sources_cfg, today)
+    scan_cfg = {**sources_cfg, **{k: sources_cfg.get(k, []) + v for k, v in extra.items()}}
+    found_names = {c["name"] for v in extra.values() for c in v}
+
+    print(f"1) Reading job sources ({len(found_names)} career sites found automatically)")
+    raw, status = fetch_all(scan_cfg, keep=keep)
+    for s in status:
+        if s["name"] in found_names:
+            s["kind"] += " (found automatically)"
+    record_results(found, status)
+    lists = {s["name"] for s in sources_cfg.get("list", []) + sources_cfg.get("getro", [])}
+    n_new += learn(found, ((j.get("company", ""), j.get("url", "")) for j in raw
+                           if j.get("source_id") in lists), matcher.is_aero_company, today)
+    print(f"   {len(raw)} postings read; {n_new} new career sites found for next time")
 
     # Apply links must open the company's own posting, not an AI job site or aggregator
     blocked = tuple(d.lower() for d in sources_cfg.get("blocked_link_domains", []))
@@ -204,6 +221,7 @@ def main() -> int:
     save_json(DESC_FILE, {k: v for k, v in desc_cache.items() if k in keep_keys or k in candidates})
     save_json(AI_FILE, {k: v for k, v in ai_cache.items() if k in keep_keys})
     save_json(MISS_FILE, {k: v for k, v in misses.items() if k in candidates})
+    save_json(FOUND_FILE, dict(sorted(found.items())))
     seen = load_json(POPULAR_FILE, {})
     big = popular.build(sources_cfg.get("popular", []), final, seen, today, str(profile["search"].get("year", "")))
     save_json(POPULAR_FILE, seen)

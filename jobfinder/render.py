@@ -372,8 +372,12 @@ function topSkills(jobs, field){
 
 $('src').innerHTML = '<tr><th>Source</th><th>Type</th><th>Result</th></tr>' + D.sources.map(s =>
   `<tr><td>${esc(s.name)}</td><td>${esc(s.kind)}</td><td class="${s.ok ? '' : 'bad'}">${s.ok ? s.count + ' postings read' : 'Failed: ' + esc(s.error)}</td></tr>`).join('');
-const bad = D.sources.filter(s => !s.ok && !String(s.error).startsWith('skipped')).length;
-$('foot').textContent = `${D.sources.length} sources checked` + (bad ? `, ${bad} failed (listed below; fix or remove them in sources.toml).` : '.') + ' Scores are keyword-based estimates. Always read the posting before applying.';
+// Sites found automatically drop out on their own after repeated failures
+const isFound = s => String(s.kind).includes('found automatically');
+const bad = D.sources.filter(s => !s.ok && !String(s.error).startsWith('skipped') && !isFound(s)).length;
+const nFound = D.sources.filter(isFound).length;
+$('foot').textContent = `${D.sources.length} sources checked` + (nFound ? ` (${nFound} career sites found automatically)` : '') +
+  (bad ? `, ${bad} failed (listed below; fix or remove them in sources.toml).` : '.') + ' Scores are keyword-based estimates. Always read the posting before applying.';
 
 const QI = {met:'✓', partial:'~', missing:'✗', check:'?', soft:'·'};
 const num = x => Number.isInteger(x) ? x : x.toFixed(1);
