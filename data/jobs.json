@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29T13:04:14+00:00",
+ "updated": "2026-10-29T17:35:37+00:00",
  "jobs": [
   {
    "company": "Anduril",
@@ -552,6 +552,119 @@
    "last_seen": "2026-10-29"
   },
   {
+   "company": "Carrier",
+   "title": "Mechanical Engineering Intern - Summer",
+   "location": "CANHQ: CCS HQ - Syracuse, 6304 Carrier Parkway, East Syracuse, NY, 13057 USA",
+   "url": "https://carrier.wd5.myworkdayjobs.com/jobs/job/CANHQ-CCS-HQ---Syracuse-6304-Carrier-Parkway-East-Syracuse-NY-13057-USA/Mechanical-Engineering-Intern---Summer_30220771",
+   "source": "Carrier careers",
+   "posted": "2026-10-29",
+   "source_id": "Carrier",
+   "key": "wd:carrier:30220771",
+   "tracks": {
+    "broad": {
+     "score": 100,
+     "tier": "strong",
+     "parts": {
+      "fit": 40,
+      "skills": 35,
+      "eligibility": 25,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    }
+   },
+   "score": 100,
+   "tier": "strong",
+   "discipline": "Mechanical",
+   "quals": {
+    "required": [
+     {
+      "text": "Must be currently pursuing a Bachelor’s degree or Master’s degree in Mechanical Engineering or Aerospace Engineering",
+      "status": "met",
+      "why": "You're Aerospace Engineering"
+     },
+     {
+      "text": "Must have a GPA of 3.0 or higher",
+      "status": "check",
+      "why": "Needs GPA 3.0+"
+     },
+     {
+      "text": "Must be eligible to work in the US without sponsorship.",
+      "status": "soft",
+      "why": ""
+     }
+    ],
+    "preferred": [
+     {
+      "text": "Preferred coursework experience in fluid mechanics, aerodynamics, and turbomachinery design.",
+      "status": "met",
+      "why": "You have: Aerodynamics"
+     },
+     {
+      "text": "Familiarity within the following software: computer-aided design (CAD), such as SolidWorks, SpaceClaim, or Creo; programming environments such as MATLAB, Python",
+      "status": "met",
+      "why": "You have: CFD (STAR-CCM+), SolidWorks / CAD, Python"
+     },
+     {
+      "text": "Experience in the application of AI models to engineering problems",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Strong interest in the design and development of turbomachinery",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Previous research experience in a laboratory environment",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Interest in solving engineering problems through experimental and computational techniques",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Good communication and organizational skills",
+      "status": "soft",
+      "why": ""
+     }
+    ],
+    "summary": {
+     "required_checked": 1,
+     "required_met": 1.0,
+     "required_missing": 0,
+     "to_check": 1,
+     "preferred_met": 2,
+     "preferred_total": 2
+    }
+   },
+   "matched": [
+    "CFD (STAR-CCM+)",
+    "Aerodynamics",
+    "SolidWorks / CAD",
+    "Python"
+   ],
+   "related": [],
+   "gaps": [
+    "MATLAB",
+    "Creo",
+    "ANSYS",
+    "LabVIEW"
+   ],
+   "flags": [
+    {
+     "kind": "info",
+     "label": "Min GPA 3.0"
+    }
+   ],
+   "has_description": true,
+   "first_seen": "2026-10-29",
+   "last_seen": "2026-10-29"
+  },
+  {
    "company": "CesiumAstro",
    "title": "Summer 2027 - Flight Dynamics Internship",
    "location": "Huntsville, AL",
@@ -1022,142 +1135,6 @@
      "id": "citizen"
     }
    ],
-   "has_description": true,
-   "first_seen": "2026-10-28",
-   "last_seen": "2026-10-29"
-  },
-  {
-   "company": "Shield AI",
-   "title": "Summer 2027 - Mechanical Engineering Intern, Air Vehicle Systems and Test #6465+",
-   "location": "Seattle, Washington",
-   "url": "https://jobs.lever.co/shieldai/bc41648b-c201-4b01-8feb-d228cbfdd875",
-   "source": "Shield AI careers",
-   "posted": "2026-10-28",
-   "source_id": "Shield AI",
-   "key": "le:bc41648b-c201-4b01-8feb-d228cbfdd875",
-   "tracks": {
-    "summer": {
-     "score": 100,
-     "tier": "strong",
-     "parts": {
-      "fit": 40,
-      "skills": 35,
-      "eligibility": 25,
-      "requirements": 0
-     },
-     "season": "match",
-     "season_label": "Summer 2027"
-    },
-    "broad": {
-     "score": 100,
-     "tier": "strong",
-     "parts": {
-      "fit": 40,
-      "skills": 35,
-      "eligibility": 25,
-      "requirements": 0
-     },
-     "season": "match",
-     "season_label": "Summer 2027"
-    }
-   },
-   "score": 100,
-   "tier": "strong",
-   "discipline": "Mechanical",
-   "quals": {
-    "required": [
-     {
-      "text": "Currently pursuing an undergraduate, graduate, or Ph.D. degree in Mechanical Engineering, Aerospace Engineering, or a related STEM field.",
-      "status": "met",
-      "why": "You're Aerospace Engineering"
-     },
-     {
-      "text": "Strong foundation in mechanics, thermodynamics, fluid mechanics, heat transfer, physics, and mathematics, plus enough electrical and programming fluency to work",
-      "status": "met",
-      "why": "You have: Aerodynamics"
-     },
-     {
-      "text": "Experience on a multidisciplinary hardware project through an internship, job, research lab, student team, club, or personal project, etc.",
-      "status": "met",
-      "why": "You have: Student engineering team"
-     },
-     {
-      "text": "Great written and verbal communication.",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "Demonstrated history of showing ownership of project outcomes and delivering exceptional results.",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "Record of working hard, being a trustworthy teammate, holding yourself and others to high standards, and being kind to others.",
-      "status": "check",
-      "why": ""
-     }
-    ],
-    "preferred": [
-     {
-      "text": "Experience with Siemens NX, SolidWorks, CATIA, Creo, or a similar 3D CAD tool; Siemens NX is preferred.",
-      "status": "met",
-      "why": "You have: SolidWorks / CAD"
-     },
-     {
-      "text": "Hands-on experience with machining, additive manufacturing, composite or sheet-metal fabrication, mechanical assembly, or rapid prototyping.",
-      "status": "met",
-      "why": "You have: Composites (carbon fiber), Prototyping & fabrication"
-     },
-     {
-      "text": "Familiarity with load, strain, pressure, flow, temperature, vibration, or motion measurement and with basic data-acquisition systems.",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Experience using MATLAB, Python, LabVIEW, or similar tools to process, visualize, and interpret engineering data.",
-      "status": "met",
-      "why": "You have: Python"
-     },
-     {
-      "text": "Experience with test fixtures, actuators, electric motors, pumps, mechanisms, fluid systems, thermal systems, or other electromechanical hardware.",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Demonstrated adaptability, agility, and the ability to innovate under pressure to meet dynamic project demands and drive successful",
-      "status": "soft",
-      "why": ""
-     }
-    ],
-    "summary": {
-     "required_checked": 3,
-     "required_met": 3.0,
-     "required_missing": 0,
-     "to_check": 0,
-     "preferred_met": 3,
-     "preferred_total": 3
-    }
-   },
-   "matched": [
-    "Aerodynamics",
-    "SolidWorks / CAD",
-    "Composites (carbon fiber)",
-    "Python",
-    "Prototyping & fabrication",
-    "Student engineering team"
-   ],
-   "related": [],
-   "gaps": [
-    "MATLAB",
-    "Siemens NX",
-    "CATIA",
-    "Creo",
-    "LabVIEW",
-    "Machining / CNC",
-    "Heat transfer / thermal",
-    "Data acquisition / test"
-   ],
-   "flags": [],
    "has_description": true,
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-29"
@@ -1799,137 +1776,6 @@
   },
   {
    "company": "Lockheed Martin",
-   "title": "Mechanical Design Intern",
-   "location": "Grand Prairie, TX",
-   "url": "https://lockheedmartin.eightfold.ai/careers/job/996477505085",
-   "source": "Lockheed Martin careers",
-   "posted": "2026-10-22",
-   "source_id": "Lockheed Martin",
-   "key": "url:https://lockheedmartin.eightfold.ai/careers/job/996477505085",
-   "tracks": {
-    "summer": {
-     "score": 93,
-     "tier": "strong",
-     "parts": {
-      "fit": 36,
-      "skills": 35,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Season not stated"
-    },
-    "broad": {
-     "score": 97,
-     "tier": "strong",
-     "parts": {
-      "fit": 40,
-      "skills": 35,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Season not stated"
-    }
-   },
-   "score": 97,
-   "tier": "strong",
-   "discipline": "Mechanical",
-   "quals": {
-    "required": [
-     {
-      "text": "Pursuing a Bachelors in Mechanical Engineering or similar degree.",
-      "status": "met",
-      "why": "You're Aerospace Engineering"
-     },
-     {
-      "text": "Basic understanding of CAD design tools, such as PTC Creo, 3DX/CATIA, Solidworks, Siemens NX etc.",
-      "status": "met",
-      "why": "You have: SolidWorks / CAD"
-     },
-     {
-      "text": "Demonstrated successful group collaboration and/ or individual project work, ideally in a mechanics or design area.",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "Excellent problem-solving skills, with the ability to diagnose and troubleshoot complex mechanical issues, work with system integration issues, design challenge",
-      "status": "met",
-      "why": "You have: Prototyping & fabrication"
-     }
-    ],
-    "preferred": [
-     {
-      "text": "Hands‑on experience with machining, rapid prototyping, or lab equipment (CNC, 3‑D printers, test rigs)",
-      "status": "met",
-      "why": "You have: Prototyping & fabrication"
-     },
-     {
-      "text": "Experienced with GD&T, sketching, technical drawing standards, or similar hands-on hardware support.",
-      "status": "met",
-      "why": "You have: Prototyping & fabrication"
-     },
-     {
-      "text": "Basic FEA/CFD exposure (ANSYS, Abaqus, COMSOL).",
-      "status": "met",
-      "why": "You have: CFD (STAR-CCM+)"
-     },
-     {
-      "text": "Participation in engineering clubs, competitions (e.g. SAE, ASME competitions).",
-      "status": "met",
-      "why": "Your Formula SAE, rocketry, and rover projects"
-     },
-     {
-      "text": "Basic understanding of industry standards (ISO, ASME, ASTM).",
-      "status": "check",
-      "why": "Coursework or background (check your classes)"
-     },
-     {
-      "text": "Experience with MATLAB.",
-      "status": "missing",
-      "why": "Not on your resume: MATLAB"
-     },
-     {
-      "text": "Experience with Microsoft Office Suite.",
-      "status": "met",
-      "why": "You have: Excel / data analysis"
-     }
-    ],
-    "summary": {
-     "required_checked": 3,
-     "required_met": 3.0,
-     "required_missing": 0,
-     "to_check": 1,
-     "preferred_met": 5,
-     "preferred_total": 6
-    }
-   },
-   "matched": [
-    "CFD (STAR-CCM+)",
-    "SolidWorks / CAD",
-    "Prototyping & fabrication",
-    "Parametric / trade studies",
-    "Excel / data analysis"
-   ],
-   "related": [],
-   "gaps": [
-    "MATLAB",
-    "FEA / stress analysis",
-    "GD&T",
-    "Siemens NX",
-    "CATIA",
-    "Creo",
-    "ANSYS",
-    "Machining / CNC",
-    "Drawings / drafting"
-   ],
-   "flags": [],
-   "has_description": true,
-   "first_seen": "2026-10-23",
-   "last_seen": "2026-10-29"
-  },
-  {
-   "company": "Lockheed Martin",
    "title": "Mechanical Design Engineering Intern",
    "location": "Grand Prairie, TX",
    "url": "https://lockheedmartin.eightfold.ai/careers/job/996477394326",
@@ -2201,6 +2047,137 @@
    "flags": [],
    "has_description": true,
    "first_seen": "2026-10-22",
+   "last_seen": "2026-10-29"
+  },
+  {
+   "company": "Lockheed Martin",
+   "title": "Mechanical Design Intern",
+   "location": "Grand Prairie, TX",
+   "url": "https://lockheedmartin.eightfold.ai/careers/job/996477505085",
+   "source": "Lockheed Martin careers",
+   "posted": "2026-10-22",
+   "source_id": "Lockheed Martin",
+   "key": "url:https://lockheedmartin.eightfold.ai/careers/job/996477505085",
+   "tracks": {
+    "summer": {
+     "score": 93,
+     "tier": "strong",
+     "parts": {
+      "fit": 36,
+      "skills": 35,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Season not stated"
+    },
+    "broad": {
+     "score": 97,
+     "tier": "strong",
+     "parts": {
+      "fit": 40,
+      "skills": 35,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Season not stated"
+    }
+   },
+   "score": 97,
+   "tier": "strong",
+   "discipline": "Mechanical",
+   "quals": {
+    "required": [
+     {
+      "text": "Pursuing a Bachelors in Mechanical Engineering or similar degree.",
+      "status": "met",
+      "why": "You're Aerospace Engineering"
+     },
+     {
+      "text": "Basic understanding of CAD design tools, such as PTC Creo, 3DX/CATIA, Solidworks, Siemens NX etc.",
+      "status": "met",
+      "why": "You have: SolidWorks / CAD"
+     },
+     {
+      "text": "Demonstrated successful group collaboration and/ or individual project work, ideally in a mechanics or design area.",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Excellent problem-solving skills, with the ability to diagnose and troubleshoot complex mechanical issues, work with system integration issues, design challenge",
+      "status": "met",
+      "why": "You have: Prototyping & fabrication"
+     }
+    ],
+    "preferred": [
+     {
+      "text": "Hands‑on experience with machining, rapid prototyping, or lab equipment (CNC, 3‑D printers, test rigs)",
+      "status": "met",
+      "why": "You have: Prototyping & fabrication"
+     },
+     {
+      "text": "Experienced with GD&T, sketching, technical drawing standards, or similar hands-on hardware support.",
+      "status": "met",
+      "why": "You have: Prototyping & fabrication"
+     },
+     {
+      "text": "Basic FEA/CFD exposure (ANSYS, Abaqus, COMSOL).",
+      "status": "met",
+      "why": "You have: CFD (STAR-CCM+)"
+     },
+     {
+      "text": "Participation in engineering clubs, competitions (e.g. SAE, ASME competitions).",
+      "status": "met",
+      "why": "Your Formula SAE, rocketry, and rover projects"
+     },
+     {
+      "text": "Basic understanding of industry standards (ISO, ASME, ASTM).",
+      "status": "check",
+      "why": "Coursework or background (check your classes)"
+     },
+     {
+      "text": "Experience with MATLAB.",
+      "status": "missing",
+      "why": "Not on your resume: MATLAB"
+     },
+     {
+      "text": "Experience with Microsoft Office Suite.",
+      "status": "met",
+      "why": "You have: Excel / data analysis"
+     }
+    ],
+    "summary": {
+     "required_checked": 3,
+     "required_met": 3.0,
+     "required_missing": 0,
+     "to_check": 1,
+     "preferred_met": 5,
+     "preferred_total": 6
+    }
+   },
+   "matched": [
+    "CFD (STAR-CCM+)",
+    "SolidWorks / CAD",
+    "Prototyping & fabrication",
+    "Parametric / trade studies",
+    "Excel / data analysis"
+   ],
+   "related": [],
+   "gaps": [
+    "MATLAB",
+    "FEA / stress analysis",
+    "GD&T",
+    "Siemens NX",
+    "CATIA",
+    "Creo",
+    "ANSYS",
+    "Machining / CNC",
+    "Drawings / drafting"
+   ],
+   "flags": [],
+   "has_description": true,
+   "first_seen": "2026-10-23",
    "last_seen": "2026-10-29"
   },
   {
@@ -3652,6 +3629,166 @@
    ],
    "has_description": true,
    "first_seen": "2026-10-27",
+   "last_seen": "2026-10-29"
+  },
+  {
+   "company": "AeroVironment",
+   "title": "Aeromechanical Engineering Intern",
+   "location": "Moorpark, CA",
+   "url": "https://avav.wd1.myworkdayjobs.com/AVAV/job/Moorpark-CA/Aeromechanical-Engineering-Intern_9217",
+   "source": "AeroVironment careers",
+   "posted": "2026-10-29",
+   "source_id": "AeroVironment",
+   "key": "wd:avav:9217",
+   "tracks": {
+    "summer": {
+     "score": 89,
+     "tier": "strong",
+     "parts": {
+      "fit": 32,
+      "skills": 35,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Summer (year not stated)"
+    },
+    "broad": {
+     "score": 89,
+     "tier": "strong",
+     "parts": {
+      "fit": 32,
+      "skills": 35,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Summer (year not stated)"
+    }
+   },
+   "score": 89,
+   "tier": "strong",
+   "discipline": "General engineering",
+   "quals": {
+    "required": [
+     {
+      "text": "Currently pursuing a Bachelor’s degree in Mechanical Engineering, Aerospace Engineering , or a related discipline",
+      "status": "met",
+      "why": "You're Aerospace Engineering"
+     },
+     {
+      "text": "Exposure to CAD tools such as SolidWorks for 3D modeling and assembly design",
+      "status": "met",
+      "why": "You have: SolidWorks / CAD"
+     },
+     {
+      "text": "Foundational understanding of mechanical engineering principles, including statics, dynamics, thermodynamics, and materials",
+      "status": "check",
+      "why": "Coursework: Heat transfer / thermal (check your classes)"
+     },
+     {
+      "text": "Interest in air vehicles, robotics, or electromechanical systems",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Basic proficiency with Microsoft Office tools (Excel, Word, PowerPoint)",
+      "status": "met",
+      "why": "You have: Excel / data analysis"
+     },
+     {
+      "text": "Strong problem-solving and communication skills",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Willingness to learn, ask questions, and contribute to team efforts",
+      "status": "soft",
+      "why": ""
+     }
+    ],
+    "preferred": [
+     {
+      "text": "Experience with SolidWorks EPDM , MATLAB, or Agile PLM systems",
+      "status": "met",
+      "why": "You have: SolidWorks / CAD"
+     },
+     {
+      "text": "Hands-on experience with 3D printing , machining, or composite fabrication through class projects or personal builds",
+      "status": "met",
+      "why": "You have: Composites (carbon fiber), Prototyping & fabrication"
+     },
+     {
+      "text": "Familiarity with GD&T and engineering drawing standards (ASME Y14.5)",
+      "status": "missing",
+      "why": "Not on your resume: GD&T, Drawings / drafting"
+     },
+     {
+      "text": "Exposure to FEA tools, thermal analysis, or aerodynamic simulation (academic or project-based)",
+      "status": "met",
+      "why": "You have: Aerodynamics"
+     },
+     {
+      "text": "Interest in or experience with UAVs or aerospace vehicle systems",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Enthusiastic team player who demonstrates initiative, attention to detail, and accountability",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Ability to communicate ideas clearly, both in writing and in presentations",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Comfortable working in a fast-paced, iterative development environment",
+      "status": "soft",
+      "why": ""
+     }
+    ],
+    "summary": {
+     "required_checked": 3,
+     "required_met": 3.0,
+     "required_missing": 0,
+     "to_check": 1,
+     "preferred_met": 3,
+     "preferred_total": 4
+    }
+   },
+   "matched": [
+    "Aerodynamics",
+    "SolidWorks / CAD",
+    "Composites (carbon fiber)",
+    "Prototyping & fabrication",
+    "Excel / data analysis"
+   ],
+   "related": [
+    "C (close to C++)"
+   ],
+   "gaps": [
+    "MATLAB",
+    "FEA / stress analysis",
+    "GD&T",
+    "Machining / CNC",
+    "Heat transfer / thermal",
+    "Drawings / drafting"
+   ],
+   "flags": [
+    {
+     "kind": "info",
+     "label": "Min GPA 3.0"
+    },
+    {
+     "kind": "info",
+     "label": "U.S. person / ITAR",
+     "id": "citizen"
+    }
+   ],
+   "has_description": true,
+   "first_seen": "2026-10-29",
    "last_seen": "2026-10-29"
   },
   {
@@ -5514,133 +5651,6 @@
   },
   {
    "company": "Lockheed Martin",
-   "title": "Mechanical Engineer Intern (Radio Frequency/RF Product)",
-   "location": "Andover, MA",
-   "url": "https://lockheedmartin.eightfold.ai/careers/job/996477240545",
-   "source": "Lockheed Martin careers",
-   "posted": "2026-10-16",
-   "source_id": "Lockheed Martin",
-   "key": "url:https://lockheedmartin.eightfold.ai/careers/job/996477240545",
-   "tracks": {
-    "summer": {
-     "score": 77,
-     "tier": "strong",
-     "parts": {
-      "fit": 32,
-      "skills": 23,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Summer (year not stated)"
-    },
-    "broad": {
-     "score": 85,
-     "tier": "strong",
-     "parts": {
-      "fit": 40,
-      "skills": 23,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Summer (year not stated)"
-    }
-   },
-   "score": 85,
-   "tier": "strong",
-   "discipline": "Mechanical",
-   "quals": {
-    "required": [
-     {
-      "text": "Pursuing Bachelors degree from an accredited college in Mechanical Engineering, Electrical Engineering, or a related discipline.",
-      "status": "met",
-      "why": "You're Aerospace Engineering"
-     },
-     {
-      "text": "Must be a US Citizen;  this position will require a government security clearance. This position is located at a facility that requires special access.",
-      "status": "met",
-      "why": "You're a U.S. citizen"
-     },
-     {
-      "text": "Knowledge or Coursework with 3D CAD tools. This may include experience with CREO, Catia, Siemens NX, SolidWorks, Zuken, or similar skills.",
-      "status": "met",
-      "why": "You have: SolidWorks / CAD"
-     },
-     {
-      "text": "Ability to obtain a clearance.",
-      "status": "met",
-      "why": "You're a U.S. citizen"
-     }
-    ],
-    "preferred": [
-     {
-      "text": "Ability to engage with mechanical drawing standards and experience with detail, assembly, and installation of type 2D drawings.",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Knowledge of manufacturing and manufacturing processes. This may include: GD&T, Engineering drawings, Machining techniques, Design for Manufacturing (DFM), Desi",
-      "status": "check",
-      "why": "Coursework: GD&T, Machining / CNC (check your classes)"
-     },
-     {
-      "text": "Familiarity with FEA (Finite Element Analysis) for thermal and stress analysis.",
-      "status": "missing",
-      "why": "Not on your resume: FEA / stress analysis"
-     },
-     {
-      "text": "Knowledge and desire to work on electronic hardware such as Electronic Housings, Circuit Card Assemblies, and Wire Harnesses (cables).",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Knowledge of Circuit Card Assembly (CCA) design and manufacturing methods.",
-      "status": "check",
-      "why": "Coursework or background (check your classes)"
-     }
-    ],
-    "summary": {
-     "required_checked": 4,
-     "required_met": 4.0,
-     "required_missing": 0,
-     "to_check": 2,
-     "preferred_met": 0,
-     "preferred_total": 1
-    }
-   },
-   "matched": [
-    "SolidWorks / CAD",
-    "Prototyping & fabrication"
-   ],
-   "related": [],
-   "gaps": [
-    "FEA / stress analysis",
-    "GD&T",
-    "Siemens NX",
-    "CATIA",
-    "Creo",
-    "Machining / CNC",
-    "Drawings / drafting"
-   ],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "U.S. person / ITAR",
-     "id": "citizen"
-    },
-    {
-     "kind": "info",
-     "label": "Clearance",
-     "id": "clearance"
-    }
-   ],
-   "has_description": true,
-   "first_seen": "2026-10-16",
-   "last_seen": "2026-10-29"
-  },
-  {
-   "company": "Lockheed Martin",
    "title": "Mechanical Engineer Intern - Radio Frequency (RF) Product",
    "location": "Andover, MA",
    "url": "https://lockheedmartin.eightfold.ai/careers/job/996477274152",
@@ -5764,6 +5774,133 @@
    ],
    "has_description": true,
    "first_seen": "2026-10-14",
+   "last_seen": "2026-10-29"
+  },
+  {
+   "company": "Lockheed Martin",
+   "title": "Mechanical Engineer Intern (Radio Frequency/RF Product)",
+   "location": "Andover, MA",
+   "url": "https://lockheedmartin.eightfold.ai/careers/job/996477240545",
+   "source": "Lockheed Martin careers",
+   "posted": "2026-10-16",
+   "source_id": "Lockheed Martin",
+   "key": "url:https://lockheedmartin.eightfold.ai/careers/job/996477240545",
+   "tracks": {
+    "summer": {
+     "score": 77,
+     "tier": "strong",
+     "parts": {
+      "fit": 32,
+      "skills": 23,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Summer (year not stated)"
+    },
+    "broad": {
+     "score": 85,
+     "tier": "strong",
+     "parts": {
+      "fit": 40,
+      "skills": 23,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Summer (year not stated)"
+    }
+   },
+   "score": 85,
+   "tier": "strong",
+   "discipline": "Mechanical",
+   "quals": {
+    "required": [
+     {
+      "text": "Pursuing Bachelors degree from an accredited college in Mechanical Engineering, Electrical Engineering, or a related discipline.",
+      "status": "met",
+      "why": "You're Aerospace Engineering"
+     },
+     {
+      "text": "Must be a US Citizen;  this position will require a government security clearance. This position is located at a facility that requires special access.",
+      "status": "met",
+      "why": "You're a U.S. citizen"
+     },
+     {
+      "text": "Knowledge or Coursework with 3D CAD tools. This may include experience with CREO, Catia, Siemens NX, SolidWorks, Zuken, or similar skills.",
+      "status": "met",
+      "why": "You have: SolidWorks / CAD"
+     },
+     {
+      "text": "Ability to obtain a clearance.",
+      "status": "met",
+      "why": "You're a U.S. citizen"
+     }
+    ],
+    "preferred": [
+     {
+      "text": "Ability to engage with mechanical drawing standards and experience with detail, assembly, and installation of type 2D drawings.",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Knowledge of manufacturing and manufacturing processes. This may include: GD&T, Engineering drawings, Machining techniques, Design for Manufacturing (DFM), Desi",
+      "status": "check",
+      "why": "Coursework: GD&T, Machining / CNC (check your classes)"
+     },
+     {
+      "text": "Familiarity with FEA (Finite Element Analysis) for thermal and stress analysis.",
+      "status": "missing",
+      "why": "Not on your resume: FEA / stress analysis"
+     },
+     {
+      "text": "Knowledge and desire to work on electronic hardware such as Electronic Housings, Circuit Card Assemblies, and Wire Harnesses (cables).",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Knowledge of Circuit Card Assembly (CCA) design and manufacturing methods.",
+      "status": "check",
+      "why": "Coursework or background (check your classes)"
+     }
+    ],
+    "summary": {
+     "required_checked": 4,
+     "required_met": 4.0,
+     "required_missing": 0,
+     "to_check": 2,
+     "preferred_met": 0,
+     "preferred_total": 1
+    }
+   },
+   "matched": [
+    "SolidWorks / CAD",
+    "Prototyping & fabrication"
+   ],
+   "related": [],
+   "gaps": [
+    "FEA / stress analysis",
+    "GD&T",
+    "Siemens NX",
+    "CATIA",
+    "Creo",
+    "Machining / CNC",
+    "Drawings / drafting"
+   ],
+   "flags": [
+    {
+     "kind": "info",
+     "label": "U.S. person / ITAR",
+     "id": "citizen"
+    },
+    {
+     "kind": "info",
+     "label": "Clearance",
+     "id": "clearance"
+    }
+   ],
+   "has_description": true,
+   "first_seen": "2026-10-16",
    "last_seen": "2026-10-29"
   },
   {
@@ -8369,6 +8506,110 @@
   },
   {
    "company": "Lockheed Martin",
+   "title": "Airframe Design Intern",
+   "location": "Stratford, CT",
+   "url": "https://lockheedmartin.eightfold.ai/careers/job/996477329501",
+   "source": "Lockheed Martin careers",
+   "posted": "2026-10-20",
+   "source_id": "Lockheed Martin",
+   "key": "url:https://lockheedmartin.eightfold.ai/careers/job/996477329501",
+   "tracks": {
+    "summer": {
+     "score": 79,
+     "tier": "strong",
+     "parts": {
+      "fit": 40,
+      "skills": 14,
+      "eligibility": 25,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    },
+    "broad": {
+     "score": 79,
+     "tier": "strong",
+     "parts": {
+      "fit": 40,
+      "skills": 14,
+      "eligibility": 25,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    }
+   },
+   "score": 79,
+   "tier": "strong",
+   "discipline": "Aerospace",
+   "quals": {
+    "required": [
+     {
+      "text": "Enrolled in a Bachelor's Degree program such as Mechanical Engineering, Mechanical EngineeringTechnology, Aeronautical Engineering, Aerospace Engineering, or eq",
+      "status": "met",
+      "why": "You're Aerospace Engineering"
+     },
+     {
+      "text": "Proficient with Business Software Tools (Excel, Power Point, Word)",
+      "status": "met",
+      "why": "You have: Excel / data analysis"
+     },
+     {
+      "text": "Basic knowledge with Engineering Software Tools (3D/2D CAD)",
+      "status": "met",
+      "why": "You have: SolidWorks / CAD"
+     },
+     {
+      "text": "Must be a US Citizen",
+      "status": "met",
+      "why": "You're a U.S. citizen"
+     }
+    ],
+    "preferred": [
+     {
+      "text": "Strong verbal communication and technical writing skills",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Highly competitive and motivated to take ownership of commitments and meet objectives",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Capable of managing complex tasks and drive them to successful outcomes",
+      "status": "check",
+      "why": ""
+     }
+    ],
+    "summary": {
+     "required_checked": 4,
+     "required_met": 4.0,
+     "required_missing": 0,
+     "to_check": 0,
+     "preferred_met": 0,
+     "preferred_total": 0
+    }
+   },
+   "matched": [
+    "SolidWorks / CAD",
+    "Excel / data analysis"
+   ],
+   "related": [],
+   "gaps": [],
+   "flags": [
+    {
+     "kind": "info",
+     "label": "U.S. person / ITAR",
+     "id": "citizen"
+    }
+   ],
+   "has_description": true,
+   "first_seen": "2026-10-29",
+   "last_seen": "2026-10-29"
+  },
+  {
+   "company": "Lockheed Martin",
    "title": "Systems Engineer (Integration and Test) - Intern",
    "location": "Moorestown, NJ",
    "url": "https://lockheedmartin.eightfold.ai/careers/job/996477267744",
@@ -8478,110 +8719,6 @@
    ],
    "has_description": true,
    "first_seen": "2026-10-16",
-   "last_seen": "2026-10-29"
-  },
-  {
-   "company": "Lockheed Martin",
-   "title": "Airframe Design Intern",
-   "location": "Stratford, CT",
-   "url": "https://lockheedmartin.eightfold.ai/careers/job/996477329501",
-   "source": "Lockheed Martin careers",
-   "posted": "2026-10-20",
-   "source_id": "Lockheed Martin",
-   "key": "url:https://lockheedmartin.eightfold.ai/careers/job/996477329501",
-   "tracks": {
-    "summer": {
-     "score": 79,
-     "tier": "strong",
-     "parts": {
-      "fit": 40,
-      "skills": 14,
-      "eligibility": 25,
-      "requirements": 0
-     },
-     "season": "match",
-     "season_label": "Summer 2027"
-    },
-    "broad": {
-     "score": 79,
-     "tier": "strong",
-     "parts": {
-      "fit": 40,
-      "skills": 14,
-      "eligibility": 25,
-      "requirements": 0
-     },
-     "season": "match",
-     "season_label": "Summer 2027"
-    }
-   },
-   "score": 79,
-   "tier": "strong",
-   "discipline": "Aerospace",
-   "quals": {
-    "required": [
-     {
-      "text": "Enrolled in a Bachelor's Degree program such as Mechanical Engineering, Mechanical EngineeringTechnology, Aeronautical Engineering, Aerospace Engineering, or eq",
-      "status": "met",
-      "why": "You're Aerospace Engineering"
-     },
-     {
-      "text": "Proficient with Business Software Tools (Excel, Power Point, Word)",
-      "status": "met",
-      "why": "You have: Excel / data analysis"
-     },
-     {
-      "text": "Basic knowledge with Engineering Software Tools (3D/2D CAD)",
-      "status": "met",
-      "why": "You have: SolidWorks / CAD"
-     },
-     {
-      "text": "Must be a US Citizen",
-      "status": "met",
-      "why": "You're a U.S. citizen"
-     }
-    ],
-    "preferred": [
-     {
-      "text": "Strong verbal communication and technical writing skills",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "Highly competitive and motivated to take ownership of commitments and meet objectives",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "Capable of managing complex tasks and drive them to successful outcomes",
-      "status": "check",
-      "why": ""
-     }
-    ],
-    "summary": {
-     "required_checked": 4,
-     "required_met": 4.0,
-     "required_missing": 0,
-     "to_check": 0,
-     "preferred_met": 0,
-     "preferred_total": 0
-    }
-   },
-   "matched": [
-    "SolidWorks / CAD",
-    "Excel / data analysis"
-   ],
-   "related": [],
-   "gaps": [],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "U.S. person / ITAR",
-     "id": "citizen"
-    }
-   ],
-   "has_description": true,
-   "first_seen": "2026-10-29",
    "last_seen": "2026-10-29"
   },
   {
@@ -8826,6 +8963,146 @@
    ],
    "has_description": true,
    "first_seen": "2026-10-27",
+   "last_seen": "2026-10-29"
+  },
+  {
+   "company": "AeroVironment",
+   "title": "GNC / Autonomy Engineering Intern",
+   "location": "Simi Valley, CA",
+   "url": "https://avav.wd1.myworkdayjobs.com/AVAV/job/Simi-Valley-CA/GNC---Autonomy-Engineering-Intern_9222",
+   "source": "AeroVironment careers",
+   "posted": "2026-10-29",
+   "source_id": "AeroVironment",
+   "key": "wd:avav:9222",
+   "tracks": {
+    "summer": {
+     "score": 78,
+     "tier": "strong",
+     "parts": {
+      "fit": 40,
+      "skills": 16,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Summer (year not stated)"
+    },
+    "broad": {
+     "score": 76,
+     "tier": "strong",
+     "parts": {
+      "fit": 38,
+      "skills": 16,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Summer (year not stated)"
+    }
+   },
+   "score": 78,
+   "tier": "strong",
+   "discipline": "Aerospace",
+   "quals": {
+    "required": [
+     {
+      "text": "Currently pursuing a Bachelor’s or Master’s degree in Aerospace Engineering, Electrical Engineering, Mechanical Engineering, Computer Science, or a related fiel",
+      "status": "met",
+      "why": "You're Aerospace Engineering"
+     },
+     {
+      "text": "Completed coursework in one or more of the following areas: GN&C, flight dynamics, control systems, embedded systems, or robotics",
+      "status": "partial",
+      "why": "Close: C ≈ C++"
+     },
+     {
+      "text": "Strong interest in aircraft systems, GN&C, and aerospace engineering",
+      "status": "partial",
+      "why": "Close: C ≈ C++"
+     },
+     {
+      "text": "Effective communication skills and a collaborative attitude",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Must be eligible to work in the U.S. and willing to travel domestically (up to 10–20%, if needed)",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Ability to work in an office, lab, or test environment",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "May require standing or sitting for extended periods and use of standard office equipment",
+      "status": "check",
+      "why": ""
+     }
+    ],
+    "preferred": [
+     {
+      "text": "Basic proficiency in MATLAB, Simulink, or similar modeling tools is a plus",
+      "status": "missing",
+      "why": "Not on your resume: MATLAB, Simulink"
+     },
+     {
+      "text": "Familiarity with any of the following: embedded programming, hardware-in-the-loop (HIL) testing, or flight software development",
+      "status": "partial",
+      "why": "Close: Embedded ≈ Arduino / microcontrollers"
+     },
+     {
+      "text": "Hands-on project or lab experience involving control systems or autonomous vehicles (e.g., drones, robotics projects)",
+      "status": "met",
+      "why": "You have: Prototyping & fabrication"
+     },
+     {
+      "text": "Enthusiastic about learning and contributing to real-world aerospace projects",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Ability to adapt in a dynamic team-oriented environment",
+      "status": "check",
+      "why": ""
+     }
+    ],
+    "summary": {
+     "required_checked": 3,
+     "required_met": 2.0,
+     "required_missing": 0,
+     "to_check": 0,
+     "preferred_met": 1,
+     "preferred_total": 3
+    }
+   },
+   "matched": [
+    "Prototyping & fabrication",
+    "Excel / data analysis"
+   ],
+   "related": [
+    "C (close to C++)",
+    "Embedded (close to Arduino / microcontrollers)"
+   ],
+   "gaps": [
+    "MATLAB",
+    "Simulink",
+    "Controls / GNC"
+   ],
+   "flags": [
+    {
+     "kind": "info",
+     "label": "Min GPA 3.0"
+    },
+    {
+     "kind": "info",
+     "label": "U.S. person / ITAR",
+     "id": "citizen"
+    }
+   ],
+   "has_description": true,
+   "first_seen": "2026-10-29",
    "last_seen": "2026-10-29"
   },
   {
@@ -11386,140 +11663,6 @@
    "last_seen": "2026-10-29"
   },
   {
-   "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
-   "title": "RF Systems Engineer Intern (Summer 2027)",
-   "location": "US-CA-EL SEGUNDO-E01 ~ 2000 E El Segundo Blvd ~ BLDG E01",
-   "url": "https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-CA-EL-SEGUNDO-E01--2000-E-El-Segundo-Blvd--BLDG-E01/RF-Systems-Engineer-Intern--Summer-2027-_01880552",
-   "source": "RTX (Raytheon, Pratt & Whitney, Collins) careers",
-   "posted": "2026-10-27",
-   "source_id": "RTX (Raytheon, Pratt & Whitney, Collins)",
-   "key": "wd:globalhr:01880552",
-   "tracks": {
-    "summer": {
-     "score": 75,
-     "tier": "strong",
-     "parts": {
-      "fit": 18,
-      "skills": 32,
-      "eligibility": 25,
-      "requirements": 0
-     },
-     "season": "match",
-     "season_label": "Summer 2027"
-    },
-    "broad": {
-     "score": 71,
-     "tier": "good",
-     "parts": {
-      "fit": 14,
-      "skills": 32,
-      "eligibility": 25,
-      "requirements": 0
-     },
-     "season": "match",
-     "season_label": "Summer 2027"
-    }
-   },
-   "score": 75,
-   "tier": "strong",
-   "discipline": "Electrical",
-   "quals": {
-    "required": [
-     {
-      "text": "U.S. citizenship is required, as only U.S. citizens are authorized to access information under this program/contract.",
-      "status": "met",
-      "why": "You're a U.S. citizen"
-     },
-     {
-      "text": "Must be pursuing Bachelor’s or Advanced degree in Science, Technology, Engineering, or Mathematics (STEM) and actively enrolled through the completion of the in",
-      "status": "met",
-      "why": "You're Aerospace Engineering"
-     },
-     {
-      "text": "Must have a minimum of 30 hours of credit by the start of the internship / co-op session.",
-      "status": "met",
-      "why": "You'll have about 60 credits"
-     },
-     {
-      "text": "Experience with RF fundamentals: link budget analysis, modulation schemes, noise figure, gain, bandwidth, filtering, or wave propagation",
-      "status": "check",
-      "why": "Coursework or background (check your classes)"
-     },
-     {
-      "text": "Experience with RF test equipment (spectrum analyzers, VNAs, signal generators) through coursework, internships, or lab work",
-      "status": "check",
-      "why": "Coursework or background (check your classes)"
-     },
-     {
-      "text": "Experience using MATLAB for data analysis",
-      "status": "met",
-      "why": "You have: Excel / data analysis"
-     },
-     {
-      "text": "Internship or project experience related to RF, wireless, radar, SDR, or satellite communication",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "Knowledge of systems engineering architecture and design, integration and test, and verification and validation approaches",
-      "status": "check",
-      "why": "Coursework or background (check your classes)"
-     },
-     {
-      "text": "Experience with programming using C++ or scripting/automation tools like Python or LabVIEW",
-      "status": "met",
-      "why": "You have: Python, C++"
-     },
-     {
-      "text": "Hands-on experience with antennas or PCB layout for RF circuits",
-      "status": "met",
-      "why": "You have: Prototyping & fabrication"
-     },
-     {
-      "text": "Exposure to digital signal processing concepts",
-      "status": "check",
-      "why": ""
-     }
-    ],
-    "preferred": [],
-    "summary": {
-     "required_checked": 6,
-     "required_met": 6.0,
-     "required_missing": 0,
-     "to_check": 3,
-     "preferred_met": 0,
-     "preferred_total": 0
-    }
-   },
-   "matched": [
-    "Python",
-    "C++",
-    "Prototyping & fabrication",
-    "Parametric / trade studies",
-    "Excel / data analysis"
-   ],
-   "related": [],
-   "gaps": [
-    "MATLAB",
-    "LabVIEW"
-   ],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "U.S. person / ITAR",
-     "id": "citizen"
-    },
-    {
-     "kind": "info",
-     "label": "Clearance",
-     "id": "clearance"
-    }
-   ],
-   "has_description": true,
-   "first_seen": "2026-10-27",
-   "last_seen": "2026-10-29"
-  },
-  {
    "company": "Formlabs",
    "title": "Hardware Systems Integration Intern (Summer 2027)",
    "location": "Somerville, MA",
@@ -12954,107 +13097,6 @@
    "company": "Lockheed Martin",
    "title": "Test Engineering Intern",
    "location": "Owego, NY",
-   "url": "https://lockheedmartin.eightfold.ai/careers/job/996477364317",
-   "source": "Lockheed Martin careers",
-   "posted": "2026-10-15",
-   "source_id": "Lockheed Martin",
-   "key": "url:https://lockheedmartin.eightfold.ai/careers/job/996477364317",
-   "tracks": {
-    "summer": {
-     "score": 60,
-     "tier": "good",
-     "parts": {
-      "fit": 22,
-      "skills": 16,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Season not stated"
-    },
-    "broad": {
-     "score": 72,
-     "tier": "strong",
-     "parts": {
-      "fit": 34,
-      "skills": 16,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Season not stated"
-    }
-   },
-   "score": 72,
-   "tier": "strong",
-   "discipline": "Mechanical",
-   "quals": {
-    "required": [
-     {
-      "text": "Currently enrolled in Electrical Engineering, Electrical Engineering Technology, or a closely related discipline; pursuing a Bachelor’s degree.",
-      "status": "partial",
-      "why": "Other majors listed; Aerospace Engineering may count as related"
-     },
-     {
-      "text": "Strong academic foundation in analog/digital circuit design, signal processing, and systems communication.",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "Hands‑on laboratory experience: soldering, using test equipment, and prototype building.",
-      "status": "met",
-      "why": "You have: Prototyping & fabrication"
-     },
-     {
-      "text": "Must be a US Citizen.; This position is located at a facility that requires special access",
-      "status": "met",
-      "why": "You're a U.S. citizen"
-     }
-    ],
-    "preferred": [
-     {
-      "text": "Familiarity with microcontroller development (Arduino, STM32, PIC, etc.)",
-      "status": "met",
-      "why": "You have: Arduino / microcontrollers"
-     },
-     {
-      "text": "Familiarity with RF communication concepts and protocols",
-      "status": "soft",
-      "why": ""
-     }
-    ],
-    "summary": {
-     "required_checked": 3,
-     "required_met": 2.5,
-     "required_missing": 0,
-     "to_check": 0,
-     "preferred_met": 1,
-     "preferred_total": 1
-    }
-   },
-   "matched": [
-    "Prototyping & fabrication",
-    "Arduino / microcontrollers"
-   ],
-   "related": [],
-   "gaps": [
-    "Data acquisition / test"
-   ],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "U.S. person / ITAR",
-     "id": "citizen"
-    }
-   ],
-   "has_description": true,
-   "first_seen": "2026-10-16",
-   "last_seen": "2026-10-29"
-  },
-  {
-   "company": "Lockheed Martin",
-   "title": "Test Engineering Intern",
-   "location": "Owego, NY",
    "url": "https://lockheedmartin.eightfold.ai/careers/job/996477364315",
    "source": "Lockheed Martin careers",
    "posted": "2026-10-15",
@@ -13150,6 +13192,107 @@
    ],
    "has_description": true,
    "first_seen": "2026-10-29",
+   "last_seen": "2026-10-29"
+  },
+  {
+   "company": "Lockheed Martin",
+   "title": "Test Engineering Intern",
+   "location": "Owego, NY",
+   "url": "https://lockheedmartin.eightfold.ai/careers/job/996477364317",
+   "source": "Lockheed Martin careers",
+   "posted": "2026-10-15",
+   "source_id": "Lockheed Martin",
+   "key": "url:https://lockheedmartin.eightfold.ai/careers/job/996477364317",
+   "tracks": {
+    "summer": {
+     "score": 60,
+     "tier": "good",
+     "parts": {
+      "fit": 22,
+      "skills": 16,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Season not stated"
+    },
+    "broad": {
+     "score": 72,
+     "tier": "strong",
+     "parts": {
+      "fit": 34,
+      "skills": 16,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Season not stated"
+    }
+   },
+   "score": 72,
+   "tier": "strong",
+   "discipline": "Mechanical",
+   "quals": {
+    "required": [
+     {
+      "text": "Currently enrolled in Electrical Engineering, Electrical Engineering Technology, or a closely related discipline; pursuing a Bachelor’s degree.",
+      "status": "partial",
+      "why": "Other majors listed; Aerospace Engineering may count as related"
+     },
+     {
+      "text": "Strong academic foundation in analog/digital circuit design, signal processing, and systems communication.",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Hands‑on laboratory experience: soldering, using test equipment, and prototype building.",
+      "status": "met",
+      "why": "You have: Prototyping & fabrication"
+     },
+     {
+      "text": "Must be a US Citizen.; This position is located at a facility that requires special access",
+      "status": "met",
+      "why": "You're a U.S. citizen"
+     }
+    ],
+    "preferred": [
+     {
+      "text": "Familiarity with microcontroller development (Arduino, STM32, PIC, etc.)",
+      "status": "met",
+      "why": "You have: Arduino / microcontrollers"
+     },
+     {
+      "text": "Familiarity with RF communication concepts and protocols",
+      "status": "soft",
+      "why": ""
+     }
+    ],
+    "summary": {
+     "required_checked": 3,
+     "required_met": 2.5,
+     "required_missing": 0,
+     "to_check": 0,
+     "preferred_met": 1,
+     "preferred_total": 1
+    }
+   },
+   "matched": [
+    "Prototyping & fabrication",
+    "Arduino / microcontrollers"
+   ],
+   "related": [],
+   "gaps": [
+    "Data acquisition / test"
+   ],
+   "flags": [
+    {
+     "kind": "info",
+     "label": "U.S. person / ITAR",
+     "id": "citizen"
+    }
+   ],
+   "has_description": true,
+   "first_seen": "2026-10-16",
    "last_seen": "2026-10-29"
   },
   {
@@ -13667,6 +13810,133 @@
    ],
    "has_description": true,
    "first_seen": "2026-10-26",
+   "last_seen": "2026-10-29"
+  },
+  {
+   "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
+   "title": "Mechanical - Structural/Thermal Engineering Intern (Summer 2027)",
+   "location": "US-AZ-TUCSON-805 ~ 1151 E Hermans Rd ~ BLDG 805",
+   "url": "https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-AZ-TUCSON-805--1151-E-Hermans-Rd--BLDG-805/Mechanical---Structural-Thermal-Engineering-Intern--Summer-2027-_01882958",
+   "source": "RTX (Raytheon, Pratt & Whitney, Collins) careers",
+   "posted": "2026-10-29",
+   "source_id": "RTX (Raytheon, Pratt & Whitney, Collins)",
+   "key": "wd:globalhr:01882958",
+   "tracks": {
+    "summer": {
+     "score": 71,
+     "tier": "good",
+     "parts": {
+      "fit": 40,
+      "skills": 16,
+      "eligibility": 25,
+      "requirements": -10
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    },
+    "broad": {
+     "score": 71,
+     "tier": "good",
+     "parts": {
+      "fit": 40,
+      "skills": 16,
+      "eligibility": 25,
+      "requirements": -10
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    }
+   },
+   "score": 71,
+   "tier": "good",
+   "discipline": "Mechanical",
+   "quals": {
+    "required": [
+     {
+      "text": "Active and transferable U.S. government issued security clearance is required prior to start date.​ U.S. citizenship is required, as only U.S. citizens are elig",
+      "status": "missing",
+      "why": "Needs a clearance you'd already have to hold"
+     },
+     {
+      "text": "Must be pursuing Bachelor’s or Advanced degree in Mechanical Engineering, Aerospace Engineering or related (STEM) major and actively",
+      "status": "met",
+      "why": "You're Aerospace Engineering"
+     },
+     {
+      "text": "Must have a minimum of 60 hours of credit by the start of the internship / co-op session.",
+      "status": "met",
+      "why": "You'll have about 60 credits"
+     },
+     {
+      "text": "Experience with finite element analysis (FEA) tools such as ANSYS Workbench, Patran, Nastran, or Thermal Desktop.",
+      "status": "missing",
+      "why": "Not on your resume: FEA / stress analysis, ANSYS, Heat transfer / thermal"
+     },
+     {
+      "text": "Experience may be obtained through on-the-job experience, research, coursework, or projects",
+      "status": "check",
+      "why": "Coursework or background (check your classes)"
+     },
+     {
+      "text": "Experience with Microsoft Office tools: Word, Excel, Outlook, PowerPoint",
+      "status": "met",
+      "why": "You have: Excel / data analysis"
+     },
+     {
+      "text": "Experience with CAD tools such as CREO",
+      "status": "met",
+      "why": "You have: SolidWorks / CAD"
+     },
+     {
+      "text": "Experience solving problems using data‑driven approaches",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "GPA of 3.0",
+      "status": "check",
+      "why": "Needs GPA 3.0+"
+     }
+    ],
+    "preferred": [],
+    "summary": {
+     "required_checked": 6,
+     "required_met": 4.0,
+     "required_missing": 2,
+     "to_check": 2,
+     "preferred_met": 0,
+     "preferred_total": 0
+    }
+   },
+   "matched": [
+    "SolidWorks / CAD",
+    "Excel / data analysis"
+   ],
+   "related": [],
+   "gaps": [
+    "FEA / stress analysis",
+    "Creo",
+    "ANSYS",
+    "Heat transfer / thermal"
+   ],
+   "flags": [
+    {
+     "kind": "info",
+     "label": "Min GPA 3.0"
+    },
+    {
+     "kind": "info",
+     "label": "U.S. person / ITAR",
+     "id": "citizen"
+    },
+    {
+     "kind": "info",
+     "label": "Clearance",
+     "id": "clearance"
+    }
+   ],
+   "has_description": true,
+   "first_seen": "2026-10-29",
    "last_seen": "2026-10-29"
   },
   {
@@ -14337,6 +14607,100 @@
   },
   {
    "company": "Northrop Grumman",
+   "title": "2027 Structural Engineering Intern- Roy UT",
+   "location": "United States-Utah-Roy",
+   "url": "https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site/job/United-States-Utah-Roy/XMLNAME-2027-Structural-Engineering-Intern--Roy-UT_R10258270",
+   "source": "Northrop Grumman careers",
+   "posted": "2026-10-29",
+   "source_id": "Northrop Grumman",
+   "key": "wd:ngc:r10258270",
+   "tracks": {
+    "summer": {
+     "score": 69,
+     "tier": "good",
+     "parts": {
+      "fit": 40,
+      "skills": 16,
+      "eligibility": 13,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    },
+    "broad": {
+     "score": 57,
+     "tier": "good",
+     "parts": {
+      "fit": 28,
+      "skills": 16,
+      "eligibility": 13,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    }
+   },
+   "score": 69,
+   "tier": "good",
+   "discipline": "Civil & construction",
+   "quals": {
+    "required": [],
+    "preferred": [
+     {
+      "text": "Have an overall cumulative GPA of 3.70/4.0 or higher",
+      "status": "check",
+      "why": "Needs GPA 3.7+"
+     },
+     {
+      "text": "Current active Secret Security Clearance or higher",
+      "status": "missing",
+      "why": "Needs a clearance you'd already have to hold"
+     }
+    ],
+    "summary": {
+     "required_checked": 0,
+     "required_met": 0.0,
+     "required_missing": 0,
+     "to_check": 1,
+     "preferred_met": 0,
+     "preferred_total": 1
+    }
+   },
+   "matched": [
+    "Composites (carbon fiber)"
+   ],
+   "related": [
+    "CATIA (close to SolidWorks / CAD)"
+   ],
+   "gaps": [
+    "Heat transfer / thermal"
+   ],
+   "flags": [
+    {
+     "kind": "warn",
+     "label": "Grad window 2027"
+    },
+    {
+     "kind": "info",
+     "label": "Min GPA 3.7"
+    },
+    {
+     "kind": "info",
+     "label": "U.S. person / ITAR",
+     "id": "citizen"
+    },
+    {
+     "kind": "info",
+     "label": "Clearance",
+     "id": "clearance"
+    }
+   ],
+   "has_description": true,
+   "first_seen": "2026-10-29",
+   "last_seen": "2026-10-29"
+  },
+  {
+   "company": "Northrop Grumman",
    "title": "2027 Mechanical Design Intern - Gilbert AZ",
    "location": "United States-Arizona-Gilbert",
    "url": "https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site/job/United-States-Arizona-Gilbert/XMLNAME-2027-Mechanical-Design-Intern---Gilbert-AZ_R10258156",
@@ -14535,6 +14899,58 @@
     }
    ],
    "has_description": true,
+   "first_seen": "2026-10-28",
+   "last_seen": "2026-10-29"
+  },
+  {
+   "company": "Shield AI",
+   "title": "Summer 2027 - Mechanical Engineering Intern, Air Vehicle Systems and Test #6465+",
+   "location": "Seattle, WA, USA; Dallas, TX, USA",
+   "url": "https://jobs.lever.co/shieldai/bc41648b-c201-4b01-8feb-d228cbfdd875",
+   "source": "Space Capital job board",
+   "posted": "2026-10-29",
+   "source_id": "Space Capital job board",
+   "key": "le:bc41648b-c201-4b01-8feb-d228cbfdd875",
+   "tracks": {
+    "summer": {
+     "score": 65,
+     "tier": "good",
+     "parts": {
+      "fit": 28,
+      "skills": 12,
+      "eligibility": 25,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    },
+    "broad": {
+     "score": 69,
+     "tier": "good",
+     "parts": {
+      "fit": 32,
+      "skills": 12,
+      "eligibility": 25,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    }
+   },
+   "score": 69,
+   "tier": "good",
+   "discipline": "Mechanical",
+   "quals": null,
+   "matched": [],
+   "related": [],
+   "gaps": [],
+   "flags": [
+    {
+     "kind": "info",
+     "label": "Full description not loaded"
+    }
+   ],
+   "has_description": false,
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-29"
   },
@@ -15564,6 +15980,144 @@
    "last_seen": "2026-10-29"
   },
   {
+   "company": "General Motors",
+   "title": "2027 Summer Intern, Fleet Reliability & Test Engineering, ASD",
+   "location": "Milford, Michigan, United States of America",
+   "url": "https://generalmotors.wd5.myworkdayjobs.com/Careers_GM/job/Milford-Michigan-United-States-of-America/XMLNAME-2027-Summer-Intern--Fleet-Reliability---Test-Engineering--ASD_JR-202622071",
+   "source": "General Motors careers",
+   "posted": "2026-10-27",
+   "source_id": "General Motors",
+   "key": "wd:generalmotors:jr-202622071",
+   "tracks": {
+    "broad": {
+     "score": 67,
+     "tier": "good",
+     "parts": {
+      "fit": 30,
+      "skills": 24,
+      "eligibility": 13,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    }
+   },
+   "score": 67,
+   "tier": "good",
+   "discipline": "Mechanical",
+   "quals": {
+    "required": [
+     {
+      "text": "Strong interest in autonomous vehicles, vehicle systems, reliability, diagnostics, testing, embedded systems, simulation, data analysis, or related areas.",
+      "status": "met",
+      "why": "You have: Excel / data analysis"
+     },
+     {
+      "text": "A hands-on mindset—you enjoy building, testing, troubleshooting, debugging, analyzing, and learning through doing.",
+      "status": "met",
+      "why": "You have: Prototyping & fabrication"
+     },
+     {
+      "text": "Excellent problem-solving skills and attention to detail.",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Ability to communicate technical findings clearly, both verbally and in writing.",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Comfort working collaboratively in a team environment and managing multiple tasks toward a deliverable.",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Pursuit of a bachelor’s degree in Computer Engineering, including Electrical, Computer, Mechatronics, Systems Design, Mechanical, Chemical, or an equivalent dis",
+      "status": "met",
+      "why": "You're Aerospace Engineering"
+     },
+     {
+      "text": "Coursework or project experience in Python, MATLAB, or embedded microcontrollers.",
+      "status": "met",
+      "why": "You have: Python, Arduino / microcontrollers"
+     },
+     {
+      "text": "Ability to work full time, 40 hours per week.",
+      "status": "soft",
+      "why": ""
+     }
+    ],
+    "preferred": [
+     {
+      "text": "Basic understanding of automotive control systems, ADAS features, vehicle diagnostics, sensors, electronics, vehicle testing, fleet operations, or software vali",
+      "status": "check",
+      "why": "Coursework: Controls / GNC (check your classes)"
+     },
+     {
+      "text": "Familiarity with reliability methods, root-cause analysis, data analysis, model-based design tools such as MATLAB/Simulink, simulation, HIL/SIL, data logging, o",
+      "status": "met",
+      "why": "You have: Excel / data analysis"
+     },
+     {
+      "text": "Familiarity with automotive communication protocols such as CAN, LIN, or Ethernet.",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Proficiency in scripting or data-analysis languages such as Python, MATLAB, or SQL.",
+      "status": "met",
+      "why": "You have: Python"
+     },
+     {
+      "text": "Experience developing engineering tools, dashboards, automated workflows, test datasets, or regression suites.",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Intent to return to a degree program after completion of the internship.",
+      "status": "met",
+      "why": "You're enrolled in a degree program"
+     },
+     {
+      "text": "Expected graduation between December 2027 and August 2028.",
+      "status": "missing",
+      "why": "Grad date rule (2027–2028) doesn't fit your 2029"
+     }
+    ],
+    "summary": {
+     "required_checked": 4,
+     "required_met": 4.0,
+     "required_missing": 0,
+     "to_check": 1,
+     "preferred_met": 3,
+     "preferred_total": 4
+    }
+   },
+   "matched": [
+    "Python",
+    "Prototyping & fabrication",
+    "Arduino / microcontrollers",
+    "Excel / data analysis"
+   ],
+   "related": [],
+   "gaps": [
+    "MATLAB",
+    "Simulink",
+    "Controls / GNC",
+    "Data acquisition / test"
+   ],
+   "flags": [
+    {
+     "kind": "warn",
+     "label": "Grad window 2027–2028"
+    }
+   ],
+   "has_description": true,
+   "first_seen": "2026-10-29",
+   "last_seen": "2026-10-29"
+  },
+  {
    "company": "MIT Lincoln Laboratory",
    "title": "Summer Research Program Undergraduate Intern 2027, Integrated Missile Defense Technology ( Gr 03-36)",
    "location": "Lexington, MA, United States",
@@ -15621,137 +16175,6 @@
    ],
    "has_description": true,
    "first_seen": "2026-10-28",
-   "last_seen": "2026-10-29"
-  },
-  {
-   "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
-   "title": "Electro-Optics Systems Engineer Intern (Summer 2027)",
-   "location": "US-CA-EL SEGUNDO-E01 ~ 2000 E El Segundo Blvd ~ BLDG E01",
-   "url": "https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-CA-EL-SEGUNDO-E01--2000-E-El-Segundo-Blvd--BLDG-E01/Electro-Optics-Systems-Engineer-Intern--Summer-2027-_01880582",
-   "source": "RTX (Raytheon, Pratt & Whitney, Collins) careers",
-   "posted": "2026-10-27",
-   "source_id": "RTX (Raytheon, Pratt & Whitney, Collins)",
-   "key": "wd:globalhr:01880582",
-   "tracks": {
-    "summer": {
-     "score": 63,
-     "tier": "good",
-     "parts": {
-      "fit": 20,
-      "skills": 18,
-      "eligibility": 25,
-      "requirements": 0
-     },
-     "season": "match",
-     "season_label": "Summer 2027"
-    },
-    "broad": {
-     "score": 67,
-     "tier": "good",
-     "parts": {
-      "fit": 24,
-      "skills": 18,
-      "eligibility": 25,
-      "requirements": 0
-     },
-     "season": "match",
-     "season_label": "Summer 2027"
-    }
-   },
-   "score": 67,
-   "tier": "good",
-   "discipline": "Systems",
-   "quals": {
-    "required": [
-     {
-      "text": "U.S. citizenship is required, as only U.S. citizens are authorized to access information under this program/contract.",
-      "status": "met",
-      "why": "You're a U.S. citizen"
-     },
-     {
-      "text": "Must be pursuing Bachelor’s or Advanced degree in Physics, Optical, Science, Technology, Engineering, or Mathematics (STEM) and actively enrolled through the co",
-      "status": "met",
-      "why": "You're Aerospace Engineering"
-     },
-     {
-      "text": "Must have a minimum of 30 hours of credit by the start of the internship / co-op session.",
-      "status": "met",
-      "why": "You'll have about 60 credits"
-     },
-     {
-      "text": "Experience with electro-optical infrared imagery, focal plane technology, lenses, or apertures",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Experience with fundamental optical principles including geometrical optics, physical optics, imaging systems, aberrations, or detectors",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Hands‑on experience through coursework or lab work with optical testing or alignment",
-      "status": "check",
-      "why": "Coursework or background (check your classes)"
-     },
-     {
-      "text": "Internship or project experience related to opto-mechanical engineering, photonics, infrared physics, or optical systems",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Experience with programming using C++ or Python",
-      "status": "met",
-      "why": "You have: Python, C++"
-     },
-     {
-      "text": "Experience or coursework in signal processing, image processing, tracking, computer vision, or machine learning",
-      "status": "check",
-      "why": "Coursework or background (check your classes)"
-     },
-     {
-      "text": "Knowledge of systems engineering architecture and design, integration and test, and verification and validation approaches",
-      "status": "check",
-      "why": "Coursework or background (check your classes)"
-     },
-     {
-      "text": "Experience using MATLAB for data analysis and strong analytical and problem‑solving skills",
-      "status": "met",
-      "why": "You have: Excel / data analysis"
-     }
-    ],
-    "preferred": [],
-    "summary": {
-     "required_checked": 5,
-     "required_met": 5.0,
-     "required_missing": 0,
-     "to_check": 3,
-     "preferred_met": 0,
-     "preferred_total": 0
-    }
-   },
-   "matched": [
-    "Python",
-    "C++",
-    "Excel / data analysis"
-   ],
-   "related": [],
-   "gaps": [
-    "MATLAB"
-   ],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "U.S. person / ITAR",
-     "id": "citizen"
-    },
-    {
-     "kind": "info",
-     "label": "Clearance",
-     "id": "clearance"
-    }
-   ],
-   "has_description": true,
-   "first_seen": "2026-10-27",
    "last_seen": "2026-10-29"
   },
   {
@@ -15995,6 +16418,65 @@
    "flags": [],
    "has_description": true,
    "first_seen": "2026-10-26",
+   "last_seen": "2026-10-29"
+  },
+  {
+   "company": "Spirit AeroSystems",
+   "title": "Boeing - Wichita Summer 2027 Internship Program (Paid) - Manufacturing Engineering",
+   "location": "Wichita, Kansas",
+   "url": "https://careers.spiritaero.com/jobs/17496",
+   "source": "Spirit AeroSystems careers",
+   "posted": "2026-10-29",
+   "source_id": "Spirit AeroSystems",
+   "key": "url:https://careers.spiritaero.com/jobs/17496",
+   "tracks": {
+    "summer": {
+     "score": 67,
+     "tier": "good",
+     "parts": {
+      "fit": 36,
+      "skills": 18,
+      "eligibility": 13,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    },
+    "broad": {
+     "score": 65,
+     "tier": "good",
+     "parts": {
+      "fit": 34,
+      "skills": 18,
+      "eligibility": 13,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    }
+   },
+   "score": 67,
+   "tier": "good",
+   "discipline": "Manufacturing & industrial",
+   "quals": null,
+   "matched": [
+    "Composites (carbon fiber)",
+    "Prototyping & fabrication"
+   ],
+   "related": [],
+   "gaps": [],
+   "flags": [
+    {
+     "kind": "warn",
+     "label": "Grad window 2027"
+    },
+    {
+     "kind": "info",
+     "label": "Min GPA 3.0"
+    }
+   ],
+   "has_description": true,
+   "first_seen": "2026-10-29",
    "last_seen": "2026-10-29"
   },
   {
@@ -19129,6 +19611,99 @@
    "last_seen": "2026-10-29"
   },
   {
+   "company": "Northrop Grumman",
+   "title": "2027 Mechanical Engineer Intern- Gilbert AZ",
+   "location": "United States-Arizona-Gilbert",
+   "url": "https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site/job/United-States-Arizona-Gilbert/XMLNAME-2027-Mechanical-Engineer-Intern--Gilbert-AZ_R10258213-1",
+   "source": "Northrop Grumman careers",
+   "posted": "2026-10-29",
+   "source_id": "Northrop Grumman",
+   "key": "wd:ngc:r10258213-1",
+   "tracks": {
+    "summer": {
+     "score": 49,
+     "tier": "look",
+     "parts": {
+      "fit": 26,
+      "skills": 10,
+      "eligibility": 13,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    },
+    "broad": {
+     "score": 63,
+     "tier": "good",
+     "parts": {
+      "fit": 40,
+      "skills": 10,
+      "eligibility": 13,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    }
+   },
+   "score": 63,
+   "tier": "good",
+   "discipline": "Mechanical",
+   "quals": {
+    "required": [],
+    "preferred": [
+     {
+      "text": "Have an overall cumulative GPA of 3.00/4.0 or higher",
+      "status": "check",
+      "why": "Needs GPA 3.0+"
+     },
+     {
+      "text": "Analysis experience using FEMAP",
+      "status": "missing",
+      "why": "Not on your resume: FEA / stress analysis"
+     }
+    ],
+    "summary": {
+     "required_checked": 0,
+     "required_met": 0.0,
+     "required_missing": 0,
+     "to_check": 1,
+     "preferred_met": 0,
+     "preferred_total": 1
+    }
+   },
+   "matched": [
+    "SolidWorks / CAD"
+   ],
+   "related": [],
+   "gaps": [
+    "FEA / stress analysis",
+    "Creo"
+   ],
+   "flags": [
+    {
+     "kind": "warn",
+     "label": "Grad window 2027"
+    },
+    {
+     "kind": "info",
+     "label": "Min GPA 3.0"
+    },
+    {
+     "kind": "info",
+     "label": "U.S. person / ITAR",
+     "id": "citizen"
+    },
+    {
+     "kind": "info",
+     "label": "Clearance",
+     "id": "clearance"
+    }
+   ],
+   "has_description": true,
+   "first_seen": "2026-10-29",
+   "last_seen": "2026-10-29"
+  },
+  {
    "company": "RTX",
    "title": "Mechanical Engineering Intern - Test Solutions",
    "location": "Tucson, AZ, United States",
@@ -19532,60 +20107,6 @@
    "related": [],
    "gaps": [],
    "flags": [],
-   "has_description": true,
-   "first_seen": "2026-10-28",
-   "last_seen": "2026-10-29"
-  },
-  {
-   "company": "Kratos Defense and Security Solutions",
-   "title": "Engineering Intern - Space & Propulsion Systems",
-   "location": "Birmingham, AL, United States",
-   "url": "https://www.google.com/search?q=Kratos+Defense+and+Security+Solutions+%22Engineering+Intern+-+Space+%26+Propulsion+Systems%22",
-   "key": "il:6acf9e53c0dd9da253cf3a3a",
-   "lead": true,
-   "source": "intern-list.com",
-   "posted": "2026-10-14",
-   "source_id": "intern-list.com",
-   "tracks": {
-    "summer": {
-     "score": 58,
-     "tier": "good",
-     "parts": {
-      "fit": 36,
-      "skills": 0,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Season not stated"
-    },
-    "broad": {
-     "score": 62,
-     "tier": "good",
-     "parts": {
-      "fit": 40,
-      "skills": 0,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Season not stated"
-    }
-   },
-   "score": 62,
-   "tier": "good",
-   "discipline": "Aerospace",
-   "quals": null,
-   "matched": [],
-   "related": [],
-   "gaps": [],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "U.S. person / ITAR",
-     "id": "citizen"
-    }
-   ],
    "has_description": true,
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-29"
@@ -24031,13 +24552,13 @@
   },
   {
    "company": "BAE Systems",
-   "title": "Industrial Engineering Intern II, Summer 2027 - Austin, TX",
-   "location": "Austin, Texas, United States",
-   "url": "https://jobs.baesystems.com/global/en/job/131671BR",
+   "title": "Industrial Engineering Intern II, Summer 2027 - Nashua, NH",
+   "location": "Nashua, New Hampshire, United States",
+   "url": "https://jobs.baesystems.com/global/en/job/131674BR",
    "source": "BAE Systems careers",
    "posted": "2026-10-23",
    "source_id": "BAE Systems",
-   "key": "url:https://jobs.baesystems.com/global/en/job/131671br",
+   "key": "url:https://jobs.baesystems.com/global/en/job/131674br",
    "tracks": {
     "summer": {
      "score": 46,
@@ -24080,13 +24601,13 @@
   },
   {
    "company": "BAE Systems",
-   "title": "Industrial Engineering Intern II, Summer 2027 - Nashua, NH",
-   "location": "Nashua, New Hampshire, United States",
-   "url": "https://jobs.baesystems.com/global/en/job/131674BR",
+   "title": "Industrial Engineering Intern II, Summer 2027 - Austin, TX",
+   "location": "Austin, Texas, United States",
+   "url": "https://jobs.baesystems.com/global/en/job/131671BR",
    "source": "BAE Systems careers",
    "posted": "2026-10-23",
    "source_id": "BAE Systems",
-   "key": "url:https://jobs.baesystems.com/global/en/job/131674br",
+   "key": "url:https://jobs.baesystems.com/global/en/job/131671br",
    "tracks": {
     "summer": {
      "score": 46,
@@ -24271,46 +24792,6 @@
   },
   {
    "company": "Latitude",
-   "title": "Engineering intern - Launch Vehicle Stage Test Bench (f/m/d)",
-   "location": "Reims",
-   "url": "https://www.latitude.eu/jobs#1g6m39qz57cfv9xymjvde0qex&:~:text=Engineering%20intern%20%E2%80%93%20Launch%20Vehicle%20Stage%20Test%20Bench%20(f/m/d)",
-   "source": "Space Capital job board",
-   "posted": "2026-10-27",
-   "source_id": "Space Capital job board",
-   "key": "url:https://www.latitude.eu/jobs",
-   "tracks": {
-    "broad": {
-     "score": 58,
-     "tier": "good",
-     "parts": {
-      "fit": 24,
-      "skills": 12,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Season not stated"
-    }
-   },
-   "score": 58,
-   "tier": "good",
-   "discipline": "Aerospace",
-   "quals": null,
-   "matched": [],
-   "related": [],
-   "gaps": [],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "Full description not loaded"
-    }
-   ],
-   "has_description": false,
-   "first_seen": "2026-10-27",
-   "last_seen": "2026-10-29"
-  },
-  {
-   "company": "Latitude",
    "title": "Engineering intern - engine test bench (f/m/d)",
    "location": "Reims",
    "url": "https://apply.hollo.io/soft/6ad232d6053079003620e786?companyId=6912e5e243455b0028401d8c&teamId=6912e7fd43455b0028401dbb&offerName=Celerity+test+bench+",
@@ -24335,6 +24816,46 @@
    "score": 58,
    "tier": "good",
    "discipline": "Mechanical",
+   "quals": null,
+   "matched": [],
+   "related": [],
+   "gaps": [],
+   "flags": [
+    {
+     "kind": "info",
+     "label": "Full description not loaded"
+    }
+   ],
+   "has_description": false,
+   "first_seen": "2026-10-27",
+   "last_seen": "2026-10-29"
+  },
+  {
+   "company": "Latitude",
+   "title": "Engineering intern - Launch Vehicle Stage Test Bench (f/m/d)",
+   "location": "Reims",
+   "url": "https://www.latitude.eu/jobs#1g6m39qz57cfv9xymjvde0qex&:~:text=Engineering%20intern%20%E2%80%93%20Launch%20Vehicle%20Stage%20Test%20Bench%20(f/m/d)",
+   "source": "Space Capital job board",
+   "posted": "2026-10-27",
+   "source_id": "Space Capital job board",
+   "key": "url:https://www.latitude.eu/jobs",
+   "tracks": {
+    "broad": {
+     "score": 58,
+     "tier": "good",
+     "parts": {
+      "fit": 24,
+      "skills": 12,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Season not stated"
+    }
+   },
+   "score": 58,
+   "tier": "good",
+   "discipline": "Aerospace",
    "quals": null,
    "matched": [],
    "related": [],
@@ -24651,6 +25172,49 @@
   },
   {
    "company": "Collins Aerospace",
+   "title": "Manufacturing Electrical Engineer Co-op (Summer/Fall 2027)",
+   "location": "Melbourne, FL, United States",
+   "url": "https://www.google.com/search?q=Collins+Aerospace+%22Manufacturing+Electrical+Engineer+Co-op+%28Summer%2FFall+2027%29%22",
+   "key": "il:6ad9ac04950ef68d51851d0a",
+   "lead": true,
+   "source": "intern-list.com",
+   "posted": "2026-10-20",
+   "source_id": "intern-list.com",
+   "tracks": {
+    "fall": {
+     "score": 57,
+     "tier": "good",
+     "parts": {
+      "fit": 32,
+      "skills": 0,
+      "eligibility": 25,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Fall 2027",
+     "miles": 51
+    }
+   },
+   "score": 57,
+   "tier": "good",
+   "discipline": "Manufacturing & industrial",
+   "quals": null,
+   "matched": [],
+   "related": [],
+   "gaps": [],
+   "flags": [
+    {
+     "kind": "info",
+     "label": "U.S. person / ITAR",
+     "id": "citizen"
+    }
+   ],
+   "has_description": true,
+   "first_seen": "2026-10-28",
+   "last_seen": "2026-10-29"
+  },
+  {
+   "company": "Collins Aerospace",
    "title": "Manufacturing Electrical Engineer Co-op (Spring/Summer 2027)",
    "location": "Melbourne, FL, United States",
    "url": "https://www.google.com/search?q=Collins+Aerospace+%22Manufacturing+Electrical+Engineer+Co-op+%28Spring%2FSummer+2027%29%22",
@@ -24683,49 +25247,6 @@
      },
      "season": "match",
      "season_label": "Summer 2027"
-    }
-   },
-   "score": 57,
-   "tier": "good",
-   "discipline": "Manufacturing & industrial",
-   "quals": null,
-   "matched": [],
-   "related": [],
-   "gaps": [],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "U.S. person / ITAR",
-     "id": "citizen"
-    }
-   ],
-   "has_description": true,
-   "first_seen": "2026-10-28",
-   "last_seen": "2026-10-29"
-  },
-  {
-   "company": "Collins Aerospace",
-   "title": "Manufacturing Electrical Engineer Co-op (Summer/Fall 2027)",
-   "location": "Melbourne, FL, United States",
-   "url": "https://www.google.com/search?q=Collins+Aerospace+%22Manufacturing+Electrical+Engineer+Co-op+%28Summer%2FFall+2027%29%22",
-   "key": "il:6ad9ac04950ef68d51851d0a",
-   "lead": true,
-   "source": "intern-list.com",
-   "posted": "2026-10-20",
-   "source_id": "intern-list.com",
-   "tracks": {
-    "fall": {
-     "score": 57,
-     "tier": "good",
-     "parts": {
-      "fit": 32,
-      "skills": 0,
-      "eligibility": 25,
-      "requirements": 0
-     },
-     "season": "match",
-     "season_label": "Fall 2027",
-     "miles": 51
     }
    },
    "score": 57,
@@ -28038,7 +28559,7 @@
   },
   {
    "company": "Shield AI",
-   "title": "Summer 2027 - Product Support Engineering Intern #6470 & #6442",
+   "title": "Summer 2027 - Product Support Engineering Intern 6470 - 6442",
    "location": "Dallas, Texas",
    "url": "https://jobs.lever.co/shieldai/5fb0fc3c-3747-4351-92fd-459b3df7c82c",
    "source": "Shield AI careers",
@@ -28143,7 +28664,7 @@
    "title": "Space Vehicle Automation Engineer Intern",
    "location": "Greenwood Village, CO, United States",
    "url": "https://www.google.com/search?q=York+Space+Systems+%22Space+Vehicle+Automation+Engineer+Intern%22",
-   "key": "il:6ae3245fd7424a2a828ddef0",
+   "key": "il:6ae35ce5d7424a2a828df13a",
    "lead": true,
    "source": "intern-list.com",
    "posted": "2026-10-29",
@@ -28189,6 +28710,132 @@
    ],
    "has_description": true,
    "first_seen": "2026-10-29",
+   "last_seen": "2026-10-29"
+  },
+  {
+   "company": "BAE Systems",
+   "title": "Engineering Intern (EE/CE/RF), Summer 2027 (Hybrid)",
+   "location": "Nashua, New Hampshire, United States",
+   "url": "https://jobs.baesystems.com/global/en/job/129933BR",
+   "source": "BAE Systems careers",
+   "posted": "2026-10-23",
+   "source_id": "BAE Systems",
+   "key": "url:https://jobs.baesystems.com/global/en/job/129933br",
+   "tracks": {
+    "summer": {
+     "score": 49,
+     "tier": "look",
+     "parts": {
+      "fit": 14,
+      "skills": 10,
+      "eligibility": 25,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    },
+    "broad": {
+     "score": 53,
+     "tier": "look",
+     "parts": {
+      "fit": 18,
+      "skills": 10,
+      "eligibility": 25,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    }
+   },
+   "score": 53,
+   "tier": "look",
+   "discipline": "Electrical",
+   "quals": {
+    "required": [
+     {
+      "text": "Pursuing a BS Degree in Electrical or Computer Engineering (no Computer Science) with a focus and interest in RF Engineering (or equivalent) and will complete y",
+      "status": "met",
+      "why": "Engineering degree: Aerospace Engineering counts"
+     },
+     {
+      "text": "Eligible for DOD Security Clearance.",
+      "status": "met",
+      "why": "You're a U.S. citizen"
+     },
+     {
+      "text": "Be able to relocate to Southern NH area",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Have reliable transportation to and from assigned work site",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Be able to work full 40-hour work week (Exceptions made for academics with advanced notice)",
+      "status": "check",
+      "why": ""
+     }
+    ],
+    "preferred": [
+     {
+      "text": "Ability to research and apply electrical engineering principles and theories to solve RF engineering problems.",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Motivated self-starter with leadership skills and ability to work effectively in a team environment.",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Excellent problem solving skills, judgment, and analytical capability.",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Ability to close on discrete tasking in a timely manner.",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Strong technical writing and verbal communication skills.",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Experience in VHDL, Verilog, System Verilog, Cadence, HFSS, MATLAB or LabVIEW is a plus.",
+      "status": "missing",
+      "why": "Not on your resume: MATLAB, LabVIEW"
+     }
+    ],
+    "summary": {
+     "required_checked": 2,
+     "required_met": 2.0,
+     "required_missing": 0,
+     "to_check": 0,
+     "preferred_met": 0,
+     "preferred_total": 1
+    }
+   },
+   "matched": [
+    "Prototyping & fabrication"
+   ],
+   "related": [],
+   "gaps": [
+    "MATLAB",
+    "LabVIEW"
+   ],
+   "flags": [
+    {
+     "kind": "info",
+     "label": "Clearance",
+     "id": "clearance"
+    }
+   ],
+   "has_description": true,
+   "first_seen": "2026-10-28",
    "last_seen": "2026-10-29"
   },
   {
@@ -28328,132 +28975,6 @@
    "related": [],
    "gaps": [],
    "flags": [],
-   "has_description": true,
-   "first_seen": "2026-10-28",
-   "last_seen": "2026-10-29"
-  },
-  {
-   "company": "BAE Systems",
-   "title": "Engineering Intern (EE/CE/RF), Summer 2027 (Hybrid)",
-   "location": "Nashua, New Hampshire, United States",
-   "url": "https://jobs.baesystems.com/global/en/job/129933BR",
-   "source": "BAE Systems careers",
-   "posted": "2026-10-23",
-   "source_id": "BAE Systems",
-   "key": "url:https://jobs.baesystems.com/global/en/job/129933br",
-   "tracks": {
-    "summer": {
-     "score": 49,
-     "tier": "look",
-     "parts": {
-      "fit": 14,
-      "skills": 10,
-      "eligibility": 25,
-      "requirements": 0
-     },
-     "season": "match",
-     "season_label": "Summer 2027"
-    },
-    "broad": {
-     "score": 53,
-     "tier": "look",
-     "parts": {
-      "fit": 18,
-      "skills": 10,
-      "eligibility": 25,
-      "requirements": 0
-     },
-     "season": "match",
-     "season_label": "Summer 2027"
-    }
-   },
-   "score": 53,
-   "tier": "look",
-   "discipline": "Electrical",
-   "quals": {
-    "required": [
-     {
-      "text": "Pursuing a BS Degree in Electrical or Computer Engineering (no Computer Science) with a focus and interest in RF Engineering (or equivalent) and will complete y",
-      "status": "met",
-      "why": "Engineering degree: Aerospace Engineering counts"
-     },
-     {
-      "text": "Eligible for DOD Security Clearance.",
-      "status": "met",
-      "why": "You're a U.S. citizen"
-     },
-     {
-      "text": "Be able to relocate to Southern NH area",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "Have reliable transportation to and from assigned work site",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "Be able to work full 40-hour work week (Exceptions made for academics with advanced notice)",
-      "status": "check",
-      "why": ""
-     }
-    ],
-    "preferred": [
-     {
-      "text": "Ability to research and apply electrical engineering principles and theories to solve RF engineering problems.",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Motivated self-starter with leadership skills and ability to work effectively in a team environment.",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "Excellent problem solving skills, judgment, and analytical capability.",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "Ability to close on discrete tasking in a timely manner.",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Strong technical writing and verbal communication skills.",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "Experience in VHDL, Verilog, System Verilog, Cadence, HFSS, MATLAB or LabVIEW is a plus.",
-      "status": "missing",
-      "why": "Not on your resume: MATLAB, LabVIEW"
-     }
-    ],
-    "summary": {
-     "required_checked": 2,
-     "required_met": 2.0,
-     "required_missing": 0,
-     "to_check": 0,
-     "preferred_met": 0,
-     "preferred_total": 1
-    }
-   },
-   "matched": [
-    "Prototyping & fabrication"
-   ],
-   "related": [],
-   "gaps": [
-    "MATLAB",
-    "LabVIEW"
-   ],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "Clearance",
-     "id": "clearance"
-    }
-   ],
    "has_description": true,
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-29"
@@ -30009,6 +30530,142 @@
    ],
    "has_description": true,
    "first_seen": "2026-10-27",
+   "last_seen": "2026-10-29"
+  },
+  {
+   "company": "CACI",
+   "title": "Systems Engineering Co-op/Intern - Spring 2027",
+   "location": "Rochester, NY, US",
+   "url": "https://caci.wd1.myworkdayjobs.com/External/job/Rochester-NY-US/Systems-Engineering-Co-op-Intern---Spring-2027_334157",
+   "source": "CACI careers",
+   "posted": "2026-10-29",
+   "source_id": "CACI",
+   "key": "wd:caci:334157",
+   "tracks": {
+    "summer": {
+     "score": 45,
+     "tier": "look",
+     "parts": {
+      "fit": 18,
+      "skills": 7,
+      "eligibility": 25,
+      "requirements": -5
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    },
+    "broad": {
+     "score": 53,
+     "tier": "look",
+     "parts": {
+      "fit": 26,
+      "skills": 7,
+      "eligibility": 25,
+      "requirements": -5
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    }
+   },
+   "score": 53,
+   "tier": "look",
+   "discipline": "Systems",
+   "quals": {
+    "required": [
+     {
+      "text": "Percentage of Travel Required: None",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "* *",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Pursuing a Bachelor’s degree in Systems Engineering, Electrical Engineering, Mechanical Engineering, Computer Engineering, or related field",
+      "status": "met",
+      "why": "You're Aerospace Engineering"
+     },
+     {
+      "text": "Must be legally authorized to work in the United States without the need for employer sponsorship, now or at any time in the future",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Must be able to obtain and maintain applicable security clearance",
+      "status": "met",
+      "why": "You're a U.S. citizen"
+     },
+     {
+      "text": "Experience working within a multidisciplinary engineering team",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Ability to learn how to use new software tools",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Experience in technical writing",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Experience installing software on Windows and Linux machines",
+      "status": "missing",
+      "why": "Not on your resume: Linux"
+     },
+     {
+      "text": "Experience with Microsoft Office including Word, Excel, Outlook, & Visio",
+      "status": "met",
+      "why": "You have: Excel / data analysis"
+     }
+    ],
+    "preferred": [
+     {
+      "text": "Minimum GPA of 3.0 or higher is preferred, but not required",
+      "status": "check",
+      "why": "Needs GPA 3.0+"
+     },
+     {
+      "text": "Previous internship/co-op or other work experience",
+      "status": "check",
+      "why": ""
+     }
+    ],
+    "summary": {
+     "required_checked": 4,
+     "required_met": 3.0,
+     "required_missing": 1,
+     "to_check": 1,
+     "preferred_met": 0,
+     "preferred_total": 0
+    }
+   },
+   "matched": [
+    "Excel / data analysis"
+   ],
+   "related": [
+    "Embedded (close to Arduino / microcontrollers)"
+   ],
+   "gaps": [
+    "Linux"
+   ],
+   "flags": [
+    {
+     "kind": "info",
+     "label": "Min GPA 3.0"
+    },
+    {
+     "kind": "info",
+     "label": "Clearance",
+     "id": "clearance"
+    }
+   ],
+   "has_description": true,
+   "first_seen": "2026-10-29",
    "last_seen": "2026-10-29"
   },
   {
@@ -36530,6 +37187,112 @@
    "last_seen": "2026-10-29"
   },
   {
+   "company": "Lockheed Martin",
+   "title": "Systems Engineer (Simulation and Training) - Intern",
+   "location": "Mount Laurel, NJ",
+   "url": "https://lockheedmartin.eightfold.ai/careers/job/996477596056",
+   "source": "Lockheed Martin careers",
+   "posted": "2026-10-29",
+   "source_id": "Lockheed Martin",
+   "key": "url:https://lockheedmartin.eightfold.ai/careers/job/996477596056",
+   "tracks": {
+    "summer": {
+     "score": 43,
+     "tier": "look",
+     "parts": {
+      "fit": 18,
+      "skills": 0,
+      "eligibility": 25,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    },
+    "broad": {
+     "score": 49,
+     "tier": "look",
+     "parts": {
+      "fit": 24,
+      "skills": 0,
+      "eligibility": 25,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    }
+   },
+   "score": 49,
+   "tier": "look",
+   "discipline": "Systems",
+   "quals": {
+    "required": [
+     {
+      "text": "Pursing a Bachelor's degree in Computer Engineering, Electrical Engineering, Electrical Computer Engineering, Mechanical Engineering, or related discipline.",
+      "status": "met",
+      "why": "You're Aerospace Engineering"
+     },
+     {
+      "text": "Applicable skills include development of software requirements, requirement verification, and testing of software",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Must be a US Citizen; this position will require a government security clearance. This position is located at a facility that requires special access.",
+      "status": "met",
+      "why": "You're a U.S. citizen"
+     }
+    ],
+    "preferred": [
+     {
+      "text": "Experience with development of software system of system requirements and associated software architectures",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Proficient/familiar with Model Based Engineering (MBE) principals to development functional, architectural, and detailed designs of software products. Increment",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Experience with MBE tools such as Cameo and Rhapsody.",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Experience with hardware/software troubleshooting.",
+      "status": "check",
+      "why": ""
+     }
+    ],
+    "summary": {
+     "required_checked": 2,
+     "required_met": 2.0,
+     "required_missing": 0,
+     "to_check": 0,
+     "preferred_met": 0,
+     "preferred_total": 0
+    }
+   },
+   "matched": [],
+   "related": [],
+   "gaps": [],
+   "flags": [
+    {
+     "kind": "info",
+     "label": "U.S. person / ITAR",
+     "id": "citizen"
+    },
+    {
+     "kind": "info",
+     "label": "Clearance",
+     "id": "clearance"
+    }
+   ],
+   "has_description": true,
+   "first_seen": "2026-10-29",
+   "last_seen": "2026-10-29"
+  },
+  {
    "company": "MIT Lincoln Laboratory",
    "title": "Summer Research Program Intern 2027, ISR Systems & Architectures (Group 10-01)",
    "location": "Lexington, MA, United States",
@@ -36631,6 +37394,182 @@
    "flags": [],
    "has_description": true,
    "first_seen": "2026-10-28",
+   "last_seen": "2026-10-29"
+  },
+  {
+   "company": "Northrop Grumman",
+   "title": "2027 Parts Materials and Process Engineering Intern- Roy UT",
+   "location": "United States-Utah-Roy",
+   "url": "https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site/job/United-States-Utah-Roy/XMLNAME-2027-Parts-Materials-and-Process-Engineering-Intern--Roy-UT_R10258248",
+   "source": "Northrop Grumman careers",
+   "posted": "2026-10-29",
+   "source_id": "Northrop Grumman",
+   "key": "wd:ngc:r10258248",
+   "tracks": {
+    "summer": {
+     "score": 43,
+     "tier": "look",
+     "parts": {
+      "fit": 30,
+      "skills": 0,
+      "eligibility": 13,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    },
+    "broad": {
+     "score": 49,
+     "tier": "look",
+     "parts": {
+      "fit": 36,
+      "skills": 0,
+      "eligibility": 13,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    }
+   },
+   "score": 49,
+   "tier": "look",
+   "discipline": "Manufacturing & industrial",
+   "quals": {
+    "required": [],
+    "preferred": [
+     {
+      "text": "Have an overall cumulative GPA of 3.70/4.0 or higher",
+      "status": "check",
+      "why": "Needs GPA 3.7+"
+     },
+     {
+      "text": "Current active Secret Security Clearance or higher",
+      "status": "missing",
+      "why": "Needs a clearance you'd already have to hold"
+     }
+    ],
+    "summary": {
+     "required_checked": 0,
+     "required_met": 0.0,
+     "required_missing": 0,
+     "to_check": 1,
+     "preferred_met": 0,
+     "preferred_total": 1
+    }
+   },
+   "matched": [],
+   "related": [],
+   "gaps": [],
+   "flags": [
+    {
+     "kind": "warn",
+     "label": "Grad window 2027"
+    },
+    {
+     "kind": "info",
+     "label": "Min GPA 3.7"
+    },
+    {
+     "kind": "info",
+     "label": "U.S. person / ITAR",
+     "id": "citizen"
+    },
+    {
+     "kind": "info",
+     "label": "Clearance",
+     "id": "clearance"
+    }
+   ],
+   "has_description": true,
+   "first_seen": "2026-10-29",
+   "last_seen": "2026-10-29"
+  },
+  {
+   "company": "Northrop Grumman",
+   "title": "2027 Parts Materials and Process Engineering Intern- Roy UT",
+   "location": "United States-Utah-Roy",
+   "url": "https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site/job/United-States-Utah-Roy/XMLNAME-2027-Parts-Materials-and-Process-Engineering-Intern--Roy-UT_R10258242-1",
+   "source": "Northrop Grumman careers",
+   "posted": "2026-10-29",
+   "source_id": "Northrop Grumman",
+   "key": "wd:ngc:r10258242-1",
+   "tracks": {
+    "summer": {
+     "score": 43,
+     "tier": "look",
+     "parts": {
+      "fit": 30,
+      "skills": 0,
+      "eligibility": 13,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    },
+    "broad": {
+     "score": 49,
+     "tier": "look",
+     "parts": {
+      "fit": 36,
+      "skills": 0,
+      "eligibility": 13,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    }
+   },
+   "score": 49,
+   "tier": "look",
+   "discipline": "Manufacturing & industrial",
+   "quals": {
+    "required": [],
+    "preferred": [
+     {
+      "text": "Have an overall cumulative GPA of 3.70/4.0 or higher",
+      "status": "check",
+      "why": "Needs GPA 3.7+"
+     },
+     {
+      "text": "Current active Secret Security Clearance or higher",
+      "status": "missing",
+      "why": "Needs a clearance you'd already have to hold"
+     }
+    ],
+    "summary": {
+     "required_checked": 0,
+     "required_met": 0.0,
+     "required_missing": 0,
+     "to_check": 1,
+     "preferred_met": 0,
+     "preferred_total": 1
+    }
+   },
+   "matched": [],
+   "related": [],
+   "gaps": [],
+   "flags": [
+    {
+     "kind": "warn",
+     "label": "Grad window 2027"
+    },
+    {
+     "kind": "info",
+     "label": "Min GPA 3.7"
+    },
+    {
+     "kind": "info",
+     "label": "U.S. person / ITAR",
+     "id": "citizen"
+    },
+    {
+     "kind": "info",
+     "label": "Clearance",
+     "id": "clearance"
+    }
+   ],
+   "has_description": true,
+   "first_seen": "2026-10-29",
    "last_seen": "2026-10-29"
   },
   {
@@ -36926,6 +37865,54 @@
   },
   {
    "company": "Raytheon",
+   "title": "A2G 2027 Summer/Fall Co-op - Systems Engineering - Onsite",
+   "location": "Cedar Rapids, IA, United States",
+   "url": "https://www.google.com/search?q=Raytheon+%22A2G+2027+Summer%2FFall+Co-op+-+Systems+Engineering+-+Onsite%22",
+   "key": "il:6acc67fe002e496d4beee7b7",
+   "lead": true,
+   "source": "intern-list.com",
+   "posted": "2026-10-26",
+   "source_id": "intern-list.com",
+   "tracks": {
+    "summer": {
+     "score": 49,
+     "tier": "look",
+     "parts": {
+      "fit": 24,
+      "skills": 0,
+      "eligibility": 25,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    },
+    "broad": {
+     "score": 49,
+     "tier": "look",
+     "parts": {
+      "fit": 24,
+      "skills": 0,
+      "eligibility": 25,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    }
+   },
+   "score": 49,
+   "tier": "look",
+   "discipline": "Systems",
+   "quals": null,
+   "matched": [],
+   "related": [],
+   "gaps": [],
+   "flags": [],
+   "has_description": true,
+   "first_seen": "2026-10-28",
+   "last_seen": "2026-10-29"
+  },
+  {
+   "company": "Raytheon",
    "title": "Systems Engineering Co-Op (2027 Summer/Fall) – SOA CAAS Mainline Platform (Onsite)",
    "location": "Cedar Rapids, IA, United States",
    "url": "https://www.google.com/search?q=Raytheon+%22Systems+Engineering+Co-Op+%282027+Summer%2FFall%29+%E2%80%93+SOA+CAAS+Mainline+Platform+%28Onsite%29%22",
@@ -36974,54 +37961,6 @@
      "id": "citizen"
     }
    ],
-   "has_description": true,
-   "first_seen": "2026-10-28",
-   "last_seen": "2026-10-29"
-  },
-  {
-   "company": "Raytheon",
-   "title": "A2G 2027 Summer/Fall Co-op - Systems Engineering - Onsite",
-   "location": "Cedar Rapids, IA, United States",
-   "url": "https://www.google.com/search?q=Raytheon+%22A2G+2027+Summer%2FFall+Co-op+-+Systems+Engineering+-+Onsite%22",
-   "key": "il:6acc67fe002e496d4beee7b7",
-   "lead": true,
-   "source": "intern-list.com",
-   "posted": "2026-10-26",
-   "source_id": "intern-list.com",
-   "tracks": {
-    "summer": {
-     "score": 49,
-     "tier": "look",
-     "parts": {
-      "fit": 24,
-      "skills": 0,
-      "eligibility": 25,
-      "requirements": 0
-     },
-     "season": "match",
-     "season_label": "Summer 2027"
-    },
-    "broad": {
-     "score": 49,
-     "tier": "look",
-     "parts": {
-      "fit": 24,
-      "skills": 0,
-      "eligibility": 25,
-      "requirements": 0
-     },
-     "season": "match",
-     "season_label": "Summer 2027"
-    }
-   },
-   "score": 49,
-   "tier": "look",
-   "discipline": "Systems",
-   "quals": null,
-   "matched": [],
-   "related": [],
-   "gaps": [],
-   "flags": [],
    "has_description": true,
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-29"
@@ -40371,103 +41310,6 @@
    "company": "L3Harris",
    "title": "Electrical Engineer Intern",
    "location": "Clifton, NJ, US, 07014",
-   "url": "https://jobs.l3harris.com/job/Clifton-Electrical-Engineer-Intern-NJ-07014/1435259500/",
-   "source": "L3Harris careers",
-   "posted": "2026-10-29",
-   "source_id": "L3Harris",
-   "key": "url:https://jobs.l3harris.com/job/clifton-electrical-engineer-intern-nj-07014/1435259500",
-   "tracks": {
-    "summer": {
-     "score": 47,
-     "tier": "look",
-     "parts": {
-      "fit": 16,
-      "skills": 14,
-      "eligibility": 22,
-      "requirements": -5
-     },
-     "season": "unstated",
-     "season_label": "Season not stated"
-    },
-    "broad": {
-     "score": 47,
-     "tier": "look",
-     "parts": {
-      "fit": 16,
-      "skills": 14,
-      "eligibility": 22,
-      "requirements": -5
-     },
-     "season": "unstated",
-     "season_label": "Season not stated"
-    }
-   },
-   "score": 47,
-   "tier": "look",
-   "discipline": "Electrical",
-   "quals": {
-    "required": [
-     {
-      "text": "Create system wiring diagrams, circuit breaker panels, control panels and other items using CAD (Computer Aided Design) tool",
-      "status": "met",
-      "why": "You have: SolidWorks / CAD"
-     },
-     {
-      "text": "Research and preparation of engineering drawings, and coordination of design activities with Systems Engineering, Manufacturing, and Production to ensure that d",
-      "status": "missing",
-      "why": "Not on your resume: Drawings / drafting"
-     },
-     {
-      "text": "Designs can include development of Avionics Systems, RF, LAN, Data Processing, Power Distribution Systems, Electrical Loads analysis, Load shedding scheme to na",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Must be pursuing a Bachelor’s degree, a Master’s degree or a PhD in Electrical Engineering, Electrical Engineering Technology, Computer Science degree or relate",
-      "status": "partial",
-      "why": "Other majors listed; Aerospace Engineering may count as related"
-     }
-    ],
-    "preferred": [
-     {
-      "text": "Skills/Knowledge of with CAD and PLM software, including NX and Teamcenter",
-      "status": "met",
-      "why": "You have: SolidWorks / CAD"
-     },
-     {
-      "text": "Knowledge of Siemens Capital software",
-      "status": "check",
-      "why": "Coursework or background (check your classes)"
-     }
-    ],
-    "summary": {
-     "required_checked": 3,
-     "required_met": 1.5,
-     "required_missing": 1,
-     "to_check": 1,
-     "preferred_met": 1,
-     "preferred_total": 1
-    }
-   },
-   "matched": [
-    "SolidWorks / CAD"
-   ],
-   "related": [
-    "C (close to C++)"
-   ],
-   "gaps": [
-    "Siemens NX",
-    "Drawings / drafting"
-   ],
-   "flags": [],
-   "has_description": true,
-   "first_seen": "2026-10-29",
-   "last_seen": "2026-10-29"
-  },
-  {
-   "company": "L3Harris",
-   "title": "Electrical Engineer Intern",
-   "location": "Clifton, NJ, US, 07014",
    "url": "https://jobs.l3harris.com/job/Clifton-Electrical-Engineer-Intern-NJ-07014/1444301600/",
    "source": "L3Harris careers",
    "posted": "2026-10-27",
@@ -40559,6 +41401,103 @@
    "flags": [],
    "has_description": true,
    "first_seen": "2026-10-28",
+   "last_seen": "2026-10-29"
+  },
+  {
+   "company": "L3Harris",
+   "title": "Electrical Engineer Intern",
+   "location": "Clifton, NJ, US, 07014",
+   "url": "https://jobs.l3harris.com/job/Clifton-Electrical-Engineer-Intern-NJ-07014/1435259500/",
+   "source": "L3Harris careers",
+   "posted": "2026-10-29",
+   "source_id": "L3Harris",
+   "key": "url:https://jobs.l3harris.com/job/clifton-electrical-engineer-intern-nj-07014/1435259500",
+   "tracks": {
+    "summer": {
+     "score": 47,
+     "tier": "look",
+     "parts": {
+      "fit": 16,
+      "skills": 14,
+      "eligibility": 22,
+      "requirements": -5
+     },
+     "season": "unstated",
+     "season_label": "Season not stated"
+    },
+    "broad": {
+     "score": 47,
+     "tier": "look",
+     "parts": {
+      "fit": 16,
+      "skills": 14,
+      "eligibility": 22,
+      "requirements": -5
+     },
+     "season": "unstated",
+     "season_label": "Season not stated"
+    }
+   },
+   "score": 47,
+   "tier": "look",
+   "discipline": "Electrical",
+   "quals": {
+    "required": [
+     {
+      "text": "Create system wiring diagrams, circuit breaker panels, control panels and other items using CAD (Computer Aided Design) tool",
+      "status": "met",
+      "why": "You have: SolidWorks / CAD"
+     },
+     {
+      "text": "Research and preparation of engineering drawings, and coordination of design activities with Systems Engineering, Manufacturing, and Production to ensure that d",
+      "status": "missing",
+      "why": "Not on your resume: Drawings / drafting"
+     },
+     {
+      "text": "Designs can include development of Avionics Systems, RF, LAN, Data Processing, Power Distribution Systems, Electrical Loads analysis, Load shedding scheme to na",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Must be pursuing a Bachelor’s degree, a Master’s degree or a PhD in Electrical Engineering, Electrical Engineering Technology, Computer Science degree or relate",
+      "status": "partial",
+      "why": "Other majors listed; Aerospace Engineering may count as related"
+     }
+    ],
+    "preferred": [
+     {
+      "text": "Skills/Knowledge of with CAD and PLM software, including NX and Teamcenter",
+      "status": "met",
+      "why": "You have: SolidWorks / CAD"
+     },
+     {
+      "text": "Knowledge of Siemens Capital software",
+      "status": "check",
+      "why": "Coursework or background (check your classes)"
+     }
+    ],
+    "summary": {
+     "required_checked": 3,
+     "required_met": 1.5,
+     "required_missing": 1,
+     "to_check": 1,
+     "preferred_met": 1,
+     "preferred_total": 1
+    }
+   },
+   "matched": [
+    "SolidWorks / CAD"
+   ],
+   "related": [
+    "C (close to C++)"
+   ],
+   "gaps": [
+    "Siemens NX",
+    "Drawings / drafting"
+   ],
+   "flags": [],
+   "has_description": true,
+   "first_seen": "2026-10-29",
    "last_seen": "2026-10-29"
   },
   {
@@ -41232,6 +42171,118 @@
    ],
    "has_description": true,
    "first_seen": "2026-10-11",
+   "last_seen": "2026-10-29"
+  },
+  {
+   "company": "Carrier",
+   "title": "Lab Assistant Engineering - Co-Op",
+   "location": "CAI19: UTEC-Huntington, 111 East Wayne Street, Fort Wayne, IN, 46802 USA",
+   "url": "https://carrier.wd5.myworkdayjobs.com/jobs/job/CAI19-UTEC-Huntington-111-East-Wayne-Street-Fort-Wayne-IN-46802-USA/Lab-Assistant-Engineering---Co-Op_30220677",
+   "source": "Carrier careers",
+   "posted": "2026-10-29",
+   "source_id": "Carrier",
+   "key": "wd:carrier:30220677",
+   "tracks": {
+    "broad": {
+     "score": 46,
+     "tier": "look",
+     "parts": {
+      "fit": 8,
+      "skills": 16,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Season not stated"
+    }
+   },
+   "score": 46,
+   "tier": "look",
+   "discipline": "General engineering",
+   "quals": {
+    "required": [
+     {
+      "text": "Must be currently pursuing a Bachelor’s degree or Master’s degree in Electrical Engineering or any Engineering field.",
+      "status": "met",
+      "why": "You're Aerospace Engineering"
+     },
+     {
+      "text": "Must have an overall GPA of 3.0 or higher.",
+      "status": "check",
+      "why": "Needs GPA 3.0+"
+     },
+     {
+      "text": "Must be eligible to work in the US without sponsorship",
+      "status": "soft",
+      "why": ""
+     }
+    ],
+    "preferred": [
+     {
+      "text": "Basic computer proficiency, including Microsoft Excel, Word, and data entry applications.",
+      "status": "met",
+      "why": "You have: Excel / data analysis"
+     },
+     {
+      "text": "Strong attention to detail and ability to accurately enter and maintain information.",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Basic understanding of electronic components and electrical principles preferred but not required.",
+      "status": "check",
+      "why": "Coursework or background (check your classes)"
+     },
+     {
+      "text": "Willingness to learn the use of multimeters, soldering equipment, and basic electronic test instruments.",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Ability to follow written procedures, safety guidelines, and instructions.",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Good organizational, communication, and problem-solving skills.",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Ability to work independently on assigned tasks and collaboratively with engineering personnel.",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Prior engineering or electronics internship experience preferred.",
+      "status": "check",
+      "why": ""
+     }
+    ],
+    "summary": {
+     "required_checked": 1,
+     "required_met": 1.0,
+     "required_missing": 0,
+     "to_check": 2,
+     "preferred_met": 1,
+     "preferred_total": 1
+    }
+   },
+   "matched": [
+    "Prototyping & fabrication",
+    "Arduino / microcontrollers",
+    "Excel / data analysis"
+   ],
+   "related": [],
+   "gaps": [],
+   "flags": [
+    {
+     "kind": "info",
+     "label": "Min GPA 3.0"
+    }
+   ],
+   "has_description": true,
+   "first_seen": "2026-10-29",
    "last_seen": "2026-10-29"
   },
   {
@@ -42128,87 +43179,6 @@
   },
   {
    "company": "Lockheed Martin",
-   "title": "Systems Engineer - Intern",
-   "location": "Boulder, CO",
-   "url": "https://lockheedmartin.eightfold.ai/careers/job/996477367458",
-   "source": "Lockheed Martin careers",
-   "posted": "2026-10-21",
-   "source_id": "Lockheed Martin",
-   "key": "url:https://lockheedmartin.eightfold.ai/careers/job/996477367458",
-   "tracks": {
-    "summer": {
-     "score": 40,
-     "tier": "look",
-     "parts": {
-      "fit": 14,
-      "skills": 4,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Season not stated"
-    },
-    "broad": {
-     "score": 46,
-     "tier": "look",
-     "parts": {
-      "fit": 20,
-      "skills": 4,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Season not stated"
-    }
-   },
-   "score": 46,
-   "tier": "look",
-   "discipline": "Systems",
-   "quals": {
-    "required": [
-     {
-      "text": "Currently Enrolled in a College Engineering or STEM Program with coursework in systems, aerospace, mechanical or electrical engineering",
-      "status": "check",
-      "why": "Coursework or background (check your classes)"
-     },
-     {
-      "text": "Excellent written and verbal communication skills",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "Ability to work in a collaborative and team-based environment",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "System Integration and Test experience",
-      "status": "check",
-      "why": ""
-     }
-    ],
-    "preferred": [],
-    "summary": {
-     "required_checked": 0,
-     "required_met": 0.0,
-     "required_missing": 0,
-     "to_check": 1,
-     "preferred_met": 0,
-     "preferred_total": 0
-    }
-   },
-   "matched": [
-    "Excel / data analysis"
-   ],
-   "related": [],
-   "gaps": [],
-   "flags": [],
-   "has_description": true,
-   "first_seen": "2026-10-21",
-   "last_seen": "2026-10-29"
-  },
-  {
-   "company": "Lockheed Martin",
    "title": "Systems Engineering/IT-Intern",
    "location": "Huntsville, AL",
    "url": "https://lockheedmartin.eightfold.ai/careers/job/996477428505",
@@ -42437,6 +43407,87 @@
    ],
    "has_description": true,
    "first_seen": "2026-10-26",
+   "last_seen": "2026-10-29"
+  },
+  {
+   "company": "Lockheed Martin",
+   "title": "Systems Engineer - Intern",
+   "location": "Boulder, CO",
+   "url": "https://lockheedmartin.eightfold.ai/careers/job/996477367458",
+   "source": "Lockheed Martin careers",
+   "posted": "2026-10-21",
+   "source_id": "Lockheed Martin",
+   "key": "url:https://lockheedmartin.eightfold.ai/careers/job/996477367458",
+   "tracks": {
+    "summer": {
+     "score": 40,
+     "tier": "look",
+     "parts": {
+      "fit": 14,
+      "skills": 4,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Season not stated"
+    },
+    "broad": {
+     "score": 46,
+     "tier": "look",
+     "parts": {
+      "fit": 20,
+      "skills": 4,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Season not stated"
+    }
+   },
+   "score": 46,
+   "tier": "look",
+   "discipline": "Systems",
+   "quals": {
+    "required": [
+     {
+      "text": "Currently Enrolled in a College Engineering or STEM Program with coursework in systems, aerospace, mechanical or electrical engineering",
+      "status": "check",
+      "why": "Coursework or background (check your classes)"
+     },
+     {
+      "text": "Excellent written and verbal communication skills",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Ability to work in a collaborative and team-based environment",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "System Integration and Test experience",
+      "status": "check",
+      "why": ""
+     }
+    ],
+    "preferred": [],
+    "summary": {
+     "required_checked": 0,
+     "required_met": 0.0,
+     "required_missing": 0,
+     "to_check": 1,
+     "preferred_met": 0,
+     "preferred_total": 0
+    }
+   },
+   "matched": [
+    "Excel / data analysis"
+   ],
+   "related": [],
+   "gaps": [],
+   "flags": [],
+   "has_description": true,
+   "first_seen": "2026-10-21",
    "last_seen": "2026-10-29"
   },
   {
@@ -43152,7 +44203,7 @@
   {
    "company": "Raytheon",
    "title": "Systems Engineering Intern",
-   "location": "Multi Location\nBurnsville, MN, United States\nMarlborough, MA, United States",
+   "location": "Burnsville, MN, United States",
    "url": "https://www.google.com/search?q=Raytheon+%22Systems+Engineering+Intern%22",
    "key": "il:6ac6b205d9621c5b283aa43a",
    "lead": true,
@@ -44343,6 +45394,47 @@
    "sponsorship": "Other",
    "source_id": "Simplify Summer 2027 list",
    "key": "url:https://jobs.smartrecruiters.com/renesaselectronics/744000158346447",
+   "tracks": {
+    "broad": {
+     "score": 45,
+     "tier": "look",
+     "parts": {
+      "fit": 8,
+      "skills": 12,
+      "eligibility": 25,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    }
+   },
+   "score": 45,
+   "tier": "look",
+   "discipline": "General engineering",
+   "quals": null,
+   "matched": [],
+   "related": [],
+   "gaps": [],
+   "flags": [
+    {
+     "kind": "info",
+     "label": "Full description not loaded"
+    }
+   ],
+   "has_description": false,
+   "first_seen": "2026-10-29",
+   "last_seen": "2026-10-29"
+  },
+  {
+   "company": "Riverlane",
+   "title": "Engineer Intern",
+   "location": "Cambridge, MA",
+   "url": "https://www.riverlane.com/jobs?gh_jid=5010283101#vacancies",
+   "source": "Simplify Summer 2027 list",
+   "posted": "2026-10-20",
+   "sponsorship": "Other",
+   "source_id": "Simplify Summer 2027 list",
+   "key": "gr:5010283101",
    "tracks": {
     "broad": {
      "score": 45,
@@ -46732,124 +47824,6 @@
   {
    "company": "Lockheed Martin",
    "title": "Radio Frequency (RF) Engineering Intern",
-   "location": "Chelmsford, MA",
-   "url": "https://lockheedmartin.eightfold.ai/careers/job/996477240465",
-   "source": "Lockheed Martin careers",
-   "posted": "2026-10-20",
-   "source_id": "Lockheed Martin",
-   "key": "url:https://lockheedmartin.eightfold.ai/careers/job/996477240465",
-   "tracks": {
-    "summer": {
-     "score": 41,
-     "tier": "look",
-     "parts": {
-      "fit": 12,
-      "skills": 7,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Summer (year not stated)"
-    },
-    "broad": {
-     "score": 43,
-     "tier": "look",
-     "parts": {
-      "fit": 14,
-      "skills": 7,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Summer (year not stated)"
-    }
-   },
-   "score": 43,
-   "tier": "look",
-   "discipline": "Electrical",
-   "quals": {
-    "required": [
-     {
-      "text": "Pursuing Bachelor's degree in electrical engineering or a closely related technical field.",
-      "status": "partial",
-      "why": "Other majors listed; Aerospace Engineering may count as related"
-     },
-     {
-      "text": "Academic experience or knowledge of using RF/ microwave test equipment is required. This may include: RF Power measurements, DC Power Supplies, Pulse Generators",
-      "status": "check",
-      "why": "Coursework or background (check your classes)"
-     },
-     {
-      "text": "The candidate must be eligible to obtain a DoD clearance and must be a US citizen.",
-      "status": "met",
-      "why": "You're a U.S. citizen"
-     }
-    ],
-    "preferred": [
-     {
-      "text": "Related RF undergrad internship experience is desired.",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Academic experience with RF / microwave project design (active or passive circuit design) is desired. Passive components may include: resistors, capacitors, ind",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Familiarity with RF/ microwave circuit simulation or 3D electromagnetic simulation tools (i.e. HFSS, CST) is desired.",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Familiarity with troubleshooting designs and resolving integration issues is desired.",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Familiarity with reviewing and interpreting technical documentation such as specifications, schematic diagrams, and test data is desired.",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Demonstrated academic achievement.",
-      "status": "check",
-      "why": ""
-     }
-    ],
-    "summary": {
-     "required_checked": 2,
-     "required_met": 1.5,
-     "required_missing": 0,
-     "to_check": 1,
-     "preferred_met": 0,
-     "preferred_total": 0
-    }
-   },
-   "matched": [
-    "Prototyping & fabrication"
-   ],
-   "related": [],
-   "gaps": [],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "U.S. person / ITAR",
-     "id": "citizen"
-    },
-    {
-     "kind": "info",
-     "label": "Clearance",
-     "id": "clearance"
-    }
-   ],
-   "has_description": true,
-   "first_seen": "2026-10-20",
-   "last_seen": "2026-10-29"
-  },
-  {
-   "company": "Lockheed Martin",
-   "title": "Radio Frequency (RF) Engineering Intern",
    "location": "Andover, MA",
    "url": "https://lockheedmartin.eightfold.ai/careers/job/996477278895",
    "source": "Lockheed Martin careers",
@@ -47199,6 +48173,124 @@
    ],
    "has_description": true,
    "first_seen": "2026-10-19",
+   "last_seen": "2026-10-29"
+  },
+  {
+   "company": "Lockheed Martin",
+   "title": "Radio Frequency (RF) Engineering Intern",
+   "location": "Chelmsford, MA",
+   "url": "https://lockheedmartin.eightfold.ai/careers/job/996477240465",
+   "source": "Lockheed Martin careers",
+   "posted": "2026-10-20",
+   "source_id": "Lockheed Martin",
+   "key": "url:https://lockheedmartin.eightfold.ai/careers/job/996477240465",
+   "tracks": {
+    "summer": {
+     "score": 41,
+     "tier": "look",
+     "parts": {
+      "fit": 12,
+      "skills": 7,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Summer (year not stated)"
+    },
+    "broad": {
+     "score": 43,
+     "tier": "look",
+     "parts": {
+      "fit": 14,
+      "skills": 7,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Summer (year not stated)"
+    }
+   },
+   "score": 43,
+   "tier": "look",
+   "discipline": "Electrical",
+   "quals": {
+    "required": [
+     {
+      "text": "Pursuing Bachelor's degree in electrical engineering or a closely related technical field.",
+      "status": "partial",
+      "why": "Other majors listed; Aerospace Engineering may count as related"
+     },
+     {
+      "text": "Academic experience or knowledge of using RF/ microwave test equipment is required. This may include: RF Power measurements, DC Power Supplies, Pulse Generators",
+      "status": "check",
+      "why": "Coursework or background (check your classes)"
+     },
+     {
+      "text": "The candidate must be eligible to obtain a DoD clearance and must be a US citizen.",
+      "status": "met",
+      "why": "You're a U.S. citizen"
+     }
+    ],
+    "preferred": [
+     {
+      "text": "Related RF undergrad internship experience is desired.",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Academic experience with RF / microwave project design (active or passive circuit design) is desired. Passive components may include: resistors, capacitors, ind",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Familiarity with RF/ microwave circuit simulation or 3D electromagnetic simulation tools (i.e. HFSS, CST) is desired.",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Familiarity with troubleshooting designs and resolving integration issues is desired.",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Familiarity with reviewing and interpreting technical documentation such as specifications, schematic diagrams, and test data is desired.",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Demonstrated academic achievement.",
+      "status": "check",
+      "why": ""
+     }
+    ],
+    "summary": {
+     "required_checked": 2,
+     "required_met": 1.5,
+     "required_missing": 0,
+     "to_check": 1,
+     "preferred_met": 0,
+     "preferred_total": 0
+    }
+   },
+   "matched": [
+    "Prototyping & fabrication"
+   ],
+   "related": [],
+   "gaps": [],
+   "flags": [
+    {
+     "kind": "info",
+     "label": "U.S. person / ITAR",
+     "id": "citizen"
+    },
+    {
+     "kind": "info",
+     "label": "Clearance",
+     "id": "clearance"
+    }
+   ],
+   "has_description": true,
+   "first_seen": "2026-10-20",
    "last_seen": "2026-10-29"
   },
   {
@@ -48238,6 +49330,117 @@
    "last_seen": "2026-10-29"
   },
   {
+   "company": "General Motors",
+   "title": "2027 Summer Intern - Systems/Calibration Engineer, ADAS Drive",
+   "location": "Milford, Michigan, United States of America",
+   "url": "https://generalmotors.wd5.myworkdayjobs.com/Careers_GM/job/Milford-Michigan-United-States-of-America/XMLNAME-2027-Summer-Intern---Systems-Calibration-Engineer--ADAS-Drive_JR-202621623",
+   "source": "General Motors careers",
+   "posted": "2026-10-15",
+   "source_id": "General Motors",
+   "key": "wd:generalmotors:jr-202621623",
+   "tracks": {
+    "broad": {
+     "score": 41,
+     "tier": "look",
+     "parts": {
+      "fit": 10,
+      "skills": 18,
+      "eligibility": 13,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    }
+   },
+   "score": 41,
+   "tier": "look",
+   "discipline": "Systems",
+   "quals": {
+    "required": [
+     {
+      "text": "Working towards Bachelor's degree or Master's Degree in Computer Engineering (Electrical, Computer, Mechatronics, System Design, Mechanical, Chemical or equival",
+      "status": "met",
+      "why": "You're Aerospace Engineering"
+     },
+     {
+      "text": "Coursework or project experience in Python or Matlab or embedded microcontrollers.",
+      "status": "met",
+      "why": "You have: Python, Arduino / microcontrollers"
+     },
+     {
+      "text": "Able to work fulltime, 40 hours per week",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Valid driver’s license",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Transportation to get to/from Milford Proving Grounds on a daily basis",
+      "status": "check",
+      "why": ""
+     }
+    ],
+    "preferred": [
+     {
+      "text": "Basic understanding of automotive control systems, ADAS features, sensors, or electronics.",
+      "status": "check",
+      "why": "Coursework: Controls / GNC (check your classes)"
+     },
+     {
+      "text": "Familiarity with model-based design tools (MATLAB/Simulink) and communication protocols (CAN, LIN, Ethernet)",
+      "status": "missing",
+      "why": "Not on your resume: MATLAB, Simulink"
+     },
+     {
+      "text": "Proficiency in scripting languages such as Python",
+      "status": "met",
+      "why": "You have: Python"
+     },
+     {
+      "text": "Must be graduating between December 2027 and June 2028",
+      "status": "missing",
+      "why": "Grad date rule (2027–2028) doesn't fit your 2029"
+     },
+     {
+      "text": "Intent to return to degree-program after the completion of the internship.",
+      "status": "met",
+      "why": "You're enrolled in a degree program"
+     }
+    ],
+    "summary": {
+     "required_checked": 2,
+     "required_met": 2.0,
+     "required_missing": 0,
+     "to_check": 1,
+     "preferred_met": 2,
+     "preferred_total": 4
+    }
+   },
+   "matched": [
+    "Python",
+    "Prototyping & fabrication",
+    "Arduino / microcontrollers"
+   ],
+   "related": [],
+   "gaps": [
+    "MATLAB",
+    "Simulink",
+    "Controls / GNC"
+   ],
+   "flags": [
+    {
+     "kind": "warn",
+     "label": "Grad window 2027–2028"
+    }
+   ],
+   "has_description": true,
+   "first_seen": "2026-10-29",
+   "last_seen": "2026-10-29"
+  },
+  {
    "company": "MIT Lincoln Laboratory",
    "title": "Summer Research Program Intern 2027, Biological and Chemical Technologies (Group 02-23)",
    "location": "Lexington, MA, United States",
@@ -49217,93 +50420,6 @@
    "last_seen": "2026-10-29"
   },
   {
-   "company": "Caterpillar",
-   "title": "Transportation Analyst Intern",
-   "location": "Suzhou, Jiangsu",
-   "url": "https://cat.wd5.myworkdayjobs.com/CaterpillarCareers/job/Suzhou-Jiangsu/Transportation-Analyst-Intern_R0000393515",
-   "source": "Caterpillar careers",
-   "posted": "2026-10-23",
-   "source_id": "Caterpillar",
-   "key": "wd:cat:r0000393515",
-   "tracks": {
-    "broad": {
-     "score": 39,
-     "tier": "look",
-     "parts": {
-      "fit": 8,
-      "skills": 9,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Season not stated"
-    }
-   },
-   "score": 39,
-   "tier": "look",
-   "discipline": "Civil & construction",
-   "quals": {
-    "required": [
-     {
-      "text": "4~5 days attendance per week.",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Effective communication and analytical skills.",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "PC skills in Excel, PowerPoint, Power BI etc.",
-      "status": "met",
-      "why": "You have: Excel / data analysis"
-     },
-     {
-      "text": "Fluent English in reading and writing, and good listening and speaking ability.",
-      "status": "partial",
-      "why": "Close: Fluent ≈ CFD (STAR-CCM+)"
-     },
-     {
-      "text": "Good knowledge of Supply Chain Management, Logistics Management etc.",
-      "status": "check",
-      "why": "Coursework or background (check your classes)"
-     }
-    ],
-    "preferred": [
-     {
-      "text": "IT major or well developed IT skill can be a plus.",
-      "status": "met",
-      "why": "You're enrolled in a degree program"
-     },
-     {
-      "text": "PC skills in database development, programing",
-      "status": "check",
-      "why": ""
-     }
-    ],
-    "summary": {
-     "required_checked": 2,
-     "required_met": 1.5,
-     "required_missing": 0,
-     "to_check": 1,
-     "preferred_met": 1,
-     "preferred_total": 1
-    }
-   },
-   "matched": [
-    "Excel / data analysis"
-   ],
-   "related": [
-    "Fluent (close to CFD (STAR-CCM+))"
-   ],
-   "gaps": [],
-   "flags": [],
-   "has_description": true,
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-29"
-  },
-  {
    "company": "General Dynamics Land Systems",
    "title": "2027 Summer Intern - Sights and Electro-Optical Sensors",
    "location": "Sterling Heights, MI, United States",
@@ -49712,6 +50828,90 @@
    ],
    "has_description": true,
    "first_seen": "2026-10-28",
+   "last_seen": "2026-10-29"
+  },
+  {
+   "company": "RTX",
+   "title": "Electro-Optics Systems Engineer Intern (Summer 2027)",
+   "location": "El Segundo, CA, United States",
+   "url": "https://www.google.com/search?q=RTX+%22Electro-Optics+Systems+Engineer+Intern+%28Summer+2027%29%22",
+   "key": "il:6ae27ad605a39c3e2c71ad33",
+   "lead": true,
+   "source": "intern-list.com",
+   "posted": "2026-10-26",
+   "source_id": "intern-list.com",
+   "tracks": {
+    "broad": {
+     "score": 39,
+     "tier": "look",
+     "parts": {
+      "fit": 14,
+      "skills": 0,
+      "eligibility": 25,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    }
+   },
+   "score": 39,
+   "tier": "look",
+   "discipline": "Systems",
+   "quals": null,
+   "matched": [],
+   "related": [],
+   "gaps": [],
+   "flags": [
+    {
+     "kind": "info",
+     "label": "U.S. person / ITAR",
+     "id": "citizen"
+    }
+   ],
+   "has_description": true,
+   "first_seen": "2026-10-29",
+   "last_seen": "2026-10-29"
+  },
+  {
+   "company": "RTX",
+   "title": "RF Systems Engineer Intern (Summer 2027)",
+   "location": "El Segundo, CA, United States",
+   "url": "https://www.google.com/search?q=RTX+%22RF+Systems+Engineer+Intern+%28Summer+2027%29%22",
+   "key": "il:6ae27aca829a3bada1605715",
+   "lead": true,
+   "source": "intern-list.com",
+   "posted": "2026-10-26",
+   "source_id": "intern-list.com",
+   "tracks": {
+    "broad": {
+     "score": 39,
+     "tier": "look",
+     "parts": {
+      "fit": 14,
+      "skills": 0,
+      "eligibility": 25,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    }
+   },
+   "score": 39,
+   "tier": "look",
+   "discipline": "Electrical",
+   "quals": null,
+   "matched": [],
+   "related": [],
+   "gaps": [],
+   "flags": [
+    {
+     "kind": "info",
+     "label": "U.S. person / ITAR",
+     "id": "citizen"
+    }
+   ],
+   "has_description": true,
+   "first_seen": "2026-10-29",
    "last_seen": "2026-10-29"
   },
   {
@@ -51045,78 +52245,6 @@
    "last_seen": "2026-10-29"
   },
   {
-   "company": "Lockheed Martin",
-   "title": "College Student - Technical (Systems Intern)",
-   "location": "King of Prussia, PA, United States",
-   "url": "https://www.google.com/search?q=Lockheed+Martin+%22College+Student+-+Technical+%28Systems+Intern%29%22",
-   "key": "il:6ace812e4f3229123da3c8b8",
-   "lead": true,
-   "source": "intern-list.com",
-   "posted": "2026-10-14",
-   "source_id": "intern-list.com",
-   "tracks": {
-    "broad": {
-     "score": 36,
-     "tier": "look",
-     "parts": {
-      "fit": 14,
-      "skills": 0,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Season not stated"
-    }
-   },
-   "score": 36,
-   "tier": "look",
-   "discipline": "Systems",
-   "quals": null,
-   "matched": [],
-   "related": [],
-   "gaps": [],
-   "flags": [],
-   "has_description": true,
-   "first_seen": "2026-10-29",
-   "last_seen": "2026-10-29"
-  },
-  {
-   "company": "Lockheed Martin",
-   "title": "College Student - Technical(Systems Intern)",
-   "location": "King of Prussia, PA, United States",
-   "url": "https://www.google.com/search?q=Lockheed+Martin+%22College+Student+-+Technical%28Systems+Intern%29%22",
-   "key": "il:6ace8142ba99f15ef41254d1",
-   "lead": true,
-   "source": "intern-list.com",
-   "posted": "2026-10-14",
-   "source_id": "intern-list.com",
-   "tracks": {
-    "broad": {
-     "score": 36,
-     "tier": "look",
-     "parts": {
-      "fit": 14,
-      "skills": 0,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Season not stated"
-    }
-   },
-   "score": 36,
-   "tier": "look",
-   "discipline": "Systems",
-   "quals": null,
-   "matched": [],
-   "related": [],
-   "gaps": [],
-   "flags": [],
-   "has_description": true,
-   "first_seen": "2026-10-29",
-   "last_seen": "2026-10-29"
-  },
-  {
    "company": "MIT Lincoln Laboratory",
    "title": "Summer Research Program Intern 2027, Systems & Architectures (Group 03-31)",
    "location": "Lexington, MA, United States",
@@ -51425,6 +52553,93 @@
    ],
    "has_description": true,
    "first_seen": "2026-10-27",
+   "last_seen": "2026-10-29"
+  },
+  {
+   "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
+   "title": "Receiver, Exciter & Processing Architecture Electrical Engineer Intern (Summer 2027)",
+   "location": "US-MA-TEWKSBURY-TB1 ~ 50 Apple Hill Dr ~ ASSABET BLDG",
+   "url": "https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-MA-TEWKSBURY-TB1--50-Apple-Hill-Dr--ASSABET-BLDG/Receiver--Exciter---Processing-Architecture-Electrical-Engineer-Intern--Summer-2027-_01873437",
+   "source": "RTX (Raytheon, Pratt & Whitney, Collins) careers",
+   "posted": "2026-10-29",
+   "source_id": "RTX (Raytheon, Pratt & Whitney, Collins)",
+   "key": "wd:globalhr:01873437",
+   "tracks": {
+    "broad": {
+     "score": 36,
+     "tier": "look",
+     "parts": {
+      "fit": 14,
+      "skills": 2,
+      "eligibility": 25,
+      "requirements": -5
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    }
+   },
+   "score": 36,
+   "tier": "look",
+   "discipline": "Electrical",
+   "quals": {
+    "required": [
+     {
+      "text": "Active and transferable U.S. government issued security clearance is required prior to start date.​ U.S. citizenship is required, as only U.S. citizens are elig",
+      "status": "missing",
+      "why": "Needs a clearance you'd already have to hold"
+     },
+     {
+      "text": "Must be pursuing a BS or Advanced degree in Science, Technology, Engineering or Mathematics (STEM) at the time of the internship",
+      "status": "met",
+      "why": "You're Aerospace Engineering"
+     },
+     {
+      "text": "Must have a minimum of 30 hours of credit by the start of the internship session.",
+      "status": "met",
+      "why": "You'll have about 60 credits"
+     }
+    ],
+    "preferred": [
+     {
+      "text": "ABET is the preferred, although not required, accreditation standard. 3.0 cumulative GPA desired.",
+      "status": "check",
+      "why": "Needs GPA 3.0+"
+     }
+    ],
+    "summary": {
+     "required_checked": 3,
+     "required_met": 2.0,
+     "required_missing": 1,
+     "to_check": 1,
+     "preferred_met": 0,
+     "preferred_total": 0
+    }
+   },
+   "matched": [],
+   "related": [
+    "Embedded (close to Arduino / microcontrollers)"
+   ],
+   "gaps": [
+    "Controls / GNC"
+   ],
+   "flags": [
+    {
+     "kind": "info",
+     "label": "Min GPA 3.0"
+    },
+    {
+     "kind": "info",
+     "label": "U.S. person / ITAR",
+     "id": "citizen"
+    },
+    {
+     "kind": "info",
+     "label": "Clearance",
+     "id": "clearance"
+    }
+   ],
+   "has_description": true,
+   "first_seen": "2026-10-29",
    "last_seen": "2026-10-29"
   },
   {
