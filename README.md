@@ -32,7 +32,7 @@ came from). Postings with no date anywhere go in **Posted date unknown**.
 ## Today's top matches
 
 <!-- JOBS:START -->
-**381 Summer 2027 aerospace matches** (11 Fall 2027 near home, 584 in All engineering) as of Oct 30, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
+**329 Summer 2027 aerospace matches** (7 Fall 2027 near home, 500 in All engineering, 59 leads without a direct link) as of Oct 30, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
 
 | Fit | Company | Role | Required quals met | Location | Posted | Apply |
 |---|---|---|---|---|---|---|
@@ -40,11 +40,13 @@ came from). Postings with no date anywhere go in **Posted date unknown**.
 | 100 | CACI | Aerospace Engineer Intern - Summer 2027 | 5 of 5 | Aberdeen Proving Ground, MD, US | 2026-10-16 | [Apply](https://caci.wd1.myworkdayjobs.com/External/job/Aberdeen-Proving-Ground-MD-US/Aerospace-Engineer-Intern---Summer-2027_333648) |
 | 100 | CACI | Aerospace Engineer Intern - Summer 2027 | 5 of 5 | Aberdeen Proving Ground, MD, US | 2026-10-16 | [Apply](https://caci.wd1.myworkdayjobs.com/External/job/Aberdeen-Proving-Ground-MD-US/Aerospace-Engineer-Intern---Summer-2027_333570) |
 | 100 | CesiumAstro | Summer 2027 - Flight Dynamics Internship | 3 of 3 | Huntsville, AL | 2026-10-16 | [Apply](https://jobs.lever.co/CesiumAstro/385a6217-7931-4bb4-861a-1e5651e3a998) |
+| 100 | Gulfstream | Summer 2027 - IEF - Structures/ Structural Design College Intern 🆕 | 2 of 2 | Savannah, GA, US | 2026-10-15 | [Apply](https://careers.gulfstream.com/en/jobs/236094/summer-2027-ief-structures-structural-design-college-intern/) |
 | 100 | Loft Orbital | Summer 2027 Internship – Mechanical Engineering | 3 of 3 | Golden, CO | 2026-10-27 | [Apply](https://jobs.lever.co/loftorbital/34edd0b7-2a5b-4efa-a379-860097784534) |
 | 97 | Inversion Space | Avionics Mechanical Engineer - Summer Internship 2027 | 3 of 3 | Playa Vista, California, United States | 2026-10-15 | [Apply](https://job-boards.greenhouse.io/inversionspace/jobs/4744390005) |
 | 97 | Johns Hopkins Applied Physics Laboratory | 2027 Internship - Mechanical Engineering Intern | – | Laurel, Maryland | 2026-10-26 | [Apply](https://careers.jhuapl.edu/jobs/60389) |
 | 97 | Johns Hopkins Applied Physics Laboratory | 2027 Internship - Missile, Reentry, and Hypersonics Systems Performance | – | Laurel, Maryland | 2026-10-27 | [Apply](https://careers.jhuapl.edu/jobs/60578) |
-| 95 | Relativity Space | Vehicle Structures & Mechanisms Engineer Intern | – | Long Beach, CA, United States | 2026-10-28 | [Find posting](https://www.google.com/search?q=Relativity+Space+%22Vehicle+Structures+%26+Mechanisms+Engineer+Intern%22) |
+| 97 | MIT Lincoln Laboratory | Summer Research Program Intern 2027, Structural & Thermal-Fluids Engineering (Group Group 07-74) 🆕 | – | Lexington, MA, US | 2026-10-21 | [Apply](https://careers.ll.mit.edu/job/Lexington-Summer-Research-Program-Intern-2027%2C-Structural-&-Thermal-Fluids-Engineering-%28Group-Group-07-74%29-MA-02420/1442417400/) |
+| 97 | MIT Lincoln Laboratory | Summer Research Program Intern 2027, Mechanical Engineering (Group 07-71) 🆕 | – | Lexington, MA, US | 2026-10-27 | [Apply](https://careers.ll.mit.edu/job/Lexington-Summer-Research-Program-Intern-2027%2C-Mechanical-Engineering-%28Group-07-71%29-MA-02420/1434255400/) |
 | 94 | RTX (Raytheon, Pratt & Whitney, Collins) | Mechanical Engineering Intern (Summer 2027) | 6 of 6 | US-CA-EL SEGUNDO-E01 ~ 2000 E El Segundo | 2026-10-28 | [Apply](https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-CA-EL-SEGUNDO-E01--2000-E-El-Segundo-Blvd--BLDG-E01/Mechanical-Engineering-Intern--Summer-2027-_01883293) |
 | 93 | Lockheed Martin | Mechanical Design Intern | 3 of 3 | Grand Prairie, TX | 2026-10-22 | [Apply](https://lockheedmartin.eightfold.ai/careers/job/996477505085) |
 | 93 | Lockheed Martin | Mechanical Design Engineering Intern | 3 of 3 | Grand Prairie, TX | 2026-10-15 | [Apply](https://lockheedmartin.eightfold.ai/careers/job/996477394326) |
@@ -56,11 +58,9 @@ came from). Postings with no date anywhere go in **Posted date unknown**.
 | 89 | AeroVironment | Aeromechanical Engineering Intern | 3 of 3 | Moorpark, CA | 2026-10-29 | [Apply](https://avav.wd1.myworkdayjobs.com/AVAV/job/Moorpark-CA/Aeromechanical-Engineering-Intern_9217) |
 | 88 | CACI | Mechanical Engineering Intern - Summer 2027 | 2 of 2 | Dulles, VA, US | 2026-10-19 | [Apply](https://caci.wd1.myworkdayjobs.com/External/job/Dulles-VA-US/Mechanical-Engineering-Intern---Summer-2027_333564) |
 | 88 | Lockheed Martin | Systems Integration/Electrical Test Engineer-INTERN | 2 of 2 | Cape Canaveral, FL | 2026-10-19 | [Apply](https://lockheedmartin.eightfold.ai/careers/job/996477338210) |
+| 88 | MIT Lincoln Laboratory | Rapid Prototyping Aero/Mech Co-Op - Group 77 🆕 | 2 of 2 | Lexington, MA, US | 2026-10-22 | [Apply](https://careers.ll.mit.edu/job/Lexington-Rapid-Prototyping-AeroMech-Co-Op-Group-77-MA-02420/1423005300/) |
 | 87 | Safran Defense & Space | Mechanical Engineering Internship | 4 of 4 | Bedford, NH, US, 03110 | 2026-10-16 | [Apply](https://careers.safran-dsi.com/job/Bedford-Mechanical-Engineering-Internship-NH-03110/1431029700/) |
 | 87 | Orbital Operations | Summer 2027 Internship - Engineering | 3 of 4 | Long Beach, CA | 2026-10-19 | [Apply](https://job-boards.greenhouse.io/orbitaloperations/jobs/4375099009) |
-| 86 | BETA TECHNOLOGIES | Aircraft Design & Engineering Internships - Summer 2027 | – | South Burlington, VT, United States | 2026-10-19 | [Find posting](https://www.google.com/search?q=BETA+TECHNOLOGIES+%22Aircraft+Design+%26+Engineering+Internships+-+Summer+2027%22) |
-| 86 | Stratolaunch | Engineering Intern Summer 2027 | 1 of 1 | Mojave, California, United States | 2026-10-19 | [Apply](https://job-boards.greenhouse.io/stratolaunch/jobs/5457750008) |
-| 85 | The Aerospace Corporation | 2027 Communication Architectures Modeling and Analysis Engineering Undergraduate Intern | 4 of 4 | El Segundo, CA | 2026-10-27 | [Apply](https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/XMLNAME-2027-Communication-Architectures-Modeling-and-Analysis-Engineering-Undergraduate-Intern_R017009) |
 <!-- JOBS:END -->
 
 ---
