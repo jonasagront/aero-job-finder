@@ -6,7 +6,7 @@ results to a page I can open on my phone.
 
 **Job page:** https://jonasagront.github.io/aero-job-finder/
 
-The page has six tabs:
+The page has seven tabs:
 
 | Tab | What's in it |
 |---|---|
@@ -15,11 +15,14 @@ The page has six tabs:
 | **Fall 2027 near UCF** | Fall 2027 internships and co-ops within 55 miles of UCF (Orlando to the Space Coast, Melbourne included), plus remote ones, any engineering discipline |
 | **All engineering** | Every Summer 2027 engineering internship from any company or major, with mechanical and aerospace ranked first and a discipline filter |
 | **Posted date unknown** | Postings whose posted date couldn't be found anywhere (see below); they're kept out of the other tabs until one turns up |
+| **Leads without a link** | Postings only intern-list.com has found, with a **Find posting** button instead of Apply (see below) |
 | **Big names** | SpaceX, NASA, Lockheed, Northrop, RTX and other well-known employers: when each usually recruits (a typical window from past cycles; NASA and SMART deadlines are the published ones), how many of its postings are open now, and the earliest posting seen this cycle |
 
-Postings marked **Lead from intern-list** come from intern-list.com, which links to jobright.ai
-instead of the company. Their **Find posting** button searches for the company's own posting;
-tick **Only direct company links** to hide them.
+Leads come from intern-list.com, which links to jobright.ai instead of the company, so they get
+their own tab and a **Find posting** button that searches for the company's own posting. A lead
+leaves that tab on its own once a company career site the scan reads has the same job (a lead
+under a division's name, like Raytheon or Collins Aerospace for RTX, counts: see `[same_company]`
+in `sources.toml`).
 
 Postings more than 15 days old are left off the page (`max_age_days` in `profile.toml`).
 When a posting's source gives no posted date, the scan opens the posting's own page for one, then

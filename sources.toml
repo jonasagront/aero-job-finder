@@ -68,6 +68,21 @@ greenhouse = [
   { name = "Mantari", board = "mantari" },
   { name = "Dawn Aerospace", board = "dawnaerospace" },
   { name = "Advanced Space", board = "advancedspace" },
+  # Added Oct 29 2026: boards found by checking aerospace/defense companies' names
+  { name = "Castelion", board = "castelioncorporation" },
+  { name = "BlackSky", board = "blacksky" },
+  { name = "Spire Global", board = "spire" },
+  { name = "Heart Aerospace", board = "heartaerospace" },
+  { name = "Auterion", board = "auterion" },
+  { name = "Allen Control Systems", board = "allencontrolsystems" },
+  { name = "Spaceium", board = "spaceium" },
+  { name = "Heven AeroTech", board = "hevenaerotech" },
+  { name = "Chaos Industries", board = "chaosindustries" },
+  { name = "Neros", board = "nerostechnologies" },
+  { name = "Skyryse", board = "skyryse" },
+  { name = "Albedo", board = "albedo" },
+  { name = "Scout Space", board = "scoutspace" },
+  { name = "Outpost Space", board = "outpostspace" },
   # Removed Oct 2026 (board gone): Axiom Space -> now on Workday below,
   # Boom Supersonic -> moved to Rippling (not supported).
 
@@ -97,6 +112,9 @@ lever = [
   { name = "Array Labs", board = "arraylabs.io" },
   { name = "E-Space", board = "espace" },
   { name = "Western Aircraft", board = "westair" },
+  { name = "Acron Aviation", board = "acronaviation" },
+  { name = "Elroy Air", board = "elroyair" },
+  { name = "Solestial", board = "solestial" },
 ]
 
 ashby = [
@@ -119,6 +137,10 @@ ashby = [
   { name = "First Order Effects", board = "firstordereffects" },
   { name = "Distributed Spectrum", board = "distributed-spectrum" },
   { name = "Swarm Aero", board = "swarmaero" },
+  { name = "Odys Aviation", board = "odys-aviation" },
+  { name = "Oligo Space", board = "oligo" },
+  { name = "ICEYE", board = "iceye" },
+  { name = "Picogrid", board = "picogrid" },
 ]
 
 # Workday career sites (most large aerospace/defense companies).
@@ -157,6 +179,11 @@ workday = [
   { name = "Teledyne FLIR", host = "flir.wd1.myworkdayjobs.com", site = "flircareers" },
   { name = "Parsons", host = "parsons.wd5.myworkdayjobs.com", site = "search" },
   { name = "Amentum", host = "pae.wd1.myworkdayjobs.com", site = "amentum_careers" },
+  # Added Oct 29 2026
+  { name = "Cubic", host = "cubic.wd1.myworkdayjobs.com", site = "cubic_USA_careers" },
+  { name = "Radiance Technologies", host = "radiancetech.wd12.myworkdayjobs.com", site = "Radiance_External" },
+  { name = "Vantor (formerly Maxar)", host = "maxar.wd1.myworkdayjobs.com", site = "Vantor" },
+  { name = "Thales", host = "thales.wd3.myworkdayjobs.com", site = "Careers" },
 
   # Mechanical / general engineering employers (Oct 2026), aero = false (see above).
   # Several have Central Florida sites: Disney (Lake Buena Vista), Leidos and
@@ -201,6 +228,14 @@ successfactors = [
   { name = "Huntington Ingalls Industries", host = "careers.huntingtoningalls.com" },
   { name = "Leonardo DRS", host = "careers.leonardodrs.com" },
   { name = "Safran Defense & Space", host = "careers.safran-dsi.com" },
+  { name = "MIT Lincoln Laboratory", host = "careers.ll.mit.edu" },
+]
+
+# Career sites with a plain search page and no hiring-system API. search = the
+# search page's address with {term} and {page} in it; path = how links to single
+# postings start. Each posting's page must carry standard job-posting data.
+searchpage = [
+  { name = "Gulfstream", search = "https://careers.gulfstream.com/en/jobs/?search={term}&page={page}", path = "/en/jobs/" },
 ]
 
 # Taleo career sections: section = the part after /careersection/ in a job link,
@@ -238,6 +273,7 @@ jibe = [
 oracle = [
   { name = "Honeywell", host = "ibqbjb.fa.ocs.oraclecloud.com", site = "Honeywell" },
   { name = "Howmet Aerospace", host = "fa-exty-saasfaprod1.fa.ocs.oraclecloud.com", site = "CX_1" },
+  { name = "StandardAero", host = "cva.fa.us1.oraclecloud.com", site = "CX_3" },
 ]
 
 # Phenom career sites: base = the site address up to the language part.
@@ -268,6 +304,10 @@ rippling = [
 smartrecruiters = [
   { name = "Lawrence Livermore National Laboratory", board = "LLNL" },
 ]
+workable = [
+  { name = "RAVE Aerospace", board = "raveaerospace" },
+  { name = "Cornerstone Research Group", board = "cornerstone-research-group-inc" },
+]
 gem = [
   { name = "Astroforge", board = "astroforge-io" },
   { name = "Nominal", board = "nominal" },
@@ -276,10 +316,9 @@ gem = [
 
 # Not supported yet (no public job API), so they rely on the lists below:
 #   Sandia / ManTech (Avature), MDA (UKG, Canada only), York Space (Paycor),
-#   Intuitive Machines (ADP), MIT Lincoln Laboratory, Gulfstream and Bombardier
-#   (sites without a standard search page). intern-list.com covers several of
-#   these, and list postings still get full descriptions when the page includes
-#   standard job-posting data.
+#   Intuitive Machines (ADP), General Atomics (BrassRing), Kratos, Redwire (Clinch),
+#   General Dynamics Land Systems (blocks scripts), BETA Technologies and Bombardier.
+#   intern-list.com covers several of these as leads.
 
 # --- Big student internship lists maintained on GitHub ----------------
 # Simplify + Pitt CSC's Summer 2027 list (thousands of roles, updated daily).
@@ -332,6 +371,16 @@ urls = [
 [usajobs]
 keywords = ["aerospace engineering student", "engineering student trainee", "aerospace intern"]
 
+# --- One employer, many names ---------------------------------------------
+# Lists name divisions their own way ("Raytheon" or "Collins Aerospace" for a job
+# on RTX's career site). Names on the right count as the employer on the left when
+# checking whether a lead without a link is a job a career site already has.
+# Matched as whole words; start a name with = to match the whole company name only.
+[same_company]
+rtx = ["rtx", "raytheon", "collins aerospace", "pratt & whitney", "pratt and whitney"]
+textron = ["textron", "=bell", "bell textron", "bell flight", "kautex"]
+lockheed = ["lockheed", "sikorsky"]
+
 # --- Companies treated as aerospace, even when a posting is vague -------
 # Matched against company names (lowercase, partial match is fine).
 # Start a name with = to match the whole company name only ("=vast" keeps
@@ -367,6 +416,11 @@ names = [
   "eve air mobility", "supernal", "natilus", "pyka", "=regent", "regent craft",
   # Added Oct 2026 for intern-list.com postings
   "general dynamics", "electric boat", "huntington ingalls", "=bell", "advanced space",
+  # Added Oct 29 2026
+  "vantor", "radiance technologies", "cubic", "thales", "standardaero", "standard aero", "acron aviation",
+  "odys aviation", "heart aerospace", "spire global", "blacksky", "iceye", "chaos industries", "=neros",
+  "neros technologies", "elroy air", "skyryse", "albedo", "scout space", "outpost space", "oligo space",
+  "rave aerospace", "cornerstone research group",
 ]
 
 # --- Big names: when well-known employers usually recruit ------------------
@@ -501,7 +555,6 @@ name = "MIT Lincoln Laboratory"
 match = ["lincoln laboratory"]
 careers = "https://www.ll.mit.edu/careers/student-opportunities"
 window = [9, 1]
-note = "Its site isn't scanned directly; postings come from intern-list.com and the lists."
 
 [[popular]]
 name = "The Aerospace Corporation"

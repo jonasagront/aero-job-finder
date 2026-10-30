@@ -54,13 +54,25 @@ def save_json(path: Path, data) -> None:
 
 
 _CO_SUFFIX = re.compile(r"\b(inc|llc|corp|corporation|company|co|the|technologies|industries)\b")
+# (name piece, employer) pairs from sources.toml [same_company], set by main()
+EMPLOYERS: list[tuple[str, str]] = []
+
+
+def _norm(s) -> str:
+    return re.sub(r"[^a-z0-9]+", " ", (s or "").lower()).strip()
 
 
 def same_job(j: dict) -> tuple[str, str]:
-    """Company + title, loosely, to spot the same posting listed under different links."""
-    norm = lambda s: re.sub(r"[^a-z0-9]+", " ", (s or "").lower()).strip()
-    words = _CO_SUFFIX.sub("", norm(j.get("company"))).split()
-    return (words[0] if words else "", norm(j.get("title")))
+    """Company + title, loosely, to spot the same posting listed under different links.
+    Names one employer goes by ("Raytheon" for RTX's board) count as that employer."""
+    co = _norm(j.get("company"))
+    for piece, employer in EMPLOYERS:
+        exact = piece.startswith("=")
+        if (exact and co == piece[1:]) or (not exact and f" {piece} " in f" {co} "):
+            co = employer
+            break
+    words = _CO_SUFFIX.sub("", co).split()
+    return (words[0] if words else "", _norm(j.get("title")))
 
 
 def fill_in(dst: dict, src: dict) -> None:
@@ -94,6 +106,8 @@ def main() -> int:
     sources_cfg = tomllib.loads((ROOT / "sources.toml").read_text(encoding="utf-8"))
     matcher = Matcher(profile, sources_cfg)
     matcher.qc = QualChecker(matcher, profile)
+    EMPLOYERS[:] = [(("=" if p.startswith("=") else "") + _norm(p), _norm(employer))
+                    for employer, pieces in sources_cfg.get("same_company", {}).items() for p in pieces]
 
     def keep(title: str) -> bool:
         """Internship with an engineering-looking title (any section could use it)."""
@@ -153,11 +167,17 @@ def main() -> int:
             if k not in listed or j["posted"] < listed[k]["posted"]:
                 listed[k] = j
     # Leads (postings with no direct link) only stay when they're at an aerospace/defense
-    # company and no source with a real link has the same job
-    direct = {same_job(j) for j in candidates.values() if not j.get("lead")}
+    # company and no source with a real link has the same job. The list repeats some
+    # (one per location, or under a division's name); their button runs the same search,
+    # so one of each is kept.
+    taken = {same_job(j) for j in candidates.values() if not j.get("lead")}
     n_leads = sum(1 for j in candidates.values() if j.get("lead"))
-    candidates = {k: j for k, j in candidates.items() if not j.get("lead")
-                  or (same_job(j) not in direct and matcher.is_aero_company(j.get("company", "")))}
+    for k, j in list(candidates.items()):
+        if j.get("lead"):
+            if same_job(j) in taken or not matcher.is_aero_company(j.get("company", "")):
+                del candidates[k]
+            else:
+                taken.add(same_job(j))
     n_new_leads = sum(1 for j in candidates.values() if j.get("lead"))
     print(f"2) {len(candidates)} engineering internship postings after removing duplicates"
           f" ({n_blocked} skipped for linking to a blocked site; {n_new_leads} of {n_leads} leads"

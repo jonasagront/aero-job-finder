@@ -20,7 +20,7 @@ from .util import FetchError, get_json, html_to_text, parse_ats_url, post_json, 
 # sources.toml sections that are one company's own career board
 BOARD_KINDS = ("greenhouse", "lever", "ashby", "workday", "eightfold", "clearcompany", "successfactors",
                "icims", "jibe", "oracle", "phenom", "pinpoint", "bamboohr", "rippling", "smartrecruiters",
-               "workable", "gem", "taleo", "jazzhr")
+               "workable", "gem", "taleo", "jazzhr", "searchpage")
 
 
 def _date_from_iso(s) -> str:
@@ -196,7 +196,7 @@ def fetch_workday(host: str, site: str, company: str, max_pages: int = 50, keep=
     api = f"https://{host}/wday/cxs/{tenant}/{site}/jobs"
     postings, seen_paths = [], set()
     for term in ("intern", "internship", "co-op"):
-        offset = 0
+        offset = total = 0
         for _ in range(max_pages):
             # Workday rate-limits busy runs (HTTP 429); request() waits and retries
             page = post_json(api, {"appliedFacets": {}, "limit": 20, "offset": offset,
@@ -207,7 +207,9 @@ def fetch_workday(host: str, site: str, company: str, max_pages: int = 50, keep=
                     seen_paths.add(p.get("externalPath"))
                     postings.append(p)
             offset += len(batch)
-            if not batch or offset >= int(page.get("total") or 0):
+            # Some sites only give the total on the first page (later pages say 0)
+            total = total or int(page.get("total") or 0)
+            if not batch or offset >= total:
                 break
             # Results are by relevance (big sites match thousands on "intern" in
             # the text), so stop once a whole page has no internship titles
@@ -786,6 +788,47 @@ def fetch_jazzhr(board: str, company: str, keep=_keep_all) -> list[dict]:
     return _open_each(postings, detail)
 
 
+def fetch_searchpage(search: str, path: str, company: str, max_pages: int = 15, keep=_keep_all) -> list[dict]:
+    """Career sites with a plain search page and no hiring-system API
+    (careers.gulfstream.com...). search is the page's address with {term} and
+    {page}; postings are its links that start with path, and each posting's own
+    page carries standard job-posting data."""
+    root = re.match(r"https?://[^/]+", search).group(0)
+    link = re.compile(r'(?s)<a\b[^>]*\bhref="((?:' + re.escape(root) + ")?" + re.escape(path) + r'[^"#?]+)"[^>]*>(.*?)</a>')
+    postings: dict[str, str] = {}  # url -> title
+    for term in ("intern", "co-op"):
+        for page in range(1, max_pages + 1):
+            new = 0
+            for href, title in link.findall(_get_page(search.format(term=term, page=page))):
+                url = urllib.parse.urljoin(root, html.unescape(href))
+                if url not in postings:
+                    postings[url] = html_to_text(title)
+                    new += 1
+            if not new:  # past the last page, the site repeats it or shows none
+                break
+    wanted = [(url, title) for url, title in postings.items() if _wanted(title, keep)]
+
+    def detail(p):
+        url, title = p
+        try:
+            page = _get_page(url, timeout=30)
+        except FetchError:
+            page = ""
+        posting = _job_posting(page)
+        return {
+            "company": company,
+            "title": html_to_text(posting.get("title")) or title,
+            "location": _ld_location(posting),
+            "url": url,
+            "source": f"{company} careers",
+            "posted": _page_date(page, posting),
+            "description": html_to_text(posting.get("description")),
+            "season_hint": "",
+        }
+
+    return _open_each(wanted, detail)
+
+
 def fetch_internlist(src: dict) -> list[dict]:
     """intern-list.com's tables (public Airtable views embedded on the site).
     Its Apply links go to jobright.ai, which hides the company's link behind a
@@ -950,6 +993,8 @@ def fetch_all(cfg: dict, keep=_keep_all) -> tuple[list[dict], list[dict]]:
         tasks.append((c["name"], "Taleo", lambda c=c: fetch_taleo(c["host"], c["section"], c["portal"], c["name"], keep=keep)))
     for c in cfg.get("jazzhr", []):
         tasks.append((c["name"], "JazzHR", lambda c=c: fetch_jazzhr(c["board"], c["name"], keep=keep)))
+    for c in cfg.get("searchpage", []):
+        tasks.append((c["name"], "Search page", lambda c=c: fetch_searchpage(c["search"], c["path"], c["name"], keep=keep)))
     for src in cfg.get("internlist", []):
         tasks.append((src["name"], "Internship list", lambda s=src: fetch_internlist(s)))
     if "usajobs" in cfg:
@@ -1048,6 +1093,26 @@ def _date_any(s) -> str:
         except ValueError:
             pass
     return ""
+
+
+def _ld_location(posting: dict) -> str:
+    """"City, ST, Country" for each place in schema.org JobPosting data."""
+    places = posting.get("jobLocation") or []
+    out = []
+    for p in places if isinstance(places, list) else [places]:
+        if not isinstance(p, dict):
+            continue
+        a = p.get("address")
+        if isinstance(a, dict):
+            country = a.get("addressCountry")
+            country = country.get("name") if isinstance(country, dict) else country
+            place = ", ".join(str(x) for x in (a.get("addressLocality"), a.get("addressRegion"), country) if x)
+        else:
+            place = str(a or "")
+        place = place or p.get("name", "")
+        if place and place not in out:
+            out.append(place)
+    return "; ".join(out)
 
 
 _ITEMPROP_DATE = re.compile(r'itemprop="datePosted"[^>]*?content="([^"]+)"')
