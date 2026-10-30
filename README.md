@@ -32,7 +32,7 @@ came from). Postings with no date anywhere go in **Posted date unknown**.
 ## Today's top matches
 
 <!-- JOBS:START -->
-**330 Summer 2027 aerospace matches** (7 Fall 2027 near home, 499 in All engineering, 68 leads without a direct link) as of Oct 30, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
+**337 Summer 2027 aerospace matches** (7 Fall 2027 near home, 503 in All engineering, 67 leads without a direct link) as of Oct 30, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
 
 | Fit | Company | Role | Required quals met | Location | Posted | Apply |
 |---|---|---|---|---|---|---|
@@ -41,8 +41,8 @@ came from). Postings with no date anywhere go in **Posted date unknown**.
 | 100 | CACI | Aerospace Engineer Intern - Summer 2027 | 5 of 5 | Aberdeen Proving Ground, MD, US | 2026-10-16 | [Apply](https://caci.wd1.myworkdayjobs.com/External/job/Aberdeen-Proving-Ground-MD-US/Aerospace-Engineer-Intern---Summer-2027_333570) |
 | 100 | CesiumAstro | Summer 2027 - Flight Dynamics Internship | 3 of 3 | Huntsville, AL | 2026-10-16 | [Apply](https://jobs.lever.co/CesiumAstro/385a6217-7931-4bb4-861a-1e5651e3a998) |
 | 100 | Gulfstream | Summer 2027 - IEF - Structures/ Structural Design College Intern 🆕 | 2 of 2 | Savannah, GA, US | 2026-10-15 | [Apply](https://careers.gulfstream.com/en/jobs/236094/summer-2027-ief-structures-structural-design-college-intern/) |
-| 100 | Loft Orbital | Summer 2027 Internship - Thermal & Manufacturing Engineering 🆕 | 4 of 4 | Golden, CO | 2026-10-30 | [Apply](https://jobs.lever.co/loftorbital/03f948ff-0767-4bb0-a13b-345321d63d71) |
 | 100 | Loft Orbital | Summer 2027 Internship – Mechanical Engineering | 3 of 3 | Golden, CO | 2026-10-27 | [Apply](https://jobs.lever.co/loftorbital/34edd0b7-2a5b-4efa-a379-860097784534) |
+| 100 | Loft Orbital | Summer 2027 Internship - Thermal & Manufacturing Engineering 🆕 | 4 of 4 | Golden, CO | 2026-10-30 | [Apply](https://jobs.lever.co/loftorbital/03f948ff-0767-4bb0-a13b-345321d63d71) |
 | 97 | Inversion Space | Avionics Mechanical Engineer - Summer Internship 2027 | 3 of 3 | Playa Vista, California, United States | 2026-10-15 | [Apply](https://job-boards.greenhouse.io/inversionspace/jobs/4744390005) |
 | 97 | Johns Hopkins Applied Physics Laboratory | 2027 Internship - Mechanical Engineering Intern | – | Laurel, Maryland | 2026-10-26 | [Apply](https://careers.jhuapl.edu/jobs/60389) |
 | 97 | Johns Hopkins Applied Physics Laboratory | 2027 Internship - Missile, Reentry, and Hypersonics Systems Performance | – | Laurel, Maryland | 2026-10-27 | [Apply](https://careers.jhuapl.edu/jobs/60578) |
