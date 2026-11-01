@@ -32,13 +32,10 @@ came from). Postings with no date anywhere go in **Posted date unknown**.
 ## Today's top matches
 
 <!-- JOBS:START -->
-**321 Summer 2027 aerospace matches** (7 Fall 2027 near home, 486 in All engineering, 74 leads without a direct link) as of Oct 31, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
+**309 Summer 2027 aerospace matches** (7 Fall 2027 near home, 465 in All engineering, 73 leads without a direct link) as of Nov 1, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
 
 | Fit | Company | Role | Required quals met | Location | Posted | Apply |
 |---|---|---|---|---|---|---|
-| 100 | CACI | Aerospace Engineer Intern - Summer 2027 | 5 of 5 | Aberdeen Proving Ground, MD, US | 2026-10-16 | [Apply](https://caci.wd1.myworkdayjobs.com/External/job/Aberdeen-Proving-Ground-MD-US/Aerospace-Engineer-Intern---Summer-2027_333648) |
-| 100 | CACI | Aerospace Engineer Intern - Summer 2027 | 5 of 5 | Aberdeen Proving Ground, MD, US | 2026-10-16 | [Apply](https://caci.wd1.myworkdayjobs.com/External/job/Aberdeen-Proving-Ground-MD-US/Aerospace-Engineer-Intern---Summer-2027_333570) |
-| 100 | CesiumAstro | Summer 2027 - Flight Dynamics Internship | 3 of 3 | Huntsville, AL | 2026-10-16 | [Apply](https://jobs.lever.co/CesiumAstro/385a6217-7931-4bb4-861a-1e5651e3a998) |
 | 100 | Loft Orbital | Summer 2027 Internship – Mechanical Engineering | 3 of 3 | Golden, CO | 2026-10-27 | [Apply](https://jobs.lever.co/loftorbital/34edd0b7-2a5b-4efa-a379-860097784534) |
 | 100 | Loft Orbital | Summer 2027 Internship - Thermal & Manufacturing Engineering | 4 of 4 | Golden, CO | 2026-10-30 | [Apply](https://jobs.lever.co/loftorbital/03f948ff-0767-4bb0-a13b-345321d63d71) |
 | 97 | Johns Hopkins Applied Physics Laboratory | 2027 Internship - Mechanical Engineering Intern | – | Laurel, Maryland | 2026-10-26 | [Apply](https://careers.jhuapl.edu/jobs/60389) |
@@ -56,11 +53,14 @@ came from). Postings with no date anywhere go in **Posted date unknown**.
 | 88 | CACI | Mechanical Engineering Intern - Summer 2027 | 2 of 2 | Dulles, VA, US | 2026-10-19 | [Apply](https://caci.wd1.myworkdayjobs.com/External/job/Dulles-VA-US/Mechanical-Engineering-Intern---Summer-2027_333564) |
 | 88 | Lockheed Martin | Systems Integration/Electrical Test Engineer-INTERN | 2 of 2 | Cape Canaveral, FL | 2026-10-19 | [Apply](https://lockheedmartin.eightfold.ai/careers/job/996477338210) |
 | 88 | MIT Lincoln Laboratory | Rapid Prototyping Aero/Mech Co-Op - Group 77 | 2 of 2 | Lexington, MA, US | 2026-10-22 | [Apply](https://careers.ll.mit.edu/job/Lexington-Rapid-Prototyping-AeroMech-Co-Op-Group-77-MA-02420/1423005300/) |
-| 87 | Safran Defense & Space | Mechanical Engineering Internship | 4 of 4 | Bedford, NH, US, 03110 | 2026-10-16 | [Apply](https://careers.safran-dsi.com/job/Bedford-Mechanical-Engineering-Internship-NH-03110/1431029700/) |
 | 87 | Orbital Operations | Summer 2027 Internship - Engineering | 3 of 4 | Long Beach, CA | 2026-10-19 | [Apply](https://job-boards.greenhouse.io/orbitaloperations/jobs/4375099009) |
 | 86 | Stratolaunch | Engineering Intern Summer 2027 | 1 of 1 | Mojave, California, United States | 2026-10-19 | [Apply](https://job-boards.greenhouse.io/stratolaunch/jobs/5457750008) |
 | 85 | The Aerospace Corporation | 2027 Communication Architectures Modeling and Analysis Engineering Undergraduate Intern | 4 of 4 | El Segundo, CA | 2026-10-27 | [Apply](https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/XMLNAME-2027-Communication-Architectures-Modeling-and-Analysis-Engineering-Undergraduate-Intern_R017009) |
 | 85 | The Aerospace Corporation | 2027 Communication Architectures Modeling and Analysis Engineering Grad Intern | 4 of 4 | El Segundo, CA | 2026-10-27 | [Apply](https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/XMLNAME-2027-Communication-Architectures-Modeling-and-Analysis-Engineering-Grad-Intern_R017010) |
+| 84 | Teledyne FLIR | Mechanical Engineering Intern - CW | – | US - Wilsonville, OR | 2026-10-22 | [Apply](https://flir.wd1.myworkdayjobs.com/flircareers/job/US---Wilsonville-OR/Mechanical-Engineering-Intern---CW_REQ37514) |
+| 84 | Joby Aviation | Flight Test Intern (Dec 2026-Feb 2027) | 3 of 3 | US-CA-Marina | 2026-10-17 | [Apply](https://careers-jobyaviation.icims.com/jobs/5483/flight-test-intern-%28dec-2026-feb-2027%29/job) |
+| 83 | Parsons | HVAC - Mechanical Engineer Intern - Summer 2027 | 2 of 2 | US - CA, Pasadena | 2026-10-22 | [Apply](https://parsons.wd5.myworkdayjobs.com/Search/job/US---CA-Pasadena/HVAC---Mechanical-Engineer-Intern---Summer-2027_R187605) |
+| 83 | RTX (Raytheon, Pratt & Whitney, Collins) | Manufacturing Engineering Ops Co-Op (Spring/Summer 2027) | 5 of 5 | US-FL-MELBOURNE-310 ~ 1100 W Hibiscus Bl | 2026-10-26 | [Apply](https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-FL-MELBOURNE-310--1100-W-Hibiscus-Blvd--BLDG-310/Manufacturing-Engineering-Ops-Co-Op--Spring-Summer-2027-_01884010) |
 <!-- JOBS:END -->
 
 ---
