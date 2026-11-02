@@ -239,6 +239,14 @@
   "fails": 0,
   "last_seen": "2026-11-02"
  },
+ "greenhouse:astronicscorporation": {
+  "kind": "greenhouse",
+  "board": "astronicscorporation",
+  "name": "Astronics",
+  "first_seen": "2026-11-02",
+  "fails": 0,
+  "last_seen": "2026-11-02"
+ },
  "greenhouse:astspacemobile": {
   "kind": "greenhouse",
   "board": "astspacemobile",
@@ -423,6 +431,14 @@
   "fails": 0,
   "last_seen": "2026-11-02"
  },
+ "greenhouse:rendezvousrobotics": {
+  "kind": "greenhouse",
+  "board": "rendezvousrobotics",
+  "name": "Rendezvous Robotics",
+  "first_seen": "2026-11-02",
+  "fails": 0,
+  "last_seen": "2026-11-02"
+ },
  "greenhouse:rocketlab": {
   "kind": "greenhouse",
   "board": "rocketlab",
@@ -535,6 +551,14 @@
   "fails": 0,
   "last_seen": "2026-11-02"
  },
+ "jibe:careers.gov2x.com": {
+  "kind": "jibe",
+  "host": "careers.gov2x.com",
+  "name": "V2X",
+  "first_seen": "2026-11-02",
+  "fails": 0,
+  "last_seen": "2026-11-02"
+ },
  "jibe:careers.jhuapl.edu": {
   "kind": "jibe",
   "host": "careers.jhuapl.edu",
@@ -636,6 +660,14 @@
   "board": "shieldai",
   "name": "Shield AI",
   "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-11-02"
+ },
+ "lever:skyways": {
+  "kind": "lever",
+  "board": "skyways",
+  "name": "Skyways",
+  "first_seen": "2026-11-02",
   "fails": 0,
   "last_seen": "2026-11-02"
  },
@@ -792,6 +824,15 @@
   "site": "external",
   "name": "CACI",
   "first_seen": "2026-10-28",
+  "fails": 0,
+  "last_seen": "2026-11-02"
+ },
+ "workday:cae.wd3.myworkdayjobs.com/career": {
+  "kind": "workday",
+  "host": "cae.wd3.myworkdayjobs.com",
+  "site": "career",
+  "name": "CAE",
+  "first_seen": "2026-11-02",
   "fails": 0,
   "last_seen": "2026-11-02"
  },
