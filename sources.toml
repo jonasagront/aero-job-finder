@@ -83,6 +83,12 @@ greenhouse = [
   { name = "Albedo", board = "albedo" },
   { name = "Scout Space", board = "scoutspace" },
   { name = "Outpost Space", board = "outpostspace" },
+  # Added Nov 2026: aerospace employers found on intern-list.com and by checking names
+  { name = "BETA Technologies", board = "betatechnologiesinc" },
+  { name = "Wing", board = "wing" },
+  { name = "Rendezvous Robotics", board = "rendezvousrobotics" },
+  { name = "Astronics", board = "astronicscorporation" },
+  { name = "Urban Sky", board = "urbansky" },
   # Removed Oct 2026 (board gone): Axiom Space -> now on Workday below,
   # Boom Supersonic -> moved to Rippling (not supported).
 
@@ -98,6 +104,10 @@ greenhouse = [
   { name = "Path Robotics", board = "pathrobotics", aero = false },
   { name = "Oklo", board = "oklo", aero = false },
   { name = "Lucid Motors", board = "lucidmotors", aero = false },
+  { name = "Saildrone", board = "saildroneinc", aero = false },
+  { name = "Agility Robotics", board = "agilityrobotics", aero = false },
+  { name = "Apptronik", board = "apptronik", aero = false },
+  { name = "Re:Build Manufacturing", board = "rebuildmanufacturing", aero = false },
 ]
 
 lever = [
@@ -115,6 +125,11 @@ lever = [
   { name = "Acron Aviation", board = "acronaviation" },
   { name = "Elroy Air", board = "elroyair" },
   { name = "Solestial", board = "solestial" },
+  { name = "Skyways", board = "skyways" },
+  { name = "CX2", board = "cx2" },
+  { name = "Commonwealth Fusion Systems", board = "cfsenergy", aero = false },
+  { name = "Toyota Research Institute", board = "tri", aero = false },
+  { name = "Velo3D", board = "velo3d", aero = false },
 ]
 
 ashby = [
@@ -141,6 +156,9 @@ ashby = [
   { name = "Oligo Space", board = "oligo" },
   { name = "ICEYE", board = "iceye" },
   { name = "Picogrid", board = "picogrid" },
+  { name = "Turion Space", board = "turion-space" },
+  { name = "Slingshot Aerospace", board = "slingshot-aerospace" },
+  { name = "Helion", board = "helion", aero = false },
 ]
 
 # Workday career sites (most large aerospace/defense companies).
@@ -184,6 +202,10 @@ workday = [
   { name = "Radiance Technologies", host = "radiancetech.wd12.myworkdayjobs.com", site = "Radiance_External" },
   { name = "Vantor (formerly Maxar)", host = "maxar.wd1.myworkdayjobs.com", site = "Vantor" },
   { name = "Thales", host = "thales.wd3.myworkdayjobs.com", site = "Careers" },
+  # Added Nov 2026
+  { name = "CAE", host = "cae.wd3.myworkdayjobs.com", site = "career" },
+  { name = "Crane", host = "cranecompany.wd5.myworkdayjobs.com", site = "Careers" },
+  { name = "Nightwing", host = "nwis.wd12.myworkdayjobs.com", site = "NW" },
 
   # Mechanical / general engineering employers (Oct 2026), aero = false (see above).
   # Several have Central Florida sites: Disney (Lake Buena Vista), Leidos and
@@ -205,12 +227,34 @@ workday = [
   { name = "Intel", host = "intel.wd1.myworkdayjobs.com", site = "External", aero = false },
   { name = "Abbott", host = "abbott.wd5.myworkdayjobs.com", site = "abbottcareers", aero = false },
   { name = "Dow", host = "dow.wd1.myworkdayjobs.com", site = "ExternalCareers", aero = false },
+  # Added Nov 2026: mechanical-heavy employers whose postings show up on the big lists.
+  # Jabil is in St. Petersburg, FL.
+  { name = "Jabil", host = "jabil.wd5.myworkdayjobs.com", site = "Jabil_Careers", aero = false },
+  { name = "Carpenter Technology", host = "cartech.wd5.myworkdayjobs.com", site = "CTCExternal", aero = false },
+  { name = "The Toro Company", host = "ttc.wd1.myworkdayjobs.com", site = "toro_external_careers", aero = false },
+  { name = "GE Appliances", host = "haier.wd3.myworkdayjobs.com", site = "ge_appliances", aero = false },
+  { name = "BorgWarner", host = "borgwarner.wd5.myworkdayjobs.com", site = "BorgWarner_Careers", aero = false },
+  { name = "Brunswick", host = "brunswick.wd1.myworkdayjobs.com", site = "search", aero = false },
+  { name = "Hitachi Energy", host = "hitachi.wd1.myworkdayjobs.com", site = "hitachi", aero = false },
+  { name = "ABB", host = "abb.wd3.myworkdayjobs.com", site = "external_career_page", aero = false },
+  { name = "Generac", host = "generac.wd5.myworkdayjobs.com", site = "external", aero = false },
+  { name = "Allegion", host = "allegion.wd5.myworkdayjobs.com", site = "careers", aero = false },
+  { name = "Aptiv", host = "aptiv.wd5.myworkdayjobs.com", site = "aptiv_careers", aero = false },
+  { name = "Nissan", host = "alliance.wd3.myworkdayjobs.com", site = "nissanjobs", aero = false },
+  { name = "Xcel Energy", host = "xcelenergy.wd1.myworkdayjobs.com", site = "external", aero = false },
+  { name = "Schweitzer Engineering Laboratories", host = "selinc.wd1.myworkdayjobs.com", site = "sel", aero = false },
+  { name = "Nidec", host = "nidec.wd1.myworkdayjobs.com", site = "nidec", aero = false },
+  { name = "Johnson & Johnson", host = "jj.wd5.myworkdayjobs.com", site = "JJ", aero = false },
+  { name = "Philips", host = "philips.wd3.myworkdayjobs.com", site = "jobs-and-careers", aero = false },
 ]
 
 # Eightfold career sites: host is the *.eightfold.ai address, domain is the
 # `domain=` value in the site's /api/pcsx/search requests.
 eightfold = [
   { name = "Lockheed Martin", host = "lockheedmartin.eightfold.ai", domain = "lockheedmartin.com" },
+  { name = "Eaton", host = "eaton.eightfold.ai", domain = "eaton.com", aero = false },
+  { name = "John Deere", host = "johndeere.eightfold.ai", domain = "johndeere.com", aero = false },
+  { name = "Whirlpool", host = "whirlpool.eightfold.ai", domain = "whirlpool.com", aero = false },
 ]
 
 # ClearCompany career sites: site_id is the GUID in the page's
@@ -221,7 +265,8 @@ clearcompany = [
 ]
 
 # SuccessFactors career sites: host is the site whose job links look like
-# <host>/job/<City-Title>/<number>/
+# <host>/job/<City-Title>/<number>/ (or <host>/job/<Title>/<number>-en_US on
+# newer sites, which are read through their JSON search)
 successfactors = [
   { name = "L3Harris", host = "jobs.l3harris.com" },
   { name = "United Launch Alliance", host = "jobs.ulalaunch.com" },
@@ -229,13 +274,26 @@ successfactors = [
   { name = "Leonardo DRS", host = "careers.leonardodrs.com" },
   { name = "Safran Defense & Space", host = "careers.safran-dsi.com" },
   { name = "MIT Lincoln Laboratory", host = "careers.ll.mit.edu" },
+  # Added Nov 2026. Mitsubishi Power's Americas headquarters is in Lake Mary, FL.
+  { name = "Bombardier", host = "jobs.bombardier.com" },
+  { name = "Triumph Group", host = "careers.triumphgroup.com" },
+  { name = "NASSCO", host = "jobs.nassco.com", aero = false },
+  { name = "BWXT", host = "careers.bwxt.com", aero = false },
+  { name = "Westinghouse", host = "careers.westinghousenuclear.com", aero = false },
+  { name = "Mitsubishi Power", host = "mhicareers.com", aero = false },
+  { name = "CNH", host = "join.cnh.com", aero = false },
+  { name = "TE Connectivity", host = "careers.te.com", aero = false },
 ]
 
 # Career sites with a plain search page and no hiring-system API. search = the
-# search page's address with {term} and {page} in it; path = how links to single
-# postings start. Each posting's page must carry standard job-posting data.
+# search page's address with {term} and either {page} (1, 2, 3...) or {offset}
+# (how many results came before) in it; path = how links to single postings
+# start. Each posting's page must carry standard job-posting data, or labeled
+# fields as on Avature career sites (jobs.siemens-energy.com...).
 searchpage = [
   { name = "Gulfstream", search = "https://careers.gulfstream.com/en/jobs/?search={term}&page={page}", path = "/en/jobs/" },
+  # Siemens Energy's U.S. headquarters is in Orlando.
+  { name = "Siemens Energy", search = "https://jobs.siemens-energy.com/en_US/jobs/Jobs?search={term}&folderOffset={offset}", path = "/en_US/jobs/FolderDetail/", aero = false },
 ]
 
 # Taleo career sections: section = the part after /careersection/ in a job link,
@@ -249,6 +307,7 @@ taleo = [
 jazzhr = [
   { name = "Space Dynamics Laboratory", board = "spacedynamicslaboratory" },
   { name = "Aerotech", board = "aerotech", aero = false },
+  { name = "LiquidPiston", board = "liquidpiston" },
 ]
 
 # iCIMS career sites: host is the careers-<company>.icims.com address.
@@ -259,13 +318,20 @@ icims = [
   { name = "Joby Aviation", host = "careers-jobyaviation.icims.com" },
   { name = "Peraton", host = "careers-peraton.icims.com" },
   { name = "Iridium", host = "careers-iridium.icims.com" },
+  { name = "Cirrus Aircraft", host = "careers-cirrusaircraft.icims.com" },
+  { name = "Lennox", host = "uscareers-lennox.icims.com", aero = false },
 ]
 
-# Jibe career sites (the site answers <host>/api/jobs).
+# Jibe career sites (the site answers <host>/api/jobs). Some iCIMS addresses
+# forward their search to one of these (careers-gov2x.icims.com -> careers.gov2x.com).
 jibe = [
   { name = "Johns Hopkins Applied Physics Laboratory", host = "careers.jhuapl.edu" },
   { name = "Spirit AeroSystems", host = "careers.spiritaero.com" },
   { name = "Viasat", host = "careers.viasat.com" },
+  { name = "V2X", host = "careers.gov2x.com" },
+  { name = "Garmin", host = "careers.garmin.com", aero = false },
+  { name = "Rivian", host = "careers.rivian.com", aero = false },
+  { name = "Schneider Electric", host = "careers.se.com", aero = false },
 ]
 
 # Oracle Recruiting Cloud: host + site from a job link, e.g.
@@ -274,11 +340,17 @@ oracle = [
   { name = "Honeywell", host = "ibqbjb.fa.ocs.oraclecloud.com", site = "Honeywell" },
   { name = "Howmet Aerospace", host = "fa-exty-saasfaprod1.fa.ocs.oraclecloud.com", site = "CX_1" },
   { name = "StandardAero", host = "cva.fa.us1.oraclecloud.com", site = "CX_3" },
+  { name = "Emerson", host = "hdjq.fa.us2.oraclecloud.com", site = "CX_1", aero = false },
+  { name = "Cummins", host = "fa-espx-saasfaprod1.fa.ocs.oraclecloud.com", site = "CX_1", aero = false },
+  { name = "Vertiv", host = "egup.fa.us2.oraclecloud.com", site = "CX", aero = false },
 ]
 
 # Phenom career sites: base = the site address up to the language part.
 phenom = [
   { name = "BAE Systems", base = "https://jobs.baesystems.com/global/en" },
+  { name = "Bechtel", base = "https://jobs.bechtel.com/us/en", aero = false },
+  { name = "Honda", base = "https://careers.honda.com/us/en", aero = false },
+  { name = "Trane Technologies", base = "https://careers.tranetechnologies.com/global/en", aero = false },
 ]
 
 # Smaller hiring systems: board = the company's part of its job links
@@ -303,6 +375,7 @@ rippling = [
 ]
 smartrecruiters = [
   { name = "Lawrence Livermore National Laboratory", board = "LLNL" },
+  { name = "Bosch", board = "BoschGroup", aero = false },
 ]
 workable = [
   { name = "RAVE Aerospace", board = "raveaerospace" },
@@ -314,10 +387,44 @@ gem = [
   { name = "Andrenam", board = "andrenam" },
 ]
 
-# Not supported yet (no public job API), so they rely on the lists below:
-#   Sandia / ManTech (Avature), MDA (UKG, Canada only), York Space (Paycor),
-#   Intuitive Machines (ADP), General Atomics (BrassRing), Kratos, Redwire (Clinch),
-#   General Dynamics Land Systems (blocks scripts), BETA Technologies and Bombardier.
+# DirectEmployers .jobs sites: host = the company's .jobs address, which has an
+# RSS feed of its search at <host>/jobs/feed/rss?q=intern.
+jobsfeed = [
+  { name = "Sandia National Laboratories", host = "sandia.jobs" },
+  { name = "Jacobs", host = "jacobs.jobs", aero = false },
+]
+
+# IBM Kenexa BrassRing: partner and sites = the partnerid and siteid values in
+# the career site's sjobs.brassring.com/TGnewUI/Search/Home/Home?... address.
+# location_fields / title_field = which of the site's fields hold the city and
+# state, and the specific job name (default "jobtitle").
+brassring = [
+  { name = "General Atomics", partner = "25539", sites = ["5310", "5313", "5757"], location_fields = ["formtext5", "formtext4"], title_field = "formtext8" },
+]
+
+# ADP Workforce Now: cid = the cid value in the company's
+# workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=... address.
+adp = [
+  { name = "Kaman", cid = "6362b6c7-9592-452e-9fa3-97848679358e" },
+]
+
+# UKG Pro (UltiPro): board = the job board address up to its ID.
+ukg = [
+  { name = "TCOM", board = "https://recruiting.ultipro.com/TCO1001TCOM/JobBoard/74e57e92-4355-44d7-8471-3c6eecfda9ef" },
+]
+
+# Paycor Recruiting: client = the clientId in the company's
+# recruitingbypaycor.com/career/CareerHome.action?clientId=... address.
+paycor = [
+  { name = "York Space Systems", client = "8a7883d0821e1a6301823c22a8bd068b" },
+]
+
+# Not supported yet, so they rely on the lists below:
+#   Kratos (only on the shared DirectEmployers feed, which gives no company names),
+#   Redwire (Clinch: postings load in the browser), HEICO (ADP Recruiting, which
+#   refuses scripts), Ducommun (Cornerstone), Elbit America (Dayforce),
+#   General Dynamics Land Systems (blocks scripts), MDA (Canada only).
+#   Intuitive Machines posts on the Space Capital board below.
 #   intern-list.com covers several of these as leads.
 
 # --- Big student internship lists maintained on GitHub ----------------
@@ -369,7 +476,8 @@ urls = [
 # Free API key: https://developer.usajobs.gov/apirequest/
 # Then add USAJOBS_API_KEY and USAJOBS_EMAIL as repo secrets (see README).
 [usajobs]
-keywords = ["aerospace engineering student", "engineering student trainee", "aerospace intern"]
+keywords = ["aerospace engineering student", "engineering student trainee", "aerospace intern",
+            "mechanical engineering student", "engineering technician student"]
 
 # --- One employer, many names ---------------------------------------------
 # Lists name divisions their own way ("Raytheon" or "Collins Aerospace" for a job

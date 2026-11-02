@@ -24,7 +24,9 @@ leaves that tab on its own once a company career site the scan reads has the sam
 under a division's name, like Raytheon or Collins Aerospace for RTX, counts: see `[same_company]`
 in `sources.toml`).
 
-Postings more than 15 days old are left off the page (`max_age_days` in `profile.toml`).
+Postings more than 120 days old are left off the page (`max_age_days` in `profile.toml`); ones
+older than 15 days get a tag and can be hidden (`old_after_days`). Closed postings drop off on
+their own once they leave their source.
 When a posting's source gives no posted date, the scan opens the posting's own page for one, then
 checks the internship lists for the same company and title (the page then says which list the date
 came from). Postings with no date anywhere go in **Posted date unknown**.
@@ -138,9 +140,11 @@ they don't change the score.
   `[fall]` sets the home point and radius, `[broad]` the All engineering tab, and
   `[engineering]` the disciplines and their points.
 - **`sources.toml`**: which companies and lists get checked. It reads company career sites on
-  Greenhouse, Lever, Ashby, Workday, Eightfold, SuccessFactors (L3Harris, ULA, HII, Leonardo DRS),
-  iCIMS (GD Mission Systems, Joby, Peraton), Jibe (JHU APL, Spirit), Oracle (Honeywell, Howmet),
-  Phenom (BAE Systems), Taleo (Textron, Bell), Pinpoint, BambooHR, Rippling, SmartRecruiters,
+  Greenhouse, Lever, Ashby, Workday, Eightfold, SuccessFactors (L3Harris, ULA, HII, Bombardier),
+  iCIMS (GD Mission Systems, Joby, Peraton), Jibe (JHU APL, Spirit, V2X), Oracle (Honeywell, Howmet),
+  Phenom (BAE Systems), Taleo (Textron, Bell), BrassRing (General Atomics), DirectEmployers .jobs
+  feeds (Sandia, Jacobs), Avature search pages (Siemens Energy), ADP Workforce Now (Kaman),
+  UKG (TCOM), Paycor (York Space), Pinpoint, BambooHR, Rippling, SmartRecruiters,
   Workable, Gem and JazzHR, plus the Simplify list, the Space Capital board and intern-list.com;
   each section of the file explains which part of a company's job link to copy. The `[[popular]]`
   entries at the bottom set the Big names tab (companies and their usual recruiting months). The bottom of the job page
