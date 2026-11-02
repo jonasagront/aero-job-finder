@@ -32,7 +32,7 @@ came from). Postings with no date anywhere go in **Posted date unknown**.
 ## Today's top matches
 
 <!-- JOBS:START -->
-**302 Summer 2027 aerospace matches** (7 Fall 2027 near home, 456 in All engineering, 76 leads without a direct link) as of Nov 1, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
+**299 Summer 2027 aerospace matches** (7 Fall 2027 near home, 449 in All engineering, 73 leads without a direct link) as of Nov 2, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
 
 | Fit | Company | Role | Required quals met | Location | Posted | Apply |
 |---|---|---|---|---|---|---|
@@ -42,8 +42,8 @@ came from). Postings with no date anywhere go in **Posted date unknown**.
 | 97 | MIT Lincoln Laboratory | Summer Research Program Intern 2027, Structural & Thermal-Fluids Engineering (Group Group 07-74) | – | Lexington, MA, US | 2026-10-21 | [Apply](https://careers.ll.mit.edu/job/Lexington-Summer-Research-Program-Intern-2027%2C-Structural-&-Thermal-Fluids-Engineering-%28Group-Group-07-74%29-MA-02420/1442417400/) |
 | 97 | MIT Lincoln Laboratory | Summer Research Program Intern 2027, Mechanical Engineering (Group 07-71) | – | Lexington, MA, US | 2026-10-27 | [Apply](https://careers.ll.mit.edu/job/Lexington-Summer-Research-Program-Intern-2027%2C-Mechanical-Engineering-%28Group-07-71%29-MA-02420/1434255400/) |
 | 94 | RTX (Raytheon, Pratt & Whitney, Collins) | Mechanical Engineering Intern (Summer 2027) | 6 of 6 | US-CA-EL SEGUNDO-E01 ~ 2000 E El Segundo | 2026-10-28 | [Apply](https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-CA-EL-SEGUNDO-E01--2000-E-El-Segundo-Blvd--BLDG-E01/Mechanical-Engineering-Intern--Summer-2027-_01883293) |
-| 93 | Lockheed Martin | Mechanical Design Engineering Intern | 3 of 3 | Orlando, FL | 2026-10-18 | [Apply](https://lockheedmartin.eightfold.ai/careers/job/996477394527) |
 | 93 | Lockheed Martin | Mechanical Design Intern | 3 of 3 | Grand Prairie, TX | 2026-10-22 | [Apply](https://lockheedmartin.eightfold.ai/careers/job/996477505085) |
+| 93 | Lockheed Martin | Mechanical Design Engineering Intern | 3 of 3 | Orlando, FL | 2026-10-18 | [Apply](https://lockheedmartin.eightfold.ai/careers/job/996477394527) |
 | 93 | Loft Orbital | Summer 2027 Internship – Satellite Programs | 3 of 3 | Golden, CO | 2026-10-27 | [Apply](https://jobs.lever.co/loftorbital/d49feb08-351a-4f03-84ba-948c8df633ab) |
 | 90 | Scout AI | Mechanical Engineer Intern (Summer 2027) | 4 of 4 | Sunnyvale, CA | 2026-10-27 | [Apply](https://jobs.ashbyhq.com/scout-ai/fba467c4-30e8-4ee1-8ac9-20b48e132076) |
 | 90 | RTX (Raytheon, Pratt & Whitney, Collins) | Manufacturing Engineering Co-Op (Spring/Summer 2027) | 6 of 6 | US-IA-MANCHESTER-185 ~ 901 S 10th St ~ S | 2026-10-20 | [Apply](https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-IA-MANCHESTER-185--901-S-10th-St--S-10TH/Manufacturing-Engineering-Co-Op--Spring-Summer-2027-_01876132) |
@@ -57,10 +57,10 @@ came from). Postings with no date anywhere go in **Posted date unknown**.
 | 85 | The Aerospace Corporation | 2027 Communication Architectures Modeling and Analysis Engineering Undergraduate Intern | 4 of 4 | El Segundo, CA | 2026-10-27 | [Apply](https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/XMLNAME-2027-Communication-Architectures-Modeling-and-Analysis-Engineering-Undergraduate-Intern_R017009) |
 | 85 | The Aerospace Corporation | 2027 Communication Architectures Modeling and Analysis Engineering Grad Intern | 4 of 4 | El Segundo, CA | 2026-10-27 | [Apply](https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/XMLNAME-2027-Communication-Architectures-Modeling-and-Analysis-Engineering-Grad-Intern_R017010) |
 | 84 | Teledyne FLIR | Mechanical Engineering Intern - CW | – | US - Wilsonville, OR | 2026-10-22 | [Apply](https://flir.wd1.myworkdayjobs.com/flircareers/job/US---Wilsonville-OR/Mechanical-Engineering-Intern---CW_REQ37514) |
-| 84 | Joby Aviation | Flight Test Intern (Dec 2026-Feb 2027) | 3 of 3 | US-CA-Marina | 2026-10-17 | [Apply](https://careers-jobyaviation.icims.com/jobs/5483/flight-test-intern-%28dec-2026-feb-2027%29/job) |
 | 83 | Parsons | HVAC - Mechanical Engineer Intern - Summer 2027 | 2 of 2 | US - CA, Pasadena | 2026-10-22 | [Apply](https://parsons.wd5.myworkdayjobs.com/Search/job/US---CA-Pasadena/HVAC---Mechanical-Engineer-Intern---Summer-2027_R187605) |
 | 83 | RTX (Raytheon, Pratt & Whitney, Collins) | Manufacturing Engineering Ops Co-Op (Spring/Summer 2027) | 5 of 5 | US-FL-MELBOURNE-310 ~ 1100 W Hibiscus Bl | 2026-10-26 | [Apply](https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-FL-MELBOURNE-310--1100-W-Hibiscus-Blvd--BLDG-310/Manufacturing-Engineering-Ops-Co-Op--Spring-Summer-2027-_01884010) |
 | 83 | RTX (Raytheon, Pratt & Whitney, Collins) | Manufacturing Electrical Engineer Co-op (Spring/Summer 2027) | 2 of 2 | US-FL-MELBOURNE-308 ~ 1100 W Hibiscus Bl | 2026-10-21 | [Apply](https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-FL-MELBOURNE-308--1100-W-Hibiscus-Blvd--BLDG-308/Manufacturing-Electrical-Engineer-Co-op--Spring-Summer-2027-_01883878) |
+| 83 | Ursa Major | 2027 Summer Additive Manufacturing Engineering Intern | 2 of 2 | Youngstown, Ohio | 2026-10-26 | [Apply](https://ursamajor.com/careers/?gh_jid=4746892005) |
 <!-- JOBS:END -->
 
 ---
