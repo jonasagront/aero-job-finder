@@ -34,7 +34,7 @@ came from). Postings with no date anywhere go in **Posted date unknown**.
 ## Today's top matches
 
 <!-- JOBS:START -->
-**881 Summer 2027 aerospace matches** (12 Fall 2027 near home, 2008 in All engineering, 174 leads without a direct link) as of Nov 2, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
+**881 Summer 2027 aerospace matches** (11 Fall 2027 near home, 2009 in All engineering, 164 leads without a direct link) as of Nov 2, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
 
 | Fit | Company | Role | Required quals met | Location | Posted | Apply |
 |---|---|---|---|---|---|---|
