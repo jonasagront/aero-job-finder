@@ -26,13 +26,13 @@
  "Lockheed Martin": {
   "cycle": "2027",
   "first_seen": "2026-09-21",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "most_open": 52
  },
  "Northrop Grumman": {
   "cycle": "2027",
   "first_seen": "2026-10-07",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "most_open": 18
  },
  "Boeing": {
@@ -56,8 +56,8 @@
  "General Dynamics": {
   "cycle": "2027",
   "first_seen": "2026-09-07",
-  "last_seen": "2026-11-02",
-  "most_open": 78
+  "last_seen": "2026-11-03",
+  "most_open": 80
  },
  "BAE Systems": {
   "cycle": "2027",
@@ -74,8 +74,8 @@
  "Rocket Lab": {
   "cycle": "2027",
   "first_seen": "2026-09-09",
-  "last_seen": "2026-11-02",
-  "most_open": 28
+  "last_seen": "2026-11-03",
+  "most_open": 29
  },
  "United Launch Alliance": {
   "cycle": "2027",
@@ -92,7 +92,7 @@
  "Honeywell": {
   "cycle": "2027",
   "first_seen": "2026-08-24",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "most_open": 35
  },
  "Sierra Space": {
@@ -104,8 +104,8 @@
  "Johns Hopkins APL": {
   "cycle": "2027",
   "first_seen": "2026-08-13",
-  "last_seen": "2026-10-29",
-  "most_open": 33
+  "last_seen": "2026-11-03",
+  "most_open": 35
  },
  "MIT Lincoln Laboratory": {
   "cycle": "2027",
@@ -126,6 +126,144 @@
   "most_open": 4
  },
  "DoD SMART Scholarship": {
+  "cycle": "2027",
+  "first_seen": "",
+  "last_seen": "",
+  "most_open": 0
+ },
+ "Firefly Aerospace": {
+  "cycle": "2027",
+  "first_seen": "",
+  "last_seen": "",
+  "most_open": 0
+ },
+ "Relativity Space": {
+  "cycle": "2027",
+  "first_seen": "2026-10-28",
+  "last_seen": "2026-10-28",
+  "most_open": 21
+ },
+ "Axiom Space": {
+  "cycle": "2027",
+  "first_seen": "2026-10-15",
+  "last_seen": "2026-11-02",
+  "most_open": 5
+ },
+ "Varda Space": {
+  "cycle": "2027",
+  "first_seen": "2026-10-01",
+  "last_seen": "2026-10-01",
+  "most_open": 10
+ },
+ "Stoke Space": {
+  "cycle": "2027",
+  "first_seen": "2026-09-01",
+  "last_seen": "2026-09-01",
+  "most_open": 1
+ },
+ "Huntington Ingalls Industries": {
+  "cycle": "2027",
+  "first_seen": "2026-10-06",
+  "last_seen": "2026-11-02",
+  "most_open": 19
+ },
+ "Leidos": {
+  "cycle": "2027",
+  "first_seen": "2026-09-09",
+  "last_seen": "2026-10-30",
+  "most_open": 9
+ },
+ "SAIC": {
+  "cycle": "2027",
+  "first_seen": "",
+  "last_seen": "",
+  "most_open": 0
+ },
+ "General Atomics": {
+  "cycle": "2027",
+  "first_seen": "2026-10-31",
+  "last_seen": "2026-11-02",
+  "most_open": 7
+ },
+ "Sierra Nevada Corporation": {
+  "cycle": "2027",
+  "first_seen": "2026-09-03",
+  "last_seen": "2026-10-30",
+  "most_open": 13
+ },
+ "Textron (Bell, Textron Aviation, Textron Systems)": {
+  "cycle": "2027",
+  "first_seen": "2026-07-22",
+  "last_seen": "2026-10-30",
+  "most_open": 36
+ },
+ "Leonardo DRS": {
+  "cycle": "2027",
+  "first_seen": "2026-10-09",
+  "last_seen": "2026-11-02",
+  "most_open": 15
+ },
+ "Shield AI": {
+  "cycle": "2027",
+  "first_seen": "2026-08-27",
+  "last_seen": "2026-11-02",
+  "most_open": 10
+ },
+ "AeroVironment": {
+  "cycle": "2027",
+  "first_seen": "2026-09-01",
+  "last_seen": "2026-11-03",
+  "most_open": 28
+ },
+ "Saronic": {
+  "cycle": "2027",
+  "first_seen": "2026-09-09",
+  "last_seen": "2026-09-09",
+  "most_open": 5
+ },
+ "Hermeus": {
+  "cycle": "2027",
+  "first_seen": "2026-09-01",
+  "last_seen": "2026-10-09",
+  "most_open": 12
+ },
+ "Spirit AeroSystems": {
+  "cycle": "2027",
+  "first_seen": "2026-09-08",
+  "last_seen": "2026-10-29",
+  "most_open": 3
+ },
+ "MITRE": {
+  "cycle": "2027",
+  "first_seen": "2026-10-07",
+  "last_seen": "2026-11-03",
+  "most_open": 6
+ },
+ "Draper": {
+  "cycle": "2027",
+  "first_seen": "2026-11-02",
+  "last_seen": "2026-11-02",
+  "most_open": 2
+ },
+ "Sandia National Laboratories": {
+  "cycle": "2027",
+  "first_seen": "2026-08-17",
+  "last_seen": "2026-11-03",
+  "most_open": 48
+ },
+ "Lawrence Livermore National Laboratory": {
+  "cycle": "2027",
+  "first_seen": "2026-08-21",
+  "last_seen": "2026-10-13",
+  "most_open": 7
+ },
+ "Naval Research Enterprise Internship Program (NREIP)": {
+  "cycle": "2027",
+  "first_seen": "",
+  "last_seen": "",
+  "most_open": 0
+ },
+ "AFRL Scholars": {
   "cycle": "2027",
   "first_seen": "",
   "last_seen": "",

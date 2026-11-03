@@ -71,6 +71,14 @@
   "fails": 0,
   "last_seen": "2026-11-03"
  },
+ "ashby:h3x-technologies": {
+  "kind": "ashby",
+  "board": "h3x-technologies",
+  "name": "H3X Technologies",
+  "first_seen": "2026-11-03",
+  "fails": 0,
+  "last_seen": "2026-11-03"
+ },
  "ashby:hadrian-automation": {
   "kind": "ashby",
   "board": "hadrian-automation",
@@ -148,6 +156,14 @@
   "board": "scout-ai",
   "name": "Scout AI",
   "first_seen": "2026-10-28",
+  "fails": 0,
+  "last_seen": "2026-11-03"
+ },
+ "ashby:skyband%20systems": {
+  "kind": "ashby",
+  "board": "skyband%20systems",
+  "name": "Skyband Systems",
+  "first_seen": "2026-11-03",
   "fails": 0,
   "last_seen": "2026-11-03"
  },
@@ -551,6 +567,14 @@
   "fails": 0,
   "last_seen": "2026-11-03"
  },
+ "greenhouse:zone5technologies": {
+  "kind": "greenhouse",
+  "board": "zone5technologies",
+  "name": "Zone 5 Technologies",
+  "first_seen": "2026-11-03",
+  "fails": 0,
+  "last_seen": "2026-11-03"
+ },
  "jibe:careers.gov2x.com": {
   "kind": "jibe",
   "host": "careers.gov2x.com",
@@ -607,6 +631,14 @@
   "fails": 0,
   "last_seen": "2026-11-03"
  },
+ "lever:dodmg": {
+  "kind": "lever",
+  "board": "dodmg",
+  "name": "HRL Laboratories",
+  "first_seen": "2026-11-03",
+  "fails": 0,
+  "last_seen": "2026-11-03"
+ },
  "lever:espace": {
   "kind": "lever",
   "board": "espace",
@@ -644,6 +676,14 @@
   "board": "loftorbital",
   "name": "Loft Orbital",
   "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-11-03"
+ },
+ "lever:machinalabs": {
+  "kind": "lever",
+  "board": "MachinaLabs",
+  "name": "Machina Labs",
+  "first_seen": "2026-11-03",
   "fails": 0,
   "last_seen": "2026-11-03"
  },
@@ -761,6 +801,15 @@
   "site": "Airbus",
   "name": "Airbus",
   "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-11-03"
+ },
+ "workday:amainc.wd12.myworkdayjobs.com/ama_careers": {
+  "kind": "workday",
+  "host": "amainc.wd12.myworkdayjobs.com",
+  "site": "ama_careers",
+  "name": "Analytical Mechanics Associates",
+  "first_seen": "2026-11-03",
   "fails": 0,
   "last_seen": "2026-11-03"
  },
@@ -897,7 +946,7 @@
   "name": "Teledyne",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-10-28"
+  "last_seen": "2026-11-03"
  },
  "workday:gdit.wd5.myworkdayjobs.com/external_career_site": {
   "kind": "workday",
@@ -941,6 +990,15 @@
   "site": "KBR_Careers",
   "name": "KBR",
   "first_seen": "2026-10-28",
+  "fails": 0,
+  "last_seen": "2026-11-03"
+ },
+ "workday:leidos.wd5.myworkdayjobs.com/external": {
+  "kind": "workday",
+  "host": "leidos.wd5.myworkdayjobs.com",
+  "site": "External",
+  "name": "Leidos",
+  "first_seen": "2026-11-03",
   "fails": 0,
   "last_seen": "2026-11-03"
  },
@@ -1022,6 +1080,15 @@
   "site": "snc_external_career_site",
   "name": "Sierra Nevada Corporation",
   "first_seen": "2026-10-27",
+  "fails": 0,
+  "last_seen": "2026-11-03"
+ },
+ "workday:starfish.wd501.myworkdayjobs.com/careers": {
+  "kind": "workday",
+  "host": "starfish.wd501.myworkdayjobs.com",
+  "site": "Careers",
+  "name": "Torch Technologies",
+  "first_seen": "2026-11-03",
   "fails": 0,
   "last_seen": "2026-11-03"
  },
