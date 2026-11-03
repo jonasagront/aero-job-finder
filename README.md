@@ -16,7 +16,7 @@ The page has seven tabs:
 | **All engineering** | Every Summer 2027 engineering internship from any company or major, with mechanical and aerospace ranked first and a discipline filter |
 | **Posted date unknown** | Postings whose posted date couldn't be found anywhere (see below); they're kept out of the other tabs until one turns up |
 | **Leads without a link** | Postings only intern-list.com has found, with a **Find posting** button instead of Apply (see below) |
-| **Big names** | SpaceX, NASA, Lockheed, Northrop, RTX and other well-known employers: when each usually recruits (a typical window from past cycles; NASA and SMART deadlines are the published ones), how many of its postings are open now, and the earliest posting seen this cycle |
+| **Big names** | About 45 well-known employers and programs, grouped into space, defense primes, defense tech, aviation, and labs and programs (SpaceX, NASA, Lockheed, Northrop, RTX, Leidos, Sandia, NREIP...): when each usually recruits (a typical window from past cycles; NASA and SMART deadlines are the published ones), how many of its postings are open now, and the earliest posting seen this cycle |
 
 Leads come from intern-list.com, which links to jobright.ai instead of the company, so they get
 their own tab and a **Find posting** button that searches for the company's own posting. A lead
@@ -141,8 +141,8 @@ they don't change the score.
   `[engineering]` the disciplines and their points.
 - **`sources.toml`**: which companies and lists get checked. It reads company career sites on
   Greenhouse, Lever, Ashby, Workday, Eightfold, SuccessFactors (L3Harris, ULA, HII, Bombardier),
-  iCIMS (GD Mission Systems, Joby, Peraton), Jibe (JHU APL, Spirit, V2X), Oracle (Honeywell, Howmet),
-  Phenom (BAE Systems), Taleo (Textron, Bell), BrassRing (General Atomics), DirectEmployers .jobs
+  iCIMS (GD Mission Systems, Joby, Peraton), Jibe (JHU APL, Spirit, V2X), Oracle (Honeywell, Howmet, SAIC),
+  Phenom (BAE Systems, MITRE), Taleo (Textron, Bell, Textron Aviation), BrassRing (General Atomics), DirectEmployers .jobs
   feeds (Sandia, Jacobs), Avature search pages (Siemens Energy), ADP Workforce Now (Kaman),
   UKG (TCOM), Paycor (York Space), Pinpoint, BambooHR, Rippling, SmartRecruiters,
   Workable, Gem and JazzHR, plus the Simplify list, the Space Capital board and intern-list.com;

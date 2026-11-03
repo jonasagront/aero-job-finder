@@ -160,6 +160,8 @@ details.x>summary:hover{color:var(--ink)}
 .bn-head,.bn{display:grid;grid-template-columns:minmax(170px,1.25fr) minmax(150px,.9fr) minmax(250px,1.6fr) 112px;gap:6px 22px}
 .bn-head{margin-top:18px;padding-bottom:9px;border-bottom:1px solid var(--line);font:500 10.5px/1.3 var(--mono);letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
 .bn{padding:16px 0;border-bottom:1px solid var(--line);align-items:start}
+.bn-group{margin:30px 0 0;padding-bottom:8px;border-bottom:1px solid var(--line2);font:500 11.5px/1.3 var(--mono);letter-spacing:.07em;text-transform:uppercase;color:var(--ink2)}
+.bn-group span{margin-left:8px;color:var(--muted)}
 .bn .nm{font:600 15.5px/1.3 var(--sans)}
 .bn .nm a{display:inline-block;margin-top:4px;font:400 11.5px/1 var(--mono);letter-spacing:.04em;color:var(--muted);text-decoration:none}
 .bn .nm a:hover{color:var(--ink)}
@@ -289,6 +291,8 @@ footer td.bad{color:var(--neg)}
 <script>
 (function(){
 const D = JSON.parse(document.getElementById('data').textContent);
+// A posted date the page can't read counts as unknown instead of showing "Invalid Date"
+for(const j of D.jobs) if(j.posted && !/^\d{4}-\d{2}-\d{2}$/.test(j.posted)) j.posted = '';
 const store = {
   get(){ try { return JSON.parse(localStorage.getItem('ajf-status') || '{}'); } catch(e){ return {}; } },
   set(v){ try { localStorage.setItem('ajf-status', JSON.stringify(v)); } catch(e){} }
@@ -459,7 +463,13 @@ const inWin = (w, m) => w.length === 2 && (w[0] <= w[1] ? m >= w[0] && m <= w[1]
 const RECRUIT_YEAR = [7,8,9,10,11,12,1,2,3,4,5,6];
 function renderBig(){
   const m = +D.today.slice(5, 7);
+  // Companies come grouped (space, defense...) in sources.toml order; each group gets a heading
+  const inGroup = {};
+  for(const p of D.popular) inGroup[p.group] = (inGroup[p.group] || 0) + 1;
+  let last = null;
   $('bigList').innerHTML = D.popular.map((p, i) => {
+    const head = p.group && p.group !== last ? `<h3 class="bn-group">${esc(p.group)}<span>${inGroup[p.group]}</span></h3>` : '';
+    last = p.group;
     const mine = D.jobs.filter(j => inTab(j, 'broad') && coMatch(j.company, p.match));
     const strong = mine.filter(j => Object.values(j.tracks).some(t => t.tier === 'strong')).length;
     const live = inWin(p.window, m);
@@ -473,7 +483,7 @@ function renderBig(){
       (p.window.length ? `<div class="win">Typically ${MON[p.window[0] - 1]} to ${MON[p.window[1] - 1]}</div>` : '') +
       (p.dates ? `<div class="pub"><b>Published</b>${esc(p.dates)}</div>` : '');
     const fs = '<span class="lbl">Earliest posting: </span>' + (p.first_seen ? `${fmt(p.first_seen)}<small>${p.most_open} open at most</small>` : '—');
-    return `<div class="bn">
+    return head + `<div class="bn">
       <div class="nm">${esc(p.name)}${p.careers ? `<br><a href="${esc(p.careers)}" target="_blank" rel="noopener">Student careers ↗</a>` : ''}</div>
       <div class="st">${st}</div>
       <div class="tlw">${tl}</div>

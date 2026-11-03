@@ -32,6 +32,7 @@ def build(cfg: list[dict], jobs: list[dict], seen: dict, today: str, cycle: str)
         window = p.get("window") or []
         rows.append({
             "name": p["name"],
+            "group": p.get("group", ""),
             "match": terms,
             "careers": p.get("careers", ""),
             "window": window if len(window) == 2 else [],

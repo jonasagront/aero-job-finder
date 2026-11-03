@@ -26,13 +26,28 @@ BOARD_KINDS = ("greenhouse", "lever", "ashby", "workday", "eightfold", "clearcom
                "workable", "gem", "taleo", "jazzhr", "searchpage", "jobsfeed", "brassring", "adp", "ukg", "paycor")
 
 
+_DATE_FORMATS = ("%a %b %d %H:%M:%S UTC %Y", "%m/%d/%Y", "%B %d, %Y", "%b %d, %Y", "%d %B %Y", "%d %b %Y")
+
+
 def _date_from_iso(s) -> str:
+    """YYYY-MM-DD from an ISO date or timestamp, or from the other formats some sites
+    send in its place ("October 28, 2026" on Schneider Electric's); "" if unreadable."""
+    s = str(s or "").strip()
     if not s:
         return ""
     try:
-        return dt.datetime.fromisoformat(str(s).replace("Z", "+00:00")).date().isoformat()
+        return dt.datetime.fromisoformat(s.replace("Z", "+00:00")).date().isoformat()
     except ValueError:
-        return str(s)[:10]
+        pass
+    if re.match(r"\d{4}-\d{2}-\d{2}", s):
+        return s[:10]
+    s = re.sub(r"\s+", " ", s)
+    for f in _DATE_FORMATS:
+        try:
+            return dt.datetime.strptime(s, f).date().isoformat()
+        except ValueError:
+            pass
+    return ""
 
 
 def _date_from_epoch(n, ms=False) -> str:
@@ -1351,6 +1366,8 @@ def fetch_all(cfg: dict, keep=_keep_all) -> tuple[list[dict], list[dict]]:
             jobs = fn()
             for j in jobs:
                 j["source_id"] = label
+                # The page reads posted dates as YYYY-MM-DD; anything else would show "Invalid Date"
+                j["posted"] = _date_from_iso(j.get("posted"))
             return jobs, {"name": label, "kind": kind, "ok": True, "count": len(jobs), "error": ""}
         except Exception as e:  # noqa: BLE001 - report anything, keep going
             return [], {"name": label, "kind": kind, "ok": False, "count": 0, "error": str(e)[:160]}
@@ -1427,19 +1444,6 @@ def _job_posting(page: str) -> dict:
     return {}
 
 
-def _date_any(s) -> str:
-    """YYYY-MM-DD from the date formats job pages use, or ""."""
-    s = str(s or "").strip()
-    if re.match(r"\d{4}-\d{2}-\d{2}", s):
-        return _date_from_iso(s)
-    for f in ("%a %b %d %H:%M:%S UTC %Y", "%m/%d/%Y", "%B %d, %Y", "%b %d, %Y"):
-        try:
-            return dt.datetime.strptime(s, f).date().isoformat()
-        except ValueError:
-            pass
-    return ""
-
-
 def _ld_location(posting: dict) -> str:
     """"City, ST, Country" for each place in schema.org JobPosting data."""
     places = posting.get("jobLocation") or []
@@ -1468,7 +1472,7 @@ def _page_date(page: str, posting: dict) -> str:
     """The posted date a job page gives: its schema.org data, or the same field
     in the page's markup or embedded JSON when that data is missing or broken."""
     for raw in [posting.get("datePosted"), *_ITEMPROP_DATE.findall(page), *_JSON_DATE.findall(page)]:
-        d = _plausible_date(_date_any(raw))
+        d = _plausible_date(_date_from_iso(raw))
         if d:
             return d
     return ""
