@@ -19,9 +19,9 @@
  },
  "NASA JPL": {
   "cycle": "2027",
-  "first_seen": "",
-  "last_seen": "",
-  "most_open": 0
+  "first_seen": "2026-11-04",
+  "last_seen": "2026-11-04",
+  "most_open": 1
  },
  "Lockheed Martin": {
   "cycle": "2027",
@@ -122,7 +122,7 @@
  "Joby Aviation": {
   "cycle": "2027",
   "first_seen": "2026-10-17",
-  "last_seen": "2026-10-28",
+  "last_seen": "2026-10-29",
   "most_open": 4
  },
  "DoD SMART Scholarship": {
@@ -224,7 +224,7 @@
  "Hermeus": {
   "cycle": "2027",
   "first_seen": "2026-09-01",
-  "last_seen": "2026-10-09",
+  "last_seen": "2026-10-12",
   "most_open": 12
  },
  "Spirit AeroSystems": {
@@ -242,14 +242,14 @@
  "Draper": {
   "cycle": "2027",
   "first_seen": "2026-11-02",
-  "last_seen": "2026-11-02",
-  "most_open": 2
+  "last_seen": "2026-11-04",
+  "most_open": 5
  },
  "Sandia National Laboratories": {
   "cycle": "2027",
   "first_seen": "2026-08-17",
-  "last_seen": "2026-11-04",
-  "most_open": 48
+  "last_seen": "2026-11-05",
+  "most_open": 50
  },
  "Lawrence Livermore National Laboratory": {
   "cycle": "2027",
@@ -264,6 +264,24 @@
   "most_open": 0
  },
  "AFRL Scholars": {
+  "cycle": "2027",
+  "first_seen": "",
+  "last_seen": "",
+  "most_open": 0
+ },
+ "DOE Science Undergraduate Laboratory Internships (SULI)": {
+  "cycle": "2027",
+  "first_seen": "",
+  "last_seen": "",
+  "most_open": 0
+ },
+ "Brooke Owens Fellowship": {
+  "cycle": "2027",
+  "first_seen": "",
+  "last_seen": "",
+  "most_open": 0
+ },
+ "Patti Grace Smith Fellowship": {
   "cycle": "2027",
   "first_seen": "",
   "last_seen": "",

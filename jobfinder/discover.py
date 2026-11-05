@@ -3,7 +3,9 @@
 Postings on the big lists link to each company's own hiring system. When an
 aerospace company's link points at a system the scan can read, its whole career
 site is scanned from then on, so a company only has to show up on a list once
-(this year's or last year's). Found sites are saved in data/discovered_boards.json.
+(this cycle or any earlier one in data/history.json). Other employers qualify
+once they've listed a few aerospace or mechanical internships in the past year.
+Found sites are saved in data/discovered_boards.json.
 """
 from __future__ import annotations
 
@@ -11,10 +13,10 @@ import datetime as dt
 import re
 
 from .sources import BOARD_KINDS
-from .util import FetchError, get_json, parse_ats_url
+from .util import parse_ats_url
 
 KINDS = ("greenhouse", "lever", "ashby", "workday", "successfactors", "oracle", "jibe")
-FORGET_DAYS = 365  # stop scanning a found site no list has linked to in this long
+FORGET_DAYS = 450  # stop scanning a found site no list has linked to in this long (a cycle and a bit)
 MAX_FAILS = 8      # ...or one that failed this many runs in a row (about two days)
 
 _ORACLE = re.compile(r"https://([\w.-]+\.oraclecloud\.com)/hcmUI/CandidateExperience/[\w-]+/sites/([^/?#]+)/job/")
@@ -64,10 +66,14 @@ def _configured(cfg: dict) -> tuple[set[str], set[str], set[str]]:
 
 def learn(found: dict, postings, is_aero, today: str) -> int:
     """Record the career sites behind aerospace companies' list postings.
-    postings: (company, url) pairs. Returns how many sites are new."""
+    postings: (company, url) pairs, or (company, url, posted date) for past
+    postings, whose date then counts as when the site was last linked.
+    Returns how many sites are new."""
     new = 0
-    for company, url in postings:
-        if not company or not is_aero(company):
+    cut = (dt.date.fromisoformat(today) - dt.timedelta(days=FORGET_DAYS)).isoformat()
+    for company, url, *when in postings:
+        seen = when[0] if when and when[0] else today
+        if not company or seen < cut or not is_aero(company):
             continue
         site = site_of(url)
         if not site:
@@ -76,19 +82,32 @@ def learn(found: dict, postings, is_aero, today: str) -> int:
         if key not in found:
             found[key] = {**entry, "name": company.strip(), "first_seen": today, "fails": 0}
             new += 1
-        found[key]["last_seen"] = today
+        found[key]["last_seen"] = max(found[key].get("last_seen", ""), seen)
     return new
 
 
-def learn_from_lists(found: dict, urls: list[str], is_aero, today: str) -> int:
-    """Older or full copies of the internship lists, closed postings included."""
-    new = 0
-    for url in urls:
-        try:
-            data = get_json(url, timeout=60)
-        except (FetchError, ValueError):
+def learn_engineering(found: dict, postings, wanted, today: str, min_postings: int) -> int:
+    """Career sites of other employers (carmakers, energy, robotics...) with at
+    least min_postings aerospace or mechanical internships on the lists in the
+    past year. They feed the All engineering and Fall sections only.
+    postings: (company, url, title, posted date)."""
+    cut = (dt.date.fromisoformat(today) - dt.timedelta(days=FORGET_DAYS)).isoformat()
+    counts: dict[str, list] = {}
+    for company, url, title, posted in postings:
+        if not company or posted < cut or not wanted(title):
             continue
-        new += learn(found, ((it.get("company_name", ""), it.get("url", "")) for it in data), is_aero, today)
+        site = site_of(url)
+        if site:
+            c = counts.setdefault(site[0], [site[1], company.strip(), 0, posted])
+            c[2], c[3] = c[2] + 1, max(c[3], posted)
+    new = 0
+    for key, (entry, company, n, last) in counts.items():
+        if n < min_postings:
+            continue
+        if key not in found:
+            found[key] = {**entry, "name": company, "first_seen": today, "fails": 0, "engineering": True}
+            new += 1
+        found[key]["last_seen"] = max(found[key].get("last_seen", ""), last)
     return new
 
 

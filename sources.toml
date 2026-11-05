@@ -73,7 +73,6 @@ greenhouse = [
   { name = "Spire Global", board = "spire" },
   { name = "Heart Aerospace", board = "heartaerospace" },
   { name = "Auterion", board = "auterion" },
-  { name = "Allen Control Systems", board = "allencontrolsystems" },
   { name = "Spaceium", board = "spaceium" },
   { name = "Heven AeroTech", board = "hevenaerotech" },
   { name = "Chaos Industries", board = "chaosindustries" },
@@ -94,6 +93,7 @@ greenhouse = [
   # Removed Oct 2026 (board gone): Axiom Space -> now on Workday below,
   # Boom Supersonic -> moved to Rippling (not supported).
   # Removed Nov 2026 (board gone): Capella Space (bought by IonQ), Outpost Space.
+  # Allen Control Systems moved to Ashby (below).
 
   # Mechanical / general engineering employers (Oct 2026). aero = false keeps
   # them out of the Summer aerospace section; they show in All engineering and Fall.
@@ -111,6 +111,9 @@ greenhouse = [
   { name = "Agility Robotics", board = "agilityrobotics", aero = false },
   { name = "Apptronik", board = "apptronik", aero = false },
   { name = "Re:Build Manufacturing", board = "rebuildmanufacturing", aero = false },
+  # Added Nov 4 2026: mechanical design and vehicle employers from past cycles' lists
+  { name = "SharkNinja", board = "sharkninjaoperatingllc", aero = false },
+  { name = "Harbinger Motors", board = "harbingermotors", aero = false },
 ]
 
 lever = [
@@ -133,6 +136,9 @@ lever = [
   # Added Nov 3 2026: Long Wall builds missile interceptors; HRL is Boeing and GM's research lab
   { name = "Long Wall", board = "longwall" },
   { name = "HRL Laboratories", board = "dodmg" },
+  # Added Nov 4 2026: Machina Labs forms aerospace structures with robots
+  { name = "Machina Labs", board = "MachinaLabs" },
+  { name = "Zoox", board = "zoox", aero = false },
   { name = "Commonwealth Fusion Systems", board = "cfsenergy", aero = false },
   { name = "Toyota Research Institute", board = "tri", aero = false },
   { name = "Velo3D", board = "velo3d", aero = false },
@@ -167,7 +173,14 @@ ashby = [
   # Added Nov 3 2026 (Skyband's ID has a space in it, written as %20)
   { name = "Skyband Systems", board = "skyband%20systems" },
   { name = "H3X Technologies", board = "h3x-technologies" },
+  # Moved from Greenhouse (board gone) in Nov 2026
+  { name = "Allen Control Systems", board = "allen-control-systems" },
   { name = "Helion", board = "helion", aero = false },
+  # Added Nov 4 2026: robotics and power hardware startups with mechanical internships
+  { name = "Bedrock Robotics", board = "bedrock-robotics", aero = false },
+  { name = "Base Power", board = "base-power", aero = false },
+  { name = "Heron Power", board = "heron-power", aero = false },
+  { name = "Fab2", board = "fab2", aero = false },
 ]
 
 # Workday career sites (most large aerospace/defense companies).
@@ -260,6 +273,11 @@ workday = [
   { name = "Johnson & Johnson", host = "jj.wd5.myworkdayjobs.com", site = "JJ", aero = false },
   { name = "Philips", host = "philips.wd3.myworkdayjobs.com", site = "jobs-and-careers", aero = false },
   { name = "Solar Turbines", host = "cat.wd5.myworkdayjobs.com", site = "solarturbines", aero = false },
+  # Added Nov 4 2026. The National Laboratory of the Rockies is the renamed NREL.
+  { name = "National Laboratory of the Rockies", host = "nrel.wd5.myworkdayjobs.com", site = "NLR", aero = false },
+  { name = "Fermilab", host = "fermilab.wd5.myworkdayjobs.com", site = "FermilabCareers", aero = false },
+  { name = "Polaris", host = "polaris.wd5.myworkdayjobs.com", site = "PolarisJobs", aero = false },
+  { name = "Boston Dynamics", host = "bostondynamics.wd1.myworkdayjobs.com", site = "Boston_Dynamics", aero = false },
 ]
 
 # Eightfold career sites: host is the *.eightfold.ai address, domain is the
@@ -297,6 +315,9 @@ successfactors = [
   { name = "Mitsubishi Power", host = "mhicareers.com", aero = false },
   { name = "CNH", host = "join.cnh.com", aero = false },
   { name = "TE Connectivity", host = "careers.te.com", aero = false },
+  # Added Nov 4 2026. Qorvo has a large site in Apopka, FL (about 20 miles from UCF).
+  { name = "Qorvo", host = "careers.qorvo.com", aero = false },
+  { name = "Paccar", host = "jobs.paccar.com", aero = false },
 ]
 
 # Career sites with a plain search page and no hiring-system API. search = the
@@ -334,6 +355,9 @@ icims = [
   { name = "Peraton", host = "careers-peraton.icims.com" },
   { name = "Iridium", host = "careers-iridium.icims.com" },
   { name = "Cirrus Aircraft", host = "careers-cirrusaircraft.icims.com" },
+  # Added Nov 4 2026: General Dynamics' submarine and destroyer shipyards
+  { name = "General Dynamics Electric Boat", host = "careers-gdeb.icims.com" },
+  { name = "General Dynamics Bath Iron Works", host = "careers-gdbiw.icims.com" },
   { name = "Lennox", host = "uscareers-lennox.icims.com", aero = false },
 ]
 
@@ -347,6 +371,7 @@ jibe = [
   { name = "Garmin", host = "careers.garmin.com", aero = false },
   { name = "Rivian", host = "careers.rivian.com", aero = false },
   { name = "Schneider Electric", host = "careers.se.com", aero = false },
+  { name = "Pacific Northwest National Laboratory", host = "careers.pnnl.gov", aero = false },
 ]
 
 # Oracle Recruiting Cloud: host + site from a job link, e.g.
@@ -443,7 +468,10 @@ paycor = [
 #   refuses scripts), Ducommun (Cornerstone), Elbit America (Dayforce),
 #   General Dynamics Land Systems (blocks scripts), MDA (Canada only),
 #   Relativity Space's student roles (RippleMatch; its Greenhouse board has none),
-#   X-Bow Systems (ApplicantPro), Mercury Systems, Parker Aerospace, Embraer.
+#   X-Bow Systems (ApplicantPro), Mercury Systems, Parker Aerospace, Embraer,
+#   Astrobotic (Synchr), Southwest Research Institute (swri.jobs sends an incomplete
+#   security certificate), Tesla (blocks scripts), and the Consider-run portfolio
+#   boards (Airbus Ventures, Sequoia, Kleiner Perkins), which refuse scripts.
 #   Intuitive Machines posts on the Space Capital board below.
 #   intern-list.com covers several of these as leads.
 
@@ -468,6 +496,41 @@ urls = [
 name = "Space Capital job board"
 collection = 338
 
+# Venture firms' portfolio boards (added Nov 4 2026): defense, space, energy and
+# robotics startups, many of which no other source here reads. collection = the
+# "network" id in the board page's data.
+[[getro]]
+name = "Lux Capital portfolio board"
+collection = 103
+
+[[getro]]
+name = "8VC portfolio board"
+collection = 1005
+
+[[getro]]
+name = "DCVC portfolio board"
+collection = 514
+
+[[getro]]
+name = "Khosla Ventures portfolio board"
+collection = 257
+
+[[getro]]
+name = "General Catalyst portfolio board"
+collection = 222
+
+[[getro]]
+name = "Accel portfolio board"
+collection = 8672
+
+[[getro]]
+name = "Energy Impact Partners portfolio board"
+collection = 253
+
+[[getro]]
+name = "Techstars portfolio board"
+collection = 89
+
 # intern-list.com: about 19,000 U.S. engineering internships in a public Airtable
 # table on the site. Its Apply links go to jobright.ai, which hides the company's
 # link behind a sign-in, so its postings show as leads with a "Find posting"
@@ -481,15 +544,26 @@ views = ["appmXHK6JoqQcSKf6/shruwVkAKPjHFdVJu"]
 
 # --- Finding career sites automatically ---------------------------------
 # When an aerospace company (see [aerospace_companies] below) has a posting on
-# any list above, and its link goes to a hiring system the scan can read, that
-# company's whole career site is scanned from then on. These lists are also
-# searched for that, closed postings included, so companies that hired interns
-# last year get checked before they post again. Found sites are saved in
-# data/discovered_boards.json and shown as "found automatically" on the page.
+# any list above, or on one in data/history.json from the past 15 months (closed
+# postings included), and its link goes to a hiring system the scan can read,
+# that company's whole career site is scanned from then on, so companies that
+# hired interns last cycle get checked before they post again. Other employers
+# qualify with at least engineering_min aerospace or mechanical internships on
+# the lists in that time (0 turns this off); they feed All engineering and Fall
+# only. Found sites are saved in data/discovered_boards.json and shown as
+# "found automatically" on the page.
 [discover]
+engineering_min = 3
+
+# --- Past cycles, for the Predicted tab ------------------------------------
+# Old copies of the Simplify list, pinned to a commit so they never change.
+# Each is read once into data/history.json, which then grows with every scan.
+# (SimplifyJobs renames the repo each year and restarts the file now and then;
+# these two cover Nov 2022 to Mar 2026, and the live list covers the rest.)
+[history]
 urls = [
-  "https://raw.githubusercontent.com/SimplifyJobs/Summer2026-Internships/dev/.github/scripts/listings.json",
-  "https://raw.githubusercontent.com/SimplifyJobs/Summer2027-Internships/dev/.github/scripts/listings.json",
+  "https://raw.githubusercontent.com/SimplifyJobs/Summer2027-Internships/4f8f23aced456c802b6e8d7bb06c8aa79dd661b4/.github/scripts/listings.json",
+  "https://raw.githubusercontent.com/SimplifyJobs/Summer2027-Internships/ae7e10dc1e6c63b453a9835726333136ed4eb741/.github/scripts/listings.json",
 ]
 
 # --- Federal jobs (DoD, Air Force, Navy, NASA) via USAJOBS --------------
@@ -508,6 +582,7 @@ keywords = ["aerospace engineering student", "engineering student trainee", "aer
 rtx = ["rtx", "raytheon", "collins aerospace", "pratt & whitney", "pratt and whitney"]
 textron = ["textron", "=bell", "bell textron", "bell flight", "kautex"]
 lockheed = ["lockheed", "sikorsky"]
+disney = ["walt disney", "disney"]
 
 # --- Companies treated as aerospace, even when a posting is vague -------
 # Matched against company names (lowercase, partial match is fine).
@@ -909,3 +984,32 @@ window = [8, 12]
 dates = "Applications open Aug 1 and close the first Friday in December (Dec 4, 2026, 5 p.m. ET)."
 scanned = false
 note = "Full tuition plus paid summer internships at DoD labs, with a job after graduation. U.S. citizens."
+
+[[popular]]
+group = "Labs and programs"
+name = "DOE Science Undergraduate Laboratory Internships (SULI)"
+match = ["=suli"]
+careers = "https://science.osti.gov/wdts/suli"
+window = [10, 1]
+dates = "Summer 2027 applications opened Oct 14, 2026 and close Jan 6, 2027 at 5 p.m. ET."
+scanned = false
+note = "Paid summer research at DOE national labs (Oak Ridge, Argonne, Brookhaven, the National Laboratory of the Rockies...). One application covers the labs; offers go out from early February."
+
+# ---- Fellowships (a paid summer internship plus mentors, one application)
+[[popular]]
+group = "Fellowships"
+name = "Brooke Owens Fellowship"
+match = ["=brooke owens fellowship"]
+careers = "https://www.brookeowensfellowship.org/"
+window = [9, 10]
+scanned = false
+note = "For undergraduate women and gender minorities in aerospace. Listings that repeat the program's dates had the Class of 2027 applying Sep 1 to Oct 4, 2026, so the next class should open around September 2027."
+
+[[popular]]
+group = "Fellowships"
+name = "Patti Grace Smith Fellowship"
+match = ["=patti grace smith fellowship"]
+careers = "https://www.pgsfellowship.org/"
+window = [8, 10]
+scanned = false
+note = "For Black undergraduates in aerospace. Listings that repeat the program's dates had the Class of 2027 deadline on Oct 4, 2026, so the next class should open around late August 2027."

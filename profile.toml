@@ -73,6 +73,11 @@ min_score = 30
 # Postings older than this get an "Older than 15 days" tag (and can be hidden).
 old_after_days = 15
 
+[predict]
+# The Predicted tab: internships posted in past cycles, and when each should be
+# posted again for these terms of [search] year (Summer 2027, Fall 2027).
+seasons = ["summer", "fall"]
+
 [ai]
 # Optional: a short written fit review by Claude for top matches.
 # Only runs if you add an ANTHROPIC_API_KEY secret (see README).

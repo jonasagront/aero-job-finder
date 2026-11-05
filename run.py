@@ -14,13 +14,13 @@ from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from urllib.parse import urlparse
 
-from jobfinder import popular
+from jobfinder import history, popular, predict
 from jobfinder.ai import review_jobs
-from jobfinder.discover import as_sources, learn, learn_from_lists, record_results
+from jobfinder.discover import as_sources, learn, learn_engineering, record_results
 from jobfinder.match import Matcher
 from jobfinder.quals import QualChecker
 from jobfinder.render import build_page, update_readme
-from jobfinder.sources import fetch_all, fetch_description, fetch_posted_date
+from jobfinder.sources import LIST_ITEMS, fetch_all, fetch_description, fetch_posted_date
 from jobfinder.util import FetchError, job_key
 
 ROOT = Path(__file__).resolve().parent
@@ -32,6 +32,7 @@ MISS_FILE = DATA / "description_misses.json"
 DATE_MISS_FILE = DATA / "date_misses.json"
 POPULAR_FILE = DATA / "popular_seen.json"
 FOUND_FILE = DATA / "discovered_boards.json"
+HISTORY_FILE = DATA / "history.json"
 PAGE_URL = "https://jonasagront.github.io/aero-job-finder/"
 
 MAX_NEW_LOOKUPS = 500   # full-description lookups per run for list-only postings
@@ -114,10 +115,25 @@ def main() -> int:
         return matcher.title_ok(title)[0] and bool(
             matcher.discipline(title)[0] or matcher.aero_relevance(title.lower(), "", False, True) is not None)
 
-    # Career sites found through aerospace companies' list postings (see discover.py).
-    # Sites first linked this run are scanned from the next run on.
+    # Every engineering internship seen so far, for the Predicted tab (see history.py);
+    # old copies of the lists are read into it once
+    hist = history.load(HISTORY_FILE)
+    n_past = history.read_pinned(hist, sources_cfg.get("history", {}).get("urls", []), keep)
+    if n_past:
+        print(f"   {n_past} postings from past cycles added to the history")
+
+    # Career sites found through list postings (see discover.py): aerospace companies'
+    # from any cycle in the history, and other employers' with several mechanical
+    # internships in the past year. Sites first linked this run are scanned from the next run on.
     found: dict = load_json(FOUND_FILE, {})
-    n_new = learn_from_lists(found, sources_cfg.get("discover", {}).get("urls", []), matcher.is_aero_company, today)
+    past = list(hist["rows"].values())
+    n_new = learn(found, ((r["c"], r["u"], r["d"]) for r in past), matcher.is_aero_company, today)
+    eng_min = int(sources_cfg.get("discover", {}).get("engineering_min", 0))
+    if eng_min:
+        # Engineering titles only ("Mechanical Design Engineer Intern", not "Product Development Intern")
+        mech = lambda t: (matcher.discipline(t)[0] in ("Aerospace", "Mechanical")
+                          and re.search(r"(?i)engineer|mechanical|aerospace|aeronautic", t))
+        n_new += learn_engineering(found, ((r["c"], r["u"], r["t"], r["d"]) for r in past), mech, today, eng_min)
     extra = as_sources(found, sources_cfg, today)
     scan_cfg = {**sources_cfg, **{k: sources_cfg.get(k, []) + v for k, v in extra.items()}}
     found_names = {c["name"] for v in extra.values() for c in v}
@@ -254,6 +270,12 @@ def main() -> int:
     print(f"   {len(undated)} postings had no posted date: {on_page} found on their own page ({len(look)} opened), "
           f"{from_list} from another list, {sum(1 for j in undated if not j.get('posted'))} still unknown")
 
+    # Everything this run read goes in the history, the lists' closed postings and
+    # ones that won't make the page included: they still show when roles get posted
+    n_hist = sum(history.add_list_items(hist, items, keep, name) for name, items in LIST_ITEMS.items())
+    n_hist += history.add_jobs(hist, raw, keep, skip_sources=set(LIST_ITEMS))
+    print(f"   {n_hist} postings added to the history ({len(hist['rows'])} in all)")
+
     # 4) Score
     drops: dict[str, int] = {}
     scored = []
@@ -304,9 +326,27 @@ def main() -> int:
     seen = load_json(POPULAR_FILE, {})
     big = popular.build(sources_cfg.get("popular", []), final, seen, today, str(profile["search"].get("year", "")))
     save_json(POPULAR_FILE, seen)
+
+    # 8) Predicted internships: past cycles' roles and when each should be posted this cycle
+    year = int(profile["search"].get("year", 2027))
+    targets = [(s.lower(), year) for s in profile.get("predict", {}).get("seasons", ["summer", "fall"])]
+    fa = profile.get("fall", {})
+    home = (float(fa["home_lat"]), float(fa["home_lon"])) if "home_lat" in fa else None
+    links = predict.careers_links(sources_cfg, found, EMPLOYERS)
+    preds, timing = predict.build(hist, final, today, targets, EMPLOYERS, matcher, links,
+                                  home, float(fa.get("radius_miles", 0)))
+    predict.for_popular(big, timing)
+    history.prune(hist, today)
+    history.save(HISTORY_FILE, hist)
+    states = ", ".join(f"{sum(1 for p in preds if p['st'] == s)} {s}" for s in ("upcoming", "due", "late", "posted"))
+    print(f"8) {len(preds)} roles predicted from {len(hist['rows'])} past and current postings ({states})")
+
+    pred_info = {"postings": len(hist["rows"]), "since": min((r["d"] for r in hist["rows"].values()), default=today),
+                 "terms": [f"{s} {y}" for s, y in targets]}
     (ROOT / "docs").mkdir(exist_ok=True)
-    (ROOT / "docs" / "index.html").write_text(build_page(final, status, profile, now, big), encoding="utf-8")
-    update_readme(ROOT / "README.md", final, PAGE_URL, now)
+    (ROOT / "docs" / "index.html").write_text(build_page(final, status, profile, now, big, preds, pred_info),
+                                              encoding="utf-8")
+    update_readme(ROOT / "README.md", final, PAGE_URL, now, preds=preds)
     new_today = sum(1 for j in final if j["first_seen"] == today)
     per = ", ".join(f"{sum(1 for j in final if t in j['tracks'])} {t}" for t in matcher.tracks)
     print(f"Done: {len(final)} postings on the page ({per}), {new_today} new today.")

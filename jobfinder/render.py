@@ -151,6 +151,7 @@ details.x>summary:hover{color:var(--ink)}
 .lnk{height:28px;border:0;background:none;font:400 12.5px/1 var(--sans);color:var(--muted);cursor:pointer}
 .lnk:hover{color:var(--ink)}
 .lnk.on{color:var(--pos)}
+a.lnk{display:inline-flex;align-items:center;text-decoration:none}
 .more{display:block;margin:22px auto 0;height:38px;padding:0 18px;border:1px solid var(--line2);border-radius:3px;background:var(--surface);font:500 11.5px/1 var(--mono);letter-spacing:.07em;text-transform:uppercase;color:var(--ink);cursor:pointer}
 .more:hover{border-color:var(--ink2)}
 .empty{padding:48px 20px;text-align:center;color:var(--muted);border-bottom:1px solid var(--line)}
@@ -183,6 +184,30 @@ details.x>summary:hover{color:var(--ink)}
 .bn .fs small{display:block;margin-top:3px;font-family:var(--sans);font-size:12px;color:var(--muted)}
 .bn .sub{grid-column:1/-1;margin-top:-2px;font-size:13px;color:var(--muted);max-width:90ch}
 .bn .lbl{display:none}
+
+/* predicted */
+.months{display:grid;grid-template-columns:repeat(9,minmax(0,1fr));gap:6px;margin-top:16px}
+.mo{display:flex;flex-direction:column;justify-content:flex-end;gap:5px;min-height:74px;padding:6px 4px;border:1px solid var(--line);border-radius:3px;background:var(--surface);cursor:pointer;font:400 11px/1 var(--mono);color:var(--muted);text-align:center}
+.mo:hover{border-color:var(--ink2)}
+.mo[aria-pressed=true]{border-color:var(--accent);color:var(--accent)}
+.mo i{display:block;margin:0 auto;width:60%;min-height:2px;background:var(--mid);opacity:.75}
+.mo[aria-pressed=true] i{background:var(--accent)}
+.mo b{font-weight:500;color:var(--ink)}
+.pr{display:grid;grid-template-columns:96px minmax(0,1fr) 150px;gap:0 22px;padding:16px 0;border-bottom:1px solid var(--line)}
+.pr .when b{display:block;font:500 19px/1.1 var(--mono);letter-spacing:-.01em}
+.pr .when small{display:block;margin-top:6px;font:500 10px/1.25 var(--mono);letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.st-upcoming .when b{color:var(--mid)} .st-due .when b,.st-due .when small{color:var(--accent)}
+.st-late .when b{color:var(--low)} .st-posted .when b{color:var(--pos)}
+.pr .title{font-size:16px;margin:4px 0 5px}
+.pr .past{margin-top:6px;font-size:13px;color:var(--ink2)}
+.pr .past span{color:var(--muted)}
+
+@media (max-width:760px){
+  .months{grid-template-columns:repeat(5,minmax(0,1fr))}
+  .months .mo:nth-child(n+6){display:none}
+  .pr{grid-template-columns:72px minmax(0,1fr);gap:0 14px}
+  .pr .when b{font-size:16px}
+}
 
 footer{margin-top:52px;padding-top:16px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
 footer details>summary{cursor:pointer;font:500 11px/1.3 var(--mono);letter-spacing:.07em;text-transform:uppercase;color:var(--ink2)}
@@ -272,8 +297,33 @@ footer td.bad{color:var(--neg)}
 <button class="more" id="more" hidden>Show more</button>
 </div>
 
+<section id="predView" hidden>
+  <p class="bnote" id="predNote"></p>
+  <div class="controls">
+    <div class="ctl">
+      <input type="search" id="pq" placeholder="Search company, role, location" aria-label="Search predicted internships">
+      <select id="pdisc" aria-label="Discipline"></select>
+    </div>
+    <div class="ctl">
+      <div class="seg" role="group" aria-label="Term" id="pseason"></div>
+      <div class="seg" role="group" aria-label="Status" id="pstat">
+        <button data-st="soon" aria-pressed="true">Coming up</button>
+        <button data-st="late" aria-pressed="false">Not seen yet</button>
+        <button data-st="posted" aria-pressed="false">Already posted</button>
+        <button data-st="all" aria-pressed="false">All</button>
+      </div>
+      <label class="tog"><input type="checkbox" id="paero"> Aerospace companies only</label>
+      <label class="tog" id="pnearTog"><input type="checkbox" id="pnear"> <span id="pnearLabel"></span></label>
+    </div>
+  </div>
+  <div class="months" id="pmonths" aria-label="Expected postings by month"></div>
+  <div class="shown" id="pshown" aria-live="polite"></div>
+  <div id="plist"></div>
+  <button class="more" id="pmore" hidden>Show more</button>
+</section>
+
 <section id="bigView" hidden>
-  <p class="bnote">When well-known aerospace and defense employers usually recruit summer interns, and what this cycle's scans have found from each. Shaded months are the typical window from past cycles (an estimate, not an announced date); the line marks this month. Dates marked <b class="mono" style="font-size:11px;color:var(--pos)">PUBLISHED</b> come from the program itself.</p>
+  <p class="bnote">When well-known aerospace and defense employers usually recruit summer interns, and what this cycle's scans have found from each. Shaded months are the typical window from past cycles (an estimate, not an announced date); the line marks this month. Dates marked <b class="mono" style="font-size:11px;color:var(--pos)">PUBLISHED</b> come from the program itself. "Last cycle" is the company's first engineering internship on the Simplify list in the previous cycle, which doesn't catch every company's first postings.</p>
   <div class="bn-head"><span>Company</span><span>This cycle</span><span>Typical window, Jul to Jun</span><span>Earliest posting</span></div>
   <div id="bigList"></div>
 </section>
@@ -331,9 +381,12 @@ applyTheme();
 
 // ---- sections
 const hasLeads = D.jobs.some(j => j.lead);
-const ORDER = ['new', 'summer', 'fall', 'broad', 'undated', 'leads', 'big'].filter(k => k === 'new' || k === 'undated' || (k === 'leads' ? hasLeads : k === 'big' ? D.popular.length : T[k]));
-const HASH = {new:'new', summer:'summer', fall:'fall', broad:'all', undated:'date-unknown', leads:'leads', big:'big-names'};
-const NAME = {new:'New this week', undated:'Posted date unknown', leads:'Leads without a link', big:'Big names'};
+const P = D.predicted;
+const ORDER = ['new', 'summer', 'fall', 'broad', 'pred', 'undated', 'leads', 'big'].filter(k => k === 'new' || k === 'undated' ||
+  (k === 'leads' ? hasLeads : k === 'big' ? D.popular.length : k === 'pred' ? P.length : T[k]));
+const HASH = {new:'new', summer:'summer', fall:'fall', broad:'all', pred:'predicted', undated:'date-unknown', leads:'leads', big:'big-names'};
+const NAME = {new:'New this week', pred:'Predicted', undated:'Posted date unknown', leads:'Leads without a link', big:'Big names'};
+const VIEWS = ['big', 'pred'];  // sections that aren't a list of postings
 for(const k in T) NAME[k] = T[k].tab;
 const best = j => Object.entries(j.tracks).reduce((a, b) => !a || b[1].score > a[1].score ? b : a, null);
 // "New this week", "Posted date unknown" and "Leads" gather postings from every other section
@@ -365,7 +418,9 @@ $('stats').innerHTML = [
 $('oldLabel').textContent = `Hide postings older than ${D.old_after} days`;
 
 function tabs(){
-  $('tabs').innerHTML = ORDER.map(k => `<button class="tab" role="tab" data-tab="${k}" aria-selected="${k === tab}">${esc(NAME[k])}<span class="n">${k === 'big' ? D.popular.length : D.jobs.filter(j => inTab(j, k)).length}</span></button>`).join('');
+  const n = k => k === 'big' ? D.popular.length : k === 'pred' ? P.filter(p => isSoon(p) && pTerm(p) === pTerms[0] && (p.aero || !pAeroDefault(pTerms[0]))).length
+    : D.jobs.filter(j => inTab(j, k)).length;
+  $('tabs').innerHTML = ORDER.map(k => `<button class="tab" role="tab" data-tab="${k}" aria-selected="${k === tab}">${esc(NAME[k])}<span class="n">${n(k)}</span></button>`).join('');
 }
 
 function bars(list, color){
@@ -482,7 +537,8 @@ function renderBig(){
       `<div class="tlm">${RECRUIT_YEAR.map(mo => mo === m ? `<b>${MON[mo - 1][0]}</b>` : `<span>${MON[mo - 1][0]}</span>`).join('')}</div>` +
       (p.window.length ? `<div class="win">Typically ${MON[p.window[0] - 1]} to ${MON[p.window[1] - 1]}</div>` : '') +
       (p.dates ? `<div class="pub"><b>Published</b>${esc(p.dates)}</div>` : '');
-    const fs = '<span class="lbl">Earliest posting: </span>' + (p.first_seen ? `${fmt(p.first_seen)}<small>${p.most_open} open at most</small>` : '—');
+    const fs = '<span class="lbl">Earliest posting: </span>' + (p.first_seen ? `${fmt(p.first_seen)}<small>${p.most_open} open at most</small>` : '—') +
+      (p.past && p.past.length ? `<small>Last cycle: from ${fmtY(p.past[0][1])} (${p.past[0][2]} on the list)</small>` : '');
     return head + `<div class="bn">
       <div class="nm">${esc(p.name)}${p.careers ? `<br><a href="${esc(p.careers)}" target="_blank" rel="noopener">Student careers ↗</a>` : ''}</div>
       <div class="st">${st}</div>
@@ -493,14 +549,111 @@ function renderBig(){
   }).join('');
 }
 
+// ---- predicted internships (one term at a time: Summer 2027, Fall 2027...)
+const fmtY = iso => { if(!iso) return ''; const d = new Date(iso + 'T12:00:00'); return d.toLocaleDateString(undefined,{month:'short',day:'numeric',year:'numeric'}); };
+const isSoon = p => p.st === 'upcoming' || p.st === 'due';
+const pTerm = p => p.s + ' ' + p.y;
+const pTerms = (D.pred_info.terms || []).filter(t => P.some(p => pTerm(p) === t));
+const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
+// Summer is the aerospace section, so it starts on aerospace companies; other terms take any engineering
+const pAeroDefault = term => term.startsWith('summer');
+const pAero = {}, pNear = {};
+let pT = pTerms[0] || '', pStat = 'soon', pMonth = '', pLimit = PAGE;
+const thisMonth = D.today.slice(0, 7);
+// Roles due now (expected up to three weeks ago) count toward this month
+const pMonthOf = p => p.exp.slice(0, 7) < thisMonth ? thisMonth : p.exp.slice(0, 7);
+const MONTHS = (() => { const out = []; let y = +D.today.slice(0, 4), m = +D.today.slice(5, 7);
+  for(let i = 0; i < 9; i++){ out.push(`${y}-${String(m).padStart(2, '0')}`); if(++m > 12){ m = 1; y++; } } return out; })();
+
+function setupPred(){
+  $('pseason').innerHTML = pTerms.map(t => `<button data-term="${esc(t)}" aria-pressed="${t === pT}">${esc(cap(t))}</button>`).join('');
+  $('pseason').hidden = pTerms.length < 2;
+  $('paero').checked = pT in pAero ? pAero[pT] : pAeroDefault(pT);
+  const fall = T.fall && pT.startsWith('fall');
+  $('pnearTog').hidden = !fall;
+  if(fall) $('pnearLabel').textContent = `Within ${T.fall.radius} mi of ${T.fall.home} only`;
+  $('pnear').checked = !!pNear[pT];
+  const counts = {};
+  for(const p of P) if(pTerm(p) === pT) counts[p.d] = (counts[p.d] || 0) + 1;
+  $('pdisc').innerHTML = '<option value="">All disciplines</option>' + Object.entries(counts).sort((a, b) => b[1] - a[1])
+    .map(([d, n]) => `<option value="${esc(d)}">${esc(d)} (${n})</option>`).join('');
+  $('predNote').textContent = `Internships posted in past cycles, and when each should come back for ${cap(pT)}: last cycle's posting date moved forward a year (the middle date when there are several cycles). ` +
+    `Built from ${D.pred_info.postings.toLocaleString()} engineering internship postings since ${fmtY(D.pred_info.since)} (old copies of the Simplify list, plus everything this scan has read). ` +
+    `A role counts as posted once the same company posts one with a similar title this cycle. Companies don't repeat every role, so treat the dates as estimates.`;
+  pLimit = PAGE;
+}
+
+function pPool(){
+  const q = $('pq').value.trim().toLowerCase(), disc = $('pdisc').value;
+  const aero = $('paero').checked, near = !$('pnearTog').hidden && $('pnear').checked;
+  return P.filter(p => pTerm(p) === pT && (!aero || p.aero) && (!near || p.mi != null) && (!disc || p.d === disc) &&
+    (!q || q.split(/\s+/).every(w => [p.co, p.t, p.lt, p.loc, p.d].join(' ').toLowerCase().includes(w))));
+}
+
+function pCard(p){
+  const days = Math.round((Date.parse(p.exp + 'T12:00:00') - todayMs) / 864e5);
+  const [when, label] = p.st === 'posted' ? [fmt(p.seen), 'Posted ✓']
+    : ['~' + fmt(p.exp), p.st === 'due' ? 'Due now' : p.st === 'late' ? 'Not seen yet' : days > 60 ? `In ${Math.round(days / 7)} weeks` : `In ${days} days`];
+  const tags = [`<span class="tag">${esc(p.d)}</span>`];
+  if(p.aero) tags.push('<span class="tag ok">Aerospace company</span>');
+  if(p.mi != null) tags.push(`<span class="tag sec">${p.mi} mi from ${esc(T.fall ? T.fall.home : 'home')}</span>`);
+  if(p.st === 'late') tags.push(`<span class="tag old">${-days} days past last cycle's date</span>`);
+  if(p.past.length > 1) tags.push(`<span class="tag">Posted ${p.past.length} cycles running</span>`);
+  if(p.lo && p.hi) tags.push(`<span class="tag sec">Past cycles: ${fmt(p.lo)} to ${fmt(p.hi)}</span>`);
+  const meta = [p.loc && `<span>${esc(p.loc)}</span>`, p.lt !== p.t && `<span>Last posted as “${esc(p.lt)}”</span>`].filter(Boolean).join('');
+  const past = p.past.map(([y, d]) => `${fmtY(d)} <span>for ${cap(p.s)} ${y}</span>`).join(' · ');
+  const act = p.key ? `<a class="btn" href="${esc(p.u)}" target="_blank" rel="noopener">Apply ↗</a>`
+    : `<a class="btn find" href="${esc(p.u)}" target="_blank" rel="noopener">Career site ↗</a>`;
+  return `<article class="pr st-${p.st}">
+    <div class="when"><b>${esc(when)}</b><small>${esc(label)}</small></div>
+    <div class="main">
+      <div class="co">${esc(p.co)}</div>
+      <h2 class="title">${esc(p.t)}</h2>
+      ${meta ? `<div class="meta">${meta}</div>` : ''}
+      <div class="past">Posted ${past}</div>
+      <div class="tags">${tags.join('')}</div>
+    </div>
+    <div class="acts">${act}${p.last ? `<a class="lnk" href="${esc(p.last)}" target="_blank" rel="noopener">Last cycle's posting ↗</a>` : ''}</div>
+  </article>`;
+}
+
+function renderPred(){
+  const pool = pPool();
+  const counts = MONTHS.map(mo => pool.filter(p => isSoon(p) && pMonthOf(p) === mo).length), most = Math.max(1, ...counts);
+  $('pmonths').innerHTML = MONTHS.map((mo, i) => `<button class="mo" data-mo="${mo}" aria-pressed="${mo === pMonth}" title="Roles expected in ${MON[+mo.slice(5) - 1]} ${mo.slice(0, 4)}"><i style="height:${2 + Math.round(38 * counts[i] / most)}px"></i><b>${counts[i]}</b>${MON[+mo.slice(5) - 1]}</button>`).join('');
+  let rows = pool.filter(p => pStat === 'all' || (pStat === 'soon' ? isSoon(p) : p.st === pStat));
+  if(pMonth) rows = rows.filter(p => isSoon(p) && pMonthOf(p) === pMonth);
+  rows.sort(pStat === 'late' ? (a, b) => b.exp.localeCompare(a.exp) : pStat === 'posted' ? (a, b) => (b.seen || '').localeCompare(a.seen || '')
+    : (a, b) => a.exp.localeCompare(b.exp) || a.co.localeCompare(b.co));
+  $('pshown').innerHTML = `<span>Showing ${Math.min(pLimit, rows.length)} of ${rows.length} roles</span>` +
+    (pMonth ? `<span class="pick">Expected in ${MON[+pMonth.slice(5) - 1]} ${pMonth.slice(0, 4)}<button id="punpick" aria-label="Show every month">×</button></span>` : '');
+  const empty = pStat === 'posted' ? 'None of these roles has been posted yet this cycle.'
+    : pStat === 'late' ? 'Nothing overdue: every role due by now has been posted.' : 'No roles match these filters.';
+  $('plist').innerHTML = rows.length ? rows.slice(0, pLimit).map(pCard).join('') : `<div class="empty">${esc(empty)}</div>`;
+  $('pmore').hidden = rows.length <= pLimit;
+  $('pmore').textContent = `Show ${Math.min(PAGE, rows.length - pLimit)} more`;
+}
+const pPress = () => document.querySelectorAll('#pstat button').forEach(x => x.setAttribute('aria-pressed', x.dataset.st === pStat));
+$('pseason').addEventListener('click', e => { const b = e.target.closest('[data-term]'); if(!b) return; pT = b.dataset.term; pMonth = ''; setupPred(); renderPred(); });
+$('pstat').addEventListener('click', e => { const b = e.target.closest('[data-st]'); if(!b) return; pStat = b.dataset.st; if(pStat !== 'soon') pMonth = ''; pPress(); pLimit = PAGE; renderPred(); });
+$('pmonths').addEventListener('click', e => { const b = e.target.closest('[data-mo]'); if(!b) return;
+  pMonth = pMonth === b.dataset.mo ? '' : b.dataset.mo; pStat = 'soon'; pPress(); pLimit = PAGE; renderPred(); });
+$('pshown').addEventListener('click', e => { if(e.target.id === 'punpick'){ pMonth = ''; pLimit = PAGE; renderPred(); } });
+$('paero').addEventListener('change', () => { pAero[pT] = $('paero').checked; pLimit = PAGE; renderPred(); });
+$('pnear').addEventListener('change', () => { pNear[pT] = $('pnear').checked; pLimit = PAGE; renderPred(); });
+['pq', 'pdisc'].forEach(id => $(id).addEventListener(id === 'pq' ? 'input' : 'change', () => { pLimit = PAGE; renderPred(); }));
+$('pmore').addEventListener('click', () => { pLimit += PAGE; renderPred(); });
+
 // Controls that depend on the section
 function setupTab(){
   tabs();
-  const big = tab === 'big';
-  $('jobsView').hidden = big;
-  $('bigView').hidden = !big;
-  $('tabnote').hidden = big;
-  if(big){ renderBig(); return; }
+  const view = VIEWS.includes(tab);
+  $('jobsView').hidden = view;
+  $('bigView').hidden = tab !== 'big';
+  $('predView').hidden = tab !== 'pred';
+  $('tabnote').hidden = view;
+  if(tab === 'big'){ renderBig(); return; }
+  if(tab === 'pred'){ setupPred(); renderPred(); return; }
   $('tabnote').textContent = tab === 'new' ? `Everything posted in the last 7 days, from every section, best fit first.`
     : tab === 'undated' ? `Postings with no posted date on their source, their own listing page, or any internship list the scan reads. They stay out of the other sections until a date turns up.`
     : tab === 'leads' ? `Postings only intern-list.com has found. Its links go to jobright.ai instead of the company, so Find posting searches for the company's own listing. A lead moves to the other sections on its own once a company career site the scan reads has the same job.`
@@ -524,7 +677,7 @@ function setupTab(){
 }
 
 function render(){
-  if(tab === 'big') return;
+  if(VIEWS.includes(tab)) return;
   if(!D.jobs.length){
     $('list').innerHTML = `<div class="empty"><p><b>No scan results yet.</b></p><p>In your GitHub repo, open the Actions tab, choose “Daily job scan”, and click “Run workflow”. This page fills in about five minutes later.</p></div>`;
     return;
@@ -630,7 +783,7 @@ def track_info(profile: dict) -> dict:
         fall = f"{fa.get('season', 'fall').title()} {fa.get('year', 2027)}"
         home, radius = fa.get("home_name", "home"), fa.get("radius_miles", 50)
         info["fall"] = {
-            "tab": f"{fall} near {home}", "season_label": fall, "home": home,
+            "tab": f"{fall} near {home}", "season_label": fall, "home": home, "radius": radius,
             "note": f"{fall} internships and co-ops within {radius} miles of {home}"
                     + (", plus remote ones" if fa.get("include_remote", True) else "") + ". Any engineering discipline.",
             "empty": f"No {fall} postings within {radius} miles of {home} yet. Fall co-ops are mostly posted "
@@ -640,7 +793,8 @@ def track_info(profile: dict) -> dict:
 
 
 def build_page(jobs: list[dict], sources: list[dict], profile: dict, now: dt.datetime,
-               popular: list[dict] | None = None) -> str:
+               popular: list[dict] | None = None, predicted: list[dict] | None = None,
+               pred_info: dict | None = None) -> str:
     today = now.date().isoformat()
     page_jobs = [{k: j.get(k) for k in (
         "key", "company", "title", "location", "url", "source", "posted", "posted_from", "first_seen", "tracks",
@@ -661,6 +815,8 @@ def build_page(jobs: list[dict], sources: list[dict], profile: dict, now: dt.dat
         "jobs": page_jobs,
         "sources": sources,
         "popular": popular or [],
+        "predicted": predicted or [],
+        "pred_info": pred_info or {"postings": 0, "since": today},
         # Leads have their own section, so the headline numbers leave them out
         "counts": {
             "strong": sum(1 for j in jobs if not j.get("lead") and j["tracks"].get("summer", {}).get("tier") == "strong"),
@@ -671,12 +827,40 @@ def build_page(jobs: list[dict], sources: list[dict], profile: dict, now: dt.dat
     return TEMPLATE.replace("__DATA__", blob)
 
 
-def update_readme(path: Path, jobs: list[dict], page_url: str, now: dt.datetime, top: int = 25) -> None:
+def _readme_predicted(preds: list[dict], page_url: str, now: dt.datetime, top: int = 15) -> list[str]:
+    """Aerospace roles expected in the next 60 days that haven't been posted yet."""
+    soon = (now.date() + dt.timedelta(days=60)).isoformat()
+    rows = [p for p in preds if p.get("aero") and p["st"] in ("upcoming", "due") and p["exp"] <= soon]
+    lines = [f"**{len(rows)} aerospace internships expected in the next 60 days**, from past cycles' posting dates. "
+             f"All of them, with filters: **[Predicted tab]({page_url}#predicted)**", "",
+             "| Expected | Company | Role | For | Last cycle's posting date | Career site |", "|---|---|---|---|---|---|"]
+    for p in rows[:top]:
+        due = " (due now)" if p["st"] == "due" else ""
+        lines.append(f"| ~{p['exp']}{due} | {p['co'].replace('|', '/')} | {p['t'].replace('|', '/')} "
+                     f"| {p['s'].title()} {p['y']} | {p['past'][0][1]} | [Open]({p['u']}) |")
+    if not rows:
+        lines.append("| | Nothing expected in the next 60 days | | | | |")
+    return lines
+
+
+def _replace_block(text: str, start: str, end: str, lines: list[str]) -> str:
+    if start not in text or end not in text:
+        return text
+    block = start + "\n" + "\n".join(lines) + "\n" + end
+    return re.sub(re.escape(start) + r".*?" + re.escape(end), lambda _: block, text, flags=re.S)
+
+
+def update_readme(path: Path, jobs: list[dict], page_url: str, now: dt.datetime, top: int = 25,
+                  preds: list[dict] | None = None) -> None:
     """The README shows the top Summer 2027 aerospace matches (leads, which have no
-    direct link, are only counted)."""
+    direct link, are only counted) and the aerospace roles expected soon."""
     start, end = "<!-- JOBS:START -->", "<!-- JOBS:END -->"
     text = path.read_text(encoding="utf-8")
+    if preds is not None:
+        text = _replace_block(text, "<!-- PREDICTED:START -->", "<!-- PREDICTED:END -->",
+                              _readme_predicted(preds, page_url, now))
     if start not in text or end not in text:
+        path.write_text(text, encoding="utf-8")
         return
     today = now.date().isoformat()
     leads = sum(1 for j in jobs if j.get("lead"))
@@ -703,6 +887,4 @@ def update_readme(path: Path, jobs: list[dict], page_url: str, now: dt.datetime,
                      f"| {loc} | {j.get('posted') or 'unknown'} | [Apply]({j['url']}) |")
     if not summer:
         lines.append("| | No matches yet | Run the workflow from the Actions tab | | | | |")
-    block = start + "\n" + "\n".join(lines) + "\n" + end
-    text = re.sub(re.escape(start) + r".*?" + re.escape(end), lambda _: block, text, flags=re.S)
-    path.write_text(text, encoding="utf-8")
+    path.write_text(_replace_block(text, start, end, lines), encoding="utf-8")

@@ -60,6 +60,10 @@ def _date_from_epoch(n, ms=False) -> str:
 
 # ------------------------------------------------------------ GitHub lists
 
+# Each list's whole contents from this run (closed postings too), for data/history.json
+LIST_ITEMS: dict[str, list] = {}
+
+
 def fetch_simplify_list(src: dict) -> list[dict]:
     data, err = None, None
     for url in src["urls"]:
@@ -70,6 +74,7 @@ def fetch_simplify_list(src: dict) -> list[dict]:
             err = e
     if data is None:
         raise FetchError(f"list not reachable ({err})")
+    LIST_ITEMS[src["name"]] = data
     jobs = []
     for item in data:
         if not item.get("active", True) or not item.get("is_visible", True):
@@ -209,29 +214,73 @@ def _keep_all(title: str) -> bool:
     return True
 
 
+# Workday filters that mark internships ("Intern (Fixed Term)", "Co-op/Intern",
+# "Trainee / Student"...), on filters about the kind of job, not its place or skills
+_WD_INTERN_VALUE = re.compile(r"(?i)(?<![a-z-])(interns?|internships?|co-?ops?|cooperative|students?|trainees?)(?![a-z])")
+_WD_OTHER_FACET = re.compile(r"(?i)location|skill|country|region|compan|distance|date|clearance")
+
+
+def _workday_intern_facets(facets) -> dict[str, list[str]]:
+    """{filter name: [value ids]} for the values of a site's filters that mean internship."""
+    out: dict[str, list[str]] = {}
+
+    def walk(param, values):
+        for v in values or []:
+            if v.get("values"):  # a group of filters, like "Locations"
+                walk(v.get("facetParameter") or param, v["values"])
+            elif (param and v.get("id") and not _WD_OTHER_FACET.search(param)
+                  and _WD_INTERN_VALUE.search(v.get("descriptor") or "")):
+                out.setdefault(param, []).append(v["id"])
+
+    for f in facets or []:
+        walk(f.get("facetParameter"), f.get("values"))
+    return out
+
+
 def fetch_workday(host: str, site: str, company: str, max_pages: int = 50, keep=_keep_all) -> list[dict]:
     tenant = host.split(".")[0]
     api = f"https://{host}/wday/cxs/{tenant}/{site}/jobs"
     postings, seen_paths = [], set()
+    facets: dict[str, list[str]] = {}
+
+    def add(batch):
+        for p in batch:
+            if p.get("externalPath") not in seen_paths:
+                seen_paths.add(p.get("externalPath"))
+                postings.append(p)
+
     for term in ("intern", "internship", "co-op"):
         offset = total = 0
         for _ in range(max_pages):
             # Workday rate-limits busy runs (HTTP 429); request() waits and retries
             page = post_json(api, {"appliedFacets": {}, "limit": 20, "offset": offset,
                                    "searchText": term}, timeout=40, retries=4)
+            if not offset and term == "intern":
+                facets = _workday_intern_facets(page.get("facets"))
             batch = page.get("jobPostings") or []
-            for p in batch:
-                if p.get("externalPath") not in seen_paths:
-                    seen_paths.add(p.get("externalPath"))
-                    postings.append(p)
+            add(batch)
             offset += len(batch)
             # Some sites only give the total on the first page (later pages say 0)
             total = total or int(page.get("total") or 0)
             if not batch or offset >= total:
                 break
-            # Results are by relevance (big sites match thousands on "intern" in
-            # the text), so stop once a whole page has no internship titles
+            # The search matches the whole text ("co-op" finds nearly every job), so
+            # stop once a whole page has no internship titles; the filters below
+            # find the rest
             if not any(_INTERNISH.search(p.get("title", "")) for p in batch):
+                break
+    # Most sites tag internships with a filter (worker type, job family...), which
+    # lists them all no matter where the search would have ranked them
+    for param, ids in facets.items():
+        offset = total = 0
+        for _ in range(max_pages):
+            page = post_json(api, {"appliedFacets": {param: ids}, "limit": 20, "offset": offset,
+                                   "searchText": ""}, timeout=40, retries=4)
+            batch = page.get("jobPostings") or []
+            add(batch)
+            offset += len(batch)
+            total = total or int(page.get("total") or 0)
+            if not batch or offset >= total:
                 break
     # Workday's list has no descriptions, so only open internship-looking ones
     # (and skip titles the scan would drop anyway, like "Finance Intern").
@@ -549,10 +598,11 @@ def fetch_jibe(host: str, company: str, max_pages: int = 10) -> list[dict]:
     return out
 
 
-def fetch_oracle(host: str, site: str, company: str, max_pages: int = 12, keep=_keep_all) -> list[dict]:
+def fetch_oracle(host: str, site: str, company: str, max_pages: int = 40, keep=_keep_all) -> list[dict]:
     """Oracle Recruiting Cloud sites (<pod>.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/
     en/sites/<site>). The keyword search is fuzzy ("intern" also finds "internal"),
-    so titles are filtered before each posting is opened."""
+    so titles are filtered before each posting is opened. Big sites match several
+    hundred postings (Honeywell: about 700), so up to 1,000 are read."""
     api = f"https://{host}/hcmRestApi/resources/latest"
     postings: dict[str, dict] = {}
     for term in ("intern", "co-op"):

@@ -6,7 +6,7 @@ results to a page I can open on my phone.
 
 **Job page:** https://jonasagront.github.io/aero-job-finder/
 
-The page has seven tabs:
+The page has eight tabs:
 
 | Tab | What's in it |
 |---|---|
@@ -14,9 +14,10 @@ The page has seven tabs:
 | **Summer 2027** | Aerospace and mechanical internships at aerospace companies (the main list) |
 | **Fall 2027 near UCF** | Fall 2027 internships and co-ops within 55 miles of UCF (Orlando to the Space Coast, Melbourne included), plus remote ones, any engineering discipline |
 | **All engineering** | Every Summer 2027 engineering internship from any company or major, with mechanical and aerospace ranked first and a discipline filter |
+| **Predicted** | Internships posted in past cycles that should come back for Summer 2027 or Fall 2027, with the date each is expected: coming up, due now, not seen yet (past last cycle's date), or already posted (see below) |
 | **Posted date unknown** | Postings whose posted date couldn't be found anywhere (see below); they're kept out of the other tabs until one turns up |
 | **Leads without a link** | Postings only intern-list.com has found, with a **Find posting** button instead of Apply (see below) |
-| **Big names** | About 45 well-known employers and programs, grouped into space, defense primes, defense tech, aviation, and labs and programs (SpaceX, NASA, Lockheed, Northrop, RTX, Leidos, Sandia, NREIP...): when each usually recruits (a typical window from past cycles; NASA and SMART deadlines are the published ones), how many of its postings are open now, and the earliest posting seen this cycle |
+| **Big names** | About 50 well-known employers and programs, grouped into space, defense primes, defense tech, aviation, labs and programs, and fellowships (SpaceX, NASA, Lockheed, Northrop, RTX, Leidos, Sandia, NREIP, SULI, Brooke Owens...): when each usually recruits (a typical window from past cycles; NASA, SMART and SULI deadlines are the published ones), how many of its postings are open now, the earliest posting seen this cycle, and when its first one went up last cycle |
 
 Leads come from intern-list.com, which links to jobright.ai instead of the company, so they get
 their own tab and a **Find posting** button that searches for the company's own posting. A lead
@@ -31,10 +32,21 @@ When a posting's source gives no posted date, the scan opens the posting's own p
 checks the internship lists for the same company and title (the page then says which list the date
 came from). Postings with no date anywhere go in **Posted date unknown**.
 
+**How the Predicted tab guesses dates.** `data/history.json` holds every engineering internship
+seen so far with its posted date: old copies of the Simplify list back to 2023 (pinned to a
+commit in `sources.toml` under `[history]`), plus everything each scan reads, closed postings
+included. Postings from the same company with similar titles count as one role. Each past posting
+date moves forward to this cycle (posted Sep 10, 2025 for Summer 2026 means expected around
+Sep 10, 2026 for Summer 2027), using the middle date when a role ran several cycles. A role
+counts as posted once the company posts one with a similar title this cycle; one expected more
+than three weeks ago that hasn't shown up is "not seen yet". Roles that skipped the last two
+cycles are dropped. The lists don't catch every company's postings, but each year the scan's own
+history fills more of that in.
+
 ## Today's top matches
 
 <!-- JOBS:START -->
-**871 Summer 2027 aerospace matches** (12 Fall 2027 near home, 2009 in All engineering, 181 leads without a direct link) as of Nov 4, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
+**925 Summer 2027 aerospace matches** (18 Fall 2027 near home, 2788 in All engineering, 168 leads without a direct link) as of Nov 5, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
 
 | Fit | Company | Role | Required quals met | Location | Posted | Apply |
 |---|---|---|---|---|---|---|
@@ -47,7 +59,7 @@ came from). Postings with no date anywhere go in **Posted date unknown**.
 | 100 | Hermeus | Structures/Mechanical Engineering Intern - Spring/Summer 2027 | 3 of 3 | Atlanta, GA | 2026-09-02 | [Apply](https://jobs.lever.co/hermeus/60b5d40a-1065-4bd2-8c72-6b2fb69d4761) |
 | 100 | LiquidPiston | Engine Test Engineering Intern – Summer 2027 / LiquidPiston | 2 of 2 | Suffield, CT | 2026-09-09 | [Apply](https://liquidpiston.applytojob.com/apply/2ID9VyifAC/Engine-Test-Engineering-Intern-Summer-2027-LiquidPiston) |
 | 100 | Loft Orbital | Summer 2027 Internship – Mechanical Engineering | 3 of 3 | Golden, CO | 2026-10-27 | [Apply](https://jobs.lever.co/loftorbital/34edd0b7-2a5b-4efa-a379-860097784534) |
-| 100 | Loft Orbital | Summer 2027 Internship - Thermal & Manufacturing Engineering | 4 of 4 | Golden, CO | 2026-10-30 | [Apply](https://jobs.lever.co/loftorbital/03f948ff-0767-4bb0-a13b-345321d63d71) |
+| 100 | Loft Orbital | Summer 2027 Internship – Thermal & Manufacturing Engineering | 4 of 4 | Golden, CO | 2026-10-30 | [Apply](https://jobs.lever.co/loftorbital/03f948ff-0767-4bb0-a13b-345321d63d71) |
 | 100 | Sandia National Laboratories | Intern, R&D Graduate Summer - Computational Thermal & Fluid Mechanics - Onsite | 5 of 5 | Albuquerque, NM, USA | 2026-10-30 | [Apply](https://sandia.jobs/55DCABEA768C4AFD8AB93846AEE6311F25) |
 | 100 | United Launch Alliance | Aerospace Engineering Internship Summer 2027 | 3 of 3 | Centennial, CO, US, 80112 | 2026-10-07 | [Apply](https://jobs.ulalaunch.com/job/Centennial-Aerospace-Engineering-Internship-Summer-2027-CO-80112/1427399400/) |
 | 100 | Varda Space | Structures Engineering Internship - Summer 2027 | 2 of 2 | El Segundo, California, United States | 2026-10-01 | [Apply](https://job-boards.greenhouse.io/vardaspace/jobs/8010167003) |
@@ -64,6 +76,30 @@ came from). Postings with no date anywhere go in **Posted date unknown**.
 | 97 | Inversion Space | Avionics Mechanical Engineer - Summer Internship 2027 | 3 of 3 | Playa Vista, California, United States | 2026-10-15 | [Apply](https://job-boards.greenhouse.io/inversionspace/jobs/4744390005) |
 | 97 | Inversion Space | Mechanical Engineer - Summer Internship 2027 | 3 of 3 | Playa Vista, California, United States | 2026-10-14 | [Apply](https://job-boards.greenhouse.io/inversionspace/jobs/4743740005) |
 <!-- JOBS:END -->
+
+## Expected soon
+
+<!-- PREDICTED:START -->
+**32 aerospace internships expected in the next 60 days**, from past cycles' posting dates. All of them, with filters: **[Predicted tab](https://jonasagront.github.io/aero-job-finder/#predicted)**
+
+| Expected | Company | Role | For | Last cycle's posting date | Career site |
+|---|---|---|---|---|---|
+| ~2026-10-22 (due now) | Shield AI | Hardware Test Engineering Fall Co-op | Fall 2027 | 2025-10-22 | [Open](https://jobs.lever.co/shieldai) |
+| ~2026-10-24 (due now) | Skyryse | Vehicle Design Intern | Summer 2027 | 2025-10-24 | [Open](https://job-boards.greenhouse.io/skyryse) |
+| ~2026-10-28 (due now) | Skydio | Systems Design Engineer Intern | Summer 2027 | 2024-10-28 | [Open](https://jobs.ashbyhq.com/skydio) |
+| ~2026-10-30 (due now) | Relativity Space | Flight Software Engineer Intern | Summer 2027 | 2025-10-30 | [Open](https://job-boards.greenhouse.io/relativity) |
+| ~2026-10-31 (due now) | Huntington Ingalls Industries | Engineering Intern | Summer 2027 | 2025-10-31 | [Open](https://careers.huntingtoningalls.com/search/?q=intern) |
+| ~2026-10-31 (due now) | Northwood Space | Site Engineer Intern | Summer 2027 | 2025-10-31 | [Open](https://jobs.ashbyhq.com/NorthwoodSpace) |
+| ~2026-10-31 (due now) | Peraton | Computer Engineering Intern | Summer 2027 | 2025-10-31 | [Open](https://careers-peraton.icims.com/jobs/search?ss=1&searchKeyword=intern) |
+| ~2026-10-31 (due now) | Reliable Robotics | Electrical System Integration Engineer Intern | Summer 2027 | 2025-10-31 | [Open](https://jobs.ashbyhq.com/reliable-robotics) |
+| ~2026-10-31 (due now) | Safran | Engineering Internships! | Fall 2027 | 2025-10-31 | [Open](https://careers.safran-dsi.com/search/?q=intern) |
+| ~2026-11-01 (due now) | Draper | Microelectronics Integration & Test Summer Intern | Summer 2027 | 2025-11-01 | [Open](https://draper.wd5.myworkdayjobs.com/Draper_Careers) |
+| ~2026-11-04 (due now) | RTX | Intern - Production and Field Support - Onsite | Summer 2027 | 2025-11-04 | [Open](https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway) |
+| ~2026-11-04 (due now) | Space Dynamics Laboratory | Large Language Model Inference & Integration Engineer Intern - C4ISR Systems Division - LLM Inference Pipelines | Summer 2027 | 2025-11-04 | [Open](https://spacedynamicslaboratory.applytojob.com/apply) |
+| ~2026-11-06 (due now) | Anduril | Perception Engineer Intern | Summer 2027 | 2024-11-06 | [Open](https://job-boards.greenhouse.io/andurilindustries) |
+| ~2026-11-08 (due now) | Leidos | AI Explainability Engineer Intern | Summer 2027 | 2024-11-08 | [Open](https://leidos.wd5.myworkdayjobs.com/External) |
+| ~2026-11-13 | Northrop Grumman | Engineering Intern - Radford VA | Summer 2027 | 2025-11-13 | [Open](https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site) |
+<!-- PREDICTED:END -->
 
 ---
 
@@ -145,18 +181,25 @@ they don't change the score.
   Phenom (BAE Systems, MITRE), Taleo (Textron, Bell, Textron Aviation), BrassRing (General Atomics), DirectEmployers .jobs
   feeds (Sandia, Jacobs), Avature search pages (Siemens Energy), ADP Workforce Now (Kaman),
   UKG (TCOM), Paycor (York Space), Pinpoint, BambooHR, Rippling, SmartRecruiters,
-  Workable, Gem and JazzHR, plus the Simplify list, the Space Capital board and intern-list.com;
-  each section of the file explains which part of a company's job link to copy. The `[[popular]]`
+  Workable, Gem and JazzHR, plus the Simplify list, intern-list.com, the Space Capital board and
+  eight venture firms' portfolio boards (Lux, 8VC, DCVC, Khosla, General Catalyst, Accel, Energy
+  Impact Partners, Techstars); each section of the file explains which part of a company's job
+  link to copy. On Workday sites the scan also reads each site's internship filter ("Intern
+  (Fixed Term)", "Co-op/Intern"...), since the site's search ranks internships among thousands of
+  other jobs. The `[[popular]]`
   entries at the bottom set the Big names tab (companies and their usual recruiting months). The bottom of the job page
   shows which sources worked on the last run, so I know what to fix or remove. To let a
   company through the aerospace-only filter, add it to `[aerospace_companies]`. Career
   boards marked `aero = false` (GM, Caterpillar, Disney, Stryker...) only feed the
   All engineering and Fall tabs.
 - **Career sites found automatically**: when a company on the aerospace list shows up on
-  any internship list (this year's or last year's) with a link to a hiring system the scan
-  can read, its whole career site is scanned from then on. Adding a name to
-  `[aerospace_companies]` is usually enough to get a company fully covered. Found sites
+  any internship list (this cycle's, or in the history from the past 15 months) with a link to a
+  hiring system the scan can read, its whole career site is scanned from then on. Other employers
+  get the same once they've listed 3 or more aerospace or mechanical internships in that time
+  (`engineering_min` under `[discover]`); those feed All engineering and Fall only. Adding a name
+  to `[aerospace_companies]` is usually enough to get a company fully covered. Found sites
   are saved in `data/discovered_boards.json` and drop out on their own if they keep failing.
+- **`[predict]` in `profile.toml`**: which terms the Predicted tab covers (Summer and Fall 2027).
 
 ## Files
 
@@ -165,7 +208,7 @@ they don't change the score.
 | `run.py` | Runs the whole scan |
 | `jobfinder/` | Fetching, scoring, and page-building code |
 | `docs/index.html` | The job page (rebuilt every run) |
-| `data/` | Saved results so the page knows what's new |
+| `data/` | Saved results so the page knows what's new; `data/history.json` is every posting seen, for the Predicted tab |
 | `.github/workflows/daily.yml` | The schedule (every 6 hours) |
 
 **Note:** GitHub pauses scheduled runs in repos with no activity for 60 days. If that ever
