@@ -1185,7 +1185,7 @@
   "site": "careers",
   "name": "Allegion",
   "first_seen": "2026-11-05",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-10-02"
  },
@@ -1833,7 +1833,7 @@
   "name": "Rolls-Royce",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-04"
+  "last_seen": "2026-11-05"
  },
  "workday:selinc.wd1.myworkdayjobs.com/sel": {
   "kind": "workday",
@@ -1898,7 +1898,7 @@
   "site": "Symbotic",
   "name": "Symbotic",
   "first_seen": "2026-11-05",
-  "fails": 6,
+  "fails": 7,
   "engineering": true,
   "last_seen": "2025-09-15"
  },
