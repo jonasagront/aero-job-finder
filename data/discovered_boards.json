@@ -808,6 +808,14 @@
   "fails": 0,
   "last_seen": "2026-11-04"
  },
+ "jibe:careers.viasat.com": {
+  "kind": "jibe",
+  "host": "careers.viasat.com",
+  "name": "ViaSat",
+  "first_seen": "2026-11-05",
+  "fails": 0,
+  "last_seen": "2026-11-05"
+ },
  "jibe:jobs.keysight.com": {
   "kind": "jibe",
   "host": "jobs.keysight.com",
@@ -1169,7 +1177,7 @@
   "name": "Airbus",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-04"
+  "last_seen": "2026-11-05"
  },
  "workday:allegion.wd5.myworkdayjobs.com/careers": {
   "kind": "workday",
@@ -1368,7 +1376,7 @@
   "name": "NASA Jet Propulsion Laboratory",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-04"
+  "last_seen": "2026-11-05"
  },
  "workday:cranecompany.wd5.myworkdayjobs.com/careers": {
   "kind": "workday",
@@ -1880,7 +1888,7 @@
   "site": "Symbotic",
   "name": "Symbotic",
   "first_seen": "2026-11-05",
-  "fails": 4,
+  "fails": 5,
   "engineering": true,
   "last_seen": "2025-09-15"
  },
