@@ -773,7 +773,7 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-09-10"
+  "last_seen": "2026-10-21"
  },
  "jibe:careers.gov2x.com": {
   "kind": "jibe",
@@ -1185,7 +1185,7 @@
   "site": "careers",
   "name": "Allegion",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-10-02"
  },
@@ -1625,6 +1625,16 @@
   "engineering": true,
   "last_seen": "2026-10-23"
  },
+ "workday:jabil.wd5.myworkdayjobs.com/jabil_careers": {
+  "kind": "workday",
+  "host": "jabil.wd5.myworkdayjobs.com",
+  "site": "Jabil_Careers",
+  "name": "Jabil",
+  "first_seen": "2026-11-05",
+  "fails": 0,
+  "engineering": true,
+  "last_seen": "2026-11-05"
+ },
  "workday:kbr.wd5.myworkdayjobs.com/kbr_careers": {
   "kind": "workday",
   "host": "kbr.wd5.myworkdayjobs.com",
@@ -1888,7 +1898,7 @@
   "site": "Symbotic",
   "name": "Symbotic",
   "first_seen": "2026-11-05",
-  "fails": 5,
+  "fails": 6,
   "engineering": true,
   "last_seen": "2025-09-15"
  },
