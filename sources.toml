@@ -90,6 +90,9 @@ greenhouse = [
   { name = "MORSE Corp", board = "morsecorpcoop" },
   { name = "Zone 5 Technologies", board = "zone5technologies" },
   { name = "Portal Space Systems", board = "portalspacesystems" },
+  # Added Nov 6 2026: Whisper Aero builds electric ducted-fan propulsors; Quantum Space builds cislunar spacecraft
+  { name = "Whisper Aero", board = "whisperaero" },
+  { name = "Quantum Space", board = "quantumspacellc" },
   # Removed Oct 2026 (board gone): Axiom Space -> now on Workday below,
   # Boom Supersonic -> moved to Rippling (not supported).
   # Removed Nov 2026 (board gone): Capella Space (bought by IonQ), Outpost Space.
@@ -175,6 +178,11 @@ ashby = [
   { name = "H3X Technologies", board = "h3x-technologies" },
   # Moved from Greenhouse (board gone) in Nov 2026
   { name = "Allen Control Systems", board = "allen-control-systems" },
+  # Added Nov 6 2026: Starfish Space services satellites in orbit; HavocAI builds autonomous
+  # boats for the Navy; BRINC builds drones
+  { name = "Starfish Space", board = "starfish-space-inc" },
+  { name = "HavocAI", board = "havocai" },
+  { name = "BRINC", board = "brinc" },
   { name = "Helion", board = "helion", aero = false },
   # Added Nov 4 2026: robotics and power hardware startups with mechanical internships
   { name = "Bedrock Robotics", board = "bedrock-robotics", aero = false },
@@ -233,6 +241,8 @@ workday = [
   { name = "Analytical Mechanics Associates", host = "amainc.wd12.myworkdayjobs.com", site = "ama_careers" },
   { name = "Torch Technologies", host = "starfish.wd501.myworkdayjobs.com", site = "Careers" },
   { name = "Wisk", host = "wisk.wd108.myworkdayjobs.com", site = "Wisk_Careers" },
+  # Added Nov 6 2026: Lanteris is the former Maxar Space Systems, now part of Intuitive Machines
+  { name = "Lanteris Space Systems", host = "maxar.wd1.myworkdayjobs.com", site = "Lanterisspace" },
 
   # Mechanical / general engineering employers (Oct 2026), aero = false (see above).
   # Several have Central Florida sites: Disney (Lake Buena Vista), Oshkosh
@@ -278,6 +288,9 @@ workday = [
   { name = "Fermilab", host = "fermilab.wd5.myworkdayjobs.com", site = "FermilabCareers", aero = false },
   { name = "Polaris", host = "polaris.wd5.myworkdayjobs.com", site = "PolarisJobs", aero = false },
   { name = "Boston Dynamics", host = "bostondynamics.wd1.myworkdayjobs.com", site = "Boston_Dynamics", aero = false },
+  # Added Nov 6 2026. Brookhaven's site really is named "Externa". Austal USA builds Navy ships in Mobile, AL.
+  { name = "Brookhaven National Laboratory", host = "bnl.wd1.myworkdayjobs.com", site = "Externa", aero = false },
+  { name = "Austal USA", host = "austalusa.wd1.myworkdayjobs.com", site = "Austal", aero = false },
 ]
 
 # Eightfold career sites: host is the *.eightfold.ai address, domain is the
@@ -327,6 +340,8 @@ successfactors = [
 # fields as on Avature career sites (jobs.siemens-energy.com...).
 searchpage = [
   { name = "Gulfstream", search = "https://careers.gulfstream.com/en/jobs/?search={term}&page={page}", path = "/en/jobs/" },
+  # Added Nov 6 2026. Redwire's headquarters is in Jacksonville; it also has a Merritt Island site.
+  { name = "Redwire", search = "https://careers.rdw.com/jobs/search?query={term}&page={page}", path = "/jobs/" },
   # Siemens Energy's U.S. headquarters is in Orlando.
   { name = "Siemens Energy", search = "https://jobs.siemens-energy.com/en_US/jobs/Jobs?search={term}&folderOffset={offset}", path = "/en_US/jobs/FolderDetail/", aero = false },
 ]
@@ -344,9 +359,12 @@ jazzhr = [
   { name = "Space Dynamics Laboratory", board = "spacedynamicslaboratory" },
   { name = "Aerotech", board = "aerotech", aero = false },
   { name = "LiquidPiston", board = "liquidpiston" },
+  # Added Nov 6 2026: Busek builds electric thrusters for spacecraft
+  { name = "Busek", board = "busek" },
 ]
 
-# iCIMS career sites: host is the careers-<company>.icims.com address.
+# iCIMS career sites: host is the careers-<company>.icims.com address. Some sites'
+# keyword search finds nothing (Peraton, Iridium...); those are read in full instead.
 icims = [
   { name = "General Dynamics Mission Systems", host = "careers-gdms.icims.com" },
   { name = "General Dynamics OTS", host = "careers-gd-ots.icims.com" },
@@ -358,6 +376,10 @@ icims = [
   # Added Nov 4 2026: General Dynamics' submarine and destroyer shipyards
   { name = "General Dynamics Electric Boat", host = "careers-gdeb.icims.com" },
   { name = "General Dynamics Bath Iron Works", host = "careers-gdbiw.icims.com" },
+  # Added Nov 6 2026. Sierra Lobo is a NASA test and engineering contractor based in Milan, OH.
+  { name = "Sierra Lobo", host = "jobs-sierralobo.icims.com" },
+  { name = "Stellant Systems", host = "careers-stellantsystems.icims.com" },
+  { name = "QinetiQ US", host = "careers-qinetiqus.icims.com" },
   { name = "Lennox", host = "uscareers-lennox.icims.com", aero = false },
 ]
 
@@ -368,6 +390,9 @@ jibe = [
   { name = "Spirit AeroSystems", host = "careers.spiritaero.com" },
   { name = "Viasat", host = "careers.viasat.com" },
   { name = "V2X", host = "careers.gov2x.com" },
+  # Added Nov 6 2026: missile defense engineering, and a Navy systems firm (careers-spa.icims.com forwards here)
+  { name = "Arcfield", host = "careers.arcfield.com" },
+  { name = "Systems Planning and Analysis", host = "spa.jibeapply.com" },
   { name = "Garmin", host = "careers.garmin.com", aero = false },
   { name = "Rivian", host = "careers.rivian.com", aero = false },
   { name = "Schneider Electric", host = "careers.se.com", aero = false },
@@ -391,6 +416,8 @@ phenom = [
   { name = "BAE Systems", base = "https://jobs.baesystems.com/global/en" },
   # MITRE's old Workday site (mitre.wd5.myworkdayjobs.com/MITRE) was empty by Nov 2026
   { name = "MITRE", base = "https://careers.mitre.org/us/en" },
+  # Added Nov 6 2026
+  { name = "Virgin Galactic", base = "https://vgcareers.virgingalactic.com/global/en" },
   { name = "Bechtel", base = "https://jobs.bechtel.com/us/en", aero = false },
   { name = "Honda", base = "https://careers.honda.com/us/en", aero = false },
   { name = "Trane Technologies", base = "https://careers.tranetechnologies.com/global/en", aero = false },
@@ -410,14 +437,26 @@ bamboohr = [
   { name = "Specter Aerospace", board = "specteraerospace" },
   { name = "Astroscale", board = "astroscale" },
   { name = "Satellogic", board = "satellogic" },
+  # Added Nov 6 2026. Blue Canyon (an RTX company) builds small satellites in Colorado and
+  # posts its internships here; Vaya Space builds hybrid rockets in Cocoa, FL.
+  { name = "Blue Canyon Technologies", board = "bluecanyontech" },
+  { name = "Vaya Space", board = "vayaspace" },
+  { name = "Phantom Space", board = "phantomspace" },
 ]
 rippling = [
   { name = "Boom Supersonic", board = "boom-supersonic" },
   { name = "Collier Aerospace", board = "collieraerospace" },
   { name = "Overland AI", board = "overland-ai" },
+  # Added Nov 6 2026. Blue Water Autonomy builds uncrewed Navy ships; Forterra, autonomous ground vehicles.
+  { name = "Astra", board = "astra" },
+  { name = "Orbit Fab", board = "orbitfab" },
+  { name = "Blue Water Autonomy", board = "blue-water-autonomy" },
+  { name = "Forterra", board = "forterra" },
 ]
 smartrecruiters = [
   { name = "Lawrence Livermore National Laboratory", board = "LLNL" },
+  # Added Nov 6 2026: ZIN Technologies builds space station hardware for NASA Glenn
+  { name = "ZIN Technologies", board = "zintechnologies" },
   { name = "Bosch", board = "BoschGroup", aero = false },
 ]
 workable = [
@@ -428,6 +467,14 @@ gem = [
   { name = "Astroforge", board = "astroforge-io" },
   { name = "Nominal", board = "nominal" },
   { name = "Andrenam", board = "andrenam" },
+  # Added Nov 6 2026: Firestorm Labs builds drones in San Diego
+  { name = "Firestorm Labs", board = "firestorm" },
+]
+# Breezy HR boards (added Nov 6 2026): board = the part before .breezy.hr.
+# Embraer's U.S. jobs (Melbourne, FL, among others) are here.
+breezy = [
+  { name = "Embraer", board = "embraer" },
+  { name = "Benchmark Space Systems", board = "benchmark-space-systems-inc" },
 ]
 
 # DirectEmployers .jobs sites: host = the company's .jobs address, which has an
@@ -449,30 +496,43 @@ brassring = [
 # workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=... address.
 adp = [
   { name = "Kaman", cid = "6362b6c7-9592-452e-9fa3-97848679358e" },
+  # Added Nov 6 2026. Sidus Space builds satellites in Cape Canaveral.
+  { name = "Intuitive Machines", cid = "b0e24f83-6e4d-492d-9d6a-bc0fea197d6a" },
+  { name = "Sidus Space", cid = "274f5796-403b-41e3-b324-309840b20c85" },
 ]
 
 # UKG Pro (UltiPro): board = the job board address up to its ID.
 ukg = [
   { name = "TCOM", board = "https://recruiting.ultipro.com/TCO1001TCOM/JobBoard/74e57e92-4355-44d7-8471-3c6eecfda9ef" },
+  # Added Nov 6 2026: Applied Research Associates, a defense engineering and research firm
+  { name = "Applied Research Associates", board = "https://recruiting.ultipro.com/APP1010ARAI/JobBoard/07442cec-d18e-4589-ab15-8342edc29af7" },
 ]
 
 # Paycor Recruiting: client = the clientId in the company's
 # recruitingbypaycor.com/career/CareerHome.action?clientId=... address.
 paycor = [
   { name = "York Space Systems", client = "8a7883d0821e1a6301823c22a8bd068b" },
+  # Added Nov 6 2026: Craig Technologies, an aerospace engineering contractor in Cape Canaveral
+  { name = "Craig Technologies", client = "8a78826757bc744e0157bf0e31470032" },
+]
+
+# Activate career sites (added Nov 6 2026): host = the site whose search page
+# reads <host>/Search/SearchResults. Los Alamos posts hundreds of student roles a year.
+activate = [
+  { name = "Los Alamos National Laboratory", host = "lanl.jobs" },
 ]
 
 # Not supported yet, so they rely on the lists below:
-#   Kratos (only on the shared DirectEmployers feed, which gives no company names),
-#   Redwire (Clinch: postings load in the browser), HEICO (ADP Recruiting, which
-#   refuses scripts), Ducommun (Cornerstone), Elbit America (Dayforce),
-#   General Dynamics Land Systems (blocks scripts), MDA (Canada only),
-#   Relativity Space's student roles (RippleMatch; its Greenhouse board has none),
-#   X-Bow Systems (ApplicantPro), Mercury Systems, Parker Aerospace, Embraer,
-#   Astrobotic (Synchr), Southwest Research Institute (swri.jobs sends an incomplete
-#   security certificate), Tesla (blocks scripts), and the Consider-run portfolio
-#   boards (Airbus Ventures, Sequoia, Kleiner Perkins), which refuse scripts.
-#   Intuitive Machines posts on the Space Capital board below.
+#   Kratos (Pereless, whose job list refuses scripts), HEICO (ADP Recruiting, which
+#   refuses scripts), Mercury Systems (also ADP Recruiting), Ducommun (Cornerstone),
+#   Elbit America (Dayforce), General Dynamics Land Systems (blocks scripts),
+#   MDA (Canada only), Relativity Space's student roles (RippleMatch; its Greenhouse
+#   board has none), X-Bow Systems (ApplicantPro), Orbion (Paylocity), Parker
+#   Aerospace (its career site blocks scripts), Southwest Research Institute (swri.jobs
+#   sends an incomplete security certificate), Tesla (blocks scripts), and the
+#   Consider-run portfolio boards (a16z, Sequoia, Kleiner Perkins, GV, Lightspeed,
+#   Bessemer, Airbus Ventures), which refuse scripts.
+#   Astrobotic is part of Voyager now (Voyager's Greenhouse board is above).
 #   intern-list.com covers several of these as leads.
 
 # --- Big student internship lists maintained on GitHub ----------------
@@ -487,6 +547,17 @@ urls = [
 
 # Removed Oct 2026: Jobright's engineering list (links to jobright.ai, an AI job
 # site, not the company) and vanshb03's list (links through a redirect shortener).
+# Not added (Nov 2026) for the same reasons: zapplyjobs (zapply.jobs redirects) and
+# mehek-builds' aerospace and mechanical lists (links go through trylitos.com).
+
+# Lists published as a CSV file with each company's own link (added Nov 6 2026).
+# This one tracks U.S. mechanical engineering internships and co-ops (design,
+# manufacturing, structures, thermal, test...) on company career sites, with about
+# 750 postings the other sources didn't have. Columns read: company, title,
+# location, url, posted_at, season.
+[[csvlist]]
+name = "Mechanical engineering internships list"
+url = "https://raw.githubusercontent.com/Tracker05/mechanical-engineering-internships/main/data/internships.csv"
 
 # --- Job boards that collect postings from many companies ----------------
 # Space Capital's board (formerly Space Talent): ~1,300 internships from
@@ -530,6 +601,16 @@ collection = 253
 [[getro]]
 name = "Techstars portfolio board"
 collection = 89
+
+# Added Nov 6 2026: hardware and industrial startups (Arc, Peak Energy, Simbe
+# Robotics...) and MIT's The Engine (hard-tech spinouts)
+[[getro]]
+name = "Eclipse portfolio board"
+collection = 348
+
+[[getro]]
+name = "The Engine portfolio board"
+collection = 223
 
 # intern-list.com: about 19,000 U.S. engineering internships in a public Airtable
 # table on the site. Its Apply links go to jobright.ai, which hides the company's
@@ -629,6 +710,10 @@ names = [
   "long wall", "skyband", "h3x", "portal space", "zone 5", "torch technologies", "analytical mechanics",
   "machina labs", "x-bow", "orbion", "mercury systems", "teledyne", "sidus space", "stellant",
   "textron aviation", "textron systems", "aurora flight", "millennium space", "kratos defense",
+  # Added Nov 6 2026 with their career sites ("=" where the name is common elsewhere)
+  "whisper aero", "quantum space", "orbit fab", "havocai", "firestorm labs", "busek", "qinetiq", "sierra lobo",
+  "arcfield", "craig technologies", "benchmark space", "vaya space", "phantom space", "blue water autonomy",
+  "=forterra", "=brinc", "los alamos national", "lanteris", "systems planning", "applied research associates",
 ]
 
 # --- Big names: when well-known employers usually recruit ------------------

@@ -111,6 +111,10 @@ _LEVER = re.compile(r"jobs\.lever\.co/([\w.-]+)/([0-9a-f-]{36})")
 _ASHBY = re.compile(r"jobs\.ashbyhq\.com/([^/?#]+)/([0-9a-f-]{36})")
 _WORKDAY = re.compile(
     r"https?://([\w-]+)\.(wd\d+)\.myworkdayjobs\.com/(?:[a-z]{2}-[A-Z]{2}/)?([^/?#]+)(/job/[^?#]+)")
+# The same sites at a shared address that names the company in the path
+# (wd5.myworkdaysite.com/recruiting/microchiphr/External/job/...)
+_WORKDAY_SITE = re.compile(
+    r"https?://(wd\d+)\.myworkdaysite\.com/(?:[a-z]{2}-[A-Z]{2}/)?recruiting/([\w-]+)/([^/?#]+)(/job/[^?#]+)")
 
 
 def parse_ats_url(url: str) -> dict | None:
@@ -131,6 +135,10 @@ def parse_ats_url(url: str) -> dict | None:
         tenant, wd, site, path = m.groups()
         return {"ats": "workday", "host": f"{tenant}.{wd}.myworkdayjobs.com",
                 "tenant": tenant, "site": site, "path": path}
+    m = _WORKDAY_SITE.search(url)
+    if m:
+        wd, tenant, site, path = m.groups()
+        return {"ats": "workday", "host": f"{wd}.myworkdaysite.com", "tenant": tenant, "site": site, "path": path}
     return None
 
 

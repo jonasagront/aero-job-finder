@@ -129,7 +129,8 @@ def careers_links(cfg: dict, found: dict, employers) -> dict[str, str]:
         "greenhouse": lambda c: f"https://job-boards.greenhouse.io/{c['board']}",
         "lever": lambda c: f"https://jobs.lever.co/{c['board']}",
         "ashby": lambda c: f"https://jobs.ashbyhq.com/{c['board']}",
-        "workday": lambda c: f"https://{c['host']}/{c['site']}",
+        "workday": lambda c: (f"https://{c['host']}/recruiting/{c['tenant']}/{c['site']}" if c.get("tenant")
+                              else f"https://{c['host']}/{c['site']}"),
         "eightfold": lambda c: f"https://{c['host']}/careers",
         "successfactors": lambda c: f"https://{c['host']}/search/?q=intern",
         "icims": lambda c: f"https://{c['host']}/jobs/search?ss=1&searchKeyword=intern",
@@ -151,6 +152,8 @@ def careers_links(cfg: dict, found: dict, employers) -> dict[str, str]:
         "adp": lambda c: f"https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid={c['cid']}",
         "ukg": lambda c: c["board"],
         "paycor": lambda c: f"https://recruitingbypaycor.com/career/CareerHome.action?clientId={c['client']}",
+        "breezy": lambda c: f"https://{c['board']}.breezy.hr",
+        "activate": lambda c: f"https://{c['host']}/search/searchjobs?keyword=intern",
     }
     out: dict[str, str] = {}
     entries = [(kind, c) for kind in pages for c in cfg.get(kind, [])]

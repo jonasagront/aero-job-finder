@@ -24,6 +24,13 @@ _SF = re.compile(r"https://([\w.-]+)/job/[^/?#]+/\d+/?\?(?:.*&)?ats=successfacto
 _JIBE = re.compile(r"https://([\w.-]+)/jobs/\d+\?(?:.*&)?icims=1")
 
 
+def _site_host(c: dict) -> str:
+    """A site's host, with the company's tenant in front on a shared Workday
+    address (wd5.myworkdaysite.com serves many companies)."""
+    host = c.get("host", "").lower()
+    return f"{c['tenant'].lower()}.{host}" if c.get("tenant") else host
+
+
 def site_of(url: str) -> tuple[str, dict] | None:
     """(key, sources.toml-style entry without a name) for a posting link, or None."""
     info = parse_ats_url(url)
@@ -32,8 +39,10 @@ def site_of(url: str) -> tuple[str, dict] | None:
     if info and info["ats"] == "workday":
         if re.search(r"(?i)private|restricted|internal", info["site"]):
             return None  # hidden sites for employees or special hiring
-        return (f"workday:{info['host'].lower()}/{info['site'].lower()}",
-                {"kind": "workday", "host": info["host"], "site": info["site"]})
+        entry = {"kind": "workday", "host": info["host"], "site": info["site"]}
+        if not info["host"].lower().startswith(info["tenant"].lower() + "."):
+            entry["tenant"] = info["tenant"]  # shared wdN.myworkdaysite.com address
+        return f"workday:{_site_host(entry)}/{info['site'].lower()}", entry
     m = _ORACLE.match(url)
     if m:
         return f"oracle:{m.group(1).lower()}/{m.group(2).lower()}", {"kind": "oracle", "host": m.group(1), "site": m.group(2)}
@@ -53,11 +62,11 @@ def _configured(cfg: dict) -> tuple[set[str], set[str], set[str]]:
     for kind in BOARD_KINDS:
         for c in cfg.get(kind, []):
             names.add(c["name"].lower())
-            hosts.add(c.get("host", "").lower())
+            hosts.add(_site_host(c))
             if "board" in c:
                 keys.add(f"{kind}:{c['board'].lower()}")
             elif "site" in c:
-                keys.add(f"{kind}:{c['host'].lower()}/{c['site'].lower()}")
+                keys.add(f"{kind}:{_site_host(c)}/{c['site'].lower()}")
             elif "host" in c:
                 keys.add(f"{kind}:{c['host'].lower()}")
     hosts.discard("")
@@ -123,10 +132,10 @@ def as_sources(found: dict, cfg: dict, today: str) -> dict[str, list[dict]]:
             continue
         # Skip sites sources.toml already scans, and extra sites of companies
         # already scanned (same name or same Workday/Oracle account)
-        if key in keys or e["name"].lower() in names or e.get("host", "").lower() in hosts:
+        if key in keys or e["name"].lower() in names or _site_host(e) in hosts:
             continue
         names.add(e["name"].lower())
-        out[e["kind"]].append({k: v for k, v in e.items() if k in ("name", "board", "host", "site")})
+        out[e["kind"]].append({k: v for k, v in e.items() if k in ("name", "board", "host", "site", "tenant")})
     return {k: v for k, v in out.items() if v}
 
 

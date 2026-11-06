@@ -6,10 +6,12 @@ Each fetcher returns a list of job dicts with these keys:
 """
 from __future__ import annotations
 
+import csv
 import datetime as dt
 import email.utils
 import html
 import http.cookiejar
+import io
 import json
 import os
 import re
@@ -23,7 +25,8 @@ from .util import FetchError, get_json, html_to_text, parse_ats_url, post_json, 
 # sources.toml sections that are one company's own career board
 BOARD_KINDS = ("greenhouse", "lever", "ashby", "workday", "eightfold", "clearcompany", "successfactors",
                "icims", "jibe", "oracle", "phenom", "pinpoint", "bamboohr", "rippling", "smartrecruiters",
-               "workable", "gem", "taleo", "jazzhr", "searchpage", "jobsfeed", "brassring", "adp", "ukg", "paycor")
+               "workable", "gem", "taleo", "jazzhr", "searchpage", "jobsfeed", "brassring", "adp", "ukg", "paycor",
+               "breezy", "activate")
 
 
 _DATE_FORMATS = ("%a %b %d %H:%M:%S UTC %Y", "%m/%d/%Y", "%B %d, %Y", "%b %d, %Y", "%d %B %Y", "%d %b %Y")
@@ -93,6 +96,38 @@ def fetch_simplify_list(src: dict) -> list[dict]:
             "season_hint": season,
             "sponsorship": item.get("sponsorship", ""),
         })
+    return jobs
+
+
+_TERM_HINT = re.compile(r"(?i)^(spring|summer|fall|winter) 20\d\d$")
+
+
+def fetch_csv_list(src: dict) -> list[dict]:
+    """Internship lists published as a CSV file, one posting per row with the
+    company's own link (the mechanical engineering list's data/internships.csv):
+    company, title, location, url, posted_at, and season unless season_inferred
+    says the list guessed it."""
+    rows = csv.DictReader(io.StringIO(request(src["url"], headers={"Accept": "text/csv, text/plain, */*"}, timeout=60)))
+    jobs = []
+    for r in rows:
+        company, title = (r.get("company") or "").strip(), (r.get("title") or "").strip()
+        url = strip_tracking((r.get("url") or "").strip())
+        if not company or not title or not url.startswith("http"):
+            continue
+        season = (r.get("season") or "").strip()
+        guessed = (r.get("season_inferred") or "").strip().lower() == "true"
+        jobs.append({
+            "company": company,
+            "title": title,
+            "location": (r.get("location") or "").strip(),
+            "url": url,
+            "source": src["name"],
+            "posted": _date_from_iso(r.get("posted_at")),
+            "description": "",
+            "season_hint": season.title() if _TERM_HINT.match(season) and not guessed else "",
+        })
+    if not jobs:
+        raise FetchError("list has no rows (its columns may have changed)")
     return jobs
 
 
@@ -237,9 +272,15 @@ def _workday_intern_facets(facets) -> dict[str, list[str]]:
     return out
 
 
-def fetch_workday(host: str, site: str, company: str, max_pages: int = 50, keep=_keep_all) -> list[dict]:
-    tenant = host.split(".")[0]
+def fetch_workday(host: str, site: str, company: str, max_pages: int = 50, keep=_keep_all,
+                  tenant: str | None = None) -> list[dict]:
+    """Workday career sites. tenant is only needed on wdN.myworkdaysite.com sites,
+    which carry it in the address (wd5.myworkdaysite.com/recruiting/<tenant>/<site>)
+    instead of the host name (<tenant>.wd5.myworkdayjobs.com/<site>)."""
+    tenant = tenant or host.split(".")[0]
     api = f"https://{host}/wday/cxs/{tenant}/{site}/jobs"
+    page_root = (f"https://{host}/recruiting/{tenant}/{site}" if host.endswith(".myworkdaysite.com")
+                 else f"https://{host}/{site}")
     postings, seen_paths = [], set()
     facets: dict[str, list[str]] = {}
 
@@ -299,7 +340,7 @@ def fetch_workday(host: str, site: str, company: str, max_pages: int = 50, keep=
             "company": company,
             "title": (p.get("title") or "").strip(),
             "location": loc,
-            "url": info.get("externalUrl") or f"https://{host}/{site}{path}",
+            "url": info.get("externalUrl") or f"{page_root}{path}",
             "source": f"{company} careers",
             "posted": _date_from_iso(info.get("startDate")) or _workday_posted_on(p.get("postedOn", "")),
             "description": html_to_text(info.get("jobDescription")),
@@ -533,11 +574,15 @@ _ICIMS_CARD = re.compile(r'(?s)<li class="iCIMS_JobCardItem">(.*?)</li>')
 
 def fetch_icims(host: str, company: str, max_pages: int = 15, keep=_keep_all) -> list[dict]:
     """iCIMS career sites (careers-<company>.icims.com). The search page lists 20
-    postings; each internship is opened for its full text (schema.org data)."""
+    postings; each internship is opened for its full text (schema.org data).
+    On some sites the keyword search finds nothing at all, whatever the word
+    (Peraton, Iridium, Sierra Lobo: "no jobs were found"), so when neither search
+    finds a posting the site's whole list is read instead."""
     postings: dict[str, dict] = {}
-    for term in ("intern", "co-op"):
-        for pr in range(max_pages):
-            page = _get_page(f"https://{host}/jobs/search?ss=1&searchKeyword={term}&in_iframe=1&pr={pr}")
+
+    def read(query: str, n_pages: int) -> None:
+        for pr in range(n_pages):
+            page = _get_page(f"https://{host}/jobs/search?ss=1{query}&in_iframe=1&pr={pr}")
             for card in _ICIMS_CARD.findall(page):
                 link = re.search(r'href="(https://[^"]+?/jobs/\d+/[^"?]+/job)', card)
                 title = re.search(r'(?s)<h3[^>]*>(.*?)</h3>', card)
@@ -555,6 +600,11 @@ def fetch_icims(host: str, company: str, max_pages: int = 15, keep=_keep_all) ->
             pages = re.search(r"Page \d+ of (\d+)", page)
             if not pages or pr + 1 >= int(pages.group(1)):
                 break
+
+    for term in ("intern", "co-op"):
+        read(f"&searchKeyword={term}", max_pages)
+    if not postings:
+        read("", 40)
     wanted = [p for p in postings.values() if _wanted(p["title"], keep)]
 
     def detail(p):
@@ -1305,6 +1355,80 @@ def fetch_paycor(client: str, company: str, keep=_keep_all) -> list[dict]:
     return _open_each(wanted, detail)
 
 
+def fetch_breezy(board: str, company: str, keep=_keep_all) -> list[dict]:
+    """Breezy HR boards (<board>.breezy.hr): <board>.breezy.hr/json lists every
+    opening with its place and date; each internship's page holds its text as
+    schema.org data."""
+    data = get_json(f"https://{board}.breezy.hr/json", timeout=40)
+    postings = []
+    for j in data if isinstance(data, list) else []:
+        loc = j.get("location") or {}
+        state = (loc.get("state") or {}).get("id") or (loc.get("state") or {}).get("name")
+        place = loc.get("name") or ", ".join(filter(None, [loc.get("city"), state, (loc.get("country") or {}).get("id")]))
+        postings.append({
+            "company": company,
+            "title": (j.get("name") or "").strip(),
+            "location": "Remote" if loc.get("is_remote") and not place else place,
+            "url": j.get("url", ""),
+            "source": f"{company} careers",
+            "posted": _date_from_iso(j.get("published_date")),
+            "description": "",
+            "season_hint": "",
+        })
+    wanted = [p for p in postings if p["url"] and _wanted(p["title"], keep)]
+
+    def detail(p):
+        try:
+            p["description"] = fetch_page_posting(p["url"])[0]
+        except FetchError:
+            pass
+        return p
+
+    return _open_each(wanted, detail)
+
+
+def fetch_activate(host: str, company: str, max_pages: int = 10, keep=_keep_all) -> list[dict]:
+    """Activate career sites (lanl.jobs): the search page fills its table from
+    <host>/Search/SearchResults, which sends JSON wrapped in a JSON string. The
+    keyword search is full text, so titles are filtered before each posting's
+    page (schema.org data) is opened."""
+    found: dict[str, dict] = {}
+    for term in ("intern", "student", "co-op"):
+        start = 0
+        for _ in range(max_pages):
+            data = get_json(f"https://{host}/Search/SearchResults?keyword={term}&jtStartIndex={start}&jtPageSize=100",
+                            headers={"X-Requested-With": "XMLHttpRequest"}, timeout=40)
+            if isinstance(data, str):
+                data = json.loads(data)
+            batch = data.get("Records") or []
+            for r in batch:
+                found.setdefault(r.get("ID"), r)
+            start += len(batch)
+            if not batch or start >= int(data.get("TotalRecordCount") or 0):
+                break
+    wanted = [r for r in found.values() if r.get("ID") and _wanted(html_to_text(r.get("Title")), keep)]
+
+    def detail(r):
+        title = html_to_text(r.get("Title"))
+        url = f"https://{host}/search/jobdetails/{re.sub(r'[^a-z0-9]+', '-', title.lower()).strip('-') or 'job'}/{r['ID']}"
+        try:
+            text, posted = fetch_page_posting(url)
+        except FetchError:
+            text, posted = "", ""
+        return {
+            "company": company,
+            "title": title,
+            "location": html_to_text(r.get("CityStateDataAbbrev")) or html_to_text(r.get("LocationName")),
+            "url": url,
+            "source": f"{company} careers",
+            "posted": _date_from_iso(r.get("PostedDateRaw")) or posted,
+            "description": text,
+            "season_hint": "",
+        }
+
+    return _open_each(wanted, detail)
+
+
 # ------------------------------------------------------------ USAJOBS
 
 def fetch_usajobs(cfg: dict) -> list[dict]:
@@ -1351,6 +1475,8 @@ def fetch_all(cfg: dict, keep=_keep_all) -> tuple[list[dict], list[dict]]:
     tasks = []  # (label, kind, callable)
     for src in cfg.get("list", []):
         tasks.append((src["name"], "Internship list", lambda s=src: fetch_simplify_list(s)))
+    for src in cfg.get("csvlist", []):
+        tasks.append((src["name"], "Internship list", lambda s=src: fetch_csv_list(s)))
     for src in cfg.get("getro", []):
         tasks.append((src["name"], "Job board", lambda s=src: fetch_getro(s)))
     for c in cfg.get("greenhouse", []):
@@ -1360,7 +1486,8 @@ def fetch_all(cfg: dict, keep=_keep_all) -> tuple[list[dict], list[dict]]:
     for c in cfg.get("ashby", []):
         tasks.append((c["name"], "Ashby", lambda c=c: fetch_ashby(c["board"], c["name"])))
     for c in cfg.get("workday", []):
-        tasks.append((c["name"], "Workday", lambda c=c: fetch_workday(c["host"], c["site"], c["name"], keep=keep)))
+        tasks.append((c["name"], "Workday", lambda c=c: fetch_workday(c["host"], c["site"], c["name"], keep=keep,
+                                                                      tenant=c.get("tenant"))))
     for c in cfg.get("eightfold", []):
         tasks.append((c["name"], "Eightfold", lambda c=c: fetch_eightfold(c["host"], c["domain"], c["name"], keep=keep)))
     for c in cfg.get("clearcompany", []):
@@ -1405,6 +1532,10 @@ def fetch_all(cfg: dict, keep=_keep_all) -> tuple[list[dict], list[dict]]:
         tasks.append((c["name"], "UKG", lambda c=c: fetch_ukg(c["board"].rstrip("/"), c["name"], keep=keep)))
     for c in cfg.get("paycor", []):
         tasks.append((c["name"], "Paycor", lambda c=c: fetch_paycor(c["client"], c["name"], keep=keep)))
+    for c in cfg.get("breezy", []):
+        tasks.append((c["name"], "Breezy HR", lambda c=c: fetch_breezy(c["board"], c["name"], keep=keep)))
+    for c in cfg.get("activate", []):
+        tasks.append((c["name"], "Activate", lambda c=c: fetch_activate(c["host"], c["name"], keep=keep)))
     for src in cfg.get("internlist", []):
         tasks.append((src["name"], "Internship list", lambda s=src: fetch_internlist(s)))
     if "usajobs" in cfg:
@@ -1476,7 +1607,8 @@ def fetch_posted_date(url: str) -> str:
     return fetch_page_posting(url)[1]
 
 
-_LD_JSON = re.compile(r'(?is)<script[^>]*application/ld\+json[^>]*>(.*?)</script>')
+# Some sites write the type with its + escaped (lanl.jobs: "application/ld&#x2B;json")
+_LD_JSON = re.compile(r'(?is)<script[^>]*application/ld(?:\+|&#x2B;|&#43;)json[^>]*>(.*?)</script>')
 
 
 def _job_posting(page: str) -> dict:

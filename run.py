@@ -144,7 +144,7 @@ def main() -> int:
         if s["name"] in found_names:
             s["kind"] += " (found automatically)"
     record_results(found, status)
-    lists = {s["name"] for s in sources_cfg.get("list", []) + sources_cfg.get("getro", [])}
+    lists = {s["name"] for k in ("list", "csvlist", "getro") for s in sources_cfg.get(k, [])}
     n_new += learn(found, ((j.get("company", ""), j.get("url", "")) for j in raw
                            if j.get("source_id") in lists), matcher.is_aero_company, today)
     print(f"   {len(raw)} postings read; {n_new} new career sites found for next time")

@@ -177,13 +177,14 @@ they don't change the score.
   `[engineering]` the disciplines and their points.
 - **`sources.toml`**: which companies and lists get checked. It reads company career sites on
   Greenhouse, Lever, Ashby, Workday, Eightfold, SuccessFactors (L3Harris, ULA, HII, Bombardier),
-  iCIMS (GD Mission Systems, Joby, Peraton), Jibe (JHU APL, Spirit, V2X), Oracle (Honeywell, Howmet, SAIC),
-  Phenom (BAE Systems, MITRE), Taleo (Textron, Bell, Textron Aviation), BrassRing (General Atomics), DirectEmployers .jobs
-  feeds (Sandia, Jacobs), Avature search pages (Siemens Energy), ADP Workforce Now (Kaman),
-  UKG (TCOM), Paycor (York Space), Pinpoint, BambooHR, Rippling, SmartRecruiters,
-  Workable, Gem and JazzHR, plus the Simplify list, intern-list.com, the Space Capital board and
-  eight venture firms' portfolio boards (Lux, 8VC, DCVC, Khosla, General Catalyst, Accel, Energy
-  Impact Partners, Techstars); each section of the file explains which part of a company's job
+  iCIMS (GD Mission Systems, Joby, Peraton, Sierra Lobo), Jibe (JHU APL, Spirit, V2X, SPA), Oracle (Honeywell, Howmet, SAIC),
+  Phenom (BAE Systems, MITRE, Virgin Galactic), Taleo (Textron, Bell, Textron Aviation), BrassRing (General Atomics), DirectEmployers .jobs
+  feeds (Sandia, Jacobs), Los Alamos's job search, Avature and plain search pages (Siemens Energy, Gulfstream, Redwire),
+  ADP Workforce Now (Kaman, Intuitive Machines, Sidus Space), UKG (TCOM, ARA), Paycor (York Space, Craig Technologies),
+  Breezy HR (Embraer, Benchmark Space), Pinpoint, BambooHR, Rippling, SmartRecruiters,
+  Workable, Gem and JazzHR, plus the Simplify list, a mechanical engineering internship list (published as a CSV),
+  intern-list.com, the Space Capital board and ten venture firms' portfolio boards (Lux, 8VC, DCVC, Khosla, General
+  Catalyst, Accel, Energy Impact Partners, Techstars, Eclipse, The Engine); each section of the file explains which part of a company's job
   link to copy. On Workday sites the scan also reads each site's internship filter ("Intern
   (Fixed Term)", "Co-op/Intern"...), since the site's search ranks internships among thousands of
   other jobs. The `[[popular]]`
