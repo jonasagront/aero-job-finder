@@ -299,6 +299,15 @@
   "fails": 0,
   "last_seen": "2026-11-06"
  },
+ "greenhouse:arcboatcompany": {
+  "kind": "greenhouse",
+  "board": "arcboatcompany",
+  "name": "Arc",
+  "first_seen": "2026-11-06",
+  "fails": 0,
+  "engineering": true,
+  "last_seen": "2026-10-07"
+ },
  "greenhouse:asteraearlycareer2026": {
   "kind": "greenhouse",
   "board": "asteraearlycareer2026",
@@ -568,6 +577,24 @@
   "first_seen": "2026-10-28",
   "fails": 0,
   "last_seen": "2026-11-06"
+ },
+ "greenhouse:parallel": {
+  "kind": "greenhouse",
+  "board": "parallel",
+  "name": "Parallel Systems",
+  "first_seen": "2026-11-06",
+  "fails": 0,
+  "engineering": true,
+  "last_seen": "2026-10-26"
+ },
+ "greenhouse:peakenergy": {
+  "kind": "greenhouse",
+  "board": "peakenergy",
+  "name": "Peak Energy",
+  "first_seen": "2026-11-06",
+  "fails": 0,
+  "engineering": true,
+  "last_seen": "2026-10-28"
  },
  "greenhouse:planetlabs": {
   "kind": "greenhouse",
@@ -907,6 +934,15 @@
   "fails": 0,
   "last_seen": "2026-11-06"
  },
+ "lever:foth": {
+  "kind": "lever",
+  "board": "foth",
+  "name": "FOTH",
+  "first_seen": "2026-11-06",
+  "fails": 0,
+  "engineering": true,
+  "last_seen": "2026-09-02"
+ },
  "lever:hermeus": {
   "kind": "lever",
   "board": "hermeus",
@@ -1021,6 +1057,16 @@
   "fails": 0,
   "last_seen": "2026-11-06"
  },
+ "oracle:ebxs.fa.us2.oraclecloud.com/cx_2": {
+  "kind": "oracle",
+  "host": "ebxs.fa.us2.oraclecloud.com",
+  "site": "CX_2",
+  "name": "Michael Baker International",
+  "first_seen": "2026-11-06",
+  "fails": 0,
+  "engineering": true,
+  "last_seen": "2026-09-25"
+ },
  "oracle:edbz.fa.us2.oraclecloud.com/cx": {
   "kind": "oracle",
   "host": "edbz.fa.us2.oraclecloud.com",
@@ -1051,6 +1097,26 @@
   "engineering": true,
   "last_seen": "2026-10-02"
  },
+ "oracle:emit.fa.ca3.oraclecloud.com/cx_2001": {
+  "kind": "oracle",
+  "host": "emit.fa.ca3.oraclecloud.com",
+  "site": "CX_2001",
+  "name": "WSP",
+  "first_seen": "2026-11-06",
+  "fails": 0,
+  "engineering": true,
+  "last_seen": "2026-10-27"
+ },
+ "oracle:epyc.fa.us2.oraclecloud.com/cx_1001": {
+  "kind": "oracle",
+  "host": "epyc.fa.us2.oraclecloud.com",
+  "site": "CX_1001",
+  "name": "Clean Harbors",
+  "first_seen": "2026-11-06",
+  "fails": 0,
+  "engineering": true,
+  "last_seen": "2026-11-04"
+ },
  "oracle:fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com/cx_1": {
   "kind": "oracle",
   "host": "fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com",
@@ -1079,6 +1145,16 @@
   "fails": 0,
   "engineering": true,
   "last_seen": "2026-09-28"
+ },
+ "oracle:hdhl.fa.us6.oraclecloud.com/cx_1": {
+  "kind": "oracle",
+  "host": "hdhl.fa.us6.oraclecloud.com",
+  "site": "CX_1",
+  "name": "Stantec",
+  "first_seen": "2026-11-06",
+  "fails": 0,
+  "engineering": true,
+  "last_seen": "2026-10-30"
  },
  "oracle:hdjq.fa.us2.oraclecloud.com/cx_1": {
   "kind": "oracle",
@@ -1253,6 +1329,16 @@
   "engineering": true,
   "last_seen": "2026-09-25"
  },
+ "workday:asml.wd3.myworkdayjobs.com/asmlext1": {
+  "kind": "workday",
+  "host": "asml.wd3.myworkdayjobs.com",
+  "site": "asmlext1",
+  "name": "ASML",
+  "first_seen": "2026-11-06",
+  "fails": 0,
+  "engineering": true,
+  "last_seen": "2026-11-05"
+ },
  "workday:avav.wd1.myworkdayjobs.com/avav": {
   "kind": "workday",
   "host": "avav.wd1.myworkdayjobs.com",
@@ -1278,7 +1364,7 @@
   "name": "Booz Allen Hamilton",
   "first_seen": "2026-11-05",
   "fails": 0,
-  "last_seen": "2026-11-04"
+  "last_seen": "2026-11-06"
  },
  "workday:blueorigin.wd5.myworkdayjobs.com/blueorigin": {
   "kind": "workday",
@@ -1394,6 +1480,16 @@
   "engineering": true,
   "last_seen": "2026-05-13"
  },
+ "workday:cisco.wd5.myworkdayjobs.com/cisco_careers": {
+  "kind": "workday",
+  "host": "cisco.wd5.myworkdayjobs.com",
+  "site": "cisco_careers",
+  "name": "Cisco",
+  "first_seen": "2026-11-06",
+  "fails": 0,
+  "engineering": true,
+  "last_seen": "2026-10-14"
+ },
  "workday:citjpl.wd5.myworkdayjobs.com/jobs": {
   "kind": "workday",
   "host": "citjpl.wd5.myworkdayjobs.com",
@@ -1466,6 +1562,16 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "last_seen": "2026-09-16"
+ },
+ "workday:elkay.wd1.myworkdayjobs.com/elkay_external": {
+  "kind": "workday",
+  "host": "elkay.wd1.myworkdayjobs.com",
+  "site": "Elkay_External",
+  "name": "Zurn Elkay Water Solutions",
+  "first_seen": "2026-11-06",
+  "fails": 0,
+  "engineering": true,
+  "last_seen": "2026-11-03"
  },
  "workday:fireflyspace.wd115.myworkdayjobs.com/firefly": {
   "kind": "workday",
@@ -1552,6 +1658,16 @@
   "engineering": true,
   "last_seen": "2026-10-27"
  },
+ "workday:gi.wd1.myworkdayjobs.com/global_infrastructure": {
+  "kind": "workday",
+  "host": "gi.wd1.myworkdayjobs.com",
+  "site": "Global_Infrastructure",
+  "name": "Global Infrastructure",
+  "first_seen": "2026-11-06",
+  "fails": 0,
+  "engineering": true,
+  "last_seen": "2026-10-27"
+ },
  "workday:globalfoundries.wd1.myworkdayjobs.com/external": {
   "kind": "workday",
   "host": "globalfoundries.wd1.myworkdayjobs.com",
@@ -1570,6 +1686,16 @@
   "first_seen": "2026-10-27",
   "fails": 0,
   "last_seen": "2026-11-06"
+ },
+ "workday:gorbel.wd501.myworkdayjobs.com/gorbelcareers": {
+  "kind": "workday",
+  "host": "gorbel.wd501.myworkdayjobs.com",
+  "site": "gorbelcareers",
+  "name": "Gorbel",
+  "first_seen": "2026-11-06",
+  "fails": 0,
+  "engineering": true,
+  "last_seen": "2026-11-02"
  },
  "workday:haier.wd3.myworkdayjobs.com/ge_appliances": {
   "kind": "workday",
@@ -1608,7 +1734,17 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-10-22"
+  "last_seen": "2026-11-06"
+ },
+ "workday:hntb.wd5.myworkdayjobs.com/hntb_careers": {
+  "kind": "workday",
+  "host": "hntb.wd5.myworkdayjobs.com",
+  "site": "hntb_careers",
+  "name": "HNTB",
+  "first_seen": "2026-11-06",
+  "fails": 0,
+  "engineering": true,
+  "last_seen": "2026-10-27"
  },
  "workday:hp.wd5.myworkdayjobs.com/externalcareersite": {
   "kind": "workday",
@@ -1640,6 +1776,17 @@
   "engineering": true,
   "last_seen": "2026-11-03"
  },
+ "workday:imeg.wd1.myworkdaysite.com/imeg_careers": {
+  "kind": "workday",
+  "host": "wd1.myworkdaysite.com",
+  "site": "Imeg_Careers",
+  "tenant": "imeg",
+  "name": "IMEG",
+  "first_seen": "2026-11-06",
+  "fails": 0,
+  "engineering": true,
+  "last_seen": "2026-10-30"
+ },
  "workday:intel.wd1.myworkdayjobs.com/external": {
   "kind": "workday",
   "host": "intel.wd1.myworkdayjobs.com",
@@ -1659,6 +1806,16 @@
   "fails": 0,
   "engineering": true,
   "last_seen": "2026-11-05"
+ },
+ "workday:jj.wd5.myworkdayjobs.com/jj": {
+  "kind": "workday",
+  "host": "jj.wd5.myworkdayjobs.com",
+  "site": "JJ",
+  "name": "Johnson & Johnson",
+  "first_seen": "2026-11-06",
+  "fails": 0,
+  "engineering": true,
+  "last_seen": "2026-09-23"
  },
  "workday:kbr.wd5.myworkdayjobs.com/kbr_careers": {
   "kind": "workday",
@@ -1776,6 +1933,16 @@
   "fails": 0,
   "last_seen": "2026-11-06"
  },
+ "workday:nvent.wd5.myworkdayjobs.com/nvent": {
+  "kind": "workday",
+  "host": "nvent.wd5.myworkdayjobs.com",
+  "site": "nVent",
+  "name": "nVent",
+  "first_seen": "2026-11-06",
+  "fails": 0,
+  "engineering": true,
+  "last_seen": "2026-10-27"
+ },
  "workday:nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite": {
   "kind": "workday",
   "host": "nvidia.wd5.myworkdayjobs.com",
@@ -1869,7 +2036,7 @@
   "name": "Rolls-Royce",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-05"
+  "last_seen": "2026-11-06"
  },
  "workday:selinc.wd1.myworkdayjobs.com/sel": {
   "kind": "workday",
@@ -1880,6 +2047,16 @@
   "fails": 0,
   "engineering": true,
   "last_seen": "2026-10-02"
+ },
+ "workday:sensata.wd1.myworkdayjobs.com/sensata-careers": {
+  "kind": "workday",
+  "host": "sensata.wd1.myworkdayjobs.com",
+  "site": "Sensata-Careers",
+  "name": "Sensata",
+  "first_seen": "2026-11-06",
+  "fails": 0,
+  "engineering": true,
+  "last_seen": "2026-09-16"
  },
  "workday:sierraspace.wd1.myworkdayjobs.com/sierra_space_external_career_site": {
   "kind": "workday",
@@ -1899,6 +2076,16 @@
   "fails": 0,
   "engineering": true,
   "last_seen": "2026-01-26"
+ },
+ "workday:slihrms.wd3.myworkdayjobs.com/careers": {
+  "kind": "workday",
+  "host": "slihrms.wd3.myworkdayjobs.com",
+  "site": "careers",
+  "name": "AtkinsRéalis",
+  "first_seen": "2026-11-06",
+  "fails": 0,
+  "engineering": true,
+  "last_seen": "2026-10-14"
  },
  "workday:snc.wd1.myworkdayjobs.com/snc_external_career_site": {
   "kind": "workday",
@@ -1934,7 +2121,7 @@
   "site": "Symbotic",
   "name": "Symbotic",
   "first_seen": "2026-11-06",
-  "fails": 1,
+  "fails": 2,
   "engineering": true,
   "last_seen": "2025-09-15"
  },
@@ -1985,5 +2172,25 @@
   "first_seen": "2026-10-27",
   "fails": 0,
   "last_seen": "2026-11-04"
+ },
+ "workday:zebra.wd501.myworkdayjobs.com/zebra_careers": {
+  "kind": "workday",
+  "host": "zebra.wd501.myworkdayjobs.com",
+  "site": "Zebra_careers",
+  "name": "Zebra Technologies",
+  "first_seen": "2026-11-06",
+  "fails": 0,
+  "engineering": true,
+  "last_seen": "2026-11-03"
+ },
+ "workday:zoll.wd5.myworkdayjobs.com/zollmedicalcorp": {
+  "kind": "workday",
+  "host": "zoll.wd5.myworkdayjobs.com",
+  "site": "ZOLLMedicalCorp",
+  "name": "ZOLL Medical Corporation",
+  "first_seen": "2026-11-06",
+  "fails": 0,
+  "engineering": true,
+  "last_seen": "2026-10-29"
  }
 }
