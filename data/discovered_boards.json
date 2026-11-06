@@ -994,7 +994,7 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-04-15"
+  "last_seen": "2026-11-06"
  },
  "oracle:cva.fa.us1.oraclecloud.com/cx_3": {
   "kind": "oracle",
@@ -1891,16 +1891,6 @@
   "fails": 0,
   "engineering": true,
   "last_seen": "2026-10-22"
- },
- "workday:symbotic.wd1.myworkdayjobs.com/symbotic": {
-  "kind": "workday",
-  "host": "symbotic.wd1.myworkdayjobs.com",
-  "site": "Symbotic",
-  "name": "Symbotic",
-  "first_seen": "2026-11-05",
-  "fails": 8,
-  "engineering": true,
-  "last_seen": "2025-09-15"
  },
  "workday:thales.wd3.myworkdayjobs.com/careers": {
   "kind": "workday",
