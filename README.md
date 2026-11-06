@@ -46,7 +46,7 @@ history fills more of that in.
 ## Today's top matches
 
 <!-- JOBS:START -->
-**921 Summer 2027 aerospace matches** (19 Fall 2027 near home, 2473 in All engineering, 174 leads without a direct link) as of Nov 5, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
+**928 Summer 2027 aerospace matches** (18 Fall 2027 near home, 2480 in All engineering, 172 leads without a direct link) as of Nov 6, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
 
 | Fit | Company | Role | Required quals met | Location | Posted | Apply |
 |---|---|---|---|---|---|---|
@@ -56,6 +56,7 @@ history fills more of that in.
 | 100 | CACI | Aerospace Engineer Intern - Summer 2027 | 5 of 5 | Aberdeen Proving Ground, MD, US | 2026-10-16 | [Apply](https://caci.wd1.myworkdayjobs.com/External/job/Aberdeen-Proving-Ground-MD-US/Aerospace-Engineer-Intern---Summer-2027_333648) |
 | 100 | CACI | Aerospace Engineer Intern - Summer 2027 | 5 of 5 | Aberdeen Proving Ground, MD, US | 2026-10-16 | [Apply](https://caci.wd1.myworkdayjobs.com/External/job/Aberdeen-Proving-Ground-MD-US/Aerospace-Engineer-Intern---Summer-2027_333570) |
 | 100 | CesiumAstro | Summer 2027 - Flight Dynamics Internship | 3 of 3 | Huntsville, AL | 2026-10-16 | [Apply](https://jobs.lever.co/CesiumAstro/385a6217-7931-4bb4-861a-1e5651e3a998) |
+| 100 | GE Aerospace | Propulsion Performance Engineering Intern - Bohemia, NY - Summer 2027 🆕 | 4 of 4 | Bohemia | 2026-11-05 | [Apply](https://geaerospace.wd5.myworkdayjobs.com/GE_ExternalSite/job/Bohemia/Propulsion-Performance-Engineering-Intern---Bohemia--NY---Summer-2027_R5042754-2) |
 | 100 | Hermeus | Structures/Mechanical Engineering Intern - Spring/Summer 2027 | 3 of 3 | Atlanta, GA | 2026-09-02 | [Apply](https://jobs.lever.co/hermeus/60b5d40a-1065-4bd2-8c72-6b2fb69d4761) |
 | 100 | LiquidPiston | Engine Test Engineering Intern – Summer 2027 / LiquidPiston | 2 of 2 | Suffield, CT | 2026-09-09 | [Apply](https://liquidpiston.applytojob.com/apply/2ID9VyifAC/Engine-Test-Engineering-Intern-Summer-2027-LiquidPiston) |
 | 100 | Loft Orbital | Summer 2027 Internship – Mechanical Engineering | 3 of 3 | Golden, CO | 2026-10-27 | [Apply](https://jobs.lever.co/loftorbital/34edd0b7-2a5b-4efa-a379-860097784534) |
@@ -74,13 +75,12 @@ history fills more of that in.
 | 97 | CesiumAstro | Summer 2027 - Mechanical Engineering Internship | 2 of 2 | Austin, TX | 2026-09-16 | [Apply](https://jobs.lever.co/CesiumAstro/042f3a1d-5fc1-44ef-8f12-57044eaa4db2) |
 | 97 | CesiumAstro | Summer 2027 - Mechanical Engineering Internship | 2 of 2 | Westminster, CO | 2026-09-16 | [Apply](https://jobs.lever.co/CesiumAstro/c7217acc-8eb4-4431-9e90-f426ccca8d1f) |
 | 97 | Inversion Space | Avionics Mechanical Engineer - Summer Internship 2027 | 3 of 3 | Playa Vista, California, United States | 2026-10-15 | [Apply](https://job-boards.greenhouse.io/inversionspace/jobs/4744390005) |
-| 97 | Inversion Space | Mechanical Engineer - Summer Internship 2027 | 3 of 3 | Playa Vista, California, United States | 2026-10-14 | [Apply](https://job-boards.greenhouse.io/inversionspace/jobs/4743740005) |
 <!-- JOBS:END -->
 
 ## Expected soon
 
 <!-- PREDICTED:START -->
-**32 aerospace internships expected in the next 60 days**, from past cycles' posting dates. All of them, with filters: **[Predicted tab](https://jonasagront.github.io/aero-job-finder/#predicted)**
+**33 aerospace internships expected in the next 60 days**, from past cycles' posting dates. All of them, with filters: **[Predicted tab](https://jonasagront.github.io/aero-job-finder/#predicted)**
 
 | Expected | Company | Role | For | Last cycle's posting date | Career site |
 |---|---|---|---|---|---|
@@ -98,7 +98,7 @@ history fills more of that in.
 | ~2026-11-04 (due now) | Space Dynamics Laboratory | Large Language Model Inference & Integration Engineer Intern - C4ISR Systems Division - LLM Inference Pipelines | Summer 2027 | 2025-11-04 | [Open](https://spacedynamicslaboratory.applytojob.com/apply) |
 | ~2026-11-06 (due now) | Anduril | Perception Engineer Intern | Summer 2027 | 2024-11-06 | [Open](https://job-boards.greenhouse.io/andurilindustries) |
 | ~2026-11-08 (due now) | Leidos | AI Explainability Engineer Intern | Summer 2027 | 2024-11-08 | [Open](https://leidos.wd5.myworkdayjobs.com/External) |
-| ~2026-11-13 | Northrop Grumman | Engineering Intern - Radford VA | Summer 2027 | 2025-11-13 | [Open](https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site) |
+| ~2026-11-13 (due now) | Northrop Grumman | Engineering Intern - Radford VA | Summer 2027 | 2025-11-13 | [Open](https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site) |
 <!-- PREDICTED:END -->
 
 ---
