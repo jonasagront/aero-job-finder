@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T04:15:03+00:00",
+ "updated": "2026-11-08T05:58:15+00:00",
  "jobs": [
   {
    "company": "AMD",
@@ -25379,6 +25379,130 @@
    "last_seen": "2026-11-08"
   },
   {
+   "company": "Trane Technologies",
+   "title": "Manufacturing Engineering Intern",
+   "location": "Grand Rapids, Michigan, United States of America",
+   "url": "https://careers.tranetechnologies.com/global/en/job/JR-11703",
+   "source": "Trane Technologies careers",
+   "posted": "2026-10-06",
+   "source_id": "Trane Technologies",
+   "key": "url:https://careers.tranetechnologies.com/global/en/job/jr-11703",
+   "tracks": {
+    "broad": {
+     "score": 88,
+     "tier": "strong",
+     "parts": {
+      "fit": 36,
+      "skills": 30,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Season not stated"
+    }
+   },
+   "score": 88,
+   "tier": "strong",
+   "discipline": "Manufacturing & industrial",
+   "quals": {
+    "required": [
+     {
+      "text": "Currently pursuing a Bachelor's degree in Manufacturing Engineering, Mechanical Engineering, Industrial Engineering, or a related engineering field.",
+      "status": "met",
+      "why": "You're Aerospace Engineering"
+     },
+     {
+      "text": "Strong mechanical aptitude and interest in manufacturing operations.",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Basic understanding of engineering principles and problem-solving methods.",
+      "status": "check",
+      "why": "Coursework or background (check your classes)"
+     },
+     {
+      "text": "Proficiency with Microsoft Office applications.",
+      "status": "met",
+      "why": "You have: Excel / data analysis"
+     },
+     {
+      "text": "Strong communication and teamwork skills.",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Ability to work on the production floor for extended periods.",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Frequent standing, walking, bending, and lifting up to 35 pounds.",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Ability to safely work around manufacturing equipment and machinery while following all safety requirements.",
+      "status": "check",
+      "why": ""
+     }
+    ],
+    "preferred": [
+     {
+      "text": "Completion of sophomore year preferred.",
+      "status": "met",
+      "why": "Open to underclassmen"
+     },
+     {
+      "text": "Previous manufacturing, maintenance, fabrication, or skilled trades experience.",
+      "status": "met",
+      "why": "You have: Prototyping & fabrication"
+     },
+     {
+      "text": "Exposure to Lean Manufacturing concepts.",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Familiarity with CAD software such as SolidWorks, Inventor, Creo or AutoCAD.",
+      "status": "met",
+      "why": "You have: SolidWorks / CAD"
+     },
+     {
+      "text": "Experience working in team-based environments.",
+      "status": "check",
+      "why": ""
+     }
+    ],
+    "summary": {
+     "required_checked": 2,
+     "required_met": 2.0,
+     "required_missing": 0,
+     "to_check": 1,
+     "preferred_met": 3,
+     "preferred_total": 3
+    }
+   },
+   "matched": [
+    "SolidWorks / CAD",
+    "Prototyping & fabrication",
+    "Excel / data analysis"
+   ],
+   "related": [],
+   "gaps": [
+    "Creo"
+   ],
+   "flags": [
+    {
+     "kind": "good",
+     "label": "Open to underclassmen"
+    }
+   ],
+   "has_description": true,
+   "first_seen": "2026-11-08",
+   "last_seen": "2026-11-08"
+  },
+  {
    "company": "Tranetechnologies",
    "title": "Manufacturing Engineering Intern-3",
    "location": "Kentwood, Michigan",
@@ -45360,6 +45484,47 @@
    "last_seen": "2026-11-08"
   },
   {
+   "company": "CNH",
+   "title": "Thermal Systems Engineer Intern",
+   "location": "Oak Brook, IL, USA",
+   "url": "https://join.cnh.com/job/Thermal-Systems-Engineer-Intern/5644-en_US",
+   "source": "CNH careers",
+   "posted": "2026-09-08",
+   "source_id": "CNH",
+   "key": "url:https://join.cnh.com/job/thermal-systems-engineer-intern/5644-en_us",
+   "tracks": {
+    "broad": {
+     "score": 80,
+     "tier": "strong",
+     "parts": {
+      "fit": 30,
+      "skills": 28,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Summer (year not stated)"
+    }
+   },
+   "score": 80,
+   "tier": "strong",
+   "discipline": "Mechanical",
+   "quals": null,
+   "matched": [
+    "SolidWorks / CAD",
+    "Prototyping & fabrication"
+   ],
+   "related": [],
+   "gaps": [
+    "FEA / stress analysis",
+    "Heat transfer / thermal"
+   ],
+   "flags": [],
+   "has_description": true,
+   "first_seen": "2026-11-08",
+   "last_seen": "2026-11-08"
+  },
+  {
    "company": "CesiumAstro",
    "title": "Summer 2027 - Systems Engineering Internship",
    "location": "El Segundo, CA",
@@ -51804,118 +51969,6 @@
   },
   {
    "company": "Lockheed Martin",
-   "title": "Hardware Engineering Intern",
-   "location": "Moorestown, NJ",
-   "url": "https://lockheedmartin.eightfold.ai/careers/job/996477268012",
-   "source": "Lockheed Martin careers",
-   "posted": "2026-11-04",
-   "source_id": "Lockheed Martin",
-   "key": "url:https://lockheedmartin.eightfold.ai/careers/job/996477268012",
-   "tracks": {
-    "summer": {
-     "score": 66,
-     "tier": "good",
-     "parts": {
-      "fit": 28,
-      "skills": 16,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Season not stated"
-    },
-    "broad": {
-     "score": 78,
-     "tier": "strong",
-     "parts": {
-      "fit": 40,
-      "skills": 16,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Season not stated"
-    }
-   },
-   "score": 78,
-   "tier": "strong",
-   "discipline": "Mechanical",
-   "quals": {
-    "required": [
-     {
-      "text": "Enrolled in a Bachelor's degree program in mechanical engineering.",
-      "status": "met",
-      "why": "You're Aerospace Engineering"
-     },
-     {
-      "text": "Coursework in mechanical design, heat transfer, statics, dynamics, and mechanics of materials.",
-      "status": "check",
-      "why": "Coursework: Heat transfer / thermal (check your classes)"
-     },
-     {
-      "text": "Ability to be onsite in Moorestown, NJ.",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "Must be a US Citizen; this position will require a government security clearance. This position is located at a facility that requires special access.",
-      "status": "met",
-      "why": "You're a U.S. citizen"
-     }
-    ],
-    "preferred": [
-     {
-      "text": "Proficiency with 3D Computer Aided Design (CAD) Software such as Solidworks or Creo. Creo Preferred.",
-      "status": "met",
-      "why": "You have: SolidWorks / CAD"
-     },
-     {
-      "text": "Familiarity with Geometric Dimensioning and Tolerance (GD&T).",
-      "status": "missing",
-      "why": "Not on your resume: GD&T"
-     },
-     {
-      "text": "Team Collaboration experience.",
-      "status": "soft",
-      "why": ""
-     }
-    ],
-    "summary": {
-     "required_checked": 2,
-     "required_met": 2.0,
-     "required_missing": 0,
-     "to_check": 1,
-     "preferred_met": 1,
-     "preferred_total": 2
-    }
-   },
-   "matched": [
-    "SolidWorks / CAD"
-   ],
-   "related": [],
-   "gaps": [
-    "GD&T",
-    "Creo",
-    "Heat transfer / thermal"
-   ],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "U.S. person / ITAR",
-     "id": "citizen"
-    },
-    {
-     "kind": "info",
-     "label": "Clearance",
-     "id": "clearance"
-    }
-   ],
-   "has_description": true,
-   "first_seen": "2026-11-04",
-   "last_seen": "2026-11-08"
-  },
-  {
-   "company": "Lockheed Martin",
    "title": "Mechanical Test Engineer-INTERN",
    "location": "Cape Canaveral, FL",
    "url": "https://lockheedmartin.eightfold.ai/careers/job/996477404316",
@@ -52070,6 +52123,118 @@
    ],
    "has_description": true,
    "first_seen": "2026-11-03",
+   "last_seen": "2026-11-08"
+  },
+  {
+   "company": "Lockheed Martin",
+   "title": "Hardware Engineering Intern",
+   "location": "Moorestown, NJ",
+   "url": "https://lockheedmartin.eightfold.ai/careers/job/996477268012",
+   "source": "Lockheed Martin careers",
+   "posted": "2026-11-04",
+   "source_id": "Lockheed Martin",
+   "key": "url:https://lockheedmartin.eightfold.ai/careers/job/996477268012",
+   "tracks": {
+    "summer": {
+     "score": 66,
+     "tier": "good",
+     "parts": {
+      "fit": 28,
+      "skills": 16,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Season not stated"
+    },
+    "broad": {
+     "score": 78,
+     "tier": "strong",
+     "parts": {
+      "fit": 40,
+      "skills": 16,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Season not stated"
+    }
+   },
+   "score": 78,
+   "tier": "strong",
+   "discipline": "Mechanical",
+   "quals": {
+    "required": [
+     {
+      "text": "Enrolled in a Bachelor's degree program in mechanical engineering.",
+      "status": "met",
+      "why": "You're Aerospace Engineering"
+     },
+     {
+      "text": "Coursework in mechanical design, heat transfer, statics, dynamics, and mechanics of materials.",
+      "status": "check",
+      "why": "Coursework: Heat transfer / thermal (check your classes)"
+     },
+     {
+      "text": "Ability to be onsite in Moorestown, NJ.",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Must be a US Citizen; this position will require a government security clearance. This position is located at a facility that requires special access.",
+      "status": "met",
+      "why": "You're a U.S. citizen"
+     }
+    ],
+    "preferred": [
+     {
+      "text": "Proficiency with 3D Computer Aided Design (CAD) Software such as Solidworks or Creo. Creo Preferred.",
+      "status": "met",
+      "why": "You have: SolidWorks / CAD"
+     },
+     {
+      "text": "Familiarity with Geometric Dimensioning and Tolerance (GD&T).",
+      "status": "missing",
+      "why": "Not on your resume: GD&T"
+     },
+     {
+      "text": "Team Collaboration experience.",
+      "status": "soft",
+      "why": ""
+     }
+    ],
+    "summary": {
+     "required_checked": 2,
+     "required_met": 2.0,
+     "required_missing": 0,
+     "to_check": 1,
+     "preferred_met": 1,
+     "preferred_total": 2
+    }
+   },
+   "matched": [
+    "SolidWorks / CAD"
+   ],
+   "related": [],
+   "gaps": [
+    "GD&T",
+    "Creo",
+    "Heat transfer / thermal"
+   ],
+   "flags": [
+    {
+     "kind": "info",
+     "label": "U.S. person / ITAR",
+     "id": "citizen"
+    },
+    {
+     "kind": "info",
+     "label": "Clearance",
+     "id": "clearance"
+    }
+   ],
+   "has_description": true,
+   "first_seen": "2026-11-04",
    "last_seen": "2026-11-08"
   },
   {
@@ -67866,111 +68031,6 @@
    "last_seen": "2026-11-08"
   },
   {
-   "company": "Cirrus Aircraft",
-   "source": "Cirrus Aircraft careers",
-   "url": "https://careers-cirrusaircraft.icims.com/jobs/5924/gfk---process-%26-manufacturing-engineering-intern-%e2%80%93-tooling/job",
-   "title": "GFK - Process & Manufacturing Engineering Intern – Tooling",
-   "location": "",
-   "posted": "2026-10-29",
-   "source_id": "Cirrus Aircraft",
-   "key": "url:https://careers-cirrusaircraft.icims.com/jobs/5924/gfk---process-%26-manufacturing-engineering-intern-%e2%80%93-tooling/job",
-   "tracks": {
-    "summer": {
-     "score": 55,
-     "tier": "look",
-     "parts": {
-      "fit": 22,
-      "skills": 16,
-      "eligibility": 22,
-      "requirements": -5
-     },
-     "season": "unstated",
-     "season_label": "Season not stated"
-    },
-    "broad": {
-     "score": 73,
-     "tier": "strong",
-     "parts": {
-      "fit": 40,
-      "skills": 16,
-      "eligibility": 22,
-      "requirements": -5
-     },
-     "season": "unstated",
-     "season_label": "Season not stated"
-    }
-   },
-   "score": 73,
-   "tier": "strong",
-   "discipline": "Mechanical",
-   "quals": {
-    "required": [
-     {
-      "text": "Currently enrolled in a technical or trade school pursuing a diploma, certificate, or associate degree in a relevant skilled trade or technical field.",
-      "status": "met",
-      "why": "You're enrolled in a degree program"
-     },
-     {
-      "text": "Actively progressing through a technical education program, typically a two-year program, with a focus on machining, welding, manufacturing technology, industri",
-      "status": "missing",
-      "why": "Not on your resume: Machining / CNC"
-     },
-     {
-      "text": "Proficient with Microsoft Office tools, including Excel, PowerPoint, and Word.",
-      "status": "met",
-      "why": "You have: Excel / data analysis"
-     },
-     {
-      "text": "Strong written and verbal communication skills.",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "Ability to manage multiple tasks and meet established deadlines.",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Strong organizational and time management skills.",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "Ability to work independently and collaboratively within a team environment.",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "Strong attention to detail and problem-solving skills.",
-      "status": "soft",
-      "why": ""
-     }
-    ],
-    "preferred": [],
-    "summary": {
-     "required_checked": 3,
-     "required_met": 2.0,
-     "required_missing": 1,
-     "to_check": 0,
-     "preferred_met": 0,
-     "preferred_total": 0
-    }
-   },
-   "matched": [
-    "Prototyping & fabrication",
-    "Excel / data analysis"
-   ],
-   "related": [],
-   "gaps": [
-    "Machining / CNC",
-    "Drawings / drafting"
-   ],
-   "flags": [],
-   "has_description": true,
-   "first_seen": "2026-11-02",
-   "last_seen": "2026-11-08"
-  },
-  {
    "company": "GE Vernova",
    "title": "GE Vernova - Schenectady Manufacturing Internship - Summer 2027",
    "location": "Schenectady",
@@ -75276,6 +75336,107 @@
   },
   {
    "company": "Lockheed Martin",
+   "title": "Quality Engineer Intern (College Student - Technical)",
+   "location": "Troy, AL",
+   "url": "https://lockheedmartin.eightfold.ai/careers/job/996477337457",
+   "source": "Lockheed Martin careers",
+   "posted": "2026-10-26",
+   "source_id": "Lockheed Martin",
+   "key": "url:https://lockheedmartin.eightfold.ai/careers/job/996477337457",
+   "tracks": {
+    "summer": {
+     "score": 51,
+     "tier": "look",
+     "parts": {
+      "fit": 12,
+      "skills": 14,
+      "eligibility": 25,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    },
+    "broad": {
+     "score": 71,
+     "tier": "good",
+     "parts": {
+      "fit": 32,
+      "skills": 14,
+      "eligibility": 25,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    }
+   },
+   "score": 71,
+   "tier": "good",
+   "discipline": "Manufacturing & industrial",
+   "quals": {
+    "required": [
+     {
+      "text": "Pursuing a Bachelor's or Master's degree in Engineering or a related discipline from an accredited college.",
+      "status": "met",
+      "why": "Engineering degree: Aerospace Engineering counts"
+     },
+     {
+      "text": "· Basic understanding of technical concepts (mechanical drawings, electrical schematics or CAD)",
+      "status": "met",
+      "why": "You have: SolidWorks / CAD"
+     },
+     {
+      "text": "Microsoft Office - basic skills",
+      "status": "met",
+      "why": "You have: Excel / data analysis"
+     }
+    ],
+    "preferred": [
+     {
+      "text": "Ability to work in a collaborative and team-based environment",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Ability to take action and produce solutions for various problems.",
+      "status": "check",
+      "why": ""
+     }
+    ],
+    "summary": {
+     "required_checked": 3,
+     "required_met": 3.0,
+     "required_missing": 0,
+     "to_check": 0,
+     "preferred_met": 0,
+     "preferred_total": 0
+    }
+   },
+   "matched": [
+    "SolidWorks / CAD",
+    "Excel / data analysis"
+   ],
+   "related": [],
+   "gaps": [
+    "Machining / CNC"
+   ],
+   "flags": [
+    {
+     "kind": "info",
+     "label": "U.S. person / ITAR",
+     "id": "citizen"
+    },
+    {
+     "kind": "info",
+     "label": "Clearance",
+     "id": "clearance"
+    }
+   ],
+   "has_description": true,
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-08"
+  },
+  {
+   "company": "Lockheed Martin",
    "title": "Service Life Engineer - Intern",
    "location": "Fort Worth, TX",
    "url": "https://lockheedmartin.eightfold.ai/careers/job/996477171418",
@@ -75385,107 +75546,6 @@
    ],
    "has_description": true,
    "first_seen": "2026-11-04",
-   "last_seen": "2026-11-08"
-  },
-  {
-   "company": "Lockheed Martin",
-   "title": "Quality Engineer Intern (College Student - Technical)",
-   "location": "Troy, AL",
-   "url": "https://lockheedmartin.eightfold.ai/careers/job/996477337457",
-   "source": "Lockheed Martin careers",
-   "posted": "2026-10-26",
-   "source_id": "Lockheed Martin",
-   "key": "url:https://lockheedmartin.eightfold.ai/careers/job/996477337457",
-   "tracks": {
-    "summer": {
-     "score": 51,
-     "tier": "look",
-     "parts": {
-      "fit": 12,
-      "skills": 14,
-      "eligibility": 25,
-      "requirements": 0
-     },
-     "season": "match",
-     "season_label": "Summer 2027"
-    },
-    "broad": {
-     "score": 71,
-     "tier": "good",
-     "parts": {
-      "fit": 32,
-      "skills": 14,
-      "eligibility": 25,
-      "requirements": 0
-     },
-     "season": "match",
-     "season_label": "Summer 2027"
-    }
-   },
-   "score": 71,
-   "tier": "good",
-   "discipline": "Manufacturing & industrial",
-   "quals": {
-    "required": [
-     {
-      "text": "Pursuing a Bachelor's or Master's degree in Engineering or a related discipline from an accredited college.",
-      "status": "met",
-      "why": "Engineering degree: Aerospace Engineering counts"
-     },
-     {
-      "text": "· Basic understanding of technical concepts (mechanical drawings, electrical schematics or CAD)",
-      "status": "met",
-      "why": "You have: SolidWorks / CAD"
-     },
-     {
-      "text": "Microsoft Office - basic skills",
-      "status": "met",
-      "why": "You have: Excel / data analysis"
-     }
-    ],
-    "preferred": [
-     {
-      "text": "Ability to work in a collaborative and team-based environment",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "Ability to take action and produce solutions for various problems.",
-      "status": "check",
-      "why": ""
-     }
-    ],
-    "summary": {
-     "required_checked": 3,
-     "required_met": 3.0,
-     "required_missing": 0,
-     "to_check": 0,
-     "preferred_met": 0,
-     "preferred_total": 0
-    }
-   },
-   "matched": [
-    "SolidWorks / CAD",
-    "Excel / data analysis"
-   ],
-   "related": [],
-   "gaps": [
-    "Machining / CNC"
-   ],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "U.S. person / ITAR",
-     "id": "citizen"
-    },
-    {
-     "kind": "info",
-     "label": "Clearance",
-     "id": "clearance"
-    }
-   ],
-   "has_description": true,
-   "first_seen": "2026-10-26",
    "last_seen": "2026-11-08"
   },
   {
@@ -76994,6 +77054,105 @@
    "flags": [],
    "has_description": true,
    "first_seen": "2026-11-02",
+   "last_seen": "2026-11-08"
+  },
+  {
+   "company": "Trane Technologies",
+   "title": "Manufacturing Engineering MES Intern",
+   "location": "Grand Rapids, Michigan, United States of America",
+   "url": "https://careers.tranetechnologies.com/global/en/job/JR-19264",
+   "source": "Trane Technologies careers",
+   "posted": "2026-11-03",
+   "source_id": "Trane Technologies",
+   "key": "url:https://careers.tranetechnologies.com/global/en/job/jr-19264",
+   "tracks": {
+    "broad": {
+     "score": 71,
+     "tier": "good",
+     "parts": {
+      "fit": 28,
+      "skills": 21,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Season not stated"
+    }
+   },
+   "score": 71,
+   "tier": "good",
+   "discipline": "Manufacturing & industrial",
+   "quals": {
+    "required": [
+     {
+      "text": "Currently pursuing a Bachelor’s degree in Manufacturing Engineering, Industrial Engineering, Mechanical Engineering, Electrical/Computer Engineering, Mechatroni",
+      "status": "met",
+      "why": "You're Aerospace Engineering"
+     },
+     {
+      "text": "High technological aptitude with a passion for smart manufacturing and hands-on production environments.",
+      "status": "met",
+      "why": "You have: Prototyping & fabrication"
+     },
+     {
+      "text": "Basic familiarity with manufacturing processes, automation, or software logic.",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Confidence in Excel functionality and high attention to detail.",
+      "status": "met",
+      "why": "You have: Excel / data analysis"
+     },
+     {
+      "text": "Strong interpersonal, verbal, and written communication skills with the ability to interact comfortably with shop-floor operators and cross-functional engineers",
+      "status": "soft",
+      "why": ""
+     }
+    ],
+    "preferred": [
+     {
+      "text": "Prior exposure to Manufacturing Execution Systems (MES) such as Apriso.",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Foundational coursework or experience with database fundamentals (e.g., basic SQL queries), programming/scripting (e.g., Python), or industrial networking basic",
+      "status": "met",
+      "why": "You have: Python"
+     },
+     {
+      "text": "Understanding of Lean Manufacturing principles (Kaizen, 5S, Standard Work, Poka-Yoke, Value Stream Mapping).",
+      "status": "check",
+      "why": "Coursework or background (check your classes)"
+     },
+     {
+      "text": "Previous internship, co-op, or academic lab experience in a manufacturing, assembly, fabrication, or controls environment.",
+      "status": "met",
+      "why": "You have: Prototyping & fabrication"
+     }
+    ],
+    "summary": {
+     "required_checked": 3,
+     "required_met": 3.0,
+     "required_missing": 0,
+     "to_check": 1,
+     "preferred_met": 2,
+     "preferred_total": 2
+    }
+   },
+   "matched": [
+    "Python",
+    "Prototyping & fabrication",
+    "Excel / data analysis"
+   ],
+   "related": [],
+   "gaps": [
+    "Controls / GNC"
+   ],
+   "flags": [],
+   "has_description": true,
+   "first_seen": "2026-11-08",
    "last_seen": "2026-11-08"
   },
   {
@@ -82057,11 +82216,11 @@
    "company": "Leonardo DRS",
    "title": "Senior Technical Intern - Mechanical",
    "location": "San Diego, CA, US, 92127",
-   "url": "https://careers.leonardodrs.com/job/San-Diego-Senior-Technical-Intern-Mechanical-CA-92127/1429934000/",
+   "url": "https://careers.leonardodrs.com/job/San-Diego-Senior-Technical-Intern-Mechanical-CA-92127/1428348700/",
    "source": "Leonardo DRS careers",
    "posted": "2026-10-15",
    "source_id": "Leonardo DRS",
-   "key": "url:https://careers.leonardodrs.com/job/san-diego-senior-technical-intern-mechanical-ca-92127/1429934000",
+   "key": "url:https://careers.leonardodrs.com/job/san-diego-senior-technical-intern-mechanical-ca-92127/1428348700",
    "tracks": {
     "summer": {
      "score": 55,
@@ -82138,11 +82297,11 @@
    "company": "Leonardo DRS",
    "title": "Senior Technical Intern - Mechanical",
    "location": "San Diego, CA, US, 92127",
-   "url": "https://careers.leonardodrs.com/job/San-Diego-Senior-Technical-Intern-Mechanical-CA-92127/1428348700/",
+   "url": "https://careers.leonardodrs.com/job/San-Diego-Senior-Technical-Intern-Mechanical-CA-92127/1429934000/",
    "source": "Leonardo DRS careers",
    "posted": "2026-10-15",
    "source_id": "Leonardo DRS",
-   "key": "url:https://careers.leonardodrs.com/job/san-diego-senior-technical-intern-mechanical-ca-92127/1428348700",
+   "key": "url:https://careers.leonardodrs.com/job/san-diego-senior-technical-intern-mechanical-ca-92127/1429934000",
    "tracks": {
     "summer": {
      "score": 55,
@@ -99201,54 +99360,6 @@
   },
   {
    "company": "Gulfstream Aerospace",
-   "title": "Summer 2027 - IEF - Flight Sciences / Thermofluid Analysis Collegiate Intern",
-   "location": "Savannah, GA, United States",
-   "url": "https://www.google.com/search?q=Gulfstream+Aerospace+%22Summer+2027+-+IEF+-+Flight+Sciences+%2F+Thermofluid+Analysis+Collegiate+Intern%22",
-   "key": "il:6aa9b32f28e24cb38513b7a1",
-   "lead": true,
-   "source": "intern-list.com",
-   "posted": "2026-10-09",
-   "source_id": "intern-list.com",
-   "tracks": {
-    "summer": {
-     "score": 65,
-     "tier": "good",
-     "parts": {
-      "fit": 40,
-      "skills": 0,
-      "eligibility": 25,
-      "requirements": 0
-     },
-     "season": "match",
-     "season_label": "Summer 2027"
-    },
-    "broad": {
-     "score": 63,
-     "tier": "good",
-     "parts": {
-      "fit": 38,
-      "skills": 0,
-      "eligibility": 25,
-      "requirements": 0
-     },
-     "season": "match",
-     "season_label": "Summer 2027"
-    }
-   },
-   "score": 65,
-   "tier": "good",
-   "discipline": "Aerospace",
-   "quals": null,
-   "matched": [],
-   "related": [],
-   "gaps": [],
-   "flags": [],
-   "has_description": true,
-   "first_seen": "2026-11-05",
-   "last_seen": "2026-11-08"
-  },
-  {
-   "company": "Gulfstream Aerospace",
    "title": "Summer 2027 - IEF - Stress Engineering - Collegiate Associate Intern",
    "location": "Savannah, GA, United States",
    "url": "https://www.google.com/search?q=Gulfstream+Aerospace+%22Summer+2027+-+IEF+-+Stress+Engineering+-+Collegiate+Associate+Intern%22",
@@ -99296,6 +99407,54 @@
      "label": "Min GPA 3.0"
     }
    ],
+   "has_description": true,
+   "first_seen": "2026-11-05",
+   "last_seen": "2026-11-08"
+  },
+  {
+   "company": "Gulfstream Aerospace",
+   "title": "Summer 2027 - IEF - Flight Sciences / Thermofluid Analysis Collegiate Intern",
+   "location": "Savannah, GA, United States",
+   "url": "https://www.google.com/search?q=Gulfstream+Aerospace+%22Summer+2027+-+IEF+-+Flight+Sciences+%2F+Thermofluid+Analysis+Collegiate+Intern%22",
+   "key": "il:6aa9b32f28e24cb38513b7a1",
+   "lead": true,
+   "source": "intern-list.com",
+   "posted": "2026-10-09",
+   "source_id": "intern-list.com",
+   "tracks": {
+    "summer": {
+     "score": 65,
+     "tier": "good",
+     "parts": {
+      "fit": 40,
+      "skills": 0,
+      "eligibility": 25,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    },
+    "broad": {
+     "score": 63,
+     "tier": "good",
+     "parts": {
+      "fit": 38,
+      "skills": 0,
+      "eligibility": 25,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    }
+   },
+   "score": 65,
+   "tier": "good",
+   "discipline": "Aerospace",
+   "quals": null,
+   "matched": [],
+   "related": [],
+   "gaps": [],
+   "flags": [],
    "has_description": true,
    "first_seen": "2026-11-05",
    "last_seen": "2026-11-08"
@@ -104103,73 +104262,6 @@
    "company": "CNH",
    "title": "Electrical Design Engineering Intern",
    "location": "Sioux Falls, SD, USA",
-   "url": "https://join.cnh.com/job/Electrical-Design-Engineering-Intern/5764-en_US",
-   "source": "CNH careers",
-   "posted": "2026-09-21",
-   "source_id": "CNH",
-   "key": "url:https://join.cnh.com/job/electrical-design-engineering-intern/5764-en_us",
-   "tracks": {
-    "broad": {
-     "score": 64,
-     "tier": "good",
-     "parts": {
-      "fit": 30,
-      "skills": 12,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Summer (year not stated)"
-    }
-   },
-   "score": 64,
-   "tier": "good",
-   "discipline": "Mechanical",
-   "quals": {
-    "required": [
-     {
-      "text": "Actively enrolled student pursuing a Bachelors' or Master's degree in engineering with focus in an embedded systems related technical field (electrical, electro",
-      "status": "met",
-      "why": "Engineering degree: Aerospace Engineering counts"
-     }
-    ],
-    "preferred": [
-     {
-      "text": "Able to demonstrate/discuss a coursework-related or personal project in embedded systems/digital logic/circuits design.",
-      "status": "partial",
-      "why": "Close: Embedded ≈ Arduino / microcontrollers"
-     },
-     {
-      "text": "Coursework or lab experience operating oscilloscope, digital multi-meter, function generator or similar lab bench equipment.",
-      "status": "check",
-      "why": "Coursework or background (check your classes)"
-     }
-    ],
-    "summary": {
-     "required_checked": 1,
-     "required_met": 1.0,
-     "required_missing": 0,
-     "to_check": 1,
-     "preferred_met": 0,
-     "preferred_total": 1
-    }
-   },
-   "matched": [
-    "Prototyping & fabrication"
-   ],
-   "related": [
-    "Embedded (close to Arduino / microcontrollers)"
-   ],
-   "gaps": [],
-   "flags": [],
-   "has_description": true,
-   "first_seen": "2026-11-02",
-   "last_seen": "2026-11-08"
-  },
-  {
-   "company": "CNH",
-   "title": "Electrical Design Engineering Intern",
-   "location": "Sioux Falls, SD, USA",
    "url": "https://join.cnh.com/job/Electrical-Design-Engineering-Intern/5767-en_US",
    "source": "CNH careers",
    "posted": "2026-09-21",
@@ -104231,6 +104323,73 @@
    "flags": [],
    "has_description": true,
    "first_seen": "2026-11-07",
+   "last_seen": "2026-11-08"
+  },
+  {
+   "company": "CNH",
+   "title": "Electrical Design Engineering Intern",
+   "location": "Sioux Falls, SD, USA",
+   "url": "https://join.cnh.com/job/Electrical-Design-Engineering-Intern/5764-en_US",
+   "source": "CNH careers",
+   "posted": "2026-09-21",
+   "source_id": "CNH",
+   "key": "url:https://join.cnh.com/job/electrical-design-engineering-intern/5764-en_us",
+   "tracks": {
+    "broad": {
+     "score": 64,
+     "tier": "good",
+     "parts": {
+      "fit": 30,
+      "skills": 12,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Summer (year not stated)"
+    }
+   },
+   "score": 64,
+   "tier": "good",
+   "discipline": "Mechanical",
+   "quals": {
+    "required": [
+     {
+      "text": "Actively enrolled student pursuing a Bachelors' or Master's degree in engineering with focus in an embedded systems related technical field (electrical, electro",
+      "status": "met",
+      "why": "Engineering degree: Aerospace Engineering counts"
+     }
+    ],
+    "preferred": [
+     {
+      "text": "Able to demonstrate/discuss a coursework-related or personal project in embedded systems/digital logic/circuits design.",
+      "status": "partial",
+      "why": "Close: Embedded ≈ Arduino / microcontrollers"
+     },
+     {
+      "text": "Coursework or lab experience operating oscilloscope, digital multi-meter, function generator or similar lab bench equipment.",
+      "status": "check",
+      "why": "Coursework or background (check your classes)"
+     }
+    ],
+    "summary": {
+     "required_checked": 1,
+     "required_met": 1.0,
+     "required_missing": 0,
+     "to_check": 1,
+     "preferred_met": 0,
+     "preferred_total": 1
+    }
+   },
+   "matched": [
+    "Prototyping & fabrication"
+   ],
+   "related": [
+    "Embedded (close to Arduino / microcontrollers)"
+   ],
+   "gaps": [],
+   "flags": [],
+   "has_description": true,
+   "first_seen": "2026-11-02",
    "last_seen": "2026-11-08"
   },
   {
@@ -109175,12 +109334,13 @@
   {
    "company": "Bombardier",
    "title": "Summer 2027: Avionics Engineering Intern",
-   "location": "Wichita, KS, USA, 67209",
-   "url": "https://jobs.bombardier.com/job/Summer-2027-Avionics-Engineering-Intern/15377-en_US",
-   "source": "Bombardier careers",
-   "posted": "2026-09-14",
-   "source_id": "Bombardier",
-   "key": "url:https://jobs.bombardier.com/job/summer-2027-avionics-engineering-intern/15377-en_us",
+   "location": "Wichita, KS, United States",
+   "url": "https://www.google.com/search?q=Bombardier+%22Summer+2027%3A+Avionics+Engineering+Intern%22",
+   "key": "il:6ac87739c3a8af9c54a06cf1",
+   "lead": true,
+   "source": "intern-list.com",
+   "posted": "2026-10-27",
+   "source_id": "intern-list.com",
    "tracks": {
     "summer": {
      "score": 57,
@@ -128484,12 +128644,13 @@
   {
    "company": "Bombardier",
    "title": "Year-round Avionics Engineering Intern",
-   "location": "Wichita, KS, USA, 67209",
-   "url": "https://jobs.bombardier.com/job/Year-round-Avionics-Engineering-Intern/15310-en_US",
-   "source": "Bombardier careers",
-   "posted": "2026-09-14",
-   "source_id": "Bombardier",
-   "key": "url:https://jobs.bombardier.com/job/year-round-avionics-engineering-intern/15310-en_us",
+   "location": "Wichita, KS, United States",
+   "url": "https://www.google.com/search?q=Bombardier+%22Year-round+Avionics+Engineering+Intern%22",
+   "key": "il:6aa8969882e82a31997c69a1",
+   "lead": true,
+   "source": "intern-list.com",
+   "posted": "2026-10-28",
+   "source_id": "intern-list.com",
    "tracks": {
     "summer": {
      "score": 54,
@@ -128525,7 +128686,7 @@
    "gaps": [],
    "flags": [],
    "has_description": true,
-   "first_seen": "2026-11-07",
+   "first_seen": "2026-11-08",
    "last_seen": "2026-11-08"
   },
   {
@@ -146321,13 +146482,13 @@
   },
   {
    "company": "CNH",
-   "title": "Manufacturing Engineer Intern 1",
+   "title": "Manufacturing Engineer Intern - Logistics",
    "location": "Racine, WI, USA",
-   "url": "https://join.cnh.com/job/Manufacturing-Engineer-Intern-1/5570-en_US",
+   "url": "https://join.cnh.com/job/Manufacturing-Engineer-Intern-Logistics/5573-en_US",
    "source": "CNH careers",
-   "posted": "2026-09-11",
+   "posted": "2026-09-01",
    "source_id": "CNH",
-   "key": "url:https://join.cnh.com/job/manufacturing-engineer-intern-1/5570-en_us",
+   "key": "url:https://join.cnh.com/job/manufacturing-engineer-intern-logistics/5573-en_us",
    "tracks": {
     "broad": {
      "score": 58,
@@ -146406,18 +146567,18 @@
     }
    ],
    "has_description": true,
-   "first_seen": "2026-11-02",
+   "first_seen": "2026-11-07",
    "last_seen": "2026-11-08"
   },
   {
    "company": "CNH",
    "title": "Manufacturing Engineer Intern 1",
    "location": "Racine, WI, USA",
-   "url": "https://join.cnh.com/job/Manufacturing-Engineer-Intern-1/5569-en_US",
+   "url": "https://join.cnh.com/job/Manufacturing-Engineer-Intern-1/5567-en_US",
    "source": "CNH careers",
-   "posted": "2026-09-11",
+   "posted": "2026-09-01",
    "source_id": "CNH",
-   "key": "url:https://join.cnh.com/job/manufacturing-engineer-intern-1/5569-en_us",
+   "key": "url:https://join.cnh.com/job/manufacturing-engineer-intern-1/5567-en_us",
    "tracks": {
     "broad": {
      "score": 58,
@@ -146508,96 +146669,6 @@
    "posted": "2026-09-01",
    "source_id": "CNH",
    "key": "url:https://join.cnh.com/job/manufacturing-engineer-intern-safety/5571-en_us",
-   "tracks": {
-    "broad": {
-     "score": 58,
-     "tier": "good",
-     "parts": {
-      "fit": 24,
-      "skills": 12,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Summer (year not stated)"
-    }
-   },
-   "score": 58,
-   "tier": "good",
-   "discipline": "Manufacturing & industrial",
-   "quals": {
-    "required": [],
-    "preferred": [
-     {
-      "text": "Must be a sophomore, junior, or senior pursuing a Bachelor’s degree in Manufacturing Engineering, Industrial Engineering, or a related field",
-      "status": "met",
-      "why": "Open to underclassmen"
-     },
-     {
-      "text": "Strong problem-solving and analytical skills with the ability to work independently",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "Ability to manage multiple priorities and meet deadlines in a fast-paced environment",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "Strong written and verbal communication skills",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "Intermediate Excel skills and basic data analysis experience required",
-      "status": "met",
-      "why": "You have: Excel / data analysis"
-     },
-     {
-      "text": "Farming background or experience in agriculture, construction, or landscaping preferred, but not required",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Some positions may require the ability to travel to other sites",
-      "status": "soft",
-      "why": ""
-     }
-    ],
-    "summary": {
-     "required_checked": 0,
-     "required_met": 0.0,
-     "required_missing": 0,
-     "to_check": 0,
-     "preferred_met": 2,
-     "preferred_total": 2
-    }
-   },
-   "matched": [
-    "Prototyping & fabrication",
-    "Excel / data analysis"
-   ],
-   "related": [],
-   "gaps": [],
-   "flags": [
-    {
-     "kind": "good",
-     "label": "Open to underclassmen"
-    }
-   ],
-   "has_description": true,
-   "first_seen": "2026-11-02",
-   "last_seen": "2026-11-08"
-  },
-  {
-   "company": "CNH",
-   "title": "Manufacturing Engineer Intern 1",
-   "location": "Racine, WI, USA",
-   "url": "https://join.cnh.com/job/Manufacturing-Engineer-Intern-1/5567-en_US",
-   "source": "CNH careers",
-   "posted": "2026-09-01",
-   "source_id": "CNH",
-   "key": "url:https://join.cnh.com/job/manufacturing-engineer-intern-1/5567-en_us",
    "tracks": {
     "broad": {
      "score": 58,
@@ -146790,13 +146861,13 @@
   },
   {
    "company": "CNH",
-   "title": "Manufacturing Engineer Intern - Logistics",
+   "title": "Manufacturing Engineer Intern 1",
    "location": "Racine, WI, USA",
-   "url": "https://join.cnh.com/job/Manufacturing-Engineer-Intern-Logistics/5573-en_US",
+   "url": "https://join.cnh.com/job/Manufacturing-Engineer-Intern-1/5570-en_US",
    "source": "CNH careers",
-   "posted": "2026-09-01",
+   "posted": "2026-09-11",
    "source_id": "CNH",
-   "key": "url:https://join.cnh.com/job/manufacturing-engineer-intern-logistics/5573-en_us",
+   "key": "url:https://join.cnh.com/job/manufacturing-engineer-intern-1/5570-en_us",
    "tracks": {
     "broad": {
      "score": 58,
@@ -146875,7 +146946,97 @@
     }
    ],
    "has_description": true,
-   "first_seen": "2026-11-07",
+   "first_seen": "2026-11-02",
+   "last_seen": "2026-11-08"
+  },
+  {
+   "company": "CNH",
+   "title": "Manufacturing Engineer Intern 1",
+   "location": "Racine, WI, USA",
+   "url": "https://join.cnh.com/job/Manufacturing-Engineer-Intern-1/5569-en_US",
+   "source": "CNH careers",
+   "posted": "2026-09-11",
+   "source_id": "CNH",
+   "key": "url:https://join.cnh.com/job/manufacturing-engineer-intern-1/5569-en_us",
+   "tracks": {
+    "broad": {
+     "score": 58,
+     "tier": "good",
+     "parts": {
+      "fit": 24,
+      "skills": 12,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Summer (year not stated)"
+    }
+   },
+   "score": 58,
+   "tier": "good",
+   "discipline": "Manufacturing & industrial",
+   "quals": {
+    "required": [],
+    "preferred": [
+     {
+      "text": "Must be a sophomore, junior, or senior pursuing a Bachelor’s degree in Manufacturing Engineering, Industrial Engineering, or a related field",
+      "status": "met",
+      "why": "Open to underclassmen"
+     },
+     {
+      "text": "Strong problem-solving and analytical skills with the ability to work independently",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Ability to manage multiple priorities and meet deadlines in a fast-paced environment",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Strong written and verbal communication skills",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Intermediate Excel skills and basic data analysis experience required",
+      "status": "met",
+      "why": "You have: Excel / data analysis"
+     },
+     {
+      "text": "Farming background or experience in agriculture, construction, or landscaping preferred, but not required",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Some positions may require the ability to travel to other sites",
+      "status": "soft",
+      "why": ""
+     }
+    ],
+    "summary": {
+     "required_checked": 0,
+     "required_met": 0.0,
+     "required_missing": 0,
+     "to_check": 0,
+     "preferred_met": 2,
+     "preferred_total": 2
+    }
+   },
+   "matched": [
+    "Prototyping & fabrication",
+    "Excel / data analysis"
+   ],
+   "related": [],
+   "gaps": [],
+   "flags": [
+    {
+     "kind": "good",
+     "label": "Open to underclassmen"
+    }
+   ],
+   "has_description": true,
+   "first_seen": "2026-11-02",
    "last_seen": "2026-11-08"
   },
   {
@@ -150189,46 +150350,6 @@
   },
   {
    "company": "Latitude",
-   "title": "Engineering intern - Launch Vehicle Stage Test Bench (f/m/d)",
-   "location": "Reims",
-   "url": "https://www.latitude.eu/jobs#1g6m39qz57cfv9xymjvde0qex&:~:text=Engineering%20intern%20%E2%80%93%20Launch%20Vehicle%20Stage%20Test%20Bench%20(f/m/d)",
-   "source": "Space Capital job board",
-   "posted": "2026-10-27",
-   "source_id": "Space Capital job board",
-   "key": "url:https://www.latitude.eu/jobs",
-   "tracks": {
-    "broad": {
-     "score": 58,
-     "tier": "good",
-     "parts": {
-      "fit": 24,
-      "skills": 12,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Season not stated"
-    }
-   },
-   "score": 58,
-   "tier": "good",
-   "discipline": "Aerospace",
-   "quals": null,
-   "matched": [],
-   "related": [],
-   "gaps": [],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "Full description not loaded"
-    }
-   ],
-   "has_description": false,
-   "first_seen": "2026-10-27",
-   "last_seen": "2026-11-08"
-  },
-  {
-   "company": "Latitude",
    "title": "Engineering intern - engine test bench (f/m/d)",
    "location": "Reims",
    "url": "https://apply.hollo.io/soft/6ad232d6053079003620e786?companyId=6912e5e243455b0028401d8c&teamId=6912e7fd43455b0028401dbb&offerName=Celerity+test+bench+",
@@ -150265,6 +150386,46 @@
    ],
    "has_description": false,
    "first_seen": "2026-11-05",
+   "last_seen": "2026-11-08"
+  },
+  {
+   "company": "Latitude",
+   "title": "Engineering intern - Launch Vehicle Stage Test Bench (f/m/d)",
+   "location": "Reims",
+   "url": "https://www.latitude.eu/jobs#1g6m39qz57cfv9xymjvde0qex&:~:text=Engineering%20intern%20%E2%80%93%20Launch%20Vehicle%20Stage%20Test%20Bench%20(f/m/d)",
+   "source": "Space Capital job board",
+   "posted": "2026-10-27",
+   "source_id": "Space Capital job board",
+   "key": "url:https://www.latitude.eu/jobs",
+   "tracks": {
+    "broad": {
+     "score": 58,
+     "tier": "good",
+     "parts": {
+      "fit": 24,
+      "skills": 12,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Season not stated"
+    }
+   },
+   "score": 58,
+   "tier": "good",
+   "discipline": "Aerospace",
+   "quals": null,
+   "matched": [],
+   "related": [],
+   "gaps": [],
+   "flags": [
+    {
+     "kind": "info",
+     "label": "Full description not loaded"
+    }
+   ],
+   "has_description": false,
+   "first_seen": "2026-10-27",
    "last_seen": "2026-11-08"
   },
   {
@@ -151865,122 +152026,6 @@
   },
   {
    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
-   "title": "Commercial Engines Programs Intern (Summer 2027)",
-   "location": "US-CT-EAST HARTFORD-OBG ~ 400 Main St ~ BLDG OBG",
-   "url": "https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-CT-EAST-HARTFORD-OBG--400-Main-St--BLDG-OBG/Commercial-Engines-Programs-Intern--Summer-2027-_01884450",
-   "source": "RTX (Raytheon, Pratt & Whitney, Collins) careers",
-   "posted": "2026-11-02",
-   "source_id": "RTX (Raytheon, Pratt & Whitney, Collins)",
-   "key": "wd:globalhr:01884450",
-   "tracks": {
-    "summer": {
-     "score": 58,
-     "tier": "good",
-     "parts": {
-      "fit": 34,
-      "skills": 4,
-      "eligibility": 25,
-      "requirements": -5
-     },
-     "season": "match",
-     "season_label": "Summer 2027"
-    },
-    "broad": {
-     "score": 52,
-     "tier": "look",
-     "parts": {
-      "fit": 28,
-      "skills": 4,
-      "eligibility": 25,
-      "requirements": -5
-     },
-     "season": "match",
-     "season_label": "Summer 2027"
-    }
-   },
-   "score": 58,
-   "tier": "good",
-   "discipline": "Mechanical",
-   "quals": {
-    "required": [
-     {
-      "text": "U.S. citizenship is required, as only U.S. citizens are authorized to access information under this program/contract.",
-      "status": "met",
-      "why": "You're a U.S. citizen"
-     },
-     {
-      "text": "Must be pursuing a bachelor's or advanced degree in Finance, Marketing, Data Analytics, Information Systems, Mathematics, Supply Chain Management or any busines",
-      "status": "missing",
-      "why": "Wants a different major"
-     },
-     {
-      "text": "Must have 30 or more credit hours by the start of the internship",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Experience with general business operations",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Experience in Microsoft Office Tools",
-      "status": "met",
-      "why": "You have: Excel / data analysis"
-     },
-     {
-      "text": "U.S. citizenship is required, as only U.S. citizens are authorized to access certain necessary systems or sites.",
-      "status": "met",
-      "why": "You're a U.S. citizen"
-     },
-     {
-      "text": "Minimum GPA of 3.0",
-      "status": "check",
-      "why": "Needs GPA 3.0+"
-     },
-     {
-      "text": "Prior internship / job experience",
-      "status": "check",
-      "why": ""
-     }
-    ],
-    "preferred": [],
-    "summary": {
-     "required_checked": 4,
-     "required_met": 3.0,
-     "required_missing": 1,
-     "to_check": 1,
-     "preferred_met": 0,
-     "preferred_total": 0
-    }
-   },
-   "matched": [
-    "Excel / data analysis"
-   ],
-   "related": [],
-   "gaps": [],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "Min GPA 3.0"
-    },
-    {
-     "kind": "info",
-     "label": "U.S. person / ITAR",
-     "id": "citizen"
-    },
-    {
-     "kind": "info",
-     "label": "Clearance",
-     "id": "clearance"
-    }
-   ],
-   "has_description": true,
-   "first_seen": "2026-11-03",
-   "last_seen": "2026-11-08"
-  },
-  {
-   "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
    "title": "Systems Engineering Co-op - Boeing Platforms Displays (Summer/Fall)",
    "location": "US-IA-CEDAR RAPIDS-131 ~ 5450 C Ave NE ~ BLDG 131",
    "url": "https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-IA-CEDAR-RAPIDS-131--5450-C-Ave-NE--BLDG-131/Systems-Engineering-Co-op---Boeing-Platforms-Displays--Summer-Fall-_01871761",
@@ -152959,99 +153004,6 @@
    ],
    "has_description": true,
    "first_seen": "2026-11-02",
-   "last_seen": "2026-11-08"
-  },
-  {
-   "company": "Trane Technologies",
-   "title": "Engineering Co-Op",
-   "location": "Tyler, Texas, United States of America",
-   "url": "https://careers.tranetechnologies.com/global/en/job/JR-14080",
-   "source": "Trane Technologies careers",
-   "posted": "2026-11-06",
-   "source_id": "Trane Technologies",
-   "key": "url:https://careers.tranetechnologies.com/global/en/job/jr-14080",
-   "tracks": {
-    "broad": {
-     "score": 58,
-     "tier": "good",
-     "parts": {
-      "fit": 24,
-      "skills": 12,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Season not stated"
-    }
-   },
-   "score": 58,
-   "tier": "good",
-   "discipline": "General engineering",
-   "quals": {
-    "required": [
-     {
-      "text": "We are looking for enthusiastic, innovative team members who understand the importance of collaboration and customer focus.",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "Must be currently enrolled and pursuing a BS in Mechanical Engineering, Electrical Engineering, Robotics, Computer Engineering, Aerospace Engineering, or a rela",
-      "status": "met",
-      "why": "You're Aerospace Engineering"
-     },
-     {
-      "text": "Must be available to work Full-time for 6-8 consecutive months (January-August or May-December)",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "Collaborate with others to foster effective teamwork by linking own responsibilities to the team’s goals and needs - zeal for new information, knowledge, and ex",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "Establish courses of action for self and others to ensure work is completed efficiently; ability to prioritize tasks based on importance",
-      "status": "check",
-      "why": "Coursework or background (check your classes)"
-     },
-     {
-      "text": "Demonstrated leadership: campus organizations, sports team captain, resident advisor, etc. or exceptional leadership on work projects",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "U.S. citizen or have the legal right to work in the U.S. without requiring sponsorship now or in the future",
-      "status": "met",
-      "why": "You're a U.S. citizen"
-     }
-    ],
-    "preferred": [],
-    "summary": {
-     "required_checked": 2,
-     "required_met": 2.0,
-     "required_missing": 0,
-     "to_check": 1,
-     "preferred_met": 0,
-     "preferred_total": 0
-    }
-   },
-   "matched": [
-    "Prototyping & fabrication",
-    "Excel / data analysis"
-   ],
-   "related": [],
-   "gaps": [
-    "Machining / CNC"
-   ],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "U.S. person / ITAR",
-     "id": "citizen"
-    }
-   ],
-   "has_description": true,
-   "first_seen": "2026-11-07",
    "last_seen": "2026-11-08"
   },
   {
@@ -155072,13 +155024,13 @@
   },
   {
    "company": "BAE Systems",
-   "title": "Industrial Engineering Intern II, Summer 2027 - Austin, TX",
-   "location": "Austin, Texas, United States",
-   "url": "https://jobs.baesystems.com/global/en/job/131671BR",
+   "title": "Industrial Engineering Intern II, Summer 2027 - Nashua, NH",
+   "location": "Nashua, New Hampshire, United States",
+   "url": "https://jobs.baesystems.com/global/en/job/131674BR",
    "source": "BAE Systems careers",
    "posted": "2026-10-30",
    "source_id": "BAE Systems",
-   "key": "url:https://jobs.baesystems.com/global/en/job/131671br",
+   "key": "url:https://jobs.baesystems.com/global/en/job/131674br",
    "tracks": {
     "summer": {
      "score": 43,
@@ -155274,13 +155226,13 @@
   },
   {
    "company": "BAE Systems",
-   "title": "Industrial Engineering Intern II, Summer 2027 - Nashua, NH",
-   "location": "Nashua, New Hampshire, United States",
-   "url": "https://jobs.baesystems.com/global/en/job/131674BR",
+   "title": "Industrial Engineering Intern II, Summer 2027 - Austin, TX",
+   "location": "Austin, Texas, United States",
+   "url": "https://jobs.baesystems.com/global/en/job/131671BR",
    "source": "BAE Systems careers",
    "posted": "2026-10-30",
    "source_id": "BAE Systems",
-   "key": "url:https://jobs.baesystems.com/global/en/job/131674br",
+   "key": "url:https://jobs.baesystems.com/global/en/job/131671br",
    "tracks": {
     "summer": {
      "score": 43,
@@ -167099,117 +167051,6 @@
   },
   {
    "company": "Lockheed Martin",
-   "title": "Electrical Engineer (Digital Hardware) Intern",
-   "location": "Moorestown, NJ",
-   "url": "https://lockheedmartin.eightfold.ai/careers/job/996477557802",
-   "source": "Lockheed Martin careers",
-   "posted": "2026-11-04",
-   "source_id": "Lockheed Martin",
-   "key": "url:https://lockheedmartin.eightfold.ai/careers/job/996477557802",
-   "tracks": {
-    "summer": {
-     "score": 52,
-     "tier": "look",
-     "parts": {
-      "fit": 20,
-      "skills": 10,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Season not stated"
-    },
-    "broad": {
-     "score": 56,
-     "tier": "good",
-     "parts": {
-      "fit": 24,
-      "skills": 10,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Season not stated"
-    }
-   },
-   "score": 56,
-   "tier": "good",
-   "discipline": "Electrical",
-   "quals": {
-    "required": [
-     {
-      "text": "Pursuing a bachelor's degree in Engineering program in Electrical, Computer, or Systems Engineering",
-      "status": "met",
-      "why": "You're Aerospace Engineering"
-     },
-     {
-      "text": "Digital Hardware design experience through previous internships, class projects, or side projects",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Hands-on or lab experience with bench instruments (oscilloscope, multimeter, function generator) or equivalent classroom/design-project exposure",
-      "status": "met",
-      "why": "You have: Prototyping & fabrication"
-     },
-     {
-      "text": "Must be a US Citizen; this position will require a government security clearance. This position is located at a facility that requires special access",
-      "status": "met",
-      "why": "You're a U.S. citizen"
-     }
-    ],
-    "preferred": [
-     {
-      "text": "FPGA design with VHDL",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Experience with Altium, Xpedition, or other PCB design software",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "MATLAB — Algorithm Design/Modeling, Algorithm/System Performance Analysis, Root Cause Data Analysis",
-      "status": "met",
-      "why": "You have: Excel / data analysis"
-     }
-    ],
-    "summary": {
-     "required_checked": 3,
-     "required_met": 3.0,
-     "required_missing": 0,
-     "to_check": 0,
-     "preferred_met": 1,
-     "preferred_total": 1
-    }
-   },
-   "matched": [
-    "Prototyping & fabrication",
-    "Excel / data analysis"
-   ],
-   "related": [],
-   "gaps": [
-    "MATLAB"
-   ],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "U.S. person / ITAR",
-     "id": "citizen"
-    },
-    {
-     "kind": "info",
-     "label": "Clearance",
-     "id": "clearance"
-    }
-   ],
-   "has_description": true,
-   "first_seen": "2026-11-05",
-   "last_seen": "2026-11-08"
-  },
-  {
-   "company": "Lockheed Martin",
    "title": "Systems Engineer-Intern",
    "location": "Huntsville, AL",
    "url": "https://lockheedmartin.eightfold.ai/careers/job/996477428263",
@@ -167440,6 +167281,117 @@
    ],
    "has_description": true,
    "first_seen": "2026-10-27",
+   "last_seen": "2026-11-08"
+  },
+  {
+   "company": "Lockheed Martin",
+   "title": "Electrical Engineer (Digital Hardware) Intern",
+   "location": "Moorestown, NJ",
+   "url": "https://lockheedmartin.eightfold.ai/careers/job/996477557802",
+   "source": "Lockheed Martin careers",
+   "posted": "2026-11-04",
+   "source_id": "Lockheed Martin",
+   "key": "url:https://lockheedmartin.eightfold.ai/careers/job/996477557802",
+   "tracks": {
+    "summer": {
+     "score": 52,
+     "tier": "look",
+     "parts": {
+      "fit": 20,
+      "skills": 10,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Season not stated"
+    },
+    "broad": {
+     "score": 56,
+     "tier": "good",
+     "parts": {
+      "fit": 24,
+      "skills": 10,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Season not stated"
+    }
+   },
+   "score": 56,
+   "tier": "good",
+   "discipline": "Electrical",
+   "quals": {
+    "required": [
+     {
+      "text": "Pursuing a bachelor's degree in Engineering program in Electrical, Computer, or Systems Engineering",
+      "status": "met",
+      "why": "You're Aerospace Engineering"
+     },
+     {
+      "text": "Digital Hardware design experience through previous internships, class projects, or side projects",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Hands-on or lab experience with bench instruments (oscilloscope, multimeter, function generator) or equivalent classroom/design-project exposure",
+      "status": "met",
+      "why": "You have: Prototyping & fabrication"
+     },
+     {
+      "text": "Must be a US Citizen; this position will require a government security clearance. This position is located at a facility that requires special access",
+      "status": "met",
+      "why": "You're a U.S. citizen"
+     }
+    ],
+    "preferred": [
+     {
+      "text": "FPGA design with VHDL",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Experience with Altium, Xpedition, or other PCB design software",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "MATLAB — Algorithm Design/Modeling, Algorithm/System Performance Analysis, Root Cause Data Analysis",
+      "status": "met",
+      "why": "You have: Excel / data analysis"
+     }
+    ],
+    "summary": {
+     "required_checked": 3,
+     "required_met": 3.0,
+     "required_missing": 0,
+     "to_check": 0,
+     "preferred_met": 1,
+     "preferred_total": 1
+    }
+   },
+   "matched": [
+    "Prototyping & fabrication",
+    "Excel / data analysis"
+   ],
+   "related": [],
+   "gaps": [
+    "MATLAB"
+   ],
+   "flags": [
+    {
+     "kind": "info",
+     "label": "U.S. person / ITAR",
+     "id": "citizen"
+    },
+    {
+     "kind": "info",
+     "label": "Clearance",
+     "id": "clearance"
+    }
+   ],
+   "has_description": true,
+   "first_seen": "2026-11-05",
    "last_seen": "2026-11-08"
   },
   {
@@ -183807,109 +183759,6 @@
    "company": "Lockheed Martin",
    "title": "GN&C Engineer Intern",
    "location": "Littleton, CO",
-   "url": "https://lockheedmartin.eightfold.ai/careers/job/996477612243",
-   "source": "Lockheed Martin careers",
-   "posted": "2026-10-28",
-   "source_id": "Lockheed Martin",
-   "key": "url:https://lockheedmartin.eightfold.ai/careers/job/996477612243",
-   "tracks": {
-    "summer": {
-     "score": 52,
-     "tier": "look",
-     "parts": {
-      "fit": 16,
-      "skills": 14,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Season not stated"
-    },
-    "broad": {
-     "score": 54,
-     "tier": "look",
-     "parts": {
-      "fit": 18,
-      "skills": 14,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Season not stated"
-    }
-   },
-   "score": 54,
-   "tier": "look",
-   "discipline": "General engineering",
-   "quals": {
-    "required": [
-     {
-      "text": "Pursuing a BS Degree in Aerospace, Mechanical, Electrical Engineering, or related discipline with focus on controls and dynamics",
-      "status": "met",
-      "why": "You're Aerospace Engineering"
-     },
-     {
-      "text": "Familiar with simulation and programming tools (ex. Matlab/Simulink, C++, Python)",
-      "status": "met",
-      "why": "You have: Python, C++"
-     },
-     {
-      "text": "Pursuing or completed coursework in controls theory, rotational dynamics, orbital mechanics, or other Guidance, Navigation & Control related courses",
-      "status": "check",
-      "why": "Coursework: Controls / GNC (check your classes)"
-     },
-     {
-      "text": "Must be a US Citizen",
-      "status": "met",
-      "why": "You're a U.S. citizen"
-     }
-    ],
-    "preferred": [
-     {
-      "text": "Familiarity with a GN&C hardware suite for space applications",
-      "status": "partial",
-      "why": "Close: C ≈ C++"
-     },
-     {
-      "text": "Familiar with GN&C design principles",
-      "status": "partial",
-      "why": "Close: C ≈ C++"
-     }
-    ],
-    "summary": {
-     "required_checked": 3,
-     "required_met": 3.0,
-     "required_missing": 0,
-     "to_check": 1,
-     "preferred_met": 0,
-     "preferred_total": 2
-    }
-   },
-   "matched": [
-    "Python",
-    "C++"
-   ],
-   "related": [],
-   "gaps": [
-    "MATLAB",
-    "Simulink",
-    "Controls / GNC"
-   ],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "U.S. person / ITAR",
-     "id": "citizen"
-    }
-   ],
-   "has_description": true,
-   "first_seen": "2026-10-29",
-   "last_seen": "2026-11-08"
-  },
-  {
-   "company": "Lockheed Martin",
-   "title": "GN&C Engineer Intern",
-   "location": "Littleton, CO",
    "url": "https://lockheedmartin.eightfold.ai/careers/job/996477612413",
    "source": "Lockheed Martin careers",
    "posted": "2026-10-28",
@@ -184089,6 +183938,109 @@
      "to_check": 1,
      "preferred_met": 0,
      "preferred_total": 1
+    }
+   },
+   "matched": [
+    "Python",
+    "C++"
+   ],
+   "related": [],
+   "gaps": [
+    "MATLAB",
+    "Simulink",
+    "Controls / GNC"
+   ],
+   "flags": [
+    {
+     "kind": "info",
+     "label": "U.S. person / ITAR",
+     "id": "citizen"
+    }
+   ],
+   "has_description": true,
+   "first_seen": "2026-10-29",
+   "last_seen": "2026-11-08"
+  },
+  {
+   "company": "Lockheed Martin",
+   "title": "GN&C Engineer Intern",
+   "location": "Littleton, CO",
+   "url": "https://lockheedmartin.eightfold.ai/careers/job/996477612243",
+   "source": "Lockheed Martin careers",
+   "posted": "2026-10-28",
+   "source_id": "Lockheed Martin",
+   "key": "url:https://lockheedmartin.eightfold.ai/careers/job/996477612243",
+   "tracks": {
+    "summer": {
+     "score": 52,
+     "tier": "look",
+     "parts": {
+      "fit": 16,
+      "skills": 14,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Season not stated"
+    },
+    "broad": {
+     "score": 54,
+     "tier": "look",
+     "parts": {
+      "fit": 18,
+      "skills": 14,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Season not stated"
+    }
+   },
+   "score": 54,
+   "tier": "look",
+   "discipline": "General engineering",
+   "quals": {
+    "required": [
+     {
+      "text": "Pursuing a BS Degree in Aerospace, Mechanical, Electrical Engineering, or related discipline with focus on controls and dynamics",
+      "status": "met",
+      "why": "You're Aerospace Engineering"
+     },
+     {
+      "text": "Familiar with simulation and programming tools (ex. Matlab/Simulink, C++, Python)",
+      "status": "met",
+      "why": "You have: Python, C++"
+     },
+     {
+      "text": "Pursuing or completed coursework in controls theory, rotational dynamics, orbital mechanics, or other Guidance, Navigation & Control related courses",
+      "status": "check",
+      "why": "Coursework: Controls / GNC (check your classes)"
+     },
+     {
+      "text": "Must be a US Citizen",
+      "status": "met",
+      "why": "You're a U.S. citizen"
+     }
+    ],
+    "preferred": [
+     {
+      "text": "Familiarity with a GN&C hardware suite for space applications",
+      "status": "partial",
+      "why": "Close: C ≈ C++"
+     },
+     {
+      "text": "Familiar with GN&C design principles",
+      "status": "partial",
+      "why": "Close: C ≈ C++"
+     }
+    ],
+    "summary": {
+     "required_checked": 3,
+     "required_met": 3.0,
+     "required_missing": 0,
+     "to_check": 1,
+     "preferred_met": 0,
+     "preferred_total": 2
     }
    },
    "matched": [
@@ -193312,6 +193264,58 @@
    "flags": [],
    "has_description": true,
    "first_seen": "2026-11-02",
+   "last_seen": "2026-11-08"
+  },
+  {
+   "company": "MITRE",
+   "title": "Systems Engineering Intern",
+   "location": "Multi Location\nBedford, MA, United States\nMcLean, VA, United States",
+   "url": "https://www.google.com/search?q=MITRE+%22Systems+Engineering+Intern%22",
+   "key": "il:6abd8037372c01f6cd720ef5",
+   "lead": true,
+   "source": "intern-list.com",
+   "posted": "2026-10-12",
+   "source_id": "intern-list.com",
+   "tracks": {
+    "summer": {
+     "score": 53,
+     "tier": "look",
+     "parts": {
+      "fit": 24,
+      "skills": 7,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Season not stated"
+    },
+    "broad": {
+     "score": 53,
+     "tier": "look",
+     "parts": {
+      "fit": 24,
+      "skills": 7,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Season not stated"
+    }
+   },
+   "score": 53,
+   "tier": "look",
+   "discipline": "Systems",
+   "quals": null,
+   "matched": [
+    "Python"
+   ],
+   "related": [],
+   "gaps": [
+    "MATLAB"
+   ],
+   "flags": [],
+   "has_description": true,
+   "first_seen": "2026-11-08",
    "last_seen": "2026-11-08"
   },
   {
@@ -214885,300 +214889,6 @@
    "last_seen": "2026-11-08"
   },
   {
-   "company": "Lockheed Martin",
-   "title": "Electrical Engineer Intern",
-   "location": "Orlando, FL",
-   "url": "https://lockheedmartin.eightfold.ai/careers/job/996477518099",
-   "source": "Lockheed Martin careers",
-   "posted": "2026-10-23",
-   "source_id": "Lockheed Martin",
-   "key": "url:https://lockheedmartin.eightfold.ai/careers/job/996477518099",
-   "tracks": {
-    "summer": {
-     "score": 48,
-     "tier": "look",
-     "parts": {
-      "fit": 14,
-      "skills": 12,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Season not stated"
-    },
-    "broad": {
-     "score": 50,
-     "tier": "look",
-     "parts": {
-      "fit": 16,
-      "skills": 12,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Season not stated"
-    },
-    "fall": {
-     "score": 50,
-     "tier": "look",
-     "parts": {
-      "fit": 16,
-      "skills": 12,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Season not stated",
-     "miles": 12
-    }
-   },
-   "score": 50,
-   "tier": "look",
-   "discipline": "Electrical",
-   "quals": {
-    "required": [
-     {
-      "text": "Pursuing a bachelor's degree in Electrical Engineering or a closely related STEM field from an accredited university.",
-      "status": "met",
-      "why": "You're Aerospace Engineering"
-     },
-     {
-      "text": "Familiarity with test equipment (This may include oscilloscope, multimeter, function generator, signal generator, network analyzer, spectrum analyzer, logic ana",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Must be a US Citizen; must be able to obtain/maintain a DoD Secret clearance.",
-      "status": "met",
-      "why": "You're a U.S. citizen"
-     }
-    ],
-    "preferred": [
-     {
-      "text": "Related Electrical Engineering (EE) undergrad internship experience and/or electronic hands-on experience in an internship is a plus",
-      "status": "met",
-      "why": "You have: Prototyping & fabrication"
-     },
-     {
-      "text": "Ability to interpret technical documentation such as electronic data sheets, schematic diagrams, and test data is desired.",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Experience with schematic capture and/ or PCB layout tools (e.g., Altium Designer, Eagle, KiCad, Mentor Graphics, Cadence, etc.)",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Experience with simulation tools (LTspice, PSpice, Simulink, NI Multisim, MATLAB, etc.).",
-      "status": "missing",
-      "why": "Not on your resume: MATLAB, Simulink"
-     },
-     {
-      "text": "Experience with digital/analog design (PSpice, LTspice, TINA-TI).",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Exposure to a laboratory, design, or testing environment, engaging with hardware hands-on (soldering, breadboarding, prototype assembly, or similar)",
-      "status": "met",
-      "why": "You have: Prototyping & fabrication"
-     },
-     {
-      "text": "Excellent problem-solving skills with the ability to diagnose and troubleshoot complex electrical issues demonstrated through hands-on experience.",
-      "status": "met",
-      "why": "You have: Prototyping & fabrication"
-     },
-     {
-      "text": "Understanding of electromagnetic compatibility (EMC) and electromagnetic interference (EMI) principles.",
-      "status": "check",
-      "why": "Coursework or background (check your classes)"
-     }
-    ],
-    "summary": {
-     "required_checked": 2,
-     "required_met": 2.0,
-     "required_missing": 0,
-     "to_check": 1,
-     "preferred_met": 3,
-     "preferred_total": 4
-    }
-   },
-   "matched": [
-    "Prototyping & fabrication"
-   ],
-   "related": [
-    "Embedded (close to Arduino / microcontrollers)"
-   ],
-   "gaps": [
-    "MATLAB",
-    "Simulink",
-    "Drawings / drafting"
-   ],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "U.S. person / ITAR",
-     "id": "citizen"
-    },
-    {
-     "kind": "info",
-     "label": "Clearance",
-     "id": "clearance"
-    }
-   ],
-   "has_description": true,
-   "first_seen": "2026-10-23",
-   "last_seen": "2026-11-08"
-  },
-  {
-   "company": "Lockheed Martin",
-   "title": "Electrical Engineer Intern",
-   "location": "Orlando, FL",
-   "url": "https://lockheedmartin.eightfold.ai/careers/job/996477517944",
-   "source": "Lockheed Martin careers",
-   "posted": "2026-10-23",
-   "source_id": "Lockheed Martin",
-   "key": "url:https://lockheedmartin.eightfold.ai/careers/job/996477517944",
-   "tracks": {
-    "summer": {
-     "score": 48,
-     "tier": "look",
-     "parts": {
-      "fit": 14,
-      "skills": 12,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Season not stated"
-    },
-    "broad": {
-     "score": 50,
-     "tier": "look",
-     "parts": {
-      "fit": 16,
-      "skills": 12,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Season not stated"
-    },
-    "fall": {
-     "score": 50,
-     "tier": "look",
-     "parts": {
-      "fit": 16,
-      "skills": 12,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Season not stated",
-     "miles": 12
-    }
-   },
-   "score": 50,
-   "tier": "look",
-   "discipline": "Electrical",
-   "quals": {
-    "required": [
-     {
-      "text": "Pursuing a bachelor's degree in Electrical Engineering or a closely related STEM field from an accredited university.",
-      "status": "met",
-      "why": "You're Aerospace Engineering"
-     },
-     {
-      "text": "Familiarity with test equipment (This may include oscilloscope, multimeter, function generator, signal generator, network analyzer, spectrum analyzer, logic ana",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Must be a US Citizen; must be able to obtain/maintain a DoD Secret clearance.",
-      "status": "met",
-      "why": "You're a U.S. citizen"
-     }
-    ],
-    "preferred": [
-     {
-      "text": "Related Electrical Engineering (EE) undergrad internship experience and/or electronic hands-on experience in an internship is a plus",
-      "status": "met",
-      "why": "You have: Prototyping & fabrication"
-     },
-     {
-      "text": "Ability to interpret technical documentation such as electronic data sheets, schematic diagrams, and test data is desired.",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Experience with schematic capture and/ or PCB layout tools (e.g., Altium Designer, Eagle, KiCad, Mentor Graphics, Cadence, etc.)",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Experience with simulation tools (LTspice, PSpice, Simulink, NI Multisim, MATLAB, etc.), Experience with digital/analog design (PSpice, LTspice, TINA-TI).",
-      "status": "missing",
-      "why": "Not on your resume: MATLAB, Simulink"
-     },
-     {
-      "text": "Exposure to a laboratory, design, or testing environment, engaging with hardware hands-on (soldering, breadboarding, prototype assembly, or similar)",
-      "status": "met",
-      "why": "You have: Prototyping & fabrication"
-     },
-     {
-      "text": "Excellent problem-solving skills with the ability to diagnose and troubleshoot complex electrical issues demonstrated through hands-on experience.",
-      "status": "met",
-      "why": "You have: Prototyping & fabrication"
-     },
-     {
-      "text": "Understanding of electromagnetic compatibility (EMC) and electromagnetic interference (EMI) principles.",
-      "status": "check",
-      "why": "Coursework or background (check your classes)"
-     },
-     {
-      "text": "Familiarity with embedded systems, microprocessors, and digital signal processing principles",
-      "status": "partial",
-      "why": "Close: Embedded ≈ Arduino / microcontrollers"
-     }
-    ],
-    "summary": {
-     "required_checked": 2,
-     "required_met": 2.0,
-     "required_missing": 0,
-     "to_check": 1,
-     "preferred_met": 3,
-     "preferred_total": 5
-    }
-   },
-   "matched": [
-    "Prototyping & fabrication"
-   ],
-   "related": [
-    "Embedded (close to Arduino / microcontrollers)"
-   ],
-   "gaps": [
-    "MATLAB",
-    "Simulink",
-    "Drawings / drafting"
-   ],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "U.S. person / ITAR",
-     "id": "citizen"
-    },
-    {
-     "kind": "info",
-     "label": "Clearance",
-     "id": "clearance"
-    }
-   ],
-   "has_description": true,
-   "first_seen": "2026-11-08",
-   "last_seen": "2026-11-08"
-  },
-  {
    "company": "MITRE",
    "title": "AI Engineering Intern",
    "location": "Bedford, Massachusetts, United States of America; McLean, Virginia, United States of America",
@@ -224895,54 +224605,6 @@
   },
   {
    "company": "RTX",
-   "title": "Systems Engineer Intern - Summer 2027 (Onsite)",
-   "location": "Cedar Rapids, Iowa, United States",
-   "url": "https://www.google.com/search?q=RTX+%22Systems+Engineer+Intern+-+Summer+2027+%28Onsite%29%22",
-   "key": "il:6aebe100765815f7d7464455",
-   "lead": true,
-   "source": "intern-list.com",
-   "posted": "2026-11-03",
-   "source_id": "intern-list.com",
-   "tracks": {
-    "summer": {
-     "score": 49,
-     "tier": "look",
-     "parts": {
-      "fit": 24,
-      "skills": 0,
-      "eligibility": 25,
-      "requirements": 0
-     },
-     "season": "match",
-     "season_label": "Summer 2027"
-    },
-    "broad": {
-     "score": 49,
-     "tier": "look",
-     "parts": {
-      "fit": 24,
-      "skills": 0,
-      "eligibility": 25,
-      "requirements": 0
-     },
-     "season": "match",
-     "season_label": "Summer 2027"
-    }
-   },
-   "score": 49,
-   "tier": "look",
-   "discipline": "Systems",
-   "quals": null,
-   "matched": [],
-   "related": [],
-   "gaps": [],
-   "flags": [],
-   "has_description": true,
-   "first_seen": "2026-11-05",
-   "last_seen": "2026-11-08"
-  },
-  {
-   "company": "RTX",
    "title": "Systems Engineer 2027 Summer Intern (Onsite)",
    "location": "Richardson, TX, United States",
    "url": "https://www.google.com/search?q=RTX+%22Systems+Engineer+2027+Summer+Intern+%28Onsite%29%22",
@@ -224993,6 +224655,54 @@
    ],
    "has_description": true,
    "first_seen": "2026-11-04",
+   "last_seen": "2026-11-08"
+  },
+  {
+   "company": "RTX",
+   "title": "Systems Engineer Intern - Summer 2027 (Onsite)",
+   "location": "Cedar Rapids, Iowa, United States",
+   "url": "https://www.google.com/search?q=RTX+%22Systems+Engineer+Intern+-+Summer+2027+%28Onsite%29%22",
+   "key": "il:6aebe100765815f7d7464455",
+   "lead": true,
+   "source": "intern-list.com",
+   "posted": "2026-11-03",
+   "source_id": "intern-list.com",
+   "tracks": {
+    "summer": {
+     "score": 49,
+     "tier": "look",
+     "parts": {
+      "fit": 24,
+      "skills": 0,
+      "eligibility": 25,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    },
+    "broad": {
+     "score": 49,
+     "tier": "look",
+     "parts": {
+      "fit": 24,
+      "skills": 0,
+      "eligibility": 25,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    }
+   },
+   "score": 49,
+   "tier": "look",
+   "discipline": "Systems",
+   "quals": null,
+   "matched": [],
+   "related": [],
+   "gaps": [],
+   "flags": [],
+   "has_description": true,
+   "first_seen": "2026-11-05",
    "last_seen": "2026-11-08"
   },
   {
@@ -226657,104 +226367,6 @@
    "flags": [],
    "has_description": true,
    "first_seen": "2026-11-02",
-   "last_seen": "2026-11-08"
-  },
-  {
-   "company": "Trane Technologies",
-   "title": "Product Support - Engineering Co-Op",
-   "location": "Pueblo, Colorado, United States of America",
-   "url": "https://careers.tranetechnologies.com/global/en/job/JR-15707",
-   "source": "Trane Technologies careers",
-   "posted": "2026-10-12",
-   "source_id": "Trane Technologies",
-   "key": "url:https://careers.tranetechnologies.com/global/en/job/jr-15707",
-   "tracks": {
-    "broad": {
-     "score": 49,
-     "tier": "look",
-     "parts": {
-      "fit": 22,
-      "skills": 5,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Season not stated"
-    }
-   },
-   "score": 49,
-   "tier": "look",
-   "discipline": "General engineering",
-   "quals": null,
-   "matched": [
-    "Excel / data analysis"
-   ],
-   "related": [],
-   "gaps": [
-    "Heat transfer / thermal"
-   ],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "Min GPA 3.0"
-    },
-    {
-     "kind": "info",
-     "label": "U.S. person / ITAR",
-     "id": "citizen"
-    }
-   ],
-   "has_description": true,
-   "first_seen": "2026-11-08",
-   "last_seen": "2026-11-08"
-  },
-  {
-   "company": "Trane Technologies",
-   "title": "Product Support - Engineering Co-Op",
-   "location": "La Crosse, Wisconsin, United States of America",
-   "url": "https://careers.tranetechnologies.com/global/en/job/JR-15936",
-   "source": "Trane Technologies careers",
-   "posted": "2026-10-12",
-   "source_id": "Trane Technologies",
-   "key": "url:https://careers.tranetechnologies.com/global/en/job/jr-15936",
-   "tracks": {
-    "broad": {
-     "score": 49,
-     "tier": "look",
-     "parts": {
-      "fit": 22,
-      "skills": 5,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Season not stated"
-    }
-   },
-   "score": 49,
-   "tier": "look",
-   "discipline": "General engineering",
-   "quals": null,
-   "matched": [
-    "Excel / data analysis"
-   ],
-   "related": [],
-   "gaps": [
-    "Heat transfer / thermal"
-   ],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "Min GPA 3.0"
-    },
-    {
-     "kind": "info",
-     "label": "U.S. person / ITAR",
-     "id": "citizen"
-    }
-   ],
-   "has_description": true,
-   "first_seen": "2026-11-07",
    "last_seen": "2026-11-08"
   },
   {
@@ -245295,44 +244907,6 @@
   },
   {
    "company": "Hpe Simplivity",
-   "title": "ASIC Verification Engineering Intern",
-   "location": "Roseville, CA, USA",
-   "url": "https://careers.hpe.com/us/en/job/1214219",
-   "source": "Accel portfolio board",
-   "posted": "2026-10-13",
-   "source_id": "Accel portfolio board",
-   "key": "url:https://careers.hpe.com/us/en/job/1214219",
-   "tracks": {
-    "broad": {
-     "score": 46,
-     "tier": "look",
-     "parts": {
-      "fit": 10,
-      "skills": 14,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Summer (year not stated)"
-    }
-   },
-   "score": 46,
-   "tier": "look",
-   "discipline": "Electrical",
-   "quals": null,
-   "matched": [
-    "Python",
-    "C++"
-   ],
-   "related": [],
-   "gaps": [],
-   "flags": [],
-   "has_description": true,
-   "first_seen": "2026-11-05",
-   "last_seen": "2026-11-08"
-  },
-  {
-   "company": "Hpe Simplivity",
    "title": "Firmware Engineering Intern",
    "location": "Sunnyvale, CA, USA",
    "url": "https://careers.hpe.com/us/en/job/1214254",
@@ -245366,6 +244940,44 @@
    "gaps": [
     "Linux"
    ],
+   "flags": [],
+   "has_description": true,
+   "first_seen": "2026-11-05",
+   "last_seen": "2026-11-08"
+  },
+  {
+   "company": "Hpe Simplivity",
+   "title": "ASIC Verification Engineering Intern",
+   "location": "Roseville, CA, USA",
+   "url": "https://careers.hpe.com/us/en/job/1214219",
+   "source": "Accel portfolio board",
+   "posted": "2026-10-13",
+   "source_id": "Accel portfolio board",
+   "key": "url:https://careers.hpe.com/us/en/job/1214219",
+   "tracks": {
+    "broad": {
+     "score": 46,
+     "tier": "look",
+     "parts": {
+      "fit": 10,
+      "skills": 14,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Summer (year not stated)"
+    }
+   },
+   "score": 46,
+   "tier": "look",
+   "discipline": "Electrical",
+   "quals": null,
+   "matched": [
+    "Python",
+    "C++"
+   ],
+   "related": [],
+   "gaps": [],
    "flags": [],
    "has_description": true,
    "first_seen": "2026-11-05",
@@ -247308,54 +246920,6 @@
    "last_seen": "2026-11-08"
   },
   {
-   "company": "MITRE",
-   "title": "Systems Engineering Intern",
-   "location": "Multi Location\nMcLean, VA, United States\nBedford, MA, United States",
-   "url": "https://www.google.com/search?q=MITRE+%22Systems+Engineering+Intern%22",
-   "key": "il:6abb1b8d1acb8fc6f09c3cc7",
-   "lead": true,
-   "source": "intern-list.com",
-   "posted": "2026-10-12",
-   "source_id": "intern-list.com",
-   "tracks": {
-    "summer": {
-     "score": 46,
-     "tier": "look",
-     "parts": {
-      "fit": 24,
-      "skills": 0,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Season not stated"
-    },
-    "broad": {
-     "score": 46,
-     "tier": "look",
-     "parts": {
-      "fit": 24,
-      "skills": 0,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Season not stated"
-    }
-   },
-   "score": 46,
-   "tier": "look",
-   "discipline": "Systems",
-   "quals": null,
-   "matched": [],
-   "related": [],
-   "gaps": [],
-   "flags": [],
-   "has_description": true,
-   "first_seen": "2026-11-08",
-   "last_seen": "2026-11-08"
-  },
-  {
    "company": "Microchip Technology",
    "title": "Intern - Engineering (Applications)",
    "location": "CA - Roseville; CA - San Jose - 3870 N. First St",
@@ -248941,91 +248505,6 @@
    ],
    "has_description": true,
    "first_seen": "2026-11-05",
-   "last_seen": "2026-11-08"
-  },
-  {
-   "company": "Trane Technologies",
-   "title": "Industrial Engineering & Manufacturing Execution Systems Co-op",
-   "location": "La Crosse, Wisconsin, United States of America",
-   "url": "https://careers.tranetechnologies.com/global/en/job/JR-10172",
-   "source": "Trane Technologies careers",
-   "posted": "2026-11-05",
-   "source_id": "Trane Technologies",
-   "key": "url:https://careers.tranetechnologies.com/global/en/job/jr-10172",
-   "tracks": {
-    "broad": {
-     "score": 46,
-     "tier": "look",
-     "parts": {
-      "fit": 24,
-      "skills": 0,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Season not stated"
-    }
-   },
-   "score": 46,
-   "tier": "look",
-   "discipline": "Manufacturing & industrial",
-   "quals": {
-    "required": [
-     {
-      "text": "Previous experience in a manufacturing environment.",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Ability to accurately assess manufacturing issues related to process and design.",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Effective communication at multiple levels coupled with ability to build relationships.",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "Growth mindset – desire to expand technical skillset.",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "Results-driven to maintain accountability and customer-focus.",
-      "status": "check",
-      "why": ""
-     }
-    ],
-    "preferred": [
-     {
-      "text": "PFMEA experience preferred.",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Degree preferred in Engineering or related technical disciplines.",
-      "status": "met",
-      "why": "Engineering degree: Aerospace Engineering counts"
-     }
-    ],
-    "summary": {
-     "required_checked": 0,
-     "required_met": 0.0,
-     "required_missing": 0,
-     "to_check": 0,
-     "preferred_met": 1,
-     "preferred_total": 1
-    }
-   },
-   "matched": [],
-   "related": [],
-   "gaps": [
-    "Controls / GNC"
-   ],
-   "flags": [],
-   "has_description": true,
-   "first_seen": "2026-11-07",
    "last_seen": "2026-11-08"
   },
   {
@@ -252072,75 +251551,6 @@
    "flags": [],
    "has_description": true,
    "first_seen": "2026-11-03",
-   "last_seen": "2026-11-08"
-  },
-  {
-   "company": "GE Vernova",
-   "title": "GE Vernova Gas Power Engineering Internship - Summer 2027",
-   "location": "Greenville; Atlanta; Schenectady",
-   "url": "https://gevernova.wd5.myworkdayjobs.com/Vernova_ExternalSite/job/Greenville/GE-Vernova-Gas-Power-Engineering-Internship---Summer-2027_R5051434-2",
-   "source": "GE Vernova careers",
-   "posted": "2026-09-10",
-   "source_id": "GE Vernova",
-   "key": "wd:gevernova:r5051434-2",
-   "tracks": {
-    "broad": {
-     "score": 45,
-     "tier": "look",
-     "parts": {
-      "fit": 20,
-      "skills": 0,
-      "eligibility": 25,
-      "requirements": 0
-     },
-     "season": "match",
-     "season_label": "Summer 2027"
-    }
-   },
-   "score": 45,
-   "tier": "look",
-   "discipline": "Electrical",
-   "quals": {
-    "required": [
-     {
-      "text": "Must have one to two semesters left prior to graduation and be enrolled in a full-time undergraduate or graduate program in an engineering discipline as listed ",
-      "status": "met",
-      "why": "You're Aerospace Engineering"
-     },
-     {
-      "text": "The following majors are eligible: Aeronautical Engineering, Aerospace Engineering, Chemical Engineering, Electrical Engineering, Material Science Engineering, ",
-      "status": "met",
-      "why": "You're Aerospace Engineering"
-     },
-     {
-      "text": "Must have the ability to work in the United States for an unlimited amount of time without sponsorship",
-      "status": "soft",
-      "why": ""
-     }
-    ],
-    "preferred": [],
-    "summary": {
-     "required_checked": 2,
-     "required_met": 2.0,
-     "required_missing": 0,
-     "to_check": 0,
-     "preferred_met": 0,
-     "preferred_total": 0
-    }
-   },
-   "matched": [],
-   "related": [],
-   "gaps": [
-    "Drawings / drafting"
-   ],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "Min GPA 3.0"
-    }
-   ],
-   "has_description": true,
-   "first_seen": "2026-11-02",
    "last_seen": "2026-11-08"
   },
   {
@@ -263757,69 +263167,6 @@
   },
   {
    "company": "Huntington Ingalls Industries",
-   "title": "INDUSTRIAL HYGIENIST SKILLBRIDGE INTERN",
-   "location": "Newport News, Virginia, United States",
-   "url": "https://careers.huntingtoningalls.com/job/Newport-News-INDUSTRIAL-HYGIENIST-SKILLBRIDGE-INTERN-Virg/1350394300/",
-   "source": "Huntington Ingalls Industries careers",
-   "posted": "2026-11-01",
-   "source_id": "Huntington Ingalls Industries",
-   "key": "url:https://careers.huntingtoningalls.com/job/newport-news-industrial-hygienist-skillbridge-intern-virg/1350394300",
-   "tracks": {
-    "broad": {
-     "score": 44,
-     "tier": "look",
-     "parts": {
-      "fit": 22,
-      "skills": 0,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Season not stated"
-    }
-   },
-   "score": 44,
-   "tier": "look",
-   "discipline": "Manufacturing & industrial",
-   "quals": {
-    "required": [
-     {
-      "text": "Active-Duty Military ONLY within final 180 days of active-duty service. Transitioning Military candidates can begin applying within final 12 months of military ",
-      "status": "check",
-      "why": ""
-     }
-    ],
-    "preferred": [],
-    "summary": {
-     "required_checked": 0,
-     "required_met": 0.0,
-     "required_missing": 0,
-     "to_check": 0,
-     "preferred_met": 0,
-     "preferred_total": 0
-    }
-   },
-   "matched": [],
-   "related": [],
-   "gaps": [],
-   "flags": [
-    {
-     "kind": "info",
-     "label": "U.S. person / ITAR",
-     "id": "citizen"
-    },
-    {
-     "kind": "info",
-     "label": "Clearance",
-     "id": "clearance"
-    }
-   ],
-   "has_description": true,
-   "first_seen": "2026-11-01",
-   "last_seen": "2026-11-08"
-  },
-  {
-   "company": "Huntington Ingalls Industries",
    "title": "QUALITY ANALYST SKILLBRIDGE INTERN",
    "location": "Newport News, Virginia, United States",
    "url": "https://careers.huntingtoningalls.com/job/Newport-News-QUALITY-ANALYST-SKILLBRIDGE-INTERN-Virg/1339687200/",
@@ -268109,6 +267456,125 @@
    "flags": [],
    "has_description": true,
    "first_seen": "2026-11-05",
+   "last_seen": "2026-11-08"
+  },
+  {
+   "company": "Trane Technologies",
+   "title": "Environmental Health and Safety Intern",
+   "location": "Davidson, North Carolina, United States of America; Atlanta, Georgia, United States of America; Clarksville, Tennessee, United States of America; Columbia, South Carolina, United States of America; Grand Rapids, Michigan, United States of America; Grand Rapids, Michigan, United States of America; Greenville, South Carolina, United States of America; Hastings, Nebraska, United States of America; La Crosse, Wisconsin, United States of America; Noblesville, Indiana, United States of America; Pueblo, Colorado, United States of America; Tyler, Texas, United States of America; Vidalia, Georgia, United States of America",
+   "url": "https://careers.tranetechnologies.com/global/en/job/JR-12150",
+   "source": "Trane Technologies careers",
+   "posted": "2026-09-02",
+   "source_id": "Trane Technologies",
+   "key": "url:https://careers.tranetechnologies.com/global/en/job/jr-12150",
+   "tracks": {
+    "broad": {
+     "score": 44,
+     "tier": "look",
+     "parts": {
+      "fit": 18,
+      "skills": 4,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Summer (year not stated)"
+    }
+   },
+   "score": 44,
+   "tier": "look",
+   "discipline": "Civil & construction",
+   "quals": {
+    "required": [
+     {
+      "text": "Views problems as opportunities and can adapt quickly to new or changing business circumstances.",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Eagerly and proactively seeks the latest information, skills, and experiences, capitalizing on learning opportunities.",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Works effectively with others to coordinate efforts and produce results in a positive work environment.",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Motivated to leverage key learnings and experiences to grow your own career while contributing to the growth of Trane Technologies.",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Demonstrated effective verbal and written communication skills.",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Proficient in critical thinking skills, with the ability to define and identify the underlying causes of complex operational issues.",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Demonstrated ability to strategically evaluate alternative options and make informed decisions to achieve specific objectives or goals.",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Strong organizational skills and keen attention to detail.",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Willing to travel to various Trane Technologies locations across North America.",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Pursuing a BS/BA in Occupational Safety and Health, Safety Science and Environmental Engineering, Safety Management, Chemical/Mechanical Engineering, or Occupat",
+      "status": "check",
+      "why": "Needs GPA 3.0+"
+     },
+     {
+      "text": "Excellent computer skills in Excel, MS Office, Outlook-Teams, One Note and SharePoint.",
+      "status": "met",
+      "why": "You have: Excel / data analysis"
+     },
+     {
+      "text": "Demonstrated leadership skills such as campus organizations, sports team captain, resident advisor, or exceptional leadership of work projects.",
+      "status": "soft",
+      "why": ""
+     }
+    ],
+    "preferred": [],
+    "summary": {
+     "required_checked": 1,
+     "required_met": 1.0,
+     "required_missing": 0,
+     "to_check": 1,
+     "preferred_met": 0,
+     "preferred_total": 0
+    }
+   },
+   "matched": [
+    "Excel / data analysis"
+   ],
+   "related": [],
+   "gaps": [],
+   "flags": [
+    {
+     "kind": "info",
+     "label": "Min GPA 3.0"
+    },
+    {
+     "kind": "info",
+     "label": "U.S. person / ITAR",
+     "id": "citizen"
+    }
+   ],
+   "has_description": true,
+   "first_seen": "2026-11-08",
    "last_seen": "2026-11-08"
   },
   {
@@ -297612,6 +297078,118 @@
    "last_seen": "2026-11-08"
   },
   {
+   "company": "Trane Technologies",
+   "title": "2027 Engineering Intern",
+   "location": "Fort Smith, Arkansas, United States of America",
+   "url": "https://careers.tranetechnologies.com/global/en/job/JR-15416",
+   "source": "Trane Technologies careers",
+   "posted": "2026-10-06",
+   "source_id": "Trane Technologies",
+   "key": "url:https://careers.tranetechnologies.com/global/en/job/jr-15416",
+   "tracks": {
+    "broad": {
+     "score": 40,
+     "tier": "look",
+     "parts": {
+      "fit": 18,
+      "skills": 0,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Summer (year not stated)"
+    }
+   },
+   "score": 40,
+   "tier": "look",
+   "discipline": "General engineering",
+   "quals": {
+    "required": [
+     {
+      "text": "Views problems as opportunities and can adapt quickly to new or changing business circumstances. Demonstrates aptitude for independently progressing work with l",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Eagerly and proactively seek new information, skills, and experiences, capitalizing on learning opportunities.",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Works effectively with others to coordinate efforts and produce results in a positive work environment.",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Motivated to leverage key learnings and experiences to grow your own career while contributing to the growth of Trane Technologies.",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Owns, organizes, and collaborates with teams to successfully execute complex projects.",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Proficient at diving deep into an assignment to fully grasp the engineering and technical core concepts to deliver innovative, efficient, and cost-effective sol",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Willing to be mobile and relocate anywhere in the United States",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "Pursuing a BS/MS in Mechanical Engineering, Aerospace Engineering, or Engineering Physics with a cumulative overall GPA at or above 3.0",
+      "status": "check",
+      "why": "Needs GPA 3.0+"
+     },
+     {
+      "text": "Minimum Work Experience: At least one internship or work experience",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Demonstrated leadership skills such as: campus organizations, sports team captain, resident advisor, etc. or leadership of work projects",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "U.S. citizen or have the legal right to work in the U.S. without requiring sponsorship now or in the future",
+      "status": "met",
+      "why": "You're a U.S. citizen"
+     }
+    ],
+    "preferred": [],
+    "summary": {
+     "required_checked": 1,
+     "required_met": 1.0,
+     "required_missing": 0,
+     "to_check": 1,
+     "preferred_met": 0,
+     "preferred_total": 0
+    }
+   },
+   "matched": [],
+   "related": [],
+   "gaps": [],
+   "flags": [
+    {
+     "kind": "info",
+     "label": "Min GPA 3.0"
+    },
+    {
+     "kind": "info",
+     "label": "U.S. person / ITAR",
+     "id": "citizen"
+    }
+   ],
+   "has_description": true,
+   "first_seen": "2026-11-08",
+   "last_seen": "2026-11-08"
+  },
+  {
    "company": "Valeo",
    "title": "Quality Engineer Internship",
    "location": "Martos",
@@ -311318,115 +310896,6 @@
   },
   {
    "company": "Northrop Grumman",
-   "title": "2027 Systems Engineer Intern - Cape Canaveral FL",
-   "location": "United States-Florida-Cape Canaveral",
-   "url": "https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site/job/United-States-Florida-Cape-Canaveral/XMLNAME-2027-Systems-Engineer-Intern---Cape-Canaveral-FL_R10251849",
-   "source": "Northrop Grumman careers",
-   "posted": "2026-11-05",
-   "source_id": "Northrop Grumman",
-   "key": "wd:ngc:r10251849",
-   "tracks": {
-    "broad": {
-     "score": 37,
-     "tier": "look",
-     "parts": {
-      "fit": 24,
-      "skills": 0,
-      "eligibility": 13,
-      "requirements": 0
-     },
-     "season": "match",
-     "season_label": "Summer 2027"
-    },
-    "fall": {
-     "score": 37,
-     "tier": "look",
-     "parts": {
-      "fit": 24,
-      "skills": 0,
-      "eligibility": 13,
-      "requirements": 0
-     },
-     "season": "match",
-     "season_label": "Fall 2027",
-     "miles": 39
-    }
-   },
-   "score": 37,
-   "tier": "look",
-   "discipline": "Systems",
-   "quals": {
-    "required": [],
-    "preferred": [
-     {
-      "text": "Have an overall cumulative GPA of 3.00/4.0 or higher",
-      "status": "check",
-      "why": "Needs GPA 3.0+"
-     },
-     {
-      "text": "Experience with or coursework related to with Model-Based Systems",
-      "status": "check",
-      "why": "Coursework or background (check your classes)"
-     },
-     {
-      "text": "Engineering (MBSE)",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Experience with Cameo",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Experience with Systems Design",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Experience with establishing Systems Requirements",
-      "status": "check",
-      "why": ""
-     }
-    ],
-    "summary": {
-     "required_checked": 0,
-     "required_met": 0.0,
-     "required_missing": 0,
-     "to_check": 2,
-     "preferred_met": 0,
-     "preferred_total": 0
-    }
-   },
-   "matched": [],
-   "related": [],
-   "gaps": [],
-   "flags": [
-    {
-     "kind": "warn",
-     "label": "Grad window 2027"
-    },
-    {
-     "kind": "info",
-     "label": "Min GPA 3.0"
-    },
-    {
-     "kind": "info",
-     "label": "U.S. person / ITAR",
-     "id": "citizen"
-    },
-    {
-     "kind": "info",
-     "label": "Clearance",
-     "id": "clearance"
-    }
-   ],
-   "has_description": true,
-   "first_seen": "2026-11-05",
-   "last_seen": "2026-11-08"
-  },
-  {
-   "company": "Northrop Grumman",
    "title": "2027 Electrical Engineering Intern- Huntsville AL",
    "location": "United States-Alabama-Huntsville",
    "url": "https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site/job/United-States-Alabama-Huntsville/XMLNAME-2027-Electrical-Engineering-Intern--Huntsville-AL_R10259306-1",
@@ -311499,6 +310968,60 @@
    ],
    "has_description": true,
    "first_seen": "2026-11-04",
+   "last_seen": "2026-11-08"
+  },
+  {
+   "company": "Northrop Grumman",
+   "title": "2027 Systems Engineer Intern - Cape Canaveral FL",
+   "location": "Cape Canaveral, FL, United States",
+   "url": "https://www.google.com/search?q=Northrop+Grumman+%222027+Systems+Engineer+Intern+-+Cape+Canaveral+FL%22",
+   "key": "il:6aecc003a9ea762a04091b33",
+   "lead": true,
+   "source": "intern-list.com",
+   "posted": "2026-11-04",
+   "source_id": "intern-list.com",
+   "tracks": {
+    "broad": {
+     "score": 37,
+     "tier": "look",
+     "parts": {
+      "fit": 24,
+      "skills": 0,
+      "eligibility": 13,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Summer 2027"
+    },
+    "fall": {
+     "score": 37,
+     "tier": "look",
+     "parts": {
+      "fit": 24,
+      "skills": 0,
+      "eligibility": 13,
+      "requirements": 0
+     },
+     "season": "match",
+     "season_label": "Fall 2027",
+     "miles": 39
+    }
+   },
+   "score": 37,
+   "tier": "look",
+   "discipline": "Systems",
+   "quals": null,
+   "matched": [],
+   "related": [],
+   "gaps": [],
+   "flags": [
+    {
+     "kind": "warn",
+     "label": "Grad window 2027"
+    }
+   ],
+   "has_description": true,
+   "first_seen": "2026-11-08",
    "last_seen": "2026-11-08"
   },
   {
@@ -312522,401 +312045,13 @@
   },
   {
    "company": "Trane Technologies",
-   "title": "2027 Construction Project Management Intern",
-   "location": "Grand Junction, Colorado, United States of America",
-   "url": "https://careers.tranetechnologies.com/global/en/job/JR-15219",
+   "title": "2027 Construction Project Management Intern-1",
+   "location": "Ashland, Virginia, United States of America",
+   "url": "https://careers.tranetechnologies.com/global/en/job/JR-17836",
    "source": "Trane Technologies careers",
-   "posted": "2026-08-31",
+   "posted": "2026-10-23",
    "source_id": "Trane Technologies",
-   "key": "url:https://careers.tranetechnologies.com/global/en/job/jr-15219",
-   "tracks": {
-    "broad": {
-     "score": 37,
-     "tier": "look",
-     "parts": {
-      "fit": 8,
-      "skills": 7,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Summer (year not stated)"
-    }
-   },
-   "score": 37,
-   "tier": "look",
-   "discipline": "Civil & construction",
-   "quals": {
-    "required": [
-     {
-      "text": "Candidates must have completed at least their sophomore or 2nd year before the start of the summer internship to be eligible for internship positions.",
-      "status": "met",
-      "why": "Open to underclassmen"
-     },
-     {
-      "text": "Demonstrated knowledge of construction management processes, means, and methods. Such as: coursework or projects in construction or building systems, involvemen",
-      "status": "met",
-      "why": "You have: Prototyping & fabrication"
-     },
-     {
-      "text": "Be a U.S. citizen or have the legal right to work in the U.S. without requiring sponsorship now or in the future.",
-      "status": "met",
-      "why": "You're a U.S. citizen"
-     },
-     {
-      "text": "This posting is for multiple opportunities. Some positions may be remote while others may require a hybrid or onsite assignment at one of our facilities across ",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "DUI in the previous 3 years",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Hit & Run, License Suspension, Reckless / Careless Driving or multiple smaller infractions or preventable collisions in the previous 3 years.",
-      "status": "check",
-      "why": ""
-     }
-    ],
-    "preferred": [
-     {
-      "text": "Actively enrolled in a bachelor’s or master’s degree throughout the entire duration of the summer internship. Preferred degree in Construction Engineering, Buil",
-      "status": "met",
-      "why": "Engineering degree: Aerospace Engineering counts"
-     }
-    ],
-    "summary": {
-     "required_checked": 3,
-     "required_met": 3.0,
-     "required_missing": 0,
-     "to_check": 0,
-     "preferred_met": 1,
-     "preferred_total": 1
-    }
-   },
-   "matched": [
-    "Prototyping & fabrication"
-   ],
-   "related": [],
-   "gaps": [
-    "Controls / GNC"
-   ],
-   "flags": [
-    {
-     "kind": "good",
-     "label": "Open to underclassmen"
-    },
-    {
-     "kind": "info",
-     "label": "U.S. person / ITAR",
-     "id": "citizen"
-    }
-   ],
-   "has_description": true,
-   "first_seen": "2026-11-02",
-   "last_seen": "2026-11-08"
-  },
-  {
-   "company": "Trane Technologies",
-   "title": "2027 Construction Project Management Intern",
-   "location": "Denver, Colorado, United States of America",
-   "url": "https://careers.tranetechnologies.com/global/en/job/JR-15213",
-   "source": "Trane Technologies careers",
-   "posted": "2026-08-31",
-   "source_id": "Trane Technologies",
-   "key": "url:https://careers.tranetechnologies.com/global/en/job/jr-15213",
-   "tracks": {
-    "broad": {
-     "score": 37,
-     "tier": "look",
-     "parts": {
-      "fit": 8,
-      "skills": 7,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Summer (year not stated)"
-    }
-   },
-   "score": 37,
-   "tier": "look",
-   "discipline": "Civil & construction",
-   "quals": {
-    "required": [
-     {
-      "text": "Candidates must have completed at least their sophomore or 2nd year before the start of the summer internship to be eligible for internship positions.",
-      "status": "met",
-      "why": "Open to underclassmen"
-     },
-     {
-      "text": "Demonstrated knowledge of construction management processes, means, and methods. Such as: coursework or projects in construction or building systems, involvemen",
-      "status": "met",
-      "why": "You have: Prototyping & fabrication"
-     },
-     {
-      "text": "Be a U.S. citizen or have the legal right to work in the U.S. without requiring sponsorship now or in the future.",
-      "status": "met",
-      "why": "You're a U.S. citizen"
-     },
-     {
-      "text": "This posting is for multiple opportunities. Some positions may be remote while others may require a hybrid or onsite assignment at one of our facilities across ",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "DUI in the previous 3 years",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Hit & Run, License Suspension, Reckless / Careless Driving or multiple smaller infractions or preventable collisions in the previous 3 years.",
-      "status": "check",
-      "why": ""
-     }
-    ],
-    "preferred": [
-     {
-      "text": "Actively enrolled in a bachelor’s or master’s degree throughout the entire duration of the summer internship. Preferred degree in Construction Engineering, Buil",
-      "status": "met",
-      "why": "Engineering degree: Aerospace Engineering counts"
-     }
-    ],
-    "summary": {
-     "required_checked": 3,
-     "required_met": 3.0,
-     "required_missing": 0,
-     "to_check": 0,
-     "preferred_met": 1,
-     "preferred_total": 1
-    }
-   },
-   "matched": [
-    "Prototyping & fabrication"
-   ],
-   "related": [],
-   "gaps": [
-    "Controls / GNC"
-   ],
-   "flags": [
-    {
-     "kind": "good",
-     "label": "Open to underclassmen"
-    },
-    {
-     "kind": "info",
-     "label": "U.S. person / ITAR",
-     "id": "citizen"
-    }
-   ],
-   "has_description": true,
-   "first_seen": "2026-11-07",
-   "last_seen": "2026-11-08"
-  },
-  {
-   "company": "Trane Technologies",
-   "title": "2027 Construction Project Management Intern",
-   "location": "Willowbrook, Illinois, United States of America",
-   "url": "https://careers.tranetechnologies.com/global/en/job/JR-17505",
-   "source": "Trane Technologies careers",
-   "posted": "2026-10-08",
-   "source_id": "Trane Technologies",
-   "key": "url:https://careers.tranetechnologies.com/global/en/job/jr-17505",
-   "tracks": {
-    "broad": {
-     "score": 37,
-     "tier": "look",
-     "parts": {
-      "fit": 8,
-      "skills": 7,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Summer (year not stated)"
-    }
-   },
-   "score": 37,
-   "tier": "look",
-   "discipline": "Civil & construction",
-   "quals": {
-    "required": [
-     {
-      "text": "Candidates must have completed at least their sophomore or 2nd year before the start of the summer internship to be eligible for internship positions.",
-      "status": "met",
-      "why": "Open to underclassmen"
-     },
-     {
-      "text": "Demonstrated knowledge of construction management processes, means, and methods. Such as: coursework or projects in construction or building systems, involvemen",
-      "status": "met",
-      "why": "You have: Prototyping & fabrication"
-     },
-     {
-      "text": "Be a U.S. citizen or have the legal right to work in the U.S. without requiring sponsorship now or in the future.",
-      "status": "met",
-      "why": "You're a U.S. citizen"
-     },
-     {
-      "text": "This posting is for multiple opportunities. Some positions may be remote while others may require a hybrid or onsite assignment at one of our facilities across ",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "DUI in the previous 3 years",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Hit & Run, License Suspension, Reckless / Careless Driving or multiple smaller infractions or preventable collisions in the previous 3 years.",
-      "status": "check",
-      "why": ""
-     }
-    ],
-    "preferred": [
-     {
-      "text": "Actively enrolled in a bachelor’s or master’s degree throughout the entire duration of the summer internship. Preferred degree in Construction Engineering, Buil",
-      "status": "met",
-      "why": "Engineering degree: Aerospace Engineering counts"
-     }
-    ],
-    "summary": {
-     "required_checked": 3,
-     "required_met": 3.0,
-     "required_missing": 0,
-     "to_check": 0,
-     "preferred_met": 1,
-     "preferred_total": 1
-    }
-   },
-   "matched": [
-    "Prototyping & fabrication"
-   ],
-   "related": [],
-   "gaps": [
-    "Controls / GNC"
-   ],
-   "flags": [
-    {
-     "kind": "good",
-     "label": "Open to underclassmen"
-    },
-    {
-     "kind": "info",
-     "label": "U.S. person / ITAR",
-     "id": "citizen"
-    }
-   ],
-   "has_description": true,
-   "first_seen": "2026-11-07",
-   "last_seen": "2026-11-08"
-  },
-  {
-   "company": "Trane Technologies",
-   "title": "2027 Construction Project Management Intern",
-   "location": "San Antonio, Texas, United States of America",
-   "url": "https://careers.tranetechnologies.com/global/en/job/JR-15317",
-   "source": "Trane Technologies careers",
-   "posted": "2026-08-31",
-   "source_id": "Trane Technologies",
-   "key": "url:https://careers.tranetechnologies.com/global/en/job/jr-15317",
-   "tracks": {
-    "broad": {
-     "score": 37,
-     "tier": "look",
-     "parts": {
-      "fit": 8,
-      "skills": 7,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Summer (year not stated)"
-    }
-   },
-   "score": 37,
-   "tier": "look",
-   "discipline": "Civil & construction",
-   "quals": {
-    "required": [
-     {
-      "text": "Candidates must have completed at least their sophomore or 2nd year before the start of the summer internship to be eligible for internship positions.",
-      "status": "met",
-      "why": "Open to underclassmen"
-     },
-     {
-      "text": "Demonstrated knowledge of construction management processes, means, and methods. Such as: coursework or projects in construction or building systems, involvemen",
-      "status": "met",
-      "why": "You have: Prototyping & fabrication"
-     },
-     {
-      "text": "Be a U.S. citizen or have the legal right to work in the U.S. without requiring sponsorship now or in the future.",
-      "status": "met",
-      "why": "You're a U.S. citizen"
-     },
-     {
-      "text": "This posting is for multiple opportunities. Some positions may be remote while others may require a hybrid or onsite assignment at one of our facilities across ",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "DUI in the previous 3 years",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Hit & Run, License Suspension, Reckless / Careless Driving or multiple smaller infractions or preventable collisions in the previous 3 years.",
-      "status": "check",
-      "why": ""
-     }
-    ],
-    "preferred": [
-     {
-      "text": "Actively enrolled in a bachelor’s or master’s degree throughout the entire duration of the summer internship. Preferred degree in Construction Engineering, Buil",
-      "status": "met",
-      "why": "Engineering degree: Aerospace Engineering counts"
-     }
-    ],
-    "summary": {
-     "required_checked": 3,
-     "required_met": 3.0,
-     "required_missing": 0,
-     "to_check": 0,
-     "preferred_met": 1,
-     "preferred_total": 1
-    }
-   },
-   "matched": [
-    "Prototyping & fabrication"
-   ],
-   "related": [],
-   "gaps": [
-    "Controls / GNC"
-   ],
-   "flags": [
-    {
-     "kind": "good",
-     "label": "Open to underclassmen"
-    },
-    {
-     "kind": "info",
-     "label": "U.S. person / ITAR",
-     "id": "citizen"
-    }
-   ],
-   "has_description": true,
-   "first_seen": "2026-11-07",
-   "last_seen": "2026-11-08"
-  },
-  {
-   "company": "Trane Technologies",
-   "title": "2027 Construction Project Management Intern",
-   "location": "Flint, Michigan, United States of America",
-   "url": "https://careers.tranetechnologies.com/global/en/job/JR-15087",
-   "source": "Trane Technologies careers",
-   "posted": "2026-08-31",
-   "source_id": "Trane Technologies",
-   "key": "url:https://careers.tranetechnologies.com/global/en/job/jr-15087",
+   "key": "url:https://careers.tranetechnologies.com/global/en/job/jr-17836",
    "tracks": {
     "broad": {
      "score": 37,
@@ -313003,297 +312138,6 @@
    ],
    "has_description": true,
    "first_seen": "2026-11-08",
-   "last_seen": "2026-11-08"
-  },
-  {
-   "company": "Trane Technologies",
-   "title": "2027 Construction Project Management Intern",
-   "location": "Livonia, Michigan, United States of America",
-   "url": "https://careers.tranetechnologies.com/global/en/job/JR-15069",
-   "source": "Trane Technologies careers",
-   "posted": "2026-08-31",
-   "source_id": "Trane Technologies",
-   "key": "url:https://careers.tranetechnologies.com/global/en/job/jr-15069",
-   "tracks": {
-    "broad": {
-     "score": 37,
-     "tier": "look",
-     "parts": {
-      "fit": 8,
-      "skills": 7,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Summer (year not stated)"
-    }
-   },
-   "score": 37,
-   "tier": "look",
-   "discipline": "Civil & construction",
-   "quals": {
-    "required": [
-     {
-      "text": "Candidates must have completed at least their sophomore or 2nd year before the start of the summer internship to be eligible for internship positions.",
-      "status": "met",
-      "why": "Open to underclassmen"
-     },
-     {
-      "text": "Demonstrated knowledge of construction management processes, means, and methods. Such as: coursework or projects in construction or building systems, involvemen",
-      "status": "met",
-      "why": "You have: Prototyping & fabrication"
-     },
-     {
-      "text": "Be a U.S. citizen or have the legal right to work in the U.S. without requiring sponsorship now or in the future.",
-      "status": "met",
-      "why": "You're a U.S. citizen"
-     },
-     {
-      "text": "This posting is for multiple opportunities. Some positions may be remote while others may require a hybrid or onsite assignment at one of our facilities across ",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "DUI in the previous 3 years",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Hit & Run, License Suspension, Reckless / Careless Driving or multiple smaller infractions or preventable collisions in the previous 3 years.",
-      "status": "check",
-      "why": ""
-     }
-    ],
-    "preferred": [
-     {
-      "text": "Actively enrolled in a bachelor’s or master’s degree throughout the entire duration of the summer internship. Preferred degree in Construction Engineering, Buil",
-      "status": "met",
-      "why": "Engineering degree: Aerospace Engineering counts"
-     }
-    ],
-    "summary": {
-     "required_checked": 3,
-     "required_met": 3.0,
-     "required_missing": 0,
-     "to_check": 0,
-     "preferred_met": 1,
-     "preferred_total": 1
-    }
-   },
-   "matched": [
-    "Prototyping & fabrication"
-   ],
-   "related": [],
-   "gaps": [
-    "Controls / GNC"
-   ],
-   "flags": [
-    {
-     "kind": "good",
-     "label": "Open to underclassmen"
-    },
-    {
-     "kind": "info",
-     "label": "U.S. person / ITAR",
-     "id": "citizen"
-    }
-   ],
-   "has_description": true,
-   "first_seen": "2026-11-08",
-   "last_seen": "2026-11-08"
-  },
-  {
-   "company": "Trane Technologies",
-   "title": "2027 Construction Project Management Intern",
-   "location": "Cincinnati, Ohio, United States of America",
-   "url": "https://careers.tranetechnologies.com/global/en/job/JR-15086",
-   "source": "Trane Technologies careers",
-   "posted": "2026-08-31",
-   "source_id": "Trane Technologies",
-   "key": "url:https://careers.tranetechnologies.com/global/en/job/jr-15086",
-   "tracks": {
-    "broad": {
-     "score": 37,
-     "tier": "look",
-     "parts": {
-      "fit": 8,
-      "skills": 7,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Summer (year not stated)"
-    }
-   },
-   "score": 37,
-   "tier": "look",
-   "discipline": "Civil & construction",
-   "quals": {
-    "required": [
-     {
-      "text": "Candidates must have completed at least their sophomore or 2nd year before the start of the summer internship to be eligible for internship positions.",
-      "status": "met",
-      "why": "Open to underclassmen"
-     },
-     {
-      "text": "Demonstrated knowledge of construction management processes, means, and methods. Such as: coursework or projects in construction or building systems, involvemen",
-      "status": "met",
-      "why": "You have: Prototyping & fabrication"
-     },
-     {
-      "text": "Be a U.S. citizen or have the legal right to work in the U.S. without requiring sponsorship now or in the future.",
-      "status": "met",
-      "why": "You're a U.S. citizen"
-     },
-     {
-      "text": "This posting is for multiple opportunities. Some positions may be remote while others may require a hybrid or onsite assignment at one of our facilities across ",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "DUI in the previous 3 years",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Hit & Run, License Suspension, Reckless / Careless Driving or multiple smaller infractions or preventable collisions in the previous 3 years.",
-      "status": "check",
-      "why": ""
-     }
-    ],
-    "preferred": [
-     {
-      "text": "Actively enrolled in a bachelor’s or master’s degree throughout the entire duration of the summer internship. Preferred degree in Construction Engineering, Buil",
-      "status": "met",
-      "why": "Engineering degree: Aerospace Engineering counts"
-     }
-    ],
-    "summary": {
-     "required_checked": 3,
-     "required_met": 3.0,
-     "required_missing": 0,
-     "to_check": 0,
-     "preferred_met": 1,
-     "preferred_total": 1
-    }
-   },
-   "matched": [
-    "Prototyping & fabrication"
-   ],
-   "related": [],
-   "gaps": [
-    "Controls / GNC"
-   ],
-   "flags": [
-    {
-     "kind": "good",
-     "label": "Open to underclassmen"
-    },
-    {
-     "kind": "info",
-     "label": "U.S. person / ITAR",
-     "id": "citizen"
-    }
-   ],
-   "has_description": true,
-   "first_seen": "2026-11-07",
-   "last_seen": "2026-11-08"
-  },
-  {
-   "company": "Trane Technologies",
-   "title": "2027 Construction Project Management Intern",
-   "location": "Atlanta, Georgia, United States of America",
-   "url": "https://careers.tranetechnologies.com/global/en/job/JR-9969",
-   "source": "Trane Technologies careers",
-   "posted": "2026-08-31",
-   "source_id": "Trane Technologies",
-   "key": "url:https://careers.tranetechnologies.com/global/en/job/jr-9969",
-   "tracks": {
-    "broad": {
-     "score": 37,
-     "tier": "look",
-     "parts": {
-      "fit": 8,
-      "skills": 7,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Summer (year not stated)"
-    }
-   },
-   "score": 37,
-   "tier": "look",
-   "discipline": "Civil & construction",
-   "quals": {
-    "required": [
-     {
-      "text": "Candidates must have completed at least their sophomore or 2nd year before the start of the summer internship to be eligible for internship positions.",
-      "status": "met",
-      "why": "Open to underclassmen"
-     },
-     {
-      "text": "Demonstrated knowledge of construction management processes, means, and methods. Such as: coursework or projects in construction or building systems, involvemen",
-      "status": "met",
-      "why": "You have: Prototyping & fabrication"
-     },
-     {
-      "text": "Be a U.S. citizen or have the legal right to work in the U.S. without requiring sponsorship now or in the future.",
-      "status": "met",
-      "why": "You're a U.S. citizen"
-     },
-     {
-      "text": "This posting is for multiple opportunities. Some positions may be remote while others may require a hybrid or onsite assignment at one of our facilities across ",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "DUI in the previous 3 years",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Hit & Run, License Suspension, Reckless / Careless Driving or multiple smaller infractions or preventable collisions in the previous 3 years.",
-      "status": "check",
-      "why": ""
-     }
-    ],
-    "preferred": [
-     {
-      "text": "Actively enrolled in a bachelor’s or master’s degree throughout the entire duration of the summer internship. Preferred degree in Construction Engineering, Buil",
-      "status": "met",
-      "why": "Engineering degree: Aerospace Engineering counts"
-     }
-    ],
-    "summary": {
-     "required_checked": 3,
-     "required_met": 3.0,
-     "required_missing": 0,
-     "to_check": 0,
-     "preferred_met": 1,
-     "preferred_total": 1
-    }
-   },
-   "matched": [
-    "Prototyping & fabrication"
-   ],
-   "related": [],
-   "gaps": [
-    "Controls / GNC"
-   ],
-   "flags": [
-    {
-     "kind": "good",
-     "label": "Open to underclassmen"
-    },
-    {
-     "kind": "info",
-     "label": "U.S. person / ITAR",
-     "id": "citizen"
-    }
-   ],
-   "has_description": true,
-   "first_seen": "2026-11-07",
    "last_seen": "2026-11-08"
   },
   {
@@ -313391,6 +312235,200 @@
    ],
    "has_description": true,
    "first_seen": "2026-11-07",
+   "last_seen": "2026-11-08"
+  },
+  {
+   "company": "Trane Technologies",
+   "title": "2027 Construction Project Management Intern",
+   "location": "Nashville, Tennessee, United States of America",
+   "url": "https://careers.tranetechnologies.com/global/en/job/JR-15287",
+   "source": "Trane Technologies careers",
+   "posted": "2026-08-31",
+   "source_id": "Trane Technologies",
+   "key": "url:https://careers.tranetechnologies.com/global/en/job/jr-15287",
+   "tracks": {
+    "broad": {
+     "score": 37,
+     "tier": "look",
+     "parts": {
+      "fit": 8,
+      "skills": 7,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Summer (year not stated)"
+    }
+   },
+   "score": 37,
+   "tier": "look",
+   "discipline": "Civil & construction",
+   "quals": {
+    "required": [
+     {
+      "text": "Candidates must have completed at least their sophomore or 2nd year before the start of the summer internship to be eligible for internship positions.",
+      "status": "met",
+      "why": "Open to underclassmen"
+     },
+     {
+      "text": "Demonstrated knowledge of construction management processes, means, and methods. Such as: coursework or projects in construction or building systems, involvemen",
+      "status": "met",
+      "why": "You have: Prototyping & fabrication"
+     },
+     {
+      "text": "Be a U.S. citizen or have the legal right to work in the U.S. without requiring sponsorship now or in the future.",
+      "status": "met",
+      "why": "You're a U.S. citizen"
+     },
+     {
+      "text": "This posting is for multiple opportunities. Some positions may be remote while others may require a hybrid or onsite assignment at one of our facilities across ",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "DUI in the previous 3 years",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Hit & Run, License Suspension, Reckless / Careless Driving or multiple smaller infractions or preventable collisions in the previous 3 years.",
+      "status": "check",
+      "why": ""
+     }
+    ],
+    "preferred": [
+     {
+      "text": "Actively enrolled in a bachelor’s or master’s degree throughout the entire duration of the summer internship. Preferred degree in Construction Engineering, Buil",
+      "status": "met",
+      "why": "Engineering degree: Aerospace Engineering counts"
+     }
+    ],
+    "summary": {
+     "required_checked": 3,
+     "required_met": 3.0,
+     "required_missing": 0,
+     "to_check": 0,
+     "preferred_met": 1,
+     "preferred_total": 1
+    }
+   },
+   "matched": [
+    "Prototyping & fabrication"
+   ],
+   "related": [],
+   "gaps": [
+    "Controls / GNC"
+   ],
+   "flags": [
+    {
+     "kind": "good",
+     "label": "Open to underclassmen"
+    },
+    {
+     "kind": "info",
+     "label": "U.S. person / ITAR",
+     "id": "citizen"
+    }
+   ],
+   "has_description": true,
+   "first_seen": "2026-11-08",
+   "last_seen": "2026-11-08"
+  },
+  {
+   "company": "Trane Technologies",
+   "title": "2027 Construction Project Management Intern",
+   "location": "Flint, Michigan, United States of America",
+   "url": "https://careers.tranetechnologies.com/global/en/job/JR-15087",
+   "source": "Trane Technologies careers",
+   "posted": "2026-08-31",
+   "source_id": "Trane Technologies",
+   "key": "url:https://careers.tranetechnologies.com/global/en/job/jr-15087",
+   "tracks": {
+    "broad": {
+     "score": 37,
+     "tier": "look",
+     "parts": {
+      "fit": 8,
+      "skills": 7,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Summer (year not stated)"
+    }
+   },
+   "score": 37,
+   "tier": "look",
+   "discipline": "Civil & construction",
+   "quals": {
+    "required": [
+     {
+      "text": "Candidates must have completed at least their sophomore or 2nd year before the start of the summer internship to be eligible for internship positions.",
+      "status": "met",
+      "why": "Open to underclassmen"
+     },
+     {
+      "text": "Demonstrated knowledge of construction management processes, means, and methods. Such as: coursework or projects in construction or building systems, involvemen",
+      "status": "met",
+      "why": "You have: Prototyping & fabrication"
+     },
+     {
+      "text": "Be a U.S. citizen or have the legal right to work in the U.S. without requiring sponsorship now or in the future.",
+      "status": "met",
+      "why": "You're a U.S. citizen"
+     },
+     {
+      "text": "This posting is for multiple opportunities. Some positions may be remote while others may require a hybrid or onsite assignment at one of our facilities across ",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "DUI in the previous 3 years",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Hit & Run, License Suspension, Reckless / Careless Driving or multiple smaller infractions or preventable collisions in the previous 3 years.",
+      "status": "check",
+      "why": ""
+     }
+    ],
+    "preferred": [
+     {
+      "text": "Actively enrolled in a bachelor’s or master’s degree throughout the entire duration of the summer internship. Preferred degree in Construction Engineering, Buil",
+      "status": "met",
+      "why": "Engineering degree: Aerospace Engineering counts"
+     }
+    ],
+    "summary": {
+     "required_checked": 3,
+     "required_met": 3.0,
+     "required_missing": 0,
+     "to_check": 0,
+     "preferred_met": 1,
+     "preferred_total": 1
+    }
+   },
+   "matched": [
+    "Prototyping & fabrication"
+   ],
+   "related": [],
+   "gaps": [
+    "Controls / GNC"
+   ],
+   "flags": [
+    {
+     "kind": "good",
+     "label": "Open to underclassmen"
+    },
+    {
+     "kind": "info",
+     "label": "U.S. person / ITAR",
+     "id": "citizen"
+    }
+   ],
+   "has_description": true,
+   "first_seen": "2026-11-08",
    "last_seen": "2026-11-08"
   },
   {
@@ -313506,206 +312544,12 @@
   {
    "company": "Trane Technologies",
    "title": "2027 Construction Project Management Intern",
-   "location": "Jacksonville, Florida, United States of America",
-   "url": "https://careers.tranetechnologies.com/global/en/job/JR-15053",
+   "location": "San Antonio, Texas, United States of America",
+   "url": "https://careers.tranetechnologies.com/global/en/job/JR-15317",
    "source": "Trane Technologies careers",
    "posted": "2026-08-31",
    "source_id": "Trane Technologies",
-   "key": "url:https://careers.tranetechnologies.com/global/en/job/jr-15053",
-   "tracks": {
-    "broad": {
-     "score": 37,
-     "tier": "look",
-     "parts": {
-      "fit": 8,
-      "skills": 7,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Summer (year not stated)"
-    }
-   },
-   "score": 37,
-   "tier": "look",
-   "discipline": "Civil & construction",
-   "quals": {
-    "required": [
-     {
-      "text": "Candidates must have completed at least their sophomore or 2nd year before the start of the summer internship to be eligible for internship positions.",
-      "status": "met",
-      "why": "Open to underclassmen"
-     },
-     {
-      "text": "Demonstrated knowledge of construction management processes, means, and methods. Such as: coursework or projects in construction or building systems, involvemen",
-      "status": "met",
-      "why": "You have: Prototyping & fabrication"
-     },
-     {
-      "text": "Be a U.S. citizen or have the legal right to work in the U.S. without requiring sponsorship now or in the future.",
-      "status": "met",
-      "why": "You're a U.S. citizen"
-     },
-     {
-      "text": "This posting is for multiple opportunities. Some positions may be remote while others may require a hybrid or onsite assignment at one of our facilities across ",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "DUI in the previous 3 years",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Hit & Run, License Suspension, Reckless / Careless Driving or multiple smaller infractions or preventable collisions in the previous 3 years.",
-      "status": "check",
-      "why": ""
-     }
-    ],
-    "preferred": [
-     {
-      "text": "Actively enrolled in a bachelor’s or master’s degree throughout the entire duration of the summer internship. Preferred degree in Construction Engineering, Buil",
-      "status": "met",
-      "why": "Engineering degree: Aerospace Engineering counts"
-     }
-    ],
-    "summary": {
-     "required_checked": 3,
-     "required_met": 3.0,
-     "required_missing": 0,
-     "to_check": 0,
-     "preferred_met": 1,
-     "preferred_total": 1
-    }
-   },
-   "matched": [
-    "Prototyping & fabrication"
-   ],
-   "related": [],
-   "gaps": [
-    "Controls / GNC"
-   ],
-   "flags": [
-    {
-     "kind": "good",
-     "label": "Open to underclassmen"
-    },
-    {
-     "kind": "info",
-     "label": "U.S. person / ITAR",
-     "id": "citizen"
-    }
-   ],
-   "has_description": true,
-   "first_seen": "2026-11-08",
-   "last_seen": "2026-11-08"
-  },
-  {
-   "company": "Trane Technologies",
-   "title": "2027 Construction Project Management Intern",
-   "location": "Miramar, Florida, United States of America",
-   "url": "https://careers.tranetechnologies.com/global/en/job/JR-15051",
-   "source": "Trane Technologies careers",
-   "posted": "2026-08-31",
-   "source_id": "Trane Technologies",
-   "key": "url:https://careers.tranetechnologies.com/global/en/job/jr-15051",
-   "tracks": {
-    "broad": {
-     "score": 37,
-     "tier": "look",
-     "parts": {
-      "fit": 8,
-      "skills": 7,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Summer (year not stated)"
-    }
-   },
-   "score": 37,
-   "tier": "look",
-   "discipline": "Civil & construction",
-   "quals": {
-    "required": [
-     {
-      "text": "Candidates must have completed at least their sophomore or 2nd year before the start of the summer internship to be eligible for internship positions.",
-      "status": "met",
-      "why": "Open to underclassmen"
-     },
-     {
-      "text": "Demonstrated knowledge of construction management processes, means, and methods. Such as: coursework or projects in construction or building systems, involvemen",
-      "status": "met",
-      "why": "You have: Prototyping & fabrication"
-     },
-     {
-      "text": "Be a U.S. citizen or have the legal right to work in the U.S. without requiring sponsorship now or in the future.",
-      "status": "met",
-      "why": "You're a U.S. citizen"
-     },
-     {
-      "text": "This posting is for multiple opportunities. Some positions may be remote while others may require a hybrid or onsite assignment at one of our facilities across ",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "DUI in the previous 3 years",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Hit & Run, License Suspension, Reckless / Careless Driving or multiple smaller infractions or preventable collisions in the previous 3 years.",
-      "status": "check",
-      "why": ""
-     }
-    ],
-    "preferred": [
-     {
-      "text": "Actively enrolled in a bachelor’s or master’s degree throughout the entire duration of the summer internship. Preferred degree in Construction Engineering, Buil",
-      "status": "met",
-      "why": "Engineering degree: Aerospace Engineering counts"
-     }
-    ],
-    "summary": {
-     "required_checked": 3,
-     "required_met": 3.0,
-     "required_missing": 0,
-     "to_check": 0,
-     "preferred_met": 1,
-     "preferred_total": 1
-    }
-   },
-   "matched": [
-    "Prototyping & fabrication"
-   ],
-   "related": [],
-   "gaps": [
-    "Controls / GNC"
-   ],
-   "flags": [
-    {
-     "kind": "good",
-     "label": "Open to underclassmen"
-    },
-    {
-     "kind": "info",
-     "label": "U.S. person / ITAR",
-     "id": "citizen"
-    }
-   ],
-   "has_description": true,
-   "first_seen": "2026-11-08",
-   "last_seen": "2026-11-08"
-  },
-  {
-   "company": "Trane Technologies",
-   "title": "2027 Construction Project Management Intern",
-   "location": "Atlanta, Georgia, United States of America",
-   "url": "https://careers.tranetechnologies.com/global/en/job/JR-15286",
-   "source": "Trane Technologies careers",
-   "posted": "2026-08-31",
-   "source_id": "Trane Technologies",
-   "key": "url:https://careers.tranetechnologies.com/global/en/job/jr-15286",
+   "key": "url:https://careers.tranetechnologies.com/global/en/job/jr-15317",
    "tracks": {
     "broad": {
      "score": 37,
@@ -313792,6 +312636,200 @@
    ],
    "has_description": true,
    "first_seen": "2026-11-07",
+   "last_seen": "2026-11-08"
+  },
+  {
+   "company": "Trane Technologies",
+   "title": "2027 Construction Project Management Intern",
+   "location": "Denver, Colorado, United States of America",
+   "url": "https://careers.tranetechnologies.com/global/en/job/JR-15213",
+   "source": "Trane Technologies careers",
+   "posted": "2026-08-31",
+   "source_id": "Trane Technologies",
+   "key": "url:https://careers.tranetechnologies.com/global/en/job/jr-15213",
+   "tracks": {
+    "broad": {
+     "score": 37,
+     "tier": "look",
+     "parts": {
+      "fit": 8,
+      "skills": 7,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Summer (year not stated)"
+    }
+   },
+   "score": 37,
+   "tier": "look",
+   "discipline": "Civil & construction",
+   "quals": {
+    "required": [
+     {
+      "text": "Candidates must have completed at least their sophomore or 2nd year before the start of the summer internship to be eligible for internship positions.",
+      "status": "met",
+      "why": "Open to underclassmen"
+     },
+     {
+      "text": "Demonstrated knowledge of construction management processes, means, and methods. Such as: coursework or projects in construction or building systems, involvemen",
+      "status": "met",
+      "why": "You have: Prototyping & fabrication"
+     },
+     {
+      "text": "Be a U.S. citizen or have the legal right to work in the U.S. without requiring sponsorship now or in the future.",
+      "status": "met",
+      "why": "You're a U.S. citizen"
+     },
+     {
+      "text": "This posting is for multiple opportunities. Some positions may be remote while others may require a hybrid or onsite assignment at one of our facilities across ",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "DUI in the previous 3 years",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Hit & Run, License Suspension, Reckless / Careless Driving or multiple smaller infractions or preventable collisions in the previous 3 years.",
+      "status": "check",
+      "why": ""
+     }
+    ],
+    "preferred": [
+     {
+      "text": "Actively enrolled in a bachelor’s or master’s degree throughout the entire duration of the summer internship. Preferred degree in Construction Engineering, Buil",
+      "status": "met",
+      "why": "Engineering degree: Aerospace Engineering counts"
+     }
+    ],
+    "summary": {
+     "required_checked": 3,
+     "required_met": 3.0,
+     "required_missing": 0,
+     "to_check": 0,
+     "preferred_met": 1,
+     "preferred_total": 1
+    }
+   },
+   "matched": [
+    "Prototyping & fabrication"
+   ],
+   "related": [],
+   "gaps": [
+    "Controls / GNC"
+   ],
+   "flags": [
+    {
+     "kind": "good",
+     "label": "Open to underclassmen"
+    },
+    {
+     "kind": "info",
+     "label": "U.S. person / ITAR",
+     "id": "citizen"
+    }
+   ],
+   "has_description": true,
+   "first_seen": "2026-11-07",
+   "last_seen": "2026-11-08"
+  },
+  {
+   "company": "Trane Technologies",
+   "title": "2027 Construction Project Management Intern",
+   "location": "Grand Junction, Colorado, United States of America",
+   "url": "https://careers.tranetechnologies.com/global/en/job/JR-15219",
+   "source": "Trane Technologies careers",
+   "posted": "2026-08-31",
+   "source_id": "Trane Technologies",
+   "key": "url:https://careers.tranetechnologies.com/global/en/job/jr-15219",
+   "tracks": {
+    "broad": {
+     "score": 37,
+     "tier": "look",
+     "parts": {
+      "fit": 8,
+      "skills": 7,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Summer (year not stated)"
+    }
+   },
+   "score": 37,
+   "tier": "look",
+   "discipline": "Civil & construction",
+   "quals": {
+    "required": [
+     {
+      "text": "Candidates must have completed at least their sophomore or 2nd year before the start of the summer internship to be eligible for internship positions.",
+      "status": "met",
+      "why": "Open to underclassmen"
+     },
+     {
+      "text": "Demonstrated knowledge of construction management processes, means, and methods. Such as: coursework or projects in construction or building systems, involvemen",
+      "status": "met",
+      "why": "You have: Prototyping & fabrication"
+     },
+     {
+      "text": "Be a U.S. citizen or have the legal right to work in the U.S. without requiring sponsorship now or in the future.",
+      "status": "met",
+      "why": "You're a U.S. citizen"
+     },
+     {
+      "text": "This posting is for multiple opportunities. Some positions may be remote while others may require a hybrid or onsite assignment at one of our facilities across ",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "DUI in the previous 3 years",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Hit & Run, License Suspension, Reckless / Careless Driving or multiple smaller infractions or preventable collisions in the previous 3 years.",
+      "status": "check",
+      "why": ""
+     }
+    ],
+    "preferred": [
+     {
+      "text": "Actively enrolled in a bachelor’s or master’s degree throughout the entire duration of the summer internship. Preferred degree in Construction Engineering, Buil",
+      "status": "met",
+      "why": "Engineering degree: Aerospace Engineering counts"
+     }
+    ],
+    "summary": {
+     "required_checked": 3,
+     "required_met": 3.0,
+     "required_missing": 0,
+     "to_check": 0,
+     "preferred_met": 1,
+     "preferred_total": 1
+    }
+   },
+   "matched": [
+    "Prototyping & fabrication"
+   ],
+   "related": [],
+   "gaps": [
+    "Controls / GNC"
+   ],
+   "flags": [
+    {
+     "kind": "good",
+     "label": "Open to underclassmen"
+    },
+    {
+     "kind": "info",
+     "label": "U.S. person / ITAR",
+     "id": "citizen"
+    }
+   ],
+   "has_description": true,
+   "first_seen": "2026-11-02",
    "last_seen": "2026-11-08"
   },
   {
@@ -319201,98 +318239,6 @@
    "last_seen": "2026-11-08"
   },
   {
-   "company": "Bechtel",
-   "title": "27 Intern | US | Electrical Engr",
-   "location": "United States",
-   "url": "https://jobs.bechtel.com/us/en/job/297663",
-   "source": "Bechtel careers",
-   "posted": "2026-10-26",
-   "source_id": "Bechtel",
-   "key": "url:https://jobs.bechtel.com/us/en/job/297663",
-   "tracks": {
-    "broad": {
-     "score": 34,
-     "tier": "look",
-     "parts": {
-      "fit": 10,
-      "skills": 7,
-      "eligibility": 22,
-      "requirements": -5
-     },
-     "season": "unstated",
-     "season_label": "Summer (year not stated)"
-    }
-   },
-   "score": 34,
-   "tier": "look",
-   "discipline": "Electrical",
-   "quals": {
-    "required": [
-     {
-      "text": "Currently enrolled in a four-year Bachelor of Science degree program in Electrical Engineering at an accredited college or university.",
-      "status": "missing",
-      "why": "Wants a different major"
-     },
-     {
-      "text": "Completed at least one year of undergraduate studies in the above field.",
-      "status": "met",
-      "why": "You're enrolled in a degree program"
-     },
-     {
-      "text": "Possess the eligibility to work and remain in the US without visa sponsorship, now or in the future.",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "Ability and willingness to relocate and/or travel to domestic and/or international project jobsites.",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "Must be able to pass pre-employment drug screen and background check.",
-      "status": "soft",
-      "why": ""
-     }
-    ],
-    "preferred": [
-     {
-      "text": "Currently enrolled in a Master of Science degree program in Electrical Engineering at an accredited college or university.",
-      "status": "missing",
-      "why": "Wants a different major"
-     },
-     {
-      "text": "Completed relevant coursework with a strong GPA.",
-      "status": "check",
-      "why": "Coursework or background (check your classes)"
-     },
-     {
-      "text": "Excellent written and oral communication skills.",
-      "status": "soft",
-      "why": ""
-     }
-    ],
-    "summary": {
-     "required_checked": 2,
-     "required_met": 1.0,
-     "required_missing": 1,
-     "to_check": 1,
-     "preferred_met": 0,
-     "preferred_total": 1
-    }
-   },
-   "matched": [
-    "Prototyping & fabrication"
-   ],
-   "related": [],
-   "gaps": [
-    "Data acquisition / test"
-   ],
-   "flags": [],
-   "has_description": true,
-   "first_seen": "2026-11-05",
-   "last_seen": "2026-11-08"
-  },
-  {
    "company": "Bosch",
    "title": "Service Engineer Intern",
    "location": "Lincolnshire, IL, United States",
@@ -322122,96 +321068,6 @@
   {
    "company": "Trane Technologies",
    "title": "2027 Energy Engineering Intern",
-   "location": "Nashville, Tennessee, United States of America",
-   "url": "https://careers.tranetechnologies.com/global/en/job/JR-15288",
-   "source": "Trane Technologies careers",
-   "posted": "2026-10-19",
-   "source_id": "Trane Technologies",
-   "key": "url:https://careers.tranetechnologies.com/global/en/job/jr-15288",
-   "tracks": {
-    "broad": {
-     "score": 34,
-     "tier": "look",
-     "parts": {
-      "fit": 12,
-      "skills": 0,
-      "eligibility": 22,
-      "requirements": 0
-     },
-     "season": "unstated",
-     "season_label": "Summer (year not stated)"
-    }
-   },
-   "score": 34,
-   "tier": "look",
-   "discipline": "Energy & nuclear",
-   "quals": {
-    "required": [
-     {
-      "text": "Candidates must have completed at least their sophomore or 2nd year before the start of the summer internship to be eligible for internship positions.",
-      "status": "met",
-      "why": "Open to underclassmen"
-     },
-     {
-      "text": "Be a U.S. citizen or have the legal right to work in the U.S. without requiring sponsorship now or in the future.",
-      "status": "met",
-      "why": "You're a U.S. citizen"
-     },
-     {
-      "text": "This posting is for multiple opportunities. Some positions may be remote while others may require a hybrid or onsite assignment at one of our facilities across ",
-      "status": "soft",
-      "why": ""
-     },
-     {
-      "text": "DUI in the previous 3 years",
-      "status": "check",
-      "why": ""
-     },
-     {
-      "text": "Hit & Run, License Suspension, Reckless / Careless Driving or multiple smaller infractions or preventable collisions in the previous 3 years.",
-      "status": "check",
-      "why": ""
-     }
-    ],
-    "preferred": [
-     {
-      "text": "Actively enrolled in a bachelor’s or master’s degree in Engineering, (preferred disciplines: Energy, Mechanical or Electrical) throughout the entire duration of",
-      "status": "met",
-      "why": "You're Aerospace Engineering"
-     }
-    ],
-    "summary": {
-     "required_checked": 2,
-     "required_met": 2.0,
-     "required_missing": 0,
-     "to_check": 0,
-     "preferred_met": 1,
-     "preferred_total": 1
-    }
-   },
-   "matched": [],
-   "related": [],
-   "gaps": [
-    "Controls / GNC"
-   ],
-   "flags": [
-    {
-     "kind": "good",
-     "label": "Open to underclassmen"
-    },
-    {
-     "kind": "info",
-     "label": "U.S. person / ITAR",
-     "id": "citizen"
-    }
-   ],
-   "has_description": true,
-   "first_seen": "2026-11-08",
-   "last_seen": "2026-11-08"
-  },
-  {
-   "company": "Trane Technologies",
-   "title": "2027 Energy Engineering Intern",
    "location": "Ashland, Virginia, United States of America",
    "url": "https://careers.tranetechnologies.com/global/en/job/JR-15159",
    "source": "Trane Technologies careers",
@@ -322308,6 +321164,96 @@
    "posted": "2026-08-31",
    "source_id": "Trane Technologies",
    "key": "url:https://careers.tranetechnologies.com/global/en/job/jr-15161",
+   "tracks": {
+    "broad": {
+     "score": 34,
+     "tier": "look",
+     "parts": {
+      "fit": 12,
+      "skills": 0,
+      "eligibility": 22,
+      "requirements": 0
+     },
+     "season": "unstated",
+     "season_label": "Summer (year not stated)"
+    }
+   },
+   "score": 34,
+   "tier": "look",
+   "discipline": "Energy & nuclear",
+   "quals": {
+    "required": [
+     {
+      "text": "Candidates must have completed at least their sophomore or 2nd year before the start of the summer internship to be eligible for internship positions.",
+      "status": "met",
+      "why": "Open to underclassmen"
+     },
+     {
+      "text": "Be a U.S. citizen or have the legal right to work in the U.S. without requiring sponsorship now or in the future.",
+      "status": "met",
+      "why": "You're a U.S. citizen"
+     },
+     {
+      "text": "This posting is for multiple opportunities. Some positions may be remote while others may require a hybrid or onsite assignment at one of our facilities across ",
+      "status": "soft",
+      "why": ""
+     },
+     {
+      "text": "DUI in the previous 3 years",
+      "status": "check",
+      "why": ""
+     },
+     {
+      "text": "Hit & Run, License Suspension, Reckless / Careless Driving or multiple smaller infractions or preventable collisions in the previous 3 years.",
+      "status": "check",
+      "why": ""
+     }
+    ],
+    "preferred": [
+     {
+      "text": "Actively enrolled in a bachelor’s or master’s degree in Engineering, (preferred disciplines: Energy, Mechanical or Electrical) throughout the entire duration of",
+      "status": "met",
+      "why": "You're Aerospace Engineering"
+     }
+    ],
+    "summary": {
+     "required_checked": 2,
+     "required_met": 2.0,
+     "required_missing": 0,
+     "to_check": 0,
+     "preferred_met": 1,
+     "preferred_total": 1
+    }
+   },
+   "matched": [],
+   "related": [],
+   "gaps": [
+    "Controls / GNC"
+   ],
+   "flags": [
+    {
+     "kind": "good",
+     "label": "Open to underclassmen"
+    },
+    {
+     "kind": "info",
+     "label": "U.S. person / ITAR",
+     "id": "citizen"
+    }
+   ],
+   "has_description": true,
+   "first_seen": "2026-11-08",
+   "last_seen": "2026-11-08"
+  },
+  {
+   "company": "Trane Technologies",
+   "title": "2027 Energy Engineering Intern",
+   "location": "Nashville, Tennessee, United States of America",
+   "url": "https://careers.tranetechnologies.com/global/en/job/JR-15288",
+   "source": "Trane Technologies careers",
+   "posted": "2026-10-19",
+   "source_id": "Trane Technologies",
+   "key": "url:https://careers.tranetechnologies.com/global/en/job/jr-15288",
    "tracks": {
     "broad": {
      "score": 34,
