@@ -27,12 +27,12 @@
   "cycle": "2027",
   "first_seen": "2026-09-21",
   "last_seen": "2026-11-10",
-  "most_open": 56
+  "most_open": 62
  },
  "Northrop Grumman": {
   "cycle": "2027",
   "first_seen": "2026-10-07",
-  "last_seen": "2026-11-05",
+  "last_seen": "2026-11-10",
   "most_open": 18
  },
  "Boeing": {
@@ -44,20 +44,20 @@
  "RTX (Raytheon, Pratt & Whitney, Collins)": {
   "cycle": "2027",
   "first_seen": "2026-08-11",
-  "last_seen": "2026-11-09",
+  "last_seen": "2026-11-10",
   "most_open": 139
  },
  "L3Harris": {
   "cycle": "2027",
   "first_seen": "2026-09-07",
-  "last_seen": "2026-11-09",
+  "last_seen": "2026-11-10",
   "most_open": 45
  },
  "General Dynamics": {
   "cycle": "2027",
   "first_seen": "2026-09-07",
   "last_seen": "2026-11-10",
-  "most_open": 81
+  "most_open": 96
  },
  "BAE Systems": {
   "cycle": "2027",
@@ -92,7 +92,7 @@
  "Honeywell": {
   "cycle": "2027",
   "first_seen": "2026-08-24",
-  "last_seen": "2026-11-05",
+  "last_seen": "2026-11-10",
   "most_open": 40
  },
  "Sierra Space": {
@@ -110,13 +110,13 @@
  "MIT Lincoln Laboratory": {
   "cycle": "2027",
   "first_seen": "2026-08-29",
-  "last_seen": "2026-11-06",
+  "last_seen": "2026-11-10",
   "most_open": 47
  },
  "The Aerospace Corporation": {
   "cycle": "2027",
   "first_seen": "2026-08-26",
-  "last_seen": "2026-11-09",
+  "last_seen": "2026-11-10",
   "most_open": 20
  },
  "Joby Aviation": {
@@ -170,14 +170,14 @@
  "Leidos": {
   "cycle": "2027",
   "first_seen": "2026-09-09",
-  "last_seen": "2026-11-09",
+  "last_seen": "2026-11-10",
   "most_open": 20
  },
  "SAIC": {
   "cycle": "2027",
-  "first_seen": "",
-  "last_seen": "",
-  "most_open": 0
+  "first_seen": "2026-11-10",
+  "last_seen": "2026-11-10",
+  "most_open": 1
  },
  "General Atomics": {
   "cycle": "2027",
@@ -249,7 +249,7 @@
   "cycle": "2027",
   "first_seen": "2026-08-17",
   "last_seen": "2026-11-10",
-  "most_open": 54
+  "most_open": 55
  },
  "Lawrence Livermore National Laboratory": {
   "cycle": "2027",

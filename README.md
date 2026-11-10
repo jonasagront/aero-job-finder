@@ -46,7 +46,7 @@ history fills more of that in.
 ## Today's top matches
 
 <!-- JOBS:START -->
-**1048 Summer 2027 aerospace matches** (17 Fall 2027 near home, 3713 in All engineering, 172 leads without a direct link) as of Nov 10, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
+**1053 Summer 2027 aerospace matches** (16 Fall 2027 near home, 3723 in All engineering, 180 leads without a direct link) as of Nov 10, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
 
 | Fit | Company | Role | Required quals met | Location | Posted | Apply |
 |---|---|---|---|---|---|---|
@@ -73,8 +73,8 @@ history fills more of that in.
 | 98 | Rocket Lab | Fluid Component Intern Summer 2027 | 2 of 2 | Long Beach, CA | 2026-09-09 | [Apply](https://job-boards.greenhouse.io/rocketlab/jobs/7990365003) |
 | 98 | Varda Space | Vehicle Integration & Test Internship - Summer 2027 | 2 of 2 | El Segundo, California, United States | 2026-10-01 | [Apply](https://job-boards.greenhouse.io/vardaspace/jobs/8010170003) |
 | 98 | Varda Space | Thermal Engineering Internship - Summer 2027 | 5 of 5 | El Segundo, California, United States | 2026-10-01 | [Apply](https://job-boards.greenhouse.io/vardaspace/jobs/8010172003) |
+| 97 | CesiumAstro | Summer 2027 - Mechanical Engineering Internship | 2 of 2 | Melbourne, FL | 2026-11-09 | [Apply](https://jobs.lever.co/CesiumAstro/cfcdb403-c51a-430d-a1e2-4378178714d5) |
 | 97 | CesiumAstro | Summer 2027 - Mechanical Engineering Internship | 2 of 2 | Austin, TX | 2026-09-16 | [Apply](https://jobs.lever.co/CesiumAstro/042f3a1d-5fc1-44ef-8f12-57044eaa4db2) |
-| 97 | CesiumAstro | Summer 2027 - Mechanical Engineering Internship | 2 of 2 | Westminster, CO | 2026-09-16 | [Apply](https://jobs.lever.co/CesiumAstro/c7217acc-8eb4-4431-9e90-f426ccca8d1f) |
 <!-- JOBS:END -->
 
 ## Expected soon
