@@ -528,6 +528,15 @@
   "fails": 0,
   "last_seen": "2026-11-11"
  },
+ "greenhouse:lightmatter": {
+  "kind": "greenhouse",
+  "board": "lightmatter",
+  "name": "Lightmatter",
+  "first_seen": "2026-11-12",
+  "fails": 0,
+  "engineering": true,
+  "last_seen": "2026-11-11"
+ },
  "greenhouse:lunarenergy": {
   "kind": "greenhouse",
   "board": "lunarenergy",
@@ -1344,7 +1353,7 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-11-10"
+  "last_seen": "2026-11-12"
  },
  "workday:asml.wd3.myworkdayjobs.com/asmlext1": {
   "kind": "workday",
@@ -1822,7 +1831,7 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-10-23"
+  "last_seen": "2026-11-12"
  },
  "workday:jabil.wd5.myworkdayjobs.com/jabil_careers": {
   "kind": "workday",
@@ -1995,7 +2004,7 @@
   "site": "careers",
   "name": "NXP Semiconductors",
   "first_seen": "2026-11-10",
-  "fails": 5,
+  "fails": 6,
   "engineering": true,
   "last_seen": "2026-09-22"
  },
@@ -2148,7 +2157,7 @@
   "site": "Symbotic",
   "name": "Symbotic",
   "first_seen": "2026-11-12",
-  "fails": 1,
+  "fails": 2,
   "engineering": true,
   "last_seen": "2025-09-15"
  },
