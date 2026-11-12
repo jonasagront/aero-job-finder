@@ -660,7 +660,7 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-11-10"
+  "last_seen": "2026-11-11"
  },
  "greenhouse:singlestore": {
   "kind": "greenhouse",
@@ -1995,7 +1995,7 @@
   "site": "careers",
   "name": "NXP Semiconductors",
   "first_seen": "2026-11-10",
-  "fails": 4,
+  "fails": 5,
   "engineering": true,
   "last_seen": "2026-09-22"
  },
@@ -2141,6 +2141,16 @@
   "fails": 0,
   "engineering": true,
   "last_seen": "2026-10-22"
+ },
+ "workday:symbotic.wd1.myworkdayjobs.com/symbotic": {
+  "kind": "workday",
+  "host": "symbotic.wd1.myworkdayjobs.com",
+  "site": "Symbotic",
+  "name": "Symbotic",
+  "first_seen": "2026-11-12",
+  "fails": 1,
+  "engineering": true,
+  "last_seen": "2025-09-15"
  },
  "workday:thales.wd3.myworkdayjobs.com/careers": {
   "kind": "workday",
