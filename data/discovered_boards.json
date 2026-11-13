@@ -1426,7 +1426,7 @@
   "name": "The Boeing Company",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-11"
+  "last_seen": "2026-11-12"
  },
  "workday:borgwarner.wd5.myworkdayjobs.com/borgwarner_careers": {
   "kind": "workday",
@@ -1608,6 +1608,16 @@
   "fails": 0,
   "engineering": true,
   "last_seen": "2026-11-03"
+ },
+ "workday:entegris.wd1.myworkdayjobs.com/entegriscareers": {
+  "kind": "workday",
+  "host": "entegris.wd1.myworkdayjobs.com",
+  "site": "entegriscareers",
+  "name": "Entegris",
+  "first_seen": "2026-11-13",
+  "fails": 0,
+  "engineering": true,
+  "last_seen": "2026-11-12"
  },
  "workday:fireflyspace.wd115.myworkdayjobs.com/firefly": {
   "kind": "workday",
@@ -1998,16 +2008,6 @@
   "fails": 0,
   "last_seen": "2026-09-22"
  },
- "workday:nxp.wd3.myworkdayjobs.com/careers": {
-  "kind": "workday",
-  "host": "nxp.wd3.myworkdayjobs.com",
-  "site": "careers",
-  "name": "NXP Semiconductors",
-  "first_seen": "2026-11-10",
-  "fails": 8,
-  "engineering": true,
-  "last_seen": "2026-09-22"
- },
  "workday:oshkoshcorporation.wd5.myworkdayjobs.com/oshkosh": {
   "kind": "workday",
   "host": "oshkoshcorporation.wd5.myworkdayjobs.com",
@@ -2157,7 +2157,7 @@
   "site": "Symbotic",
   "name": "Symbotic",
   "first_seen": "2026-11-12",
-  "fails": 4,
+  "fails": 5,
   "engineering": true,
   "last_seen": "2025-09-15"
  },
