@@ -46,7 +46,7 @@ history fills more of that in.
 ## Today's top matches
 
 <!-- JOBS:START -->
-**1045 Summer 2027 aerospace matches** (19 Fall 2027 near home, 3684 in All engineering, 162 leads without a direct link) as of Nov 13, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
+**1063 Summer 2027 aerospace matches** (20 Fall 2027 near home, 3712 in All engineering, 162 leads without a direct link) as of Nov 13, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
 
 | Fit | Company | Role | Required quals met | Location | Posted | Apply |
 |---|---|---|---|---|---|---|
@@ -80,7 +80,7 @@ history fills more of that in.
 ## Expected soon
 
 <!-- PREDICTED:START -->
-**32 aerospace internships expected in the next 60 days**, from past cycles' posting dates. All of them, with filters: **[Predicted tab](https://jonasagront.github.io/aero-job-finder/#predicted)**
+**31 aerospace internships expected in the next 60 days**, from past cycles' posting dates. All of them, with filters: **[Predicted tab](https://jonasagront.github.io/aero-job-finder/#predicted)**
 
 | Expected | Company | Role | For | Last cycle's posting date | Career site |
 |---|---|---|---|---|---|
@@ -89,7 +89,6 @@ history fills more of that in.
 | ~2026-10-31 (due now) | Huntington Ingalls Industries | Engineering Intern | Summer 2027 | 2025-10-31 | [Open](https://careers.huntingtoningalls.com/search/?q=intern) |
 | ~2026-10-31 (due now) | Northwood Space | Site Engineer Intern | Summer 2027 | 2025-10-31 | [Open](https://jobs.ashbyhq.com/NorthwoodSpace) |
 | ~2026-10-31 (due now) | Peraton | Computer Engineering Intern | Summer 2027 | 2025-10-31 | [Open](https://careers-peraton.icims.com/jobs/search?ss=1&searchKeyword=intern) |
-| ~2026-10-31 (due now) | Reliable Robotics | Electrical System Integration Engineer Intern | Summer 2027 | 2025-10-31 | [Open](https://jobs.ashbyhq.com/reliable-robotics) |
 | ~2026-10-31 (due now) | Safran | Engineering Internships! | Fall 2027 | 2025-10-31 | [Open](https://careers.safran-dsi.com/search/?q=intern) |
 | ~2026-11-01 (due now) | Draper | Microelectronics Integration & Test Summer Intern | Summer 2027 | 2025-11-01 | [Open](https://draper.wd5.myworkdayjobs.com/Draper_Careers) |
 | ~2026-11-04 (due now) | RTX | Intern - Production and Field Support - Onsite | Summer 2027 | 2025-11-04 | [Open](https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway) |
@@ -99,6 +98,7 @@ history fills more of that in.
 | ~2026-11-13 (due now) | Northrop Grumman | Engineering Intern - Radford VA | Summer 2027 | 2025-11-13 | [Open](https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site) |
 | ~2026-11-21 | Leidos | Aerospace AI/ML Intern | Summer 2027 | 2025-11-11 | [Open](https://leidos.wd5.myworkdayjobs.com/External) |
 | ~2026-11-21 | Northrop Grumman | Engineering Intern | Summer 2027 | 2025-11-21 | [Open](https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site) |
+| ~2026-11-24 | Shield AI | Mission Systems Engineering Intern – Summer Intern | Summer 2027 | 2025-11-24 | [Open](https://jobs.lever.co/shieldai) |
 <!-- PREDICTED:END -->
 
 ---
