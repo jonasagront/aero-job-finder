@@ -5,7 +5,7 @@
   "name": "Allen Control Systems",
   "first_seen": "2026-10-30",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "ashby:antares": {
   "kind": "ashby",
@@ -13,7 +13,7 @@
   "name": "Antares Nuclear",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "ashby:apex-technology-inc": {
   "kind": "ashby",
@@ -21,7 +21,7 @@
   "name": "Apex",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "ashby:base-power": {
   "kind": "ashby",
@@ -47,7 +47,7 @@
   "name": "Constellation Space",
   "first_seen": "2026-10-28",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "ashby:cowboyspace": {
   "kind": "ashby",
@@ -55,7 +55,7 @@
   "name": "Cowboy Space",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "ashby:distributed-spectrum": {
   "kind": "ashby",
@@ -71,7 +71,7 @@
   "name": "Lynk Global",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "ashby:f7d8749a-72d6-407c-bf98-292ea630c73a": {
   "kind": "ashby",
@@ -79,7 +79,7 @@
   "name": "Shield AI",
   "first_seen": "2026-10-28",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "ashby:fab2": {
   "kind": "ashby",
@@ -96,7 +96,7 @@
   "name": "First Order Effects",
   "first_seen": "2026-10-28",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "ashby:h3x-technologies": {
   "kind": "ashby",
@@ -104,7 +104,7 @@
   "name": "H3X Technologies",
   "first_seen": "2026-11-03",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "ashby:hadrian-automation": {
   "kind": "ashby",
@@ -112,7 +112,7 @@
   "name": "Hadrian",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "ashby:heron-power": {
   "kind": "ashby",
@@ -137,7 +137,7 @@
   "name": "ICEYE",
   "first_seen": "2026-10-30",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "ashby:mach": {
   "kind": "ashby",
@@ -153,7 +153,7 @@
   "name": "Northwood Space",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "ashby:odys-aviation": {
   "kind": "ashby",
@@ -161,7 +161,7 @@
   "name": "Odys Aviation",
   "first_seen": "2026-10-30",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "ashby:oligo": {
   "kind": "ashby",
@@ -177,7 +177,7 @@
   "name": "Reflect Orbital",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "ashby:regent": {
   "kind": "ashby",
@@ -185,7 +185,15 @@
   "name": "REGENT",
   "first_seen": "2026-11-04",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
+ },
+ "ashby:reliable-robotics": {
+  "kind": "ashby",
+  "board": "reliable-robotics",
+  "name": "Reliable Robotics",
+  "first_seen": "2026-11-14",
+  "fails": 0,
+  "last_seen": "2026-11-14"
  },
  "ashby:saronic": {
   "kind": "ashby",
@@ -193,7 +201,7 @@
   "name": "Saronic",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "ashby:scout-ai": {
   "kind": "ashby",
@@ -201,7 +209,7 @@
   "name": "Scout AI",
   "first_seen": "2026-10-28",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "ashby:shield": {
   "kind": "ashby",
@@ -209,7 +217,7 @@
   "name": "Shield AI",
   "first_seen": "2026-11-11",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "ashby:skyband%20systems": {
   "kind": "ashby",
@@ -217,7 +225,7 @@
   "name": "Skyband Systems",
   "first_seen": "2026-11-03",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "ashby:skydio": {
   "kind": "ashby",
@@ -225,7 +233,7 @@
   "name": "Skydio",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "ashby:starpath.space": {
   "kind": "ashby",
@@ -233,7 +241,7 @@
   "name": "Starpath",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "ashby:swarmaero": {
   "kind": "ashby",
@@ -241,7 +249,7 @@
   "name": "Swarm Aero",
   "first_seen": "2026-10-28",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "ashby:the-exploration-company": {
   "kind": "ashby",
@@ -249,7 +257,7 @@
   "name": "The Exploration Company",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "ashby:turion-space": {
   "kind": "ashby",
@@ -273,7 +281,7 @@
   "name": "Xona Space Systems",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "greenhouse:advancedspace": {
   "kind": "greenhouse",
@@ -289,7 +297,7 @@
   "name": "Aevex Aerospace",
   "first_seen": "2026-10-28",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "greenhouse:albedo": {
   "kind": "greenhouse",
@@ -305,7 +313,7 @@
   "name": "Anduril",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "greenhouse:arcboatcompany": {
   "kind": "greenhouse",
@@ -340,7 +348,7 @@
   "name": "Astranis",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "greenhouse:astronicscorporation": {
   "kind": "greenhouse",
@@ -372,7 +380,7 @@
   "name": "Bluestaq",
   "first_seen": "2026-10-28",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "greenhouse:castelioncorporation": {
   "kind": "greenhouse",
@@ -380,7 +388,7 @@
   "name": "Castelion",
   "first_seen": "2026-10-29",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "greenhouse:chaosindustries": {
   "kind": "greenhouse",
@@ -404,7 +412,7 @@
   "name": "Defense Unicorns",
   "first_seen": "2026-10-28",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "greenhouse:flyzipline": {
   "kind": "greenhouse",
@@ -412,7 +420,7 @@
   "name": "Zipline",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "greenhouse:freeformfuturecorp": {
   "kind": "greenhouse",
@@ -420,7 +428,7 @@
   "name": "Freeform",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "greenhouse:generalgalactic": {
   "kind": "greenhouse",
@@ -428,7 +436,7 @@
   "name": "General Galactic",
   "first_seen": "2026-10-28",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "greenhouse:gitai": {
   "kind": "greenhouse",
@@ -444,7 +452,7 @@
   "name": "Gravitics",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "greenhouse:harbingermotors": {
   "kind": "greenhouse",
@@ -461,7 +469,7 @@
   "name": "HawkEye 360",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "greenhouse:heartaerospace": {
   "kind": "greenhouse",
@@ -494,7 +502,7 @@
   "name": "Inversion Space",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "greenhouse:jetzero": {
   "kind": "greenhouse",
@@ -552,7 +560,7 @@
   "name": "Mach Industries",
   "first_seen": "2026-11-05",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "greenhouse:mantari": {
   "kind": "greenhouse",
@@ -576,7 +584,7 @@
   "name": "Muon Space",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "greenhouse:neuralink": {
   "kind": "greenhouse",
@@ -593,7 +601,7 @@
   "name": "Orbital Operations",
   "first_seen": "2026-10-28",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "greenhouse:parallel": {
   "kind": "greenhouse",
@@ -619,7 +627,7 @@
   "name": "Planet",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "greenhouse:relativity": {
   "kind": "greenhouse",
@@ -627,7 +635,7 @@
   "name": "Relativity Space",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "greenhouse:rendezvousrobotics": {
   "kind": "greenhouse",
@@ -635,7 +643,7 @@
   "name": "Rendezvous Robotics",
   "first_seen": "2026-11-02",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "greenhouse:rocketlab": {
   "kind": "greenhouse",
@@ -643,7 +651,7 @@
   "name": "Rocket Lab USA",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "greenhouse:rsinternboard": {
   "kind": "greenhouse",
@@ -669,7 +677,7 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-11-11"
+  "last_seen": "2026-11-13"
  },
  "greenhouse:singlestore": {
   "kind": "greenhouse",
@@ -694,7 +702,7 @@
   "name": "Spaceium",
   "first_seen": "2026-10-30",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "greenhouse:spacekinetic": {
   "kind": "greenhouse",
@@ -702,7 +710,7 @@
   "name": "Space Kinetic",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "greenhouse:spacex": {
   "kind": "greenhouse",
@@ -710,7 +718,7 @@
   "name": "SpaceX",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "greenhouse:star-catcher": {
   "kind": "greenhouse",
@@ -718,7 +726,7 @@
   "name": "Star Catcher",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "greenhouse:stokespacetechnologies": {
   "kind": "greenhouse",
@@ -726,7 +734,7 @@
   "name": "STOKE Space Technologies",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "greenhouse:stratolaunch": {
   "kind": "greenhouse",
@@ -734,7 +742,7 @@
   "name": "Stratolaunch",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "greenhouse:terranorbitalcorporation": {
   "kind": "greenhouse",
@@ -758,7 +766,7 @@
   "name": "Ursa Major Technologies",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "greenhouse:vardaspace": {
   "kind": "greenhouse",
@@ -766,7 +774,7 @@
   "name": "Varda Space",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "greenhouse:vast": {
   "kind": "greenhouse",
@@ -774,7 +782,7 @@
   "name": "Vast",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "greenhouse:verkada": {
   "kind": "greenhouse",
@@ -791,7 +799,7 @@
   "name": "Voyager Technologies",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "greenhouse:zone5technologies": {
   "kind": "greenhouse",
@@ -833,7 +841,7 @@
   "name": "V2X",
   "first_seen": "2026-11-02",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "jibe:careers.jhuapl.edu": {
   "kind": "jibe",
@@ -841,7 +849,7 @@
   "name": "Johns Hopkins Applied Physics Laboratory",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "jibe:careers.rivian.com": {
   "kind": "jibe",
@@ -883,7 +891,7 @@
   "name": "Peraton",
   "first_seen": "2026-10-31",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "jibe:spa.jibeapply.com": {
   "kind": "jibe",
@@ -891,7 +899,7 @@
   "name": "Systems Planning and Analysis",
   "first_seen": "2026-11-06",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "lever:acronaviation": {
   "kind": "lever",
@@ -899,7 +907,7 @@
   "name": "Acron Aviation",
   "first_seen": "2026-10-30",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "lever:arraylabs.io": {
   "kind": "lever",
@@ -915,7 +923,7 @@
   "name": "CesiumAstro",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "lever:cfsenergy": {
   "kind": "lever",
@@ -949,7 +957,7 @@
   "name": "E-Space",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "lever:foth": {
   "kind": "lever",
@@ -966,7 +974,7 @@
   "name": "Hermeus",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "lever:ispace-inc": {
   "kind": "lever",
@@ -982,7 +990,7 @@
   "name": "Layup Parts",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "lever:leolabs-2": {
   "kind": "lever",
@@ -998,7 +1006,7 @@
   "name": "Loft Orbital",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "lever:machinalabs": {
   "kind": "lever",
@@ -1006,7 +1014,7 @@
   "name": "Machina Labs",
   "first_seen": "2026-11-03",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "lever:pyka": {
   "kind": "lever",
@@ -1038,7 +1046,7 @@
   "name": "Shield AI",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "lever:skyways": {
   "kind": "lever",
@@ -1072,7 +1080,7 @@
   "name": "Standard Aero",
   "first_seen": "2026-10-30",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "oracle:ebxs.fa.us2.oraclecloud.com/cx_2": {
   "kind": "oracle",
@@ -1160,7 +1168,7 @@
   "name": "Howmet Aerospace",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "oracle:hctz.fa.us2.oraclecloud.com/cx_1001": {
   "kind": "oracle",
@@ -1209,7 +1217,7 @@
   "name": "Honeywell",
   "first_seen": "2026-11-06",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "oracle:ibqbjb.fa.ocs.oraclecloud.com/honeywell": {
   "kind": "oracle",
@@ -1218,7 +1226,7 @@
   "name": "Honeywell",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "successfactors:careers.gulfstream.com": {
   "kind": "successfactors",
@@ -1233,15 +1241,15 @@
   "host": "careers.huntingtoningalls.com",
   "name": "Huntington Ingalls Industries",
   "first_seen": "2026-10-28",
-  "fails": 0,
-  "last_seen": "2026-11-13"
+  "fails": 1,
+  "last_seen": "2026-11-14"
  },
  "successfactors:careers.qorvo.com": {
   "kind": "successfactors",
   "host": "careers.qorvo.com",
   "name": "Qorvo",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-09-25"
  },
@@ -1251,7 +1259,7 @@
   "name": "Safran",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "successfactors:careers.westinghousenuclear.com": {
   "kind": "successfactors",
@@ -1268,15 +1276,15 @@
   "name": "L3Harris Technologies",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "successfactors:jobs.ulalaunch.com": {
   "kind": "successfactors",
   "host": "jobs.ulalaunch.com",
   "name": "United Launch Alliance",
   "first_seen": "2026-10-27",
-  "fails": 0,
-  "last_seen": "2026-11-13"
+  "fails": 1,
+  "last_seen": "2026-11-14"
  },
  "workday:abb.wd3.myworkdayjobs.com/external_career_page": {
   "kind": "workday",
@@ -1294,8 +1302,8 @@
   "site": "external",
   "name": "The Aerospace Corporation",
   "first_seen": "2026-10-27",
-  "fails": 0,
-  "last_seen": "2026-11-13"
+  "fails": 1,
+  "last_seen": "2026-11-14"
  },
  "workday:ag.wd3.myworkdayjobs.com/airbus": {
   "kind": "workday",
@@ -1304,7 +1312,7 @@
   "name": "Airbus",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "workday:allegion.wd5.myworkdayjobs.com/careers": {
   "kind": "workday",
@@ -1312,9 +1320,19 @@
   "site": "careers",
   "name": "Allegion",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-10-02"
+ },
+ "workday:alliance.wd3.myworkdayjobs.com/nissanjobs": {
+  "kind": "workday",
+  "host": "alliance.wd3.myworkdayjobs.com",
+  "site": "nissanjobs",
+  "name": "Nissan",
+  "first_seen": "2026-11-14",
+  "fails": 0,
+  "engineering": true,
+  "last_seen": "2026-10-19"
  },
  "workday:amainc.wd12.myworkdayjobs.com/ama_careers": {
   "kind": "workday",
@@ -1331,7 +1349,7 @@
   "site": "External",
   "name": "Applied Materials",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-10-28"
  },
@@ -1351,7 +1369,7 @@
   "site": "External",
   "name": "Analog Devices",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-12"
  },
@@ -1371,8 +1389,8 @@
   "site": "avav",
   "name": "AeroVironment",
   "first_seen": "2026-10-27",
-  "fails": 0,
-  "last_seen": "2026-11-13"
+  "fails": 1,
+  "last_seen": "2026-11-14"
  },
  "workday:axiomspace.wd5.myworkdayjobs.com/external_career_site": {
   "kind": "workday",
@@ -1380,8 +1398,8 @@
   "site": "External_Career_Site",
   "name": "Axiom Space",
   "first_seen": "2026-10-27",
-  "fails": 0,
-  "last_seen": "2026-11-13"
+  "fails": 1,
+  "last_seen": "2026-11-14"
  },
  "workday:bah.wd1.myworkdayjobs.com/bah_jobs": {
   "kind": "workday",
@@ -1389,7 +1407,7 @@
   "site": "BAH_Jobs",
   "name": "Booz Allen Hamilton",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "last_seen": "2026-11-06"
  },
  "workday:blueorigin.wd5.myworkdayjobs.com/blueorigin": {
@@ -1398,8 +1416,8 @@
   "site": "blueorigin",
   "name": "Blue Origin",
   "first_seen": "2026-10-27",
-  "fails": 0,
-  "last_seen": "2026-11-13"
+  "fails": 1,
+  "last_seen": "2026-11-14"
  },
  "workday:boeing.wd1.myworkdayjobs.com/external_careers": {
   "kind": "workday",
@@ -1434,7 +1452,7 @@
   "site": "BorgWarner_Careers",
   "name": "BorgWarner",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-10-28"
  },
@@ -1444,7 +1462,7 @@
   "site": "Boston_Dynamics",
   "name": "Boston Dynamics",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-09"
  },
@@ -1454,7 +1472,7 @@
   "site": "search",
   "name": "Brunswick",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-09-03"
  },
@@ -1464,8 +1482,8 @@
   "site": "external",
   "name": "CACI",
   "first_seen": "2026-10-28",
-  "fails": 0,
-  "last_seen": "2026-11-13"
+  "fails": 1,
+  "last_seen": "2026-11-14"
  },
  "workday:cae.wd3.myworkdayjobs.com/career": {
   "kind": "workday",
@@ -1474,7 +1492,7 @@
   "name": "CAE",
   "first_seen": "2026-11-02",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "workday:carrier.wd5.myworkdayjobs.com/jobs": {
   "kind": "workday",
@@ -1492,7 +1510,7 @@
   "site": "solarturbines",
   "name": "Solar Turbines",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-10-28"
  },
@@ -1502,7 +1520,7 @@
   "site": "Careers",
   "name": "Ciena",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-05-13"
  },
@@ -1512,7 +1530,7 @@
   "site": "cisco_careers",
   "name": "Cisco",
   "first_seen": "2026-11-06",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-10"
  },
@@ -1522,8 +1540,8 @@
   "site": "Jobs",
   "name": "NASA Jet Propulsion Laboratory",
   "first_seen": "2026-10-27",
-  "fails": 0,
-  "last_seen": "2026-11-13"
+  "fails": 1,
+  "last_seen": "2026-11-14"
  },
  "workday:cranecompany.wd5.myworkdayjobs.com/careers": {
   "kind": "workday",
@@ -1531,7 +1549,7 @@
   "site": "Careers",
   "name": "Crane",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "last_seen": "2026-10-28"
  },
  "workday:cubic.wd1.myworkdayjobs.com/cubic_global_careers": {
@@ -1549,7 +1567,7 @@
   "site": "cubic_USA_careers",
   "name": "Cubic",
   "first_seen": "2026-10-30",
-  "fails": 0,
+  "fails": 1,
   "last_seen": "2026-11-09"
  },
  "workday:curtisswright.wd1.myworkdayjobs.com/cw_external_career_site": {
@@ -1558,7 +1576,7 @@
   "site": "cw_external_career_site",
   "name": "Curtiss-Wright",
   "first_seen": "2026-10-27",
-  "fails": 0,
+  "fails": 1,
   "last_seen": "2026-11-04"
  },
  "workday:danaher.wd1.myworkdayjobs.com/danaherjobs": {
@@ -1567,7 +1585,7 @@
   "site": "danaherjobs",
   "name": "Danaher Corporation",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-09-17"
  },
@@ -1577,8 +1595,8 @@
   "site": "Draper_Careers",
   "name": "Draper",
   "first_seen": "2026-10-27",
-  "fails": 0,
-  "last_seen": "2026-11-13"
+  "fails": 1,
+  "last_seen": "2026-11-14"
  },
  "workday:dtna.wd5.myworkdayjobs.com/dtna_external": {
   "kind": "workday",
@@ -1586,7 +1604,7 @@
   "site": "DTNA_external",
   "name": "Daimler Truck",
   "first_seen": "2026-11-12",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-11"
  },
@@ -1596,7 +1614,7 @@
   "site": "ebadcareers",
   "name": "Ensign-Bickford Aerospace & Defense",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "last_seen": "2026-11-10"
  },
  "workday:elkay.wd1.myworkdayjobs.com/elkay_external": {
@@ -1605,7 +1623,7 @@
   "site": "Elkay_External",
   "name": "Zurn Elkay Water Solutions",
   "first_seen": "2026-11-06",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-03"
  },
@@ -1615,7 +1633,7 @@
   "site": "entegriscareers",
   "name": "Entegris",
   "first_seen": "2026-11-13",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-13"
  },
@@ -1626,7 +1644,7 @@
   "name": "Firefly Aerospace",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "workday:flextronics.wd1.myworkdayjobs.com/careers": {
   "kind": "workday",
@@ -1634,7 +1652,7 @@
   "site": "Careers",
   "name": "Flextronics International",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-04"
  },
@@ -1645,7 +1663,7 @@
   "name": "Teledyne",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "workday:freseniusmedicalcare.wd3.myworkdayjobs.com/fme": {
   "kind": "workday",
@@ -1673,7 +1691,7 @@
   "name": "General Dynamics Information Technology",
   "first_seen": "2026-10-28",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "workday:geaerospace.wd5.myworkdayjobs.com/ge_externalsite": {
   "kind": "workday",
@@ -1681,8 +1699,8 @@
   "site": "ge_externalsite",
   "name": "GE Aerospace",
   "first_seen": "2026-10-27",
-  "fails": 0,
-  "last_seen": "2026-11-13"
+  "fails": 1,
+  "last_seen": "2026-11-14"
  },
  "workday:generac.wd5.myworkdayjobs.com/external": {
   "kind": "workday",
@@ -1690,7 +1708,7 @@
   "site": "external",
   "name": "Generac",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-10-26"
  },
@@ -1700,7 +1718,7 @@
   "site": "Careers_GM",
   "name": "General Motors",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-10-27"
  },
@@ -1710,7 +1728,7 @@
   "site": "Global_Infrastructure",
   "name": "Global Infrastructure",
   "first_seen": "2026-11-06",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-06"
  },
@@ -1720,7 +1738,7 @@
   "site": "External",
   "name": "GlobalFoundries",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-02"
  },
@@ -1731,7 +1749,7 @@
   "name": "RTX",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "workday:gorbel.wd501.myworkdayjobs.com/gorbelcareers": {
   "kind": "workday",
@@ -1763,13 +1781,22 @@
   "engineering": true,
   "last_seen": "2026-04-20"
  },
+ "workday:hendrick.wd5.myworkdayjobs.com/hmscareers": {
+  "kind": "workday",
+  "host": "hendrick.wd5.myworkdayjobs.com",
+  "site": "HMSCareers",
+  "name": "Hendrick Motorsports",
+  "first_seen": "2026-11-14",
+  "fails": 1,
+  "last_seen": "2026-11-14"
+ },
  "workday:hexcel.wd5.myworkdayjobs.com/hexcelcareers": {
   "kind": "workday",
   "host": "hexcel.wd5.myworkdayjobs.com",
   "site": "HexcelCareers",
   "name": "Hexcel",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "last_seen": "2026-10-28"
  },
  "workday:hitachi.wd1.myworkdayjobs.com/hitachi": {
@@ -1778,7 +1805,7 @@
   "site": "hitachi",
   "name": "Hitachi Energy",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-06"
  },
@@ -1788,7 +1815,7 @@
   "site": "hntb_careers",
   "name": "HNTB",
   "first_seen": "2026-11-06",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-10-27"
  },
@@ -1808,7 +1835,7 @@
   "site": "EXTEU-AC-CareerSite",
   "name": "Hewlett Packard",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-09-28"
  },
@@ -1818,7 +1845,7 @@
   "site": "jobsathpe",
   "name": "Hewlett Packard Enterprise",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-09"
  },
@@ -1839,7 +1866,7 @@
   "site": "External",
   "name": "Intel",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-12"
  },
@@ -1849,7 +1876,7 @@
   "site": "Jabil_Careers",
   "name": "Jabil",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-05"
  },
@@ -1859,7 +1886,7 @@
   "site": "JJ",
   "name": "Johnson & Johnson",
   "first_seen": "2026-11-06",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-09-23"
  },
@@ -1869,8 +1896,8 @@
   "site": "KBR_Careers",
   "name": "KBR",
   "first_seen": "2026-10-28",
-  "fails": 0,
-  "last_seen": "2026-11-13"
+  "fails": 1,
+  "last_seen": "2026-11-14"
  },
  "workday:kla.wd1.myworkdayjobs.com/search": {
   "kind": "workday",
@@ -1888,7 +1915,7 @@
   "site": "UR",
   "name": "KLA",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-12"
  },
@@ -1898,8 +1925,8 @@
   "site": "External",
   "name": "Leidos",
   "first_seen": "2026-11-03",
-  "fails": 0,
-  "last_seen": "2026-11-13"
+  "fails": 1,
+  "last_seen": "2026-11-14"
  },
  "workday:marvell.wd1.myworkdayjobs.com/marvellcareers": {
   "kind": "workday",
@@ -1917,7 +1944,7 @@
   "site": "MarvellCareers2",
   "name": "Marvell",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-10-05"
  },
@@ -1947,7 +1974,7 @@
   "site": "External",
   "name": "Micron Technology",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-04"
  },
@@ -1957,8 +1984,8 @@
   "site": "moog_external_career_site",
   "name": "Moog",
   "first_seen": "2026-10-27",
-  "fails": 0,
-  "last_seen": "2026-11-13"
+  "fails": 1,
+  "last_seen": "2026-11-14"
  },
  "workday:motorolasolutions.wd5.myworkdayjobs.com/careers": {
   "kind": "workday",
@@ -1966,9 +1993,18 @@
   "site": "Careers",
   "name": "Motorola",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-10-22"
+ },
+ "workday:multimatic.wd10.myworkdayjobs.com/mmec": {
+  "kind": "workday",
+  "host": "multimatic.wd10.myworkdayjobs.com",
+  "site": "MMEC",
+  "name": "Multimatic",
+  "first_seen": "2026-11-14",
+  "fails": 0,
+  "last_seen": "2026-11-14"
  },
  "workday:ngc.wd1.myworkdayjobs.com/northrop_grumman_external_site": {
   "kind": "workday",
@@ -1976,8 +2012,8 @@
   "site": "Northrop_Grumman_External_Site",
   "name": "Northrop Grumman",
   "first_seen": "2026-10-27",
-  "fails": 0,
-  "last_seen": "2026-11-13"
+  "fails": 1,
+  "last_seen": "2026-11-14"
  },
  "workday:nvent.wd5.myworkdayjobs.com/nvent": {
   "kind": "workday",
@@ -1985,7 +2021,7 @@
   "site": "nVent",
   "name": "nVent",
   "first_seen": "2026-11-06",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-04"
  },
@@ -1995,7 +2031,7 @@
   "site": "NVIDIAExternalCareerSite",
   "name": "NVIDIA",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-10-29"
  },
@@ -2014,7 +2050,7 @@
   "site": "careers",
   "name": "NXP Semiconductors",
   "first_seen": "2026-11-13",
-  "fails": 1,
+  "fails": 2,
   "engineering": true,
   "last_seen": "2026-09-22"
  },
@@ -2024,7 +2060,7 @@
   "site": "Oshkosh",
   "name": "Oshkosh",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-10-20"
  },
@@ -2034,7 +2070,7 @@
   "site": "amentum_careers",
   "name": "Amentum",
   "first_seen": "2026-10-28",
-  "fails": 0,
+  "fails": 1,
   "last_seen": "2026-11-04"
  },
  "workday:parsons.wd5.myworkdayjobs.com/search": {
@@ -2043,8 +2079,8 @@
   "site": "search",
   "name": "Parsons",
   "first_seen": "2026-10-28",
-  "fails": 0,
-  "last_seen": "2026-11-13"
+  "fails": 1,
+  "last_seen": "2026-11-14"
  },
  "workday:philips.wd3.myworkdayjobs.com/jobs-and-careers": {
   "kind": "workday",
@@ -2063,7 +2099,7 @@
   "name": "Radiance Technologies",
   "first_seen": "2026-10-30",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "workday:rockwellautomation.wd1.myworkdayjobs.com/external_rockwell_automation": {
   "kind": "workday",
@@ -2071,7 +2107,7 @@
   "site": "External_Rockwell_Automation",
   "name": "Rockwell Automation",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-10-14"
  },
@@ -2090,7 +2126,7 @@
   "site": "SEL",
   "name": "Schweitzer Engineering Laboratories",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-09"
  },
@@ -2100,7 +2136,7 @@
   "site": "Sensata-Careers",
   "name": "Sensata",
   "first_seen": "2026-11-06",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-09-16"
  },
@@ -2110,7 +2146,7 @@
   "site": "Sierra_Space_External_Career_Site",
   "name": "Sierra Space",
   "first_seen": "2026-10-27",
-  "fails": 0,
+  "fails": 1,
   "last_seen": "2026-11-04"
  },
  "workday:silabs.wd1.myworkdayjobs.com/siliconlabscareers": {
@@ -2119,7 +2155,7 @@
   "site": "SiliconlabsCareers",
   "name": "Silicon Laboratories",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-01-26"
  },
@@ -2139,8 +2175,8 @@
   "site": "snc_external_career_site",
   "name": "Sierra Nevada Corporation",
   "first_seen": "2026-10-27",
-  "fails": 0,
-  "last_seen": "2026-11-13"
+  "fails": 1,
+  "last_seen": "2026-11-14"
  },
  "workday:starfish.wd501.myworkdayjobs.com/careers": {
   "kind": "workday",
@@ -2157,7 +2193,7 @@
   "site": "StrykerCareers",
   "name": "Stryker",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-10-22"
  },
@@ -2167,7 +2203,7 @@
   "site": "Symbotic",
   "name": "Symbotic",
   "first_seen": "2026-11-12",
-  "fails": 6,
+  "fails": 7,
   "engineering": true,
   "last_seen": "2025-09-15"
  },
@@ -2178,7 +2214,7 @@
   "name": "Thales",
   "first_seen": "2026-10-30",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-14"
  },
  "workday:ttc.wd1.myworkdayjobs.com/toro_external_careers": {
   "kind": "workday",
@@ -2186,7 +2222,7 @@
   "site": "Toro_External_Careers",
   "name": "The Toro Company",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-12"
  },
@@ -2206,7 +2242,7 @@
   "site": "careers",
   "name": "Viavi Solutions",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-09"
  },
@@ -2235,7 +2271,7 @@
   "site": "ZOLLMedicalCorp",
   "name": "ZOLL Medical Corporation",
   "first_seen": "2026-11-06",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-10-29"
  }
