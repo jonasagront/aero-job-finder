@@ -107,6 +107,9 @@ _GH_PATH = re.compile(r"greenhouse\.io/([\w-]+)/jobs/(\d+)")
 _GH_EMBED = re.compile(r"greenhouse\.io/embed/job_app\?(?:.*&)?for=([\w-]+).*?token=(\d+)")
 _GH_JID = re.compile(r"[?&]gh_jid=(\d+)")
 _TALEO = re.compile(r"taleo\.net/careersection/[^?#]*\?(?:[^#]*&)?job=(\w+)")
+# Systems whose posting pages all share one path and carry the job's ID in the query:
+# ADP (jobId), Paycor (id), UKG (opportunityId), BrassRing (jobid)
+_ID_PARAM = re.compile(r"(?i)[?&]((?:job|opportunity|req|requisition|posting)_?id|id)=([^&#]+)")
 _LEVER = re.compile(r"jobs\.lever\.co/([\w.-]+)/([0-9a-f-]{36})")
 _ASHBY = re.compile(r"jobs\.ashbyhq\.com/([^/?#]+)/([0-9a-f-]{36})")
 _WORKDAY = re.compile(
@@ -159,6 +162,9 @@ def job_key(url: str, company: str, title: str) -> str:
         return f"ta:{m.group(1)}"
     clean = re.sub(r"[?#].*$", "", (url or "").strip().lower()).rstrip("/")
     clean = re.sub(r"/apply$", "", clean)
+    m = _ID_PARAM.search(url or "")
+    if clean and m:  # without it, every posting on such a site would count as one
+        clean += f"?{m.group(1).lower()}={m.group(2).lower()}"
     if clean:
         return "url:" + clean
     return "t:" + re.sub(r"\W+", "-", f"{company}-{title}".lower())

@@ -1,23 +1,24 @@
 # Aero Job Finder
 
-Every 6 hours this repo scans company career sites and internship lists for
+Every 5 hours this repo scans company career sites and internship lists for
 engineering internships, scores each one against my resume, and publishes the
 results to a page I can open on my phone.
 
 **Job page:** https://jonasagront.github.io/aero-job-finder/
 
-The page has eight tabs:
+The page has nine tabs:
 
 | Tab | What's in it |
 |---|---|
 | **New this week** | Everything from the other tabs posted in the last 7 days |
 | **Summer 2027** | Aerospace and mechanical internships at aerospace companies (the main list) |
+| **Motorsports** | Engineering internships at racing teams and motorsport companies (NASCAR, IndyCar, F1 and sports car teams, race engine builders), plus racing roles at any company, for spring, summer or fall 2027, since race teams hire for every part of the season |
 | **Fall 2027 near UCF** | Fall 2027 internships and co-ops within 55 miles of UCF (Orlando to the Space Coast, Melbourne included), plus remote ones, any engineering discipline |
 | **All engineering** | Every Summer 2027 engineering internship from any company or major, with mechanical and aerospace ranked first and a discipline filter |
 | **Predicted** | Internships posted in past cycles that should come back for Summer 2027 or Fall 2027, with the date each is expected: coming up, due now, not seen yet (past last cycle's date), or already posted (see below) |
 | **Posted date unknown** | Postings whose posted date couldn't be found anywhere (see below); they're kept out of the other tabs until one turns up |
 | **Leads without a link** | Postings only intern-list.com has found, with a **Find posting** button instead of Apply (see below) |
-| **Big names** | About 50 well-known employers and programs, grouped into space, defense primes, defense tech, aviation, labs and programs, and fellowships (SpaceX, NASA, Lockheed, Northrop, RTX, Leidos, Sandia, NREIP, SULI, Brooke Owens...): when each usually recruits (a typical window from past cycles; NASA, SMART and SULI deadlines are the published ones), how many of its postings are open now, the earliest posting seen this cycle, and when its first one went up last cycle |
+| **Big names** | About 50 well-known employers and programs, grouped into space, defense primes, defense tech, aviation, labs and programs, and fellowships (SpaceX, NASA, Lockheed, Northrop, RTX, Leidos, Sandia, NREIP, SULI, Brooke Owens...): when each usually recruits (a typical window from past cycles; NASA, SMART and SULI deadlines are the published ones), how many of its postings went up in the last 15 days, the earliest posting seen this cycle, and when its first one went up last cycle |
 
 Leads come from intern-list.com, which links to jobright.ai instead of the company, so they get
 their own tab and a **Find posting** button that searches for the company's own posting. A lead
@@ -25,9 +26,13 @@ leaves that tab on its own once a company career site the scan reads has the sam
 under a division's name, like Raytheon or Collins Aerospace for RTX, counts: see `[same_company]`
 in `sources.toml`).
 
-Postings more than 120 days old are left off the page (`max_age_days` in `profile.toml`); ones
-older than 15 days get a tag and can be hidden (`old_after_days`). Closed postings drop off on
-their own once they leave their source.
+Postings more than 15 days old are left off the page (`max_age_days` in `profile.toml`). Age
+counts from the posted date, or for a posting with no date anywhere, from the day the scan first
+saw it. Closed postings drop off on their own once they leave their source. The internship
+lists and job boards keep some postings for days after the company takes them down, so before
+one of their postings goes on the page the scan asks the company's own hiring system whether
+it's still open (Greenhouse, Lever, Ashby, Workday and SmartRecruiters say so directly; other
+sites count as closed when the posting's page is gone).
 When a posting's source gives no posted date, the scan opens the posting's own page for one, then
 checks the internship lists for the same company and title (the page then says which list the date
 came from). Postings with no date anywhere go in **Posted date unknown**.
@@ -128,7 +133,7 @@ history fills more of that in.
 2. Click **Daily job scan** on the left, then **Run workflow → Run workflow**.
 3. Wait about 5 minutes for a green check mark. Your page updates a minute or two after that.
 
-From then on it runs by itself every 6 hours.
+From then on it runs by itself every 5 hours.
 
 ---
 
@@ -180,12 +185,14 @@ they don't change the score.
   iCIMS (GD Mission Systems, Joby, Peraton, Sierra Lobo), Jibe (JHU APL, Spirit, V2X, SPA), Oracle (Honeywell, Howmet, SAIC),
   Phenom (BAE Systems, MITRE, Virgin Galactic), Taleo (Textron, Bell, Textron Aviation), BrassRing (General Atomics), DirectEmployers .jobs
   feeds (Sandia, Jacobs), Los Alamos's job search, Avature and plain search pages (Siemens Energy, Gulfstream, Redwire),
-  ADP Workforce Now (Kaman, Intuitive Machines, Sidus Space), UKG (TCOM, ARA), Paycor (York Space, Craig Technologies),
-  Breezy HR (Embraer, Benchmark Space), Pinpoint, BambooHR, Rippling, SmartRecruiters,
+  ADP Workforce Now (Kaman, Intuitive Machines, Sidus Space, Team Penske), UKG (TCOM, ARA, IndyCar), Paycor (York Space, Craig Technologies, Ilmor),
+  Paylocity (Orbion), isolved/ApplicantPro (X-Bow, Bastion), Breezy HR (Embraer, Benchmark Space), Pinpoint, BambooHR, Rippling, SmartRecruiters,
   Workable, Gem and JazzHR, plus the Simplify list, a mechanical engineering internship list (published as a CSV),
-  intern-list.com, the Space Capital board and ten venture firms' portfolio boards (Lux, 8VC, DCVC, Khosla, General
-  Catalyst, Accel, Energy Impact Partners, Techstars, Eclipse, The Engine); each section of the file explains which part of a company's job
-  link to copy. On Workday sites the scan also reads each site's internship filter ("Intern
+  intern-list.com, the Space Capital board, ten venture firms' portfolio boards (Lux, 8VC, DCVC, Khosla, General
+  Catalyst, Accel, Energy Impact Partners, Techstars, Eclipse, The Engine) and RacerJobs (where most NASCAR teams post);
+  each section of the file explains which part of a company's job link to copy.
+  `[motorsport_companies]` sets which companies count as motorsport, and boards marked `motorsport = true`
+  feed the Motorsports tab. On Workday sites the scan also reads each site's internship filter ("Intern
   (Fixed Term)", "Co-op/Intern"...), since the site's search ranks internships among thousands of
   other jobs. The `[[popular]]`
   entries at the bottom set the Big names tab (companies and their usual recruiting months). The bottom of the job page
@@ -201,6 +208,8 @@ they don't change the score.
   to `[aerospace_companies]` is usually enough to get a company fully covered. Found sites
   are saved in `data/discovered_boards.json` and drop out on their own if they keep failing.
 - **`[predict]` in `profile.toml`**: which terms the Predicted tab covers (Summer and Fall 2027).
+- **`[motorsport]` in `profile.toml`**: the Motorsports tab's terms (spring, summer and fall 2027),
+  its minimum score, and the title words that make a posting count as racing work anywhere.
 
 ## Files
 
@@ -210,7 +219,7 @@ they don't change the score.
 | `jobfinder/` | Fetching, scoring, and page-building code |
 | `docs/index.html` | The job page (rebuilt every run) |
 | `data/` | Saved results so the page knows what's new; `data/history.json` is every posting seen, for the Predicted tab |
-| `.github/workflows/daily.yml` | The schedule (every 6 hours) |
+| `.github/workflows/daily.yml` | The schedule (every 5 hours) |
 
 **Note:** GitHub pauses scheduled runs in repos with no activity for 60 days. If that ever
 happens, GitHub emails you; open the Actions tab and re-enable the workflow.

@@ -154,6 +154,8 @@ def careers_links(cfg: dict, found: dict, employers) -> dict[str, str]:
         "paycor": lambda c: f"https://recruitingbypaycor.com/career/CareerHome.action?clientId={c['client']}",
         "breezy": lambda c: f"https://{c['board']}.breezy.hr",
         "activate": lambda c: f"https://{c['host']}/search/searchjobs?keyword=intern",
+        "paylocity": lambda c: f"https://recruiting.paylocity.com/recruiting/jobs/All/{c['board']}",
+        "applicantpro": lambda c: f"https://{c['host']}/jobs/",
     }
     out: dict[str, str] = {}
     entries = [(kind, c) for kind in pages for c in cfg.get(kind, [])]
@@ -250,6 +252,7 @@ def build(hist: dict, jobs: list[dict], today: str, targets: list[tuple[str, int
                 aero = aero_co and matcher.aero_relevance(title.lower(), "", False, True) is not None
                 if not disc and not aero:
                     continue
+                motor = matcher.is_motorsport(last["c"], title)
                 moved = [_shift(e[1], year - y) for y, e in earliest.items()]
                 expect = _middle(moved)
                 seen = sorted(e[1] for e in this if similar(role["words"], e[2]))
@@ -285,6 +288,8 @@ def build(hist: dict, jobs: list[dict], today: str, targets: list[tuple[str, int
                     row["last"] = last["u"]
                 if aero:
                     row["aero"] = 1
+                if motor:
+                    row["mo"] = 1
                 if near and near[0] <= radius:
                     row["mi"] = round(near[0])
                 rows.append(row)

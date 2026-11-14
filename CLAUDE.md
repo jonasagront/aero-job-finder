@@ -10,6 +10,6 @@ commit it and push to `main` without asking.
   (the `app-<version>` folder changes when GitHub Desktop updates).
 - GitHub login comes from the GitHub CLI (`C:\Program Files\GitHub CLI\gh.exe`),
   wired up as git's credential helper for github.com.
-- A GitHub Action commits to `main` every 6 hours, so run `git pull --rebase`
+- A GitHub Action commits to `main` every 5 hours, so run `git pull --rebase`
   before pushing.
 - Write short, plain commit messages that say what changed.

@@ -141,6 +141,8 @@ lever = [
   { name = "HRL Laboratories", board = "dodmg" },
   # Added Nov 4 2026: Machina Labs forms aerospace structures with robots
   { name = "Machina Labs", board = "MachinaLabs" },
+  # Added Nov 13 2026: Venus Aerospace builds rotating detonation rocket engines (Houston)
+  { name = "Venus Aerospace", board = "venusaero" },
   { name = "Zoox", board = "zoox", aero = false },
   { name = "Commonwealth Fusion Systems", board = "cfsenergy", aero = false },
   { name = "Toyota Research Institute", board = "tri", aero = false },
@@ -291,6 +293,14 @@ workday = [
   # Added Nov 6 2026. Brookhaven's site really is named "Externa". Austal USA builds Navy ships in Mobile, AL.
   { name = "Brookhaven National Laboratory", host = "bnl.wd1.myworkdayjobs.com", site = "Externa", aero = false },
   { name = "Austal USA", host = "austalusa.wd1.myworkdayjobs.com", site = "Austal", aero = false },
+
+  # Motorsport (added Nov 13 2026). motorsport = true puts their postings in the
+  # Motorsports tab. Hendrick's site also carries Hendrick Technical Solutions'
+  # engineering roles; NASCAR's covers its Daytona Beach headquarters (43 miles from
+  # UCF) and its R&D center in Concord, NC; Multimatic builds race car chassis and suspension.
+  { name = "Hendrick Motorsports", host = "hendrick.wd5.myworkdayjobs.com", site = "HMSCareers", aero = false, motorsport = true },
+  { name = "NASCAR", host = "nascar.wd1.myworkdayjobs.com", site = "NASCAR", aero = false, motorsport = true },
+  { name = "Multimatic", host = "multimatic.wd10.myworkdayjobs.com", site = "MMEC", aero = false, motorsport = true },
 ]
 
 # Eightfold career sites: host is the *.eightfold.ai address, domain is the
@@ -361,6 +371,8 @@ jazzhr = [
   { name = "LiquidPiston", board = "liquidpiston" },
   # Added Nov 6 2026: Busek builds electric thrusters for spacecraft
   { name = "Busek", board = "busek" },
+  # Added Nov 13 2026: Roush engineers powertrains and vehicles (Livonia, MI) and builds race engines
+  { name = "Roush", board = "roush", aero = false, motorsport = true },
 ]
 
 # iCIMS career sites: host is the careers-<company>.icims.com address. Some sites'
@@ -442,6 +454,9 @@ bamboohr = [
   { name = "Blue Canyon Technologies", board = "bluecanyontech" },
   { name = "Vaya Space", board = "vayaspace" },
   { name = "Phantom Space", board = "phantomspace" },
+  # Added Nov 13 2026. Most Haas F1 roles are in Banbury, UK (left off as outside the
+  # U.S.); the scan catches ones at its Kannapolis, NC base.
+  { name = "Haas F1 Team", board = "haasf1team", aero = false, motorsport = true },
 ]
 rippling = [
   { name = "Boom Supersonic", board = "boom-supersonic" },
@@ -452,6 +467,8 @@ rippling = [
   { name = "Orbit Fab", board = "orbitfab" },
   { name = "Blue Water Autonomy", board = "blue-water-autonomy" },
   { name = "Forterra", board = "forterra" },
+  # Added Nov 13 2026: Swift Engineering builds drones and composite aircraft in San Clemente, CA
+  { name = "Swift Engineering", board = "swift-engineering" },
 ]
 smartrecruiters = [
   { name = "Lawrence Livermore National Laboratory", board = "LLNL" },
@@ -462,6 +479,12 @@ smartrecruiters = [
 workable = [
   { name = "RAVE Aerospace", board = "raveaerospace" },
   { name = "Cornerstone Research Group", board = "cornerstone-research-group-inc" },
+  # Added Nov 13 2026: the new F1 team, with bases in Fishers, IN, Charlotte, NC and Silverstone, UK
+  { name = "Cadillac Formula 1 Team", board = "cadillacf1team", aero = false, motorsport = true },
+  # Added Nov 13 2026: Natilus designs blended-wing cargo and passenger aircraft (San Diego);
+  # ZeroAvia builds hydrogen-electric aircraft engines (UK, plus Everett, WA and Hollister, CA)
+  { name = "Natilus", board = "natilus" },
+  { name = "ZeroAvia", board = "zeroavia" },
 ]
 gem = [
   { name = "Astroforge", board = "astroforge-io" },
@@ -475,6 +498,8 @@ gem = [
 breezy = [
   { name = "Embraer", board = "embraer" },
   { name = "Benchmark Space Systems", board = "benchmark-space-systems-inc" },
+  # Added Nov 13 2026: Interlune is building equipment to harvest helium-3 on the Moon (Seattle, Houston)
+  { name = "Interlune", board = "interlune" },
 ]
 
 # DirectEmployers .jobs sites: host = the company's .jobs address, which has an
@@ -499,6 +524,10 @@ adp = [
   # Added Nov 6 2026. Sidus Space builds satellites in Cape Canaveral.
   { name = "Intuitive Machines", cid = "b0e24f83-6e4d-492d-9d6a-bc0fea197d6a" },
   { name = "Sidus Space", cid = "274f5796-403b-41e3-b324-309840b20c85" },
+  # Added Nov 13 2026: motorsport (Team Penske runs NASCAR and IndyCar teams from Mooresville, NC)
+  { name = "Team Penske", cid = "1a56a2c9-ef1e-4c36-9a77-290e5ccc8338", aero = false, motorsport = true },
+  { name = "23XI Racing", cid = "3e24369c-c25a-4f25-9f3e-aef52a489557", aero = false, motorsport = true },
+  { name = "Speedway Motorsports", cid = "d180c324-e784-463d-a355-61b3275338b9", aero = false, motorsport = true },
 ]
 
 # UKG Pro (UltiPro): board = the job board address up to its ID.
@@ -506,6 +535,8 @@ ukg = [
   { name = "TCOM", board = "https://recruiting.ultipro.com/TCO1001TCOM/JobBoard/74e57e92-4355-44d7-8471-3c6eecfda9ef" },
   # Added Nov 6 2026: Applied Research Associates, a defense engineering and research firm
   { name = "Applied Research Associates", board = "https://recruiting.ultipro.com/APP1010ARAI/JobBoard/07442cec-d18e-4589-ab15-8342edc29af7" },
+  # Added Nov 13 2026: IndyCar and the Indianapolis Motor Speedway
+  { name = "Penske Entertainment (IndyCar, Indianapolis Motor Speedway)", board = "https://recruiting.ultipro.com/PEN1024PMCO/JobBoard/5ad6ac0e-0d86-4154-b9b5-d663b091efca", aero = false, motorsport = true },
 ]
 
 # Paycor Recruiting: client = the clientId in the company's
@@ -514,6 +545,8 @@ paycor = [
   { name = "York Space Systems", client = "8a7883d0821e1a6301823c22a8bd068b" },
   # Added Nov 6 2026: Craig Technologies, an aerospace engineering contractor in Cape Canaveral
   { name = "Craig Technologies", client = "8a78826757bc744e0157bf0e31470032" },
+  # Added Nov 13 2026: Ilmor builds IndyCar engines (Plymouth, MI)
+  { name = "Ilmor", client = "8a7883d08879667801888d56899902c6", aero = false, motorsport = true },
 ]
 
 # Activate career sites (added Nov 6 2026): host = the site whose search page
@@ -522,12 +555,33 @@ activate = [
   { name = "Los Alamos National Laboratory", host = "lanl.jobs" },
 ]
 
+# Paylocity career pages (added Nov 13 2026): board = the company id in the page's
+# recruiting.paylocity.com/recruiting/jobs/All/<id> address.
+paylocity = [
+  # Orbion builds Hall-effect thrusters for satellites (Houghton, MI)
+  { name = "Orbion Space Technology", board = "bfdde1c9-2b02-46d9-95a3-801a816131e8" },
+  # Cigarette Racing builds racing powerboats in Opa-locka, FL
+  { name = "Cigarette Racing", board = "5e9db82c-7131-45f8-80ec-9d64a8a8232b", aero = false, motorsport = true },
+  { name = "DwyerOmega", board = "f846c487-d7c6-4a75-81f5-6a115672fa77", aero = false },
+]
+
+# isolved / ApplicantPro hiring sites (added Nov 13 2026): host = the company's
+# <company>.applicantpro.com or <company>.isolvedhire.com address.
+applicantpro = [
+  # X-Bow builds solid rocket motors (Huntsville, AL and Luling, TX)
+  { name = "X-Bow Systems", host = "xbowsystems.applicantpro.com" },
+  # Bastion Technologies is a NASA engineering contractor (Houston, Kennedy Space Center)
+  { name = "Bastion Technologies", host = "bastiontechnologies.applicantpro.com" },
+  { name = "Roush Yates Engines", host = "roushyates.isolvedhire.com", aero = false, motorsport = true },
+]
+
 # Not supported yet, so they rely on the lists below:
 #   Kratos (Pereless, whose job list refuses scripts), HEICO (ADP Recruiting, which
 #   refuses scripts), Mercury Systems (also ADP Recruiting), Ducommun (Cornerstone),
-#   Elbit America (Dayforce), General Dynamics Land Systems (blocks scripts),
-#   MDA (Canada only), Relativity Space's student roles (RippleMatch; its Greenhouse
-#   board has none), X-Bow Systems (ApplicantPro), Orbion (Paylocity), Parker
+#   Elbit America and ASRC Federal (Dayforce), General Dynamics Land Systems (blocks
+#   scripts), MDA (Canada only), Relativity Space's student roles (RippleMatch; its
+#   Greenhouse board has none), Joe Gibbs Racing (its own pages, which block scripts;
+#   RacerJobs above covers it), Parker
 #   Aerospace (its career site blocks scripts), Southwest Research Institute (swri.jobs
 #   sends an incomplete security certificate), Tesla (blocks scripts), and the
 #   Consider-run portfolio boards (a16z, Sequoia, Kleiner Perkins, GV, Lightspeed,
@@ -611,6 +665,17 @@ collection = 348
 [[getro]]
 name = "The Engine portfolio board"
 collection = 223
+
+# Niche job boards with a search feed (added Nov 13 2026). RacerJobs is where most NASCAR
+# teams post (RFK, Richard Childress, Joe Gibbs, Trackhouse, ThorSport, Toyota Racing
+# Development...), several of them taking applications right there. When a posting
+# links to the team's own hiring system, that link becomes the Apply link.
+# search = the board's search feed with {term} and {page}; motorsport = true puts
+# every posting in the Motorsports tab.
+[[jobboard]]
+name = "RacerJobs (motorsport job board)"
+search = "https://www.racerjobs.com/jobs/search.rss?q={term}&page={page}"
+motorsport = true
 
 # intern-list.com: about 19,000 U.S. engineering internships in a public Airtable
 # table on the site. Its Apply links go to jobright.ai, which hides the company's
@@ -714,6 +779,28 @@ names = [
   "whisper aero", "quantum space", "orbit fab", "havocai", "firestorm labs", "busek", "qinetiq", "sierra lobo",
   "arcfield", "craig technologies", "benchmark space", "vaya space", "phantom space", "blue water autonomy",
   "=forterra", "=brinc", "los alamos national", "lanteris", "systems planning", "applied research associates",
+]
+
+# --- Motorsport companies ---------------------------------------------------
+# Engineering internships from these companies go in the Motorsports tab (and All
+# engineering, but not the aerospace Summer tab). Unlike [aerospace_companies], names
+# here match whole words, so "racing" doesn't catch "Tracing"; a trailing * means
+# "starts with". Career boards above marked motorsport = true always count, and so does
+# any posting whose title has one of the racing words in profile.toml's [motorsport].
+[motorsport_companies]
+names = [
+  # Words that mean a racing outfit ("Hendrick Motorsports", "Cigarette Racing")
+  "motorsport*", "racing", "race team", "nascar", "indycar", "imsa",
+  # NASCAR teams and engine shops without those words in their names (most are near Charlotte, NC)
+  "joe gibbs", "team penske", "penske racing", "richard childress", "rcr", "rfk", "trackhouse", "23xi",
+  "legacy motor club", "kaulig", "roush", "ecr engines",
+  # IndyCar, sports car and Formula 1 teams based in the U.S.
+  "andretti", "arrow mclaren", "chip ganassi", "meyer shank", "rahal letterman lanigan", "wayne taylor",
+  "ed carpenter", "dale coyne", "juncos hollinger", "penske entertainment", "indianapolis motor speedway",
+  "haas f1", "haas factory", "cadillac formula 1", "cadillac f1", "twg motorsports",
+  # Race car and engine builders, and carmakers' racing arms
+  "toyota racing development", "trd", "honda racing", "hrc us", "ford performance", "ilmor", "pratt miller",
+  "pratt & miller", "dallara", "multimatic", "cosworth", "riley technologies", "penske racing shocks",
 ]
 
 # --- Big names: when well-known employers usually recruit ------------------

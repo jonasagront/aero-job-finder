@@ -3,6 +3,7 @@ it fits your resume.
 
 Sections ("tracks"):
   summer  Summer 2027, aerospace (and mechanical) work, aerospace companies
+  motor   any 2027 term, engineering at racing teams and motorsport companies
   fall    Fall 2027, any engineering, within a radius of home (or remote)
   broad   Summer 2027, any engineering major, mechanical ranked first
 
@@ -137,6 +138,14 @@ class Matcher:
         # except boards marked aero = false (carmakers, medical devices...)
         for kind in BOARD_KINDS:
             self.aero_exact.update(c["name"].lower() for c in sources_cfg.get(kind, []) if c.get("aero", True))
+        # Motorsport: [motorsport_companies] names (whole words, so "racing" skips
+        # "Tracing"), boards marked motorsport = true, and titles with racing words
+        mo = profile.get("motorsport", {})
+        motor_names = sources_cfg.get("motorsport_companies", {}).get("names", [])
+        self.motor_names = compile_terms(motor_names)
+        self.motor_exact = {c["name"].lower() for kind in BOARD_KINDS for c in sources_cfg.get(kind, [])
+                            if c.get("motorsport")}
+        self.motor_title = compile_terms(mo.get("title_words", []))
         self.qc = None  # set by run.py to a quals.QualChecker
 
         # ---- "All engineering" / Fall relevance: discipline from the title
@@ -165,6 +174,15 @@ class Matcher:
                 "aero_only": False, "home": (float(fa["home_lat"]), float(fa["home_lon"])),
                 "radius": float(fa.get("radius_miles", 50)), "remote": bool(fa.get("include_remote", True)),
             }
+        if mo.get("enabled", True) and (motor_names or self.motor_exact):
+            # Race teams hire interns for the spring and fall too, so this section takes several terms
+            terms = [(t.split()[0].lower(), int(t.split()[1])) for t in mo.get("terms", [f"summer {self.year}"])]
+            self.tracks["motor"] = {
+                "season": terms[0][0], "year": terms[0][1], "terms": terms,
+                "keep_unstated": bool(mo.get("include_unstated_season", True)),
+                "min_score": int(mo.get("min_score", 30)), "relevance": "eng", "aero_only": False,
+                "motor_only": True,
+            }
 
     # ---------------------------------------------------------- quick filter
 
@@ -182,6 +200,14 @@ class Matcher:
     def is_aero_company(self, company: str) -> bool:
         c = company.lower().strip()
         return c in self.aero_exact or any(n in c for n in self.aero_companies)
+
+    def is_motor_company(self, company: str) -> bool:
+        c = company.lower().strip()
+        return c in self.motor_exact or bool(hits(self.motor_names, c))
+
+    def is_motorsport(self, company: str, title: str) -> bool:
+        """A racing team or motorsport company, or a racing role elsewhere ("GM Racing Aero Intern")."""
+        return self.is_motor_company(company) or bool(hits(self.motor_title, title.lower()))
 
     def company_ok(self, job: dict) -> bool:
         """With aerospace_companies_only on, keep only listed aerospace companies
@@ -236,6 +262,17 @@ class Matcher:
         if re.search(rf"(?i)(?<![a-z]){season}(?![a-z])", text):
             return "unstated", f"{season.title()} (year not stated)"
         return "unstated", "Season not stated"
+
+    def season_for(self, job: dict, text: str, tr: dict) -> tuple[str, str]:
+        """season_of for a section, which may take several terms (Motorsports takes all of 2027):
+        a match on any of them, else what the first one says (a season named without its year
+        wins over none named)."""
+        results = [self.season_of(job, text, s, y) for s, y in tr.get("terms") or [(tr["season"], tr["year"])]]
+        for r in results:
+            if r[0] == "match":
+                return r
+        named = [r for r in results if r[0] == "unstated" and r[1] != "Season not stated"]
+        return named[0] if named else results[0]
 
     # ---------------------------------------------------------- eligibility
 
@@ -417,11 +454,16 @@ class Matcher:
 
         # ---- each section
         aero_co = self.is_aero_company(job.get("company", ""))
+        # A motorsport job board marks its postings (some teams there go by initials, like RCR)
+        motor = bool(job.get("motorsport")) or self.is_motorsport(job.get("company", ""), title)
         disc = self.discipline(t)
         tracks, reasons = {}, {}
         for name, tr in self.tracks.items():
             if tr["aero_only"] and not self.company_ok(job):
                 reasons[name] = "not an aerospace company"
+                continue
+            if tr.get("motor_only") and not motor:
+                reasons[name] = "not motorsport"
                 continue
             miles = None
             if "home" in tr:
@@ -432,12 +474,12 @@ class Matcher:
                 elif not (tr["remote"] and is_remote(loc)):
                     reasons[name] = "not near home"
                     continue
-            status, label = self.season_of(job, full, tr["season"], tr["year"])
+            status, label = self.season_for(job, full, tr)
             if status == "other" or (status == "unstated" and not tr["keep_unstated"]):
                 reasons[name] = "different season" if status == "other" else "season not stated"
                 continue
             fit = (self.aero_relevance(t, d, bool(desc), aero_co) if tr["relevance"] == "aero"
-                   else self.eng_relevance(disc, d, aero_co))
+                   else self.eng_relevance(disc, d, motor if tr.get("motor_only") else aero_co))
             if fit is None:
                 reasons[name] = "not aerospace" if tr["relevance"] == "aero" else "not engineering"
                 continue

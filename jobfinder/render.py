@@ -312,7 +312,7 @@ footer td.bad{color:var(--neg)}
         <button data-st="posted" aria-pressed="false">Already posted</button>
         <button data-st="all" aria-pressed="false">All</button>
       </div>
-      <label class="tog"><input type="checkbox" id="paero"> Aerospace companies only</label>
+      <label class="tog"><input type="checkbox" id="paero"> Aerospace and motorsport only</label>
       <label class="tog" id="pnearTog"><input type="checkbox" id="pnear"> <span id="pnearLabel"></span></label>
     </div>
   </div>
@@ -382,9 +382,9 @@ applyTheme();
 // ---- sections
 const hasLeads = D.jobs.some(j => j.lead);
 const P = D.predicted;
-const ORDER = ['new', 'summer', 'fall', 'broad', 'pred', 'undated', 'leads', 'big'].filter(k => k === 'new' || k === 'undated' ||
+const ORDER = ['new', 'summer', 'motor', 'fall', 'broad', 'pred', 'undated', 'leads', 'big'].filter(k => k === 'new' || k === 'undated' ||
   (k === 'leads' ? hasLeads : k === 'big' ? D.popular.length : k === 'pred' ? P.length : T[k]));
-const HASH = {new:'new', summer:'summer', fall:'fall', broad:'all', pred:'predicted', undated:'date-unknown', leads:'leads', big:'big-names'};
+const HASH = {new:'new', summer:'summer', motor:'motorsports', fall:'fall', broad:'all', pred:'predicted', undated:'date-unknown', leads:'leads', big:'big-names'};
 const NAME = {new:'New this week', pred:'Predicted', undated:'Posted date unknown', leads:'Leads without a link', big:'Big names'};
 const VIEWS = ['big', 'pred'];  // sections that aren't a list of postings
 for(const k in T) NAME[k] = T[k].tab;
@@ -405,7 +405,8 @@ const seasonChk = {};
 
 $('stamp').textContent = D.sources.length ? `Updated ${D.updated_label}` : '';
 $('sub').textContent = D.sources.length
-  ? `Scored against ${D.name}'s resume. ${D.sources.filter(s => s.ok).length} company career sites and internship lists checked every 6 hours.`
+  ? `Scored against ${D.name}'s resume. ${D.sources.filter(s => s.ok).length} company career sites and internship lists checked every 5 hours.` +
+    (D.max_age ? ` Only postings from the last ${D.max_age} days are shown.` : '')
   : 'Waiting for the first scan.';
 const c = D.counts;
 const nSummer = D.jobs.filter(j => inTab(j, 'summer')).length;
@@ -418,7 +419,7 @@ $('stats').innerHTML = [
 $('oldLabel').textContent = `Hide postings older than ${D.old_after} days`;
 
 function tabs(){
-  const n = k => k === 'big' ? D.popular.length : k === 'pred' ? P.filter(p => isSoon(p) && pTerm(p) === pTerms[0] && (p.aero || !pAeroDefault(pTerms[0]))).length
+  const n = k => k === 'big' ? D.popular.length : k === 'pred' ? P.filter(p => isSoon(p) && pTerm(p) === pTerms[0] && (p.aero || p.mo || !pAeroDefault(pTerms[0]))).length
     : D.jobs.filter(j => inTab(j, k)).length;
   $('tabs').innerHTML = ORDER.map(k => `<button class="tab" role="tab" data-tab="${k}" aria-selected="${k === tab}">${esc(NAME[k])}<span class="n">${n(k)}</span></button>`).join('');
 }
@@ -530,9 +531,9 @@ function renderBig(){
     const live = inWin(p.window, m);
     const opens = p.window.length ? MON[p.window[0] - 1] : '';
     let st;
-    if(mine.length) st = `<button class="go" data-pick="${i}">${mine.length} open now →</button><small>${strong ? `${strong} strong fit${strong > 1 ? 's' : ''}` : 'None rated strong yet'}</small>`;
+    if(mine.length) st = `<button class="go" data-pick="${i}" title="Open postings from the last ${D.max_age} days">${mine.length} posted recently →</button><small>${strong ? `${strong} strong fit${strong > 1 ? 's' : ''}` : 'None rated strong yet'}</small>`;
     else if(!p.scanned) st = live ? `<span class="hot">In season</span><small>Not scanned here; apply on their site</small>` : `<span>Usually opens ${opens}</span><small>Not scanned here; apply on their site</small>`;
-    else st = live ? `<span class="hot">In season</span><small>Nothing open in this scan</small>` : `<span>${opens ? 'Usually opens ' + opens : 'No usual window set'}</span><small>Nothing open in this scan</small>`;
+    else st = live ? `<span class="hot">In season</span><small>Nothing posted in the last ${D.max_age} days</small>` : `<span>${opens ? 'Usually opens ' + opens : 'No usual window set'}</span><small>Nothing posted in the last ${D.max_age} days</small>`;
     const tl = `<div class="tl">${RECRUIT_YEAR.map(mo => `<i class="${inWin(p.window, mo) ? 'on' : ''} ${mo === m ? 'now' : ''}" title="${MON[mo - 1]}"></i>`).join('')}</div>` +
       `<div class="tlm">${RECRUIT_YEAR.map(mo => mo === m ? `<b>${MON[mo - 1][0]}</b>` : `<span>${MON[mo - 1][0]}</span>`).join('')}</div>` +
       (p.window.length ? `<div class="win">Typically ${MON[p.window[0] - 1]} to ${MON[p.window[1] - 1]}</div>` : '') +
@@ -586,7 +587,7 @@ function setupPred(){
 function pPool(){
   const q = $('pq').value.trim().toLowerCase(), disc = $('pdisc').value;
   const aero = $('paero').checked, near = !$('pnearTog').hidden && $('pnear').checked;
-  return P.filter(p => pTerm(p) === pT && (!aero || p.aero) && (!near || p.mi != null) && (!disc || p.d === disc) &&
+  return P.filter(p => pTerm(p) === pT && (!aero || p.aero || p.mo) && (!near || p.mi != null) && (!disc || p.d === disc) &&
     (!q || q.split(/\s+/).every(w => [p.co, p.t, p.lt, p.loc, p.d].join(' ').toLowerCase().includes(w))));
 }
 
@@ -596,6 +597,7 @@ function pCard(p){
     : ['~' + fmt(p.exp), p.st === 'due' ? 'Due now' : p.st === 'late' ? 'Not seen yet' : days > 60 ? `In ${Math.round(days / 7)} weeks` : `In ${days} days`];
   const tags = [`<span class="tag">${esc(p.d)}</span>`];
   if(p.aero) tags.push('<span class="tag ok">Aerospace company</span>');
+  if(p.mo) tags.push('<span class="tag ok">Motorsport</span>');
   if(p.mi != null) tags.push(`<span class="tag sec">${p.mi} mi from ${esc(T.fall ? T.fall.home : 'home')}</span>`);
   if(p.st === 'late') tags.push(`<span class="tag old">${-days} days past last cycle's date</span>`);
   if(p.past.length > 1) tags.push(`<span class="tag">Posted ${p.past.length} cycles running</span>`);
@@ -693,7 +695,7 @@ function render(){
     if(hideOld && isOld(j)) return false;
     if(disc && j.discipline !== disc) return false;
     if(tab === 'fall' && !seasonOn && tr.season !== 'match') return false;
-    if((tab === 'summer' || tab === 'broad') && seasonOn && tr.season !== 'match') return false;
+    if(tab !== 'fall' && !mixed(tab) && seasonOn && tr.season !== 'match') return false;
     if(q){
       const hay = [j.company, j.title, j.location, j.discipline, j.matched.join(' '), j.gaps.join(' ')].join(' ').toLowerCase();
       if(!q.split(/\s+/).every(w => hay.includes(w))) return false;
@@ -712,6 +714,7 @@ function render(){
     (pick ? `<span class="pick">${esc(pick.name)}<button id="unpick" aria-label="Show all companies">×</button></span>` : '');
   const emptyMsg = tab === 'undated' && !pool.length ? 'Every posting on the page has a posted date.'
     : tab === 'leads' && !pool.length ? 'No leads right now: every posting has a direct company link.'
+    : tab === 'motor' && !pool.length ? T.motor.empty
     : tab === 'fall' && !pool.some(j => j.tracks.fall.season === 'match') ? T.fall.empty
     : 'No postings match these filters. Clear the search or choose “All”.';
   $('list').innerHTML = jobs.length ? jobs.slice(0, limit).map(card).join('') : `<div class="empty">${esc(emptyMsg)}</div>`;
@@ -779,6 +782,21 @@ def track_info(profile: dict) -> dict:
                   "note": "Every engineering internship found, from any company and any major. "
                           "Your resume's mechanical and aerospace skills push those to the top; use the discipline filter below to narrow it."},
     }
+    mo = profile.get("motorsport", {})
+    if mo.get("enabled", True):
+        terms = [t.split() for t in mo.get("terms", ["summer 2027"])]
+        seasons = [s.title() for s, _ in terms]
+        years = {y for _, y in terms}
+        label = (", ".join(seasons[:-1]) + " or " + seasons[-1] if len(seasons) > 1 else seasons[0]) + (
+            f" {years.pop()}" if len(years) == 1 else "")
+        info["motor"] = {
+            "tab": "Motorsports", "season_label": label,
+            "note": "Engineering internships at racing teams and motorsport companies (NASCAR, IndyCar, F1 and "
+                    "sports car teams, race engine and chassis builders), plus racing roles at any company, for "
+                    f"{label}. Race teams hire interns for every part of the season, not just the summer.",
+            "empty": "No motorsport internships posted lately. Race teams post a few at a time, often for the "
+                     "spring or fall; new ones show up here as soon as a scan finds them.",
+        }
     if fa.get("enabled", True) and "home_lat" in fa:
         fall = f"{fa.get('season', 'fall').title()} {fa.get('year', 2027)}"
         home, radius = fa.get("home_name", "home"), fa.get("radius_miles", 50)
@@ -811,6 +829,7 @@ def build_page(jobs: list[dict], sources: list[dict], profile: dict, now: dt.dat
                           f"{eastern.hour % 12 or 12}:{eastern:%M %p} ET") if jobs or sources else "never",
         "today": today,
         "old_after": int(profile.get("page", {}).get("old_after_days", 15)),
+        "max_age": int(profile["search"].get("max_age_days", 0)),
         "tracks": track_info(profile),
         "jobs": page_jobs,
         "sources": sources,
@@ -867,7 +886,8 @@ def update_readme(path: Path, jobs: list[dict], page_url: str, now: dt.datetime,
     jobs = [j for j in jobs if not j.get("lead")]
     summer = [j for j in jobs if "summer" in j["tracks"]]
     others = ", ".join(f"{sum(1 for j in jobs if t in j['tracks'])} {name}"
-                       for t, name in (("fall", "Fall 2027 near home"), ("broad", "in All engineering")))
+                       for t, name in (("motor", "in Motorsports"), ("fall", "Fall 2027 near home"),
+                                       ("broad", "in All engineering")))
     if leads:
         others += f", {leads} leads without a direct link"
     lines = [

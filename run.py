@@ -1,7 +1,7 @@
 """Internship scan: Summer 2027 aerospace, Fall 2027 near home, and all engineering.
 
 Run locally with:   python run.py
-GitHub Actions runs this every 6 hours and publishes docs/index.html.
+GitHub Actions runs this every 5 hours and publishes docs/index.html.
 """
 from __future__ import annotations
 
@@ -20,7 +20,7 @@ from jobfinder.discover import as_sources, learn, learn_engineering, record_resu
 from jobfinder.match import Matcher
 from jobfinder.quals import QualChecker
 from jobfinder.render import build_page, update_readme
-from jobfinder.sources import LIST_ITEMS, fetch_all, fetch_description, fetch_posted_date
+from jobfinder.sources import LIST_ITEMS, fetch_all, fetch_description, fetch_posted_date, posting_closed
 from jobfinder.util import FetchError, job_key
 
 ROOT = Path(__file__).resolve().parent
@@ -115,6 +115,11 @@ def main() -> int:
         return matcher.title_ok(title)[0] and bool(
             matcher.discipline(title)[0] or matcher.aero_relevance(title.lower(), "", False, True) is not None)
 
+    def wanted_co(company: str) -> bool:
+        """Aerospace and motorsport companies get their whole career site scanned once a list
+        links to it, and their leads kept (see below)."""
+        return matcher.is_aero_company(company) or matcher.is_motor_company(company)
+
     # Every engineering internship seen so far, for the Predicted tab (see history.py);
     # old copies of the lists are read into it once
     hist = history.load(HISTORY_FILE)
@@ -122,12 +127,12 @@ def main() -> int:
     if n_past:
         print(f"   {n_past} postings from past cycles added to the history")
 
-    # Career sites found through list postings (see discover.py): aerospace companies'
-    # from any cycle in the history, and other employers' with several mechanical
+    # Career sites found through list postings (see discover.py): aerospace and motorsport
+    # companies' from any cycle in the history, and other employers' with several mechanical
     # internships in the past year. Sites first linked this run are scanned from the next run on.
     found: dict = load_json(FOUND_FILE, {})
     past = list(hist["rows"].values())
-    n_new = learn(found, ((r["c"], r["u"], r["d"]) for r in past), matcher.is_aero_company, today)
+    n_new = learn(found, ((r["c"], r["u"], r["d"]) for r in past), wanted_co, today)
     eng_min = int(sources_cfg.get("discover", {}).get("engineering_min", 0))
     if eng_min:
         # Engineering titles only ("Mechanical Design Engineer Intern", not "Product Development Intern")
@@ -144,9 +149,9 @@ def main() -> int:
         if s["name"] in found_names:
             s["kind"] += " (found automatically)"
     record_results(found, status)
-    lists = {s["name"] for k in ("list", "csvlist", "getro") for s in sources_cfg.get(k, [])}
+    lists = {s["name"] for k in ("list", "csvlist", "getro", "jobboard") for s in sources_cfg.get(k, [])}
     n_new += learn(found, ((j.get("company", ""), j.get("url", "")) for j in raw
-                           if j.get("source_id") in lists), matcher.is_aero_company, today)
+                           if j.get("source_id") in lists), wanted_co, today)
     print(f"   {len(raw)} postings read; {n_new} new career sites found for next time")
 
     # Apply links must open the company's own posting, not an AI job site or aggregator
@@ -160,7 +165,11 @@ def main() -> int:
     candidates: dict[str, dict] = {}
     n_blocked = 0
     for j in raw:
-        if not j.get("url") or not keep(j.get("title", "")):
+        # A plain "Summer 2027 Internship" at an aerospace or motorsport company gets judged
+        # on its description, when the source sent one, instead of its title alone
+        generic = (j.get("description") and matcher.title_ok(j.get("title", ""))[0]
+                   and wanted_co(j.get("company", "")))
+        if not j.get("url") or not (keep(j.get("title", "")) or generic):
             continue
         if not link_ok(j["url"]):
             n_blocked += 1
@@ -182,15 +191,15 @@ def main() -> int:
             k = same_job(j)
             if k not in listed or j["posted"] < listed[k]["posted"]:
                 listed[k] = j
-    # Leads (postings with no direct link) only stay when they're at an aerospace/defense
-    # company and no source with a real link has the same job. The list repeats some
-    # (one per location, or under a division's name); their button runs the same search,
+    # Leads (postings with no direct link) only stay when they're at an aerospace/defense or
+    # motorsport company and no source with a real link has the same job. The list repeats
+    # some (one per location, or under a division's name); their button runs the same search,
     # so one of each is kept.
     taken = {same_job(j) for j in candidates.values() if not j.get("lead")}
     n_leads = sum(1 for j in candidates.values() if j.get("lead"))
     for k, j in list(candidates.items()):
         if j.get("lead"):
-            if same_job(j) in taken or not matcher.is_aero_company(j.get("company", "")):
+            if same_job(j) in taken or not wanted_co(j.get("company", "")):
                 del candidates[k]
             else:
                 taken.add(same_job(j))
@@ -208,9 +217,10 @@ def main() -> int:
             j["description"] = desc_cache[j["key"]]
     lookup = [j for j in need if not j.get("description")
               and (now.date() - dt.date.fromisoformat(misses.get(j["key"], "2000-01-01"))).days >= RETRY_MISS_DAYS]
-    # Look up the most promising ones first: aerospace companies, then mechanical/aerospace titles
+    # Look up the most promising ones first: aerospace and motorsport companies, then
+    # mechanical/aerospace titles
     first = ("Aerospace", "Mechanical")
-    lookup.sort(key=lambda j: (not matcher.is_aero_company(j.get("company", "")),
+    lookup.sort(key=lambda j: (not wanted_co(j.get("company", "")),
                                matcher.discipline(j.get("title", ""))[0] not in first))
     lookup = lookup[:MAX_NEW_LOOKUPS]
 
@@ -289,6 +299,16 @@ def main() -> int:
         scored.append({k: v for k, v in j.items() if k not in ("description", "season_hint")} | analysis)
     print(f"4) {len(scored)} matches. Dropped: " + ", ".join(f"{v} {k}" for k, v in sorted(drops.items())))
 
+    # The lists and job boards keep some postings for days after the company takes them
+    # down, so each one that made the page is checked with its own hiring system first
+    # (company career sites only list open postings)
+    from_lists = [j for j in scored if j.get("source_id") in lists and not j.get("lead")]
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        closed = {j["key"] for j, gone in zip(from_lists, pool.map(lambda j: posting_closed(j["url"]), from_lists))
+                  if gone}
+    scored = [j for j in scored if j["key"] not in closed]
+    print(f"   {len(closed)} of {len(from_lists)} postings from lists dropped: closed on the company's own site")
+
     # 5) Merge with yesterday's results (keeps "first seen" dates)
     failed_sources = {s["name"] for s in status if not s["ok"]}
     final = []
@@ -303,6 +323,22 @@ def main() -> int:
         last = dt.date.fromisoformat(j.get("last_seen", today))
         if (now.date() - last).days <= KEEP_MISSING_DAYS:
             final.append(upgrade_old(j))  # source hiccup: keep for now
+    # Scoring already dropped dated postings past max_age_days; this also catches ones with
+    # no date (they went up on or before the day the scan first saw them) and ones kept
+    # above while their source is down
+    max_age = int(profile["search"].get("max_age_days", 0))
+
+    def too_old(j: dict) -> bool:
+        since = j.get("posted") or j.get("first_seen") or today
+        try:
+            return bool(max_age) and (now.date() - dt.date.fromisoformat(since[:10])).days > max_age
+        except ValueError:
+            return False
+
+    n_aged = sum(1 for j in final if too_old(j))
+    final = [j for j in final if not too_old(j)]
+    if n_aged:
+        print(f"   {n_aged} more postings dropped for being over {max_age} days old")
 
     # 6) Optional Claude reviews
     ai_cache = load_json(AI_FILE, {})

@@ -15,6 +15,7 @@ import io
 import json
 import os
 import re
+import urllib.error
 import urllib.parse
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
@@ -26,7 +27,7 @@ from .util import FetchError, get_json, html_to_text, parse_ats_url, post_json, 
 BOARD_KINDS = ("greenhouse", "lever", "ashby", "workday", "eightfold", "clearcompany", "successfactors",
                "icims", "jibe", "oracle", "phenom", "pinpoint", "bamboohr", "rippling", "smartrecruiters",
                "workable", "gem", "taleo", "jazzhr", "searchpage", "jobsfeed", "brassring", "adp", "ukg", "paycor",
-               "breezy", "activate")
+               "breezy", "activate", "paylocity", "applicantpro")
 
 
 _DATE_FORMATS = ("%a %b %d %H:%M:%S UTC %Y", "%m/%d/%Y", "%B %d, %Y", "%b %d, %Y", "%d %B %Y", "%d %b %Y")
@@ -1050,7 +1051,8 @@ def fetch_internlist(src: dict) -> list[dict]:
     for view in src["views"]:
         app = view.split("/")[0]
         embed = _get_page(f"https://airtable.com/embed/{view}")
-        m = re.search(r'urlWithParams:\s*"([^"]+)"', embed)
+        # "urlWithParams: ..." until Nov 13 2026, then "var urlWithParams = ..."
+        m = re.search(r'urlWithParams\s*[:=]\s*"([^"]+)"', embed)
         if not m:
             raise FetchError(f"view {view} has no shared data (the site may have replaced it)")
         data = get_json("https://airtable.com" + m.group(1).encode().decode("unicode_escape"), timeout=90, headers={
@@ -1387,6 +1389,74 @@ def fetch_breezy(board: str, company: str, keep=_keep_all) -> list[dict]:
     return _open_each(wanted, detail)
 
 
+def fetch_paylocity(company_id: str, company: str, keep=_keep_all) -> list[dict]:
+    """Paylocity career pages (recruiting.paylocity.com/recruiting/jobs/All/<company_id>):
+    the page holds every opening as JSON; each internship's own page has its full text."""
+    page = _get_page(f"https://recruiting.paylocity.com/recruiting/jobs/All/{company_id}")
+    i = page.find("window.pageData")
+    if i < 0:
+        raise FetchError("no job data in page")
+    data, _ = json.JSONDecoder().raw_decode(page, page.index("{", i))
+    wanted = [j for j in data.get("Jobs") or [] if not j.get("IsInternal") and _wanted(j.get("JobTitle", ""), keep)]
+
+    def detail(j):
+        url = f"https://recruiting.paylocity.com/Recruiting/Jobs/Details/{j['JobId']}"
+        try:
+            text = fetch_page_posting(url)[0]
+        except FetchError:
+            text = ""
+        loc = j.get("JobLocation") or {}
+        return {
+            "company": company,
+            "title": (j.get("JobTitle") or "").strip(),
+            "location": "Remote" if j.get("IsRemote") else ", ".join(
+                filter(None, [loc.get("City"), loc.get("State"), loc.get("Country")])),
+            "url": url,
+            "source": f"{company} careers",
+            "posted": _date_from_iso(j.get("PublishedDate")),
+            "description": text or j.get("Description", ""),
+            "season_hint": "",
+        }
+
+    return _open_each(wanted, detail)
+
+
+def fetch_applicantpro(host: str, company: str, keep=_keep_all) -> list[dict]:
+    """isolved / ApplicantPro hiring sites (<company>.applicantpro.com or
+    <company>.isolvedhire.com). The jobs page names the site's id, which lists every
+    opening at /core/jobs/<id>; each posting's page holds its text as schema.org data."""
+    page = _get_page(f"https://{host}/jobs/")
+    m = re.search(r'"domain_id"\s*:\s*"?(\d+)', page)
+    if not m:
+        raise FetchError("no site id on the jobs page")
+    params = urllib.parse.quote(json.dumps({"isInternal": 0}, separators=(",", ":")))
+    data = get_json(f"https://{host}/core/jobs/{m.group(1)}?getParams={params}", timeout=40)
+    wanted = [j for j in (data.get("data") or {}).get("jobs") or [] if _wanted((j.get("title") or "").strip(), keep)]
+
+    def detail(j):
+        url = f"https://{host}/jobs/{j['id']}"
+        try:
+            text, posted = fetch_page_posting(url)
+        except FetchError:
+            text, posted = "", ""
+        try:
+            posted = dt.datetime.strptime(j.get("startDateRef") or "", "%b %d, %Y").date().isoformat()
+        except ValueError:
+            pass
+        return {
+            "company": company,
+            "title": (j.get("title") or "").strip(),
+            "location": ", ".join(filter(None, [j.get("city"), j.get("abbreviation"), j.get("iso3")])),
+            "url": url,
+            "source": f"{company} careers",
+            "posted": posted,
+            "description": text,
+            "season_hint": "",
+        }
+
+    return _open_each(wanted, detail)
+
+
 def fetch_activate(host: str, company: str, max_pages: int = 10, keep=_keep_all) -> list[dict]:
     """Activate career sites (lanl.jobs): the search page fills its table from
     <host>/Search/SearchResults, which sends JSON wrapped in a JSON string. The
@@ -1536,6 +1606,12 @@ def fetch_all(cfg: dict, keep=_keep_all) -> tuple[list[dict], list[dict]]:
         tasks.append((c["name"], "Breezy HR", lambda c=c: fetch_breezy(c["board"], c["name"], keep=keep)))
     for c in cfg.get("activate", []):
         tasks.append((c["name"], "Activate", lambda c=c: fetch_activate(c["host"], c["name"], keep=keep)))
+    for c in cfg.get("paylocity", []):
+        tasks.append((c["name"], "Paylocity", lambda c=c: fetch_paylocity(c["board"], c["name"], keep=keep)))
+    for c in cfg.get("applicantpro", []):
+        tasks.append((c["name"], "ApplicantPro", lambda c=c: fetch_applicantpro(c["host"], c["name"], keep=keep)))
+    for src in cfg.get("jobboard", []):
+        tasks.append((src["name"], "Job board", lambda s=src: fetch_jobboard(s, keep=keep)))
     for src in cfg.get("internlist", []):
         tasks.append((src["name"], "Internship list", lambda s=src: fetch_internlist(s)))
     if "usajobs" in cfg:
@@ -1684,3 +1760,111 @@ def fetch_page_posting(url: str) -> tuple[str, str]:
 
 def fetch_page_description(url: str) -> str:
     return fetch_page_posting(url)[0]
+
+
+# ------------------------------------------------------------ closed postings
+
+def _answer(url: str, accept: str = "application/json") -> tuple[int, str]:
+    """(HTTP status, start of the body) without raising on error statuses; (0, "") when the
+    site can't be reached."""
+    req = urllib.request.Request(url, headers={**_PAGE_HEADERS, "Accept": accept, "Accept-Encoding": "identity"})
+    try:
+        with urllib.request.urlopen(req, timeout=20) as resp:
+            return resp.status, resp.read(200_000).decode("utf-8", "replace")
+    except urllib.error.HTTPError as e:
+        try:
+            return e.code, e.read(20_000).decode("utf-8", "replace")
+        except Exception:  # noqa: BLE001 - the status is what matters
+            return e.code, ""
+    except Exception:  # noqa: BLE001 - timeouts, DNS, bad SSL...
+        return 0, ""
+
+
+def posting_closed(url: str) -> bool:
+    """True when a posting's own hiring system says it's closed or gone. The big lists
+    and job boards keep some postings for days after the company takes them down, which
+    left Apply buttons opening "this job is no longer available" pages. Anything unclear
+    (a timeout, a site that refuses scripts, a page built by JavaScript) counts as open."""
+    info = parse_ats_url(url)
+    try:
+        if info and info["ats"] == "greenhouse":
+            return _answer(f"https://boards-api.greenhouse.io/v1/boards/{info['board']}/jobs/{info['id']}")[0] == 404
+        if info and info["ats"] == "lever":
+            return _answer(f"https://api.lever.co/v0/postings/{info['board']}/{info['id']}?mode=json")[0] == 404
+        if info and info["ats"] == "ashby":
+            return not any(j.get("id") == info["id"] for j in _ashby_board(info["board"]))
+        if info and info["ats"] == "workday":
+            code, body = _answer(f"https://{info['host']}/wday/cxs/{info['tenant']}/{info['site']}{info['path']}")
+            if code == 200:
+                d = json.loads(body).get("jobPostingInfo") or {}
+                return d.get("posted") is False or d.get("canApply") is False
+            # A taken-down posting answers "permission denied" (error S22)
+            return code in (404, 410) or (code == 403 and '"S22"' in body)
+        m = re.search(r"jobs\.smartrecruiters\.com/([\w-]+)/(\d+)", url)
+        if m:  # expired postings still load, marked inactive
+            code, body = _answer(f"https://api.smartrecruiters.com/v1/companies/{m.group(1)}/postings/{m.group(2)}")
+            return code == 404 or (code == 200 and json.loads(body).get("active") is False)
+        if url.startswith("http") and "google.com/search" not in url:
+            return _answer(url, accept="text/html")[0] in (404, 410)
+    except (FetchError, ValueError, KeyError):
+        pass
+    return False
+
+
+# ------------------------------------------------------------ niche job boards
+
+def fetch_jobboard(src: dict, keep=_keep_all) -> list[dict]:
+    """Niche job boards with a search feed (racerjobs.com, where NASCAR and other race
+    teams post). search = the feed address with {term} and {page}; its items are titled
+    "<role> at <company> (<place>)". The search is full text, so titles are filtered
+    before each posting's page is opened. When the page links to the company's own
+    hiring system, that link becomes the Apply link; otherwise the board's page is the
+    posting (several teams take applications there)."""
+    items: dict[str, tuple] = {}  # link -> (title, company, place, posted)
+    for term in src.get("terms", ["intern", "co-op", "student"]):
+        for page in range(1, 11):
+            found = _RSS_ITEM.findall(_get_page(src["search"].format(term=urllib.parse.quote(term), page=page)))
+            new = 0
+            for it in found:
+                link = _rss_field(it, "link")
+                m = re.match(r"(?s)(.*) at (.*?)\s*\(([^()]*)\)\s*$", _rss_field(it, "title"))
+                title, company, place = m.groups() if m else (_rss_field(it, "title"), "", "")
+                try:
+                    posted = email.utils.parsedate_to_datetime(_rss_field(it, "pubDate")).date().isoformat()
+                except (TypeError, ValueError):
+                    posted = ""
+                if link and link not in items:
+                    items[link] = (title.strip(), company.strip(), place.strip(), posted)
+                    new += 1
+            if not new:
+                break
+    wanted = [(link, *v) for link, v in items.items() if _wanted(v[0], keep)]
+
+    def detail(p):
+        link, title, company, place, posted = p
+        try:
+            page = _get_page(link, timeout=30)
+        except FetchError:
+            page = ""
+        posting = _job_posting(page)
+        org = posting.get("hiringOrganization")
+        apply = re.search(r'(?s)href="(https?://(?![\w.]*racerjobs)[^"]+)"[^>]*>\s*(?:<[^>]+>\s*)*Apply', page)
+        apply = html.unescape(apply.group(1)) if apply else ""
+        # Team Penske's ADP link goes to the hiring system's data, not its page
+        m = re.search(r"workforcenow\.adp\.com/.*?/job-requisitions/(\w+)\?cid=([\w-]+)", apply)
+        if m:
+            apply = (f"https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid={m.group(2)}"
+                     f"&ccId=19000101_000001&lang=en_US&jobId={m.group(1)}")
+        return {
+            "company": ((org.get("name") if isinstance(org, dict) else "") or company).strip(),
+            "title": html_to_text(posting.get("title")) or title,
+            "location": _ld_location(posting) or place,
+            "url": strip_tracking(apply) if apply.startswith("http") else link,
+            "source": src["name"],
+            "posted": _date_from_iso(posting.get("datePosted")) or posted,
+            "description": html_to_text(posting.get("description")),
+            "season_hint": "",
+            **({"motorsport": True} if src.get("motorsport") else {}),
+        }
+
+    return _open_each(wanted, detail)
