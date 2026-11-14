@@ -51,7 +51,7 @@ history fills more of that in.
 ## Today's top matches
 
 <!-- JOBS:START -->
-**348 Summer 2027 aerospace matches** (1 in Motorsports, 15 Fall 2027 near home, 943 in All engineering, 176 leads without a direct link) as of Nov 14, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
+**357 Summer 2027 aerospace matches** (3 in Motorsports, 15 Fall 2027 near home, 960 in All engineering, 145 leads without a direct link) as of Nov 14, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
 
 | Fit | Company | Role | Required quals met | Location | Posted | Apply |
 |---|---|---|---|---|---|---|
@@ -76,10 +76,10 @@ history fills more of that in.
 | 89 | Sandia National Laboratories | Intern, R&D Graduate Summer  - Weather Effects Research, Hybrid | 6 of 6 | Albuquerque, NM, USA | 2026-11-04 | [Apply](https://sandia.jobs/CBCEC290A6F548FA97BCDEBE1043A89C25) |
 | 88 | RTX (Raytheon, Pratt & Whitney, Collins) | Manufacturing Engineer Co-op (Spring/Summer 2027) | 6 of 6 | US-NC-WILSON-4200 ~ 4200 Airport Dr ~ BL | 2026-11-09 | [Apply](https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-NC-WILSON-4200--4200-Airport-Dr--BLDG-4200/Manufacturing-Engineer-Co-op--Spring-Summer-2027-_01887620) |
 | 88 | GE Aerospace | GE Aerospace Research - Controls & Optimization Internship, 2027 | 1 of 2 | Niskayuna | 2026-11-09 | [Apply](https://geaerospace.wd5.myworkdayjobs.com/GE_ExternalSite/job/Niskayuna/GE-Aerospace-Research---Controls---Optimization-Internship--2027_R5043004-1) |
+| 87 | Safran Defense & Space | Mechanical Engineering Internship 🆕 | 4 of 4 | Bedford, NH, US, 03110 | 2026-11-14 | [Apply](https://careers.safran-dsi.com/job/Bedford-Mechanical-Engineering-Internship-NH-03110/1431029700/) |
 | 87 | Sandia National Laboratories | Intern, R&D Graduate Summer - Advanced Concepts Engineering, Onsite | 7 of 7 | Albuquerque, NM, USA | 2026-11-05 | [Apply](https://sandia.jobs/5A8B0975ECC947A680D7EDC34DCDEB0725) |
 | 87 | Sandia National Laboratories | Intern, R&D Undergraduate Summer - Advanced Concepts Engineering, Onsite | 6 of 6 | Albuquerque, NM, USA | 2026-11-05 | [Apply](https://sandia.jobs/C11ACA40ECD4454A8EC287A2907691E725) |
 | 86 | United Launch Alliance | Mechanical Engineering Internship - Summer 2027 | 3.5 of 4 | Cape Canaveral, FL, US, 32925 | 2026-11-05 | [Apply](https://jobs.ulalaunch.com/job/Cape-Canaveral-Mechanical-Engineering-Internship-Summer-2027-FL-32925/1427396400/) |
-| 86 | Reliable Robotics | Reliability Engineering Intern (Summer 2027) | 1 of 2 | Mountain View, CA | 2026-11-13 | [Apply](https://jobs.ashbyhq.com/reliable-robotics/9e609f4f-cf1c-4171-9140-54e05c5195de) |
 <!-- JOBS:END -->
 
 ## Expected soon
