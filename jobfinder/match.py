@@ -7,11 +7,15 @@ Sections ("tracks"):
   fall    Fall 2027, any engineering, within a radius of home (or remote)
   broad   Summer 2027, any engineering major, mechanical ranked first
 
-Score out of 100:
-  up to 40  how clearly it's the right kind of work (aerospace for summer,
-            engineering with mechanical first for the other two)
-  up to 35  how many of your skills the posting asks for
-  up to 25  eligibility (season, class year, grad date, degree level)
+Score out of 100, mostly from the posting's own qualification lists (quals.py):
+  up to 40  preferred qualifications your resume shows (partial = half)
+  up to 25  required qualifications you meet, of those that could be checked
+  up to 20  how clearly it's the right kind of work (aerospace for summer,
+            engineering with mechanical first for the other sections)
+  up to 15  eligibility (season, class year, grad date, degree level)
+  minus up to 15 for required qualifications you clearly don't meet
+When a posting lists too few qualifications to judge, how many of your skills it
+asks for stands in (see Matcher.qual_points).
 """
 from __future__ import annotations
 
@@ -21,6 +25,9 @@ import re
 from .geo import is_remote, nearest
 from .sources import BOARD_KINDS
 from .util import compile_terms, hits
+
+PREF_MAX, REQ_MAX, FIT_MAX, ELIG_MAX = 40, 25, 20, 15
+STRONG, GOOD = 72, 56  # tier cut-offs
 
 INTERN_RX = re.compile(r"(?i)(?<![a-z])(intern|interns|internship|internships|co-?op|co op|student trainee|student)(?![a-z])")
 
@@ -348,6 +355,29 @@ class Matcher:
         relevance += 4 if aero_co else 0
         return min(40, relevance)
 
+    # ---------------------------------------------------------- qualifications
+
+    @staticmethod
+    def qual_points(quals: dict | None, skills_pts: int) -> tuple[int, int]:
+        """(required, preferred) points from the posting's own qualification lists.
+
+        Preferred counts most: it's what separates candidates who all meet the basics.
+        With too few bullets to judge, how many of your skills the posting asks for
+        stands in, discounted for preferred so a posting with no preferred list can't
+        outscore one whose preferred list you actually match."""
+        skill_frac = skills_pts / 35
+        if not quals:
+            # No qualification list found: too little to judge, so no lower than a posting
+            # whose description never loaded (12 of 35)
+            skill_frac = max(skill_frac, 12 / 35)
+        s = (quals or {}).get("summary") or {}
+        n = s.get("required_checked", 0)
+        req = s["required_met"] / n if n >= 2 else skill_frac if not n else (s["required_met"] / n + skill_frac) / 2
+        n = s.get("preferred_total", 0)
+        stand_in = 0.75 * skill_frac
+        pref = s["preferred_met"] / n if n >= 2 else stand_in if not n else (s["preferred_met"] / n + stand_in) / 2
+        return round(REQ_MAX * req), round(PREF_MAX * pref)
+
     # ---------------------------------------------------------- main
 
     def analyze(self, job: dict) -> tuple[dict | None, str]:
@@ -451,6 +481,7 @@ class Matcher:
             hard = [r for r in quals.get("required", [])
                     if r["status"] == "missing" and not r["why"].startswith(already)]
             req_penalty = min(15, 5 * len(hard))
+        req_pts, pref_pts = self.qual_points(quals, skills_pts)
 
         # ---- each section
         aero_co = self.is_aero_company(job.get("company", ""))
@@ -483,15 +514,17 @@ class Matcher:
             if fit is None:
                 reasons[name] = "not aerospace" if tr["relevance"] == "aero" else "not engineering"
                 continue
-            e = max(0, elig - (0 if status == "match" else 3))
-            score = int(max(0, min(100, fit + skills_pts + e) - req_penalty))
+            fit_pts = round(fit * FIT_MAX / 40)
+            e = round(max(0, elig - (0 if status == "match" else 3)) * ELIG_MAX / 25)
+            score = int(max(0, min(100, fit_pts + req_pts + pref_pts + e) - req_penalty))
             if score < tr["min_score"]:
                 reasons[name] = "low score"
                 continue
             tracks[name] = {
                 "score": score,
-                "tier": "strong" if score >= 72 else "good" if score >= 56 else "look",
-                "parts": {"fit": fit, "skills": skills_pts, "eligibility": e, "requirements": -req_penalty},
+                "tier": "strong" if score >= STRONG else "good" if score >= GOOD else "look",
+                "parts": {"preferred": pref_pts, "required": req_pts, "fit": fit_pts, "eligibility": e,
+                          "requirements": -req_penalty, "skills": skills_pts},
                 "season": status,
                 "season_label": label,
                 **({"miles": miles if miles is not None else "remote"} if "home" in tr else {}),

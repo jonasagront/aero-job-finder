@@ -445,21 +445,34 @@ $('foot').textContent = `${D.sources.length} sources checked` + (nFound ? ` (${n
 
 const QI = {met:'✓', partial:'~', missing:'✗', check:'?', soft:'·'};
 const num = x => Number.isInteger(x) ? x : x.toFixed(1);
-const reqPct = j => { const s = j.quals && j.quals.summary; return s && s.required_checked ? s.required_met / s.required_checked : -1; };
+// "Most qualifications met": preferred first (what sets you apart), then required
+const reqPct = j => { const s = j.quals && j.quals.summary; if(!s) return -1;
+  const f = (m, n) => n ? m / n : 0.5; return (s.preferred_total || s.required_checked) ? 0.6 * f(s.preferred_met, s.preferred_total) + 0.4 * f(s.required_met, s.required_checked) : -1; };
 function qualTag(q){
   const s = q && q.summary;
-  if(!s || !s.required_checked) return '';
-  const cls = s.required_missing ? 'warn' : s.required_met === s.required_checked ? 'ok' : '';
-  return `<span class="tag ${cls}">Meets ${num(s.required_met)} of ${s.required_checked} required</span>`;
+  if(!s) return '';
+  const out = [];
+  if(s.preferred_total){
+    const r = s.preferred_met / s.preferred_total;
+    out.push(`<span class="tag ${r >= 0.6 ? 'ok' : r < 0.3 ? 'warn' : ''}">Preferred ${num(s.preferred_met)} of ${s.preferred_total}</span>`);
+  }
+  if(s.required_checked){
+    const cls = s.required_missing ? 'warn' : s.required_met === s.required_checked ? 'ok' : '';
+    out.push(`<span class="tag ${cls}">Required ${num(s.required_met)} of ${s.required_checked}</span>`);
+  }
+  return out.join('');
 }
 function qualList(q){
   if(!q) return '';
   const sec = (name, rows) => rows && rows.length ? `<div class="qh">${name}</div><ul class="ql">` + rows.map(r =>
     `<li class="q-${r.status}"><b>${QI[r.status]}</b><span>${esc(r.text)}${r.why ? `<small>${esc(r.why)}</small>` : (r.status === 'check' ? '<small>Couldn\'t check this one automatically</small>' : '')}</span></li>`).join('') + '</ul>' : '';
-  const s = q.summary;
-  const head = s.required_checked ? `You meet ${num(s.required_met)} of ${s.required_checked} required qualifications I could check` +
-    (s.preferred_total ? `, and ${s.preferred_met} of ${s.preferred_total} preferred` : '') + (s.to_check ? `. ${s.to_check} to confirm yourself.` : '.') : 'Qualifications found, but none I could check automatically.';
-  return `<details class="x"><summary>Qualifications</summary><div class="body"><p class="qhead">${head}</p>${sec('Required', q.required)}${sec('Preferred', q.preferred)}</div></details>`;
+  const s = q.summary, bits = [];
+  if(s.preferred_total) bits.push(`Your resume shows ${num(s.preferred_met)} of ${s.preferred_total} preferred qualifications (partial counts half)`);
+  if(s.required_checked) bits.push(`you meet ${num(s.required_met)} of ${s.required_checked} required ones I could check`);
+  let head = bits.length ? bits.join(', and ') + '.' : 'Qualifications found, but none I could check automatically.';
+  head = head.charAt(0).toUpperCase() + head.slice(1);
+  if(s.to_check) head += ` ${s.to_check} to confirm yourself.`;
+  return `<details class="x"><summary>Qualifications</summary><div class="body"><p class="qhead">${head}</p>${sec('Preferred', q.preferred)}${sec('Required', q.required)}</div></details>`;
 }
 const where = tr => tr.miles === 'remote' ? 'Remote' : `${tr.miles} mi from ${T.fall.home}`;
 
@@ -482,7 +495,10 @@ function card(j){
   if(j.matched.length) rows.push(`<dt>Your skills it asks for</dt><dd>${esc(j.matched.join(', '))}</dd>`);
   if(j.related.length) rows.push(`<dt>Transferable</dt><dd>${esc(j.related.join(', '))}</dd>`);
   if(j.gaps.length) rows.push(`<dt>Not on your resume</dt><dd>${esc(j.gaps.join(', '))}</dd>`);
-  rows.push(`<dt>Score</dt><dd>${k === 'summer' ? 'Aerospace' : 'Engineering fit'} ${p.fit}/40, skills ${p.skills}/35, eligibility ${p.eligibility}/25` +
+  const fitName = k === 'summer' ? 'aerospace fit' : 'engineering fit';
+  rows.push(`<dt>Score</dt><dd>` + (p.preferred !== undefined
+    ? `Preferred qualifications ${p.preferred}/40, required ${p.required}/25, ${fitName} ${p.fit}/20, eligibility ${p.eligibility}/15`
+    : `${fitName} ${p.fit}/40, skills ${p.skills}/35, eligibility ${p.eligibility}/25`) +
     (p.requirements ? `, ${p.requirements} for missing required qualifications` : '') + `</dd>`);
   rows.push(`<dt>Found via</dt><dd>${esc(j.source)}${j.lead ? ' (no direct link: the button searches for the company\'s own posting)' : ''}</dd>`);
   const ai = j.ai ? `<div class="ai"><b>Claude's take (${esc(j.ai.fit)}):</b> ${esc(j.ai.summary)}${j.ai.talking_point ? '<br><b>Lead with:</b> ' + esc(j.ai.talking_point) : ''}</div>` : '';
@@ -894,8 +910,8 @@ def update_readme(path: Path, jobs: list[dict], page_url: str, now: dt.datetime,
         f"**{len(summer)} Summer 2027 aerospace matches** ({others}) as of {now:%b} {now.day}, {now.year}. "
         f"Full list with filters: **[open the job page]({page_url})**",
         "",
-        "| Fit | Company | Role | Required quals met | Location | Posted | Apply |",
-        "|---|---|---|---|---|---|---|",
+        "| Fit | Company | Role | Preferred quals | Required quals | Location | Posted | Apply |",
+        "|---|---|---|---|---|---|---|---|",
     ]
     for j in sorted(summer, key=lambda j: -j["tracks"]["summer"]["score"])[:top]:
         new = " 🆕" if j.get("first_seen") == today else ""
@@ -903,7 +919,8 @@ def update_readme(path: Path, jobs: list[dict], page_url: str, now: dt.datetime,
         title = (j["title"] or "").replace("|", "/")
         s = (j.get("quals") or {}).get("summary") or {}
         reqs = f"{s['required_met']:g} of {s['required_checked']}" if s.get("required_checked") else "–"
-        lines.append(f"| {j['tracks']['summer']['score']} | {j['company'].replace('|', '/')} | {title}{new} | {reqs} "
+        prefs = f"{s['preferred_met']:g} of {s['preferred_total']}" if s.get("preferred_total") else "–"
+        lines.append(f"| {j['tracks']['summer']['score']} | {j['company'].replace('|', '/')} | {title}{new} | {prefs} | {reqs} "
                      f"| {loc} | {j.get('posted') or 'unknown'} | [Apply]({j['url']}) |")
     if not summer:
         lines.append("| | No matches yet | Run the workflow from the Actions tab | | | | |")

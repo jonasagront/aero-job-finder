@@ -15,6 +15,9 @@ gpa = 0.0
 # clearance. Set this to true or false so those requirements get checked;
 # leave it commented out and they show as "confirm".
 us_citizen = true
+# Classes you've taken that aren't on your resume. A posting topic that matches one
+# counts as partial ("Coursework only"), e.g. ["Statics", "Thermodynamics", "Dynamics"]
+coursework = []
 
 # The job page's main tabs:
 #   New this week    everything below that was posted in the last 7 days
@@ -331,6 +334,91 @@ weight = 1
 aliases = ["buoyancy", "ballast"]
 
 # ---------------------------------------------------------------------
+#  Evidence: topics postings list as qualifications ("Propulsion or
+#  Combustion", "Design-build-test projects") and what on your resume or
+#  portfolio (jonasagront.github.io) backs each one up. Checked before the
+#  skills above, so a qualification shows the proof you'd point a recruiter to.
+#  level: "met" = you can claim it; "partial" = real but light exposure
+#  (counts half). Keep this honest: it's what the score is built on.
+# ---------------------------------------------------------------------
+[[evidence]]
+name = "Design-build-test"
+level = "met"
+aliases = ["design-build-test", "design build test", "design/build/test", "design, build, and test",
+           "design, build and test", "design-build", "design and build", "build and test", "built and tested",
+           "hands-on project*", "end-to-end hardware", "design projects", "engineering projects"]
+proof = "Designed, built and flew an L1 rocket; built the Orange Race rover and an autonomous launcher robot"
+
+[[evidence]]
+name = "Mechanical design & manufacturing"
+level = "met"
+aliases = ["mechanical design", "manufacturing process*", "manufacturing method*", "manufacturing technique*",
+           "design for manufactur*", "machine design"]
+proof = "SolidWorks parts and DXF cut files for laser-cut fins and centering rings; carbon-fiber wing fabrication"
+
+[[evidence]]
+name = "Teamwork across disciplines"
+level = "met"
+aliases = ["team environment", "team setting", "teamwork", "team player", "team-oriented", "cross-functional",
+           "cross functional", "multidisciplinary", "multi-disciplinary", "interdisciplinary", "collaborat*",
+           "work in a team", "work on a team", "work well in a team", "work within a team"]
+proof = "Knights Racing (Formula SAE) aero team, working with the build crew on the KR26 car"
+
+[[evidence]]
+name = "Shop and test work"
+level = "met"
+aliases = ["shop floor", "shop-floor", "shop environment*", "laboratory", "lab environment*", "test environment*",
+           "hands-on environment*", "production floor", "hardware lab*"]
+proof = "Composite layup and vacuum bagging for the FSAE car; built, launched and recovered a high-power rocket"
+
+[[evidence]]
+name = "Simulation & modeling"
+level = "met"
+aliases = ["flight simulation*", "modeling and simulation", "modeling & simulation", "simulation tool*",
+           "simulation software", "numerical simulation*", "physics-based model*", "engineering simulation*",
+           "computational model*", "6-dof", "6dof", "six degree*"]
+proof = "6-DOF RocketPy flight sim within 3.2% of OpenRocket; STAR-CCM+ wing CFD"
+
+[[evidence]]
+name = "Flight test / launch"
+level = "partial"
+aliases = ["flight test*", "launch operation*", "launch site", "field test*", "test campaign*"]
+proof = "Launched and recovered an L1 rocket (NAR Level 1)"
+
+[[evidence]]
+name = "Propulsion"
+level = "partial"
+aliases = ["propulsion", "rocket motor*", "rocket engine*", "solid rocket*", "solid motor*", "thrust curve*"]
+proof = "picked the H135W motor and modeled its thrust curve in RocketPy; rover propulsion design"
+
+[[evidence]]
+name = "Compressible / high-speed flow"
+level = "partial"
+aliases = ["compressible", "high-speed flow", "high speed flow", "high-speed aero*", "transonic", "gas dynamics",
+           "mach number*"]
+proof = "rocket sim to Mach 0.75 with Mach-dependent drag curves (no compressible-flow class yet)"
+
+[[evidence]]
+name = "Materials"
+level = "partial"
+aliases = ["material science", "materials science", "materials engineering", "material selection",
+           "material properties", "materials", "material"]
+proof = "carbon-fiber composite layup and vacuum bagging (FSAE)"
+
+[[evidence]]
+name = "Instrumentation & sensors"
+level = "partial"
+aliases = ["sensor*", "instrumentation", "electromechanical", "electro-mechanical", "mechatronic*"]
+proof = "line-following and bump sensors on Arduino (autonomous launcher robot)"
+
+[[evidence]]
+name = "Technical documentation"
+level = "partial"
+aliases = ["technical writing", "technical report*", "test report*", "engineering documentation",
+           "document results", "document findings", "documenting results"]
+proof = "documented CFD trade results in Excel; project write-ups on your portfolio site"
+
+# ---------------------------------------------------------------------
 #  Skills employers often ask for that aren't on your resume yet.
 #  The page counts how often these show up so you know what to learn.
 # ---------------------------------------------------------------------
@@ -393,6 +481,14 @@ aliases = ["git", "github", "version control"]
 [[gap]]
 name = "Linux"
 aliases = ["linux", "unix"]
+
+[[gap]]
+name = "Additive manufacturing"
+aliases = ["additive manufacturing", "3d print*", "3-d print*"]
+
+[[gap]]
+name = "Combustion"
+aliases = ["combustion"]
 
 [[gap]]
 name = "Drawings / drafting"

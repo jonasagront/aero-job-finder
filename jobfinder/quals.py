@@ -52,6 +52,8 @@ CREDITS_RX = re.compile(r"(?i)(\d{2,3})\s*(?:\+\s*)?(?:credit hours|hours of cre
 INTEREST_RX = re.compile(r"(?i)^(a |an )?(strong |genuine |deep )?(desire|interest|passion|enthusiasm|curiosity)\b")
 DEGREE_RX = re.compile(r"(?i)\b(degree|pursuing|enrolled|major(ing)?|bachelor'?s?|undergraduate|studying|"
                        r"b\.?s\.?\b|student in)")
+# "Pursuing a pilot's certificate" isn't a degree
+CERT_RX = re.compile(r"(?i)certificat|licen[cs]e|\bpilot")
 RETURNING_RX = re.compile(r"(?i)return(ing)? to school|continu\w+ (your |their )?(education|studies|academic)")
 ACTIVE_CLEARANCE_RX = re.compile(r"(?i)(active|existing|current)\b[^\n]{0,60}?clearance|clearance required on day")
 COURSEWORK_RX = re.compile(r"(?i)course\s*work|courses|classes in|knowledge of|understanding of|fundamentals")
@@ -135,10 +137,21 @@ class QualChecker:
         self.gpa = float(st.get("gpa") or 0)
         self.citizen = st.get("us_citizen")  # True / False / missing = unknown
         self.gaps = [(g["name"], g["aliases"]) for g in matcher.gaps]
+        # What your resume and portfolio show for topics postings name ("Propulsion",
+        # "Design-build-test projects"), each with the proof to point to: [[evidence]] in profile.toml
+        self.evidence = [{"name": e["name"], "level": e.get("level", "met"), "proof": e.get("proof", e["name"]),
+                          "aliases": compile_terms(e.get("aliases", []))} for e in profile.get("evidence", [])]
+        # Classes you've taken (not on the resume): a topic that matches one counts as partial
+        self.courses = [(c, compile_terms([c])) for c in st.get("coursework", [])]
+
+    def _evidence(self, t: str, level: str) -> dict | None:
+        return next((e for e in self.evidence if e["level"] == level and hits(e["aliases"], t)), None)
 
     def _one(self, b: str, coursework: bool) -> tuple[str, str]:
-        t = b.lower()
-        # ---- eligibility
+        return self._eligibility(b) or self._background(b, coursework)
+
+    def _eligibility(self, b: str) -> tuple[str, str] | None:
+        """Citizenship, GPA, grad date, class year, degree: who may apply, not who stands out."""
         if CLEARANCE_RX.search(b) or CITIZEN_RX.search(b):
             if FOREIGN_CLEARANCE_RX.search(b):
                 return "missing", "Needs a foreign government clearance"
@@ -177,7 +190,7 @@ class QualChecker:
             return ("met" if c[0] == "good" else "missing"), c[1]
         if RETURNING_RX.search(b):
             return "met", f"You'll still be in school (grad {self.m.grad_year})"
-        if DEGREE_RX.search(b) and not COURSE_ONLY_RX.search(b):
+        if DEGREE_RX.search(b) and not COURSE_ONLY_RX.search(b) and not CERT_RX.search(b):
             if GRAD_DEGREE_ONLY_RX.search(b) or (GRAD_LEVEL_RX.search(b) and not UNDERGRAD_RX.search(b)):
                 return "missing", "Asks for a graduate degree"
             if AERO_MAJOR_RX.search(b):
@@ -192,10 +205,20 @@ class QualChecker:
             return "met", "You're enrolled in a degree program"
         if GRAD_LEVEL_RX.search(b) and not UNDERGRAD_RX.search(b):
             return "missing", "Asks for graduate-level experience"
-        # ---- skills from your resume
+        return None
+
+    def _background(self, b: str, coursework: bool) -> tuple[str, str]:
+        """Skills, experience and topics: what your resume and portfolio show."""
+        t = b.lower()
+        ev = self._evidence(t, "met")
+        if ev:
+            return "met", ev["proof"]
         have = [s["name"] for s in self.m.skills if hits(s["aliases"], t)]
         if have:
             return "met", "You have: " + ", ".join(have[:3])
+        ev = self._evidence(t, "partial")
+        if ev:
+            return "partial", "Some: " + ev["proof"]
         close = [(hits(s["related"], t)[0].rstrip("*"), s["name"]) for s in self.m.skills if hits(s["related"], t)]
         if close:
             tool, base = close[0]
@@ -204,13 +227,16 @@ class QualChecker:
             return "met", "Your Formula SAE, rocketry, and rover projects"
         if INTEREST_RX.search(b):
             return "soft", ""
+        took = [c for c, rx in self.courses if hits(rx, t)]
+        if took:
+            return "partial", "Coursework only: " + ", ".join(took[:2])
         missing = [name for name, al in self.gaps if hits(al, t)]
         if missing:
             if coursework or COURSEWORK_RX.search(b):
-                return "check", "Coursework: " + ", ".join(missing[:2]) + " (check your classes)"
+                return "check", "Not on your resume: " + ", ".join(missing[:2]) + " (list it if you've had the class)"
             return "missing", "Not on your resume: " + ", ".join(missing[:3])
         if coursework or COURSEWORK_RX.search(b):
-            return "check", "Coursework or background (check your classes)"
+            return "check", "Not on your resume (list it if you've had the class)"
         if SOFT_RX.search(b) or LOGISTICS_RX.search(b):
             return "soft", ""
         return "check", ""
@@ -229,15 +255,24 @@ class QualChecker:
                 status, why = self._one(b, coursework)
                 rows.append({"text": b[:160], "status": status, "why": why})
             result[sec] = rows
+        result["summary"] = self.summarize(result)
+        return result
+
+    def summarize(self, result: dict) -> dict:
+        credit = lambda rows: sum(1 for r in rows if r["status"] == "met") + \
+            0.5 * sum(1 for r in rows if r["status"] == "partial")
         req = [r for r in result.get("required", []) if r["status"] in ("met", "partial", "missing")]
-        met = sum(1 for r in req if r["status"] == "met") + 0.5 * sum(1 for r in req if r["status"] == "partial")
-        result["summary"] = {
+        # Preferred is what sets candidates apart, and a recruiter only sees what's on the resume:
+        # anything there it doesn't show counts against you. Eligibility lines (a clearance,
+        # the degree) aren't something you stand out on, so they're left out.
+        pref = [r for r in result.get("preferred", [])
+                if r["status"] != "soft" and not self._eligibility(r["text"])]
+        return {
             "required_checked": len(req),
-            "required_met": met,
+            "required_met": credit(req),
             "required_missing": sum(1 for r in req if r["status"] == "missing"),
             "to_check": sum(1 for sec in ("required", "preferred") for r in result.get(sec, [])
                             if r["status"] == "check" and r["why"]),
-            "preferred_met": sum(1 for r in result.get("preferred", []) if r["status"] == "met"),
-            "preferred_total": sum(1 for r in result.get("preferred", []) if r["status"] in ("met", "partial", "missing")),
+            "preferred_met": credit(pref),
+            "preferred_total": len(pref),
         }
-        return result

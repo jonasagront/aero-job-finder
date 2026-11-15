@@ -151,19 +151,30 @@ Secrets stay private even though the repo is public.
 
 ## How the score works (out of 100)
 
-- **Aerospace, up to 40** (Summer 2027 tab). Words in the title and description (propulsion,
+Most of the score comes from the posting's own qualification lists, checked bullet by bullet
+against my resume and portfolio (`[[skill]]` and `[[evidence]]` in `profile.toml`). A bullet
+my resume backs up counts in full, light exposure counts half.
+
+- **Preferred qualifications, up to 40.** The share of the posting's preferred list my
+  resume shows. This is what recruiters use to pick between applicants who all meet the
+  basics, so it weighs most. A technical topic my resume doesn't show counts against it.
+- **Required qualifications, up to 25.** The share of required bullets I meet, of those that
+  could be checked (GPA without a GPA set, for example, can't be). Each required bullet I
+  clearly miss also takes 5 off the total (up to 15).
+- **Aerospace, up to 20** (Summer 2027 tab). Words in the title and description (propulsion,
   structures, CFD, composites, flight test...), majors listed (Aerospace Engineering earns the
   most), and whether the company is an aerospace company.
-- **Engineering fit, up to 40** (Fall and All engineering tabs, in place of Aerospace). The
-  title's discipline (aerospace and mechanical 24, manufacturing 18, electrical 10, civil 8,
-  plain "engineering" 8...), hands-on mechanical words in the description (SolidWorks, GD&T,
-  FEA, prototyping...), and whether Mechanical or Aerospace Engineering is a listed major.
-- **Your skills, up to 35.** How many of my resume skills the posting asks for, weighted by
-  how strong each one is. Close substitutes (NX instead of SolidWorks, Fluent instead of
-  STAR-CCM+) get half credit.
-- **Eligibility, up to 25.** Points come off for graduation windows that don't include
+- **Engineering fit, up to 20** (Motorsports, Fall and All engineering tabs, in place of
+  Aerospace). The title's discipline (aerospace and mechanical first), hands-on mechanical words
+  in the description (SolidWorks, GD&T, FEA, prototyping...), and whether Mechanical or
+  Aerospace Engineering is a listed major.
+- **Eligibility, up to 15.** Points come off for graduation windows that don't include
   2029, senior-only or grad-student-only roles, a GPA minimum (if a GPA is set), or a
   posting that never says what season it's for.
+
+A posting with no preferred list (or too short a one to judge) uses how many of my resume
+skills it asks for instead, at 75% weight, so it can't outrank one whose preferred list I
+actually match.
 
 Fit labels: **Strong fit** 72+, **Good fit** 56 to 71, **Worth a look** below 56.
 Anything below 40 is hidden from Summer 2027, and below 30 from the other tabs.
