@@ -51,7 +51,7 @@ history fills more of that in.
 ## Today's top matches
 
 <!-- JOBS:START -->
-**291 Summer 2027 aerospace matches** (1 in Motorsports, 15 Fall 2027 near home, 823 in All engineering, 82 leads without a direct link) as of Nov 16, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
+**298 Summer 2027 aerospace matches** (1 in Motorsports, 16 Fall 2027 near home, 832 in All engineering, 82 leads without a direct link) as of Nov 16, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
 
 | Fit | Company | Role | Preferred quals | Required quals | Location | Posted | Apply |
 |---|---|---|---|---|---|---|---|
@@ -60,7 +60,6 @@ history fills more of that in.
 | 92 | L3Harris | Intern, Manufacturing Engineer | 2 of 2 | 3 of 3 | Canoga Park, CA, US, 91311 | 2026-11-09 | [Apply](https://jobs.l3harris.com/job/Canoga-Park-Intern%2C-Manufacturing-Engineer-CA-91311/1448973300/) |
 | 90 | Shield AI | Hardware Test Engineering Co-op | 2 of 2 | 2 of 2 | Dallas, TX | 2026-11-12 | [Apply](https://jobs.ashbyhq.com/f7d8749a-72d6-407c-bf98-292ea630c73a/ec8a822c-ccbf-4b4e-b41c-2f0db5c8342d/application?embed=true) |
 | 90 | Intuitive Machines | Satellite Mission Operations Intern – Altus | 3 of 4 | 2 of 2 | Houston, TX; Houston, TX | 2026-11-13 | [Apply](https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=b0e24f83-6e4d-492d-9d6a-bc0fea197d6a&lang=en_US&locale=en_US&ccId=19000101_000001&jobId=9207519358072_165) |
-| 90 | The Aerospace Corporation | 2027 Propulsion Science Undergraduate Intern | – | 4 of 4 | El Segundo, CA | 2026-11-10 | [Apply](https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/XMLNAME-2027-Propulsion-Science-Undergraduate-Intern_R017148) |
 | 89 | Intuitive Machines | Guidance, Navigation & Controls (GNC) Intern | 1 of 1 | 3 of 3 | Houston, TX; Houston, TX | 2026-11-13 | [Apply](https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=b0e24f83-6e4d-492d-9d6a-bc0fea197d6a&lang=en_US&locale=en_US&ccId=19000101_000001&jobId=9207519357554_173) |
 | 88 | Draper | Electro-Mechanical Instrument Intern (Summer 2027) | – | 1 of 1 | Cambridge, MA | 2026-11-04 | [Apply](https://draper.wd5.myworkdayjobs.com/Draper_Careers/job/Cambridge-MA/Electro-Mechanical-Instrument-Intern--Summer-2027-_JR003093) |
 | 88 | United Launch Alliance | Composite Engineering Internship - Summer 2027 | – | 4 of 4 | Decatur, AL, US, 35601 | 2026-11-05 | [Apply](https://jobs.ulalaunch.com/job/Decatur-Composite-Engineering-Internship-Summer-2027-AL-35601/1427397600/) |
@@ -69,7 +68,6 @@ history fills more of that in.
 | 87 | MIT Lincoln Laboratory | Summer Research Program Intern 2027, Fabrication Engineering Integration (Group 07-72) | 5 of 7 | 4 of 4 | Lexington, MA, US | 2026-11-06 | [Apply](https://careers.ll.mit.edu/job/Lexington-Summer-Research-Program-Intern-2027%2C-Fabrication-Engineering-Integration-%28Group-07-72%29-MA-02420/1448734700/) |
 | 87 | Reliable Robotics | Flight Test Integration Engineer Intern (Summer 2027) | 2 of 3 | 2 of 2 | Mountain View, CA | 2026-11-13 | [Apply](https://jobs.ashbyhq.com/reliable-robotics/1d020651-71bb-4e47-baa6-2286dc780d96) |
 | 86 | Intuitive Machines | Assembly Integration & Test Intern | 1 of 1 | 2 of 2 | Houston, TX | 2026-11-13 | [Apply](https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=b0e24f83-6e4d-492d-9d6a-bc0fea197d6a&lang=en_US&locale=en_US&ccId=19000101_000001&jobId=9207519595481_89) |
-| 86 | Leidos | Flight Test and Integration Summer Intern | 3.5 of 5 | 2 of 2 | Huntsville, AL | 2026-11-13 | [Apply](https://leidos.wd5.myworkdayjobs.com/External/job/Huntsville-AL/Flight-Test-and-Integration-Summer-Intern_R-00196666) |
 | 86 | Lockheed Martin | aerospace engineering intern | 1 of 1 | 3 of 3 | Littleton, CO | 2026-11-12 | [Apply](https://lockheedmartin.eightfold.ai/careers/job/996477909687) |
 | 85 | Sierra Lobo | Mechanical Engineer Intern - Spring/Summer 2027 | – | 4 of 4 | US-OH-Milan | 2026-11-05 | [Apply](https://jobs-sierralobo.icims.com/jobs/3534/mechanical-engineer-intern---spring-summer-2027/job) |
 | 85 | L3Harris | Intern, Manufacturing Engineer | 2 of 2 | 1.5 of 2 | Canoga Park, CA, US, 91311 | 2026-11-09 | [Apply](https://jobs.l3harris.com/job/Canoga-Park-Intern%2C-Manufacturing-Engineer-CA-91311/1448982100/) |
@@ -80,6 +78,8 @@ history fills more of that in.
 | 83 | Reliable Robotics | Hardware Test Engineering Intern (Summer 2027) | 2.5 of 3 | 3.5 of 6 | Mountain View, CA | 2026-11-13 | [Apply](https://jobs.ashbyhq.com/reliable-robotics/0af72d5a-87b7-49a1-b49e-424d28758c9e) |
 | 83 | Sandia National Laboratories | Intern, R&D Graduate Summer - Advanced Concepts Engineering, Onsite | – | 8 of 8 | Albuquerque, NM, USA | 2026-11-05 | [Apply](https://sandia.jobs/5A8B0975ECC947A680D7EDC34DCDEB0725) |
 | 83 | Sandia National Laboratories | Intern, R&D Undergraduate Summer - Advanced Concepts Engineering, Onsite | – | 7 of 7 | Albuquerque, NM, USA | 2026-11-05 | [Apply](https://sandia.jobs/C11ACA40ECD4454A8EC287A2907691E725) |
+| 82 | Safran Defense & Space | Mechanical Engineering Internship | – | 4 of 4 | Bedford, NH, US, 03110 | 2026-11-14 | [Apply](https://careers.safran-dsi.com/job/Bedford-Mechanical-Engineering-Internship-NH-03110/1431029700/) |
+| 82 | Lockheed Martin | Mechanical Test Engineer-INTERN | 3 of 5 | 2 of 2 | Cape Canaveral, FL | 2026-11-03 | [Apply](https://lockheedmartin.eightfold.ai/careers/job/996477635652) |
 <!-- JOBS:END -->
 
 ## Expected soon
