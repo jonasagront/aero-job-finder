@@ -2044,16 +2044,6 @@
   "fails": 0,
   "last_seen": "2026-09-22"
  },
- "workday:nxp.wd3.myworkdayjobs.com/careers": {
-  "kind": "workday",
-  "host": "nxp.wd3.myworkdayjobs.com",
-  "site": "careers",
-  "name": "NXP Semiconductors",
-  "first_seen": "2026-11-13",
-  "fails": 8,
-  "engineering": true,
-  "last_seen": "2026-09-22"
- },
  "workday:oshkoshcorporation.wd5.myworkdayjobs.com/oshkosh": {
   "kind": "workday",
   "host": "oshkoshcorporation.wd5.myworkdayjobs.com",
@@ -2203,7 +2193,7 @@
   "site": "Symbotic",
   "name": "Symbotic",
   "first_seen": "2026-11-14",
-  "fails": 4,
+  "fails": 5,
   "engineering": true,
   "last_seen": "2025-09-15"
  },
