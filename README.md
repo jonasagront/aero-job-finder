@@ -51,7 +51,7 @@ history fills more of that in.
 ## Today's top matches
 
 <!-- JOBS:START -->
-**290 Summer 2027 aerospace matches** (1 in Motorsports, 14 Fall 2027 near home, 820 in All engineering, 81 leads without a direct link) as of Nov 15, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
+**291 Summer 2027 aerospace matches** (1 in Motorsports, 15 Fall 2027 near home, 823 in All engineering, 82 leads without a direct link) as of Nov 16, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
 
 | Fit | Company | Role | Preferred quals | Required quals | Location | Posted | Apply |
 |---|---|---|---|---|---|---|---|
@@ -85,7 +85,7 @@ history fills more of that in.
 ## Expected soon
 
 <!-- PREDICTED:START -->
-**30 aerospace internships expected in the next 60 days**, from past cycles' posting dates. All of them, with filters: **[Predicted tab](https://jonasagront.github.io/aero-job-finder/#predicted)**
+**31 aerospace internships expected in the next 60 days**, from past cycles' posting dates. All of them, with filters: **[Predicted tab](https://jonasagront.github.io/aero-job-finder/#predicted)**
 
 | Expected | Company | Role | For | Last cycle's posting date | Career site |
 |---|---|---|---|---|---|
