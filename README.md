@@ -51,7 +51,7 @@ history fills more of that in.
 ## Today's top matches
 
 <!-- JOBS:START -->
-**308 Summer 2027 aerospace matches** (1 in Motorsports, 16 Fall 2027 near home, 852 in All engineering, 83 leads without a direct link) as of Nov 16, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
+**335 Summer 2027 aerospace matches** (1 in Motorsports, 16 Fall 2027 near home, 896 in All engineering, 82 leads without a direct link) as of Nov 17, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
 
 | Fit | Company | Role | Preferred quals | Required quals | Location | Posted | Apply |
 |---|---|---|---|---|---|---|---|
@@ -65,7 +65,7 @@ history fills more of that in.
 | 88 | United Launch Alliance | Composite Engineering Internship - Summer 2027 | – | 4 of 4 | Decatur, AL, US, 35601 | 2026-11-05 | [Apply](https://jobs.ulalaunch.com/job/Decatur-Composite-Engineering-Internship-Summer-2027-AL-35601/1427397600/) |
 | 88 | United Launch Alliance | Material and Process Engineering Internship Summer 2027 | 4 of 5 | 4 of 4 | Centennial, CO, US, 80112 | 2026-11-05 | [Apply](https://jobs.ulalaunch.com/job/Centennial-Material-and-Process-Engineering-Internship-Summer-2027-CO-80112/1427398900/) |
 | 88 | Johns Hopkins Applied Physics Laboratory | 2027 Internship - Mechanical Engineering Intern | – | – | Laurel, Maryland | 2026-11-13 | [Apply](https://careers.jhuapl.edu/jobs/60389) |
-| 88 | The Aerospace Corporation | 2027 Structural Engineering Undergraduate Intern 🆕 | – | 6 of 6 | El Segundo, CA | 2026-11-16 | [Apply](https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/XMLNAME-2027-Structural-Engineering-Undergraduate-Intern_R017211) |
+| 88 | The Aerospace Corporation | 2027 Structural Engineering Undergraduate Intern | – | 6 of 6 | El Segundo, CA | 2026-11-16 | [Apply](https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/XMLNAME-2027-Structural-Engineering-Undergraduate-Intern_R017211) |
 | 87 | MIT Lincoln Laboratory | Summer Research Program Intern 2027, Fabrication Engineering Integration (Group 07-72) | 5 of 7 | 4 of 4 | Lexington, MA, US | 2026-11-06 | [Apply](https://careers.ll.mit.edu/job/Lexington-Summer-Research-Program-Intern-2027%2C-Fabrication-Engineering-Integration-%28Group-07-72%29-MA-02420/1448734700/) |
 | 87 | Reliable Robotics | Flight Test Integration Engineer Intern (Summer 2027) | 2 of 3 | 2 of 2 | Mountain View, CA | 2026-11-13 | [Apply](https://jobs.ashbyhq.com/reliable-robotics/1d020651-71bb-4e47-baa6-2286dc780d96) |
 | 86 | Intuitive Machines | Assembly Integration & Test Intern | 1 of 1 | 2 of 2 | Houston, TX | 2026-11-13 | [Apply](https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=b0e24f83-6e4d-492d-9d6a-bc0fea197d6a&lang=en_US&locale=en_US&ccId=19000101_000001&jobId=9207519595481_89) |
@@ -73,13 +73,13 @@ history fills more of that in.
 | 85 | Sierra Lobo | Mechanical Engineer Intern - Spring/Summer 2027 | – | 4 of 4 | US-OH-Milan | 2026-11-05 | [Apply](https://jobs-sierralobo.icims.com/jobs/3534/mechanical-engineer-intern---spring-summer-2027/job) |
 | 85 | L3Harris | Intern, Manufacturing Engineer | 2 of 2 | 1.5 of 2 | Canoga Park, CA, US, 91311 | 2026-11-09 | [Apply](https://jobs.l3harris.com/job/Canoga-Park-Intern%2C-Manufacturing-Engineer-CA-91311/1448982100/) |
 | 85 | GE Aerospace | Test and Manufacturing Operations Intern - Bohemia, NY - Summer 2027 | 4.5 of 7 | 8.5 of 9 | Bohemia | 2026-11-12 | [Apply](https://geaerospace.wd5.myworkdayjobs.com/GE_ExternalSite/job/Bohemia/Test-and-Manufacturing-Operations-Intern---Bohemia--NY---Summer-2027_R5042960-1) |
-| 84 | RTX (Raytheon, Pratt & Whitney, Collins) | Manufacturing Engineer Co-op (Spring/Summer 2027) | – | 6 of 6 | US-NC-WILSON-4200 ~ 4200 Airport Dr ~ BL | 2026-11-09 | [Apply](https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-NC-WILSON-4200--4200-Airport-Dr--BLDG-4200/Manufacturing-Engineer-Co-op--Spring-Summer-2027-_01887620) |
 | 84 | Reliable Robotics | Flight Simulation Engineering Intern (Summer 2027) | 1 of 1 | 2 of 2 | Mountain View, CA | 2026-11-13 | [Apply](https://jobs.ashbyhq.com/reliable-robotics/0cd44e07-169f-4664-bf31-cded94b93deb) |
 | 84 | Sandia National Laboratories | Intern, R&D Graduate Summer  - Weather Effects Research, Hybrid | – | 7 of 7 | Albuquerque, NM, USA | 2026-11-04 | [Apply](https://sandia.jobs/CBCEC290A6F548FA97BCDEBE1043A89C25) |
 | 83 | Reliable Robotics | Hardware Test Engineering Intern (Summer 2027) | 2.5 of 3 | 3.5 of 6 | Mountain View, CA | 2026-11-13 | [Apply](https://jobs.ashbyhq.com/reliable-robotics/0af72d5a-87b7-49a1-b49e-424d28758c9e) |
 | 83 | Sandia National Laboratories | Intern, R&D Graduate Summer - Advanced Concepts Engineering, Onsite | – | 8 of 8 | Albuquerque, NM, USA | 2026-11-05 | [Apply](https://sandia.jobs/5A8B0975ECC947A680D7EDC34DCDEB0725) |
 | 83 | Sandia National Laboratories | Intern, R&D Undergraduate Summer - Advanced Concepts Engineering, Onsite | – | 7 of 7 | Albuquerque, NM, USA | 2026-11-05 | [Apply](https://sandia.jobs/C11ACA40ECD4454A8EC287A2907691E725) |
 | 82 | Safran Defense & Space | Mechanical Engineering Internship | – | 4 of 4 | Bedford, NH, US, 03110 | 2026-11-14 | [Apply](https://careers.safran-dsi.com/job/Bedford-Mechanical-Engineering-Internship-NH-03110/1431029700/) |
+| 82 | Lockheed Martin | Mechanical Test Engineer-INTERN | 3 of 5 | 2 of 2 | Cape Canaveral, FL | 2026-11-03 | [Apply](https://lockheedmartin.eightfold.ai/careers/job/996477635652) |
 <!-- JOBS:END -->
 
 ## Expected soon
@@ -102,7 +102,7 @@ history fills more of that in.
 | ~2026-11-13 (due now) | Northrop Grumman | Engineering Intern - Radford VA | Summer 2027 | 2025-11-13 | [Open](https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site) |
 | ~2026-11-21 (due now) | Leidos | Aerospace AI/ML Intern | Summer 2027 | 2025-11-11 | [Open](https://leidos.wd5.myworkdayjobs.com/External) |
 | ~2026-11-21 (due now) | Northrop Grumman | Engineering Intern | Summer 2027 | 2025-11-21 | [Open](https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site) |
-| ~2026-11-24 | Shield AI | Mission Systems Engineering Intern – Summer Intern | Summer 2027 | 2025-11-24 | [Open](https://jobs.lever.co/shieldai) |
+| ~2026-11-24 (due now) | Shield AI | Mission Systems Engineering Intern – Summer Intern | Summer 2027 | 2025-11-24 | [Open](https://jobs.lever.co/shieldai) |
 | ~2026-11-25 | LeoLabs | Hardware Engineering Intern | Summer 2027 | 2025-11-25 | [Open](https://job-boards.greenhouse.io/leolabsinc) |
 <!-- PREDICTED:END -->
 
