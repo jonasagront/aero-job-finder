@@ -51,7 +51,7 @@ history fills more of that in.
 ## Today's top matches
 
 <!-- JOBS:START -->
-**342 Summer 2027 aerospace matches** (1 in Motorsports, 14 Fall 2027 near home, 916 in All engineering, 70 leads without a direct link) as of Nov 18, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
+**360 Summer 2027 aerospace matches** (1 in Motorsports, 15 Fall 2027 near home, 936 in All engineering, 65 leads without a direct link) as of Nov 18, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
 
 | Fit | Company | Role | Preferred quals | Required quals | Location | Posted | Apply |
 |---|---|---|---|---|---|---|---|
@@ -65,7 +65,6 @@ history fills more of that in.
 | 88 | Draper | Electro-Mechanical Instrument Intern (Summer 2027) | – | 1 of 1 | Cambridge, MA | 2026-11-04 | [Apply](https://draper.wd5.myworkdayjobs.com/Draper_Careers/job/Cambridge-MA/Electro-Mechanical-Instrument-Intern--Summer-2027-_JR003093) |
 | 88 | United Launch Alliance | Composite Engineering Internship - Summer 2027 | – | 4 of 4 | Decatur, AL, US, 35601 | 2026-11-05 | [Apply](https://jobs.ulalaunch.com/job/Decatur-Composite-Engineering-Internship-Summer-2027-AL-35601/1427397600/) |
 | 88 | United Launch Alliance | Material and Process Engineering Internship Summer 2027 | 4 of 5 | 4 of 4 | Centennial, CO, US, 80112 | 2026-11-05 | [Apply](https://jobs.ulalaunch.com/job/Centennial-Material-and-Process-Engineering-Internship-Summer-2027-CO-80112/1427398900/) |
-| 88 | Johns Hopkins Applied Physics Laboratory | 2027 Internship - Mechanical Engineering Intern | – | – | Laurel, Maryland | 2026-11-13 | [Apply](https://careers.jhuapl.edu/jobs/60389) |
 | 88 | The Aerospace Corporation | 2027 Structural Engineering Undergraduate Intern | – | 6 of 6 | El Segundo, CA | 2026-11-16 | [Apply](https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/XMLNAME-2027-Structural-Engineering-Undergraduate-Intern_R017211) |
 | 87 | MIT Lincoln Laboratory | Summer Research Program Intern 2027, Fabrication Engineering Integration (Group 07-72) | 5 of 7 | 4 of 4 | Lexington, MA, US | 2026-11-06 | [Apply](https://careers.ll.mit.edu/job/Lexington-Summer-Research-Program-Intern-2027%2C-Fabrication-Engineering-Integration-%28Group-07-72%29-MA-02420/1448734700/) |
 | 87 | Reliable Robotics | Flight Test Integration Engineer Intern (Summer 2027) | 2 of 3 | 2 of 2 | Mountain View, CA | 2026-11-13 | [Apply](https://jobs.ashbyhq.com/reliable-robotics/1d020651-71bb-4e47-baa6-2286dc780d96) |
@@ -80,6 +79,7 @@ history fills more of that in.
 | 84 | Sandia National Laboratories | Intern, R&D Graduate Summer  - Weather Effects Research, Hybrid | – | 7 of 7 | Albuquerque, NM, USA | 2026-11-04 | [Apply](https://sandia.jobs/CBCEC290A6F548FA97BCDEBE1043A89C25) |
 | 83 | Reliable Robotics | Hardware Test Engineering Intern (Summer 2027) | 2.5 of 3 | 3.5 of 6 | Mountain View, CA | 2026-11-13 | [Apply](https://jobs.ashbyhq.com/reliable-robotics/0af72d5a-87b7-49a1-b49e-424d28758c9e) |
 | 83 | Sandia National Laboratories | Intern, R&D Graduate Summer - Advanced Concepts Engineering, Onsite | – | 8 of 8 | Albuquerque, NM, USA | 2026-11-05 | [Apply](https://sandia.jobs/5A8B0975ECC947A680D7EDC34DCDEB0725) |
+| 83 | Sandia National Laboratories | Intern, R&D Undergraduate Summer - Advanced Concepts Engineering, Onsite | – | 7 of 7 | Albuquerque, NM, USA | 2026-11-05 | [Apply](https://sandia.jobs/C11ACA40ECD4454A8EC287A2907691E725) |
 <!-- JOBS:END -->
 
 ## Expected soon

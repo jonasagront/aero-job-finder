@@ -444,7 +444,7 @@
   "name": "GITAI",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-10"
+  "last_seen": "2026-11-18"
  },
  "greenhouse:graviticsinc": {
   "kind": "greenhouse",
@@ -518,7 +518,7 @@
   "name": "K2 Space",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-18"
  },
  "greenhouse:katalyst": {
   "kind": "greenhouse",
@@ -2044,16 +2044,6 @@
   "fails": 0,
   "last_seen": "2026-11-16"
  },
- "workday:nxp.wd3.myworkdayjobs.com/careers": {
-  "kind": "workday",
-  "host": "nxp.wd3.myworkdayjobs.com",
-  "site": "careers",
-  "name": "NXP Semiconductors",
-  "first_seen": "2026-11-16",
-  "fails": 8,
-  "engineering": true,
-  "last_seen": "2026-09-22"
- },
  "workday:oshkoshcorporation.wd5.myworkdayjobs.com/oshkosh": {
   "kind": "workday",
   "host": "oshkoshcorporation.wd5.myworkdayjobs.com",
@@ -2203,7 +2193,7 @@
   "site": "Symbotic",
   "name": "Symbotic",
   "first_seen": "2026-11-17",
-  "fails": 4,
+  "fails": 5,
   "engineering": true,
   "last_seen": "2025-09-15"
  },
