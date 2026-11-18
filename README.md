@@ -51,14 +51,14 @@ history fills more of that in.
 ## Today's top matches
 
 <!-- JOBS:START -->
-**363 Summer 2027 aerospace matches** (1 in Motorsports, 17 Fall 2027 near home, 951 in All engineering, 78 leads without a direct link) as of Nov 17, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
+**344 Summer 2027 aerospace matches** (1 in Motorsports, 12 Fall 2027 near home, 915 in All engineering, 73 leads without a direct link) as of Nov 18, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
 
 | Fit | Company | Role | Preferred quals | Required quals | Location | Posted | Apply |
 |---|---|---|---|---|---|---|---|
 | 98 | GE Aerospace | Working Student – Thermal Systems Design / CFD Analysis (m/f/d) | 4 of 4 | 6 of 6 | Garching | 2026-11-12 | [Apply](https://geaerospace.wd5.myworkdayjobs.com/GE_ExternalSite/job/Garching/Working-Student---Thermal-Systems-Design---CFD-Analysis--m-f-d-_R5043154-2) |
 | 93 | Lockheed Martin | College Student - Aerodynamics (Orlando, FL) | 2.5 of 3 | 3 of 3 | Orlando, FL | 2026-11-05 | [Apply](https://lockheedmartin.eightfold.ai/careers/job/996477760340) |
 | 92 | L3Harris | Intern, Manufacturing Engineer | 2 of 2 | 3 of 3 | Canoga Park, CA, US, 91311 | 2026-11-09 | [Apply](https://jobs.l3harris.com/job/Canoga-Park-Intern%2C-Manufacturing-Engineer-CA-91311/1448973300/) |
-| 91 | RTX (Raytheon, Pratt & Whitney, Collins) | Manufacturing Engineering Intern (Summer 2027) 🆕 | 1 of 1 | 3 of 3 | US-WA-SPOKANE-11135 ~ 11135 W Westbow Ln | 2026-11-17 | [Apply](https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-WA-SPOKANE-11135--11135-W-Westbow-Ln--WESTBOW/Manufacturing-Engineering-Intern--Summer-2027-_01888202) |
+| 91 | RTX (Raytheon, Pratt & Whitney, Collins) | Manufacturing Engineering Intern (Summer 2027) | 1 of 1 | 3 of 3 | US-WA-SPOKANE-11135 ~ 11135 W Westbow Ln | 2026-11-17 | [Apply](https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-WA-SPOKANE-11135--11135-W-Westbow-Ln--WESTBOW/Manufacturing-Engineering-Intern--Summer-2027-_01888202) |
 | 90 | Shield AI | Hardware Test Engineering Co-op | 2 of 2 | 2 of 2 | Dallas, TX | 2026-11-12 | [Apply](https://jobs.ashbyhq.com/f7d8749a-72d6-407c-bf98-292ea630c73a/ec8a822c-ccbf-4b4e-b41c-2f0db5c8342d/application?embed=true) |
 | 90 | Intuitive Machines | Satellite Mission Operations Intern – Altus | 3 of 4 | 2 of 2 | Houston, TX; Houston, TX | 2026-11-13 | [Apply](https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=b0e24f83-6e4d-492d-9d6a-bc0fea197d6a&lang=en_US&locale=en_US&ccId=19000101_000001&jobId=9207519358072_165) |
 | 89 | Intuitive Machines | Guidance, Navigation & Controls (GNC) Intern | 1 of 1 | 3 of 3 | Houston, TX; Houston, TX | 2026-11-13 | [Apply](https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=b0e24f83-6e4d-492d-9d6a-bc0fea197d6a&lang=en_US&locale=en_US&ccId=19000101_000001&jobId=9207519357554_173) |
@@ -71,11 +71,11 @@ history fills more of that in.
 | 87 | Reliable Robotics | Flight Test Integration Engineer Intern (Summer 2027) | 2 of 3 | 2 of 2 | Mountain View, CA | 2026-11-13 | [Apply](https://jobs.ashbyhq.com/reliable-robotics/1d020651-71bb-4e47-baa6-2286dc780d96) |
 | 86 | Intuitive Machines | Assembly Integration & Test Intern | 1 of 1 | 2 of 2 | Houston, TX | 2026-11-13 | [Apply](https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=b0e24f83-6e4d-492d-9d6a-bc0fea197d6a&lang=en_US&locale=en_US&ccId=19000101_000001&jobId=9207519595481_89) |
 | 86 | Lockheed Martin | aerospace engineering intern | 1 of 1 | 3 of 3 | Littleton, CO | 2026-11-12 | [Apply](https://lockheedmartin.eightfold.ai/careers/job/996477909687) |
-| 85 | MIT Lincoln Laboratory | Summer Research Program Intern 2027, Advanced Sensor Systems and Test Beds (Group 03-33) 🆕 | 1 of 1 | 4 of 4 | Lexington, MA, US | 2026-11-17 | [Apply](https://careers.ll.mit.edu/job/Lexington-Summer-Research-Program-Intern-2027%2C-Advanced-Sensor-Systems-and-Test-Beds-%28Group-03-33%29-MA-02420/1441287700/) |
+| 85 | MIT Lincoln Laboratory | Summer Research Program Intern 2027, Advanced Sensor Systems and Test Beds (Group 03-33) | 1 of 1 | 4 of 4 | Lexington, MA, US | 2026-11-17 | [Apply](https://careers.ll.mit.edu/job/Lexington-Summer-Research-Program-Intern-2027%2C-Advanced-Sensor-Systems-and-Test-Beds-%28Group-03-33%29-MA-02420/1441287700/) |
 | 85 | Sierra Lobo | Mechanical Engineer Intern - Spring/Summer 2027 | – | 4 of 4 | US-OH-Milan | 2026-11-05 | [Apply](https://jobs-sierralobo.icims.com/jobs/3534/mechanical-engineer-intern---spring-summer-2027/job) |
 | 85 | L3Harris | Intern, Manufacturing Engineer | 2 of 2 | 1.5 of 2 | Canoga Park, CA, US, 91311 | 2026-11-09 | [Apply](https://jobs.l3harris.com/job/Canoga-Park-Intern%2C-Manufacturing-Engineer-CA-91311/1448982100/) |
 | 85 | GE Aerospace | Test and Manufacturing Operations Intern - Bohemia, NY - Summer 2027 | 4.5 of 7 | 8.5 of 9 | Bohemia | 2026-11-12 | [Apply](https://geaerospace.wd5.myworkdayjobs.com/GE_ExternalSite/job/Bohemia/Test-and-Manufacturing-Operations-Intern---Bohemia--NY---Summer-2027_R5042960-1) |
-| 84 | Intuitive Machines | Structures and Design Intern 🆕 | 3 of 5 | 3 of 3 | Houston, TX; Houston, TX | 2026-11-17 | [Apply](https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=b0e24f83-6e4d-492d-9d6a-bc0fea197d6a&lang=en_US&locale=en_US&ccId=19000101_000001&jobId=9207523114195_165) |
+| 84 | Intuitive Machines | Structures and Design Intern | 3 of 5 | 3 of 3 | Houston, TX; Houston, TX | 2026-11-17 | [Apply](https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=b0e24f83-6e4d-492d-9d6a-bc0fea197d6a&lang=en_US&locale=en_US&ccId=19000101_000001&jobId=9207523114195_165) |
 | 84 | Reliable Robotics | Flight Simulation Engineering Intern (Summer 2027) | 1 of 1 | 2 of 2 | Mountain View, CA | 2026-11-13 | [Apply](https://jobs.ashbyhq.com/reliable-robotics/0cd44e07-169f-4664-bf31-cded94b93deb) |
 | 84 | Sandia National Laboratories | Intern, R&D Graduate Summer  - Weather Effects Research, Hybrid | – | 7 of 7 | Albuquerque, NM, USA | 2026-11-04 | [Apply](https://sandia.jobs/CBCEC290A6F548FA97BCDEBE1043A89C25) |
 | 83 | Reliable Robotics | Hardware Test Engineering Intern (Summer 2027) | 2.5 of 3 | 3.5 of 6 | Mountain View, CA | 2026-11-13 | [Apply](https://jobs.ashbyhq.com/reliable-robotics/0af72d5a-87b7-49a1-b49e-424d28758c9e) |
@@ -103,7 +103,7 @@ history fills more of that in.
 | ~2026-11-21 (due now) | Leidos | Aerospace AI/ML Intern | Summer 2027 | 2025-11-11 | [Open](https://leidos.wd5.myworkdayjobs.com/External) |
 | ~2026-11-21 (due now) | Northrop Grumman | Engineering Intern | Summer 2027 | 2025-11-21 | [Open](https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site) |
 | ~2026-11-24 (due now) | Shield AI | Mission Systems Engineering Intern – Summer Intern | Summer 2027 | 2025-11-24 | [Open](https://jobs.lever.co/shieldai) |
-| ~2026-11-25 | LeoLabs | Hardware Engineering Intern | Summer 2027 | 2025-11-25 | [Open](https://job-boards.greenhouse.io/leolabsinc) |
+| ~2026-11-25 (due now) | LeoLabs | Hardware Engineering Intern | Summer 2027 | 2025-11-25 | [Open](https://job-boards.greenhouse.io/leolabsinc) |
 <!-- PREDICTED:END -->
 
 ---
