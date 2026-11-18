@@ -147,6 +147,15 @@
   "fails": 0,
   "last_seen": "2026-11-04"
  },
+ "ashby:maticrobots": {
+  "kind": "ashby",
+  "board": "MaticRobots",
+  "name": "Matician",
+  "first_seen": "2026-11-18",
+  "fails": 0,
+  "engineering": true,
+  "last_seen": "2026-11-18"
+ },
  "ashby:northwoodspace": {
   "kind": "ashby",
   "board": "NorthwoodSpace",
@@ -2044,6 +2053,16 @@
   "fails": 0,
   "last_seen": "2026-11-16"
  },
+ "workday:nxp.wd3.myworkdayjobs.com/careers": {
+  "kind": "workday",
+  "host": "nxp.wd3.myworkdayjobs.com",
+  "site": "careers",
+  "name": "NXP Semiconductors",
+  "first_seen": "2026-11-18",
+  "fails": 1,
+  "engineering": true,
+  "last_seen": "2026-09-22"
+ },
  "workday:oshkoshcorporation.wd5.myworkdayjobs.com/oshkosh": {
   "kind": "workday",
   "host": "oshkoshcorporation.wd5.myworkdayjobs.com",
@@ -2193,7 +2212,7 @@
   "site": "Symbotic",
   "name": "Symbotic",
   "first_seen": "2026-11-17",
-  "fails": 5,
+  "fails": 6,
   "engineering": true,
   "last_seen": "2025-09-15"
  },
