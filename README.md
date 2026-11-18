@@ -51,7 +51,7 @@ history fills more of that in.
 ## Today's top matches
 
 <!-- JOBS:START -->
-**344 Summer 2027 aerospace matches** (1 in Motorsports, 12 Fall 2027 near home, 915 in All engineering, 73 leads without a direct link) as of Nov 18, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
+**342 Summer 2027 aerospace matches** (1 in Motorsports, 14 Fall 2027 near home, 916 in All engineering, 70 leads without a direct link) as of Nov 18, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
 
 | Fit | Company | Role | Preferred quals | Required quals | Location | Posted | Apply |
 |---|---|---|---|---|---|---|---|
