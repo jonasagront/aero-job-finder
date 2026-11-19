@@ -1408,7 +1408,7 @@
   "first_seen": "2026-11-06",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-11-18"
+  "last_seen": "2026-11-19"
  },
  "workday:avav.wd1.myworkdayjobs.com/avav": {
   "kind": "workday",
@@ -2042,6 +2042,16 @@
   "fails": 0,
   "last_seen": "2026-11-19"
  },
+ "workday:nidec.wd1.myworkdayjobs.com/nidec": {
+  "kind": "workday",
+  "host": "nidec.wd1.myworkdayjobs.com",
+  "site": "nidec",
+  "name": "Nidec",
+  "first_seen": "2026-11-19",
+  "fails": 0,
+  "engineering": true,
+  "last_seen": "2026-11-19"
+ },
  "workday:nvent.wd5.myworkdayjobs.com/nvent": {
   "kind": "workday",
   "host": "nvent.wd5.myworkdayjobs.com",
@@ -2077,7 +2087,7 @@
   "site": "careers",
   "name": "NXP Semiconductors",
   "first_seen": "2026-11-18",
-  "fails": 4,
+  "fails": 5,
   "engineering": true,
   "last_seen": "2026-09-22"
  },
@@ -2145,7 +2155,7 @@
   "name": "Rolls-Royce",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-18"
+  "last_seen": "2026-11-19"
  },
  "workday:selinc.wd1.myworkdayjobs.com/sel": {
   "kind": "workday",
@@ -2223,6 +2233,16 @@
   "fails": 0,
   "engineering": true,
   "last_seen": "2026-10-22"
+ },
+ "workday:symbotic.wd1.myworkdayjobs.com/symbotic": {
+  "kind": "workday",
+  "host": "symbotic.wd1.myworkdayjobs.com",
+  "site": "Symbotic",
+  "name": "Symbotic",
+  "first_seen": "2026-11-19",
+  "fails": 1,
+  "engineering": true,
+  "last_seen": "2025-09-15"
  },
  "workday:thales.wd3.myworkdayjobs.com/careers": {
   "kind": "workday",
