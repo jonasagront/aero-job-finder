@@ -312,8 +312,12 @@ def main() -> int:
     # 5) Merge with yesterday's results (keeps "first seen" dates)
     failed_sources = {s["name"] for s in status if not s["ok"]}
     final = []
+    stamp = now.isoformat(timespec="seconds")
     for j in scored:
-        j["first_seen"] = old.get(j["key"], {}).get("first_seen", today)
+        prev = old.get(j["key"], {})
+        j["first_seen"] = prev.get("first_seen", today)
+        # The exact scan that first found it, for the New internships tab
+        j["found_at"] = prev.get("found_at") or (None if prev else stamp)
         j["last_seen"] = today
         final.append(j)
     current = {j["key"] for j in final}
@@ -353,7 +357,7 @@ def main() -> int:
 
     # 7) Save + publish
     keep_keys = {j["key"] for j in final}
-    save_json(JOBS_FILE, {"updated": now.isoformat(timespec="seconds"), "jobs": final})
+    save_json(JOBS_FILE, {"updated": stamp, "jobs": final})
     save_json(DESC_FILE, {k: v for k, v in desc_cache.items() if k in keep_keys or k in candidates})
     save_json(AI_FILE, {k: v for k, v in ai_cache.items() if k in keep_keys})
     save_json(MISS_FILE, {k: v for k, v in misses.items() if k in candidates})

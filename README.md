@@ -6,10 +6,11 @@ results to a page I can open on my phone.
 
 **Job page:** https://jonasagront.github.io/aero-job-finder/
 
-The page has nine tabs:
+The page has ten tabs. **New internships** sits in the top bar next to the update time; the rest are in the row of tabs:
 
 | Tab | What's in it |
 |---|---|
+| **New internships** | Everything the scan found in the 3 days up to the latest update, from every tab, grouped by the scan that found it ("This update", "Earlier today · 12:06 PM scan", "Yesterday"...) |
 | **New this week** | Everything from the other tabs posted in the last 7 days |
 | **Summer 2027** | Aerospace and mechanical internships at aerospace companies (the main list) |
 | **Motorsports** | Engineering internships at racing teams and motorsport companies (NASCAR, IndyCar, F1 and sports car teams, race engine builders), plus racing roles at any company, for spring, summer or fall 2027, since race teams hire for every part of the season |

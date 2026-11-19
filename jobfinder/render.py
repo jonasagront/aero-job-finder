@@ -54,6 +54,13 @@ button{font:inherit;color:inherit}
 .top .right{display:flex;align-items:center;gap:16px}
 .theme{background:none;border:1px solid var(--line2);border-radius:3px;height:26px;padding:0 9px;font:inherit;letter-spacing:inherit;color:var(--ink2);cursor:pointer}
 .theme:hover{color:var(--ink);border-color:var(--ink2)}
+.newbtn{display:inline-flex;align-items:center;gap:7px;height:26px;padding:0 9px;border:1px solid var(--accent);border-radius:3px;background:none;font:inherit;letter-spacing:inherit;color:var(--accent);cursor:pointer;white-space:nowrap}
+.newbtn:hover{background:var(--accent-bg)}
+.newbtn[aria-pressed=true]{background:var(--accent);color:#fff}
+.newbtn .n{font-weight:400;opacity:.85}
+.fgroup{margin:26px 0 0;padding-bottom:8px;border-bottom:1px solid var(--line2);font:500 11.5px/1.3 var(--mono);letter-spacing:.07em;text-transform:uppercase;color:var(--ink2)}
+.fgroup span{margin-left:8px;color:var(--muted)}
+.fgroup.now{color:var(--accent)}
 
 /* heading + readout */
 .hero{padding:40px 0 0}
@@ -220,6 +227,14 @@ footer td.bad{color:var(--neg)}
 @media (max-width:760px){
   .wrap{padding:0 16px 56px}
   .top .stamp{display:none}
+  .top{gap:10px;letter-spacing:.03em}
+  .top .right{gap:8px}
+  .brand{white-space:nowrap;gap:7px}
+  .newbtn,.theme{padding:0 7px}
+}
+/* Phones: the logo alone, so New internships and Theme fit on one line */
+@media (max-width:440px){
+  .brand .bname{display:none}
   .hero{padding-top:28px}
   .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
   .stats div:nth-child(3){border-left:0;padding-left:0}
@@ -245,8 +260,8 @@ footer td.bad{color:var(--neg)}
 <body>
 <div class="wrap">
 <div class="top">
-  <div class="brand"><svg width="16" height="16" viewBox="0 0 32 32" aria-hidden="true"><path d="M5 27 16 4l11 23-11-5.5z" fill="var(--accent)"/></svg>Aero job finder</div>
-  <div class="right"><span class="stamp" id="stamp"></span><button class="theme" id="theme" type="button"></button></div>
+  <div class="brand"><svg width="16" height="16" viewBox="0 0 32 32" aria-hidden="true"><path d="M5 27 16 4l11 23-11-5.5z" fill="var(--accent)"/></svg><span class="bname">Aero job finder</span></div>
+  <div class="right"><button class="newbtn" id="newbtn" type="button" aria-pressed="false" hidden>New internships<span class="n" id="newn"></span></button><span class="stamp" id="stamp"></span><button class="theme" id="theme" type="button"></button></div>
 </div>
 
 <header class="hero">
@@ -275,6 +290,7 @@ footer td.bad{color:var(--neg)}
       <option value="score">Best fit first</option>
       <option value="reqs">Most qualifications met</option>
       <option value="new">Newest first</option>
+      <option value="found">Most recently found</option>
       <option value="near">Closest first</option>
       <option value="company">Company A to Z</option>
     </select>
@@ -367,6 +383,30 @@ const ageDays = iso => iso ? Math.round((todayMs - Date.parse(iso + 'T12:00:00')
 // "This week" and "old" go by the posting date; undated postings have their own section
 const postedThisWeek = j => !!j.posted && j.posted >= weekAgo;
 const isOld = j => !!j.posted && j.posted < oldCut;
+// When the scan first found a posting, measured from this update (older saves only have the day)
+const updMs = Date.parse(D.updated || (D.today + 'T12:00:00Z'));
+const LATEST_HOURS = 72;
+const foundKey = j => j.found_at || (j.first_seen ? j.first_seen + 'T00:00:00+00:00' : '');
+const foundMs = j => j.found_at ? Date.parse(j.found_at) : j.first_seen ? Date.parse(j.first_seen + 'T12:00:00') : NaN;
+const foundRecently = j => updMs - foundMs(j) <= LATEST_HOURS * 36e5;
+const inThisUpdate = j => !!j.found_at && j.found_at === D.updated;
+const clock = ms => new Date(ms).toLocaleTimeString(undefined, {hour:'numeric', minute:'2-digit'});
+const dayDiff = ms => { const a = new Date(updMs), b = new Date(ms);
+  return Math.round((new Date(a.getFullYear(), a.getMonth(), a.getDate()) - new Date(b.getFullYear(), b.getMonth(), b.getDate())) / 864e5); };
+const foundLabel = j => {
+  if(inThisUpdate(j)) return 'Found in this update';
+  if(!j.found_at) return `Found ${fmt(j.first_seen)}`;
+  const h = (updMs - Date.parse(j.found_at)) / 36e5;
+  return h < 24 ? `Found ${Math.max(1, Math.round(h))}h before this update` : `Found ${fmt(j.found_at.slice(0, 10))}`;
+};
+// One heading per scan: "This update", "Earlier today · 12:06 PM", "Yesterday · 5:42 PM"...
+const foundGroup = j => {
+  if(inThisUpdate(j)) return ['now', `This update · ${clock(updMs)}`];
+  if(!j.found_at) return ['d' + j.first_seen, `${fmt(j.first_seen)} · time not recorded`];
+  const ms = Date.parse(j.found_at), dd = dayDiff(ms);
+  const day = dd === 0 ? 'Earlier today' : dd === 1 ? 'Yesterday' : new Date(ms).toLocaleDateString(undefined, {weekday:'long', month:'short', day:'numeric'});
+  return [j.found_at, `${day} · ${clock(ms)} scan`];
+};
 const coMatch = (company, terms) => { const c = (company || '').toLowerCase(); return terms.some(t => t[0] === '=' ? c === t.slice(1) : c.includes(t)); };
 
 // ---- theme: light unless dark (or the system's setting) is picked here
@@ -382,18 +422,19 @@ applyTheme();
 // ---- sections
 const hasLeads = D.jobs.some(j => j.lead);
 const P = D.predicted;
-const ORDER = ['new', 'summer', 'motor', 'fall', 'broad', 'pred', 'undated', 'leads', 'big'].filter(k => k === 'new' || k === 'undated' ||
-  (k === 'leads' ? hasLeads : k === 'big' ? D.popular.length : k === 'pred' ? P.length : T[k]));
-const HASH = {new:'new', summer:'summer', motor:'motorsports', fall:'fall', broad:'all', pred:'predicted', undated:'date-unknown', leads:'leads', big:'big-names'};
-const NAME = {new:'New this week', pred:'Predicted', undated:'Posted date unknown', leads:'Leads without a link', big:'Big names'};
+// "latest" (New internships) lives in the top bar beside the update time, not in the row of tabs
+const ORDER = ['latest', 'new', 'summer', 'motor', 'fall', 'broad', 'pred', 'undated', 'leads', 'big'].filter(k => k === 'new' || k === 'undated' ||
+  (k === 'latest' ? D.sources.length : k === 'leads' ? hasLeads : k === 'big' ? D.popular.length : k === 'pred' ? P.length : T[k]));
+const HASH = {latest:'new-internships', new:'new', summer:'summer', motor:'motorsports', fall:'fall', broad:'all', pred:'predicted', undated:'date-unknown', leads:'leads', big:'big-names'};
+const NAME = {latest:'New internships', new:'New this week', pred:'Predicted', undated:'Posted date unknown', leads:'Leads without a link', big:'Big names'};
 const VIEWS = ['big', 'pred'];  // sections that aren't a list of postings
 for(const k in T) NAME[k] = T[k].tab;
 const best = j => Object.entries(j.tracks).reduce((a, b) => !a || b[1].score > a[1].score ? b : a, null);
-// "New this week", "Posted date unknown" and "Leads" gather postings from every other section
-const mixed = t => t === 'new' || t === 'undated' || t === 'leads';
+// "New internships", "New this week", "Posted date unknown" and "Leads" gather postings from every other section
+const mixed = t => t === 'latest' || t === 'new' || t === 'undated' || t === 'leads';
 // Leads (no direct company link) only show in their own section
 const inTab = (j, t) => t === 'leads' ? !!j.lead : !j.lead &&
-  (t === 'undated' ? !j.posted : t === 'new' ? postedThisWeek(j) : t !== 'big' && !!j.posted && !!j.tracks[t]);
+  (t === 'latest' ? foundRecently(j) : t === 'undated' ? !j.posted : t === 'new' ? postedThisWeek(j) : t !== 'big' && !!j.posted && !!j.tracks[t]);
 let tab = (() => {
   const h = location.hash.slice(1);
   const fromHash = Object.keys(HASH).find(k => HASH[k] === h);
@@ -421,7 +462,10 @@ $('oldLabel').textContent = `Hide postings older than ${D.old_after} days`;
 function tabs(){
   const n = k => k === 'big' ? D.popular.length : k === 'pred' ? P.filter(p => isSoon(p) && pTerm(p) === pTerms[0] && (p.aero || p.mo || !pAeroDefault(pTerms[0]))).length
     : D.jobs.filter(j => inTab(j, k)).length;
-  $('tabs').innerHTML = ORDER.map(k => `<button class="tab" role="tab" data-tab="${k}" aria-selected="${k === tab}">${esc(NAME[k])}<span class="n">${n(k)}</span></button>`).join('');
+  $('newbtn').hidden = !ORDER.includes('latest');
+  $('newbtn').setAttribute('aria-pressed', tab === 'latest');
+  $('newn').textContent = n('latest');
+  $('tabs').innerHTML = ORDER.filter(k => k !== 'latest').map(k => `<button class="tab" role="tab" data-tab="${k}" aria-selected="${k === tab}">${esc(NAME[k])}<span class="n">${n(k)}</span></button>`).join('');
 }
 
 function bars(list, color){
@@ -507,7 +551,7 @@ function card(j){
   const when = j.posted
     ? `<span>Posted ${fmt(j.posted)} (${age <= 0 ? 'today' : age + 'd ago'}${j.posted_from ? ', per ' + esc(j.posted_from) : ''})</span>`
     : `<span title="Not on its source, its own listing page, or any internship list the scan reads">Posted date unknown</span>`;
-  const meta = [j.location && `<span>${esc(j.location)}</span>`, when, `<span>Found ${fmt(j.first_seen)}</span>`].filter(Boolean).join('');
+  const meta = [j.location && `<span>${esc(j.location)}</span>`, when, `<span>${esc(foundLabel(j))}</span>`].filter(Boolean).join('');
   const apply = j.lead
     ? `<a class="btn find" href="${esc(j.url)}" target="_blank" rel="noopener">Find posting ↗</a>`
     : `<a class="btn" href="${esc(j.url)}" target="_blank" rel="noopener">Apply ↗</a>`;
@@ -672,7 +716,10 @@ function setupTab(){
   $('tabnote').hidden = view;
   if(tab === 'big'){ renderBig(); return; }
   if(tab === 'pred'){ setupPred(); renderPred(); return; }
-  $('tabnote').textContent = tab === 'new' ? `Everything posted in the last 7 days, from every section, best fit first.`
+  const nNow = D.jobs.filter(j => !j.lead && inThisUpdate(j)).length;
+  $('tabnote').textContent = tab === 'latest' ? `Internships the scan found in the ${LATEST_HOURS / 24} days up to this update (${D.updated_label}), from every section, grouped by the scan that found them. ` +
+      (nNow ? `${nNow} ${nNow === 1 ? 'is' : 'are'} new in this update.` : 'Nothing new turned up in this update.')
+    : tab === 'new' ?`Everything posted in the last 7 days, from every section, best fit first.`
     : tab === 'undated' ? `Postings with no posted date on their source, their own listing page, or any internship list the scan reads. They stay out of the other sections until a date turns up.`
     : tab === 'leads' ? `Postings only intern-list.com has found. Its links go to jobright.ai instead of the company, so Find posting searches for the company's own listing. A lead moves to the other sections on its own once a company career site the scan reads has the same job.`
     : T[tab].note;
@@ -683,7 +730,7 @@ function setupTab(){
   $('disc').innerHTML = '<option value="">All disciplines</option>' + discs.map(([d, n]) => `<option value="${esc(d)}">${esc(d)} (${n})</option>`).join('');
   $('disc').hidden = tab === 'summer';
   $('sort').querySelector('[value=near]').hidden = tab !== 'fall';
-  $('sort').value = tab === 'new' ? 'new' : 'score';
+  $('sort').value = tab === 'latest' ? 'found' : tab === 'new' ? 'new' : 'score';
   $('seasonTog').hidden = mixed(tab);
   // Only offer to hide old postings when the age limit in profile.toml lets some through
   $('hideOld').parentNode.hidden = mixed(tab) || !inThis.some(isOld);
@@ -721,7 +768,8 @@ function render(){
   const sc = j => j.tracks[trackKey(j)].score;
   const mi = j => { const m = (j.tracks.fall || {}).miles; return typeof m === 'number' ? m : 999; };
   const s = $('sort').value;
-  jobs.sort(s === 'new' ? (a,b) => ((b.posted || b.first_seen) + b.first_seen).localeCompare((a.posted || a.first_seen) + a.first_seen) || sc(b) - sc(a)
+  jobs.sort(s === 'found' ? (a,b) => foundKey(b).localeCompare(foundKey(a)) || sc(b) - sc(a)
+         : s === 'new' ?(a,b) => ((b.posted || b.first_seen) + b.first_seen).localeCompare((a.posted || a.first_seen) + a.first_seen) || sc(b) - sc(a)
          : s === 'company' ? (a,b) => a.company.localeCompare(b.company) || sc(b) - sc(a)
          : s === 'reqs' ? (a,b) => reqPct(b) - reqPct(a) || sc(b) - sc(a)
          : s === 'near' ? (a,b) => mi(a) - mi(b) || sc(b) - sc(a)
@@ -732,8 +780,22 @@ function render(){
     : tab === 'leads' && !pool.length ? 'No leads right now: every posting has a direct company link.'
     : tab === 'motor' && !pool.length ? T.motor.empty
     : tab === 'fall' && !pool.some(j => j.tracks.fall.season === 'match') ? T.fall.empty
+    : tab === 'latest' && !pool.length ? `Nothing new found in the ${LATEST_HOURS / 24} days up to this update.`
     : 'No postings match these filters. Clear the search or choose “All”.';
-  $('list').innerHTML = jobs.length ? jobs.slice(0, limit).map(card).join('') : `<div class="empty">${esc(emptyMsg)}</div>`;
+  // In New internships, sorted by when found, each scan gets its own heading
+  let html = '';
+  if(tab === 'latest' && s === 'found'){
+    const shown = jobs.slice(0, limit), size = {};
+    for(const j of jobs){ const g = foundGroup(j)[0]; size[g] = (size[g] || 0) + 1; }
+    let last = null;
+    for(const j of shown){
+      const [g, label] = foundGroup(j);
+      if(g !== last) html += `<h3 class="fgroup ${g === 'now' ? 'now' : ''}">${esc(label)}<span>${size[g]}</span></h3>`;
+      last = g;
+      html += card(j);
+    }
+  } else html = jobs.slice(0, limit).map(card).join('');
+  $('list').innerHTML = jobs.length ? html : `<div class="empty">${esc(emptyMsg)}</div>`;
   $('more').hidden = jobs.length <= limit;
   $('more').textContent = `Show ${Math.min(PAGE, jobs.length - limit)} more`;
 }
@@ -747,6 +809,7 @@ function go(t){
   render();
 }
 $('tabs').addEventListener('click', e => { const b = e.target.closest('[data-tab]'); if(b){ pick = null; go(b.dataset.tab); } });
+$('newbtn').addEventListener('click', () => { pick = null; go('latest'); scrollTo({top: $('tabs').offsetTop - 8}); });
 addEventListener('hashchange', () => { pick = null; go(Object.keys(HASH).find(k => HASH[k] === location.hash.slice(1))); });
 $('bigList').addEventListener('click', e => {
   const b = e.target.closest('[data-pick]');
@@ -832,7 +895,8 @@ def build_page(jobs: list[dict], sources: list[dict], profile: dict, now: dt.dat
     today = now.date().isoformat()
     page_jobs = [{k: j.get(k) for k in (
         "key", "company", "title", "location", "url", "source", "posted", "posted_from", "first_seen", "tracks",
-        "discipline", "matched", "related", "gaps", "flags", "ai", "quals", "has_description", "lead")} for j in jobs]
+        "discipline", "matched", "related", "gaps", "flags", "ai", "quals", "has_description", "lead", "found_at")}
+                 for j in jobs]
     try:
         from zoneinfo import ZoneInfo
         eastern = now.astimezone(ZoneInfo("America/New_York"))
@@ -844,6 +908,8 @@ def build_page(jobs: list[dict], sources: list[dict], profile: dict, now: dt.dat
         "updated_label": (f"{eastern:%b} {eastern.day}, {eastern.year} at "
                           f"{eastern.hour % 12 or 12}:{eastern:%M %p} ET") if jobs or sources else "never",
         "today": today,
+        # Matches the found_at stamp run.py gives postings first found on this run
+        "updated": now.isoformat(timespec="seconds"),
         "old_after": int(profile.get("page", {}).get("old_after_days", 15)),
         "max_age": int(profile["search"].get("max_age_days", 0)),
         "tracks": track_info(profile),
