@@ -51,7 +51,7 @@ history fills more of that in.
 ## Today's top matches
 
 <!-- JOBS:START -->
-**377 Summer 2027 aerospace matches** (2 in Motorsports, 17 Fall 2027 near home, 966 in All engineering, 78 leads without a direct link) as of Nov 18, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
+**376 Summer 2027 aerospace matches** (3 in Motorsports, 15 Fall 2027 near home, 938 in All engineering, 37 leads without a direct link) as of Nov 19, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
 
 | Fit | Company | Role | Preferred quals | Required quals | Location | Posted | Apply |
 |---|---|---|---|---|---|---|---|
@@ -76,7 +76,7 @@ history fills more of that in.
 | 84 | Intuitive Machines | Structures and Design Intern | 3 of 5 | 3 of 3 | Houston, TX; Houston, TX | 2026-11-17 | [Apply](https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=b0e24f83-6e4d-492d-9d6a-bc0fea197d6a&lang=en_US&locale=en_US&ccId=19000101_000001&jobId=9207523114195_165) |
 | 84 | Reliable Robotics | Flight Simulation Engineering Intern (Summer 2027) | 1 of 1 | 2 of 2 | Mountain View, CA | 2026-11-13 | [Apply](https://jobs.ashbyhq.com/reliable-robotics/0cd44e07-169f-4664-bf31-cded94b93deb) |
 | 84 | Sandia National Laboratories | Intern, R&D Graduate Summer  - Weather Effects Research, Hybrid | – | 7 of 7 | Albuquerque, NM, USA | 2026-11-04 | [Apply](https://sandia.jobs/CBCEC290A6F548FA97BCDEBE1043A89C25) |
-| 83 | Johns Hopkins Applied Physics Laboratory | 2027 Internship - Vehicle Design and Technologies Intern 🆕 | – | – | Laurel, Maryland | 2026-11-18 | [Apply](https://careers.jhuapl.edu/jobs/60909) |
+| 83 | Johns Hopkins Applied Physics Laboratory | 2027 Internship - Vehicle Design and Technologies Intern | – | – | Laurel, Maryland | 2026-11-18 | [Apply](https://careers.jhuapl.edu/jobs/60909) |
 | 83 | Reliable Robotics | Hardware Test Engineering Intern (Summer 2027) | 2.5 of 3 | 3.5 of 6 | Mountain View, CA | 2026-11-13 | [Apply](https://jobs.ashbyhq.com/reliable-robotics/0af72d5a-87b7-49a1-b49e-424d28758c9e) |
 | 83 | Sandia National Laboratories | Intern, R&D Graduate Summer - Advanced Concepts Engineering, Onsite | – | 8 of 8 | Albuquerque, NM, USA | 2026-11-05 | [Apply](https://sandia.jobs/5A8B0975ECC947A680D7EDC34DCDEB0725) |
 | 83 | Sandia National Laboratories | Intern, R&D Undergraduate Summer - Advanced Concepts Engineering, Onsite | – | 7 of 7 | Albuquerque, NM, USA | 2026-11-05 | [Apply](https://sandia.jobs/C11ACA40ECD4454A8EC287A2907691E725) |
