@@ -16,6 +16,14 @@ Score out of 100, mostly from the posting's own qualification lists (quals.py):
   minus up to 15 for required qualifications you clearly don't meet
 When a posting lists too few qualifications to judge, how many of your skills it
 asks for stands in (see Matcher.qual_points).
+
+Two steps, kept apart so a low score never hides a posting:
+  1. Basic checks (analyze drops a posting only for these): is it an internship or
+     student program, is it engineering work, is it in the U.S., is it within the age
+     limit. Unclear answers are kept with an "uncertain" label instead of dropped.
+  2. Fit scoring: the score above, per section. Each section still has its minimum
+     score, but every posting that passes step 1 also gets an "all" entry, scored the
+     same way with no minimum, for the All opportunities tab.
 """
 from __future__ import annotations
 
@@ -29,7 +37,59 @@ from .util import compile_terms, hits
 PREF_MAX, REQ_MAX, FIT_MAX, ELIG_MAX = 40, 25, 20, 15
 STRONG, GOOD = 72, 56  # tier cut-offs
 
-INTERN_RX = re.compile(r"(?i)(?<![a-z])(intern|interns|internship|internships|co-?op|co op|student trainee|student)(?![a-z])")
+# Titles that say internship, co-op or student program outright
+INTERN_RX = re.compile(r"(?i)(?<![a-z])(intern|interns|internship|internships|co-?ops?|co op|coop|"
+                       r"cooperative education|student trainee|students?|undergraduate research(?:er)?|"
+                       r"summer research)(?![a-z])")
+# Titles that might be a student program: trainee, research assistant and apprentice roles are
+# sometimes full-time jobs, and a role named for a school term ("Propulsion Engineer - Summer 2027")
+# is almost always an internship. The description decides; without one they stay, marked uncertain.
+MAYBE_INTERN_RX = re.compile(r"(?i)(?<![a-z])(trainee|research assistant|research aide|apprentice(?:ship)?)(?![a-z])"
+                             r"|(?<![a-z])(summer|fall|spring|winter)\s*'?(20)?2[6-9](?![0-9])")
+# Possible-student titles that are really full-time or trade jobs: new-grad and rotational
+# programs, entry-level and "Associate" roles named for a start term, and trade apprenticeships
+NOT_STUDENT_TITLE_RX = re.compile(
+    r"(?i)entry[- ]level|new grad|new college grad|recent grad|early career|development program|rotational|"
+    r"\bassociate\b|graduate program|apprentice\w*\s+(?:electrician|millwright|machinist|welder|mechanic|"
+    r"technician|plumber|carpenter|pipefitter|operator)|(?:electrician|millwright|machinist|welder|mechanic|"
+    r"technician|plumber|carpenter|pipefitter|operator)\w*\s+apprentice")
+# A hiring system's employment type ("Intern", "Internship", "Co-op", "Student")
+EMP_INTERN_RX = re.compile(r"(?i)intern|co-?op|student|pathways")
+# Descriptions that say the role is for students
+STUDENT_TEXT_RX = re.compile(
+    r"(?i)currently enrolled|actively enrolled|pursuing an? (?:bachelor|b\.?s\.?|undergraduate|engineering|"
+    r"associate)|undergraduate students?|enrolled (?:full[- ]time )?(?:in|at) an? (?:accredited )?(?:bachelor|"
+    r"undergraduate|four[- ]year|university|college|engineering)|rising (?:sophomore|junior|senior)|"
+    r"(?:sophomore|junior|senior)[- ](?:year|standing|status|level)|internship program|co-?op program|"
+    r"return(?:ing)? to (?:school|campus|their studies)|student status|full[- ]time students?|"
+    r"this (?:summer )?(?:internship|co-?op)|as an? (?:\w+ ){0,2}(?:intern|co-?op)\b")
+# Descriptions of full-time jobs: years of experience, or a finished degree required
+FULLTIME_TEXT_RX = re.compile(
+    r"(?i)\b(?:[2-9]|1\d)\+?\s*(?:or more\s*|\+\s*)?years? of (?:professional |relevant |related |industry |"
+    r"hands-on |full[- ]time )?(?:engineering |work )?experience|bachelor'?s degree (?:in [^.\n]{0,60})?"
+    r"(?:is )?required|must (?:have|hold) (?:a |an )?(?:completed )?(?:bachelor|b\.s\.)")
+# A description that calls a non-intern title an internship ("As a Mechanical Engineer intern...")
+DESC_INTERN_RX = re.compile(r"(?i)\bthis (?:is an? )?(?:paid )?(?:summer |fall |spring )?(?:internship|co-?op)\b|"
+                            r"\bas an? (?:\w+ ){0,3}(?:intern|co-?op)\b|\b(?:internship|co-?op) (?:position|role) "
+                            r"(?:is|will)\b")
+# Majors a description lists ("a degree in Mechanical, Aerospace or Electrical Engineering"),
+# as a discipline when the title names none; the first match wins
+def _major(words: str) -> re.Pattern:
+    return re.compile(rf"(?i)\b(?:{words}) engineering\b|(?:degree|major|majoring|pursuing|studying|disciplines?)"
+                      rf"[^.\n]{{0,100}}\b(?:{words})\b")
+
+
+MAJOR_DISC = [
+    (_major("aerospace|aeronautical|astronautical"), "Aerospace"),
+    (_major("mechanical|mechatronics?"), "Mechanical"),
+    (_major("manufacturing|industrial"), "Manufacturing & industrial"),
+    (_major("materials|chemical|metallurgical"), "Materials & chemical"),
+    (_major("electrical|electronics"), "Electrical"),
+    (_major("civil|structural"), "Civil & construction"),
+    (_major("biomedical"), "Biomedical"),
+    (_major("nuclear"), "Energy & nuclear"),
+    (re.compile(r"(?i)\bsystems engineering\b"), "Systems"),
+]
 
 SEASON_WORDS = r"(summer|fall|autumn|spring|winter)"
 SEASON_RX = re.compile(rf"(?i)(?<![a-z]){SEASON_WORDS}\s*(?:of\s*)?'?(20)?(2[5-9]|3[0-1])(?![0-9])"
@@ -194,15 +254,49 @@ class Matcher:
     # ---------------------------------------------------------- quick filter
 
     def title_ok(self, title: str) -> tuple[bool, str]:
-        """Cheap check before fetching anything else."""
+        """Cheap check before fetching anything else: an internship-looking title (or a
+        possible student program, see MAYBE_INTERN_RX) that isn't excluded."""
         t = title.lower()
-        if not INTERN_RX.search(t):
+        if not INTERN_RX.search(t) and not MAYBE_INTERN_RX.search(t):
             return False, "not an internship"
+        return self.title_excluded(title)
+
+    def title_excluded(self, title: str) -> tuple[bool, str]:
+        """(True, "") unless the title is a grad-student or non-engineering role."""
+        t = title.lower()
         if hits(self.exclude_always, t):
             return False, "graduate-student role"
         if hits(self.exclude, t) and not hits(self.t_strong, t):
             return False, "not an engineering role"
         return True, ""
+
+    @staticmethod
+    def intern_status(title: str, desc: str = "", emp: str = "") -> tuple[str, str]:
+        """("yes" | "maybe" | "no", note). yes: the title or the hiring system's employment
+        type says internship/co-op/student; maybe: a possible student program the
+        description can't settle; no: not one (or a full-time job with a student-ish title)."""
+        if INTERN_RX.search(title or "") or (emp and EMP_INTERN_RX.search(emp)):
+            return "yes", ""
+        head = (desc or "")[:4000]
+        if MAYBE_INTERN_RX.search(title or ""):
+            if NOT_STUDENT_TITLE_RX.search(title or "") or (
+                    re.search(r"(?i)apprentice", title or "") and not re.search(r"(?i)engineer", title or "")):
+                return "no", "full-time, new-grad or trade role (not a student program)"
+            if head and STUDENT_TEXT_RX.search(head):
+                return "yes", "Student role per the description (title doesn't say intern)"
+            if head and FULLTIME_TEXT_RX.search(head):
+                return "no", "full-time role (student-sounding title)"
+            return "maybe", "Unclear whether this is a student role" + ("" if head else " (no description)")
+        if head and DESC_INTERN_RX.search(head) and not FULLTIME_TEXT_RX.search(head):
+            return "maybe", "Title doesn't say intern; the description does"
+        return "no", ""
+
+    def disc_from_text(self, d: str) -> str:
+        """A discipline from the majors a description asks for, or "" when it names none."""
+        for rx, name in MAJOR_DISC:
+            if rx.search(d or ""):
+                return name
+        return ""
 
     def is_aero_company(self, company: str) -> bool:
         c = company.lower().strip()
@@ -269,6 +363,21 @@ class Matcher:
         if re.search(rf"(?i)(?<![a-z]){season}(?![a-z])", text):
             return "unstated", f"{season.title()} (year not stated)"
         return "unstated", "Season not stated"
+
+    def terms_of(self, job: dict, text: str) -> list[str]:
+        """Every school term a posting names ("Summer 2027", "Fall 2027"), soonest first:
+        from its source's term field, else its title, else its description. Terms more
+        than a year past the search year are graduation dates, not internship terms."""
+        found = set()
+        for part in re.split(r",\s*", job.get("season_hint") or ""):
+            m = re.match(r"(?i)(spring|summer|fall|winter)\s+(20\d\d)$", part.strip())
+            if m:
+                found.add((m.group(1).lower(), int(m.group(2))))
+        if not found:
+            found = self._seasons_named(job.get("title", ""), self.year) or {
+                t for t in self._seasons_named(text, self.year) if t[1] <= self.year + 1}
+        order = {"winter": 0, "spring": 1, "summer": 2, "fall": 3}
+        return [f"{s.title()} {y}" for s, y in sorted(found, key=lambda x: (x[1], order.get(x[0], 9)))]
 
     def season_for(self, job: dict, text: str, tr: dict) -> tuple[str, str]:
         """season_of for a section, which may take several terms (Motorsports takes all of 2027):
@@ -381,17 +490,24 @@ class Matcher:
     # ---------------------------------------------------------- main
 
     def analyze(self, job: dict) -> tuple[dict | None, str]:
-        """Returns (analysis, drop_reason). analysis is None when the job fits no section.
+        """Returns (analysis, drop_reason). analysis is None only when a basic check
+        fails: not an internship or student program, a grad-student or non-engineering
+        role, outside the U.S., or older than max_age_days.
 
-        analysis["tracks"] holds one entry per section the job belongs in, each
-        with its own score, tier, and season; everything else is shared."""
+        analysis["tracks"] holds one entry per section the job belongs in, each with
+        its own score, tier, and season, plus "all" (every posting that passes the basic
+        checks, with no minimum score). "misses" says why it isn't in each other section,
+        "uncertain" lists what couldn't be settled; everything else is shared."""
         title = job.get("title", "")
         desc = job.get("description") or ""
         t = title.lower()
         d = desc.lower()
         full = f"{t}\n{d}"
 
-        ok, why = self.title_ok(title)
+        istatus, inote = self.intern_status(title, desc, job.get("emp_type") or "")
+        if istatus == "no":
+            return None, inote or "not an internship"
+        ok, why = self.title_excluded(title)
         if not ok:
             return None, why
 
@@ -469,8 +585,8 @@ class Matcher:
                 flags.append({"kind": "info", "label": "U.S. person / ITAR", "id": "citizen"})
             if CLEARANCE_RX.search(desc):
                 flags.append({"kind": "info", "label": "Clearance", "id": "clearance"})
-        else:
-            flags.append({"kind": "info", "label": "Full description not loaded"})
+        if istatus == "yes" and inote:
+            flags.append({"kind": "info", "label": inote})
 
         # ---- qualification-by-qualification check (see quals.py)
         quals = self.qc.check(desc) if (self.qc and desc) else None
@@ -488,8 +604,20 @@ class Matcher:
         # A motorsport job board marks its postings (some teams there go by initials, like RCR)
         motor = bool(job.get("motorsport")) or self.is_motorsport(job.get("company", ""), title)
         disc = self.discipline(t)
+        rel_note = ""
+        if not disc[0] and desc:
+            # "Summer 2027 Intern" with no field in the title: the majors it asks for decide
+            inferred = self.disc_from_text(desc)
+            if inferred:
+                pts = next((x["points"] for x in self.disciplines if x["name"] == inferred), 8)
+                disc = (inferred, pts, 0)
+                rel_note = "Field taken from the majors the description lists"
         tracks, reasons = {}, {}
         for name, tr in self.tracks.items():
+            if istatus != "yes":
+                # Possible student programs stay out of the curated sections (All opportunities only)
+                reasons[name] = "unclear whether it's a student role"
+                continue
             if tr["aero_only"] and not self.company_ok(job):
                 reasons[name] = "not an aerospace company"
                 continue
@@ -518,21 +646,41 @@ class Matcher:
             e = round(max(0, elig - (0 if status == "match" else 3)) * ELIG_MAX / 25)
             score = int(max(0, min(100, fit_pts + req_pts + pref_pts + e) - req_penalty))
             if score < tr["min_score"]:
-                reasons[name] = "low score"
+                reasons[name] = f"low score ({score}; this section starts at {tr['min_score']})"
                 continue
             tracks[name] = {
                 "score": score,
-                "tier": "strong" if score >= STRONG else "good" if score >= GOOD else "look",
+                "tier": tier_of(score),
                 "parts": {"preferred": pref_pts, "required": req_pts, "fit": fit_pts, "eligibility": e,
                           "requirements": -req_penalty, "skills": skills_pts},
                 "season": status,
                 "season_label": label,
                 **({"miles": miles if miles is not None else "remote"} if "home" in tr else {}),
             }
-        if not tracks:
-            return None, reasons.get("summer") or next(iter(reasons.values()), "no section")
 
-        best = max(tracks.values(), key=lambda x: x["score"])
+        # ---- All opportunities: the same score with no minimum, any term, any U.S. place
+        fits = [f for f in (self.aero_relevance(t, d, bool(desc), aero_co),
+                            self.eng_relevance(disc, d, aero_co or motor)) if f is not None]
+        if not fits and not tracks:
+            return None, "not engineering"
+        terms = self.terms_of(job, full)
+        fit_pts = round(max(fits or [0]) * FIT_MAX / 40)
+        e = round(max(0, elig - (0 if terms else 3)) * ELIG_MAX / 25)
+        score = int(max(0, min(100, fit_pts + req_pts + pref_pts + e) - req_penalty))
+        tracks["all"] = {
+            "score": score,
+            "tier": tier_of(score),
+            "parts": {"preferred": pref_pts, "required": req_pts, "fit": fit_pts, "eligibility": e,
+                      "requirements": -req_penalty, "skills": skills_pts},
+            "season": "match" if terms else "unstated",
+            "season_label": ", ".join(terms) or "Term not stated",
+        }
+        # (A term that isn't stated shows in the term tag; it isn't counted as uncertain)
+        uncertain = [u for u in (inote if istatus == "maybe" else "", rel_note,
+                                 "" if desc else "Full description not loaded") if u]
+
+        curated = [v for k, v in tracks.items() if k != "all"]
+        best = max(curated or [tracks["all"]], key=lambda x: x["score"])
         return {
             "tracks": tracks,
             # Best score across sections, for sorting, the README, and Claude reviews
@@ -545,4 +693,12 @@ class Matcher:
             "gaps": gaps,
             "flags": flags,
             "has_description": bool(desc),
+            "terms": terms,
+            "uncertain": uncertain,
+            "misses": {k: v for k, v in reasons.items() if k not in tracks},
+            "intern": istatus,
         }, ""
+
+
+def tier_of(score: int) -> str:
+    return "strong" if score >= STRONG else "good" if score >= GOOD else "look"

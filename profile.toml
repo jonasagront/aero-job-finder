@@ -25,6 +25,8 @@ coursework = []
 #   Motorsports      racing teams and motorsport companies      -> [motorsport]
 #   Fall 2027        any engineering, near home                  -> [fall]
 #   All engineering  any engineering major, mechanical first     -> [broad]
+#   All opportunities  every engineering internship in the last max_age_days, any score,
+#                    term or U.S. place, with its own filters (min_score doesn't apply)
 
 [search]
 # The Summer 2027 aerospace section. Postings that clearly name a different
@@ -94,6 +96,15 @@ old_after_days = 15
 # The Predicted tab: internships posted in past cycles, and when each should be
 # posted again for these terms of [search] year (Summer 2027, Fall 2027).
 seasons = ["summer", "fall"]
+
+[notify]
+# Optional daily digest: new internships (best fits first), verified program deadlines in
+# the next 3 weeks, and sources that failed. Off until you set enabled = true AND add a
+# delivery channel's secrets in the repo (see README, "Daily digest"). Every scan writes
+# the digest it would send to data/digest_preview.md either way, so you can check it first.
+enabled = false
+# Sent on the first scan at or after this hour, Eastern time (scans run about every 5 hours)
+hour = 9
 
 [ai]
 # Optional: a short written fit review by Claude for top matches.

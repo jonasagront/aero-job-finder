@@ -354,6 +354,11 @@ searchpage = [
   { name = "Redwire", search = "https://careers.rdw.com/jobs/search?query={term}&page={page}", path = "/jobs/" },
   # Siemens Energy's U.S. headquarters is in Orlando.
   { name = "Siemens Energy", search = "https://jobs.siemens-energy.com/en_US/jobs/Jobs?search={term}&folderOffset={offset}", path = "/en_US/jobs/FolderDetail/", aero = false },
+  # Added Nov 19 2026: Symbotic (warehouse robotics) left Workday (its old site shows Workday's
+  # maintenance page) and lists every opening on its own site. One page holds them all, so the
+  # address has no {term} or {page}; content = the block on each posting's page with its text
+  # and "Posted on" date.
+  { name = "Symbotic", search = "https://www.symbotic.com/careers/open-positions/", path = "/careers/jobs/R", content = "single-career__main", aero = false },
 ]
 
 # Taleo career sections: section = the part after /careersection/ in a job link,
@@ -594,6 +599,7 @@ applicantpro = [
 # Includes off-season terms, which is where most Fall 2027 postings come from.
 [[list]]
 name = "Simplify Summer 2027 list"
+page = "https://github.com/SimplifyJobs/Summer2027-Internships"
 urls = [
   "https://raw.githubusercontent.com/SimplifyJobs/Summer2027-Internships/dev/.github/scripts/listings.json",
   "https://raw.githubusercontent.com/SimplifyJobs/Summer2027-Internships/main/.github/scripts/listings.json",
@@ -611,6 +617,7 @@ urls = [
 # location, url, posted_at, season.
 [[csvlist]]
 name = "Mechanical engineering internships list"
+page = "https://github.com/Tracker05/mechanical-engineering-internships"
 url = "https://raw.githubusercontent.com/Tracker05/mechanical-engineering-internships/main/data/internships.csv"
 
 # --- Job boards that collect postings from many companies ----------------
@@ -694,12 +701,42 @@ views = ["appmXHK6JoqQcSKf6/shruwVkAKPjHFdVJu"]
 # postings included), and its link goes to a hiring system the scan can read,
 # that company's whole career site is scanned from then on, so companies that
 # hired interns last cycle get checked before they post again. Other employers
-# qualify with at least engineering_min aerospace or mechanical internships on
-# the lists in that time (0 turns this off); they feed All engineering and Fall
-# only. Found sites are saved in data/discovered_boards.json and shown as
-# "found automatically" on the page.
+# are scanned with at least engineering_min aerospace or mechanical internships on
+# the lists in that time; with one or two, their board joins a candidate queue and
+# is validated (a few are tried each run; one that answers is kept). They feed All
+# engineering, Fall and All opportunities. Found sites are saved in
+# data/discovered_boards.json and shown as "found automatically" on the page; ones
+# that fail go to a repair queue and are retried with backoff, never dropped.
+#
+# Independent of the lists, names in [aerospace_companies], [motorsport_companies]
+# and seeds below that have no board yet are looked up on Greenhouse, Lever, Ashby,
+# SmartRecruiters and Workable (probes_per_run names a run, each again after 60 days).
+# A board only counts when the system's own company name or its postings match.
 [discover]
 engineering_min = 3
+probes_per_run = 12
+# Engineering employers outside aerospace to look for: robotics, test labs,
+# manufacturing and energy (aerospace ones go in [aerospace_companies], racing
+# teams in [motorsport_companies]; both lists are looked up too).
+seeds = [
+  # Robotics and autonomy
+  "Dexterity", "Berkshire Grey", "Locus Robotics", "Built Robotics", "Carbon Robotics", "Monarch Tractor",
+  "Ghost Robotics", "Gecko Robotics", "Bright Machines", "Formic", "Vecna Robotics", "Diligent Robotics",
+  "Nuro", "Kodiak Robotics", "Intuitive Surgical", "1X Technologies", "Persona AI", "Mytra",
+  # Test, research and engineering labs
+  "Southwest Research Institute", "Battelle", "National Technical Systems", "Element Materials Technology",
+  "Georgia Tech Research Institute", "Exponent",
+  # Manufacturing, materials and vehicles
+  "Velo3D", "Markforged", "Rivian", "Harley-Davidson", "Parker Hannifin", "Eaton", "Corning",
+  "Trane Technologies", "Lennox", "Zimmer Biomet", "Boston Scientific", "Dyson", "Hyperloop",
+  # Energy and fusion
+  "Helion Energy", "TAE Technologies", "X-energy", "NuScale Power", "TerraPower", "Form Energy",
+  "Electric Hydrogen", "Redwood Materials", "Fervo Energy",
+  # Racing teams by their full names (shorter names are in [motorsport_companies])
+  "Joe Gibbs Racing", "Richard Childress Racing", "RFK Racing", "Trackhouse Racing", "23XI Racing",
+  "Kaulig Racing", "Spire Motorsports", "Front Row Motorsports", "Andretti Global", "Chip Ganassi Racing",
+  "Meyer Shank Racing", "Wayne Taylor Racing", "Haas F1 Team", "Riley Technologies", "Pratt Miller",
+]
 
 # --- Past cycles, for the Predicted tab ------------------------------------
 # Old copies of the Simplify list, pinned to a commit so they never change.
@@ -779,6 +816,21 @@ names = [
   "whisper aero", "quantum space", "orbit fab", "havocai", "firestorm labs", "busek", "qinetiq", "sierra lobo",
   "arcfield", "craig technologies", "benchmark space", "vaya space", "phantom space", "blue water autonomy",
   "=forterra", "=brinc", "los alamos national", "lanteris", "systems planning", "applied research associates",
+  # Added Nov 19 2026 for independent discovery (their boards are looked up by name, see [discover]):
+  # propulsion and space hardware
+  "agile space industries", "frontier aerospace", "firehawk aerospace", "nammo", "atomos space", "hedron space",
+  "kinetx", "world view", "arkisys", "nanoracks", "spaceflight industries", "rocket factory", "=launcher",
+  # aerostructures, engines and component suppliers
+  "ducommun", "triumph group", "heico", "transdigm", "barnes aerospace", "consolidated precision products",
+  "precision castparts", "howmet", "senior aerospace", "eaton aerospace", "crane aerospace", "kaman",
+  "curtiss-wright", "astronics", "general electric aviation",
+  # aircraft, drones and eVTOL
+  "cirrus aircraft", "piper aircraft", "dassault falcon", "honda aircraft", "piasecki", "overair", "xwing",
+  "red cat holdings", "teal drones", "performance drone works", "griffon aerospace", "dzyne", "near earth autonomy",
+  # defense
+  "elbit america", "kongsberg", "=epirus", "aevex", "sierra nevada", "general dynamics land",
+  # test facilities
+  "calspan", "national aerospace solutions", "dayton t. brown", "arnold engineering development",
 ]
 
 # --- Motorsport companies ---------------------------------------------------

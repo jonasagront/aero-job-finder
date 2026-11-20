@@ -2,7 +2,13 @@
 
 Each fetcher returns a list of job dicts with these keys:
   company, title, location, url, source, posted (YYYY-MM-DD or ""),
-  description (plain text, may be ""), season_hint (str, may be "")
+  description (plain text, may be ""), season_hint (str, may be ""),
+  and emp_type (the site's own employment type, like "Intern", when it gives one)
+
+A scan can succeed without reading everything: a page cap, a later page that fails,
+or a site that repeats itself. Fetchers report that on the source's Scan (see below),
+and the source then counts as partial, so run.py keeps the postings it had before
+instead of treating the ones it didn't see as closed.
 """
 from __future__ import annotations
 
@@ -15,12 +21,14 @@ import io
 import json
 import os
 import re
+import threading
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
-from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
-from .util import FetchError, get_json, html_to_text, parse_ats_url, post_json, request, strip_tracking
+from .util import FetchError, _slot, _wait_turn, get_json, html_to_text, parse_ats_url, post_json, request, strip_tracking
 
 
 # sources.toml sections that are one company's own career board
@@ -28,6 +36,111 @@ BOARD_KINDS = ("greenhouse", "lever", "ashby", "workday", "eightfold", "clearcom
                "icims", "jibe", "oracle", "phenom", "pinpoint", "bamboohr", "rippling", "smartrecruiters",
                "workable", "gem", "taleo", "jazzhr", "searchpage", "jobsfeed", "brassring", "adp", "ukg", "paycor",
                "breezy", "activate", "paylocity", "applicantpro")
+
+
+# ------------------------------------------------------------ scan reports
+
+class Scan:
+    """How one source's scan went. partial = the request worked but the scan didn't
+    read everything (notes say why)."""
+
+    def __init__(self, name: str = ""):
+        self.name = name
+        self.partial = False
+        self.notes: list[str] = []
+        self.opened = 0    # posting pages opened for their text
+        self.no_text = 0   # ...that gave no description
+        self._lock = threading.Lock()
+
+    def incomplete(self, why: str) -> None:
+        with self._lock:
+            self.partial = True
+            if why not in self.notes:
+                self.notes.append(why)
+
+    def note(self, why: str) -> None:
+        with self._lock:
+            if why not in self.notes:
+                self.notes.append(why)
+
+
+_local = threading.local()
+
+
+def _scan() -> Scan:
+    """The Scan of the source this thread is reading (a throwaway one outside fetch_all)."""
+    s = getattr(_local, "scan", None)
+    return s if s is not None else Scan()
+
+
+# time.monotonic() after which collectors stop turning pages (run.py sets it), so a run slowed
+# by rate limits still finishes and publishes; sources cut short this way count as partial
+DEADLINE: float | None = None
+
+
+def _paged(what: str, cap: int, rep: Scan, step, must: bool = False) -> None:
+    """Call step(i) for pages i = 0, 1, 2... until it returns True (no more pages).
+    Reaching cap pages, or a page failing after the first, keeps what was read and marks
+    the source partial. With must=True a failing first page fails the whole source."""
+    for i in range(cap):
+        if DEADLINE is not None and i > 0 and time.monotonic() > DEADLINE:
+            rep.incomplete(f"{what}: stopped after {i} pages when the run's time budget ran out")
+            return
+        try:
+            if step(i):
+                return
+        except FetchError as e:
+            if must and i == 0:
+                raise
+            rep.incomplete(f"{what}: page {i + 1} failed ({e})")
+            return
+    rep.incomplete(f"{what}: stopped at the {cap}-page safety limit")
+
+
+def board_url(kind: str, c: dict) -> str:
+    """The page a person would open to browse a source's openings."""
+    pages = {
+        "greenhouse": lambda: f"https://job-boards.greenhouse.io/{c['board']}",
+        "lever": lambda: f"https://jobs.lever.co/{c['board']}",
+        "ashby": lambda: f"https://jobs.ashbyhq.com/{c['board']}",
+        "workday": lambda: (f"https://{c['host']}/recruiting/{c['tenant']}/{c['site']}" if c.get("tenant")
+                            else f"https://{c['host']}/{c['site']}"),
+        "eightfold": lambda: f"https://{c['host']}/careers",
+        "clearcompany": lambda: "",
+        "successfactors": lambda: f"https://{c['host']}/search/?q=intern",
+        "icims": lambda: f"https://{c['host']}/jobs/search?ss=1&searchKeyword=intern",
+        "jibe": lambda: f"https://{c['host']}/jobs?keywords=intern",
+        "oracle": lambda: f"https://{c['host']}/hcmUI/CandidateExperience/en/sites/{c['site']}/requisitions?keyword=intern",
+        "phenom": lambda: f"{c['base'].rstrip('/')}/search-results?keywords=intern",
+        "pinpoint": lambda: f"https://{c['board']}.pinpointhq.com",
+        "bamboohr": lambda: f"https://{c['board']}.bamboohr.com/careers",
+        "rippling": lambda: f"https://ats.rippling.com/{c['board']}/jobs",
+        "smartrecruiters": lambda: f"https://jobs.smartrecruiters.com/{c['board']}",
+        "workable": lambda: f"https://apply.workable.com/{c['board']}",
+        "gem": lambda: f"https://jobs.gem.com/{c['board']}",
+        "taleo": lambda: f"https://{c['host']}/careersection/{c['section']}/jobsearch.ftl",
+        "jazzhr": lambda: f"https://{c['board']}.applytojob.com/apply",
+        "searchpage": lambda: c["search"].format(term="intern", page=1, offset=0),
+        "jobsfeed": lambda: f"https://{c['host']}/jobs/?q=intern",
+        "brassring": lambda: (f"https://sjobs.brassring.com/TGnewUI/Search/Home/Home?partnerid={c['partner']}"
+                              f"&siteid={c['sites'][0]}"),
+        "adp": lambda: f"https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid={c['cid']}",
+        "ukg": lambda: c["board"],
+        "paycor": lambda: f"https://recruitingbypaycor.com/career/CareerHome.action?clientId={c['client']}",
+        "breezy": lambda: f"https://{c['board']}.breezy.hr",
+        "activate": lambda: f"https://{c['host']}/search/searchjobs?keyword=intern",
+        "paylocity": lambda: f"https://recruiting.paylocity.com/recruiting/jobs/All/{c['board']}",
+        "applicantpro": lambda: f"https://{c['host']}/jobs/",
+        "list": lambda: (c.get("page") or (c.get("urls") or [""])[0]),
+        "csvlist": lambda: c.get("page") or c.get("url", ""),
+        "getro": lambda: c.get("page", ""),
+        "jobboard": lambda: c.get("page") or re.sub(r"/jobs/search\.rss.*$", "/jobs", c.get("search", "")),
+        "internlist": lambda: c.get("page", "https://www.intern-list.com/"),
+    }
+    try:
+        return c.get("careers") or pages[kind]()
+    except (KeyError, IndexError):
+        return c.get("careers", "")
 
 
 _DATE_FORMATS = ("%a %b %d %H:%M:%S UTC %Y", "%m/%d/%Y", "%B %d, %Y", "%b %d, %Y", "%d %B %Y", "%d %b %Y")
@@ -136,21 +249,23 @@ def fetch_getro(src: dict) -> list[dict]:
     """Getro-powered job boards (e.g. the Space Capital board). Each posting links
     to the company's own hiring page, so descriptions are filled in later."""
     api = f"https://api.getro.com/api/v2/collections/{src['collection']}/search/jobs"
+    rep = _scan()
     found: dict = {}
+    tagged: set = set()
     # Interns tagged as such, plus "Summer 2027" titles the board left untagged
-    for body in ({"query": "", "filters": {"seniority": ["internship"]}},
-                 {"query": "summer 2027 intern", "filters": {}}):
-        page = 0
-        while page < 150:
+    for n, (what, body) in enumerate((("internship filter", {"query": "", "filters": {"seniority": ["internship"]}}),
+                                      ("search", {"query": "summer 2027 intern", "filters": {}}))):
+        def step(page, body=body, n=n):
             res = post_json(api, {"hitsPerPage": 20, "page": page, **body}, timeout=40).get("results") or {}
             batch = res.get("jobs") or []
             for j in batch:
                 found[j.get("id")] = j
-            page += 1
-            if not batch or page * 20 >= int(res.get("count") or 0):
-                break
+                if n == 0:
+                    tagged.add(j.get("id"))
+            return not batch or (page + 1) * 20 >= int(res.get("count") or 0)
+        _paged(what, 150, rep, step, must=n == 0)
     jobs = []
-    for j in found.values():
+    for jid, j in found.items():
         jobs.append({
             "company": ((j.get("organization") or {}).get("name") or "").strip(),
             "title": (j.get("title") or "").strip(),
@@ -160,6 +275,7 @@ def fetch_getro(src: dict) -> list[dict]:
             "posted": _date_from_epoch(j.get("created_at")),
             "description": "",
             "season_hint": "",
+            "emp_type": "Internship" if jid in tagged else "",
         })
     return jobs
 
@@ -170,6 +286,10 @@ def fetch_greenhouse(board: str, company: str) -> list[dict]:
     data = get_json(f"https://boards-api.greenhouse.io/v1/boards/{board}/jobs?content=true", timeout=60)
     out = []
     for j in data.get("jobs", []):
+        # Custom fields some companies fill in ("Employment Type: Intern")
+        emp = "; ".join(str(m.get("value")) for m in j.get("metadata") or []
+                        if isinstance(m, dict) and isinstance(m.get("value"), str)
+                        and re.search(r"(?i)employment|job type|worker type|position type", m.get("name") or ""))
         out.append({
             "company": company,
             "title": (j.get("title") or "").strip(),
@@ -179,6 +299,7 @@ def fetch_greenhouse(board: str, company: str) -> list[dict]:
             "posted": _date_from_iso(j.get("first_published") or j.get("updated_at")),
             "description": html_to_text(j.get("content")),
             "season_hint": "",
+            "emp_type": emp,
         })
     return out
 
@@ -206,6 +327,7 @@ def fetch_lever(board: str, company: str) -> list[dict]:
             "posted": _date_from_epoch(j.get("createdAt"), ms=True),
             "description": _lever_text(j),
             "season_hint": "",
+            "emp_type": cats.get("commitment") or "",
         })
     return out
 
@@ -234,15 +356,23 @@ def fetch_ashby(board: str, company: str) -> list[dict]:
             "posted": _date_from_iso(j.get("publishedAt")),
             "description": j.get("descriptionPlain") or html_to_text(j.get("descriptionHtml")),
             "season_hint": "",
+            "emp_type": j.get("employmentType") or "",
         })
     return out
 
 
-_INTERNISH = re.compile(r"(?i)(?<![a-z])(intern|internship|co-?op|co op|student)(?![a-z])")
+# Titles worth opening: internships and co-ops, plus student programs whose titles don't say
+# "intern" (Student Engineer, Engineering Trainee, Undergraduate Research Assistant) and roles
+# named for a school term ("Propulsion Engineer - Summer 2027"). match.py decides which count.
+_INTERNISH = re.compile(
+    r"(?i)(?<![a-z])(intern|interns|internship|internships|co-?ops?|co op|coop|cooperative education|students?|"
+    r"trainee|undergrad\w*|research assistant|research aide|apprentice)(?![a-z])"
+    r"|(?<![a-z])(summer|fall|spring|winter)\s*'?(20)?2[6-9](?![0-9])")
 
 
 def _workday_detail(host: str, tenant: str, site: str, path: str) -> dict:
-    data = get_json(f"https://{host}/wday/cxs/{tenant}/{site}{path}", timeout=30)
+    # Same patience as the list calls: busy sites answer 429 and request() backs off
+    data = get_json(f"https://{host}/wday/cxs/{tenant}/{site}{path}", timeout=30, retries=4)
     return data.get("jobPostingInfo") or {}
 
 
@@ -273,60 +403,179 @@ def _workday_intern_facets(facets) -> dict[str, list[str]]:
     return out
 
 
-def fetch_workday(host: str, site: str, company: str, max_pages: int = 50, keep=_keep_all,
+WD_FULL_READ = 1000  # sites with this many openings or fewer are read whole (50 pages)
+WD_MAX_PAGES = 100   # 2,000 results per filter or search on bigger sites
+MAX_AGE_DAYS = 15    # profile.toml's max_age_days (run.py sets it); older postings are out of scope
+WD_AGE_MARGIN = 3    # read this many days past it, for time zones and "Posted 16 Days Ago" rounding
+WD_RECENT_PAGES = 200  # cap for the newest-first read (4,000 postings in under 18 days)
+
+
+class _DateStop:
+    """Ends paging once results listed newest first are past the age limit (plus margin):
+    nothing after that point can be in scope. It only trusts an order it has seen hold:
+    no date may be newer (by more than a day) than one listed before it, and it needs at
+    least 10 dated results before stopping. A list that turns out not to be newest first
+    is simply read to its end (or page cap) as before."""
+
+    def __init__(self):
+        self.oldest = ""
+        self.dated = 0
+        self.ordered = True
+
+    def done(self, dates) -> bool:
+        if not MAX_AGE_DAYS or not self.ordered:
+            return False
+        ds = [d for d in (_date_from_iso(x) if x and len(str(x)) != 10 else x for x in dates) if d]
+        for d in ds:
+            if self.oldest and d > (dt.date.fromisoformat(self.oldest) + dt.timedelta(days=1)).isoformat():
+                self.ordered = False
+                return False
+            self.oldest = min(self.oldest or d, d)
+        self.dated += len(ds)
+        cutoff = (dt.date.today() - dt.timedelta(days=MAX_AGE_DAYS + WD_AGE_MARGIN)).isoformat()
+        return self.dated >= 10 and bool(ds) and max(ds) < cutoff
+
+
+def _wd_age(text: str) -> int | None:
+    """Days since posting from Workday's "Posted Today" / "Posted Yesterday" / "Posted 3 Days
+    Ago" / "Posted 30+ Days Ago" (30 means 30 or more), or None when the site gives none."""
+    t = (text or "").lower()
+    if "today" in t:
+        return 0
+    if "yesterday" in t:
+        return 1
+    m = re.search(r"(\d+)\+?\s*days?\s+ago", t)
+    return int(m.group(1)) if m else None
+# Searches for big sites. Workday's search is full text: "intern" also finds "internal" and
+# "international", and "co-op" finds nearly every job (so it isn't used). Each search is read
+# to its last page: on GE Aerospace, Moog and Boeing these, with the internship filters, found
+# every internship, co-op and student title a full read of the site did.
+WD_TERMS = ("intern", "internship", "coop", "student", "trainee")
+
+
+def _workday_down(page_root: str, err: FetchError) -> FetchError:
+    """A clearer error when Workday shows its maintenance page for the site, which happens
+    when a company leaves Workday (Symbotic, Nov 2026) or during outages."""
+    code, body = _answer(page_root, accept="text/html")
+    if "maintenance-page" in body or ("wdayLogo" in body and code >= 400):
+        return FetchError("Workday shows its maintenance page for this site: an outage, or the company "
+                          "moved to another hiring system", err.status)
+    return err
+
+
+def fetch_workday(host: str, site: str, company: str, max_pages: int = WD_MAX_PAGES, keep=_keep_all,
                   tenant: str | None = None) -> list[dict]:
     """Workday career sites. tenant is only needed on wdN.myworkdaysite.com sites,
     which carry it in the address (wd5.myworkdaysite.com/recruiting/<tenant>/<site>)
-    instead of the host name (<tenant>.wd5.myworkdayjobs.com/<site>)."""
+    instead of the host name (<tenant>.wd5.myworkdayjobs.com/<site>).
+
+    Workday lists a site's openings newest first when nothing is searched for, so the
+    site is read from the top until a whole page is older than the age limit (plus a
+    margin): everything after that is out of scope, and every title before it gets
+    checked, however it's worded. The order is checked as it's read. A site that doesn't
+    list newest first, or hides its dates, is read the other way: whole when it has up to
+    WD_FULL_READ openings, else through its internship filters (worker type, job family...)
+    and the searches in WD_TERMS, each to its last page. (Searches alone aren't enough:
+    on Northrop's site "intern" matches 1,600 of 3,700 jobs and its first pages hold no
+    internships, which is where the old scan stopped.) Anything cut short (page cap, a
+    failing page, a site that repeats a page) marks the source partial."""
+    rep = _scan()
     tenant = tenant or host.split(".")[0]
     api = f"https://{host}/wday/cxs/{tenant}/{site}/jobs"
     page_root = (f"https://{host}/recruiting/{tenant}/{site}" if host.endswith(".myworkdaysite.com")
                  else f"https://{host}/{site}")
-    postings, seen_paths = [], set()
-    facets: dict[str, list[str]] = {}
+    postings: dict[str, dict] = {}
 
-    def add(batch):
-        for p in batch:
-            if p.get("externalPath") not in seen_paths:
-                seen_paths.add(p.get("externalPath"))
-                postings.append(p)
+    def query(body: dict, what: str, first: dict | None = None, cap: int = max_pages) -> None:
+        state = {"offset": 0, "total": 0, "last": None}
 
-    for term in ("intern", "internship", "co-op"):
-        offset = total = 0
-        for _ in range(max_pages):
+        def step(i):
             # Workday rate-limits busy runs (HTTP 429); request() waits and retries
-            page = post_json(api, {"appliedFacets": {}, "limit": 20, "offset": offset,
-                                   "searchText": term}, timeout=40, retries=4)
-            if not offset and term == "intern":
-                facets = _workday_intern_facets(page.get("facets"))
+            page = first if (i == 0 and first is not None) else post_json(
+                api, {**body, "limit": 20, "offset": state["offset"]}, timeout=40, retries=4)
             batch = page.get("jobPostings") or []
-            add(batch)
-            offset += len(batch)
+            sig = tuple(p.get("externalPath") for p in batch)
+            if sig and sig == state["last"]:  # the site ignored the offset: stop instead of looping
+                rep.incomplete(f"{what}: the site repeated a page")
+                return True
+            state["last"] = sig
+            for p in batch:
+                postings.setdefault(p.get("externalPath"), p)
+            state["offset"] += len(batch)
             # Some sites only give the total on the first page (later pages say 0)
-            total = total or int(page.get("total") or 0)
-            if not batch or offset >= total:
-                break
-            # The search matches the whole text ("co-op" finds nearly every job), so
-            # stop once a whole page has no internship titles; the filters below
-            # find the rest
-            if not any(_INTERNISH.search(p.get("title", "")) for p in batch):
-                break
-    # Most sites tag internships with a filter (worker type, job family...), which
-    # lists them all no matter where the search would have ranked them
-    for param, ids in facets.items():
-        offset = total = 0
-        for _ in range(max_pages):
-            page = post_json(api, {"appliedFacets": {param: ids}, "limit": 20, "offset": offset,
-                                   "searchText": ""}, timeout=40, retries=4)
+            state["total"] = state["total"] or int(page.get("total") or 0)
+            if state["total"] == 0 and batch:
+                return len(batch) < 20  # no total given: read until a short page
+            return not batch or state["offset"] >= state["total"]
+
+        _paged(what, cap, rep, step)
+
+    def recent(first: dict) -> bool:
+        """Read newest first until past the age limit. False when the site isn't newest
+        first (or gives no dates), so the caller reads it another way."""
+        cutoff = MAX_AGE_DAYS + WD_AGE_MARGIN
+        state = {"offset": 0, "total": 0, "last": None, "oldest": -1, "order": True}
+
+        def step(i):
+            page = first if i == 0 else post_json(
+                api, {"appliedFacets": {}, "searchText": "", "limit": 20, "offset": state["offset"]},
+                timeout=40, retries=4)
             batch = page.get("jobPostings") or []
-            add(batch)
-            offset += len(batch)
-            total = total or int(page.get("total") or 0)
-            if not batch or offset >= total:
-                break
-    # Workday's list has no descriptions, so only open internship-looking ones
-    # (and skip titles the scan would drop anyway, like "Finance Intern").
-    wanted = [p for p in postings if _INTERNISH.search(p.get("title", "")) and keep(p.get("title", ""))]
+            sig = tuple(p.get("externalPath") for p in batch)
+            if sig and sig == state["last"]:
+                rep.incomplete("newest-first list: the site repeated a page")
+                return True
+            state["last"] = sig
+            ages = [_wd_age(p.get("postedOn", "")) for p in batch]
+            if i == 0 and batch and all(a is None for a in ages):
+                state["order"] = False  # no dates shown
+                return True
+            for p, a in zip(batch, ages):
+                if a is not None:
+                    if a < state["oldest"] - 1:  # a newer posting after older ones: not newest first
+                        state["order"] = False
+                        return True
+                    state["oldest"] = max(state["oldest"], a)
+                postings.setdefault(p.get("externalPath"), p)
+            state["offset"] += len(batch)
+            state["total"] = state["total"] or int(page.get("total") or 0)
+            known = [a for a in ages if a is not None]
+            if known and min(known) > cutoff:
+                return True  # this whole page is past the age limit, and so is everything after it
+            return not batch or (state["offset"] >= state["total"] if state["total"] else len(batch) < 20)
+
+        _paged("newest-first list", WD_RECENT_PAGES, rep, step)
+        return state["order"]
+
+    try:
+        first = post_json(api, {"appliedFacets": {}, "limit": 20, "offset": 0, "searchText": ""},
+                          timeout=40, retries=4)
+    except FetchError as e:
+        raise _workday_down(page_root, e) from e
+    total = int(first.get("total") or 0)
+    if MAX_AGE_DAYS and recent(first):
+        pass  # every opening posted within the age limit has been listed
+    elif total <= WD_FULL_READ:
+        if MAX_AGE_DAYS:
+            rep.note("the site doesn't list openings newest first (or hides dates): read whole instead")
+        query({"appliedFacets": {}, "searchText": ""}, "job list", first=first, cap=WD_FULL_READ // 20 + 2)
+    else:
+        # Most big sites tag internships with a filter, which lists them all no matter
+        # where the search would rank them
+        if MAX_AGE_DAYS:
+            rep.note("the site doesn't list openings newest first (or hides dates): read through filters and searches")
+        facets = _workday_intern_facets(first.get("facets"))
+        for param, ids in facets.items():
+            query({"appliedFacets": {param: ids}, "searchText": ""}, f"internship filter ({param})")
+        if not facets:
+            rep.note(f"{total} openings and no internship filter: read through searches only")
+        for term in WD_TERMS:
+            query({"appliedFacets": {}, "searchText": term}, f'search "{term}"')
+    # Workday's list has no descriptions, so only open internship-looking ones (and skip
+    # titles the scan would drop anyway, like "Finance Intern", and ones past the age limit)
+    limit = MAX_AGE_DAYS + WD_AGE_MARGIN if MAX_AGE_DAYS else 10 ** 6
+    wanted = [p for p in postings.values() if _INTERNISH.search(p.get("title", "")) and keep(p.get("title", ""))
+              and (_wd_age(p.get("postedOn", "")) or 0) <= limit]
 
     def detail(p):
         path = p.get("externalPath", "")
@@ -348,8 +597,7 @@ def fetch_workday(host: str, site: str, company: str, max_pages: int = 50, keep=
             "season_hint": "",
         }
 
-    with ThreadPoolExecutor(max_workers=6) as pool:
-        return list(pool.map(detail, wanted))
+    return _open_each(wanted, detail)
 
 
 def _workday_posted_on(text: str) -> str:
@@ -367,20 +615,23 @@ def fetch_eightfold(host: str, domain: str, company: str, max_pages: int = 40, k
     """Eightfold career sites (e.g. lockheedmartin.eightfold.ai). Search pages hold
     10 postings and no description, so each internship is opened for its text."""
     api = f"https://{host}/api/pcsx"
+    rep = _scan()
     postings, seen = [], set()
-    for term in ("intern", "co-op"):
-        start = 0
-        for _ in range(max_pages):
-            page = get_json(f"{api}/search?domain={domain}&query={term}&start={start}", timeout=40)
+    for n, term in enumerate(("intern", "co-op", "student")):
+        state = {"start": 0}
+
+        def step(i, term=term, state=state):
+            page = get_json(f"{api}/search?domain={domain}&query={term}&start={state['start']}", timeout=40)
             page = page.get("data", page)
             batch = page.get("positions") or []
             for p in batch:
                 if p.get("id") not in seen:
                     seen.add(p.get("id"))
                     postings.append(p)
-            start += len(batch)
-            if not batch or start >= int(page.get("count") or 0):
-                break
+            state["start"] += len(batch)
+            return not batch or state["start"] >= int(page.get("count") or 0)
+
+        _paged(f'search "{term}"', max_pages, rep, step, must=n == 0)
     wanted = [p for p in postings if _INTERNISH.search(p.get("name", "")) and keep(p.get("name", ""))]
 
     def detail(p):
@@ -407,25 +658,36 @@ def fetch_eightfold(host: str, domain: str, company: str, max_pages: int = 40, k
 def fetch_clearcompany(site_id: str, company: str) -> list[dict]:
     """ClearCompany career sites. site_id is the GUID in the page's
     careers-api.clearcompany.com/v1/<site_id> request."""
-    out, page_index = [], 0
-    while True:
+    rep, out, seen = _scan(), [], set()
+
+    def step(page_index):
         data = get_json(f"https://careers-api.clearcompany.com/v1/{site_id}"
                         f"?pageIndex={page_index}&pageSize=100&source=CJB-0", timeout=60)
         batch = data.get("results") or []
+        new = 0
         for j in batch:
+            link = re.sub(r"/apply(\?.*)?$", "", j.get("applyLink", ""))
+            if link in seen:
+                continue
+            seen.add(link)
+            new += 1
             out.append({
                 "company": company,
                 "title": (j.get("positionTitle") or "").strip(),
                 "location": j.get("location", ""),
-                "url": re.sub(r"/apply(\?.*)?$", "", j.get("applyLink", "")),
+                "url": link,
                 "source": f"{company} careers",
                 "posted": _date_from_iso(j.get("postedDate") or j.get("openDate")),
                 "description": html_to_text(j.get("description")),
                 "season_hint": "",
             })
-        page_index += 1
-        if not batch or len(out) >= int(data.get("totalCount") or 0):
-            return out
+        if batch and not new:
+            rep.incomplete("the site repeated a page")
+            return True
+        return not batch or len(out) >= int(data.get("totalCount") or 0)
+
+    _paged("job list", 100, rep, step, must=True)
+    return out
 
 
 # ------------------------------------------------------------ more hiring systems
@@ -445,8 +707,16 @@ def _wanted(title: str, keep) -> bool:
 
 
 def _open_each(postings: list, detail) -> list[dict]:
+    """Open each posting's page (detail) six at a time, counting pages that gave no text."""
+    rep = _scan()
+    if DEADLINE is not None and time.monotonic() > DEADLINE + 300 and len(postings) > 20:
+        rep.incomplete(f"opened only 20 of {len(postings)} postings: the run's time budget ran out")
+        postings = postings[:20]
     with ThreadPoolExecutor(max_workers=6) as pool:
-        return list(pool.map(detail, postings))
+        out = list(pool.map(detail, postings))
+    rep.opened += len(out)
+    rep.no_text += sum(1 for j in out if isinstance(j, dict) and not j.get("description"))
+    return out
 
 
 _RMK_LINK = re.compile(r'(?s)<a\b([^>]*\bjobTitle-link\b[^>]*)>(.*?)</a>')
@@ -475,22 +745,31 @@ def fetch_successfactors(host: str, company: str, max_pages: int = 20, keep=_kee
     returns non-intern jobs; titles are filtered before any posting is opened.
     Newer sites (jobs.bombardier.com...) build the list in the browser, so their
     JSON search is read instead."""
+    rep = _scan()
     postings: dict[str, tuple[str, str]] = {}  # id -> (path, title)
-    for term in ("intern", "co-op"):
-        start = 0
-        for _ in range(max_pages):
-            page = _get_page(f"https://{host}/search/?q={term}&startrow={start}")
-            if not start and term == "intern" and "jobTitle-link" not in page:
-                return _successfactors_json(host, company, max_pages * 2, keep)
+    for n, term in enumerate(("intern", "co-op", "student")):
+        state = {"start": 0, "mine": set()}  # this search's own results, so one that only
+        # repeats an earlier search's postings isn't mistaken for the end of its list
+
+        def step(i, term=term, state=state):
+            page = _get_page(f"https://{host}/search/?q={term}&startrow={state['start']}")
+            if i == 0 and n == 0 and "jobTitle-link" not in page:
+                raise _UseJson(page)
             new = 0
             for attrs, title in _RMK_LINK.findall(page):
                 m = re.search(r'href="(/job/[^"]+?/(\d+)/?)"', attrs)
-                if m and m.group(2) not in postings:
-                    postings[m.group(2)] = (html.unescape(m.group(1)), html_to_text(title))
+                if m and m.group(2) not in state["mine"]:
+                    state["mine"].add(m.group(2))
+                    postings.setdefault(m.group(2), (html.unescape(m.group(1)), html_to_text(title)))
                     new += 1
-            if not new:
-                break
-            start += new
+            state["start"] += new
+            total = re.search(r'(?s)paginationLabel[^>]*>.*?of\s*(?:<b>)?\s*([\d,]+)', page)
+            return not new or (total is not None and state["start"] >= int(total.group(1).replace(",", "")))
+
+        try:
+            _paged(f'search "{term}"', max_pages, rep, step, must=n == 0)
+        except _UseJson as e:
+            return _successfactors_json(host, company, max_pages * 2, keep, e.args[0])
     wanted = [(path, title) for path, title in postings.values() if _wanted(title, keep)]
 
     def detail(p):
@@ -520,29 +799,43 @@ def fetch_successfactors(host: str, company: str, max_pages: int = 20, keep=_kee
     return _open_each(wanted, detail)
 
 
-def _successfactors_json(host: str, company: str, max_pages: int, keep) -> list[dict]:
+class _UseJson(Exception):
+    """The search page has no result links: read the site's JSON search instead."""
+
+
+_SF_NO_RESULTS = re.compile(r"(?i)searchResultsShell|no (?:open )?(?:positions|jobs|results)|\b0 results")
+
+
+def _successfactors_json(host: str, company: str, max_pages: int, keep, search_page: str = "") -> list[dict]:
     """The JSON search behind newer SuccessFactors career sites, 10 postings a page,
-    best matches first. A site with neither this nor result links has no matches."""
+    best matches first. When that search doesn't answer either, a search page that says
+    it found nothing counts as no matches; anything else fails the source (it used to
+    count as an empty site, hiding the failure)."""
     api = f"https://{host}/services/recruiting/v1/jobs"
+    rep = _scan()
     found: dict[str, dict] = {}
-    try:
-        for term in ("intern", "co-op"):
-            seen = 0
-            for page in range(max_pages):
-                data = post_json(api, {"locale": "en_US", "pageNumber": page, "sortBy": "", "keywords": term,
-                                       "location": "", "facetFilters": {}, "brand": "", "skills": [],
-                                       "categoryId": 0, "alertId": "", "rcmCandidateId": ""}, timeout=40)
-                batch = [r.get("response") or {} for r in data.get("jobSearchResult") or []]
-                for r in batch:
-                    found.setdefault(r.get("id"), r)
-                seen += len(batch)
-                if not batch or seen >= int(data.get("totalJobs") or 0):
-                    break
-                # Best matches come first, so stop once a whole page has no internship titles
-                if not any(_INTERNISH.search(r.get("unifiedStandardTitle") or "") for r in batch):
-                    break
-    except FetchError:
-        return []
+    # Each search is read to its end (best matches come first, but internships can rank
+    # anywhere in a full-text search)
+    for n, term in enumerate(("intern", "co-op", "student")):
+        state = {"seen": 0}
+
+        def step(page, term=term, state=state):
+            data = post_json(api, {"locale": "en_US", "pageNumber": page, "sortBy": "", "keywords": term,
+                                   "location": "", "facetFilters": {}, "brand": "", "skills": [],
+                                   "categoryId": 0, "alertId": "", "rcmCandidateId": ""}, timeout=40)
+            batch = [r.get("response") or {} for r in data.get("jobSearchResult") or []]
+            for r in batch:
+                found.setdefault(r.get("id"), r)
+            state["seen"] += len(batch)
+            return not batch or state["seen"] >= int(data.get("totalJobs") or 0)
+
+        try:
+            _paged(f'search "{term}"', max_pages, rep, step, must=n == 0)
+        except FetchError:
+            if n == 0 and _SF_NO_RESULTS.search(search_page):
+                rep.note("the site's search page lists no matches")
+                return []
+            raise
     wanted = [r for r in found.values() if r.get("id") and _wanted(r.get("unifiedStandardTitle", ""), keep)]
 
     def detail(r):
@@ -573,17 +866,21 @@ def _successfactors_json(host: str, company: str, max_pages: int, keep) -> list[
 _ICIMS_CARD = re.compile(r'(?s)<li class="iCIMS_JobCardItem">(.*?)</li>')
 
 
-def fetch_icims(host: str, company: str, max_pages: int = 15, keep=_keep_all) -> list[dict]:
+def fetch_icims(host: str, company: str, max_pages: int = 25, keep=_keep_all) -> list[dict]:
     """iCIMS career sites (careers-<company>.icims.com). The search page lists 20
     postings; each internship is opened for its full text (schema.org data).
     On some sites the keyword search finds nothing at all, whatever the word
     (Peraton, Iridium, Sierra Lobo: "no jobs were found"), so when neither search
     finds a posting the site's whole list is read instead."""
+    rep = _scan()
     postings: dict[str, dict] = {}
 
-    def read(query: str, n_pages: int) -> None:
-        for pr in range(n_pages):
+    def read(query: str, n_pages: int, what: str, must: bool = False) -> None:
+        stop = _DateStop()
+
+        def step(pr):
             page = _get_page(f"https://{host}/jobs/search?ss=1{query}&in_iframe=1&pr={pr}")
+            dates = []
             for card in _ICIMS_CARD.findall(page):
                 link = re.search(r'href="(https://[^"]+?/jobs/\d+/[^"?]+/job)', card)
                 title = re.search(r'(?s)<h3[^>]*>(.*?)</h3>', card)
@@ -598,14 +895,18 @@ def fetch_icims(host: str, company: str, max_pages: int = 15, keep=_keep_all) ->
                     "location": html_to_text(loc.group(1)) if loc else "",
                     "posted": f"{posted.group(3)}-{int(posted.group(1)):02d}-{int(posted.group(2)):02d}" if posted else "",
                 }
+                dates.append(postings[link.group(1)]["posted"])
+            if stop.done(dates):
+                return True  # the results are newest first and past the age limit
             pages = re.search(r"Page \d+ of (\d+)", page)
-            if not pages or pr + 1 >= int(pages.group(1)):
-                break
+            return not pages or pr + 1 >= int(pages.group(1))
 
-    for term in ("intern", "co-op"):
-        read(f"&searchKeyword={term}", max_pages)
+        _paged(what, n_pages, rep, step, must=must)
+
+    for n, term in enumerate(("intern", "co-op", "student")):
+        read(f"&searchKeyword={term}", max_pages, f'search "{term}"', must=n == 0)
     if not postings:
-        read("", 40)
+        read("", 40, "full job list")
     wanted = [p for p in postings.values() if _wanted(p["title"], keep)]
 
     def detail(p):
@@ -623,9 +924,10 @@ def fetch_icims(host: str, company: str, max_pages: int = 15, keep=_keep_all) ->
 def fetch_jibe(host: str, company: str, max_pages: int = 10) -> list[dict]:
     """Jibe career sites (careers.jhuapl.edu, careers.viasat.com...), which answer
     <host>/api/jobs with full postings."""
-    out, seen = [], set()
-    for term in ("intern", "co-op"):
-        for page in range(1, max_pages + 1):
+    rep, out, seen = _scan(), [], set()
+    for n, term in enumerate(("intern", "co-op", "student")):
+        def step(i, term=term):
+            page = i + 1
             data = get_json(f"https://{host}/api/jobs?keywords={term}&limit=100&page={page}", timeout=60)
             batch = data.get("jobs") or []
             for item in batch:
@@ -643,9 +945,11 @@ def fetch_jibe(host: str, company: str, max_pages: int = 10) -> list[dict]:
                     "description": "\n".join(html_to_text(j.get(k)) for k in
                                              ("description", "responsibilities", "qualifications") if j.get(k)),
                     "season_hint": "",
+                    "emp_type": j.get("employment_type") or "",
                 })
-            if not batch or page * 100 >= int(data.get("totalCount") or 0):
-                break
+            return not batch or page * 100 >= int(data.get("totalCount") or 0)
+
+        _paged(f'search "{term}"', max_pages, rep, step, must=n == 0)
     return out
 
 
@@ -655,18 +959,33 @@ def fetch_oracle(host: str, site: str, company: str, max_pages: int = 40, keep=_
     so titles are filtered before each posting is opened. Big sites match several
     hundred postings (Honeywell: about 700), so up to 1,000 are read."""
     api = f"https://{host}/hcmRestApi/resources/latest"
+    rep = _scan()
     postings: dict[str, dict] = {}
-    for term in ("intern", "co-op"):
-        for page in range(max_pages):
-            data = get_json(f"{api}/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList"
-                            f"&finder=findReqs;siteNumber={site},"
-                            f"keyword={term},limit=25,offset={page * 25}", timeout=40)
+    # Newest first, so a search can stop once it's past the age limit (a site that rejects
+    # the sort is read in its own order instead)
+    sort = {"by": ",sortBy=POSTING_DATES_DESC"}
+    for n, term in enumerate(("intern", "co-op", "student")):
+        stop = _DateStop()
+
+        def step(page, term=term, stop=stop):
+            url = (f"{api}/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList"
+                   f"&finder=findReqs;siteNumber={site},keyword={term},limit=25,offset={page * 25}")
+            try:
+                data = get_json(url + sort["by"], timeout=40)
+            except FetchError as e:
+                if e.status != 400 or not sort["by"]:
+                    raise
+                sort["by"] = ""
+                data = get_json(url, timeout=40)
             found = (data.get("items") or [{}])[0]
             batch = found.get("requisitionList") or []
             for r in batch:
                 postings.setdefault(r.get("Id"), r)
-            if not batch or (page + 1) * 25 >= int(found.get("TotalJobsCount") or 0):
-                break
+            if sort["by"] and stop.done([r.get("PostedDate") for r in batch]):
+                return True
+            return not batch or (page + 1) * 25 >= int(found.get("TotalJobsCount") or 0)
+
+        _paged(f'search "{term}"', max_pages, rep, step, must=n == 0)
     wanted = [r for r in postings.values() if _wanted(r.get("Title", ""), keep)]
 
     def detail(r):
@@ -695,27 +1014,34 @@ def fetch_oracle(host: str, site: str, company: str, max_pages: int = 40, keep=_
 _PHENOM_SEARCH = '"eagerLoadRefineSearch":'
 
 
-def fetch_phenom(base: str, company: str, max_pages: int = 15, keep=_keep_all) -> list[dict]:
+def fetch_phenom(base: str, company: str, max_pages: int = 30, keep=_keep_all) -> list[dict]:
     """Phenom career sites (jobs.baesystems.com/global/en...). Search results are
     embedded in the page as JSON, 20 at a time; postings are opened for full text."""
+    rep = _scan()
     postings: dict[str, dict] = {}
-    for term in ("intern", "co-op"):
-        total = None
-        for page in range(max_pages):
+    for n, term in enumerate(("intern", "co-op", "student")):
+        state = {"total": None, "stop": _DateStop()}
+
+        def step(page, term=term, state=state):
             text = _get_page(f"{base}/search-results?keywords={term}&from={page * 20}")
             i = text.find(_PHENOM_SEARCH)
             if i < 0:
                 raise FetchError("no search results in page")
             res, _ = json.JSONDecoder().raw_decode(text, i + len(_PHENOM_SEARCH))
-            if total is None:
-                total = int(res.get("totalHits") or 0)
-            elif int(res.get("totalHits") or 0) != total:
-                break  # site dropped the keyword for later pages
+            if state["total"] is None:
+                state["total"] = int(res.get("totalHits") or 0)
+            elif int(res.get("totalHits") or 0) != state["total"]:
+                # The site dropped the keyword for later pages
+                rep.incomplete(f'search "{term}": the site changed its results after page {page}')
+                return True
             batch = (res.get("data") or {}).get("jobs") or []
             for j in batch:
                 postings.setdefault(j.get("jobId"), j)
-            if not batch or (page + 1) * 20 >= total:
-                break
+            if state["stop"].done([j.get("postedDate") for j in batch]):
+                return True  # the results are newest first and past the age limit
+            return not batch or (page + 1) * 20 >= state["total"]
+
+        _paged(f'search "{term}"', max_pages, rep, step, must=n == 0)
     wanted = [j for j in postings.values() if _wanted(j.get("title", ""), keep)]
 
     def detail(j):
@@ -821,18 +1147,29 @@ def fetch_rippling(board: str, company: str, keep=_keep_all) -> list[dict]:
 
 def fetch_smartrecruiters(board: str, company: str, keep=_keep_all) -> list[dict]:
     api = f"https://api.smartrecruiters.com/v1/companies/{board}/postings"
+    rep = _scan()
     postings: dict = {}
-    for term in ("intern", "co-op"):
-        offset = 0
-        while offset < 1000:
-            data = get_json(f"{api}?q={term}&limit=100&offset={offset}", timeout=40)
+    for n, term in enumerate(("intern", "co-op", "student")):
+        state = {"offset": 0, "stop": _DateStop()}
+
+        def step(i, term=term, state=state):
+            data = get_json(f"{api}?q={term}&limit=100&offset={state['offset']}", timeout=40)
             batch = data.get("content") or []
             for p in batch:
                 postings.setdefault(p.get("id"), p)
-            offset += len(batch)
-            if not batch or offset >= int(data.get("totalFound") or 0):
-                break
-    wanted = [p for p in postings.values() if _wanted(p.get("name", ""), keep)]
+            state["offset"] += len(batch)
+            if state["stop"].done([p.get("releasedDate") for p in batch]):
+                return True  # the results are newest first and past the age limit
+            return not batch or state["offset"] >= int(data.get("totalFound") or 0)
+
+        _paged(f'search "{term}"', 20, rep, step, must=n == 0)
+
+    def emp(p) -> str:
+        return " ".join(filter(None, [(p.get("typeOfEmployment") or {}).get("label"),
+                                      (p.get("experienceLevel") or {}).get("label")]))
+
+    wanted = [p for p in postings.values() if _wanted(p.get("name", ""), keep)
+              or (re.search(r"(?i)intern", emp(p)) and keep(p.get("name", "")))]
 
     def detail(p):
         try:
@@ -850,6 +1187,7 @@ def fetch_smartrecruiters(board: str, company: str, keep=_keep_all) -> list[dict
             "description": "\n".join(html_to_text(s.get("text")) for k, s in sections.items()
                                      if k != "companyDescription" and isinstance(s, dict)),
             "season_hint": "",
+            "emp_type": emp(p),
         }
 
     return _open_each(wanted, detail)
@@ -896,9 +1234,11 @@ def fetch_taleo(host: str, section: str, portal: str, company: str, max_pages: i
     is the number in the section page's portal= requests."""
     api = f"https://{host}/careersection/rest/jobboard/searchjobs?lang=en&portal={portal}"
     headers = {"tz": "GMT-05:00", "tzname": "America/New_York"}
+    rep = _scan()
     postings: dict[str, dict] = {}
-    for term in ("intern", "co-op"):
-        for page in range(1, max_pages + 1):
+    for n, term in enumerate(("intern", "co-op", "student")):
+        def step(i, term=term):
+            page = i + 1
             data = post_json(api, {**_TALEO_SEARCH, "pageNo": page,
                                    "fieldData": {"fields": {"KEYWORD": term, "LOCATION": ""}, "valid": True}},
                              headers=headers, timeout=40)
@@ -906,8 +1246,9 @@ def fetch_taleo(host: str, section: str, portal: str, company: str, max_pages: i
             for r in batch:
                 postings.setdefault(r.get("contestNo"), r)
             paging = data.get("pagingData") or {}
-            if not batch or page * int(paging.get("pageSize") or 25) >= int(paging.get("totalCount") or 0):
-                break
+            return not batch or page * int(paging.get("pageSize") or 25) >= int(paging.get("totalCount") or 0)
+
+        _paged(f'search "{term}"', max_pages, rep, step, must=n == 0)
     wanted = [r for r in postings.values() if _wanted((r.get("column") or [""])[0], keep)]
 
     def detail(r):
@@ -962,29 +1303,39 @@ def fetch_jazzhr(board: str, company: str, keep=_keep_all) -> list[dict]:
     return _open_each(postings, detail)
 
 
-def fetch_searchpage(search: str, path: str, company: str, max_pages: int = 15, keep=_keep_all) -> list[dict]:
+def fetch_searchpage(search: str, path: str, company: str, max_pages: int = 15, keep=_keep_all,
+                     content: str = "") -> list[dict]:
     """Career sites with a plain search page and no hiring-system API
     (careers.gulfstream.com, Avature sites like jobs.siemens-energy.com...).
     search is the page's address with {term} and either {page} (1, 2, 3...) or
     {offset} (how many results came before); postings are its links that start
-    with path. Each posting's own page carries standard job-posting data, or
-    labeled fields as on Avature sites."""
+    with path. A page that lists every opening at once (symbotic.com) can leave both
+    out. Each posting's own page carries standard job-posting data, or labeled fields
+    as on Avature sites, or (content = a CSS class) a block holding the posting's text."""
+    rep = _scan()
     root = re.match(r"https?://[^/]+", search).group(0)
     link = re.compile(r'(?s)<a\b[^>]*\bhref="((?:' + re.escape(root) + ")?" + re.escape(path) + r'[^"#?]+)"[^>]*>(.*?)</a>')
     postings: dict[str, str] = {}  # url -> title
-    for term in ("intern", "co-op"):
-        offset = 0
-        for page in range(1, max_pages + 1):
-            found = link.findall(_get_page(search.format(term=term, page=page, offset=offset)))
+    terms = ("intern", "co-op", "student") if "{term}" in search else ("",)
+    paged = "{page}" in search or "{offset}" in search
+    for n, term in enumerate(terms):
+        state = {"offset": 0, "mine": set()}
+
+        def step(i, term=term, state=state):
+            found = link.findall(_get_page(search.format(term=term, page=i + 1, offset=state["offset"])))
             new = 0
             for href, title in found:
                 url = urllib.parse.urljoin(root, html.unescape(href))
-                if url not in postings or not postings[url]:
-                    new += url not in postings
+                if url not in state["mine"]:
+                    state["mine"].add(url)
+                    new += 1
+                # The first link to a posting can be its title, a later one "Apply"
+                if not postings.get(url):
                     postings[url] = html_to_text(title)
-            offset += len({h for h, _ in found})
-            if not new:  # past the last page, the site repeats it or shows none
-                break
+            state["offset"] += len({h for h, _ in found})
+            return not paged or not new  # past the last page, the site repeats it or shows none
+
+        _paged(f'search "{term}"' if term else "job list", max_pages, rep, step, must=n == 0)
     wanted = [(url, title) for url, title in postings.items() if _wanted(title, keep)]
 
     def detail(p):
@@ -996,19 +1347,50 @@ def fetch_searchpage(search: str, path: str, company: str, max_pages: int = 15, 
         posting = _job_posting(page)
         fields = _avature_fields(page)
         place = next((v for k, v in fields.items() if re.search(r"(?i)location|city", k)), "") or _avature_place(fields)
+        block = _class_text(page, content) if content else ""
         return {
             "company": company,
             "title": html_to_text(posting.get("title")) or title,
             "location": _ld_location(posting) or place,
             "url": url,
             "source": f"{company} careers",
-            "posted": _page_date(page, posting),
-            "description": html_to_text(posting.get("description")) or "\n".join(
+            "posted": _page_date(page, posting) or _label_date(block),
+            "description": html_to_text(posting.get("description")) or block or "\n".join(
                 f"{k}: {v}" if len(v) < 120 else f"{k}\n{v}" for k, v in fields.items()),
             "season_hint": "",
+            "emp_type": _ld_type(posting),
         }
 
     return _open_each(wanted, detail)
+
+
+def _class_text(page: str, cls: str) -> str:
+    """Text of the first element whose class list includes cls (nested tags counted)."""
+    m = re.search(r'<(\w+)\b[^>]*\bclass="(?:[^"]*\s)?' + re.escape(cls) + r'(?:\s[^"]*)?"[^>]*>', page)
+    if not m:
+        return ""
+    depth = 1
+    for tag in re.compile(rf'<(/?){m.group(1)}\b[^>]*>').finditer(page, m.end()):
+        depth += -1 if tag.group(1) else 1
+        if depth == 0:
+            return html_to_text(page[m.end():tag.start()])
+    return html_to_text(page[m.end():m.end() + 20000])
+
+
+_LABEL_DATE = re.compile(r"(?i)(?:posted on|date posted|posting date|posted date|posted)\s*:?\s*"
+                         r"([A-Z][a-z]+\.? \d{1,2},? \d{4}|\d{1,2}/\d{1,2}/\d{4}|\d{4}-\d{2}-\d{2})")
+
+
+def _label_date(text: str) -> str:
+    """A posted date written out on the page ("Posted on: November 11, 2026")."""
+    m = _LABEL_DATE.search(text or "")
+    return _plausible_date(_date_from_iso(m.group(1).replace(".", ""))) if m else ""
+
+
+def _ld_type(posting: dict) -> str:
+    """schema.org employmentType ("INTERN", ["FULL_TIME", "INTERN"]) as text."""
+    t = posting.get("employmentType") if isinstance(posting, dict) else ""
+    return ", ".join(map(str, t)) if isinstance(t, list) else str(t or "")
 
 
 _AV_FIELD = re.compile(r'(?s)<div class="article__content__view__field(?:\s[^"]*)?">(.*?)'
@@ -1055,7 +1437,11 @@ def fetch_internlist(src: dict) -> list[dict]:
         m = re.search(r'urlWithParams\s*[:=]\s*"([^"]+)"', embed)
         if not m:
             raise FetchError(f"view {view} has no shared data (the site may have replaced it)")
-        data = get_json("https://airtable.com" + m.group(1).encode().decode("unicode_escape"), timeout=90, headers={
+        path = m.group(1).encode().decode("unicode_escape")
+        # Since Nov 2026 the address asks for MessagePack ("allowMsgpackOfResult":true), which
+        # isn't JSON; asking without it gets JSON again
+        path = re.sub(r"(allowMsgpackOfResult(?:%22|\")\s*(?:%3A|:)\s*)true", r"\1false", path)
+        data = get_json("https://airtable.com" + path, timeout=90, headers={
             "x-airtable-application-id": app, "x-requested-with": "XMLHttpRequest",
             "x-time-zone": "America/New_York", "x-user-locale": "en", "User-Agent": _PAGE_HEADERS["User-Agent"]})
         table = data["data"]["table"]
@@ -1133,20 +1519,25 @@ def fetch_jobsfeed(host: str, company: str, max_pages: int = 10, keep=_keep_all)
     """DirectEmployers .jobs sites (sandia.jobs, jacobs.jobs): an RSS feed of the
     search with each posting's full text. Titles start with the place, as in
     "(USA-NM-Albuquerque) Intern, ...". Links go to the company's own .jobs page."""
+    rep = _scan()
     found: dict[str, dict] = {}
-    for term in ("intern", "co-op"):
-        offset = 0
-        for _ in range(max_pages):
-            items = _RSS_ITEM.findall(_get_page(f"https://{host}/jobs/feed/rss?q={term}&offset={offset}", timeout=60))
+    for n, term in enumerate(("intern", "co-op", "student")):
+        state = {"offset": 0, "mine": set()}
+
+        def step(i, term=term, state=state):
+            items = _RSS_ITEM.findall(_get_page(f"https://{host}/jobs/feed/rss?q={term}&offset={state['offset']}",
+                                                timeout=60))
             new = 0
             for it in items:
                 link = _rss_field(it, "link")
-                if link and link not in found:
-                    found[link] = it
+                if link and link not in state["mine"]:
+                    state["mine"].add(link)
+                    found.setdefault(link, it)
                     new += 1
-            offset += len(items)
-            if not new:
-                break
+            state["offset"] += len(items)
+            return not new
+
+        _paged(f'search "{term}"', max_pages, rep, step, must=n == 0)
     out = []
     for link, it in found.items():
         m = re.match(r"\(([^)]*)\)\s*(.*)", _rss_field(it, "title"))
@@ -1179,7 +1570,7 @@ def fetch_brassring(partner: str, sites: list[str], company: str, location_field
     "questions"; which ones hold the city, state and the specific job name differs
     by company (General Atomics titles every intern "Intern - Undergraduate
     (technical)" and names the role in formtext8)."""
-    out, seen = [], set()
+    rep, out, seen = _scan(), [], set()
     for site in sites:
         opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
         hdr: dict = {}  # the search token, once the search page has handed it out
@@ -1198,17 +1589,22 @@ def fetch_brassring(partner: str, sites: list[str], company: str, location_field
         if not tok:
             raise FetchError(f"site {site}: no search token on the page")
         hdr.update({"RFT": tok.group(1), "X-Requested-With": "XMLHttpRequest"})
-        for term in ("intern", "co-op"):
+        for k, term in enumerate(("intern", "co-op", "student")):
             listed: set = set()
-            for n in range(1, max_pages + 1):
+
+            def step(i, term=term, listed=listed, site=site, call=call):
+                n = i + 1
                 # The first page comes from the search; later ones from its "show more" call
-                data = json.loads(call("https://sjobs.brassring.com/TgNewUI/Search/Ajax/"
-                                       + ("MatchedJobs" if n == 1 else "ProcessSortAndShowMoreJobs"), {
+                try:
+                    data = json.loads(call("https://sjobs.brassring.com/TgNewUI/Search/Ajax/"
+                                           + ("MatchedJobs" if n == 1 else "ProcessSortAndShowMoreJobs"), {
                     "partnerId": partner, "siteId": site, "keyword": term, "location": "",
                     "keywordCustomSolrFields": "", "locationCustomSolrFields": "", "linkId": "",
                     "Latitude": 0, "Longitude": 0, "facetfilterfields": {"Facet": []},
                     "powersearchoptions": {"PowerSearchOption": []}, "SortType": "LastUpdated",
                     "pageNumber": n, "encryptedSessionValue": ""}))
+                except ValueError as e:
+                    raise FetchError(f"unreadable answer ({e})") from e
                 batch = [{x.get("QuestionName"): x.get("Value") for x in j.get("Questions") or []}
                          for j in (data.get("Jobs") or {}).get("Job") or []]
                 new = {q.get("reqid") for q in batch} - listed
@@ -1233,8 +1629,9 @@ def fetch_brassring(partner: str, sites: list[str], company: str, location_field
                         "description": html_to_text(q.get("jobdescription")),
                         "season_hint": "",
                     })
-                if not new or len(listed) >= int(data.get("JobsCount") or 0):
-                    break
+                return not new or len(listed) >= int(data.get("JobsCount") or 0)
+
+            _paged(f'site {site} search "{term}"', max_pages, rep, step, must=k == 0)
     return out
 
 
@@ -1244,15 +1641,17 @@ def fetch_adp(cid: str, company: str, keep=_keep_all) -> list[dict]:
     every opening is listed and internship titles are opened for their text."""
     api = "https://workforcenow.adp.com/mascsr/default/careercenter/public/events/staffing/v1/job-requisitions"
     args = f"cid={cid}&lang=en_US&locale=en_US&ccId=19000101_000001"
-    reqs, skip = {}, 1
-    while skip < 2000:
-        data = get_json(f"{api}?{args}&$top=50&$skip={skip}", timeout=40)
+    rep, reqs, state = _scan(), {}, {"skip": 1}
+
+    def step(i):
+        data = get_json(f"{api}?{args}&$top=50&$skip={state['skip']}", timeout=40)
         batch = data.get("jobRequisitions") or []
         for r in batch:
             reqs.setdefault(r.get("itemID"), r)
-        skip += len(batch)
-        if not batch or skip > int((data.get("meta") or {}).get("totalNumber") or 0):
-            break
+        state["skip"] += len(batch)
+        return not batch or state["skip"] > int((data.get("meta") or {}).get("totalNumber") or 0)
+
+    _paged("job list", 40, rep, step, must=True)
     wanted = [r for r in reqs.values() if _wanted(r.get("requisitionTitle", ""), keep)]
 
     def detail(r):
@@ -1283,21 +1682,26 @@ def fetch_ukg(board: str, company: str, keep=_keep_all) -> list[dict]:
     """UKG Pro (UltiPro) job boards: board is the address up to the board's ID,
     recruiting.ultipro.com/<tenant>/JobBoard/<id>. Each posting's page holds its
     full text as JSON."""
+    rep = _scan()
     found: dict[str, dict] = {}
-    for term in ("intern", "co-op"):
-        skip = 0
-        while skip < 1000:
+    for n, term in enumerate(("intern", "co-op", "student")):
+        state = {"skip": 0, "stop": _DateStop()}
+
+        def step(i, term=term, state=state):
             data = post_json(f"{board}/JobBoardView/LoadSearchResults", {
-                "opportunitySearch": {"Top": 50, "Skip": skip, "QueryString": term, "Filters": [],
+                "opportunitySearch": {"Top": 50, "Skip": state["skip"], "QueryString": term, "Filters": [],
                                       "OrderBy": [{"Value": "postedDateDesc", "PropertyName": "PostedDate", "Ascending": False}]},
                 "matchCriteria": {"PreferredJobs": [], "Educations": [], "LicenseAndCertifications": [], "Skills": [],
                                   "hasNoLicenses": False, "SkippedSkills": []}}, timeout=40)
             batch = data.get("opportunities") or []
             for o in batch:
                 found.setdefault(o.get("Id"), o)
-            skip += len(batch)
-            if not batch or skip >= int(data.get("totalCount") or 0):
-                break
+            state["skip"] += len(batch)
+            if state["stop"].done([o.get("PostedDate") for o in batch]):
+                return True  # sorted newest first (OrderBy above) and past the age limit
+            return not batch or state["skip"] >= int(data.get("totalCount") or 0)
+
+        _paged(f'search "{term}"', 20, rep, step, must=n == 0)
     wanted = [o for o in found.values() if _wanted(o.get("Title", ""), keep)]
 
     def detail(o):
@@ -1462,20 +1866,23 @@ def fetch_activate(host: str, company: str, max_pages: int = 10, keep=_keep_all)
     <host>/Search/SearchResults, which sends JSON wrapped in a JSON string. The
     keyword search is full text, so titles are filtered before each posting's
     page (schema.org data) is opened."""
+    rep = _scan()
     found: dict[str, dict] = {}
-    for term in ("intern", "student", "co-op"):
-        start = 0
-        for _ in range(max_pages):
-            data = get_json(f"https://{host}/Search/SearchResults?keyword={term}&jtStartIndex={start}&jtPageSize=100",
-                            headers={"X-Requested-With": "XMLHttpRequest"}, timeout=40)
+    for n, term in enumerate(("intern", "student", "co-op")):
+        state = {"start": 0}
+
+        def step(i, term=term, state=state):
+            data = get_json(f"https://{host}/Search/SearchResults?keyword={term}&jtStartIndex={state['start']}"
+                            f"&jtPageSize=100", headers={"X-Requested-With": "XMLHttpRequest"}, timeout=40)
             if isinstance(data, str):
                 data = json.loads(data)
             batch = data.get("Records") or []
             for r in batch:
                 found.setdefault(r.get("ID"), r)
-            start += len(batch)
-            if not batch or start >= int(data.get("TotalRecordCount") or 0):
-                break
+            state["start"] += len(batch)
+            return not batch or state["start"] >= int(data.get("TotalRecordCount") or 0)
+
+        _paged(f'search "{term}"', max_pages, rep, step, must=n == 0)
     wanted = [r for r in found.values() if r.get("ID") and _wanted(html_to_text(r.get("Title")), keep)]
 
     def detail(r):
@@ -1506,43 +1913,50 @@ def fetch_usajobs(cfg: dict) -> list[dict]:
     if not key or not email:
         raise FetchError("skipped: add USAJOBS_API_KEY and USAJOBS_EMAIL secrets to enable")
     headers = {"Host": "data.usajobs.gov", "User-Agent": email, "Authorization-Key": key}
-    seen, out = set(), []
-    for kw in cfg.get("keywords", []):
-        url = ("https://data.usajobs.gov/api/search?ResultsPerPage=250&HiringPath=student&Keyword="
-               + kw.replace(" ", "%20"))
-        data = get_json(url, headers=headers, timeout=60)
-        for item in (data.get("SearchResult") or {}).get("SearchResultItems", []):
-            d = item.get("MatchedObjectDescriptor") or {}
-            pid = d.get("PositionID") or d.get("PositionURI")
-            if pid in seen:
-                continue
-            seen.add(pid)
-            details = (d.get("UserArea") or {}).get("Details") or {}
-            desc = "\n".join(filter(None, [
-                details.get("JobSummary", ""), d.get("QualificationSummary", ""),
-                "\n".join(details.get("MajorDuties") or []),
-                "U.S. citizenship is required for federal positions.",
-            ]))
-            apply = (d.get("ApplyURI") or [d.get("PositionURI", "")])[0]
-            out.append({
-                "company": " / ".join(filter(None, [d.get("OrganizationName"), d.get("DepartmentName")])),
-                "title": d.get("PositionTitle", ""),
-                "location": d.get("PositionLocationDisplay", ""),
-                "url": apply,
-                "source": "USAJOBS",
-                "posted": _date_from_iso(d.get("PublicationStartDate")),
-                "description": desc,
-                "season_hint": "",
-            })
+    rep = _scan()
+    seen, out, items = set(), [], []
+    for n, kw in enumerate(cfg.get("keywords", [])):
+        def step(i, kw=kw):
+            url = (f"https://data.usajobs.gov/api/search?ResultsPerPage=250&Page={i + 1}&HiringPath=student&Keyword="
+                   + kw.replace(" ", "%20"))
+            res = get_json(url, headers=headers, timeout=60).get("SearchResult") or {}
+            batch = res.get("SearchResultItems") or []
+            items.extend(batch)
+            return not batch or (i + 1) * 250 >= int(res.get("SearchResultCountAll") or 0)
+
+        _paged(f'search "{kw}"', 6, rep, step, must=n == 0)
+    for item in items:
+        d = item.get("MatchedObjectDescriptor") or {}
+        pid = d.get("PositionID") or d.get("PositionURI")
+        if pid in seen:
+            continue
+        seen.add(pid)
+        details = (d.get("UserArea") or {}).get("Details") or {}
+        desc = "\n".join(filter(None, [
+            details.get("JobSummary", ""), d.get("QualificationSummary", ""),
+            "\n".join(details.get("MajorDuties") or []),
+            "U.S. citizenship is required for federal positions.",
+        ]))
+        apply = (d.get("ApplyURI") or [d.get("PositionURI", "")])[0]
+        out.append({
+            "company": " / ".join(filter(None, [d.get("OrganizationName"), d.get("DepartmentName")])),
+            "title": d.get("PositionTitle", ""),
+            "location": d.get("PositionLocationDisplay", ""),
+            "url": apply,
+            "source": "USAJOBS",
+            "posted": _date_from_iso(d.get("PublicationStartDate")),
+            "description": desc,
+            "season_hint": "",
+            "emp_type": "Student (Pathways)",
+        })
     return out
 
 
 # ------------------------------------------------------------ run them all
 
-def fetch_all(cfg: dict, keep=_keep_all) -> tuple[list[dict], list[dict]]:
-    """Returns (jobs, source_status). One broken source never stops the rest.
-    keep(title) lets sites that need one request per posting skip unwanted titles."""
-    tasks = []  # (label, kind, callable)
+def source_tasks(cfg: dict, keep=_keep_all) -> list[tuple[str, str, str, dict, object]]:
+    """(name, label for the page, sources.toml kind, entry, fetch function) per source."""
+    tasks = []
     for src in cfg.get("list", []):
         tasks.append((src["name"], "Internship list", lambda s=src: fetch_simplify_list(s)))
     for src in cfg.get("csvlist", []):
@@ -1589,7 +2003,8 @@ def fetch_all(cfg: dict, keep=_keep_all) -> tuple[list[dict], list[dict]]:
     for c in cfg.get("jazzhr", []):
         tasks.append((c["name"], "JazzHR", lambda c=c: fetch_jazzhr(c["board"], c["name"], keep=keep)))
     for c in cfg.get("searchpage", []):
-        tasks.append((c["name"], "Search page", lambda c=c: fetch_searchpage(c["search"], c["path"], c["name"], keep=keep)))
+        tasks.append((c["name"], "Search page", lambda c=c: fetch_searchpage(c["search"], c["path"], c["name"], keep=keep,
+                                                                             content=c.get("content", ""))))
     for c in cfg.get("jobsfeed", []):
         tasks.append((c["name"], ".jobs feed", lambda c=c: fetch_jobsfeed(c["host"], c["name"], keep=keep)))
     for c in cfg.get("brassring", []):
@@ -1616,26 +2031,71 @@ def fetch_all(cfg: dict, keep=_keep_all) -> tuple[list[dict], list[dict]]:
         tasks.append((src["name"], "Internship list", lambda s=src: fetch_internlist(s)))
     if "usajobs" in cfg:
         tasks.append(("USAJOBS", "Federal", lambda: fetch_usajobs(cfg["usajobs"])))
+    # Which sources.toml section and entry each came from, for its career-site link
+    entries = {}
+    for kind in (*BOARD_KINDS, "list", "csvlist", "getro", "jobboard", "internlist"):
+        for c in cfg.get(kind, []):
+            entries.setdefault(c["name"], (kind, c))
+    entries.setdefault("USAJOBS", ("usajobs", {"careers": "https://www.usajobs.gov/Search/Results?hp=student"}))
+    return [(name, label, *entries.get(name, ("", {})), fn) for name, label, fn in tasks]
+
+
+def run_source(name: str, label: str, fn) -> tuple[list[dict], dict]:
+    """Read one source. Returns (postings, status): ok means the request worked, complete
+    that nothing cut the scan short (see Scan)."""
+    rep = Scan(name)
+    _local.scan = rep
+    t0 = time.time()
+    try:
+        jobs = fn()
+        for j in jobs:
+            j["source_id"] = name
+            # The page reads posted dates as YYYY-MM-DD; anything else would show "Invalid Date"
+            j["posted"] = _date_from_iso(j.get("posted"))
+        if rep.opened and rep.no_text:
+            rep.note(f"{rep.no_text} of {rep.opened} posting pages opened gave no description")
+        st = {"name": name, "kind": label, "ok": True, "complete": not rep.partial, "count": len(jobs),
+              "interns": sum(1 for j in jobs if _INTERNISH.search(j.get("title") or "")), "error": "",
+              "notes": rep.notes[:6]}
+    except Exception as e:  # noqa: BLE001 - report anything, keep going
+        jobs = []
+        st = {"name": name, "kind": label, "ok": False, "complete": False, "count": 0, "interns": 0,
+              "error": str(e)[:200], "notes": rep.notes[:6]}
+    finally:
+        _local.scan = None
+    st["seconds"] = round(time.time() - t0, 1)
+    return jobs, st
+
+
+def fetch_all(cfg: dict, keep=_keep_all, workers: int = 8) -> tuple[list[dict], list[dict]]:
+    """Returns (jobs, source_status). One broken source never stops the rest.
+    keep(title) lets sites that need one request per posting skip unwanted titles.
+    Each status says ok (the request worked), complete (nothing cut it short), the
+    error or notes, and the career-site link to check by hand."""
+    tasks = source_tasks(cfg, keep)
+    # Workday, Oracle and Eightfold sites take longest, so they start first
+    slow = {"Workday": 0, "Oracle": 1, "Eightfold": 1, "SuccessFactors": 1, "Phenom": 2, "iCIMS": 2}
+    tasks.sort(key=lambda t: slow.get(t[1], 3))
 
     def run(task):
-        label, kind, fn = task
-        try:
-            jobs = fn()
-            for j in jobs:
-                j["source_id"] = label
-                # The page reads posted dates as YYYY-MM-DD; anything else would show "Invalid Date"
-                j["posted"] = _date_from_iso(j.get("posted"))
-            return jobs, {"name": label, "kind": kind, "ok": True, "count": len(jobs), "error": ""}
-        except Exception as e:  # noqa: BLE001 - report anything, keep going
-            return [], {"name": label, "kind": kind, "ok": False, "count": 0, "error": str(e)[:160]}
+        name, label, kind, entry, fn = task
+        got, st = run_source(name, label, fn)
+        st["section"] = kind
+        st["careers"] = board_url(kind, entry) if kind else ""
+        return got, st
 
     jobs, status = [], []
-    with ThreadPoolExecutor(max_workers=8) as pool:
-        for got, st in pool.map(run, tasks):
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        # Logged as each source finishes, so a slow one is easy to spot
+        for fut in as_completed([pool.submit(run, t) for t in tasks]):
+            got, st = fut.result()
             jobs.extend(got)
             status.append(st)
-            mark = "ok " if st["ok"] else "ERR"
-            print(f"  [{mark}] {st['name']:<45} {st['count']:>5} jobs  {st['error']}")
+            mark = "ok " if st["ok"] and st["complete"] else "prt" if st["ok"] else "ERR"
+            print(f"  [{mark}] {st['name']:<45} {st['count']:>5} jobs {st['seconds']:>6}s  "
+                  f"{st['error'] or '; '.join(st['notes'])[:120]}", flush=True)
+    order = {t[0]: i for i, t in enumerate(tasks)}
+    status.sort(key=lambda s: order.get(s["name"], 0))
     return jobs, status
 
 
@@ -1769,6 +2229,8 @@ def _answer(url: str, accept: str = "application/json") -> tuple[int, str]:
     site can't be reached."""
     req = urllib.request.Request(url, headers={**_PAGE_HEADERS, "Accept": accept, "Accept-Encoding": "identity"})
     try:
+        with _slot(url):
+            _wait_turn(url)  # same pacing as request() on sites that rate-limit
         with urllib.request.urlopen(req, timeout=20) as resp:
             return resp.status, resp.read(200_000).decode("utf-8", "replace")
     except urllib.error.HTTPError as e:
@@ -1820,10 +2282,13 @@ def fetch_jobboard(src: dict, keep=_keep_all) -> list[dict]:
     before each posting's page is opened. When the page links to the company's own
     hiring system, that link becomes the Apply link; otherwise the board's page is the
     posting (several teams take applications there)."""
+    rep = _scan()
     items: dict[str, tuple] = {}  # link -> (title, company, place, posted)
-    for term in src.get("terms", ["intern", "co-op", "student"]):
-        for page in range(1, 11):
-            found = _RSS_ITEM.findall(_get_page(src["search"].format(term=urllib.parse.quote(term), page=page)))
+    for n, term in enumerate(src.get("terms", ["intern", "co-op", "student"])):
+        mine: set = set()
+
+        def step(i, term=term, mine=mine):
+            found = _RSS_ITEM.findall(_get_page(src["search"].format(term=urllib.parse.quote(term), page=i + 1)))
             new = 0
             for it in found:
                 link = _rss_field(it, "link")
@@ -1833,11 +2298,13 @@ def fetch_jobboard(src: dict, keep=_keep_all) -> list[dict]:
                     posted = email.utils.parsedate_to_datetime(_rss_field(it, "pubDate")).date().isoformat()
                 except (TypeError, ValueError):
                     posted = ""
-                if link and link not in items:
-                    items[link] = (title.strip(), company.strip(), place.strip(), posted)
+                if link and link not in mine:
+                    mine.add(link)
+                    items.setdefault(link, (title.strip(), company.strip(), place.strip(), posted))
                     new += 1
-            if not new:
-                break
+            return not new
+
+        _paged(f'search "{term}"', 15, rep, step, must=n == 0)
     wanted = [(link, *v) for link, v in items.items() if _wanted(v[0], keep)]
 
     def detail(p):
@@ -1864,6 +2331,7 @@ def fetch_jobboard(src: dict, keep=_keep_all) -> list[dict]:
             "posted": _date_from_iso(posting.get("datePosted")) or posted,
             "description": html_to_text(posting.get("description")),
             "season_hint": "",
+            "emp_type": _ld_type(posting),
             **({"motorsport": True} if src.get("motorsport") else {}),
         }
 

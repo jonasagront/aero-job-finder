@@ -6,20 +6,56 @@ results to a page I can open on my phone.
 
 **Job page:** https://jonasagront.github.io/aero-job-finder/
 
-The page has ten tabs. **New internships** sits in the top bar next to the update time; the rest are in the row of tabs:
+**New internships** and **Unread** sit in the top bar next to the update time; the rest are in the row of tabs:
 
 | Tab | What's in it |
 |---|---|
 | **New internships** | Everything the scan found in the 3 days up to the latest update, from every tab, grouped by the scan that found it ("This update", "Earlier today · 12:06 PM scan", "Yesterday"...) |
+| **Unread** | Every opportunity found since you started using the queue that you haven't reviewed (opened with Apply, or marked read), saved, applied to or dismissed, however many days ago it was found, as long as it's still within the 15-day limit (see below) |
 | **New this week** | Everything from the other tabs posted in the last 7 days |
 | **Summer 2027** | Aerospace and mechanical internships at aerospace companies (the main list) |
 | **Motorsports** | Engineering internships at racing teams and motorsport companies (NASCAR, IndyCar, F1 and sports car teams, race engine builders), plus racing roles at any company, for spring, summer or fall 2027, since race teams hire for every part of the season |
 | **Fall 2027 near UCF** | Fall 2027 internships and co-ops within 55 miles of UCF (Orlando to the Space Coast, Melbourne included), plus remote ones, any engineering discipline |
 | **All engineering** | Every Summer 2027 engineering internship from any company or major, with mechanical and aerospace ranked first and a discipline filter |
+| **All opportunities** | Every engineering internship and student program the scan found in the last 15 days, at any fit score, any term and anywhere in the U.S., with its own filters: term and year, state, remote, distance from UCF, posted date known or not, uncertain or not, and eligibility problems hidden or not. Active filters show as chips with a Reset button; they don't change the other tabs |
+| **Programs** | NASA OSTEM, JPL, NREIP, AFRL Scholars, SULI, SMART, Brooke Owens and Patti Grace Smith: status, deadlines and eligibility as each official page states them, with the date verified (see below) |
 | **Predicted** | Internships posted in past cycles that should come back for Summer 2027 or Fall 2027, with the date each is expected: coming up, due now, not seen yet (past last cycle's date), or already posted (see below) |
-| **Posted date unknown** | Postings whose posted date couldn't be found anywhere (see below); they're kept out of the other tabs until one turns up |
+| **Posting date unknown** | Postings whose posted date couldn't be found anywhere. They're also in the other tabs, labeled "Posting date unknown" with the day the scan first found them |
 | **Leads without a link** | Postings only intern-list.com has found, with a **Find posting** button instead of Apply (see below) |
-| **Big names** | About 50 well-known employers and programs, grouped into space, defense primes, defense tech, aviation, labs and programs, and fellowships (SpaceX, NASA, Lockheed, Northrop, RTX, Leidos, Sandia, NREIP, SULI, Brooke Owens...): when each usually recruits (a typical window from past cycles; NASA, SMART and SULI deadlines are the published ones), how many of its postings went up in the last 15 days, the earliest posting seen this cycle, and when its first one went up last cycle |
+| **Big names** | About 50 well-known employers and programs, grouped into space, defense primes, defense tech, aviation, labs and programs, and fellowships (SpaceX, NASA, Lockheed, Northrop, RTX, Leidos, Sandia, NREIP, SULI, Brooke Owens...): when each usually recruits (a typical window from past cycles; NASA, SMART and SULI deadlines are the published ones), how many of its postings went up in the last 15 days, the earliest posting seen this cycle, and when its first one went up last cycle. A company whose scan failed or was cut short says so instead of "nothing posted" |
+| **My list** | What you saved or applied to, plus a record of ones that are no longer listed; Export and Import move it between devices |
+
+**Scores rank, they don't hide.** Each posting first passes basic checks: it's an internship, co-op
+or student program (titles like Student Engineer, Engineering Trainee or Undergraduate Research
+Assistant count, and so does a hiring system's own "Intern" employment type; ambiguous ones are judged
+on the description), it's engineering work (from the title, or the majors the description lists), it's
+in the U.S., and it's within the age limit. Grad-student-only roles and full-time jobs with
+student-sounding titles are dropped. Everything that passes is in **All opportunities**; the curated
+tabs add their own score minimums and terms. A posting that couldn't be fully checked (no description,
+student status unclear, no term named) is kept and tagged with a "?" saying what's uncertain, and
+eligibility problems (graduation window, seniors only, GPA) stay visible as red tags. "Why this score"
+says why a posting isn't in each curated tab.
+
+**Dates.** A posting shows the employer's own posted date when its hiring system or page gives one,
+"Listed ... on <list>" when only an internship list or job board dated it, or "Posting date unknown",
+always next to when the scan first found it. Found is never shown as posted. The first-found date is
+kept in `data/seen.json` for 120 days after a posting was last on the page, so a posting that drops
+off (a source outage, a relisting under a new link) keeps its original date when it comes back.
+
+**Coverage.** Under the headline numbers, **Sources this update** counts sources read fully, partial
+(the request worked but something cut it short: a page cap, a page that failed, a site repeating
+itself, or the run's 24-minute collection budget running out on a slow, rate-limited day), failed (worked within the last day), stale (hasn't worked for over a day) and needing setup,
+and flags any source whose count suddenly dropped (40 postings to 0, say). Details lists each affected
+source's last successful scan, error and career-site link, the repair queue for boards found
+automatically, the coverage audit, and what the filters dropped. A posting that's missing from a
+partial or failed scan is kept, tagged "Not re-checked since ...", until it passes the 15-day limit;
+only a posting missing from a complete scan counts as closed.
+
+**Unread queue and device sync.** Unread, saved, applied and dismissed marks live in your browser's
+storage, so they don't sync between your phone and computer by themselves. **My list → Export my data**
+saves them to a file and **Import** on the other device merges them in. The queue starts with the last
+3 days of finds the first time you open the page. A posting relisted under a new link carries its
+marks over, so it isn't announced twice.
 
 Leads come from intern-list.com, which links to jobright.ai instead of the company, so they get
 their own tab and a **Find posting** button that searches for the company's own posting. A lead
@@ -36,7 +72,8 @@ it's still open (Greenhouse, Lever, Ashby, Workday and SmartRecruiters say so di
 sites count as closed when the posting's page is gone).
 When a posting's source gives no posted date, the scan opens the posting's own page for one, then
 checks the internship lists for the same company and title (the page then says which list the date
-came from). Postings with no date anywhere go in **Posted date unknown**.
+came from). Postings with no date anywhere stay in the normal tabs, labeled **Posting date unknown**
+with the day the scan first found them, and the 15-day limit counts from that day.
 
 **How the Predicted tab guesses dates.** `data/history.json` holds every engineering internship
 seen so far with its posted date: old copies of the Simplify list back to 2023 (pinned to a
@@ -147,6 +184,32 @@ Secrets stay private even though the repo is public.
 |---|---|---|
 | `USAJOBS_API_KEY` and `USAJOBS_EMAIL` | Federal student jobs (Air Force, Navy, Army, NASA, DoD) | Free at https://developer.usajobs.gov/apirequest/ (use the same email for both) |
 | `ANTHROPIC_API_KEY` | Claude writes a one-sentence fit review and a "lead with this" tip for top matches | https://console.anthropic.com (pay-as-you-go, about 20 reviews a day by default) |
+| Digest secrets (below) | The optional daily digest | Your email provider, ntfy.sh, or a Discord/Slack webhook |
+
+Without these secrets, those sources show as "needs setup" in the coverage line; nothing pretends
+to have read them.
+
+### Daily digest (off until you turn it on)
+
+Once a day it sends the internships found since the last digest (best fits first, linking to the
+Unread view for the rest), program deadlines in the next 3 weeks that were verified on the official
+pages, and any sources that are failing. Every scan writes what it would send to
+`data/digest_preview.md`, so you can read it before turning anything on (`python -m jobfinder.digest`
+prints the same thing locally). Nothing is ever sent until **both**:
+
+1. `enabled = true` under `[notify]` in `profile.toml` (`hour` sets the earliest Eastern hour it goes
+   out; scans run about every 5 hours, so it goes on the first scan after that hour), and
+2. at least one channel's secrets are set:
+   - **Email:** `SMTP_HOST`, `SMTP_USERNAME`, `SMTP_PASSWORD`, `DIGEST_TO` (optional `SMTP_PORT`,
+     default 587 with STARTTLS, and `DIGEST_FROM`). For Gmail: host `smtp.gmail.com` and an
+     [app password](https://myaccount.google.com/apppasswords), not your normal password.
+   - **Phone push:** `NTFY_TOPIC` (a long random name; anyone who knows it can read the messages),
+     then subscribe to that topic in the ntfy app. Optional `NTFY_SERVER`.
+   - **Discord or Slack:** `DIGEST_WEBHOOK_URL`, an incoming-webhook address.
+
+`data/notify_log.json` records every posting already sent (by its job ID, and its old ID if it was
+relisted), so nothing is announced twice. Secrets stay in GitHub's secret store; the repo never
+holds them.
 
 ---
 
@@ -178,7 +241,8 @@ skills it asks for instead, at 75% weight, so it can't outrank one whose preferr
 actually match.
 
 Fit labels: **Strong fit** 72+, **Good fit** 56 to 71, **Worth a look** below 56.
-Anything below 40 is hidden from Summer 2027, and below 30 from the other tabs.
+Anything below 40 is left out of Summer 2027, and below 30 out of the other curated tabs, but it
+stays in **All opportunities**, ranked by the same score.
 
 Tags like **U.S. person / ITAR** and **Clearance** are shown so I can filter quickly;
 they don't change the score.
@@ -204,9 +268,15 @@ they don't change the score.
   Catalyst, Accel, Energy Impact Partners, Techstars, Eclipse, The Engine) and RacerJobs (where most NASCAR teams post);
   each section of the file explains which part of a company's job link to copy.
   `[motorsport_companies]` sets which companies count as motorsport, and boards marked `motorsport = true`
-  feed the Motorsports tab. On Workday sites the scan also reads each site's internship filter ("Intern
-  (Fixed Term)", "Co-op/Intern"...), since the site's search ranks internships among thousands of
-  other jobs. The `[[popular]]`
+  feed the Motorsports tab. Workday sites list their openings newest first, so the scan reads each
+  one from the top until a whole page is older than the 15-day limit (plus 3 days' margin); every title
+  in that window is checked, however it's worded. The order is checked as it's read, and a site that
+  isn't newest first is read whole, or through its internship filter ("Intern (Fixed Term)",
+  "Co-op/Intern"...) and searches read to their last page. (The old scan stopped a search at the first
+  page with no internship titles, which on Northrop's site was page 1 of 82.) Oracle, UKG, Phenom,
+  SmartRecruiters and iCIMS searches stop the same way when their results are newest first. Workday
+  requests are paced per site, and a run stops turning pages after 24 minutes so it always publishes;
+  sources cut short are marked partial. The `[[popular]]`
   entries at the bottom set the Big names tab (companies and their usual recruiting months). The bottom of the job page
   shows which sources worked on the last run, so I know what to fix or remove. To let a
   company through the aerospace-only filter, add it to `[aerospace_companies]`. Career
@@ -214,11 +284,33 @@ they don't change the score.
   All engineering and Fall tabs.
 - **Career sites found automatically**: when a company on the aerospace list shows up on
   any internship list (this cycle's, or in the history from the past 15 months) with a link to a
-  hiring system the scan can read, its whole career site is scanned from then on. Other employers
-  get the same once they've listed 3 or more aerospace or mechanical internships in that time
-  (`engineering_min` under `[discover]`); those feed All engineering and Fall only. Adding a name
-  to `[aerospace_companies]` is usually enough to get a company fully covered. Found sites
-  are saved in `data/discovered_boards.json` and drop out on their own if they keep failing.
+  hiring system the scan can read (Greenhouse, Lever, Ashby, Workday, Oracle, SuccessFactors, Jibe,
+  iCIMS, SmartRecruiters, Workable, BambooHR, Rippling, Breezy, JazzHR, Pinpoint, Gem, ADP, UKG,
+  BrassRing, ApplicantPro), its whole career site is scanned from then on. Other employers are scanned
+  once they've listed 3 or more aerospace or mechanical internships in that time (`engineering_min`
+  under `[discover]`); with one or two, their board joins a **candidate queue** and a dozen candidates
+  are tried each run, validated when they answer. Separately, names in `[aerospace_companies]`,
+  `[motorsport_companies]` and `[discover] seeds` (robotics, test labs, manufacturing, energy,
+  racing teams) that have no board yet are **looked up by name** on Greenhouse, Lever, Ashby,
+  SmartRecruiters and Workable, 12 a run; a board only counts when the system's own company name
+  (or its postings' text) matches. Boards are told apart by address, not company name, so a
+  company's separate boards (an intern board, an early-talent site, a division) are all read.
+  Found sites are saved in `data/discovered_boards.json` with where each came from. One that fails
+  goes into a **repair queue**: retried every run three times, then after 1, 2, 4, 8 and at most 14
+  days, and never dropped; if the lists start linking the company to a different hiring system, the
+  new board replaces it. The page's coverage details list the repair queue, boards added this run,
+  candidates, and hiring systems the scan can't read yet (with how many relevant postings use them).
+- **`programs.toml`**: the Programs tab. Each program's status, deadlines and eligibility are copied
+  from its official page with the date verified; a date the page doesn't state isn't filled in, and
+  past-cycle timing is marked as an estimate. Each scan re-reads the pages it can and tags a program
+  "Page changed: re-check" when its page changes; update the entry and its `verified` date then.
+- **Coverage audit**: each run re-reads a few boards (rotating) as completely as the site allows
+  (Workday sites in full) and checks every in-scope posting there (internship, engineering, U.S.,
+  within 15 days) against the page. Misses are classified by where they were lost (discovery,
+  collection, pagination, parsing, deduplication, filtering, display) and saved with their links in
+  `data/coverage_audit.json`. The page reports coverage for the audited boards only.
+- **What got dropped**: `data/rejections.json` counts every posting the filters dropped by reason,
+  with examples, so filtering losses can be checked.
 - **`[predict]` in `profile.toml`**: which terms the Predicted tab covers (Summer and Fall 2027).
 - **`[motorsport]` in `profile.toml`**: the Motorsports tab's terms (spring, summer and fall 2027),
   its minimum score, and the title words that make a posting count as racing work anywhere.
@@ -229,8 +321,10 @@ they don't change the score.
 |---|---|
 | `run.py` | Runs the whole scan |
 | `jobfinder/` | Fetching, scoring, and page-building code |
+| `programs.toml` | The Programs tab's verified program details |
+| `tests/` | Checks for the 15-day limit, pagination, partial sources, low-score retention, undated postings, first-seen dates and duplicates (`python -m unittest discover tests`; the workflow runs them before each scan) |
 | `docs/index.html` | The job page (rebuilt every run) |
-| `data/` | Saved results so the page knows what's new; `data/history.json` is every posting seen, for the Predicted tab |
+| `data/` | Saved results: `jobs.json` (the page's postings), `seen.json` (when each posting was first found), `history.json` (every posting seen, for the Predicted tab), `source_health.json` and `last_status.json` (how each source did), `discovered_boards.json` and `discovery.json` (found boards, repair queue, name lookups), `coverage_audit.json`, `rejections.json`, `programs.json` (page checks), `digest_preview.md` and `notify_log.json` |
 | `.github/workflows/daily.yml` | The schedule (every 5 hours) |
 
 **Note:** GitHub pauses scheduled runs in repos with no activity for 60 days. If that ever

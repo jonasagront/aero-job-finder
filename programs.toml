@@ -1,0 +1,138 @@
+# =====================================================================
+#  Programs tab: undergraduate programs that aren't a company job board
+#
+#  Each entry was read on the program's own page on the date in `verified`.
+#  Only dates the official page states go in `deadlines` (with the page's own
+#  words in `text`); nothing is filled in from memory or past years.
+#  `estimate` is for past-cycle timing and always shows as an estimate.
+#
+#  Every scan re-reads `url` and flags the program when the page changes, so
+#  you know to re-check it and update this file (then set `verified`).
+#
+#  status: "open"        the page says applications are open
+#          "closed"      the page says this cycle is closed
+#          "published"   the page gives deadlines but doesn't say open/closed
+#          "not-yet"     the page says applications haven't opened
+#          "unverified"  couldn't confirm; check the page
+#  Individual internship postings still follow max_age_days (15) in
+#  profile.toml; these records follow each program's application cycle.
+# =====================================================================
+
+[[program]]
+name = "NASA OSTEM Internships"
+sponsor = "NASA Office of STEM Engagement"
+url = "https://www.nasa.gov/learning-resources/internship-programs/"
+apply = "https://stemgateway.nasa.gov/public/s/explore-opportunities"
+terms = ["Summer 2027", "Fall 2027"]
+status = "published"
+status_note = "The page lists deadlines but doesn't say whether applications are open. Projects are posted on NASA STEM Gateway on a rolling basis."
+eligibility = "U.S. citizens; 18 or older by the session start; 3.0 GPA on a 4.0 scale; enrolled full- or part-time in an accredited degree or certificate program (recent graduates may apply for the four sessions after graduating). STEM and non-STEM majors."
+verified = "2026-11-19"
+page_updated = "2026-11-04"
+deadlines = [
+  { term = "Summer 2027", date = "2027-03-01", text = "Summer 2027 Application Deadline: March 1, 2027 (11:59 p.m. EST)" },
+  { term = "Fall 2027", date = "2027-05-24", text = "Fall 2027 Application Deadline: May 24, 2027 (11:59 p.m. EST)" },
+]
+
+[[program]]
+name = "NASA JPL Summer Internship Program"
+sponsor = "NASA Jet Propulsion Laboratory"
+url = "https://www.jpl.nasa.gov/edu/internships/apply/jpl-summer-internship-program"
+apply = "https://jpleducation-external.jpl.nasa.gov/student_application/?program=JPLSIP"
+terms = ["Summer 2027"]
+status = "published"
+status_note = "The page gives the deadline but doesn't say whether applications are open."
+eligibility = "Currently enrolled undergraduate and graduate students in STEM at accredited U.S. universities; minimum 3.00 cumulative GPA; U.S. citizens and lawful permanent residents; available full time for at least 10 weeks in the summer."
+verified = "2026-11-19"
+deadlines = [
+  { term = "Summer 2027", date = "2027-03-12", text = "Application Deadline: Friday, March 12, 2027 at 5 p.m. PDT" },
+]
+
+[[program]]
+name = "Naval Research Enterprise Internship Program (NREIP)"
+sponsor = "Office of Naval Research"
+url = "https://www.navalsteminterns.us/internships/nreip/"
+apply = "https://www.navalsteminterns.us/internships/connect/students/"
+terms = ["Summer 2027"]
+status = "open"
+status_note = "Application enrollment for 2027 opened Sept. 15, 2026; the page gives the window as Sept. 15 to Nov. 30. Award letters go out January to March."
+eligibility = "U.S. citizens (some labs accept permanent residents and dual citizens); enrolled full time at an accredited four-year college or university; rising sophomores or later; graduating the spring before the internship or later. 10 weeks in the summer at a Navy lab."
+verified = "2026-11-19"
+deadlines = [
+  { term = "Summer 2027", date = "2026-11-30", text = "Application enrollment for 2027 opens Sept. 15, 2026 ... Apply by the Deadline (Sept. 15 – Nov. 30)" },
+]
+
+[[program]]
+name = "AFRL Scholars"
+sponsor = "Air Force Research Laboratory (run by USRA)"
+url = "https://afrlscholars.usra.edu/"
+apply = "https://afrlscholars.usra.edu/students/"
+terms = ["Summer 2027"]
+status = "open"
+status_note = "Call for applications: Summer 2027 full-time internship, in person at various AFRL locations."
+eligibility = "U.S. citizens; 16 or older by the application deadline. Undergraduate and graduate STEM students (and upper-level high school students)."
+verified = "2026-11-19"
+check = false  # the site refuses scripts (HTTP 403), so it can't be re-checked automatically
+deadlines = [
+  { term = "Summer 2027", date = "2027-01-11", text = "Summer 2027 Full-time Internship. Application Open Until Jan 11, 2027" },
+]
+
+[[program]]
+name = "DOE Science Undergraduate Laboratory Internships (SULI)"
+sponsor = "U.S. Department of Energy, Office of Science"
+url = "https://science.osti.gov/wdts/suli"
+apply = "https://wdts.orau.gov/suli/Account/Login"
+terms = ["Summer 2027", "Fall 2027"]
+status = "open"
+status_note = "The program page says it is open for applications for the Summer 2027 term. The Key Dates page notes all dates are tentative. Fall 2027 dates aren't published yet."
+eligibility = "U.S. citizens or lawful permanent residents; 18 or older at the start; enrolled full time at an accredited community college, two-year or four-year institution (or graduated within two years); at least one semester completed, with 6 STEM and 12 total credit hours; 3.0 cumulative GPA. Two recommendation letters."
+verified = "2026-11-19"
+estimate = "Fall terms: the Fall 2026 application ran March 12 to May 20, 2026 (past cycle; Fall 2027 dates not announced)."
+deadlines = [
+  { term = "Summer 2027", date = "2027-01-06", text = "Summer 2027: opens October 14, 2026; applications with recommendations due January 6, 2027 5:00 PM ET" },
+]
+
+[[program]]
+name = "DoD SMART Scholarship-for-Service"
+sponsor = "Department of War (Defense) STEM"
+url = "https://www.smartscholarship.org/smart"
+apply = "https://www.smartscholarship.org/smart"
+terms = ["Summer 2027"]
+status = "open"
+status_note = "A scholarship with paid summer internships at DoD facilities and a job after graduation. The page says applications are open annually from August 1 to the first Friday in December (Dec 4, 2026 this cycle)."
+eligibility = "Bachelor's, master's and doctoral students pursuing STEM degrees; see the page's eligibility checker for citizenship and other requirements."
+verified = "2026-11-19"
+check = false  # the page is built by JavaScript, so a script sees only "Loading..."
+deadlines = [
+  { term = "Summer 2027", date = "2026-12-04", text = "Applications are open annually from August 1 to the first Friday in December" },
+]
+
+[[program]]
+name = "Brooke Owens Fellowship"
+sponsor = "Brooke Owens Fellowship"
+url = "https://www.brookeowensfellowship.org/apply"
+apply = "https://www.brookeowensfellowship.org/apply"
+terms = ["Summer 2027"]
+status = "closed"
+status_note = "Class of 2027 application now closed (applications were due October 4, 2026)."
+eligibility = "Undergraduates with at least one year of coursework toward a bachelor's or associate degree, enrolled when applying; women and gender minorities; 18 or older; interested in an aerospace career. All nationalities may apply (ITAR may limit some placements)."
+verified = "2026-11-19"
+estimate = "The FAQ says applications typically open in early fall; the Class of 2027 deadline was October 4, 2026."
+deadlines = [
+  { term = "Summer 2027", date = "2026-10-04", text = "applications for the Class of 2027 are due October 4th, 2026" },
+]
+
+[[program]]
+name = "Patti Grace Smith Fellowship"
+sponsor = "Patti Grace Smith Fellowship"
+url = "https://www.pgsfellowship.org/apply"
+apply = "https://www.pgsfellowship.org/apply"
+terms = ["Summer 2027"]
+status = "closed"
+status_note = "The application window is closed; applications for the Class of 2027 were due Friday, October 9, 2026. Selections are typically announced in December."
+eligibility = "Students in a bachelor's program or any year of an associate's program; U.S. citizens, permanent residents, nationals, refugees or asylees legally permitted to work in the U.S.; not yet in the aerospace workforce (typically seeking a first paid aerospace internship)."
+verified = "2026-11-19"
+estimate = "The 2026 window ran August 18 to October 9."
+deadlines = [
+  { term = "Summer 2027", date = "2026-10-09", text = "Applications to join the Class 2027 were on Friday, October 9th" },
+]

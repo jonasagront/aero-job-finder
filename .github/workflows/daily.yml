@@ -18,7 +18,8 @@ concurrency:
 jobs:
   scan:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    # A scan takes about 10-15 minutes; run.py skips its optional coverage audit past 22.
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
 
@@ -26,11 +27,25 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Check the scan's rules (age limit, pagination, merging)
+        run: python -m unittest discover tests
+
       - name: Scan for internships
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           USAJOBS_API_KEY: ${{ secrets.USAJOBS_API_KEY }}
           USAJOBS_EMAIL: ${{ secrets.USAJOBS_EMAIL }}
+          # Daily digest delivery (optional; nothing is sent unless [notify] enabled = true
+          # in profile.toml AND one of these channels is set up; see README)
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          DIGEST_TO: ${{ secrets.DIGEST_TO }}
+          DIGEST_FROM: ${{ secrets.DIGEST_FROM }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          NTFY_SERVER: ${{ secrets.NTFY_SERVER }}
+          DIGEST_WEBHOOK_URL: ${{ secrets.DIGEST_WEBHOOK_URL }}
         run: python run.py
 
       - name: Save results

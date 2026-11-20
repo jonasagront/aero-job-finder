@@ -216,6 +216,62 @@ a.lnk{display:inline-flex;align-items:center;text-decoration:none}
   .pr .when b{font-size:16px}
 }
 
+/* coverage line under the stats */
+details.cov{margin-top:14px;border:1px solid var(--line);border-radius:3px;background:var(--surface)}
+details.cov>summary{list-style:none;display:flex;flex-wrap:wrap;gap:4px 14px;align-items:center;padding:9px 12px;font:400 12.5px/1.4 var(--mono);color:var(--ink2);cursor:pointer}
+details.cov>summary::-webkit-details-marker{display:none}
+details.cov>summary::after{content:"Details +";margin-left:auto;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+details.cov[open]>summary::after{content:"Details \2212"}
+.cov .lbl{font:500 11px/1.3 var(--mono);letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.cov b{font-weight:500}
+.c-ok{color:var(--pos)} .c-partial{color:var(--low)} .c-failed,.c-stale{color:var(--neg)} .c-off{color:var(--muted)}
+.covbody{padding:2px 12px 14px;font-size:13px}
+.covbody h3{margin:16px 0 6px;font:500 11px/1.3 var(--mono);letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.covbody p{margin:6px 0;color:var(--ink2);max-width:90ch}
+.covbody table{border-collapse:collapse;width:100%;font-size:12.5px}
+.covbody td,.covbody th{text-align:left;padding:5px 10px 5px 0;border-bottom:1px solid var(--line);vertical-align:top}
+.covbody th{font:500 10.5px/1.3 var(--mono);letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.covbody details{margin-top:12px}
+.covbody details>summary{cursor:pointer;font:500 11px/1.3 var(--mono);letter-spacing:.07em;text-transform:uppercase;color:var(--ink2)}
+.covwarn{display:inline-flex;align-items:center;gap:6px;color:var(--neg);background:none;border:0;padding:0;font:inherit;cursor:pointer;text-decoration:underline dotted}
+
+/* All opportunities filters */
+.afl{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center}
+.afl label{display:inline-flex;align-items:center;gap:6px;font-size:13px;color:var(--ink2)}
+.afl select{height:32px;font-size:13px}
+.reset{height:30px;padding:0 12px;border:1px solid var(--accent);border-radius:3px;background:none;color:var(--accent);font:500 11.5px/1 var(--mono);letter-spacing:.05em;text-transform:uppercase;cursor:pointer}
+.reset:hover{background:var(--accent-bg)}
+.chip{display:inline-flex;align-items:center;gap:6px;padding:2px 4px 2px 8px;border:1px solid var(--accent);border-radius:2px;color:var(--accent)}
+.chip button{border:0;background:none;color:inherit;cursor:pointer;font:500 13px/1 var(--mono);padding:0 3px}
+.tag.unc{border-style:dashed;color:var(--low)}
+.tag.unread{background:var(--mid);border-color:var(--mid);color:#fff;font-weight:600}
+.row.unread .title::before{content:"";display:inline-block;width:8px;height:8px;margin:0 8px 2px 0;border-radius:50%;background:var(--mid)}
+.lnk.sv{color:var(--mid)}
+.datebits{color:var(--muted)}
+
+/* programs */
+.pg{display:grid;grid-template-columns:110px minmax(0,1fr) 150px;gap:0 22px;padding:18px 0;border-bottom:1px solid var(--line)}
+.pg .when b{display:block;font:500 19px/1.1 var(--mono);letter-spacing:-.01em}
+.pg .when small{display:block;margin-top:6px;font:500 10px/1.25 var(--mono);letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.pg.s-open .when b{color:var(--pos)} .pg.s-published .when b{color:var(--mid)} .pg.s-closed .when b{color:var(--faint)}
+.pg p{margin:8px 0 0;font-size:13.5px;color:var(--ink2);max-width:80ch}
+.pg ul{margin:6px 0 0;padding-left:18px;font-size:13.5px}
+.pg q{color:var(--muted)}
+
+/* my list */
+.mine h3{margin:26px 0 0;padding-bottom:8px;border-bottom:1px solid var(--line2);font:500 11.5px/1.3 var(--mono);letter-spacing:.07em;text-transform:uppercase;color:var(--ink2)}
+.mine h3 span{margin-left:8px;color:var(--muted)}
+.hist{display:grid;grid-template-columns:90px minmax(0,1fr) 120px;gap:0 18px;padding:10px 0;border-bottom:1px solid var(--line);font-size:13.5px}
+.hist .st{font:500 11px/1.3 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:14px}
+
+@media (max-width:760px){
+  .pg{grid-template-columns:80px minmax(0,1fr);gap:0 14px}
+  .pg .acts{grid-column:1/-1;flex-direction:row;margin-top:12px;gap:8px}
+  .hist{grid-template-columns:70px minmax(0,1fr)}
+  .hist a{grid-column:2}
+}
+
 footer{margin-top:52px;padding-top:16px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
 footer details>summary{cursor:pointer;font:500 11px/1.3 var(--mono);letter-spacing:.07em;text-transform:uppercase;color:var(--ink2)}
 .tbl{overflow-x:auto}
@@ -261,13 +317,14 @@ footer td.bad{color:var(--neg)}
 <div class="wrap">
 <div class="top">
   <div class="brand"><svg width="16" height="16" viewBox="0 0 32 32" aria-hidden="true"><path d="M5 27 16 4l11 23-11-5.5z" fill="var(--accent)"/></svg><span class="bname">Aero job finder</span></div>
-  <div class="right"><button class="newbtn" id="newbtn" type="button" aria-pressed="false" hidden>New internships<span class="n" id="newn"></span></button><span class="stamp" id="stamp"></span><button class="theme" id="theme" type="button"></button></div>
+  <div class="right"><button class="newbtn" id="unreadbtn" type="button" aria-pressed="false" hidden title="Opportunities you haven't reviewed, saved, applied to or dismissed">Unread<span class="n" id="unreadn"></span></button><button class="newbtn" id="newbtn" type="button" aria-pressed="false" hidden>New internships<span class="n" id="newn"></span></button><span class="stamp" id="stamp"></span><button class="theme" id="theme" type="button"></button></div>
 </div>
 
 <header class="hero">
   <h1>Engineering internships</h1>
   <p id="sub"></p>
   <dl class="stats" id="stats"></dl>
+  <details class="cov" id="cov"><summary id="covsum"></summary><div class="covbody" id="covbody"></div></details>
 </header>
 
 <nav class="tabs" role="tablist" id="tabs" aria-label="Sections"></nav>
@@ -305,6 +362,18 @@ footer td.bad{color:var(--neg)}
     <label class="tog" id="seasonTog"><input type="checkbox" id="season"> <span id="seasonLabel"></span></label>
     <label class="tog"><input type="checkbox" id="hideOld"> <span id="oldLabel"></span></label>
     <label class="tog"><input type="checkbox" id="hideDone" checked> Hide applied and dismissed</label>
+    <button class="reset" id="markAll" type="button" hidden>Mark all as read</button>
+  </div>
+  <div class="ctl afl" id="allFilters" hidden>
+    <label>Term <select id="fSeason" aria-label="Season"><option value="">Any season</option><option>Spring</option><option>Summer</option><option>Fall</option><option>Winter</option><option value="none">Not stated</option></select></label>
+    <select id="fYear" aria-label="Year"><option value="">Any year</option></select>
+    <label>Where <select id="fState" aria-label="State"></select></label>
+    <select id="fRemote" aria-label="Remote"><option value="">On-site or remote</option><option value="only">Remote only</option><option value="no">No remote</option></select>
+    <select id="fMiles" aria-label="Distance"></select>
+    <select id="fDate" aria-label="Posted date"><option value="">Any posted date</option><option value="known">Posted date known</option><option value="unknown">Posting date unknown</option></select>
+    <select id="fUnc" aria-label="Uncertain"><option value="">Uncertain included</option><option value="hide">Hide uncertain</option><option value="only">Uncertain only</option></select>
+    <label class="tog"><input type="checkbox" id="fElig"> Hide eligibility problems</label>
+    <button class="reset" id="fReset" type="button">Reset filters</button>
   </div>
 </div>
 
@@ -312,6 +381,21 @@ footer td.bad{color:var(--neg)}
 <div id="list"></div>
 <button class="more" id="more" hidden>Show more</button>
 </div>
+
+<section id="progView" hidden>
+  <p class="bnote">Programs that aren't a company job board. Status, deadlines and eligibility are what each program's official page said on the date shown as verified; a date the page doesn't give is left out, and past-cycle timing is labeled as an estimate. Every scan re-reads each page it can and flags it when the page changes, so re-check those. Individual internship postings elsewhere on this page still follow the 15-day limit; these records follow each program's own application cycle.</p>
+  <div id="progList"></div>
+</section>
+
+<section id="mineView" class="mine" hidden>
+  <p class="bnote">Opportunities you saved or applied to, and a record of ones that are no longer listed. This is stored in this browser only: it doesn't sync between your phone and computer. Use Export to save it as a file and Import on another device (imports merge; nothing is deleted).</p>
+  <div class="tools">
+    <button class="reset" id="exportBtn" type="button">Export my data</button>
+    <label class="reset" style="display:inline-flex;align-items:center">Import<input type="file" id="importFile" accept="application/json,.json" hidden></label>
+    <span id="mineMsg" class="datebits"></span>
+  </div>
+  <div id="mineList"></div>
+</section>
 
 <section id="predView" hidden>
   <p class="bnote" id="predNote"></p>
@@ -347,7 +431,7 @@ footer td.bad{color:var(--neg)}
 <footer>
   <p id="foot"></p>
   <details>
-    <summary>Sources checked on this run</summary>
+    <summary>All sources checked on this run</summary>
     <div class="tbl"><table id="src"></table></div>
   </details>
 </footer>
@@ -368,6 +452,11 @@ const pref = {
   set(k, v){ try { localStorage.setItem('ajf-' + k, v); } catch(e){} }
 };
 let status = store.get();
+// ---- per-browser state: unread queue and activity history (stored here only; see My list)
+const jget = (k, d) => { try { const v = JSON.parse(localStorage.getItem(k) || 'null'); return v === null ? d : v; } catch(e){ return d; } };
+const jset = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch(e){} };
+let activity = jget('ajf-activity', {});   // key -> {s: status, at, c, t, u} for the My list history
+let unread = jget('ajf-unread', null);     // {since: ISO time, read: {key: date reviewed}}
 const PAGE = 60;
 let tier = 'all', limit = PAGE, pick = null;
 const $ = id => document.getElementById(id);
@@ -409,6 +498,38 @@ const foundGroup = j => {
 };
 const coMatch = (company, terms) => { const c = (company || '').toLowerCase(); return terms.some(t => t[0] === '=' ? c === t.slice(1) : c.includes(t)); };
 
+// The unread queue: everything found since the queue started stays unread until it's
+// reviewed (Apply or "Mark read"), saved, applied to or dismissed, however long it stays
+// on the page. The first visit starts it 3 days back, so it isn't the whole page.
+if(!unread || !unread.since) unread = {since: new Date(updMs - LATEST_HOURS * 36e5).toISOString(), read: {}};
+unread.read = unread.read || {};
+unread.force = unread.force || {};  // marked unread again by hand
+{ // forget review marks after 45 days, and carry state over from a posting's old link
+  const cut = daysBack(45);
+  for(const k in unread.read) if(unread.read[k] < cut) delete unread.read[k];
+  for(const k in unread.force) if(unread.force[k] < cut) delete unread.force[k];
+  for(const j of D.jobs) for(const a of (j.aka || [])){
+    if(status[a] && !status[j.key]) status[j.key] = status[a];
+    if(unread.read[a] && !unread.read[j.key]) unread.read[j.key] = unread.read[a];
+    if(activity[a] && !activity[j.key]) activity[j.key] = activity[a];
+  }
+  store.set(status); jset('ajf-unread', unread); jset('ajf-activity', activity);
+}
+const sinceMs = () => Date.parse(unread.since);
+const isUnread = j => !status[j.key] && !unread.read[j.key] && (!!unread.force[j.key] || foundMs(j) > sinceMs());
+const markRead = key => { delete unread.force[key]; if(!unread.read[key]){ unread.read[key] = D.today; } jset('ajf-unread', unread); };
+function setStatus(j, s){
+  status[j.key] = status[j.key] === s ? undefined : s;
+  if(!status[j.key]){ delete status[j.key]; delete activity[j.key]; }
+  else activity[j.key] = {s: status[j.key], at: D.today, c: j.company, t: j.title, u: j.url};
+  store.set(status); jset('ajf-activity', activity);
+}
+// Where a posting's date came from (older saved results only know posted/posted_from)
+const dateKind = j => j.date_kind || (j.posted ? (j.posted_from ? 'listing' : 'employer') : 'none');
+const WARN = j => j.flags.some(f => f.kind === 'warn');
+const C = D.coverage || {counts: {}};
+const problemSources = D.sources.filter(s => ['partial', 'failed', 'stale'].includes(s.state));
+
 // ---- theme: light unless dark (or the system's setting) is picked here
 const THEMES = ['light', 'dark', 'auto'];
 let theme = THEMES.includes(pref.get('theme', 'light')) ? pref.get('theme', 'light') : 'light';
@@ -422,19 +543,27 @@ applyTheme();
 // ---- sections
 const hasLeads = D.jobs.some(j => j.lead);
 const P = D.predicted;
-// "latest" (New internships) lives in the top bar beside the update time, not in the row of tabs
-const ORDER = ['latest', 'new', 'summer', 'motor', 'fall', 'broad', 'pred', 'undated', 'leads', 'big'].filter(k => k === 'new' || k === 'undated' ||
-  (k === 'latest' ? D.sources.length : k === 'leads' ? hasLeads : k === 'big' ? D.popular.length : k === 'pred' ? P.length : T[k]));
-const HASH = {latest:'new-internships', new:'new', summer:'summer', motor:'motorsports', fall:'fall', broad:'all', pred:'predicted', undated:'date-unknown', leads:'leads', big:'big-names'};
-const NAME = {latest:'New internships', new:'New this week', pred:'Predicted', undated:'Posted date unknown', leads:'Leads without a link', big:'Big names'};
-const VIEWS = ['big', 'pred'];  // sections that aren't a list of postings
+// "latest" (New internships) and "unread" live in the top bar beside the update time, not in the row of tabs
+const PROGS = D.programs || [];
+const ORDER = ['latest', 'unread', 'new', 'summer', 'motor', 'fall', 'broad', 'all', 'prog', 'pred', 'undated', 'leads', 'big', 'mine'].filter(k =>
+  ['new', 'undated', 'mine', 'unread'].includes(k) || (k === 'latest' ? D.sources.length : k === 'leads' ? hasLeads : k === 'big' ? D.popular.length
+    : k === 'pred' ? P.length : k === 'prog' ? PROGS.length : k === 'all' ? D.jobs.some(j => j.tracks.all) : T[k]));
+const HASH = {latest:'new-internships', unread:'unread', new:'new', summer:'summer', motor:'motorsports', fall:'fall', broad:'all', all:'all-opportunities',
+  prog:'programs', pred:'predicted', undated:'date-unknown', leads:'leads', big:'big-names', mine:'my-list'};
+const NAME = {latest:'New internships', unread:'Unread', new:'New this week', all:'All opportunities', prog:'Programs', pred:'Predicted',
+  undated:'Posting date unknown', leads:'Leads without a link', big:'Big names', mine:'My list'};
+const VIEWS = ['big', 'pred', 'prog', 'mine'];  // sections that aren't a list of postings
+const TOPBAR = ['latest', 'unread'];
 for(const k in T) NAME[k] = T[k].tab;
-const best = j => Object.entries(j.tracks).reduce((a, b) => !a || b[1].score > a[1].score ? b : a, null);
-// "New internships", "New this week", "Posted date unknown" and "Leads" gather postings from every other section
-const mixed = t => t === 'latest' || t === 'new' || t === 'undated' || t === 'leads';
-// Leads (no direct company link) only show in their own section
-const inTab = (j, t) => t === 'leads' ? !!j.lead : !j.lead &&
-  (t === 'latest' ? foundRecently(j) : t === 'undated' ? !j.posted : t === 'new' ? postedThisWeek(j) : t !== 'big' && !!j.posted && !!j.tracks[t]);
+// The best curated section for a posting ("all" only when it's in none of them)
+const best = j => { const e = Object.entries(j.tracks), c = e.filter(([k]) => k !== 'all');
+  return (c.length ? c : e).reduce((a, b) => !a || b[1].score > a[1].score ? b : a, null); };
+const curated = j => Object.keys(j.tracks).some(k => k !== 'all');
+// New internships, Unread, New this week, Posting date unknown and Leads gather postings from every other section
+const mixed = t => ['latest', 'unread', 'new', 'undated', 'leads'].includes(t);
+// Leads (no direct company link) only show in their own section and the unread queue
+const inTab = (j, t) => t === 'leads' ? !!j.lead : t === 'unread' ? isUnread(j) : !j.lead &&
+  (t === 'latest' ? foundRecently(j) : t === 'undated' ? !j.posted : t === 'new' ? postedThisWeek(j) : !VIEWS.includes(t) && !!j.tracks[t]);
 let tab = (() => {
   const h = location.hash.slice(1);
   const fromHash = Object.keys(HASH).find(k => HASH[k] === h);
@@ -446,27 +575,80 @@ const seasonChk = {};
 
 $('stamp').textContent = D.sources.length ? `Updated ${D.updated_label}` : '';
 $('sub').textContent = D.sources.length
-  ? `Scored against ${D.name}'s resume. ${D.sources.filter(s => s.ok).length} company career sites and internship lists checked every 5 hours.` +
-    (D.max_age ? ` Only postings from the last ${D.max_age} days are shown.` : '')
+  ? `Scored against ${D.name}'s resume. ${D.sources.filter(s => s.ok).length} company career sites and internship lists read every 5 hours.` +
+    (D.max_age ? ` Only postings from the last ${D.max_age} days are shown (by posted date, or by the day the scan first found them when no date is known).` : '')
   : 'Waiting for the first scan.';
 const c = D.counts;
 const nSummer = D.jobs.filter(j => inTab(j, 'summer')).length;
 $('stats').innerHTML = [
   [T.summer ? T.summer.tab + ' aerospace' : 'Postings', T.summer ? nSummer : D.jobs.length, ''],
-  ['Strong summer fits', c.strong, ''],
-  ['New today', c.new_today, c.new_today ? 'acc' : ''],
+  ['All opportunities', D.jobs.filter(j => inTab(j, 'all')).length, ''],
+  ['Found today', c.new_today, c.new_today ? 'acc' : ''],
   ['Posted this week', D.jobs.filter(j => inTab(j, 'new')).length, ''],
 ].map(([k, v, cls]) => `<div><dt>${esc(k)}</dt><dd class="${cls}">${v}</dd></div>`).join('');
 $('oldLabel').textContent = `Hide postings older than ${D.old_after} days`;
 
 function tabs(){
   const n = k => k === 'big' ? D.popular.length : k === 'pred' ? P.filter(p => isSoon(p) && pTerm(p) === pTerms[0] && (p.aero || p.mo || !pAeroDefault(pTerms[0]))).length
+    : k === 'prog' ? PROGS.filter(p => p.status === 'open' || p.status === 'published').length
+    : k === 'mine' ? Object.values(status).filter(s => s === 'saved' || s === 'applied').length
     : D.jobs.filter(j => inTab(j, k)).length;
   $('newbtn').hidden = !ORDER.includes('latest');
   $('newbtn').setAttribute('aria-pressed', tab === 'latest');
   $('newn').textContent = n('latest');
-  $('tabs').innerHTML = ORDER.filter(k => k !== 'latest').map(k => `<button class="tab" role="tab" data-tab="${k}" aria-selected="${k === tab}">${esc(NAME[k])}<span class="n">${n(k)}</span></button>`).join('');
+  $('unreadbtn').hidden = !D.jobs.length;
+  $('unreadbtn').setAttribute('aria-pressed', tab === 'unread');
+  $('unreadn').textContent = n('unread');
+  $('tabs').innerHTML = ORDER.filter(k => !TOPBAR.includes(k)).map(k => `<button class="tab" role="tab" data-tab="${k}" aria-selected="${k === tab}">${esc(NAME[k])}<span class="n">${n(k)}</span></button>`).join('');
 }
+
+// ---- coverage: which sources worked, so a failed scan never reads as "nothing posted"
+const fmtT = iso => iso ? new Date(iso).toLocaleString(undefined, {month:'short', day:'numeric', hour:'numeric', minute:'2-digit'}) : 'never';
+const STATE = {ok:'read fully', partial:'partial', failed:'failed', stale:'stale', off:'needs setup'};
+function coverage(){
+  const k = C.counts || {}, sus = D.sources.filter(s => s.suspicious);
+  $('cov').hidden = !D.sources.length;
+  $('covsum').innerHTML = `<span class="lbl">Sources this update</span>` +
+    ['ok', 'partial', 'failed', 'stale', 'off'].filter(s => k[s]).map(s => `<span class="c-${s}"><b>${k[s]}</b> ${STATE[s]}</span>`).join('') +
+    (sus.length ? `<span class="c-failed">⚠ ${sus.length} unexpected drop${sus.length > 1 ? 's' : ''}</span>` : '');
+  const bad = D.sources.filter(s => s.state && s.state !== 'ok' || s.suspicious)
+    .sort((a, b) => ['stale', 'failed', 'partial', 'off', 'ok'].indexOf(a.state) - ['stale', 'failed', 'partial', 'off', 'ok'].indexOf(b.state));
+  const row = s => `<tr><td>${esc(s.name)}<br><span class="datebits">${esc(s.kind)}</span></td><td class="c-${s.state}">${esc(STATE[s.state] || s.state)}${s.suspicious ? '<br><span class="c-failed">⚠ ' + esc(s.suspicious) + '</span>' : ''}</td>` +
+    `<td>${esc(fmtT(s.last_success))}${s.last_complete && s.last_complete !== s.last_success ? '<br><span class="datebits">complete: ' + esc(fmtT(s.last_complete)) + '</span>' : ''}</td>` +
+    `<td>${esc(s.error || (s.notes || []).join('; ') || '')}</td><td>${s.careers ? `<a href="${esc(s.careers)}" target="_blank" rel="noopener">Career site ↗</a>` : ''}</td></tr>`;
+  let h = `<p>"Read fully" means the request worked and nothing cut it short. <b>Partial</b>: it worked but stopped early (a page cap, a page that failed, a site that repeated itself), so postings it didn't return are kept from earlier scans, marked as not re-checked, instead of being treated as closed. <b>Failed</b>: no answer this time, but it worked within the last day. <b>Stale</b>: it hasn't worked for over a day; its postings stay (still subject to the ${D.max_age}-day limit) and are marked as not re-checked. Check those companies' career sites by hand.</p>`;
+  h += bad.length ? `<div class="tbl"><table><tr><th>Source</th><th>State</th><th>Last worked</th><th>Error or notes</th><th></th></tr>${bad.map(row).join('')}</table></div>` : '<p>Every source was read completely.</p>';
+  const dr = D.discovery || {};
+  if(dr.date){
+    const rep = dr.repair || [];
+    h += `<details><summary>Boards found automatically: ${Object.entries(dr.states || {}).map(([s, n]) => n + ' ' + s).join(', ')}</summary>` +
+      `<p>Boards that fail are retried every run three times, then after 1, 2, 4, 8 and at most 14 days; they're never dropped for failing. A board that moved to another hiring system is replaced when the lists link to the new one.</p>` +
+      (rep.length ? `<div class="tbl"><table><tr><th>Repair queue</th><th>Failing since</th><th>Next try</th><th>Error</th><th></th></tr>${rep.map(r => `<tr><td>${esc(r.name)}<br><span class="datebits">${esc(r.kind)} · ${r.fails} failed runs · last worked ${esc(r.last_ok || 'never')}</span></td><td>${esc(r.since)}</td><td>${esc(r.next_try)}</td><td>${esc(r.error)}</td><td>${r.link ? `<a href="${esc(r.link)}" target="_blank" rel="noopener">Career site ↗</a>` : ''}</td></tr>`).join('')}</table></div>` : '<p>Nothing in the repair queue.</p>') +
+      ((dr.added || []).length ? `<h3>Added this run</h3><p>${dr.added.map(a => esc(a.name) + ' (' + esc(a.kind) + ', ' + esc(a.via) + ')').join('; ')}</p>` : '') +
+      ((dr.moved || []).length ? `<h3>Moved or covered elsewhere</h3><p>${dr.moved.map(m => esc(m.name) + (m.moved_to ? ' → ' + esc(m.moved_to) : ' (another board covers it)')).join('; ')}</p>` : '') +
+      ((dr.candidates || []).length ? `<h3>Candidate boards waiting to be validated (${dr.candidates.length})</h3><p>${dr.candidates.slice(0, 25).map(r => esc(r.name)).join(', ')}</p>` : '') +
+      ((dr.unsupported || []).length ? `<h3>Hiring systems the scan can't read yet (relevant companies on the lists)</h3><p>${dr.unsupported.map(u => `${esc(u.host)} (${u.count}: ${esc(u.companies.join(', '))})`).join('; ')}</p>` : '') +
+      (dr.probed ? `<p>Name lookups: ${dr.probed.done} of ${dr.probed.names} names checked on Greenhouse, Lever, Ashby, SmartRecruiters and Workable so far; ${dr.probed.found} had a board.</p>` : '') + `</details>`;
+  }
+  const au = D.audit || {};
+  if(au.audits){
+    const pct = au.in_scope ? Math.round(100 * au.found / au.in_scope) : null;
+    h += `<details><summary>Coverage audit: ${au.found} of ${au.in_scope} in-scope postings found${pct !== null ? ' (' + pct + '%)' : ''} on ${au.boards} boards since ${esc(fmt(au.since))}</summary>` +
+      `<p>Each run, a few boards are re-read as completely as the site allows (Workday sites in full) and every internship there that passes the same basic checks and the ${D.max_age}-day limit is looked up on this page. This measures the audited boards only, not every employer.</p>` +
+      `<p>Misses by where they were lost: ${Object.entries(au.by_category || {}).map(([k, v]) => k + ' ' + v).join(', ') || 'none'}.</p>` +
+      ((au.recent_misses || []).length ? `<div class="tbl"><table><tr><th>Missed posting</th><th>Lost at</th><th>Why</th></tr>${au.recent_misses.map(m => `<tr><td><a href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.title)}</a><br><span class="datebits">${esc(m.source)} · audited ${esc(m.date)}</span></td><td>${esc(m.category)}</td><td>${esc(m.why)}</td></tr>`).join('')}</table></div>` : '') + `</details>`;
+  }
+  const rj = D.rejections || {};
+  if(Object.keys(rj).length){
+    h += `<details><summary>What the filters dropped this run (${D.read || 0} postings read)</summary>` +
+      Object.entries(rj).filter(([, v]) => Object.keys(v).length).map(([stage, v]) => `<h3>${esc(stage)}</h3><p>${Object.entries(v).map(([r, n]) => esc(r) + ': ' + n).join(' · ')}</p>`).join('') +
+      `<p>Examples of each are saved in data/rejections.json.</p></details>`;
+  }
+  if(D.digest) h += `<p class="datebits">Daily digest: ${esc(D.digest.status)}.</p>`;
+  $('covbody').innerHTML = h;
+}
+coverage();
+const covNote = () => problemSources.length ? ` <button class="covwarn" data-cov>${problemSources.length} source${problemSources.length > 1 ? 's' : ''} not fully read this update: this list may be missing postings</button>` : '';
 
 function bars(list, color){
   if(!list.length) return '<p style="color:var(--muted);font-size:13.5px;margin:0">Not enough descriptions yet.</p>';
@@ -478,14 +660,12 @@ function topSkills(jobs, field){
   return Object.entries(n).sort((a, b) => b[1] - a[1]).slice(0, 8).map(([name, v]) => ({name, pct: Math.round(100 * v / withDesc.length)}));
 }
 
-$('src').innerHTML = '<tr><th>Source</th><th>Type</th><th>Result</th></tr>' + D.sources.map(s =>
-  `<tr><td>${esc(s.name)}</td><td>${esc(s.kind)}</td><td class="${s.ok ? '' : 'bad'}">${s.ok ? s.count + ' postings read' : 'Failed: ' + esc(s.error)}</td></tr>`).join('');
-// Sites found automatically drop out on their own after repeated failures
+$('src').innerHTML = '<tr><th>Source</th><th>Type</th><th>Result</th><th>Last worked</th></tr>' + D.sources.map(s =>
+  `<tr><td>${s.careers ? `<a href="${esc(s.careers)}" target="_blank" rel="noopener">${esc(s.name)}</a>` : esc(s.name)}</td><td>${esc(s.kind)}</td><td class="${s.ok && s.complete !== false ? '' : 'bad'}">${s.ok ? s.count + ' postings read' + (s.complete === false ? ' (partial: ' + esc((s.notes || []).join('; ')) + ')' : '') : 'Failed: ' + esc(s.error)}</td><td>${esc(fmtT(s.last_success))}</td></tr>`).join('');
 const isFound = s => String(s.kind).includes('found automatically');
-const bad = D.sources.filter(s => !s.ok && !String(s.error).startsWith('skipped') && !isFound(s)).length;
 const nFound = D.sources.filter(isFound).length;
 $('foot').textContent = `${D.sources.length} sources checked` + (nFound ? ` (${nFound} career sites found automatically)` : '') +
-  (bad ? `, ${bad} failed (listed below; fix or remove them in sources.toml).` : '.') + ' Scores are keyword-based estimates. Always read the posting before applying.';
+  `. Sources that fail or stop early are listed at the top of the page. Scores are keyword-based estimates. Always read the posting before applying.`;
 
 const QI = {met:'✓', partial:'~', missing:'✗', check:'?', soft:'·'};
 const num = x => Number.isInteger(x) ? x : x.toFixed(1);
@@ -522,19 +702,25 @@ const where = tr => tr.miles === 'remote' ? 'Remote' : `${tr.miles} mi from ${T.
 
 function card(j){
   const st = status[j.key];
-  const k = trackKey(j), tr = j.tracks[k];
+  const k = trackKey(j), tr = j.tracks[k] || j.tracks.all || best(j)[1];
+  const un = isUnread(j);
   const tags = [];
-  if(j.first_seen >= D.today) tags.push('<span class="tag new">New</span>');
+  if(un) tags.push('<span class="tag unread">Unread</span>');
+  // "Found today" is when the scan found it, not when it was posted (see the date line)
+  if(j.first_seen >= D.today) tags.push('<span class="tag new">Found today</span>');
+  if(j.stale) tags.push(`<span class="tag old" title="${esc('Not seen on the latest scan because ' + j.stale.why + '. Kept until it passes the ' + D.max_age + '-day limit.')}">Not re-checked since ${esc(fmt(j.stale.since))}</span>`);
   if(isOld(j)) tags.push(`<span class="tag old">Older than ${D.old_after} days</span>`);
-  if(mixed(tab)){
-    for(const t of ORDER) if(j.tracks[t]) tags.push(`<span class="tag sec">${esc(t === 'fall' ? NAME[t] + ' · ' + where(j.tracks[t]) : NAME[t])}</span>`);
+  if(mixed(tab) || tab === 'all'){
+    for(const t of ORDER) if(t !== 'all' && T[t] && j.tracks[t]) tags.push(`<span class="tag sec">${tab === 'all' ? 'In ' : ''}${esc(t === 'fall' ? NAME[t] + ' · ' + where(j.tracks[t]) : NAME[t])}</span>`);
   } else if(k === 'fall'){
     tags.push(`<span class="tag sec">${esc(where(tr))}</span>`);
   }
+  if(tab === 'all' && j.geo && j.geo.mi != null && T.fall) tags.push(`<span class="tag sec">${j.geo.approx ? '~' : ''}${j.geo.mi} mi from ${esc(T.fall.home)}</span>`);
   tags.push(`<span class="tag ${tr.season === 'match' ? 'ok' : ''}">${esc(tr.season_label)}</span>`);
   if(k !== 'summer' && j.discipline) tags.push(`<span class="tag">${esc(j.discipline)}</span>`);
   const qt = qualTag(j.quals); if(qt) tags.push(qt);
   for(const f of j.flags) tags.push(`<span class="tag ${f.kind === 'info' ? '' : f.kind === 'good' ? 'ok' : f.kind}">${esc(f.label)}</span>`);
+  for(const u of j.uncertain || []) tags.push(`<span class="tag unc" title="Couldn't be settled automatically; kept so you can judge">? ${esc(u)}</span>`);
   const p = tr.parts, rows = [];
   if(j.matched.length) rows.push(`<dt>Your skills it asks for</dt><dd>${esc(j.matched.join(', '))}</dd>`);
   if(j.related.length) rows.push(`<dt>Transferable</dt><dd>${esc(j.related.join(', '))}</dd>`);
@@ -544,18 +730,23 @@ function card(j){
     ? `Preferred qualifications ${p.preferred}/40, required ${p.required}/25, ${fitName} ${p.fit}/20, eligibility ${p.eligibility}/15`
     : `${fitName} ${p.fit}/40, skills ${p.skills}/35, eligibility ${p.eligibility}/25`) +
     (p.requirements ? `, ${p.requirements} for missing required qualifications` : '') + `</dd>`);
+  const miss = Object.entries(j.misses || {}).filter(([t]) => T[t]);
+  if(miss.length) rows.push(`<dt>Not in these tabs</dt><dd>${miss.map(([t, why]) => esc(NAME[t]) + ': ' + esc(why)).join('<br>')}</dd>`);
   rows.push(`<dt>Found via</dt><dd>${esc(j.source)}${j.lead ? ' (no direct link: the button searches for the company\'s own posting)' : ''}</dd>`);
+  rows.push(`<dt>Dates</dt><dd>${dateDetail(j)}</dd>`);
   const ai = j.ai ? `<div class="ai"><b>Claude's take (${esc(j.ai.fit)}):</b> ${esc(j.ai.summary)}${j.ai.talking_point ? '<br><b>Lead with:</b> ' + esc(j.ai.talking_point) : ''}</div>` : '';
-  const age = ageDays(j.posted);
-  // posted_from names the list the date came from when the company's own site gave none
-  const when = j.posted
-    ? `<span>Posted ${fmt(j.posted)} (${age <= 0 ? 'today' : age + 'd ago'}${j.posted_from ? ', per ' + esc(j.posted_from) : ''})</span>`
-    : `<span title="Not on its source, its own listing page, or any internship list the scan reads">Posted date unknown</span>`;
+  const age = ageDays(j.posted), dk = dateKind(j);
+  // Employer's own date, a list's date (named), or none: never the day it was found
+  const when = dk === 'employer'
+    ? `<span>Posted ${fmt(j.posted)} (${age <= 0 ? 'today' : age + 'd ago'})</span>`
+    : dk === 'listing'
+    ? `<span title="The employer's own posted date isn't known; this is when ${esc(j.posted_from || 'a list')} listed it">Listed ${fmt(j.posted)} on ${esc(j.posted_from || 'a list')} (${age <= 0 ? 'today' : age + 'd ago'})</span>`
+    : `<span title="Not on its source, its own listing page, or any internship list the scan reads. It counts toward the ${D.max_age}-day limit from the day it was first found.">Posting date unknown</span>`;
   const meta = [j.location && `<span>${esc(j.location)}</span>`, when, `<span>${esc(foundLabel(j))}</span>`].filter(Boolean).join('');
   const apply = j.lead
-    ? `<a class="btn find" href="${esc(j.url)}" target="_blank" rel="noopener">Find posting ↗</a>`
-    : `<a class="btn" href="${esc(j.url)}" target="_blank" rel="noopener">Apply ↗</a>`;
-  return `<article class="row t-${tr.tier} ${st ? 'done' : ''}" data-key="${esc(j.key)}">
+    ? `<a class="btn find" href="${esc(j.url)}" target="_blank" rel="noopener" data-open>Find posting ↗</a>`
+    : `<a class="btn" href="${esc(j.url)}" target="_blank" rel="noopener" data-open>Apply ↗</a>`;
+  return `<article class="row t-${tr.tier} ${st === 'applied' || st === 'dismissed' ? 'done' : ''} ${un ? 'unread' : ''}" data-key="${esc(j.key)}">
     <div class="fit" title="Fit score out of 100"><b>${tr.score}</b><small>${TIER[tr.tier]}</small><div class="meter"><i style="width:${tr.score}%"></i></div></div>
     <div class="main">
       <div class="co">${esc(j.company)}</div>
@@ -568,10 +759,23 @@ function card(j){
     </div>
     <div class="acts">
       ${apply}
+      <button class="lnk ${st === 'saved' ? 'sv' : ''}" data-act="saved">${st === 'saved' ? 'Saved ★' : 'Save'}</button>
       <button class="lnk ${st === 'applied' ? 'on' : ''}" data-act="applied">${st === 'applied' ? 'Applied ✓' : 'Mark applied'}</button>
       <button class="lnk" data-act="dismissed">${st === 'dismissed' ? 'Dismissed' : 'Dismiss'}</button>
+      ${st ? '' : `<button class="lnk" data-act="read">${un ? 'Mark read' : 'Mark unread'}</button>`}
     </div>
   </article>`;
+}
+// Employer date, list date and first-found date, kept apart
+function dateDetail(j){
+  const dk = dateKind(j), out = [];
+  out.push(dk === 'employer' ? `Employer's posted date: ${fmtY(j.posted)}` : `Employer's posted date: not known`);
+  if(dk === 'listing') out.push(`Listed on ${esc(j.posted_from || 'a list')}: ${fmtY(j.posted)} (third-party date)`);
+  out.push(`First found by this scan: ${j.found_at ? esc(fmtT(j.found_at)) : esc(fmtY(j.first_seen))}`);
+  if(j.checked) out.push(`Last confirmed on its source: ${esc(fmtT(j.checked))}`);
+  if(j.stale) out.push(`Not seen on the latest scan: ${esc(j.stale.why)}`);
+  out.push(`Age for the ${D.max_age}-day limit counts from ${dk === 'none' ? 'the day it was first found' : 'the date above'}.`);
+  return out.join('<br>');
 }
 
 // ---- big names
@@ -591,7 +795,10 @@ function renderBig(){
     const live = inWin(p.window, m);
     const opens = p.window.length ? MON[p.window[0] - 1] : '';
     let st;
-    if(mine.length) st = `<button class="go" data-pick="${i}" title="Open postings from the last ${D.max_age} days">${mine.length} posted recently →</button><small>${strong ? `${strong} strong fit${strong > 1 ? 's' : ''}` : 'None rated strong yet'}</small>`;
+    const scanBad = p.scan && p.scan !== 'ok';
+    if(mine.length) st = `<button class="go" data-pick="${i}" title="Open postings from the last ${D.max_age} days">${mine.length} posted recently →</button><small>${strong ? `${strong} strong fit${strong > 1 ? 's' : ''}` : 'None rated strong yet'}${scanBad ? ' · scan ' + esc(p.scan) + ', may be missing some' : ''}</small>`;
+    // A failed or partial scan is never shown as "nothing posted"
+    else if(scanBad) st = `<span class="c-failed">Scan ${p.scan === 'partial' ? 'incomplete' : esc(p.scan)}</span><small title="${esc(p.scan_note || '')}">Couldn't confirm what's posted; check their site</small>`;
     else if(!p.scanned) st = live ? `<span class="hot">In season</span><small>Not scanned here; apply on their site</small>` : `<span>Usually opens ${opens}</span><small>Not scanned here; apply on their site</small>`;
     else st = live ? `<span class="hot">In season</span><small>Nothing posted in the last ${D.max_age} days</small>` : `<span>${opens ? 'Usually opens ' + opens : 'No usual window set'}</span><small>Nothing posted in the last ${D.max_age} days</small>`;
     const tl = `<div class="tl">${RECRUIT_YEAR.map(mo => `<i class="${inWin(p.window, mo) ? 'on' : ''} ${mo === m ? 'now' : ''}" title="${MON[mo - 1]}"></i>`).join('')}</div>` +
@@ -706,6 +913,105 @@ $('pnear').addEventListener('change', () => { pNear[pT] = $('pnear').checked; pL
 ['pq', 'pdisc'].forEach(id => $(id).addEventListener(id === 'pq' ? 'input' : 'change', () => { pLimit = PAGE; renderPred(); }));
 $('pmore').addEventListener('click', () => { pLimit += PAGE; renderPred(); });
 
+// ---- programs (NASA OSTEM, NREIP, AFRL Scholars, SULI...): not postings, so no 15-day limit
+const PST = {open:'Open', published:'Deadline published', 'not-yet':'Not open yet', unverified:'Unverified', closed:'Closed'};
+function renderProg(){
+  $('progList').innerHTML = PROGS.map(p => {
+    const next = p.deadlines.find(d => !d.passed);
+    const [b, s] = next ? [fmt(next.date), `${next.term} deadline · ${next.days === 0 ? 'today' : next.days + ' days'}`]
+      : [PST[p.status] || p.status, p.deadlines.length ? 'All listed deadlines passed' : 'No deadline published'];
+    const tags = [`<span class="tag ${p.status === 'open' ? 'ok' : p.status === 'closed' ? '' : 'old'}">${esc(PST[p.status] || p.status)}</span>`,
+      ...p.terms.map(t => `<span class="tag sec">${esc(t)}</span>`), `<span class="tag">Verified ${esc(fmtY(p.verified))}</span>`];
+    if(p.changed) tags.push(`<span class="tag warn">Page changed ${esc(fmt(p.changed))}: re-check</span>`);
+    if(p.check_ok === false) tags.push(`<span class="tag unc">${esc(p.check_error || 'Not re-checked automatically')}</span>`);
+    const dl = p.deadlines.map(d => `<li>${esc(d.term)}: <b>${esc(fmtY(d.date))}</b>${d.passed ? ' (passed)' : ''} <q>${esc(d.text)}</q></li>`).join('');
+    return `<article class="pg s-${esc(p.status)}">
+      <div class="when"><b>${esc(b)}</b><small>${esc(s)}</small></div>
+      <div class="main">
+        <div class="co">${esc(p.sponsor)}</div>
+        <h2 class="title">${esc(p.name)}</h2>
+        <div class="tags">${tags.join('')}</div>
+        ${p.status_note ? `<p>${esc(p.status_note)}</p>` : ''}
+        <details class="x"><summary>Eligibility and dates</summary><div class="body">
+          <p><b>Eligibility (as the page states):</b> ${esc(p.eligibility)}</p>
+          ${dl ? `<p><b>Deadlines on the official page:</b></p><ul>${dl}</ul>` : '<p>No deadline is published on the official page.</p>'}
+          ${p.estimate ? `<p><b>Estimate (past cycle, not an announced date):</b> ${esc(p.estimate)}</p>` : ''}
+          <p class="datebits">Verified on the official page ${esc(fmtY(p.verified))}${p.page_updated ? ' (page last updated ' + esc(fmtY(p.page_updated)) + ')' : ''}. Page last re-checked by the scan ${esc(fmtT(p.checked))}.</p>
+          ${(p.dates_seen || []).length && p.changed ? `<p class="datebits">Dates on the page now: ${p.dates_seen.map(esc).join(' · ')}</p>` : ''}
+        </div></details>
+      </div>
+      <div class="acts"><a class="btn" href="${esc(p.apply)}" target="_blank" rel="noopener">Apply ↗</a><a class="lnk" href="${esc(p.url)}" target="_blank" rel="noopener">Official page ↗</a></div>
+    </article>`;
+  }).join('') || '<div class="empty">No programs set up (programs.toml).</div>';
+}
+
+// ---- my list: saved and applied postings, and ones no longer listed
+function renderMine(){
+  const live = new Map(D.jobs.map(j => [j.key, j]));
+  const act = Object.entries(activity);
+  const section = (title, rows) => `<h3>${esc(title)}<span>${rows.length}</span></h3>` + (rows.length ? rows.join('') : '<div class="empty" style="padding:18px">None yet.</div>');
+  const activeOf = s => D.jobs.filter(j => status[j.key] === s);
+  const gone = act.filter(([k]) => !live.has(k)).sort((a, b) => (b[1].at || '').localeCompare(a[1].at || ''));
+  $('mineList').innerHTML = section('Saved', activeOf('saved').map(card)) + section('Applied', activeOf('applied').map(card)) +
+    `<h3>No longer listed<span>${gone.length}</span></h3><p class="datebits">Postings you acted on that have closed or passed the ${D.max_age}-day limit. Kept here as a record only.</p>` +
+    (gone.length ? gone.map(([k, a]) => `<div class="hist"><span class="st">${esc(a.s)} ${esc(fmt(a.at))}</span><span>${esc(a.c)}: ${esc(a.t)}</span>${a.u ? `<a class="lnk" href="${esc(a.u)}" target="_blank" rel="noopener">Old link ↗</a>` : '<span></span>'}</div>`).join('') : '');
+}
+$('exportBtn').addEventListener('click', () => {
+  const blob = new Blob([JSON.stringify({app: 'aero-job-finder', version: 1, exported: new Date().toISOString(), status, activity, unread}, null, 1)], {type: 'application/json'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob); a.download = `aero-job-finder-${D.today}.json`;
+  document.body.appendChild(a); a.click(); a.remove();
+  $('mineMsg').textContent = 'Exported.';
+});
+$('importFile').addEventListener('change', e => {
+  const f = e.target.files[0]; if(!f) return;
+  f.text().then(t => {
+    const d = JSON.parse(t);
+    if(d.app !== 'aero-job-finder') throw new Error('not an export from this page');
+    status = {...status, ...(d.status || {})}; activity = {...activity, ...(d.activity || {})};
+    if(d.unread){ unread.read = {...unread.read, ...(d.unread.read || {})}; if(d.unread.since > unread.since) unread.since = d.unread.since; }
+    store.set(status); jset('ajf-activity', activity); jset('ajf-unread', unread);
+    $('mineMsg').textContent = `Imported ${Object.keys(d.status || {}).length} statuses.`;
+    tabs(); renderMine();
+  }).catch(err => { $('mineMsg').textContent = 'Import failed: ' + err.message; });
+  e.target.value = '';
+});
+
+// ---- All opportunities filters (separate from the Summer and Fall tabs' settings, and not saved)
+const AF = {fSeason: '', fYear: '', fState: '', fRemote: '', fMiles: '', fDate: '', fUnc: '', fElig: false};
+function setupAll(){
+  const years = [...new Set(D.jobs.flatMap(j => (j.terms || []).map(t => t.split(' ')[1])))].sort();
+  $('fYear').innerHTML = '<option value="">Any year</option>' + years.map(y => `<option>${esc(y)}</option>`).join('');
+  const st = {};
+  for(const j of D.jobs) if(!j.lead) for(const s of (j.geo || {}).states || []) st[s] = (st[s] || 0) + 1;
+  $('fState').innerHTML = '<option value="">Anywhere in the U.S.</option>' + Object.keys(st).sort().map(s => `<option value="${s}">${s} (${st[s]})</option>`).join('');
+  const home = T.fall ? T.fall.home : 'home';
+  $('fMiles').innerHTML = `<option value="">Any distance</option>` + [25, 55, 100, 250, 500, 1000].map(m => `<option value="${m}">Within ${m} mi of ${esc(home)}</option>`).join('');
+  for(const k in AF) if($(k).type === 'checkbox') $(k).checked = AF[k]; else $(k).value = AF[k];
+}
+const afActive = () => Object.entries(AF).filter(([k, v]) => v);
+const AFLABEL = {fSeason: v => v === 'none' ? 'Term not stated' : v, fYear: v => v, fState: v => v, fRemote: v => v === 'only' ? 'Remote only' : 'No remote',
+  fMiles: v => `≤${v} mi`, fDate: v => v === 'known' ? 'Posted date known' : 'Posting date unknown', fUnc: v => v === 'hide' ? 'No uncertain' : 'Uncertain only', fElig: () => 'No eligibility problems'};
+function allOk(j){
+  const terms = j.terms || [], g = j.geo || {};
+  if(AF.fSeason === 'none' ? terms.length : AF.fSeason && !terms.some(t => t.startsWith(AF.fSeason) && (!AF.fYear || t.endsWith(AF.fYear)))) return false;
+  if(AF.fYear && AF.fSeason !== 'none' && !terms.some(t => t.endsWith(AF.fYear))) return false;
+  if(AF.fState && !(g.states || []).includes(AF.fState)) return false;
+  if(AF.fRemote === 'only' && !g.remote) return false;
+  if(AF.fRemote === 'no' && g.remote && !(g.states || []).length) return false;
+  if(AF.fMiles && !(g.mi != null && g.mi <= +AF.fMiles) && !(g.remote && AF.fRemote !== 'no')) return false;
+  if(AF.fDate === 'known' && !j.posted || AF.fDate === 'unknown' && j.posted) return false;
+  const unc = (j.uncertain || []).length > 0;
+  if(AF.fUnc === 'hide' && unc || AF.fUnc === 'only' && !unc) return false;
+  if(AF.fElig && WARN(j)) return false;
+  return true;
+}
+['fSeason', 'fYear', 'fState', 'fRemote', 'fMiles', 'fDate', 'fUnc', 'fElig'].forEach(id => $(id).addEventListener('change', () => {
+  AF[id] = $(id).type === 'checkbox' ? $(id).checked : $(id).value; limit = PAGE; render(); }));
+$('fReset').addEventListener('click', () => { for(const k in AF) AF[k] = k === 'fElig' ? false : ''; tier = 'all';
+  document.querySelectorAll('.seg button[data-tier]').forEach(x => x.setAttribute('aria-pressed', x.dataset.tier === 'all'));
+  $('disc').value = ''; $('q').value = ''; setupAll(); limit = PAGE; render(); });
+
 // Controls that depend on the section
 function setupTab(){
   tabs();
@@ -713,14 +1019,23 @@ function setupTab(){
   $('jobsView').hidden = view;
   $('bigView').hidden = tab !== 'big';
   $('predView').hidden = tab !== 'pred';
+  $('progView').hidden = tab !== 'prog';
+  $('mineView').hidden = tab !== 'mine';
   $('tabnote').hidden = view;
+  $('allFilters').hidden = tab !== 'all';
+  $('markAll').hidden = tab !== 'unread';
   if(tab === 'big'){ renderBig(); return; }
   if(tab === 'pred'){ setupPred(); renderPred(); return; }
+  if(tab === 'prog'){ renderProg(); return; }
+  if(tab === 'mine'){ renderMine(); return; }
+  if(tab === 'all') setupAll();
   const nNow = D.jobs.filter(j => !j.lead && inThisUpdate(j)).length;
-  $('tabnote').textContent = tab === 'latest' ? `Internships the scan found in the ${LATEST_HOURS / 24} days up to this update (${D.updated_label}), from every section, grouped by the scan that found them. ` +
+  $('tabnote').textContent = tab === 'latest' ? `Internships the scan found in the ${LATEST_HOURS / 24} days up to this update (${D.updated_label}), from every section, grouped by the scan that found them. Found is when the scan first saw it, not when it was posted. ` +
       (nNow ? `${nNow} ${nNow === 1 ? 'is' : 'are'} new in this update.` : 'Nothing new turned up in this update.')
-    : tab === 'new' ?`Everything posted in the last 7 days, from every section, best fit first.`
-    : tab === 'undated' ? `Postings with no posted date on their source, their own listing page, or any internship list the scan reads. They stay out of the other sections until a date turns up.`
+    : tab === 'unread' ? `Everything found since ${fmtY(unread.since.slice(0, 10))} that you haven't reviewed (opened with Apply or marked read), saved, applied to or dismissed, whichever tab it's in. Items stay here until you act on them or they pass the ${D.max_age}-day limit. Stored in this browser only (export it from My list).`
+    : tab === 'new' ? `Everything posted in the last 7 days, from every section, best fit first.`
+    : tab === 'all' ? `Every engineering internship and student program found in the last ${D.max_age} days, at any score, for any term, anywhere in the U.S. Low scores rank lower instead of disappearing, and postings that couldn't be fully checked are marked "?" rather than dropped. The filters here don't change the Summer or Fall tabs.`
+    : tab === 'undated' ? `Postings with no posted date on their source, their own listing page, or any internship list the scan reads. They also appear in the other tabs, labeled "Posting date unknown"; the ${D.max_age}-day limit counts from the day the scan first found them.`
     : tab === 'leads' ? `Postings only intern-list.com has found. Its links go to jobright.ai instead of the company, so Find posting searches for the company's own listing. A lead moves to the other sections on its own once a company career site the scan reads has the same job.`
     : T[tab].note;
   const inThis = D.jobs.filter(j => inTab(j, tab));
@@ -729,13 +1044,13 @@ function setupTab(){
   const discs = Object.entries(counts).sort((a, b) => b[1] - a[1]);
   $('disc').innerHTML = '<option value="">All disciplines</option>' + discs.map(([d, n]) => `<option value="${esc(d)}">${esc(d)} (${n})</option>`).join('');
   $('disc').hidden = tab === 'summer';
-  $('sort').querySelector('[value=near]').hidden = tab !== 'fall';
-  $('sort').value = tab === 'latest' ? 'found' : tab === 'new' ? 'new' : 'score';
-  $('seasonTog').hidden = mixed(tab);
+  $('sort').querySelector('[value=near]').hidden = tab !== 'fall' && tab !== 'all';
+  $('sort').value = tab === 'latest' || tab === 'unread' ? 'found' : tab === 'new' ? 'new' : 'score';
+  $('seasonTog').hidden = mixed(tab) || tab === 'all';
   // Only offer to hide old postings when the age limit in profile.toml lets some through
   $('hideOld').parentNode.hidden = mixed(tab) || !inThis.some(isOld);
   $('season').checked = !!seasonChk[tab];
-  if(!mixed(tab)) $('seasonLabel').textContent = tab === 'fall' ? 'Include nearby postings that don\'t name a season' : `Only ones that say ${T[tab].season_label}`;
+  if(!mixed(tab) && T[tab]) $('seasonLabel').textContent = tab === 'fall' ? 'Include nearby postings that don\'t name a season' : `Only ones that say ${T[tab].season_label}`;
   $('have').innerHTML = bars(topSkills(inThis, 'matched'), 'var(--pos)');
   $('need').innerHTML = bars(topSkills(inThis, 'gaps'), 'var(--neg)');
   limit = PAGE;
@@ -750,23 +1065,25 @@ function render(){
   const q = $('q').value.trim().toLowerCase(), disc = $('disc').hidden ? '' : $('disc').value;
   const hide = $('hideDone').checked, hideOld = $('hideOld').checked, seasonOn = $('season').checked;
   const pool = D.jobs.filter(j => inTab(j, tab));
+  const trOf = j => j.tracks[trackKey(j)] || j.tracks.all || best(j)[1];
   let jobs = pool.filter(j => {
-    const tr = j.tracks[trackKey(j)];
+    const tr = trOf(j);
     if(pick && !coMatch(j.company, pick.match)) return false;
     if(tier !== 'all' && tr.tier !== tier) return false;
-    if(hide && status[j.key]) return false;
+    if(hide && (status[j.key] === 'applied' || status[j.key] === 'dismissed')) return false;
     if(hideOld && isOld(j)) return false;
     if(disc && j.discipline !== disc) return false;
     if(tab === 'fall' && !seasonOn && tr.season !== 'match') return false;
-    if(tab !== 'fall' && !mixed(tab) && seasonOn && tr.season !== 'match') return false;
+    if(tab !== 'fall' && tab !== 'all' && !mixed(tab) && seasonOn && tr.season !== 'match') return false;
+    if(tab === 'all' && !allOk(j)) return false;
     if(q){
       const hay = [j.company, j.title, j.location, j.discipline, j.matched.join(' '), j.gaps.join(' ')].join(' ').toLowerCase();
       if(!q.split(/\s+/).every(w => hay.includes(w))) return false;
     }
     return true;
   });
-  const sc = j => j.tracks[trackKey(j)].score;
-  const mi = j => { const m = (j.tracks.fall || {}).miles; return typeof m === 'number' ? m : 999; };
+  const sc = j => trOf(j).score;
+  const mi = j => { const m = tab === 'all' ? (j.geo || {}).mi : (j.tracks.fall || {}).miles; return typeof m === 'number' ? m : 9999; };
   const s = $('sort').value;
   jobs.sort(s === 'found' ? (a,b) => foundKey(b).localeCompare(foundKey(a)) || sc(b) - sc(a)
          : s === 'new' ?(a,b) => ((b.posted || b.first_seen) + b.first_seen).localeCompare((a.posted || a.first_seen) + a.first_seen) || sc(b) - sc(a)
@@ -774,17 +1091,24 @@ function render(){
          : s === 'reqs' ? (a,b) => reqPct(b) - reqPct(a) || sc(b) - sc(a)
          : s === 'near' ? (a,b) => mi(a) - mi(b) || sc(b) - sc(a)
          : (a,b) => sc(b) - sc(a));
+  // Restrictions in force, so a short list never looks like "nothing out there"
+  const chips = tab === 'all' ? afActive().map(([k, v]) => `<span class="chip">${esc(AFLABEL[k](v))}<button data-clear="${k}" aria-label="Remove filter">×</button></span>`) : [];
+  if(tier !== 'all') chips.push(`<span class="chip">${esc(TIER[tier])}<button data-clear="tier" aria-label="Remove filter">×</button></span>`);
+  if(disc) chips.push(`<span class="chip">${esc(disc)}<button data-clear="disc" aria-label="Remove filter">×</button></span>`);
+  if(q) chips.push(`<span class="chip">“${esc(q)}”<button data-clear="q" aria-label="Clear search">×</button></span>`);
   $('shown').innerHTML = `<span>Showing ${Math.min(limit, jobs.length)} of ${jobs.length} matching / ${pool.length} in this section</span>` +
-    (pick ? `<span class="pick">${esc(pick.name)}<button id="unpick" aria-label="Show all companies">×</button></span>` : '');
+    (pick ? `<span class="pick">${esc(pick.name)}<button id="unpick" aria-label="Show all companies">×</button></span>` : '') + chips.join('') +
+    (chips.length > 1 ? `<button class="reset" data-clear="all" type="button">Reset</button>` : '') + covNote();
   const emptyMsg = tab === 'undated' && !pool.length ? 'Every posting on the page has a posted date.'
     : tab === 'leads' && !pool.length ? 'No leads right now: every posting has a direct company link.'
+    : tab === 'unread' && !pool.length ? 'Nothing unread: you\'ve reviewed everything found so far.'
     : tab === 'motor' && !pool.length ? T.motor.empty
     : tab === 'fall' && !pool.some(j => j.tracks.fall.season === 'match') ? T.fall.empty
     : tab === 'latest' && !pool.length ? `Nothing new found in the ${LATEST_HOURS / 24} days up to this update.`
-    : 'No postings match these filters. Clear the search or choose “All”.';
-  // In New internships, sorted by when found, each scan gets its own heading
+    : 'No postings match these filters. Clear the search or reset the filters.';
+  // In New internships and Unread, sorted by when found, each scan gets its own heading
   let html = '';
-  if(tab === 'latest' && s === 'found'){
+  if((tab === 'latest' || tab === 'unread') && s === 'found'){
     const shown = jobs.slice(0, limit), size = {};
     for(const j of jobs){ const g = foundGroup(j)[0]; size[g] = (size[g] || 0) + 1; }
     let last = null;
@@ -795,7 +1119,9 @@ function render(){
       html += card(j);
     }
   } else html = jobs.slice(0, limit).map(card).join('');
-  $('list').innerHTML = jobs.length ? html : `<div class="empty">${esc(emptyMsg)}</div>`;
+  // Never let a failed or partial scan read as "no internships available"
+  const caveat = problemSources.length ? `<p style="margin-top:10px;font-size:13px">${problemSources.length} source${problemSources.length > 1 ? 's were' : ' was'} not fully read this update, so postings may be missing here. See “Sources this update” at the top.</p>` : '';
+  $('list').innerHTML = jobs.length ? html : `<div class="empty">${esc(emptyMsg)}${caveat}</div>`;
   $('more').hidden = jobs.length <= limit;
   $('more').textContent = `Show ${Math.min(PAGE, jobs.length - limit)} more`;
 }
@@ -810,6 +1136,8 @@ function go(t){
 }
 $('tabs').addEventListener('click', e => { const b = e.target.closest('[data-tab]'); if(b){ pick = null; go(b.dataset.tab); } });
 $('newbtn').addEventListener('click', () => { pick = null; go('latest'); scrollTo({top: $('tabs').offsetTop - 8}); });
+$('unreadbtn').addEventListener('click', () => { pick = null; go('unread'); scrollTo({top: $('tabs').offsetTop - 8}); });
+$('markAll').addEventListener('click', () => { unread = {since: D.updated || new Date().toISOString(), read: unread.read, force: {}}; jset('ajf-unread', unread); tabs(); render(); });
 addEventListener('hashchange', () => { pick = null; go(Object.keys(HASH).find(k => HASH[k] === location.hash.slice(1))); });
 $('bigList').addEventListener('click', e => {
   const b = e.target.closest('[data-pick]');
@@ -820,25 +1148,46 @@ $('bigList').addEventListener('click', e => {
   render();
   scrollTo({top: $('tabs').offsetTop - 8});
 });
-$('shown').addEventListener('click', e => { if(e.target.id === 'unpick'){ pick = null; limit = PAGE; render(); } });
-document.querySelectorAll('.seg button').forEach(b => b.addEventListener('click', () => {
+$('shown').addEventListener('click', e => {
+  if(e.target.id === 'unpick'){ pick = null; limit = PAGE; render(); return; }
+  if(e.target.closest('[data-cov]')){ $('cov').open = true; $('cov').scrollIntoView({behavior: 'smooth'}); return; }
+  const c = e.target.closest('[data-clear]'); if(!c) return;
+  const k = c.dataset.clear;
+  if(k === 'all'){ $('fReset').click(); return; }
+  if(k === 'tier'){ tier = 'all'; document.querySelectorAll('.seg button[data-tier]').forEach(x => x.setAttribute('aria-pressed', x.dataset.tier === 'all')); }
+  else if(k === 'disc') $('disc').value = '';
+  else if(k === 'q') $('q').value = '';
+  else { AF[k] = k === 'fElig' ? false : ''; setupAll(); }
+  limit = PAGE; render();
+});
+// Only the fit buttons (the Predicted tab has its own button groups)
+document.querySelectorAll('.seg button[data-tier]').forEach(b => b.addEventListener('click', () => {
   tier = b.dataset.tier;
-  document.querySelectorAll('.seg button').forEach(x => x.setAttribute('aria-pressed', x === b));
+  document.querySelectorAll('.seg button[data-tier]').forEach(x => x.setAttribute('aria-pressed', x === b));
   limit = PAGE;
   render();
 }));
 $('season').addEventListener('change', () => { seasonChk[tab] = $('season').checked; });
 ['q','disc','sort','season','hideOld','hideDone'].forEach(id => $(id).addEventListener(id === 'q' ? 'input' : 'change', () => { limit = PAGE; render(); }));
 $('more').addEventListener('click', () => { limit += PAGE; render(); });
-$('list').addEventListener('click', e => {
+const byKey = new Map(D.jobs.map(j => [j.key, j]));
+function onCard(e){
+  const row = e.target.closest('.row');
+  if(!row) return;
+  const j = byKey.get(row.dataset.key);
+  if(!j) return;
+  if(e.target.closest('[data-open]')){ markRead(j.key); setTimeout(() => { tabs(); render(); }, 0); return; }  // opening it counts as reviewed
   const btn = e.target.closest('button[data-act]');
   if(!btn) return;
-  const key = btn.closest('.row').dataset.key;
-  status[key] = status[key] === btn.dataset.act ? undefined : btn.dataset.act;
-  if(!status[key]) delete status[key];
-  store.set(status);
-  render();
-});
+  if(btn.dataset.act === 'read'){
+    if(isUnread(j)) markRead(j.key);
+    else { delete unread.read[j.key]; unread.force[j.key] = D.today; jset('ajf-unread', unread); }
+  } else setStatus(j, btn.dataset.act);
+  tabs();
+  if(tab === 'mine') renderMine(); else render();
+}
+$('list').addEventListener('click', onCard);
+$('mineList').addEventListener('click', onCard);
 setupTab();
 render();
 })();
@@ -889,14 +1238,27 @@ def track_info(profile: dict) -> dict:
     return info
 
 
+def _page_job(j: dict) -> dict:
+    out = {k: j.get(k) for k in (
+        "key", "company", "title", "location", "url", "source", "posted", "posted_from", "date_kind", "first_seen",
+        "tracks", "discipline", "matched", "related", "gaps", "flags", "ai", "quals", "has_description", "lead",
+        "found_at", "terms", "uncertain", "misses", "geo", "stale", "aka", "checked")}
+    # Keep the page light: drop empty fields, and for postings only in All opportunities,
+    # the qualification-by-qualification lists beyond the summary (the scores stay)
+    always = ("key", "company", "title", "location", "url", "source", "posted", "first_seen", "tracks", "matched",
+              "related", "gaps", "flags")
+    out = {k: ("" if v is None and k in always else v) for k, v in out.items()
+           if v not in (None, [], {}, "") or k in always}
+    if out.get("quals") and set(out["tracks"]) == {"all"}:
+        out["quals"] = {"summary": out["quals"].get("summary"), "preferred": [], "required": []}
+    return out
+
+
 def build_page(jobs: list[dict], sources: list[dict], profile: dict, now: dt.datetime,
                popular: list[dict] | None = None, predicted: list[dict] | None = None,
-               pred_info: dict | None = None) -> str:
+               pred_info: dict | None = None, extras: dict | None = None) -> str:
     today = now.date().isoformat()
-    page_jobs = [{k: j.get(k) for k in (
-        "key", "company", "title", "location", "url", "source", "posted", "posted_from", "first_seen", "tracks",
-        "discipline", "matched", "related", "gaps", "flags", "ai", "quals", "has_description", "lead", "found_at")}
-                 for j in jobs]
+    page_jobs = [_page_job(j) for j in jobs]
     try:
         from zoneinfo import ZoneInfo
         eastern = now.astimezone(ZoneInfo("America/New_York"))
@@ -923,6 +1285,7 @@ def build_page(jobs: list[dict], sources: list[dict], profile: dict, now: dt.dat
             "strong": sum(1 for j in jobs if not j.get("lead") and j["tracks"].get("summer", {}).get("tier") == "strong"),
             "new_today": sum(1 for j in jobs if not j.get("lead") and j.get("first_seen") == today),
         },
+        **(extras or {}),
     }
     blob = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
     return TEMPLATE.replace("__DATA__", blob)

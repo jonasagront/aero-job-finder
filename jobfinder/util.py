@@ -7,16 +7,72 @@ from __future__ import annotations
 import gzip
 import html
 import json
+import random
 import re
+import threading
 import time
 import urllib.error
 import urllib.request
+from urllib.parse import urlparse
 
 USER_AGENT = "aero-job-finder/1.0 (personal internship search; github.com/jonasagront/aero-job-finder)"
+PER_HOST = 6  # requests to one host at a time, so one site never gets the whole scan at once
 
 
 class FetchError(Exception):
-    pass
+    def __init__(self, message: str = "", status: int | None = None):
+        super().__init__(message)
+        self.status = status  # the HTTP status, when the site answered with an error
+
+
+# Hosts that rate-limit busy scans (HTTP 429): at most this many requests at once, spaced at
+# least this many seconds apart, per host. Workday's limit is per company site; reading a
+# big site to its last page is fine at this pace. The gap doubles (up to 3 s) after a 429.
+PACED = {"myworkdayjobs.com": (3, 0.35), "myworkdaysite.com": (3, 0.35)}
+
+_slots: dict[str, threading.BoundedSemaphore] = {}
+_slots_lock = threading.Lock()
+_gap: dict[str, float] = {}
+_next: dict[str, float] = {}
+
+
+def _paced(host: str):
+    return next((v for suffix, v in PACED.items() if host == suffix or host.endswith("." + suffix)), None)
+
+
+def _slot(url: str) -> threading.BoundedSemaphore:
+    host = urlparse(url).netloc.lower()
+    with _slots_lock:
+        if host not in _slots:
+            p = _paced(host)
+            _slots[host] = threading.BoundedSemaphore(p[0] if p else PER_HOST)
+            if p:
+                _gap[host] = p[1]
+        return _slots[host]
+
+
+def _wait_turn(url: str) -> None:
+    host = urlparse(url).netloc.lower()
+    if host not in _gap:
+        return
+    with _slots_lock:
+        now = time.monotonic()
+        at = max(now, _next.get(host, 0.0))
+        _next[host] = at + _gap[host]
+    if at > now:
+        time.sleep(at - now)
+
+
+def _slow_down(url: str) -> None:
+    host = urlparse(url).netloc.lower()
+    with _slots_lock:
+        if host in _gap:
+            _gap[host] = min(3.0, _gap[host] * 2)
+
+
+def backoff(attempt: int, cap: float = 30.0) -> float:
+    """Seconds to wait before retry number attempt+1: 1.5, 3, 6, 12... plus jitter."""
+    return min(cap, 1.5 * 2 ** attempt) + random.uniform(0, 0.75)
 
 
 def request(url: str, method: str = "GET", data=None, headers: dict | None = None,
@@ -32,22 +88,27 @@ def request(url: str, method: str = "GET", data=None, headers: dict | None = Non
     for attempt in range(retries + 1):
         try:
             req = urllib.request.Request(url, data=body, headers=hdrs, method=method)
-            with urllib.request.urlopen(req, timeout=timeout) as resp:
-                raw = resp.read()
-                if resp.headers.get("Content-Encoding") == "gzip":
-                    raw = gzip.decompress(raw)
-                return raw.decode("utf-8", "replace")
+            with _slot(url):
+                _wait_turn(url)
+                with urllib.request.urlopen(req, timeout=timeout) as resp:
+                    raw = resp.read()
+                    if resp.headers.get("Content-Encoding") == "gzip":
+                        raw = gzip.decompress(raw)
+                    return raw.decode("utf-8", "replace")
         except urllib.error.HTTPError as e:
-            last = FetchError(f"HTTP {e.code}")
+            last = FetchError(f"HTTP {e.code}", e.code)
             if e.code in (400, 401, 403, 404, 405, 410, 422):
                 break  # retrying won't help
-            if e.code == 429 and attempt < retries:  # rate limited: wait as asked, then retry
+            if e.code == 429:
+                _slow_down(url)
+            if e.code in (429, 503) and attempt < retries:  # busy or rate limited: wait as asked, then retry
                 wait = e.headers.get("Retry-After", "")
-                time.sleep(min(60, int(wait)) if wait.isdigit() else 10 * (attempt + 1))
+                time.sleep(min(60, int(wait)) if wait.isdigit() else backoff(attempt + 2))
                 continue
         except Exception as e:  # timeouts, DNS, bad SSL...
             last = FetchError(str(e) or e.__class__.__name__)
-        time.sleep(1.5 * (attempt + 1))
+        if attempt < retries:
+            time.sleep(backoff(attempt))
     raise last
 
 
