@@ -5,7 +5,10 @@
   "Mill": "2026-11-20",
   "ABB": "2026-11-20",
   "AECOM": "2026-11-20",
-  "Niantic Spatial": "2026-11-20"
+  "Niantic Spatial": "2026-11-20",
+  "10x Genomics": "2026-11-20",
+  "ALSO": "2026-11-20",
+  "Atomic Semi": "2026-11-20"
  },
  "runs": [
   {
@@ -69,6 +72,36 @@
      "misses": [],
      "read": "full list, no title filter",
      "openings": 20
+    }
+   ]
+  },
+  {
+   "date": "2026-11-20",
+   "boards": [
+    {
+     "source": "10x Genomics",
+     "kind": "greenhouse",
+     "in_scope": 0,
+     "found": 0,
+     "misses": [],
+     "error": "HTTP 404"
+    },
+    {
+     "source": "ALSO",
+     "kind": "ashby",
+     "in_scope": 0,
+     "found": 0,
+     "misses": [],
+     "read": "full list, no title filter",
+     "openings": 20
+    },
+    {
+     "source": "Atomic Semi",
+     "kind": "ashby",
+     "in_scope": 0,
+     "found": 0,
+     "misses": [],
+     "error": "HTTP 404"
     }
    ]
   }

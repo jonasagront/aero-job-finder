@@ -95,47 +95,95 @@
   "chip ganassi racing": {
    "d": "2026-11-20",
    "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "collins aerospace": {
+   "d": "2026-11-20",
+   "r": "workable:collins-aerospace (0 openings)"
+  },
+  "consolidated precision products": {
+   "d": "2026-11-20",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "corning": {
+   "d": "2026-11-20",
+   "r": "workable:corning (0 openings)"
+  },
+  "cosworth": {
+   "d": "2026-11-20",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "dale coyne": {
+   "d": "2026-11-20",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "dallara": {
+   "d": "2026-11-20",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "dassault falcon": {
+   "d": "2026-11-20",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "dayton t. brown": {
+   "d": "2026-11-20",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "diligent robotics": {
+   "d": "2026-11-20",
+   "r": "greenhouse:diligentrobotics (9 openings)"
+  },
+  "ducommun": {
+   "d": "2026-11-20",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "dynetics": {
+   "d": "2026-11-20",
+   "r": "smartrecruiters:dynetics (4 openings)"
+  },
+  "dyson": {
+   "d": "2026-11-20",
+   "r": "workable:dyson (0 openings)"
   }
  },
  "report": {
   "date": "2026-11-20",
   "added": [
    {
-    "name": "Barnes Aerospace",
+    "name": "Collins Aerospace",
     "kind": "workable",
     "via": "name probe (aerospace_companies)",
     "openings": 0
    },
    {
-    "name": "Battelle",
+    "name": "Corning",
     "kind": "workable",
     "via": "name probe (discover seeds)",
     "openings": 0
    },
    {
-    "name": "Boston Scientific",
+    "name": "Diligent Robotics",
+    "kind": "greenhouse",
+    "via": "name probe (discover seeds)",
+    "openings": 9
+   },
+   {
+    "name": "Dynetics",
+    "kind": "smartrecruiters",
+    "via": "name probe (aerospace_companies)",
+    "openings": 4
+   },
+   {
+    "name": "Dyson",
     "kind": "workable",
     "via": "name probe (discover seeds)",
     "openings": 0
-   },
-   {
-    "name": "Built Robotics",
-    "kind": "workable",
-    "via": "name probe (discover seeds)",
-    "openings": 0
-   },
-   {
-    "name": "Carbon Robotics",
-    "kind": "ashby",
-    "via": "name probe (discover seeds)",
-    "openings": 3
    }
   ],
   "states": {
-   "active": 355,
-   "candidate": 157,
-   "repair": 6,
-   "covered": 2
+   "active": 370,
+   "candidate": 148,
+   "covered": 6,
+   "repair": 2
   },
   "repair": [
    {
@@ -151,13 +199,27 @@
     "moved_to": ""
    },
    {
+    "name": "Dell Technologies (External)",
+    "kind": "workday",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Dell CSG Hardware Engineering Intern)",
+    "link": "https://dell.wd1.myworkdayjobs.com/External",
+    "fails": 2,
+    "error": "Workday shows its maintenance page for this site: an outage, or the company moved to another hiring system",
+    "next_try": "2026-11-20",
+    "last_ok": "2026-11-20",
+    "since": "2026-11-20",
+    "moved_to": ""
+   }
+  ],
+  "moved": [
+   {
     "name": "Mach Industries (mach)",
     "kind": "ashby",
     "via": "list link",
     "link": "https://jobs.ashbyhq.com/mach",
-    "fails": 2,
+    "fails": 3,
     "error": "HTTP 404",
-    "next_try": "2026-11-20",
+    "next_try": "2026-11-21",
     "last_ok": "",
     "since": "2026-11-20",
     "moved_to": ""
@@ -167,9 +229,9 @@
     "kind": "greenhouse",
     "via": "list link",
     "link": "https://job-boards.greenhouse.io/rsinternboard",
-    "fails": 2,
+    "fails": 3,
     "error": "HTTP 404",
-    "next_try": "2026-11-20",
+    "next_try": "2026-11-21",
     "last_ok": "",
     "since": "2026-11-20",
     "moved_to": ""
@@ -179,9 +241,9 @@
     "kind": "lever",
     "via": "list link",
     "link": "https://jobs.lever.co/leolabs-2",
-    "fails": 2,
+    "fails": 3,
     "error": "HTTP 404",
-    "next_try": "2026-11-20",
+    "next_try": "2026-11-21",
     "last_ok": "",
     "since": "2026-11-20",
     "moved_to": ""
@@ -191,27 +253,13 @@
     "kind": "lever",
     "via": "list link",
     "link": "https://jobs.lever.co/saronic",
-    "fails": 2,
+    "fails": 3,
     "error": "HTTP 404",
-    "next_try": "2026-11-20",
+    "next_try": "2026-11-21",
     "last_ok": "",
     "since": "2026-11-20",
     "moved_to": ""
    },
-   {
-    "name": "Dell Technologies (External)",
-    "kind": "workday",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Dell CSG Hardware Engineering Intern)",
-    "link": "https://dell.wd1.myworkdayjobs.com/External",
-    "fails": 1,
-    "error": "Workday shows its maintenance page for this site: an outage, or the company moved to another hiring system",
-    "next_try": "2026-11-20",
-    "last_ok": "2026-11-20",
-    "since": "2026-11-20",
-    "moved_to": ""
-   }
-  ],
-  "moved": [
    {
     "name": "Gulfstream",
     "kind": "successfactors",
@@ -251,123 +299,15 @@
     "moved_to": ""
    },
    {
-    "name": "Niantic Spatial",
-    "kind": "ashby",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Robotics Engineering Intern)",
-    "link": "https://jobs.ashbyhq.com/niantic-spatial",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "ALSO",
-    "kind": "ashby",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Engineering Intern - Mechanical Design)",
-    "link": "https://jobs.ashbyhq.com/Ridealso",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Rivian and Volkswagen Group Technologies",
-    "kind": "ashby",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Electromechanical Design Engineer Intern)",
-    "link": "https://jobs.ashbyhq.com/rivianvw.tech",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "UnitX",
-    "kind": "ashby",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineer Intern - Robotics)",
-    "link": "https://jobs.ashbyhq.com/unitxlabs",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Voyant Photonics",
-    "kind": "ashby",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Internship - Lidar Test Engineering)",
-    "link": "https://jobs.ashbyhq.com/voyant-photonics",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Canyon AeroConnect",
-    "kind": "bamboohr",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Test Engineer Intern)",
-    "link": "https://canyonaeroconnect.bamboohr.com/careers",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Punchcut",
-    "kind": "bamboohr",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Design Engineer Intern)",
-    "link": "https://punchcut.bamboohr.com/careers",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Seasats",
-    "kind": "breezy",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Intern - Spring 2027)",
-    "link": "https://seasats.breezy.hr",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
     "name": "10x Genomics",
     "kind": "greenhouse",
     "via": "2 mechanical/aerospace internships on the lists (e.g. Intern – Instrument Hardware Engineering)",
     "link": "https://job-boards.greenhouse.io/10xgenomics",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
+    "fails": 1,
+    "error": "HTTP 404",
+    "next_try": "2026-11-20",
     "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "AirCapture",
-    "kind": "greenhouse",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Test Engineering Intern)",
-    "link": "https://job-boards.greenhouse.io/aircapture",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
+    "since": "2026-11-20",
     "moved_to": ""
    },
    {
@@ -375,18 +315,6 @@
     "kind": "greenhouse",
     "via": "2 mechanical/aerospace internships on the lists (e.g. Software Engineer Intern - Flight Controls Software)",
     "link": "https://job-boards.greenhouse.io/archer56",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Axis Automation",
-    "kind": "greenhouse",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. GVSU Mechanical Engineering Intern Co-op)",
-    "link": "https://job-boards.greenhouse.io/axiscompany",
     "fails": 0,
     "error": "",
     "next_try": "",
@@ -717,6 +645,126 @@
     "last_ok": "",
     "since": "",
     "moved_to": ""
+   },
+   {
+    "name": "Otter Products",
+    "kind": "icims",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Test Engineering Intern)",
+    "link": "https://careers-otterproducts.icims.com/jobs/search?ss=1&searchKeyword=intern",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Rambus",
+    "kind": "icims",
+    "via": "2 mechanical/aerospace internships on the lists (e.g. Test Engineering Intern)",
+    "link": "https://careers-rambus.icims.com/jobs/search?ss=1&searchKeyword=intern",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "SRI International",
+    "kind": "icims",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. RIT Co-op: Test Engineering)",
+    "link": "https://careers-sri.icims.com/jobs/search?ss=1&searchKeyword=intern",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Steel Dynamics",
+    "kind": "icims",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Intern)",
+    "link": "https://careers-steeldynamics.icims.com/jobs/search?ss=1&searchKeyword=intern",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Advanced Robotics for Manufacturing",
+    "kind": "jazzhr",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineer Co-op Intern)",
+    "link": "https://arminstitute.applytojob.com/apply",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Rantec Power Systems Inc.",
+    "kind": "jazzhr",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. PCB Design Engineer Intern)",
+    "link": "https://rantecpowersystemsinc.applytojob.com/apply",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "SimIS",
+    "kind": "jazzhr",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Artificial Intelligence Developer Intern - Aerospace/Aviatio)",
+    "link": "https://simisinc.applytojob.com/apply",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Tarana Wireless",
+    "kind": "jazzhr",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Test Engineer Intern)",
+    "link": "https://taranawireless.applytojob.com/apply",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Stryten",
+    "kind": "jibe",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Industrial or Mechanical Engineering Intern)",
+    "link": "https://jobs.stryten.com/jobs?keywords=intern",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "AnySignal",
+    "kind": "lever",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Intern – Hardware Engineer - Hardware Engineering)",
+    "link": "https://jobs.lever.co/anysignal",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
    }
   ],
   "unsupported": [
@@ -881,9 +929,9 @@
    }
   ],
   "probed": {
-   "done": 24,
+   "done": 36,
    "names": 361,
-   "found": 7
+   "found": 12
   }
  }
 }

@@ -1,40 +1,40 @@
 {
  "date": "2026-11-20",
- "read": 52707,
- "kept": 1729,
+ "read": 53204,
+ "kept": 1799,
  "counts": {
   "title and link checks": {
-   "not an internship": 14295,
-   "not an engineering role": 10857,
-   "not engineering (title or majors listed)": 2686,
-   "not engineering (title)": 1633,
-   "graduate-student role": 759,
-   "full-time, new-grad or trade role (not a student program)": 106,
+   "not an internship": 14525,
+   "not an engineering role": 10936,
+   "not engineering (title or majors listed)": 2733,
+   "not engineering (title)": 1632,
+   "graduate-student role": 763,
+   "full-time, new-grad or trade role (not a student program)": 110,
    "full-time role (student-sounding title)": 10
   },
   "basic checks": {
-   "posting too old": 4453,
-   "outside the U.S.": 525,
-   "not engineering": 196
+   "posting too old": 4481,
+   "outside the U.S.": 538,
+   "not engineering": 204
   },
   "other": {
-   "lead (no company link) at a company outside aerospace and motorsport": 10803,
-   "closed on the company's own site (still on a list)": 31
+   "lead (no company link) at a company outside aerospace and motorsport": 10778,
+   "closed on the company's own site (still on a list)": 32
   }
  },
  "examples": {
   "full-time, new-grad or trade role (not a student program)": [
    {
-    "company": "GE Aerospace",
-    "title": "GE Aerospace Supply Chain Business Apprentice, Wales, 2027 intake",
-    "url": "https://geaerospace.wd5.myworkdayjobs.com/GE_ExternalSite/job/Cardiff/GE-Aerospace-Supply-Chain-Business-Apprentice--Wales--2027-intake_R5043167-1",
-    "source": "GE Aerospace"
-   },
-   {
     "company": "Moog",
     "title": "CNC Machinist Apprentice - NYS Accredited",
     "url": "https://moog.wd5.myworkdayjobs.com/MOOG_External_Career_Site/job/Buffalo-NY/CNC-Machinist-Apprentice---NYS-Accreditated_R-26-21102",
     "source": "Moog"
+   },
+   {
+    "company": "GE Aerospace",
+    "title": "GE Aerospace Supply Chain Business Apprentice, Wales, 2027 intake",
+    "url": "https://geaerospace.wd5.myworkdayjobs.com/GE_ExternalSite/job/Cardiff/GE-Aerospace-Supply-Chain-Business-Apprentice--Wales--2027-intake_R5043167-1",
+    "source": "GE Aerospace"
    },
    {
     "company": "Curtiss-Wright",
@@ -47,6 +47,12 @@
     "title": "S2W Program Spring 2027 - Quality Tech Apprentice",
     "url": "https://oshkoshcorporation.wd5.myworkdayjobs.com/Oshkosh/job/US-PA-McConnellsburg/S2W-Program-Spring-2027---Quality-Tech-Apprentice_R51662",
     "source": "Oshkosh"
+   },
+   {
+    "company": "Airbus",
+    "title": "Store and Logistics Assistant (Apprentice)",
+    "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Pasay-City/Store-and-Logistics-Assistant--Apprentice-_JR10454485",
+    "source": "Airbus"
    },
    {
     "company": "Caterpillar",
@@ -67,16 +73,16 @@
     "source": "Caterpillar"
    },
    {
-    "company": "Airbus",
-    "title": "Store and Logistics Assistant (Apprentice)",
-    "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Pasay-City/Store-and-Logistics-Assistant--Apprentice-_JR10454485",
-    "source": "Airbus"
-   },
-   {
     "company": "Parsons",
     "title": "Electrician Apprentice",
     "url": "https://parsons.wd5.myworkdayjobs.com/Search/job/US---GA-Kings-Bay/Electrician-Apprentice_R186273",
     "source": "Parsons"
+   },
+   {
+    "company": "Medtronic",
+    "title": "Associate Mapping Specialist: Winter 2026 & Spring 2027 Biomedical Engineering Undergraduates",
+    "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/State-of-Minnesota-United-States-of-America/Associate-Mapping-Specialist--Winter-2026---Spring-2027-Biomedical-Engineering-Undergraduates_R77885-2",
+    "source": "Medtronic"
    },
    {
     "company": "GE HealthCare",
@@ -97,22 +103,16 @@
     "source": "GE HealthCare"
    },
    {
-    "company": "Medtronic",
-    "title": "Associate Mapping Specialist: Winter 2026 & Spring 2027 Biomedical Engineering Undergraduates",
-    "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/State-of-Minnesota-United-States-of-America/Associate-Mapping-Specialist--Winter-2026---Spring-2027-Biomedical-Engineering-Undergraduates_R77885-2",
-    "source": "Medtronic"
+    "company": "Rockwell Automation",
+    "title": "Youth Apprentice -Prototype Assembler 1",
+    "url": "https://rockwellautomation.wd1.myworkdayjobs.com/External_Rockwell_Automation/job/Ladysmith-Wisconsin-United-States/Youth-Apprentice--Prototype-Assembler-1_R26-8938",
+    "source": "Rockwell Automation"
    },
    {
     "company": "Carrier",
     "title": "Commercial HVAC Apprentice Service Technician - UNION",
     "url": "https://carrier.wd5.myworkdayjobs.com/jobs/job/CAL06-CCS-Shreveport-1520-North-Hearne-Avenue-Shreveport-LA-71107-USA/Commercial-HVAC-Apprentice-Service-Technician---UNION_30217552-1",
     "source": "Carrier"
-   },
-   {
-    "company": "Abbott",
-    "title": "Therapy Specialist Apprentice – Lombardia",
-    "url": "https://abbott.wd5.myworkdayjobs.com/abbottcareers/job/Italy--Milan--Viale-Edison-110-Edison-Park-Centre/Therapy-Specialist-Apprentice---Lombardia_31167569",
-    "source": "Abbott"
    }
   ],
   "not engineering (title or majors listed)": [
@@ -189,22 +189,22 @@
     "source": "Caterpillar"
    },
    {
-    "company": "GE HealthCare",
-    "title": "Project Trainee – Project Management",
-    "url": "https://gehc.wd5.myworkdayjobs.com/GEHC_ExternalSite/job/Lindesnes/Project-Trainee---Project-Management_R4048877-2",
-    "source": "GE HealthCare"
+    "company": "Medtronic",
+    "title": "Co-op/Apprentice (Non-Tech)",
+    "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/Pont-de-Claix-Rhne-Alpes-France/Co-op-Apprentice--Non-Tech-_R82522",
+    "source": "Medtronic"
    },
    {
-    "company": "GE HealthCare",
-    "title": "Working Student Clinical Application Development",
-    "url": "https://gehc.wd5.myworkdayjobs.com/GEHC_ExternalSite/job/Munich/Working-Student-Clinical-Application-Development_R4049415-2",
-    "source": "GE HealthCare"
+    "company": "Medtronic",
+    "title": "Co-op/Apprentice (Non-Tech)",
+    "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/Gurgaon-Haryana-India/Co-op-Apprentice--Non-Tech-_R82584",
+    "source": "Medtronic"
    },
    {
-    "company": "GE HealthCare",
-    "title": "Tender and Quote Intern",
-    "url": "https://gehc.wd5.myworkdayjobs.com/GEHC_ExternalSite/job/ITA01-01-Milan-Via-Privata-Galeno-36/Tender-and-Quote-Intern_R4048759-2",
-    "source": "GE HealthCare"
+    "company": "Medtronic",
+    "title": "Intern Contracting Team Support",
+    "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/Warsaw-Mazowieckie-Poland/Intern-Contracting-Team-Support_R82344-1",
+    "source": "Medtronic"
    }
   ],
   "full-time role (student-sounding title)": [
@@ -267,98 +267,6 @@
     "title": "Analog Design Engineer - Summer 2027 Start",
     "url": "https://analogdevices.wd1.myworkdayjobs.com/External/job/US-AZ-Chandler-East-Elliot/Analog-Design-Engineer---Summer-2027-Start_R265973-1",
     "source": "Analog Devices"
-   }
-  ],
-  "not engineering (title)": [
-   {
-    "company": "Honeywell (CX_1)",
-    "title": "Intern (Bachelor's)- Law",
-    "url": "https://ibqbjb.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/162493",
-    "source": "Honeywell (CX_1)"
-   },
-   {
-    "company": "ByteDance",
-    "title": "Student Researcher - AI Foundation Model Infrastructure",
-    "url": "https://jobs.bytedance.com/en/position/7623552847531493685/detail",
-    "source": "Simplify Summer 2027 list"
-   },
-   {
-    "company": "ByteDance",
-    "title": "Student Researcher - Large Language Model",
-    "url": "https://jobs.bytedance.com/en/position/7623541709721307445/detail",
-    "source": "Simplify Summer 2027 list"
-   },
-   {
-    "company": "ByteDance",
-    "title": "Student Researcher - AI Foundation Model Infrastructure",
-    "url": "https://jobs.bytedance.com/en/position/7623552947364317445/detail",
-    "source": "Simplify Summer 2027 list"
-   },
-   {
-    "company": "ByteDance",
-    "title": "Student Researcher - Vision Foundation Model",
-    "url": "https://jobs.bytedance.com/en/position/7623543230203939077/detail",
-    "source": "Simplify Summer 2027 list"
-   },
-   {
-    "company": "ByteDance",
-    "title": "Student Researcher - Multimodal Interaction and World Model",
-    "url": "https://jobs.bytedance.com/en/position/7623547506849679621/detail",
-    "source": "Simplify Summer 2027 list"
-   },
-   {
-    "company": "ByteDance",
-    "title": "Student Researcher - Speech Foundation Model",
-    "url": "https://jobs.bytedance.com/en/position/7623551375612627253/detail",
-    "source": "Simplify Summer 2027 list"
-   },
-   {
-    "company": "ByteDance",
-    "title": "Student Researcher",
-    "url": "https://jobs.bytedance.com/en/position/7623548747208739077/detail",
-    "source": "Simplify Summer 2027 list"
-   },
-   {
-    "company": "ByteDance",
-    "title": "Student Researcher - Large Language Model - Seed",
-    "url": "https://jobs.bytedance.com/en/position/7623539152655632693/detail",
-    "source": "Simplify Summer 2027 list"
-   },
-   {
-    "company": "ByteDance",
-    "title": "Student Researcher - Speech Foundation Model",
-    "url": "https://jobs.bytedance.com/en/position/7623550540616108293/detail",
-    "source": "Simplify Summer 2027 list"
-   },
-   {
-    "company": "Cloudforce",
-    "title": "AI Agent Builder Intern",
-    "url": "https://jobs.lever.co/go-cloudforce/cf2f1855-3ad7-4d4a-a100-2e627f703af4",
-    "source": "Simplify Summer 2027 list"
-   },
-   {
-    "company": "Anthropic",
-    "title": "Anthropic Fellows Program - AI Safety",
-    "url": "https://job-boards.greenhouse.io/anthropic/jobs/5183044008",
-    "source": "Simplify Summer 2027 list"
-   },
-   {
-    "company": "Etched",
-    "title": "DFT Intern",
-    "url": "https://jobs.ashbyhq.com/Etched/5f1f5739-3b58-467c-b351-ff183c94d96d/application",
-    "source": "Simplify Summer 2027 list"
-   },
-   {
-    "company": "Centific",
-    "title": "Speech Intern 4",
-    "url": "https://centific.wd1.myworkdayjobs.com/Centific_Global/job/Remote-Work-USA/Speech-Intern-4_JR107037",
-    "source": "Simplify Summer 2027 list"
-   },
-   {
-    "company": "Tencent",
-    "title": "Hunyuan Multimodal Algorithm Researcher Intern - Omni Modal",
-    "url": "https://tencent.wd1.myworkdayjobs.com/OA_Huoshui_Platform/job/US-California-Palo-Alto/Hunyuan-Multimodal-Algorithm-Researcher-Intern-Omni-Modal---_R107051-1",
-    "source": "Simplify Summer 2027 list"
    }
   ],
   "not an engineering role": [
@@ -450,6 +358,98 @@
     "company": "Tradeweb",
     "title": "Tradeweb International Intern Program - JavaScript UI Developer - Technology Division",
     "url": "https://ecnf.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/301721",
+    "source": "Simplify Summer 2027 list"
+   }
+  ],
+  "not engineering (title)": [
+   {
+    "company": "ByteDance",
+    "title": "Student Researcher - AI Foundation Model Infrastructure",
+    "url": "https://jobs.bytedance.com/en/position/7623552847531493685/detail",
+    "source": "Simplify Summer 2027 list"
+   },
+   {
+    "company": "ByteDance",
+    "title": "Student Researcher - Large Language Model",
+    "url": "https://jobs.bytedance.com/en/position/7623541709721307445/detail",
+    "source": "Simplify Summer 2027 list"
+   },
+   {
+    "company": "ByteDance",
+    "title": "Student Researcher - AI Foundation Model Infrastructure",
+    "url": "https://jobs.bytedance.com/en/position/7623552947364317445/detail",
+    "source": "Simplify Summer 2027 list"
+   },
+   {
+    "company": "ByteDance",
+    "title": "Student Researcher - Vision Foundation Model",
+    "url": "https://jobs.bytedance.com/en/position/7623543230203939077/detail",
+    "source": "Simplify Summer 2027 list"
+   },
+   {
+    "company": "ByteDance",
+    "title": "Student Researcher - Multimodal Interaction and World Model",
+    "url": "https://jobs.bytedance.com/en/position/7623547506849679621/detail",
+    "source": "Simplify Summer 2027 list"
+   },
+   {
+    "company": "ByteDance",
+    "title": "Student Researcher - Speech Foundation Model",
+    "url": "https://jobs.bytedance.com/en/position/7623551375612627253/detail",
+    "source": "Simplify Summer 2027 list"
+   },
+   {
+    "company": "ByteDance",
+    "title": "Student Researcher",
+    "url": "https://jobs.bytedance.com/en/position/7623548747208739077/detail",
+    "source": "Simplify Summer 2027 list"
+   },
+   {
+    "company": "ByteDance",
+    "title": "Student Researcher - Large Language Model - Seed",
+    "url": "https://jobs.bytedance.com/en/position/7623539152655632693/detail",
+    "source": "Simplify Summer 2027 list"
+   },
+   {
+    "company": "ByteDance",
+    "title": "Student Researcher - Speech Foundation Model",
+    "url": "https://jobs.bytedance.com/en/position/7623550540616108293/detail",
+    "source": "Simplify Summer 2027 list"
+   },
+   {
+    "company": "Cloudforce",
+    "title": "AI Agent Builder Intern",
+    "url": "https://jobs.lever.co/go-cloudforce/cf2f1855-3ad7-4d4a-a100-2e627f703af4",
+    "source": "Simplify Summer 2027 list"
+   },
+   {
+    "company": "Anthropic",
+    "title": "Anthropic Fellows Program - AI Safety",
+    "url": "https://job-boards.greenhouse.io/anthropic/jobs/5183044008",
+    "source": "Simplify Summer 2027 list"
+   },
+   {
+    "company": "Etched",
+    "title": "DFT Intern",
+    "url": "https://jobs.ashbyhq.com/Etched/5f1f5739-3b58-467c-b351-ff183c94d96d/application",
+    "source": "Simplify Summer 2027 list"
+   },
+   {
+    "company": "Centific",
+    "title": "Speech Intern 4",
+    "url": "https://centific.wd1.myworkdayjobs.com/Centific_Global/job/Remote-Work-USA/Speech-Intern-4_JR107037",
+    "source": "Simplify Summer 2027 list"
+   },
+   {
+    "company": "Tencent",
+    "title": "Hunyuan Multimodal Algorithm Researcher Intern - Omni Modal",
+    "url": "https://tencent.wd1.myworkdayjobs.com/OA_Huoshui_Platform/job/US-California-Palo-Alto/Hunyuan-Multimodal-Algorithm-Researcher-Intern-Omni-Modal---_R107051-1",
+    "source": "Simplify Summer 2027 list"
+   },
+   {
+    "company": "ByteDance",
+    "title": "Applied Scientist Intern",
+    "url": "https://jobs.bytedance.com/en/position/7629488401364060469/detail",
     "source": "Simplify Summer 2027 list"
    }
   ],
@@ -639,93 +639,93 @@
   ],
   "lead (no company link) at a company outside aerospace and motorsport": [
    {
-    "company": "VertoTech",
-    "title": "Combination Device Intern",
-    "url": "https://www.google.com/search?q=VertoTech+%22Combination+Device+Intern%22",
+    "company": "ByteDance",
+    "title": "Self-Built Engineer Intern (CDN Platform) - 2027 Summer",
+    "url": "https://www.google.com/search?q=ByteDance+%22Self-Built+Engineer+Intern+%28CDN+Platform%29+-+2027+Summer%22",
     "source": "intern-list.com"
    },
    {
-    "company": "MechSpire",
-    "title": "Engineer Intern",
-    "url": "https://www.google.com/search?q=MechSpire+%22Engineer+Intern%22",
+    "company": "Butler Aerospace & Defense",
+    "title": "Drafting Engineer - Intern",
+    "url": "https://www.google.com/search?q=Butler+Aerospace+%26+Defense+%22Drafting+Engineer+-+Intern%22",
     "source": "intern-list.com"
    },
    {
-    "company": "Meta",
-    "title": "Thermal Engineering Intern",
-    "url": "https://www.google.com/search?q=Meta+%22Thermal+Engineering+Intern%22",
-    "source": "intern-list.com"
-   },
-   {
-    "company": "HITT Contracting Inc.",
-    "title": "Commercial Construction Intern - 2027",
-    "url": "https://www.google.com/search?q=HITT+Contracting+Inc.+%22Commercial+Construction+Intern+-+2027%22",
-    "source": "intern-list.com"
-   },
-   {
-    "company": "Rehlko",
-    "title": "Electrical Engineering Intern 2027",
-    "url": "https://www.google.com/search?q=Rehlko+%22Electrical+Engineering+Intern+2027%22",
-    "source": "intern-list.com"
-   },
-   {
-    "company": "Rehlko",
-    "title": "Mechanical Engineer Intern 2027 (Wisconsin)",
-    "url": "https://www.google.com/search?q=Rehlko+%22Mechanical+Engineer+Intern+2027+%28Wisconsin%29%22",
-    "source": "intern-list.com"
-   },
-   {
-    "company": "UES",
-    "title": "Intern, Engineering",
-    "url": "https://www.google.com/search?q=UES+%22Intern%2C+Engineering%22",
+    "company": "Boulder Connect",
+    "title": "Mechanical Design Intern",
+    "url": "https://www.google.com/search?q=Boulder+Connect+%22Mechanical+Design+Intern%22",
     "source": "intern-list.com"
    },
    {
     "company": "Granite Construction",
-    "title": "Engineer Intern - Summer 2027",
-    "url": "https://www.google.com/search?q=Granite+Construction+%22Engineer+Intern+-+Summer+2027%22",
+    "title": "Engineer Intern - Santa Maria",
+    "url": "https://www.google.com/search?q=Granite+Construction+%22Engineer+Intern+-+Santa+Maria%22",
     "source": "intern-list.com"
    },
    {
-    "company": "Rehlko",
-    "title": "Electrical Engineering Spring/Fall Co-op 2027",
-    "url": "https://www.google.com/search?q=Rehlko+%22Electrical+Engineering+Spring%2FFall+Co-op+2027%22",
-    "source": "intern-list.com"
-   },
-   {
-    "company": "Fenner Precision Polymers",
-    "title": "NPD Textile Intern - Summer 2027",
-    "url": "https://www.google.com/search?q=Fenner+Precision+Polymers+%22NPD+Textile+Intern+-+Summer+2027%22",
-    "source": "intern-list.com"
-   },
-   {
-    "company": "Robinson Helicopter Company",
+    "company": "Granite Construction",
     "title": "Engineer Intern",
-    "url": "https://www.google.com/search?q=Robinson+Helicopter+Company+%22Engineer+Intern%22",
+    "url": "https://www.google.com/search?q=Granite+Construction+%22Engineer+Intern%22",
     "source": "intern-list.com"
    },
    {
-    "company": "Precision Custom Components, LLC",
-    "title": "Intern",
-    "url": "https://www.google.com/search?q=Precision+Custom+Components%2C+LLC+%22Intern%22",
+    "company": "Granite Construction",
+    "title": "Engineer Intern-Utah",
+    "url": "https://www.google.com/search?q=Granite+Construction+%22Engineer+Intern-Utah%22",
     "source": "intern-list.com"
    },
    {
-    "company": "Amrize",
-    "title": "Quarry Operations & Engineering Intern (Summer 2027)",
-    "url": "https://www.google.com/search?q=Amrize+%22Quarry+Operations+%26+Engineering+Intern+%28Summer+2027%29%22",
+    "company": "Granite Construction",
+    "title": "Engineer Intern - Carpinteria",
+    "url": "https://www.google.com/search?q=Granite+Construction+%22Engineer+Intern+-+Carpinteria%22",
     "source": "intern-list.com"
    },
    {
-    "company": "TRC Companies, Inc.",
-    "title": "Intelligent Grid Solutions Intern",
-    "url": "https://www.google.com/search?q=TRC+Companies%2C+Inc.+%22Intelligent+Grid+Solutions+Intern%22",
+    "company": "Granite Construction",
+    "title": "Engineer Intern - Santa Barbara",
+    "url": "https://www.google.com/search?q=Granite+Construction+%22Engineer+Intern+-+Santa+Barbara%22",
     "source": "intern-list.com"
    },
    {
-    "company": "ASM",
-    "title": "2027 Summer Internship - Semiconductor Engineering",
-    "url": "https://www.google.com/search?q=ASM+%222027+Summer+Internship+-+Semiconductor+Engineering%22",
+    "company": "Granite Construction",
+    "title": "Engineer Intern - AZ- 2027",
+    "url": "https://www.google.com/search?q=Granite+Construction+%22Engineer+Intern+-+AZ-+2027%22",
+    "source": "intern-list.com"
+   },
+   {
+    "company": "RS&H",
+    "title": "Civil Engineering Intern (Aviation) - Summer 2027",
+    "url": "https://www.google.com/search?q=RS%26H+%22Civil+Engineering+Intern+%28Aviation%29+-+Summer+2027%22",
+    "source": "intern-list.com"
+   },
+   {
+    "company": "Trilon",
+    "title": "Internship - Paving Inspector",
+    "url": "https://www.google.com/search?q=Trilon+%22Internship+-+Paving+Inspector%22",
+    "source": "intern-list.com"
+   },
+   {
+    "company": "Mom's Meals | A Purfoods Company",
+    "title": "Production Intern (Mechanical Engineering)",
+    "url": "https://www.google.com/search?q=Mom%27s+Meals+%7C+A+Purfoods+Company+%22Production+Intern+%28Mechanical+Engineering%29%22",
+    "source": "intern-list.com"
+   },
+   {
+    "company": "F.H. Paschen",
+    "title": "Construction Intern - McLean Summer 2027",
+    "url": "https://www.google.com/search?q=F.H.+Paschen+%22Construction+Intern+-+McLean+Summer+2027%22",
+    "source": "intern-list.com"
+   },
+   {
+    "company": "Pursuit Aerospace",
+    "title": "Engineering Intern (Winter)",
+    "url": "https://www.google.com/search?q=Pursuit+Aerospace+%22Engineering+Intern+%28Winter%29%22",
+    "source": "intern-list.com"
+   },
+   {
+    "company": "Mitsubishi Electric Research Laboratories",
+    "title": "Internship - Vision-Language-Action (VLA) Models for Robotic Manipulation",
+    "url": "https://www.google.com/search?q=Mitsubishi+Electric+Research+Laboratories+%22Internship+-+Vision-Language-Action+%28VLA%29+Models+for+Robotic+Manipulation%22",
     "source": "intern-list.com"
    }
   ],
@@ -743,6 +743,12 @@
     "source": "Moog"
    },
    {
+    "company": "Woodward",
+    "title": "AI Summer 2027 Internship",
+    "url": "https://woodward.wd5.myworkdayjobs.com/woodward/job/Fort-Collins---Lincoln-Campus-HQ/AI-Summer-2027-Internship_JR114291",
+    "source": "Woodward"
+   },
+   {
     "company": "Sierra Nevada Corporation",
     "title": "Organizational Change Management (OCM) Intern",
     "url": "https://snc.wd1.myworkdayjobs.com/SNC_External_Career_Site/job/Sparks-NV/Organizational-Change-Management--OCM--Intern_R0031104",
@@ -753,6 +759,18 @@
     "title": "IT Service Desk Intern (Summer 2027)",
     "url": "https://snc.wd1.myworkdayjobs.com/SNC_External_Career_Site/job/Lone-Tree-CO/IT-Service-Desk-Intern--Summer-2027-_R0031251",
     "source": "Sierra Nevada Corporation"
+   },
+   {
+    "company": "CACI",
+    "title": "Junior Operations and Technology Intern - Spring 2027",
+    "url": "https://caci.wd1.myworkdayjobs.com/External/job/Ashburn-VA-US/Junior-Operations-and-Technology-Intern---Spring-2027_334935",
+    "source": "CACI"
+   },
+   {
+    "company": "Northrop Grumman",
+    "title": "2027 Critical Skills Development Intern - Remote",
+    "url": "https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site/job/United-States-Remote/XMLNAME-2027-Critical-Skills-Development-Intern---Remote_R10261601",
+    "source": "Northrop Grumman"
    },
    {
     "company": "Northrop Grumman",
@@ -773,40 +791,16 @@
     "source": "Northrop Grumman"
    },
    {
-    "company": "CACI",
-    "title": "Junior Operations and Technology Intern - Spring 2027",
-    "url": "https://caci.wd1.myworkdayjobs.com/External/job/Ashburn-VA-US/Junior-Operations-and-Technology-Intern---Spring-2027_334935",
-    "source": "CACI"
-   },
-   {
     "company": "Ensign-Bickford Aerospace & Defense",
     "title": "Contracts Intern",
     "url": "https://ebi.wd5.myworkdayjobs.com/ebadcareers/job/Simsbury-CT/Contracts-Intern_REQ107712",
     "source": "Ensign-Bickford Aerospace & Defense"
    },
    {
-    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
-    "title": "Skillbridge: Lab Lead Intern",
-    "url": "https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-AZ-TUCSON-9020--9020-S-Rita-Rd--BLDG-9020/Skillbridge--Lab-Lead-Intern_01889400",
-    "source": "RTX (Raytheon, Pratt & Whitney, Collins)"
-   },
-   {
-    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
-    "title": "Digital Technologies Project Management Office Operations Intern (Summer 2027)",
-    "url": "https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-IA-CEDAR-RAPIDS-193--1120-Collins-Rd-NE--BLDG193/Digital-Technologies-Project-Management-Office-Operations-Intern--Summer-2027-_01884834",
-    "source": "RTX (Raytheon, Pratt & Whitney, Collins)"
-   },
-   {
-    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
-    "title": "Supplier Account Manager Co-Op (Spring/Summer 2027)",
-    "url": "https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-CT-WINDSOR-LOCKS-B2--1-Hamilton-Rd--BLDG-2/Supplier-Account-Manager-Co-Op--Spring-Summer-2027-_01880833",
-    "source": "RTX (Raytheon, Pratt & Whitney, Collins)"
-   },
-   {
-    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
-    "title": "Configuration Management Intern (Summer 2027)",
-    "url": "https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-MA-ANDOVER-AN0--366-Lowell-St--BLDG-AN0/Configuration-Management-Intern--Summer-2027-_01888076",
-    "source": "RTX (Raytheon, Pratt & Whitney, Collins)"
+    "company": "Rolls-Royce",
+    "title": "Purchasing - Co-op",
+    "url": "https://rollsroyce.wd3.myworkdayjobs.com/Intern_Graduate/job/Mankato/Purchasing---Co-op_JR6163635",
+    "source": "Rolls-Royce"
    },
    {
     "company": "Rolls-Royce",
@@ -818,6 +812,12 @@
     "company": "Rolls-Royce",
     "title": "Intern, Commercial",
     "url": "https://rollsroyce.wd3.myworkdayjobs.com/Intern_Graduate/job/Seletar-SG-SE/Intern--Commercial_JR6158190",
+    "source": "Rolls-Royce"
+   },
+   {
+    "company": "Rolls-Royce",
+    "title": "Intern, Service Order Management",
+    "url": "https://rollsroyce.wd3.myworkdayjobs.com/Intern_Graduate/job/Tukang/Intern--Service-Order-Management_JR6158168",
     "source": "Rolls-Royce"
    }
   ],
@@ -963,12 +963,6 @@
     "source": "GE Aerospace"
    },
    {
-    "company": "Curtiss-Wright",
-    "title": "Quality Assurance Coop",
-    "url": "https://curtisswright.wd1.myworkdayjobs.com/CW_External_Career_Site/job/Canada-Mississauga-Indal/Quality-Assurance-Coop_JR14348",
-    "source": "Curtiss-Wright"
-   },
-   {
     "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
     "title": "Addictive Manufacturing & Process Engineering Intern",
     "url": "https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/SG-01-SINGAPORE-039-CARE--39-Changi-N-Cres--39-CHANGI-N-CRES-039-CARE/Addictive-Manufacturing---Process-Engineering-Intern_01888838",
@@ -987,12 +981,6 @@
     "source": "RTX (Raytheon, Pratt & Whitney, Collins)"
    },
    {
-    "company": "Rolls-Royce",
-    "title": "Intern- Purchase Operations- 2027",
-    "url": "https://rollsroyce.wd3.myworkdayjobs.com/Intern_Graduate/job/Bangalore/Intern--Purchase-Operations--2027_JR6162846-1",
-    "source": "Rolls-Royce"
-   },
-   {
     "company": "Airbus",
     "title": "Working Student (d/f/m) for Application Development in Flight Physics",
     "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Hamburg-Area/Working-Student--d-f-m--for-Application-Development-in-Flight-Physics_JR10450463",
@@ -1003,13 +991,31 @@
     "title": "Internship in divisional strategy",
     "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Mnchen-Area/Internship-in-divisional-strategy-AD_JR10451960",
     "source": "Airbus"
+   },
+   {
+    "company": "Airbus",
+    "title": "Industrial Design Intern – Product Design Cabin. Hamburg (d/f/m)",
+    "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Hamburg-Area/Industrial-Design-Intern---Product-Design-Cabin-Hamburg--d-f-m-_JR10454867",
+    "source": "Airbus"
+   },
+   {
+    "company": "Airbus",
+    "title": "Internship (d/f/m) within Project Management in the A320 Family Program",
+    "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Hamburg-Area/Internship--d-f-m--within-Project-Management-in-the-A320-Family-Program_JR10438608",
+    "source": "Airbus"
    }
   ],
   "closed on the company's own site (still on a list)": [
    {
-    "company": "ASML",
-    "title": "Computational Imaging and Metrology Engineer Intern",
-    "url": "https://asml.wd3.myworkdayjobs.com/asmlext1/job/San-Jose-CA-USA/Internship--Computational-imaging-and-metrology-summer_J-00355102",
+    "company": "Sierra Nevada Corporation",
+    "title": "Firmware Engineer Intern",
+    "url": "https://snc.wd1.myworkdayjobs.com/snc_external_career_site/job/Sparks-NV/Firmware-Engineer-Intern--Summer-2027-_R0031233",
+    "source": "Simplify Summer 2027 list"
+   },
+   {
+    "company": "Renesas Electronics",
+    "title": "Digital Design Engineer Intern",
+    "url": "https://jobs.smartrecruiters.com/RenesasElectronics/744000162544079",
     "source": "Simplify Summer 2027 list"
    },
    {
@@ -1088,12 +1094,6 @@
     "company": "GlobalFoundries",
     "title": "Advanced Manufacturing Engineering Intern, Process & Equipment (Summer 2027)",
     "url": "https://globalfoundries.wd1.myworkdayjobs.com/External/job/USA---New-York---Malta/Advanced-Manufacturing-Engineering-Intern--Process---Equipment--Summer-2027-_JR-2604598",
-    "source": "Mechanical engineering internships list"
-   },
-   {
-    "company": "GlobalFoundries",
-    "title": "Advanced Manufacturing Engineering Intern, Process & Equipment (Summer 2027)",
-    "url": "https://globalfoundries.wd1.myworkdayjobs.com/External/job/USA---New-York---Malta/Advanced-Manufacturing-Engineering-Intern--Process---Equipment--Summer-2027-_JR-2604599",
     "source": "Mechanical engineering internships list"
    }
   ]

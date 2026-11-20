@@ -367,7 +367,7 @@
   "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Robotics Perception Engineer Intern)",
   "engineering": true,
-  "last_seen": "2026-07-21",
+  "last_seen": "2026-08-24",
   "label": "Gritt",
   "tried": "2026-11-20",
   "last_ok": "2026-11-20",
@@ -460,13 +460,13 @@
   "board": "mach",
   "name": "Mach Industries",
   "first_seen": "2026-10-27",
-  "fails": 2,
+  "fails": 3,
   "last_seen": "2026-11-04",
-  "state": "repair",
+  "state": "covered",
   "label": "Mach Industries (mach)",
   "error": "HTTP 404",
   "fail_since": "2026-11-20",
-  "next_try": "2026-11-20"
+  "next_try": "2026-11-21"
  },
  "ashby:maticrobots": {
   "kind": "ashby",
@@ -516,10 +516,14 @@
   "name": "Niantic Spatial",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Robotics Engineering Intern)",
   "engineering": true,
-  "last_seen": "2026-08-06"
+  "last_seen": "2026-08-06",
+  "label": "Niantic Spatial",
+  "tried": "2026-11-20",
+  "last_ok": "2026-11-20",
+  "validated": "2026-11-20"
  },
  "ashby:northwoodspace": {
   "kind": "ashby",
@@ -618,10 +622,14 @@
   "name": "ALSO",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Engineering Intern - Mechanical Design)",
   "engineering": true,
-  "last_seen": "2025-11-26"
+  "last_seen": "2025-11-26",
+  "label": "ALSO",
+  "tried": "2026-11-20",
+  "last_ok": "2026-11-20",
+  "validated": "2026-11-20"
  },
  "ashby:rivianvw.tech": {
   "kind": "ashby",
@@ -629,10 +637,14 @@
   "name": "Rivian and Volkswagen Group Technologies",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Electromechanical Design Engineer Intern)",
   "engineering": true,
-  "last_seen": "2026-06-11"
+  "last_seen": "2026-06-11",
+  "label": "Rivian and Volkswagen Group Technologies",
+  "tried": "2026-11-20",
+  "last_ok": "2026-11-20",
+  "validated": "2026-11-20"
  },
  "ashby:saronic": {
   "kind": "ashby",
@@ -715,6 +727,17 @@
   "state": "active",
   "last_ok": "2026-11-20"
  },
+ "ashby:trener-robotics": {
+  "kind": "ashby",
+  "board": "trener-robotics",
+  "name": "Trener Robotics",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Robotics Engineer / Lab Technician Intern)",
+  "engineering": true,
+  "last_seen": "2026-11-20"
+ },
  "ashby:turion-space": {
   "kind": "ashby",
   "board": "turion-space",
@@ -731,10 +754,14 @@
   "name": "UnitX",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineer Intern - Robotics)",
   "engineering": true,
-  "last_seen": "2026-08-21"
+  "last_seen": "2026-08-21",
+  "label": "UnitX",
+  "tried": "2026-11-20",
+  "last_ok": "2026-11-20",
+  "validated": "2026-11-20"
  },
  "ashby:voyant-photonics": {
   "kind": "ashby",
@@ -742,10 +769,14 @@
   "name": "Voyant Photonics",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Internship - Lidar Test Engineering)",
   "engineering": true,
-  "last_seen": "2025-08-28"
+  "last_seen": "2025-08-28",
+  "label": "Voyant Photonics",
+  "tried": "2026-11-20",
+  "last_ok": "2026-11-20",
+  "validated": "2026-11-20"
  },
  "ashby:windborne-systems": {
   "kind": "ashby",
@@ -794,10 +825,14 @@
   "name": "Canyon AeroConnect",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Test Engineer Intern)",
   "engineering": true,
-  "last_seen": "2026-11-17"
+  "last_seen": "2026-11-17",
+  "label": "Canyon AeroConnect",
+  "tried": "2026-11-20",
+  "last_ok": "2026-11-20",
+  "validated": "2026-11-20"
  },
  "bamboohr:lunaroutpost": {
   "kind": "bamboohr",
@@ -816,10 +851,14 @@
   "name": "Punchcut",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Design Engineer Intern)",
   "engineering": true,
-  "last_seen": "2026-11-17"
+  "last_seen": "2026-11-17",
+  "label": "Punchcut",
+  "tried": "2026-11-20",
+  "last_ok": "2026-11-20",
+  "validated": "2026-11-20"
  },
  "bamboohr:safransed": {
   "kind": "bamboohr",
@@ -886,10 +925,14 @@
   "name": "Seasats",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Intern - Spring 2027)",
   "engineering": true,
-  "last_seen": "2026-10-02"
+  "last_seen": "2026-10-02",
+  "label": "Seasats",
+  "tried": "2026-11-20",
+  "last_ok": "2026-11-20",
+  "validated": "2026-11-20"
  },
  "gem:andrenam": {
   "kind": "gem",
@@ -929,11 +972,16 @@
   "board": "10xgenomics",
   "name": "10x Genomics",
   "first_seen": "2026-11-20",
-  "fails": 0,
+  "fails": 1,
   "state": "candidate",
   "via": "2 mechanical/aerospace internships on the lists (e.g. Intern – Instrument Hardware Engineering)",
   "engineering": true,
-  "last_seen": "2026-01-17"
+  "last_seen": "2026-01-17",
+  "label": "10x Genomics",
+  "tried": "2026-11-20",
+  "error": "HTTP 404",
+  "fail_since": "2026-11-20",
+  "next_try": "2026-11-20"
  },
  "greenhouse:advancedspace": {
   "kind": "greenhouse",
@@ -961,10 +1009,14 @@
   "name": "AirCapture",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Test Engineering Intern)",
   "engineering": true,
-  "last_seen": "2026-03-23"
+  "last_seen": "2026-03-23",
+  "label": "AirCapture",
+  "tried": "2026-11-20",
+  "last_ok": "2026-11-20",
+  "validated": "2026-11-20"
  },
  "greenhouse:albedo": {
   "kind": "greenhouse",
@@ -1084,10 +1136,14 @@
   "name": "Axis Automation",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. GVSU Mechanical Engineering Intern Co-op)",
   "engineering": true,
-  "last_seen": "2026-10-06"
+  "last_seen": "2026-10-06",
+  "label": "Axis Automation",
+  "tried": "2026-11-20",
+  "last_ok": "2026-11-20",
+  "validated": "2026-11-20"
  },
  "greenhouse:blacksky": {
   "kind": "greenhouse",
@@ -1146,6 +1202,19 @@
   "fails": 0,
   "last_seen": "2026-11-20",
   "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "greenhouse:diligentrobotics": {
+  "kind": "greenhouse",
+  "board": "diligentrobotics",
+  "name": "Diligent Robotics",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "name probe (discover seeds)",
+  "last_seen": "2026-11-20",
+  "engineering": true,
+  "label": "Diligent Robotics",
   "last_ok": "2026-11-20"
  },
  "greenhouse:doordashusa": {
@@ -1725,13 +1794,13 @@
   "board": "rsinternboard",
   "name": "Relativity Space",
   "first_seen": "2026-11-05",
-  "fails": 2,
+  "fails": 3,
   "last_seen": "2025-10-30",
-  "state": "repair",
+  "state": "covered",
   "label": "Relativity Space (rsinternboard)",
   "error": "HTTP 404",
   "fail_since": "2026-11-20",
-  "next_try": "2026-11-20"
+  "next_try": "2026-11-21"
  },
  "greenhouse:ruggedrobotics": {
   "kind": "greenhouse",
@@ -2262,7 +2331,7 @@
   "state": "active",
   "via": "3 mechanical/aerospace internships on the lists (e.g. Audio Test Engineering Intern)",
   "engineering": true,
-  "last_seen": "2026-09-03",
+  "last_seen": "2026-11-07",
   "label": "Shure",
   "last_ok": "2026-11-20"
  },
@@ -2704,13 +2773,13 @@
   "board": "leolabs-2",
   "name": "LeoLabs",
   "first_seen": "2026-11-05",
-  "fails": 2,
+  "fails": 3,
   "last_seen": "2025-11-25",
-  "state": "repair",
+  "state": "covered",
   "label": "LeoLabs (leolabs-2)",
   "error": "HTTP 404",
   "fail_since": "2026-11-20",
-  "next_try": "2026-11-20"
+  "next_try": "2026-11-21"
  },
  "lever:loftorbital": {
   "kind": "lever",
@@ -2802,13 +2871,13 @@
   "board": "saronic",
   "name": "Saronic",
   "first_seen": "2026-10-27",
-  "fails": 2,
+  "fails": 3,
   "last_seen": "2026-11-04",
-  "state": "repair",
+  "state": "covered",
   "label": "Saronic (saronic)",
   "error": "HTTP 404",
   "fail_since": "2026-11-20",
-  "next_try": "2026-11-20"
+  "next_try": "2026-11-21"
  },
  "lever:shieldai": {
   "kind": "lever",
@@ -3281,7 +3350,9 @@
   "fails": 0,
   "state": "active",
   "via": "list link (2026-11-20)",
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "label": "Honeywell Aerospace",
+  "last_ok": "2026-11-20"
  },
  "pinpoint:astrolab": {
   "kind": "pinpoint",
@@ -3418,6 +3489,18 @@
   "via": "1 mechanical/aerospace internship on the lists (e.g. 2027 Internship - Manufacturing Engineer (Hoosier Racing Tir)",
   "engineering": true,
   "last_seen": "2026-09-23"
+ },
+ "smartrecruiters:dynetics": {
+  "kind": "smartrecruiters",
+  "board": "dynetics",
+  "name": "Dynetics",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "name probe (aerospace_companies)",
+  "last_seen": "2026-11-20",
+  "label": "Dynetics",
+  "last_ok": "2026-11-20"
  },
  "smartrecruiters:gdmsi": {
   "kind": "smartrecruiters",
@@ -3782,6 +3865,31 @@
   "last_seen": "2026-10-30",
   "last_ok": "2026-11-20"
  },
+ "workable:collins-aerospace": {
+  "kind": "workable",
+  "board": "collins-aerospace",
+  "name": "Collins Aerospace",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "name probe (aerospace_companies)",
+  "last_seen": "2026-11-20",
+  "label": "Collins Aerospace",
+  "last_ok": "2026-11-20"
+ },
+ "workable:corning": {
+  "kind": "workable",
+  "board": "corning",
+  "name": "Corning",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "name probe (discover seeds)",
+  "last_seen": "2026-11-20",
+  "engineering": true,
+  "label": "Corning",
+  "last_ok": "2026-11-20"
+ },
  "workable:darkhive": {
   "kind": "workable",
   "board": "darkhive",
@@ -3792,6 +3900,19 @@
   "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Engineer Intern - Drone Technology)",
   "engineering": true,
   "last_seen": "2025-09-23"
+ },
+ "workable:dyson": {
+  "kind": "workable",
+  "board": "dyson",
+  "name": "Dyson",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "name probe (discover seeds)",
+  "last_seen": "2026-11-20",
+  "engineering": true,
+  "label": "Dyson",
+  "last_ok": "2026-11-20"
  },
  "workable:red-rabbit-robotics": {
   "kind": "workable",
@@ -4401,7 +4522,7 @@
   "site": "External",
   "name": "Dell Technologies",
   "first_seen": "2026-11-20",
-  "fails": 1,
+  "fails": 2,
   "state": "repair",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Dell CSG Hardware Engineering Intern)",
   "engineering": true,
