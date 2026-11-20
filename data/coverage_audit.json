@@ -2,7 +2,10 @@
  "audited": {
   "23XI Racing": "2026-11-20",
   "3M": "2026-11-20",
-  "Mill": "2026-11-20"
+  "Mill": "2026-11-20",
+  "ABB": "2026-11-20",
+  "AECOM": "2026-11-20",
+  "Niantic Spatial": "2026-11-20"
  },
  "runs": [
   {
@@ -34,6 +37,38 @@
      "misses": [],
      "read": "full list, no title filter",
      "openings": 23
+    }
+   ]
+  },
+  {
+   "date": "2026-11-20",
+   "boards": [
+    {
+     "source": "ABB",
+     "kind": "workday",
+     "in_scope": 12,
+     "found": 12,
+     "misses": [],
+     "read": "full list of every opening",
+     "openings": 2000
+    },
+    {
+     "source": "AECOM",
+     "kind": "smartrecruiters",
+     "in_scope": 17,
+     "found": 17,
+     "misses": [],
+     "read": "same searches with higher page caps, no title filter",
+     "openings": 90
+    },
+    {
+     "source": "Niantic Spatial",
+     "kind": "ashby",
+     "in_scope": 0,
+     "found": 0,
+     "misses": [],
+     "read": "full list, no title filter",
+     "openings": 20
     }
    ]
   }

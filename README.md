@@ -89,7 +89,7 @@ history fills more of that in.
 ## Today's top matches
 
 <!-- JOBS:START -->
-**391 Summer 2027 aerospace matches** (3 in Motorsports, 19 Fall 2027 near home, 1249 in All engineering, 94 leads without a direct link) as of Nov 20, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
+**390 Summer 2027 aerospace matches** (2 in Motorsports, 19 Fall 2027 near home, 1219 in All engineering, 146 leads without a direct link) as of Nov 20, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
 
 | Fit | Company | Role | Preferred quals | Required quals | Location | Posted | Apply |
 |---|---|---|---|---|---|---|---|
@@ -131,7 +131,7 @@ history fills more of that in.
 | ~2026-10-31 (due now) | Huntington Ingalls Industries | Engineering Intern | Summer 2027 | 2025-10-31 | [Open](https://careers.huntingtoningalls.com/search/?q=intern) |
 | ~2026-10-31 (due now) | Northwood Space | Site Engineer Intern | Summer 2027 | 2025-10-31 | [Open](https://jobs.ashbyhq.com/NorthwoodSpace) |
 | ~2026-10-31 (due now) | Peraton | Computer Engineering Intern | Summer 2027 | 2025-10-31 | [Open](https://careers-peraton.icims.com/jobs/search?ss=1&searchKeyword=intern) |
-| ~2026-10-31 (due now) | Safran | Engineering Internships! | Fall 2027 | 2025-10-31 | [Open](https://careers.safran-dsi.com/search/?q=intern) |
+| ~2026-10-31 (due now) | Safran | Engineering Internships! | Fall 2027 | 2025-10-31 | [Open](https://safransed.bamboohr.com/careers) |
 | ~2026-11-01 (due now) | Draper | Microelectronics Integration & Test Summer Intern | Summer 2027 | 2025-11-01 | [Open](https://draper.wd5.myworkdayjobs.com/Draper_Careers) |
 | ~2026-11-04 (due now) | RTX | Intern - Production and Field Support - Onsite | Summer 2027 | 2025-11-04 | [Open](https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway) |
 | ~2026-11-04 (due now) | Space Dynamics Laboratory | Large Language Model Inference & Integration Engineer Intern - C4ISR Systems Division - LLM Inference Pipelines | Summer 2027 | 2025-11-04 | [Open](https://spacedynamicslaboratory.applytojob.com/apply) |
