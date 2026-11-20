@@ -89,7 +89,7 @@ history fills more of that in.
 ## Today's top matches
 
 <!-- JOBS:START -->
-**383 Summer 2027 aerospace matches** (3 in Motorsports, 12 Fall 2027 near home, 984 in All engineering, 74 leads without a direct link) as of Nov 20, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
+**391 Summer 2027 aerospace matches** (3 in Motorsports, 19 Fall 2027 near home, 1249 in All engineering, 94 leads without a direct link) as of Nov 20, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
 
 | Fit | Company | Role | Preferred quals | Required quals | Location | Posted | Apply |
 |---|---|---|---|---|---|---|---|
@@ -97,8 +97,8 @@ history fills more of that in.
 | 93 | Lockheed Martin | College Student - Aerodynamics (Orlando, FL) | 2.5 of 3 | 3 of 3 | Orlando, FL | 2026-11-05 | [Apply](https://lockheedmartin.eightfold.ai/careers/job/996477760340) |
 | 92 | L3Harris | Intern, Manufacturing Engineer | 2 of 2 | 3 of 3 | Canoga Park, CA, US, 91311 | 2026-11-09 | [Apply](https://jobs.l3harris.com/job/Canoga-Park-Intern%2C-Manufacturing-Engineer-CA-91311/1448973300/) |
 | 91 | RTX (Raytheon, Pratt & Whitney, Collins) | Manufacturing Engineering Intern (Summer 2027) | 1 of 1 | 3 of 3 | US-WA-SPOKANE-11135 ~ 11135 W Westbow Ln | 2026-11-17 | [Apply](https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-WA-SPOKANE-11135--11135-W-Westbow-Ln--WESTBOW/Manufacturing-Engineering-Intern--Summer-2027-_01888202) |
-| 90 | Shield AI | Hardware Test Engineering Co-op | 2 of 2 | 2 of 2 | Dallas, TX | 2026-11-12 | [Apply](https://jobs.ashbyhq.com/f7d8749a-72d6-407c-bf98-292ea630c73a/ec8a822c-ccbf-4b4e-b41c-2f0db5c8342d/application?embed=true) |
 | 90 | Intuitive Machines | Satellite Mission Operations Intern – Altus | 3 of 4 | 2 of 2 | Houston, TX; Houston, TX | 2026-11-13 | [Apply](https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=b0e24f83-6e4d-492d-9d6a-bc0fea197d6a&lang=en_US&locale=en_US&ccId=19000101_000001&jobId=9207519358072_165) |
+| 90 | Shield AI (f7d8749a-72d6-407c-bf98-292ea630c73a) | 2027 June Co-op - Hardware Test - #6426 | 2 of 2 | 2 of 2 | Dallas, TX, US | 2026-11-12 | [Apply](https://jobs.ashbyhq.com/shield/ec8a822c-ccbf-4b4e-b41c-2f0db5c8342d) |
 | 89 | Intuitive Machines | Guidance, Navigation & Controls (GNC) Intern | 1 of 1 | 3 of 3 | Houston, TX; Houston, TX | 2026-11-13 | [Apply](https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=b0e24f83-6e4d-492d-9d6a-bc0fea197d6a&lang=en_US&locale=en_US&ccId=19000101_000001&jobId=9207519357554_173) |
 | 88 | United Launch Alliance | Composite Engineering Internship - Summer 2027 | – | 4 of 4 | Decatur, AL, US, 35601 | 2026-11-05 | [Apply](https://jobs.ulalaunch.com/job/Decatur-Composite-Engineering-Internship-Summer-2027-AL-35601/1427397600/) |
 | 88 | United Launch Alliance | Material and Process Engineering Internship Summer 2027 | 4 of 5 | 4 of 4 | Centennial, CO, US, 80112 | 2026-11-05 | [Apply](https://jobs.ulalaunch.com/job/Centennial-Material-and-Process-Engineering-Internship-Summer-2027-CO-80112/1427398900/) |

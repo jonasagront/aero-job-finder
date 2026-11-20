@@ -1,0 +1,41 @@
+{
+ "audited": {
+  "23XI Racing": "2026-11-20",
+  "3M": "2026-11-20",
+  "Mill": "2026-11-20"
+ },
+ "runs": [
+  {
+   "date": "2026-11-20",
+   "boards": [
+    {
+     "source": "23XI Racing",
+     "kind": "adp",
+     "in_scope": 0,
+     "found": 0,
+     "misses": [],
+     "read": "full list, no title filter",
+     "openings": 0
+    },
+    {
+     "source": "3M",
+     "kind": "workday",
+     "in_scope": 0,
+     "found": 0,
+     "misses": [],
+     "read": "full list of every opening",
+     "openings": 813
+    },
+    {
+     "source": "Mill",
+     "kind": "greenhouse",
+     "in_scope": 0,
+     "found": 0,
+     "misses": [],
+     "read": "full list, no title filter",
+     "openings": 23
+    }
+   ]
+  }
+ ]
+}

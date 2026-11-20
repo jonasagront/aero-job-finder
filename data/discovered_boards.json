@@ -1,11 +1,71 @@
 {
+ "adp:6362b6c7-9592-452e-9fa3-97848679358e": {
+  "kind": "adp",
+  "cid": "6362b6c7-9592-452e-9fa3-97848679358e",
+  "name": "Kaman",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "list link (2026-11-18)",
+  "last_seen": "2026-11-18",
+  "last_ok": "2026-11-20"
+ },
+ "adp:b0e24f83-6e4d-492d-9d6a-bc0fea197d6a": {
+  "kind": "adp",
+  "cid": "b0e24f83-6e4d-492d-9d6a-bc0fea197d6a",
+  "name": "Intuitive Machines",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "list link (2026-11-13)",
+  "last_seen": "2026-11-20",
+  "last_ok": "2026-11-20"
+ },
+ "applicantpro:roushyates.isolvedhire.com": {
+  "kind": "applicantpro",
+  "host": "roushyates.isolvedhire.com",
+  "name": "Roush Yates Engines",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "list link (2026-11-12)",
+  "last_seen": "2026-11-12",
+  "last_ok": "2026-11-20"
+ },
+ "applicantpro:xbowsystems.applicantpro.com": {
+  "kind": "applicantpro",
+  "host": "xbowsystems.applicantpro.com",
+  "name": "X-Bow Launch Systems",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "list link (2026-10-27)",
+  "last_seen": "2026-11-20"
+ },
  "ashby:allen-control-systems": {
   "kind": "ashby",
   "board": "allen-control-systems",
   "name": "Allen Control Systems",
   "first_seen": "2026-10-30",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "ashby:alloyenterprises": {
+  "kind": "ashby",
+  "board": "alloyenterprises",
+  "name": "Alloy Enterprises",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Co-Op, Thermal Test Engineer, Fall 2026 (July-December))",
+  "engineering": true,
+  "last_seen": "2026-03-25",
+  "label": "Alloy Enterprises",
+  "tried": "2026-11-20",
+  "last_ok": "2026-11-20",
+  "validated": "2026-11-20"
  },
  "ashby:antares": {
   "kind": "ashby",
@@ -13,7 +73,8 @@
   "name": "Antares Nuclear",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active"
  },
  "ashby:apex-technology-inc": {
   "kind": "ashby",
@@ -21,7 +82,19 @@
   "name": "Apex",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active"
+ },
+ "ashby:atomicsemi": {
+  "kind": "ashby",
+  "board": "atomicsemi",
+  "name": "Atomic Semi",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "2 mechanical/aerospace internships on the lists (e.g. Packaging Engineering Intern)",
+  "engineering": true,
+  "last_seen": "2026-03-30"
  },
  "ashby:base-power": {
   "kind": "ashby",
@@ -30,7 +103,9 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-10-30"
+  "last_seen": "2026-10-30",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "ashby:bedrock-robotics": {
   "kind": "ashby",
@@ -39,7 +114,35 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-10-12"
+  "last_seen": "2026-10-12",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "ashby:bracket-bot": {
+  "kind": "ashby",
+  "board": "bracket-bot",
+  "name": "Bracket Bot",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Robotics Engineering Intern)",
+  "engineering": true,
+  "last_seen": "2026-09-23"
+ },
+ "ashby:bridgeneurotech": {
+  "kind": "ashby",
+  "board": "bridgeneurotech",
+  "name": "Bridge Neurotech",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "2 mechanical/aerospace internships on the lists (e.g. Hardware Engineering Intern)",
+  "engineering": true,
+  "last_seen": "2026-11-11",
+  "label": "Bridge Neurotech",
+  "tried": "2026-11-20",
+  "last_ok": "2026-11-20",
+  "validated": "2026-11-20"
  },
  "ashby:constellationspace": {
   "kind": "ashby",
@@ -47,7 +150,24 @@
   "name": "Constellation Space",
   "first_seen": "2026-10-28",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "ashby:contoro": {
+  "kind": "ashby",
+  "board": "contoro",
+  "name": "Contoro",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Robotics Engineer Intern - Test & Validation (Fall 2026))",
+  "engineering": true,
+  "last_seen": "2026-09-16",
+  "label": "Contoro",
+  "tried": "2026-11-20",
+  "last_ok": "2026-11-20",
+  "validated": "2026-11-20"
  },
  "ashby:cowboyspace": {
   "kind": "ashby",
@@ -55,7 +175,42 @@
   "name": "Cowboy Space",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "ashby:cyvl": {
+  "kind": "ashby",
+  "board": "cyvl",
+  "name": "Cyvl",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Engineer Intern)",
+  "engineering": true,
+  "last_seen": "2026-09-14"
+ },
+ "ashby:d-matrix": {
+  "kind": "ashby",
+  "board": "d-Matrix",
+  "name": "d-Matrix",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. ASIC Functional Test Engineer Intern)",
+  "engineering": true,
+  "last_seen": "2026-05-21"
+ },
+ "ashby:dedalus-labs": {
+  "kind": "ashby",
+  "board": "dedalus-labs",
+  "name": "Dedalus Labs",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Design Engineer Intern)",
+  "engineering": true,
+  "last_seen": "2026-08-15"
  },
  "ashby:distributed-spectrum": {
   "kind": "ashby",
@@ -63,7 +218,20 @@
   "name": "Distributed Spectrum",
   "first_seen": "2026-10-28",
   "fails": 0,
-  "last_seen": "2026-10-29"
+  "last_seen": "2026-10-29",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "ashby:eightsleep": {
+  "kind": "ashby",
+  "board": "eightsleep",
+  "name": "Eight Sleep",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "2 mechanical/aerospace internships on the lists (e.g. Prototype & Test Engineer Intern - New Product Development)",
+  "engineering": true,
+  "last_seen": "2026-09-02"
  },
  "ashby:elveo": {
   "kind": "ashby",
@@ -71,7 +239,20 @@
   "name": "Lynk Global",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "ashby:epianeuro": {
+  "kind": "ashby",
+  "board": "epianeuro",
+  "name": "Epia Neuro",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Engineer Intern)",
+  "engineering": true,
+  "last_seen": "2026-08-15"
  },
  "ashby:f7d8749a-72d6-407c-bf98-292ea630c73a": {
   "kind": "ashby",
@@ -79,7 +260,10 @@
   "name": "Shield AI",
   "first_seen": "2026-10-28",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "label": "Shield AI (f7d8749a-72d6-407c-bf98-292ea630c73a)",
+  "last_ok": "2026-11-20"
  },
  "ashby:fab2": {
   "kind": "ashby",
@@ -88,7 +272,9 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-09-05"
+  "last_seen": "2026-09-05",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "ashby:firstordereffects": {
   "kind": "ashby",
@@ -96,7 +282,57 @@
   "name": "First Order Effects",
   "first_seen": "2026-10-28",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "ashby:fourth-power": {
+  "kind": "ashby",
+  "board": "fourth-power",
+  "name": "Fourth Power",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Spring 2027 Mechanical Engineering & Materials Science Co-Op)",
+  "engineering": true,
+  "last_seen": "2026-10-27",
+  "label": "Fourth Power",
+  "tried": "2026-11-20",
+  "last_ok": "2026-11-20",
+  "validated": "2026-11-20"
+ },
+ "ashby:graymatter-robotics": {
+  "kind": "ashby",
+  "board": "graymatter-robotics",
+  "name": "GrayMatter Robotics",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "2 mechanical/aerospace internships on the lists (e.g. Robotics Engineering Intern - Systems & Applications)",
+  "engineering": true,
+  "last_seen": "2026-10-28"
+ },
+ "ashby:gritt": {
+  "kind": "ashby",
+  "board": "gritt",
+  "name": "Gritt",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Robotics Perception Engineer Intern)",
+  "engineering": true,
+  "last_seen": "2026-07-21"
+ },
+ "ashby:gumloop": {
+  "kind": "ashby",
+  "board": "Gumloop",
+  "name": "Gumloop",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "2 mechanical/aerospace internships on the lists (e.g. Design Engineer Intern)",
+  "engineering": true,
+  "last_seen": "2026-07-16"
  },
  "ashby:h3x-technologies": {
   "kind": "ashby",
@@ -104,7 +340,9 @@
   "name": "H3X Technologies",
   "first_seen": "2026-11-03",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "ashby:hadrian-automation": {
   "kind": "ashby",
@@ -112,7 +350,9 @@
   "name": "Hadrian",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "ashby:heron-power": {
   "kind": "ashby",
@@ -121,7 +361,20 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-06-23"
+  "last_seen": "2026-06-23",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "ashby:human-computer-lab": {
+  "kind": "ashby",
+  "board": "human-computer-lab",
+  "name": "Human Computer Lab",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineer Intern)",
+  "engineering": true,
+  "last_seen": "2026-07-24"
  },
  "ashby:hypercubic": {
   "kind": "ashby",
@@ -129,7 +382,10 @@
   "name": "Hypercubic",
   "first_seen": "2026-10-30",
   "fails": 0,
-  "last_seen": "2026-11-04"
+  "last_seen": "2026-11-04",
+  "state": "active",
+  "label": "Hypercubic",
+  "last_ok": "2026-11-20"
  },
  "ashby:iceye": {
   "kind": "ashby",
@@ -137,15 +393,22 @@
   "name": "ICEYE",
   "first_seen": "2026-10-30",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "ashby:mach": {
   "kind": "ashby",
   "board": "mach",
   "name": "Mach Industries",
   "first_seen": "2026-10-27",
-  "fails": 0,
-  "last_seen": "2026-11-04"
+  "fails": 1,
+  "last_seen": "2026-11-04",
+  "state": "repair",
+  "label": "Mach Industries (mach)",
+  "error": "HTTP 404",
+  "fail_since": "2026-11-20",
+  "next_try": "2026-11-20"
  },
  "ashby:maticrobots": {
   "kind": "ashby",
@@ -154,7 +417,47 @@
   "first_seen": "2026-11-18",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-11-18"
+  "last_seen": "2026-11-18",
+  "state": "active",
+  "label": "Matician",
+  "last_ok": "2026-11-20"
+ },
+ "ashby:meter": {
+  "kind": "ashby",
+  "board": "meter",
+  "name": "Meter",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "2 mechanical/aerospace internships on the lists (e.g. Hardware Engineering Intern)",
+  "engineering": true,
+  "last_seen": "2026-10-10",
+  "label": "Meter",
+  "tried": "2026-11-20",
+  "last_ok": "2026-11-20",
+  "validated": "2026-11-20"
+ },
+ "ashby:mindrobotics": {
+  "kind": "ashby",
+  "board": "mindrobotics",
+  "name": "Mind Robotics",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Design Intern - Wiring Harness)",
+  "engineering": true,
+  "last_seen": "2026-08-13"
+ },
+ "ashby:niantic-spatial": {
+  "kind": "ashby",
+  "board": "niantic-spatial",
+  "name": "Niantic Spatial",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Robotics Engineering Intern)",
+  "engineering": true,
+  "last_seen": "2026-08-06"
  },
  "ashby:northwoodspace": {
   "kind": "ashby",
@@ -162,7 +465,9 @@
   "name": "Northwood Space",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "ashby:odys-aviation": {
   "kind": "ashby",
@@ -170,7 +475,9 @@
   "name": "Odys Aviation",
   "first_seen": "2026-10-30",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "ashby:oligo": {
   "kind": "ashby",
@@ -178,7 +485,24 @@
   "name": "Oligo Space",
   "first_seen": "2026-10-30",
   "fails": 0,
-  "last_seen": "2026-11-04"
+  "last_seen": "2026-11-04",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "ashby:overviewenergy": {
+  "kind": "ashby",
+  "board": "overviewenergy",
+  "name": "Overview Energy",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "2 mechanical/aerospace internships on the lists (e.g. Mechanical Engineering Intern)",
+  "engineering": true,
+  "last_seen": "2026-09-17",
+  "label": "Overview Energy",
+  "tried": "2026-11-20",
+  "last_ok": "2026-11-20",
+  "validated": "2026-11-20"
  },
  "ashby:reflect-orbital": {
   "kind": "ashby",
@@ -186,7 +510,24 @@
   "name": "Reflect Orbital",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "ashby:reframesystems": {
+  "kind": "ashby",
+  "board": "reframesystems",
+  "name": "Reframe Systems",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineer (Spring 2027 Co-op))",
+  "engineering": true,
+  "last_seen": "2026-08-06",
+  "label": "Reframe Systems",
+  "tried": "2026-11-20",
+  "last_ok": "2026-11-20",
+  "validated": "2026-11-20"
  },
  "ashby:regent": {
   "kind": "ashby",
@@ -194,7 +535,10 @@
   "name": "REGENT",
   "first_seen": "2026-11-04",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "label": "REGENT (regent)",
+  "last_ok": "2026-11-20"
  },
  "ashby:reliable-robotics": {
   "kind": "ashby",
@@ -202,7 +546,31 @@
   "name": "Reliable Robotics",
   "first_seen": "2026-11-14",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "ashby:ridealso": {
+  "kind": "ashby",
+  "board": "Ridealso",
+  "name": "ALSO",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Engineering Intern - Mechanical Design)",
+  "engineering": true,
+  "last_seen": "2025-11-26"
+ },
+ "ashby:rivianvw.tech": {
+  "kind": "ashby",
+  "board": "rivianvw.tech",
+  "name": "Rivian and Volkswagen Group Technologies",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Electromechanical Design Engineer Intern)",
+  "engineering": true,
+  "last_seen": "2026-06-11"
  },
  "ashby:saronic": {
   "kind": "ashby",
@@ -210,7 +578,9 @@
   "name": "Saronic",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "ashby:scout-ai": {
   "kind": "ashby",
@@ -218,7 +588,9 @@
   "name": "Scout AI",
   "first_seen": "2026-10-28",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "ashby:shield": {
   "kind": "ashby",
@@ -226,7 +598,10 @@
   "name": "Shield AI",
   "first_seen": "2026-11-11",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "label": "Shield AI (shield)",
+  "last_ok": "2026-11-20"
  },
  "ashby:skyband%20systems": {
   "kind": "ashby",
@@ -234,7 +609,9 @@
   "name": "Skyband Systems",
   "first_seen": "2026-11-03",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "ashby:skydio": {
   "kind": "ashby",
@@ -242,7 +619,9 @@
   "name": "Skydio",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "ashby:starpath.space": {
   "kind": "ashby",
@@ -250,7 +629,9 @@
   "name": "Starpath",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "ashby:swarmaero": {
   "kind": "ashby",
@@ -258,7 +639,9 @@
   "name": "Swarm Aero",
   "first_seen": "2026-10-28",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "ashby:the-exploration-company": {
   "kind": "ashby",
@@ -266,7 +649,9 @@
   "name": "The Exploration Company",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "ashby:turion-space": {
   "kind": "ashby",
@@ -274,7 +659,31 @@
   "name": "Turion Space",
   "first_seen": "2026-11-05",
   "fails": 0,
-  "last_seen": "2026-02-06"
+  "last_seen": "2026-02-06",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "ashby:unitxlabs": {
+  "kind": "ashby",
+  "board": "unitxlabs",
+  "name": "UnitX",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineer Intern - Robotics)",
+  "engineering": true,
+  "last_seen": "2026-08-21"
+ },
+ "ashby:voyant-photonics": {
+  "kind": "ashby",
+  "board": "voyant-photonics",
+  "name": "Voyant Photonics",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Internship - Lidar Test Engineering)",
+  "engineering": true,
+  "last_seen": "2025-08-28"
  },
  "ashby:windborne-systems": {
   "kind": "ashby",
@@ -282,7 +691,9 @@
   "name": "WindBorne Systems",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-05"
+  "last_seen": "2026-11-05",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "ashby:xona-space": {
   "kind": "ashby",
@@ -290,7 +701,175 @@
   "name": "Xona Space Systems",
   "first_seen": "2026-10-27",
   "fails": 0,
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "bamboohr:astroscale": {
+  "kind": "bamboohr",
+  "board": "astroscale",
+  "name": "Astroscale",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "list link (2026-11-20)",
   "last_seen": "2026-11-20"
+ },
+ "bamboohr:bluecanyontech": {
+  "kind": "bamboohr",
+  "board": "bluecanyontech",
+  "name": "Blue Canyon",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "list link (2026-10-02)",
+  "last_seen": "2026-10-02"
+ },
+ "bamboohr:canyonaeroconnect": {
+  "kind": "bamboohr",
+  "board": "canyonaeroconnect",
+  "name": "Canyon AeroConnect",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Test Engineer Intern)",
+  "engineering": true,
+  "last_seen": "2026-11-17"
+ },
+ "bamboohr:lunaroutpost": {
+  "kind": "bamboohr",
+  "board": "lunaroutpost",
+  "name": "Lunar Outpost",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "list link (2026-09-15)",
+  "last_seen": "2026-11-20",
+  "last_ok": "2026-11-20"
+ },
+ "bamboohr:punchcut": {
+  "kind": "bamboohr",
+  "board": "punchcut",
+  "name": "Punchcut",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Design Engineer Intern)",
+  "engineering": true,
+  "last_seen": "2026-11-17"
+ },
+ "bamboohr:safransed": {
+  "kind": "bamboohr",
+  "board": "safransed",
+  "name": "Safran",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "list link (2025-10-31)",
+  "last_seen": "2025-10-31",
+  "label": "Safran",
+  "last_ok": "2026-11-20"
+ },
+ "bamboohr:sedarotech": {
+  "kind": "bamboohr",
+  "board": "sedarotech",
+  "name": "Sedaro",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "list link (2026-11-20)",
+  "last_seen": "2026-11-20"
+ },
+ "bamboohr:specteraerospace": {
+  "kind": "bamboohr",
+  "board": "specteraerospace",
+  "name": "Specter Aerospace",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "list link (2026-08-13)",
+  "last_seen": "2026-11-20",
+  "last_ok": "2026-11-20"
+ },
+ "brassring:25539/5310": {
+  "kind": "brassring",
+  "partner": "25539",
+  "sites": [
+   "5310"
+  ],
+  "name": "General Atomics",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "list link (2026-09-24)",
+  "last_seen": "2026-11-19",
+  "label": "General Atomics (25539)",
+  "last_ok": "2026-11-20"
+ },
+ "breezy:benchmark-space-systems-inc": {
+  "kind": "breezy",
+  "board": "benchmark-space-systems-inc",
+  "name": "Benchmark Space Systems Inc",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "list link (2026-10-26)",
+  "last_seen": "2026-11-20"
+ },
+ "breezy:seasats": {
+  "kind": "breezy",
+  "board": "seasats",
+  "name": "Seasats",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Intern - Spring 2027)",
+  "engineering": true,
+  "last_seen": "2026-10-02"
+ },
+ "gem:andrenam": {
+  "kind": "gem",
+  "board": "andrenam",
+  "name": "Andrenam",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "list link (2026-10-23)",
+  "last_seen": "2026-11-20",
+  "last_ok": "2026-11-20"
+ },
+ "gem:astroforge-io": {
+  "kind": "gem",
+  "board": "astroforge-io",
+  "name": "Astroforge",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "list link (2026-10-05)",
+  "last_seen": "2026-11-20",
+  "last_ok": "2026-11-20"
+ },
+ "gem:nominal": {
+  "kind": "gem",
+  "board": "nominal",
+  "name": "Nominal",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "list link (2026-09-20)",
+  "last_seen": "2026-11-20",
+  "last_ok": "2026-11-20"
+ },
+ "greenhouse:10xgenomics": {
+  "kind": "greenhouse",
+  "board": "10xgenomics",
+  "name": "10x Genomics",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "2 mechanical/aerospace internships on the lists (e.g. Intern – Instrument Hardware Engineering)",
+  "engineering": true,
+  "last_seen": "2026-01-17"
  },
  "greenhouse:advancedspace": {
   "kind": "greenhouse",
@@ -298,7 +877,9 @@
   "name": "Advanced Space",
   "first_seen": "2026-10-28",
   "fails": 0,
-  "last_seen": "2026-11-04"
+  "last_seen": "2026-11-04",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "greenhouse:aevexaerospace": {
   "kind": "greenhouse",
@@ -306,7 +887,20 @@
   "name": "Aevex Aerospace",
   "first_seen": "2026-10-28",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "greenhouse:aircapture": {
+  "kind": "greenhouse",
+  "board": "aircapture",
+  "name": "AirCapture",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Test Engineering Intern)",
+  "engineering": true,
+  "last_seen": "2026-03-23"
  },
  "greenhouse:albedo": {
   "kind": "greenhouse",
@@ -314,7 +908,24 @@
   "name": "Albedo",
   "first_seen": "2026-10-30",
   "fails": 0,
-  "last_seen": "2026-11-04"
+  "last_seen": "2026-11-04",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "greenhouse:amca": {
+  "kind": "greenhouse",
+  "board": "amca",
+  "name": "AMCA",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Intern (Summer 2027))",
+  "engineering": true,
+  "last_seen": "2026-09-04",
+  "label": "AMCA",
+  "tried": "2026-11-20",
+  "last_ok": "2026-11-20",
+  "validated": "2026-11-20"
  },
  "greenhouse:andurilindustries": {
   "kind": "greenhouse",
@@ -322,7 +933,9 @@
   "name": "Anduril",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "greenhouse:arcboatcompany": {
   "kind": "greenhouse",
@@ -331,7 +944,21 @@
   "first_seen": "2026-11-06",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-10-07"
+  "last_seen": "2026-10-07",
+  "state": "active",
+  "label": "Arc",
+  "last_ok": "2026-11-20"
+ },
+ "greenhouse:archer56": {
+  "kind": "greenhouse",
+  "board": "archer56",
+  "name": "Archer",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "2 mechanical/aerospace internships on the lists (e.g. Software Engineer Intern - Flight Controls Software)",
+  "engineering": true,
+  "last_seen": "2025-12-25"
  },
  "greenhouse:asteraearlycareer2026": {
   "kind": "greenhouse",
@@ -340,7 +967,10 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2025-10-28"
+  "last_seen": "2025-10-28",
+  "state": "active",
+  "label": "Astera Labs",
+  "last_ok": "2026-11-20"
  },
  "greenhouse:asteraearlycareer2027": {
   "kind": "greenhouse",
@@ -349,7 +979,10 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-10-13"
+  "last_seen": "2026-10-13",
+  "state": "active",
+  "label": "Astera Labs (asteraearlycareer2027)",
+  "last_ok": "2026-11-20"
  },
  "greenhouse:astranis": {
   "kind": "greenhouse",
@@ -357,7 +990,9 @@
   "name": "Astranis",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "greenhouse:astronicscorporation": {
   "kind": "greenhouse",
@@ -365,7 +1000,9 @@
   "name": "Astronics",
   "first_seen": "2026-11-02",
   "fails": 0,
-  "last_seen": "2026-11-16"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "greenhouse:astspacemobile": {
   "kind": "greenhouse",
@@ -373,7 +1010,20 @@
   "name": "AST SpaceMobile",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-11"
+  "last_seen": "2026-11-11",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "greenhouse:axiscompany": {
+  "kind": "greenhouse",
+  "board": "axiscompany",
+  "name": "Axis Automation",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. GVSU Mechanical Engineering Intern Co-op)",
+  "engineering": true,
+  "last_seen": "2026-10-06"
  },
  "greenhouse:blacksky": {
   "kind": "greenhouse",
@@ -381,7 +1031,9 @@
   "name": "BlackSky",
   "first_seen": "2026-10-30",
   "fails": 0,
-  "last_seen": "2026-11-04"
+  "last_seen": "2026-11-04",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "greenhouse:bluestaq": {
   "kind": "greenhouse",
@@ -389,7 +1041,9 @@
   "name": "Bluestaq",
   "first_seen": "2026-10-28",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "greenhouse:castelioncorporation": {
   "kind": "greenhouse",
@@ -397,7 +1051,9 @@
   "name": "Castelion",
   "first_seen": "2026-10-29",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "greenhouse:chaosindustries": {
   "kind": "greenhouse",
@@ -405,7 +1061,8 @@
   "name": "CHAOS Industries",
   "first_seen": "2026-10-30",
   "fails": 0,
-  "last_seen": "2026-11-04"
+  "last_seen": "2026-11-04",
+  "state": "active"
  },
  "greenhouse:dawnaerospace": {
   "kind": "greenhouse",
@@ -413,7 +1070,9 @@
   "name": "Dawn Aerospace",
   "first_seen": "2026-10-28",
   "fails": 0,
-  "last_seen": "2026-11-11"
+  "last_seen": "2026-11-11",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "greenhouse:defenseunicorns": {
   "kind": "greenhouse",
@@ -421,7 +1080,44 @@
   "name": "Defense Unicorns",
   "first_seen": "2026-10-28",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "greenhouse:doordashusa": {
+  "kind": "greenhouse",
+  "board": "doordashusa",
+  "name": "DoorDash",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering, Intern - Labs (Summer 2027))",
+  "engineering": true,
+  "last_seen": "2026-10-22"
+ },
+ "greenhouse:eikontherapeutics": {
+  "kind": "greenhouse",
+  "board": "eikontherapeutics",
+  "name": "Eikon Therapeutics",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Intern Hardware Engineering)",
+  "engineering": true,
+  "last_seen": "2026-02-20"
+ },
+ "greenhouse:figureai": {
+  "kind": "greenhouse",
+  "board": "figureai",
+  "name": "Figure AI",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Integration & Test - Mechanical Engineering Intern [Winter 2)",
+  "engineering": true,
+  "last_seen": "2026-11-02",
+  "last_ok": "2026-11-20",
+  "validated": "2026-11-20"
  },
  "greenhouse:flyzipline": {
   "kind": "greenhouse",
@@ -429,7 +1125,20 @@
   "name": "Zipline",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "greenhouse:formlabsinternships": {
+  "kind": "greenhouse",
+  "board": "formlabsinternships",
+  "name": "Formlabsinternships",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Intern (Summer 2027))",
+  "engineering": true,
+  "last_seen": "2026-09-21"
  },
  "greenhouse:freeformfuturecorp": {
   "kind": "greenhouse",
@@ -437,7 +1146,9 @@
   "name": "Freeform",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "greenhouse:generalgalactic": {
   "kind": "greenhouse",
@@ -445,7 +1156,20 @@
   "name": "General Galactic",
   "first_seen": "2026-10-28",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "greenhouse:generalmatter": {
+  "kind": "greenhouse",
+  "board": "generalmatter",
+  "name": "General Matter",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "2 mechanical/aerospace internships on the lists (e.g. Summer 2027 Internship - Mechanical Engineering (HVAC))",
+  "engineering": true,
+  "last_seen": "2026-09-01"
  },
  "greenhouse:gitai": {
   "kind": "greenhouse",
@@ -453,7 +1177,9 @@
   "name": "GITAI",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "greenhouse:graviticsinc": {
   "kind": "greenhouse",
@@ -461,7 +1187,9 @@
   "name": "Gravitics",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "greenhouse:harbingermotors": {
   "kind": "greenhouse",
@@ -470,7 +1198,9 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-10-09"
+  "last_seen": "2026-10-09",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "greenhouse:hawkeye360": {
   "kind": "greenhouse",
@@ -478,7 +1208,9 @@
   "name": "HawkEye 360",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "greenhouse:heartaerospace": {
   "kind": "greenhouse",
@@ -486,7 +1218,9 @@
   "name": "Heart Aerospace",
   "first_seen": "2026-11-05",
   "fails": 0,
-  "last_seen": "2026-10-29"
+  "last_seen": "2026-10-29",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "greenhouse:hevenaerotech": {
   "kind": "greenhouse",
@@ -494,7 +1228,9 @@
   "name": "Heven AeroTech",
   "first_seen": "2026-10-30",
   "fails": 0,
-  "last_seen": "2026-11-08"
+  "last_seen": "2026-11-08",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "greenhouse:hpiq": {
   "kind": "greenhouse",
@@ -503,7 +1239,43 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-10-27"
+  "last_seen": "2026-10-27",
+  "state": "active",
+  "label": "HP IQ",
+  "last_ok": "2026-11-20"
+ },
+ "greenhouse:imc": {
+  "kind": "greenhouse",
+  "board": "imc",
+  "name": "IMC Trading",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Engineer Intern)",
+  "engineering": true,
+  "last_seen": "2026-07-01"
+ },
+ "greenhouse:inspiremedicalsystemsinc": {
+  "kind": "greenhouse",
+  "board": "inspiremedicalsystemsinc",
+  "name": "Inspire Medical Systems",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Electro/Mechanical Test Systems Engineering Intern)",
+  "engineering": true,
+  "last_seen": "2025-11-05"
+ },
+ "greenhouse:internshiplist2000": {
+  "kind": "greenhouse",
+  "board": "internshiplist2000",
+  "name": "Geotab",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Vehicle Systems Engineer Intern)",
+  "engineering": true,
+  "last_seen": "2026-05-07"
  },
  "greenhouse:inversionspace": {
   "kind": "greenhouse",
@@ -511,7 +1283,9 @@
   "name": "Inversion Space",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "greenhouse:jetzero": {
   "kind": "greenhouse",
@@ -519,7 +1293,9 @@
   "name": "JetZero",
   "first_seen": "2026-11-05",
   "fails": 0,
-  "last_seen": "2026-10-05"
+  "last_seen": "2026-10-05",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "greenhouse:k2spacecorporation": {
   "kind": "greenhouse",
@@ -527,7 +1303,22 @@
   "name": "K2 Space",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "greenhouse:kairospower": {
+  "kind": "greenhouse",
+  "board": "kairospower",
+  "name": "Kairos Power",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical and Manufacturing Engineering Internship - Summer)",
+  "engineering": true,
+  "last_seen": "2026-07-23",
+  "last_ok": "2026-11-20",
+  "validated": "2026-11-20"
  },
  "greenhouse:katalyst": {
   "kind": "greenhouse",
@@ -535,7 +1326,8 @@
   "name": "Katalyst Space Technologies",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-10-28"
+  "last_seen": "2026-10-28",
+  "state": "active"
  },
  "greenhouse:leolabsinc": {
   "kind": "greenhouse",
@@ -543,7 +1335,9 @@
   "name": "LeoLabs",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-11"
+  "last_seen": "2026-11-11",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "greenhouse:lightmatter": {
   "kind": "greenhouse",
@@ -552,7 +1346,25 @@
   "first_seen": "2026-11-12",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-11-17"
+  "last_seen": "2026-11-17",
+  "state": "active",
+  "label": "Lightmatter",
+  "last_ok": "2026-11-20"
+ },
+ "greenhouse:lilasciences": {
+  "kind": "greenhouse",
+  "board": "lilasciences",
+  "name": "Lila Sciences",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Co-op, Mechatronics Engineer)",
+  "engineering": true,
+  "last_seen": "2026-10-26",
+  "label": "Lila Sciences",
+  "tried": "2026-11-20",
+  "last_ok": "2026-11-20",
+  "validated": "2026-11-20"
  },
  "greenhouse:lunarenergy": {
   "kind": "greenhouse",
@@ -561,7 +1373,10 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-10-29"
+  "last_seen": "2026-10-29",
+  "state": "active",
+  "label": "Lunar Energy",
+  "last_ok": "2026-11-20"
  },
  "greenhouse:machindustries": {
   "kind": "greenhouse",
@@ -569,7 +1384,9 @@
   "name": "Mach Industries",
   "first_seen": "2026-11-05",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "greenhouse:mantari": {
   "kind": "greenhouse",
@@ -577,7 +1394,57 @@
   "name": "Mantari",
   "first_seen": "2026-10-29",
   "fails": 0,
-  "last_seen": "2026-10-31"
+  "last_seen": "2026-10-31",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "greenhouse:metoxinternationalinc": {
+  "kind": "greenhouse",
+  "board": "metoxinternationalinc",
+  "name": "MetOx International",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Co-Op/Intern (Summer & Fall 2027))",
+  "engineering": true,
+  "last_seen": "2026-11-04"
+ },
+ "greenhouse:mill": {
+  "kind": "greenhouse",
+  "board": "mill",
+  "name": "Mill",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "2 mechanical/aerospace internships on the lists (e.g. Product Design Engineering Intern, Fall/Winter 2026)",
+  "engineering": true,
+  "last_seen": "2026-09-24"
+ },
+ "greenhouse:modernizingmedicineinc": {
+  "kind": "greenhouse",
+  "board": "modernizingmedicineinc",
+  "name": "Modernizing Medicine",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Product Development Intern - AI & ML Engineering)",
+  "engineering": true,
+  "last_seen": "2025-12-10"
+ },
+ "greenhouse:morph": {
+  "kind": "greenhouse",
+  "board": "morph",
+  "name": "Morph Labs",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Design Intern (Industrial / Mechanical))",
+  "engineering": true,
+  "last_seen": "2026-10-26",
+  "label": "Morph Labs",
+  "tried": "2026-11-20",
+  "last_ok": "2026-11-20",
+  "validated": "2026-11-20"
  },
  "greenhouse:morsecorpcoop": {
   "kind": "greenhouse",
@@ -585,7 +1452,9 @@
   "name": "MORSE Corp",
   "first_seen": "2026-11-05",
   "fails": 0,
-  "last_seen": "2026-10-14"
+  "last_seen": "2026-10-14",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "greenhouse:muonspace": {
   "kind": "greenhouse",
@@ -593,7 +1462,20 @@
   "name": "Muon Space",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "greenhouse:neptunemedical": {
+  "kind": "greenhouse",
+  "board": "neptunemedical",
+  "name": "Neptune Medical",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Co-op: Embedded Vision Engineer - Robotic Surgery Video)",
+  "engineering": true,
+  "last_seen": "2025-10-26"
  },
  "greenhouse:neuralink": {
   "kind": "greenhouse",
@@ -602,7 +1484,20 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-08-21"
+  "last_seen": "2026-08-21",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "greenhouse:newsbreak": {
+  "kind": "greenhouse",
+  "board": "newsbreak",
+  "name": "NewsBreak",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Engineering High-Potential Launch Program Intern to Full-Tim)",
+  "engineering": true,
+  "last_seen": "2025-11-27"
  },
  "greenhouse:orbitaloperations": {
   "kind": "greenhouse",
@@ -610,7 +1505,22 @@
   "name": "Orbital Operations",
   "first_seen": "2026-10-28",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "greenhouse:pacificfusion": {
+  "kind": "greenhouse",
+  "board": "pacificfusion",
+  "name": "Pacific Fusion",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "2 mechanical/aerospace internships on the lists (e.g. Summer 2027 Internship- Mechanical Engineering)",
+  "engineering": true,
+  "last_seen": "2026-11-16",
+  "last_ok": "2026-11-20",
+  "validated": "2026-11-20"
  },
  "greenhouse:parallel": {
   "kind": "greenhouse",
@@ -619,7 +1529,23 @@
   "first_seen": "2026-11-06",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-10-26"
+  "last_seen": "2026-10-26",
+  "state": "active",
+  "label": "Parallel Systems",
+  "last_ok": "2026-11-20"
+ },
+ "greenhouse:pathrobotics": {
+  "kind": "greenhouse",
+  "board": "pathrobotics",
+  "name": "Path Robotics",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "2 mechanical/aerospace internships on the lists (e.g. Manufacturing Design Engineering Internship - Spring 2027)",
+  "engineering": true,
+  "last_seen": "2026-10-23",
+  "last_ok": "2026-11-20",
+  "validated": "2026-11-20"
  },
  "greenhouse:peakenergy": {
   "kind": "greenhouse",
@@ -628,7 +1554,10 @@
   "first_seen": "2026-11-06",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-10-28"
+  "last_seen": "2026-10-28",
+  "state": "active",
+  "label": "Peak Energy",
+  "last_ok": "2026-11-20"
  },
  "greenhouse:planetlabs": {
   "kind": "greenhouse",
@@ -636,7 +1565,44 @@
   "name": "Planet",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "greenhouse:purestorage": {
+  "kind": "greenhouse",
+  "board": "purestorage",
+  "name": "Pure Storage",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Engineer Intern)",
+  "engineering": true,
+  "last_seen": "2026-03-05"
+ },
+ "greenhouse:rebuildmanufacturing": {
+  "kind": "greenhouse",
+  "board": "rebuildmanufacturing",
+  "name": "Re:Build Manufacturing",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "2 mechanical/aerospace internships on the lists (e.g. Process & Mechanical Engineer Co-op/Intern)",
+  "engineering": true,
+  "last_seen": "2026-11-02",
+  "last_ok": "2026-11-20",
+  "validated": "2026-11-20"
+ },
+ "greenhouse:redwoodmaterials": {
+  "kind": "greenhouse",
+  "board": "redwoodmaterials",
+  "name": "Redwood Materials",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Test Engineering Intern)",
+  "engineering": true,
+  "last_seen": "2026-02-02"
  },
  "greenhouse:relativity": {
   "kind": "greenhouse",
@@ -644,7 +1610,9 @@
   "name": "Relativity Space",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "greenhouse:rendezvousrobotics": {
   "kind": "greenhouse",
@@ -652,6 +1620,29 @@
   "name": "Rendezvous Robotics",
   "first_seen": "2026-11-02",
   "fails": 0,
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "greenhouse:roboforce": {
+  "kind": "greenhouse",
+  "board": "roboforce",
+  "name": "RoboForce",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "2 mechanical/aerospace internships on the lists (e.g. Robotics Mechanical Engineering Intern (Fall/Winter 2026))",
+  "engineering": true,
+  "last_seen": "2026-10-01"
+ },
+ "greenhouse:rocketfactoryaugsburgag": {
+  "kind": "greenhouse",
+  "board": "rocketfactoryaugsburgag",
+  "name": "Rocket Factory Augsburg",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "list link (2026-11-20)",
   "last_seen": "2026-11-20"
  },
  "greenhouse:rocketlab": {
@@ -660,15 +1651,54 @@
   "name": "Rocket Lab USA",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active"
  },
  "greenhouse:rsinternboard": {
   "kind": "greenhouse",
   "board": "rsinternboard",
   "name": "Relativity Space",
   "first_seen": "2026-11-05",
+  "fails": 1,
+  "last_seen": "2025-10-30",
+  "state": "repair",
+  "label": "Relativity Space (rsinternboard)",
+  "error": "HTTP 404",
+  "fail_since": "2026-11-20",
+  "next_try": "2026-11-20"
+ },
+ "greenhouse:ruggedrobotics": {
+  "kind": "greenhouse",
+  "board": "ruggedrobotics",
+  "name": "Rugged Robotics",
+  "first_seen": "2026-11-20",
   "fails": 0,
-  "last_seen": "2025-10-30"
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Intern/Co-op (Spring or Summer 2027))",
+  "engineering": true,
+  "last_seen": "2026-10-08"
+ },
+ "greenhouse:samsara": {
+  "kind": "greenhouse",
+  "board": "samsara",
+  "name": "Samsara",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Product Design (Mechanical Engineering) Co-Op)",
+  "engineering": true,
+  "last_seen": "2026-11-16"
+ },
+ "greenhouse:samsungresearchamericainternship": {
+  "kind": "greenhouse",
+  "board": "samsungresearchamericainternship",
+  "name": "Samsung Research America",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Intern - Product Development Engineer - Summer)",
+  "engineering": true,
+  "last_seen": "2025-12-17"
  },
  "greenhouse:samsungsemiconductor": {
   "kind": "greenhouse",
@@ -677,7 +1707,20 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-10-30"
+  "last_seen": "2026-11-19",
+  "state": "active",
+  "label": "Samsung"
+ },
+ "greenhouse:scoutmotors": {
+  "kind": "greenhouse",
+  "board": "scoutmotors",
+  "name": "Scout Motors",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "2 mechanical/aerospace internships on the lists (e.g. Intern Engineer - R&D - Vehicle & Validation)",
+  "engineering": true,
+  "last_seen": "2026-03-04"
  },
  "greenhouse:scoutspace": {
   "kind": "greenhouse",
@@ -685,7 +1728,9 @@
   "name": "Scout Space",
   "first_seen": "2026-11-19",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "greenhouse:sharkninjaoperatingllc": {
   "kind": "greenhouse",
@@ -694,7 +1739,9 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-13",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "greenhouse:singlestore": {
   "kind": "greenhouse",
@@ -703,7 +1750,10 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-09-22"
+  "last_seen": "2026-09-22",
+  "state": "active",
+  "label": "SingleStore",
+  "last_ok": "2026-11-20"
  },
  "greenhouse:skyryse": {
   "kind": "greenhouse",
@@ -711,7 +1761,9 @@
   "name": "Skyryse",
   "first_seen": "2026-10-30",
   "fails": 0,
-  "last_seen": "2026-10-31"
+  "last_seen": "2026-10-31",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "greenhouse:spaceium": {
   "kind": "greenhouse",
@@ -719,7 +1771,9 @@
   "name": "Spaceium",
   "first_seen": "2026-10-30",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "greenhouse:spacekinetic": {
   "kind": "greenhouse",
@@ -727,7 +1781,9 @@
   "name": "Space Kinetic",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "greenhouse:spacex": {
   "kind": "greenhouse",
@@ -735,7 +1791,9 @@
   "name": "SpaceX",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "greenhouse:star-catcher": {
   "kind": "greenhouse",
@@ -743,7 +1801,9 @@
   "name": "Star Catcher",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-19"
+  "last_seen": "2026-11-19",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "greenhouse:stokespacetechnologies": {
   "kind": "greenhouse",
@@ -751,7 +1811,8 @@
   "name": "STOKE Space Technologies",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active"
  },
  "greenhouse:stratolaunch": {
   "kind": "greenhouse",
@@ -759,7 +1820,46 @@
   "name": "Stratolaunch",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "greenhouse:syskahennessy": {
+  "kind": "greenhouse",
+  "board": "syskahennessy",
+  "name": "Syska Hennessy Group",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "2 mechanical/aerospace internships on the lists (e.g. Mechanical Engineering Summer Intern)",
+  "engineering": true,
+  "last_seen": "2026-10-13"
+ },
+ "greenhouse:tempo": {
+  "kind": "greenhouse",
+  "board": "tempo",
+  "name": "Tempo",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. R&D Test Engineering Intern (SoFuel))",
+  "engineering": true,
+  "last_seen": "2026-11-14",
+  "label": "Tempo",
+  "tried": "2026-11-20",
+  "last_ok": "2026-11-20",
+  "validated": "2026-11-20"
+ },
+ "greenhouse:tenstorrentuniversity": {
+  "kind": "greenhouse",
+  "board": "tenstorrentuniversity",
+  "name": "Tenstorrent",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Intern – Physical Design Engineer - Chiplets)",
+  "engineering": true,
+  "last_seen": "2025-10-30"
  },
  "greenhouse:terranorbitalcorporation": {
   "kind": "greenhouse",
@@ -767,7 +1867,20 @@
   "name": "Terran Orbital",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-04"
+  "last_seen": "2026-11-04",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "greenhouse:toshibaglobalcommercesolutions": {
+  "kind": "greenhouse",
+  "board": "toshibaglobalcommercesolutions",
+  "name": "Toshiba Global Commerce",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Engineer Intern)",
+  "engineering": true,
+  "last_seen": "2026-08-18"
  },
  "greenhouse:trueanomalyinc": {
   "kind": "greenhouse",
@@ -775,7 +1888,9 @@
   "name": "True Anomaly",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-04"
+  "last_seen": "2026-11-04",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "greenhouse:ursamajor": {
   "kind": "greenhouse",
@@ -783,7 +1898,8 @@
   "name": "Ursa Major Technologies",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active"
  },
  "greenhouse:vardaspace": {
   "kind": "greenhouse",
@@ -791,7 +1907,9 @@
   "name": "Varda Space",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "greenhouse:vast": {
   "kind": "greenhouse",
@@ -799,7 +1917,8 @@
   "name": "Vast",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active"
  },
  "greenhouse:verkada": {
   "kind": "greenhouse",
@@ -808,7 +1927,21 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-09-02"
+  "last_seen": "2026-09-02",
+  "state": "active",
+  "label": "Verkada",
+  "last_ok": "2026-11-20"
+ },
+ "greenhouse:virtu": {
+  "kind": "greenhouse",
+  "board": "virtu",
+  "name": "Virtu Financial",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Engineer Intern - FPGA)",
+  "engineering": true,
+  "last_seen": "2026-07-31"
  },
  "greenhouse:voyagertechnologiesinc": {
   "kind": "greenhouse",
@@ -816,7 +1949,9 @@
   "name": "Voyager Technologies",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "greenhouse:zone5technologies": {
   "kind": "greenhouse",
@@ -824,7 +1959,344 @@
   "name": "Zone 5 Technologies",
   "first_seen": "2026-11-03",
   "fails": 0,
-  "last_seen": "2026-11-04"
+  "last_seen": "2026-11-04",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "icims:careers-cirrusaircraft.icims.com": {
+  "kind": "icims",
+  "host": "careers-cirrusaircraft.icims.com",
+  "name": "Cirrus Aircraft",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "list link (2026-10-19)",
+  "last_seen": "2026-11-03",
+  "last_ok": "2026-11-20"
+ },
+ "icims:careers-gd-ots.icims.com": {
+  "kind": "icims",
+  "host": "careers-gd-ots.icims.com",
+  "name": "General Dynamics OTS",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "list link (2026-09-16)",
+  "last_seen": "2026-11-11",
+  "last_ok": "2026-11-20"
+ },
+ "icims:careers-gdbiw.icims.com": {
+  "kind": "icims",
+  "host": "careers-gdbiw.icims.com",
+  "name": "General Dynamics Bath Iron Works",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "list link (2026-09-28)",
+  "last_seen": "2026-09-28",
+  "last_ok": "2026-11-20"
+ },
+ "icims:careers-gdeb.icims.com": {
+  "kind": "icims",
+  "host": "careers-gdeb.icims.com",
+  "name": "General Dynamics",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "list link (2025-09-11)",
+  "last_seen": "2026-11-16"
+ },
+ "icims:careers-gdms.icims.com": {
+  "kind": "icims",
+  "host": "careers-gdms.icims.com",
+  "name": "General Dynamics Mission Systems",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "list link (2026-10-26)",
+  "last_seen": "2026-11-20",
+  "last_ok": "2026-11-20"
+ },
+ "icims:careers-hexagonpositioning.icims.com": {
+  "kind": "icims",
+  "host": "careers-hexagonpositioning.icims.com",
+  "name": "Hexagon",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Intern)",
+  "engineering": true,
+  "last_seen": "2026-06-03"
+ },
+ "icims:careers-humanscale.icims.com": {
+  "kind": "icims",
+  "host": "careers-humanscale.icims.com",
+  "name": "Humanscale",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Electrical Design Engineer Intern)",
+  "engineering": true,
+  "last_seen": "2026-08-19"
+ },
+ "icims:careers-iqt.icims.com": {
+  "kind": "icims",
+  "host": "careers-iqt.icims.com",
+  "name": "IQT",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Engineering Intern - Rapid Prototyping Group)",
+  "engineering": true,
+  "last_seen": "2026-09-21"
+ },
+ "icims:careers-iridium.icims.com": {
+  "kind": "icims",
+  "host": "careers-iridium.icims.com",
+  "name": "Iridium",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "list link (2026-09-30)",
+  "last_seen": "2026-11-20",
+  "last_ok": "2026-11-20"
+ },
+ "icims:careers-jobyaviation.icims.com": {
+  "kind": "icims",
+  "host": "careers-jobyaviation.icims.com",
+  "name": "Joby Aviation",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "list link (2026-10-17)",
+  "last_seen": "2026-11-20",
+  "last_ok": "2026-11-20"
+ },
+ "icims:careers-lmi.icims.com": {
+  "kind": "icims",
+  "host": "careers-lmi.icims.com",
+  "name": "LMI",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Space Systems Engineering Intern)",
+  "engineering": true,
+  "last_seen": "2026-03-20"
+ },
+ "icims:careers-otterproducts.icims.com": {
+  "kind": "icims",
+  "host": "careers-otterproducts.icims.com",
+  "name": "Otter Products",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Test Engineering Intern)",
+  "engineering": true,
+  "last_seen": "2026-03-23"
+ },
+ "icims:careers-peraton.icims.com": {
+  "kind": "icims",
+  "host": "careers-peraton.icims.com",
+  "name": "Peraton",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "list link (2026-06-01)",
+  "last_seen": "2026-11-20",
+  "last_ok": "2026-11-20"
+ },
+ "icims:careers-persistentsystems.icims.com": {
+  "kind": "icims",
+  "host": "careers-persistentsystems.icims.com",
+  "name": "Persistent Systems",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "3 mechanical/aerospace internships on the lists (e.g. Hardware Engineer Intern)",
+  "engineering": true,
+  "last_seen": "2026-06-22",
+  "label": "Persistent Systems",
+  "last_ok": "2026-11-20"
+ },
+ "icims:careers-rambus.icims.com": {
+  "kind": "icims",
+  "host": "careers-rambus.icims.com",
+  "name": "Rambus",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "2 mechanical/aerospace internships on the lists (e.g. Test Engineering Intern)",
+  "engineering": true,
+  "last_seen": "2025-11-25"
+ },
+ "icims:careers-sri.icims.com": {
+  "kind": "icims",
+  "host": "careers-sri.icims.com",
+  "name": "SRI International",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. RIT Co-op: Test Engineering)",
+  "engineering": true,
+  "last_seen": "2026-02-13"
+ },
+ "icims:careers-steeldynamics.icims.com": {
+  "kind": "icims",
+  "host": "careers-steeldynamics.icims.com",
+  "name": "Steel Dynamics",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Intern)",
+  "engineering": true,
+  "last_seen": "2025-09-11"
+ },
+ "icims:careers-stellantsystems.icims.com": {
+  "kind": "icims",
+  "host": "careers-stellantsystems.icims.com",
+  "name": "Stellant Systems",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "list link (2026-03-24)",
+  "last_seen": "2026-04-09",
+  "last_ok": "2026-11-20"
+ },
+ "icims:careers-werfen.icims.com": {
+  "kind": "icims",
+  "host": "careers-werfen.icims.com",
+  "name": "Werfen",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "4 mechanical/aerospace internships on the lists (e.g. Intern – Hardware Engineering)",
+  "engineering": true,
+  "last_seen": "2026-10-09",
+  "label": "Werfen",
+  "last_ok": "2026-11-20"
+ },
+ "icims:careersus-shure.icims.com": {
+  "kind": "icims",
+  "host": "careersus-shure.icims.com",
+  "name": "Shure",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "3 mechanical/aerospace internships on the lists (e.g. Audio Test Engineering Intern)",
+  "engineering": true,
+  "last_seen": "2026-09-03",
+  "label": "Shure",
+  "last_ok": "2026-11-20"
+ },
+ "icims:jobs-sierralobo.icims.com": {
+  "kind": "icims",
+  "host": "jobs-sierralobo.icims.com",
+  "name": "Sierra Lobo",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "list link (2026-09-14)",
+  "last_seen": "2026-11-05",
+  "last_ok": "2026-11-20"
+ },
+ "icims:uscareers-lennox.icims.com": {
+  "kind": "icims",
+  "host": "uscareers-lennox.icims.com",
+  "name": "Lennox International",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "4 mechanical/aerospace internships on the lists (e.g. Hardware Engineering Co-op)",
+  "engineering": true,
+  "last_seen": "2026-09-17"
+ },
+ "jazzhr:aerotech": {
+  "kind": "jazzhr",
+  "board": "aerotech",
+  "name": "Aerotech",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Internship or Co-op 2027)",
+  "engineering": true,
+  "last_seen": "2026-08-31",
+  "last_ok": "2026-11-20",
+  "validated": "2026-11-20"
+ },
+ "jazzhr:arminstitute": {
+  "kind": "jazzhr",
+  "board": "arminstitute",
+  "name": "Advanced Robotics for Manufacturing",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineer Co-op Intern)",
+  "engineering": true,
+  "last_seen": "2026-08-03"
+ },
+ "jazzhr:liquidpiston": {
+  "kind": "jazzhr",
+  "board": "liquidpiston",
+  "name": "LiquidPiston",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "list link (2026-09-09)",
+  "last_seen": "2026-10-15",
+  "last_ok": "2026-11-20"
+ },
+ "jazzhr:offworld": {
+  "kind": "jazzhr",
+  "board": "offworld",
+  "name": "OffWorld",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "list link (2026-11-20)",
+  "last_seen": "2026-11-20"
+ },
+ "jazzhr:rantecpowersystemsinc": {
+  "kind": "jazzhr",
+  "board": "rantecpowersystemsinc",
+  "name": "Rantec Power Systems Inc.",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. PCB Design Engineer Intern)",
+  "engineering": true,
+  "last_seen": "2026-07-23"
+ },
+ "jazzhr:roush": {
+  "kind": "jazzhr",
+  "board": "roush",
+  "name": "ROUSH",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "list link (2026-08-03)",
+  "last_seen": "2026-10-26"
+ },
+ "jazzhr:simisinc": {
+  "kind": "jazzhr",
+  "board": "simisinc",
+  "name": "SimIS",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Artificial Intelligence Developer Intern - Aerospace/Aviatio)",
+  "engineering": true,
+  "last_seen": "2026-08-21"
+ },
+ "jazzhr:spacedynamicslaboratory": {
+  "kind": "jazzhr",
+  "board": "spacedynamicslaboratory",
+  "name": "Space Dynamics Laboratory",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "list link (2026-10-20)",
+  "last_seen": "2026-11-20",
+  "last_ok": "2026-11-20"
  },
  "jibe:careers.amd.com": {
   "kind": "jibe",
@@ -833,7 +2305,10 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-08-21"
+  "last_seen": "2026-08-21",
+  "state": "active",
+  "label": "AMD",
+  "last_ok": "2026-11-20"
  },
  "jibe:careers.arcfield.com": {
   "kind": "jibe",
@@ -841,7 +2316,9 @@
   "name": "Arcfield",
   "first_seen": "2026-11-06",
   "fails": 0,
-  "last_seen": "2026-11-10"
+  "last_seen": "2026-11-10",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "jibe:careers.garmin.com": {
   "kind": "jibe",
@@ -850,7 +2327,9 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-10-21"
+  "last_seen": "2026-10-21",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "jibe:careers.gov2x.com": {
   "kind": "jibe",
@@ -858,7 +2337,9 @@
   "name": "V2X",
   "first_seen": "2026-11-02",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "jibe:careers.jhuapl.edu": {
   "kind": "jibe",
@@ -866,7 +2347,9 @@
   "name": "Johns Hopkins Applied Physics Laboratory",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "jibe:careers.rivian.com": {
   "kind": "jibe",
@@ -875,7 +2358,9 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-10-13"
+  "last_seen": "2026-10-13",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "jibe:careers.spiritaero.com": {
   "kind": "jibe",
@@ -883,7 +2368,9 @@
   "name": "Spirit AeroSystems",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-04"
+  "last_seen": "2026-11-04",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "jibe:careers.viasat.com": {
   "kind": "jibe",
@@ -891,7 +2378,8 @@
   "name": "ViaSat",
   "first_seen": "2026-11-05",
   "fails": 0,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-13",
+  "state": "active"
  },
  "jibe:jobs.keysight.com": {
   "kind": "jibe",
@@ -900,7 +2388,21 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-10-23"
+  "last_seen": "2026-10-23",
+  "state": "active",
+  "label": "Keysight Technologies",
+  "last_ok": "2026-11-20"
+ },
+ "jibe:jobs.stryten.com": {
+  "kind": "jibe",
+  "host": "jobs.stryten.com",
+  "name": "Stryten",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Industrial or Mechanical Engineering Intern)",
+  "engineering": true,
+  "last_seen": "2026-08-31"
  },
  "jibe:peraton.jibeapply.com": {
   "kind": "jibe",
@@ -908,7 +2410,23 @@
   "name": "Peraton",
   "first_seen": "2026-10-31",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "label": "Peraton (peraton.jibeapply.com)",
+  "last_ok": "2026-11-20"
+ },
+ "jibe:se.jibeapply.com": {
+  "kind": "jibe",
+  "host": "se.jibeapply.com",
+  "name": "Schneider Electric",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "2 mechanical/aerospace internships on the lists (e.g. Electronics Hardware Engineer Co-op)",
+  "engineering": true,
+  "last_seen": "2026-10-07",
+  "last_ok": "2026-11-20",
+  "validated": "2026-11-20"
  },
  "jibe:spa.jibeapply.com": {
   "kind": "jibe",
@@ -916,7 +2434,9 @@
   "name": "Systems Planning and Analysis",
   "first_seen": "2026-11-06",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "lever:acronaviation": {
   "kind": "lever",
@@ -924,7 +2444,20 @@
   "name": "Acron Aviation",
   "first_seen": "2026-10-30",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "lever:anysignal": {
+  "kind": "lever",
+  "board": "anysignal",
+  "name": "AnySignal",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Intern – Hardware Engineer - Hardware Engineering)",
+  "engineering": true,
+  "last_seen": "2025-11-07"
  },
  "lever:arraylabs.io": {
   "kind": "lever",
@@ -932,7 +2465,20 @@
   "name": "Array Labs",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-10-28"
+  "last_seen": "2026-10-28",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "lever:brightmachines": {
+  "kind": "lever",
+  "board": "brightmachines",
+  "name": "Bright Machines",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Mechatronics Engineering Intern)",
+  "engineering": true,
+  "last_seen": "2026-03-26"
  },
  "lever:cesiumastro": {
   "kind": "lever",
@@ -940,7 +2486,9 @@
   "name": "CesiumAstro",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "lever:cfsenergy": {
   "kind": "lever",
@@ -949,7 +2497,20 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-10-30"
+  "last_seen": "2026-10-30",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "lever:dexterity": {
+  "kind": "lever",
+  "board": "dexterity",
+  "name": "Dexterity",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Manufacturing Test Engineer Intern)",
+  "engineering": true,
+  "last_seen": "2025-10-31"
  },
  "lever:diversified-automation": {
   "kind": "lever",
@@ -958,7 +2519,10 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-10-29"
+  "last_seen": "2026-10-29",
+  "state": "active",
+  "label": "Diversified Automation",
+  "last_ok": "2026-11-20"
  },
  "lever:dodmg": {
   "kind": "lever",
@@ -966,7 +2530,9 @@
   "name": "HRL Laboratories",
   "first_seen": "2026-11-03",
   "fails": 0,
-  "last_seen": "2026-11-04"
+  "last_seen": "2026-11-04",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "lever:espace": {
   "kind": "lever",
@@ -974,7 +2540,31 @@
   "name": "E-Space",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "lever:extremenetworks": {
+  "kind": "lever",
+  "board": "extremenetworks",
+  "name": "Extreme Networks",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Intern - Hardware Engineering)",
+  "engineering": true,
+  "last_seen": "2026-03-23"
+ },
+ "lever:field-ai": {
+  "kind": "lever",
+  "board": "field-ai",
+  "name": "Field Ai",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineer, Robotics Hardware Intern)",
+  "engineering": true,
+  "last_seen": "2026-10-06"
  },
  "lever:foth": {
   "kind": "lever",
@@ -983,7 +2573,10 @@
   "first_seen": "2026-11-06",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-09-02"
+  "last_seen": "2026-09-02",
+  "state": "active",
+  "label": "FOTH",
+  "last_ok": "2026-11-20"
  },
  "lever:hermeus": {
   "kind": "lever",
@@ -991,7 +2584,9 @@
   "name": "Hermeus",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "lever:ispace-inc": {
   "kind": "lever",
@@ -999,7 +2594,8 @@
   "name": "Ispace Technologies",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-04"
+  "last_seen": "2026-11-04",
+  "state": "active"
  },
  "lever:layup": {
   "kind": "lever",
@@ -1007,15 +2603,22 @@
   "name": "Layup Parts",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "lever:leolabs-2": {
   "kind": "lever",
   "board": "leolabs-2",
   "name": "LeoLabs",
   "first_seen": "2026-11-05",
-  "fails": 0,
-  "last_seen": "2025-11-25"
+  "fails": 1,
+  "last_seen": "2025-11-25",
+  "state": "repair",
+  "label": "LeoLabs (leolabs-2)",
+  "error": "HTTP 404",
+  "fail_since": "2026-11-20",
+  "next_try": "2026-11-20"
  },
  "lever:loftorbital": {
   "kind": "lever",
@@ -1023,7 +2626,9 @@
   "name": "Loft Orbital",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "lever:machinalabs": {
   "kind": "lever",
@@ -1031,7 +2636,42 @@
   "name": "Machina Labs",
   "first_seen": "2026-11-03",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "lever:multiplylabs": {
+  "kind": "lever",
+  "board": "multiplylabs",
+  "name": "Multiply Labs",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Co-op/Intern (Spring 2027))",
+  "engineering": true,
+  "last_seen": "2026-10-23"
+ },
+ "lever:palantir": {
+  "kind": "lever",
+  "board": "palantir",
+  "name": "Palantir",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Software Engineer Intern - Query Engines)",
+  "engineering": true,
+  "last_seen": "2026-10-20"
+ },
+ "lever:pivotal": {
+  "kind": "lever",
+  "board": "pivotal",
+  "name": "Pivotal Software",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "2 mechanical/aerospace internships on the lists (e.g. Internship, Flight Test Engineer (Summer 2027))",
+  "engineering": true,
+  "last_seen": "2026-11-09"
  },
  "lever:pyka": {
   "kind": "lever",
@@ -1039,7 +2679,20 @@
   "name": "Pyka",
   "first_seen": "2026-11-05",
   "fails": 0,
-  "last_seen": "2026-09-09"
+  "last_seen": "2026-09-09",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "lever:qrypt": {
+  "kind": "lever",
+  "board": "qrypt",
+  "name": "Qrypt",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Engineer Intern)",
+  "engineering": true,
+  "last_seen": "2025-10-31"
  },
  "lever:reliable": {
   "kind": "lever",
@@ -1047,15 +2700,23 @@
   "name": "Reliable Robotics",
   "first_seen": "2026-11-05",
   "fails": 0,
-  "last_seen": "2025-10-31"
+  "last_seen": "2025-10-31",
+  "state": "active",
+  "label": "Reliable Robotics (reliable)",
+  "last_ok": "2026-11-20"
  },
  "lever:saronic": {
   "kind": "lever",
   "board": "saronic",
   "name": "Saronic",
   "first_seen": "2026-10-27",
-  "fails": 0,
-  "last_seen": "2026-11-04"
+  "fails": 1,
+  "last_seen": "2026-11-04",
+  "state": "repair",
+  "label": "Saronic (saronic)",
+  "error": "HTTP 404",
+  "fail_since": "2026-11-20",
+  "next_try": "2026-11-20"
  },
  "lever:shieldai": {
   "kind": "lever",
@@ -1063,7 +2724,20 @@
   "name": "Shield AI",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-14"
+  "last_seen": "2026-11-14",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "lever:simberobotics": {
+  "kind": "lever",
+  "board": "SimbeRobotics",
+  "name": "Simbe Robotics",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware / Mechanical Engineering Intern — Spring & Summer 2)",
+  "engineering": true,
+  "last_seen": "2026-10-24"
  },
  "lever:skyways": {
   "kind": "lever",
@@ -1071,7 +2745,33 @@
   "name": "Skyways",
   "first_seen": "2026-11-02",
   "fails": 0,
-  "last_seen": "2026-11-04"
+  "last_seen": "2026-11-04",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "lever:thea.energy": {
+  "kind": "lever",
+  "board": "thea.energy",
+  "name": "Thea Energy",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Test Engineer Intern)",
+  "engineering": true,
+  "last_seen": "2026-08-27"
+ },
+ "lever:tri": {
+  "kind": "lever",
+  "board": "tri",
+  "name": "Toyota Research Institute",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Robotics Intern, Mechanical Engineering)",
+  "engineering": true,
+  "last_seen": "2026-11-05",
+  "last_ok": "2026-11-20",
+  "validated": "2026-11-20"
  },
  "lever:westair": {
   "kind": "lever",
@@ -1079,7 +2779,20 @@
   "name": "Western Aircraft",
   "first_seen": "2026-10-28",
   "fails": 0,
-  "last_seen": "2026-11-04"
+  "last_seen": "2026-11-04",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "lever:xcimer": {
+  "kind": "lever",
+  "board": "xcimer",
+  "name": "Xcimer Energy",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Summer 2027 Internship - Mechanical Engineering)",
+  "engineering": true,
+  "last_seen": "2026-09-11"
  },
  "lever:zoox": {
   "kind": "lever",
@@ -1088,7 +2801,9 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-11-06"
+  "last_seen": "2026-11-06",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "oracle:cva.fa.us1.oraclecloud.com/cx_3": {
   "kind": "oracle",
@@ -1097,7 +2812,20 @@
   "name": "Standard Aero",
   "first_seen": "2026-10-30",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active"
+ },
+ "oracle:ebwb.fa.us2.oraclecloud.com/cx": {
+  "kind": "oracle",
+  "host": "ebwb.fa.us2.oraclecloud.com",
+  "site": "CX",
+  "name": "Hologic",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Intern – Engineering - Product Development)",
+  "engineering": true,
+  "last_seen": "2025-12-12"
  },
  "oracle:ebxs.fa.us2.oraclecloud.com/cx_2": {
   "kind": "oracle",
@@ -1107,7 +2835,10 @@
   "first_seen": "2026-11-06",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-09-25"
+  "last_seen": "2026-09-25",
+  "state": "active",
+  "label": "Michael Baker International",
+  "last_ok": "2026-11-20"
  },
  "oracle:edbz.fa.us2.oraclecloud.com/cx": {
   "kind": "oracle",
@@ -1117,7 +2848,10 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-11-16"
+  "last_seen": "2026-11-19",
+  "state": "active",
+  "label": "Texas Instruments",
+  "last_ok": "2026-11-20"
  },
  "oracle:efds.fa.em5.oraclecloud.com/cx_1": {
   "kind": "oracle",
@@ -1127,7 +2861,34 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-04-09"
+  "last_seen": "2026-11-19",
+  "state": "active",
+  "label": "Ford Motor Company",
+  "last_ok": "2026-11-20"
+ },
+ "oracle:egay.fa.us6.oraclecloud.com/cx_4001": {
+  "kind": "oracle",
+  "host": "egay.fa.us6.oraclecloud.com",
+  "site": "CX_4001",
+  "name": "NOV",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Intern)",
+  "engineering": true,
+  "last_seen": "2026-11-10"
+ },
+ "oracle:egcu.fa.us6.oraclecloud.com/cx": {
+  "kind": "oracle",
+  "host": "egcu.fa.us6.oraclecloud.com",
+  "site": "CX",
+  "name": "Masimo",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Intern - Hardware Engineer)",
+  "engineering": true,
+  "last_seen": "2026-01-06"
  },
  "oracle:egup.fa.us2.oraclecloud.com/cx": {
   "kind": "oracle",
@@ -1137,7 +2898,21 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-10-02"
+  "last_seen": "2026-10-02",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "oracle:ehth.fa.em2.oraclecloud.com/cx_2001": {
+  "kind": "oracle",
+  "host": "ehth.fa.em2.oraclecloud.com",
+  "site": "CX_2001",
+  "name": "Garrett Motion",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Garrett Engineering Internship - Mechanical Integration Engi)",
+  "engineering": true,
+  "last_seen": "2025-11-07"
  },
  "oracle:eihu.fa.us8.oraclecloud.com/cx": {
   "kind": "oracle",
@@ -1146,7 +2921,45 @@
   "name": "SAIC",
   "first_seen": "2026-11-11",
   "fails": 0,
-  "last_seen": "2026-11-16"
+  "last_seen": "2026-11-16",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "oracle:ejhp.fa.us6.oraclecloud.com/cx_2": {
+  "kind": "oracle",
+  "host": "ejhp.fa.us6.oraclecloud.com",
+  "site": "CX_2",
+  "name": "Sherwin-Williams",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. 2027 Summer Robotics Engineering Co-Op - Middleburg Heights,)",
+  "engineering": true,
+  "last_seen": "2026-09-29"
+ },
+ "oracle:ejia.fa.us6.oraclecloud.com/cx_1001": {
+  "kind": "oracle",
+  "host": "ejia.fa.us6.oraclecloud.com",
+  "site": "CX_1001",
+  "name": "S&C Electric Company",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "2 mechanical/aerospace internships on the lists (e.g. Tool Design Engineer Intern)",
+  "engineering": true,
+  "last_seen": "2026-10-07"
+ },
+ "oracle:ejta.fa.us6.oraclecloud.com/cx_2001": {
+  "kind": "oracle",
+  "host": "ejta.fa.us6.oraclecloud.com",
+  "site": "CX_2001",
+  "name": "Fortive",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "2 mechanical/aerospace internships on the lists (e.g. Hardware Engineering Intern)",
+  "engineering": true,
+  "last_seen": "2026-10-15"
  },
  "oracle:emit.fa.ca3.oraclecloud.com/cx_2001": {
   "kind": "oracle",
@@ -1156,7 +2969,10 @@
   "first_seen": "2026-11-06",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-10-27"
+  "last_seen": "2026-10-27",
+  "state": "active",
+  "label": "WSP",
+  "last_ok": "2026-11-20"
  },
  "oracle:epyc.fa.us2.oraclecloud.com/cx_1001": {
   "kind": "oracle",
@@ -1166,7 +2982,34 @@
   "first_seen": "2026-11-06",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-11-10"
+  "last_seen": "2026-11-10",
+  "state": "active",
+  "label": "Clean Harbors",
+  "last_ok": "2026-11-20"
+ },
+ "oracle:fa-eowa-saasfaprod1.fa.ocs.oraclecloud.com/csxcareers": {
+  "kind": "oracle",
+  "host": "fa-eowa-saasfaprod1.fa.ocs.oraclecloud.com",
+  "site": "CSXCareers",
+  "name": "CSX",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Intern)",
+  "engineering": true,
+  "last_seen": "2026-09-04"
+ },
+ "oracle:fa-erqb-saasfaprod1.fa.ocs.oraclecloud.com/cx_1": {
+  "kind": "oracle",
+  "host": "fa-erqb-saasfaprod1.fa.ocs.oraclecloud.com",
+  "site": "CX_1",
+  "name": "ADT",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Engineering & Connected Devices Intern)",
+  "engineering": true,
+  "last_seen": "2026-10-16"
  },
  "oracle:fa-espx-saasfaprod1.fa.ocs.oraclecloud.com/cx_1": {
   "kind": "oracle",
@@ -1176,7 +3019,21 @@
   "first_seen": "2026-11-19",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-11-18"
+  "last_seen": "2026-11-18",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "oracle:fa-euwp-saasfaprod1.fa.ocs.oraclecloud.com/cx_1": {
+  "kind": "oracle",
+  "host": "fa-euwp-saasfaprod1.fa.ocs.oraclecloud.com",
+  "site": "CX_1",
+  "name": "Mayo Clinic",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "2 mechanical/aerospace internships on the lists (e.g. Undergraduate Engineering Intern - Mechanical Design)",
+  "engineering": true,
+  "last_seen": "2026-11-02"
  },
  "oracle:fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com/cx_1": {
   "kind": "oracle",
@@ -1186,7 +3043,10 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-11-16"
+  "last_seen": "2026-11-16",
+  "state": "active",
+  "label": "Nokia",
+  "last_ok": "2026-11-20"
  },
  "oracle:fa-exty-saasfaprod1.fa.ocs.oraclecloud.com/cx_1": {
   "kind": "oracle",
@@ -1195,7 +3055,9 @@
   "name": "Howmet Aerospace",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "oracle:hctz.fa.us2.oraclecloud.com/cx_1001": {
   "kind": "oracle",
@@ -1205,7 +3067,34 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-09-28"
+  "last_seen": "2026-09-28",
+  "state": "active",
+  "label": "onsemi",
+  "last_ok": "2026-11-20"
+ },
+ "oracle:hcwp.fa.us2.oraclecloud.com/cx_1": {
+  "kind": "oracle",
+  "host": "hcwp.fa.us2.oraclecloud.com",
+  "site": "CX_1",
+  "name": "Coherent",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "2 mechanical/aerospace internships on the lists (e.g. Intern Thermal Testing Engineer)",
+  "engineering": true,
+  "last_seen": "2026-03-19"
+ },
+ "oracle:hdde.fa.us2.oraclecloud.com/cx": {
+  "kind": "oracle",
+  "host": "hdde.fa.us2.oraclecloud.com",
+  "site": "CX",
+  "name": "Rheem",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Systems Test Engineering Co-Op)",
+  "engineering": true,
+  "last_seen": "2026-01-22"
  },
  "oracle:hdhl.fa.us6.oraclecloud.com/cx_1": {
   "kind": "oracle",
@@ -1215,7 +3104,10 @@
   "first_seen": "2026-11-06",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-10-30"
+  "last_seen": "2026-10-30",
+  "state": "active",
+  "label": "Stantec",
+  "last_ok": "2026-11-20"
  },
  "oracle:hdjq.fa.us2.oraclecloud.com/cx_1": {
   "kind": "oracle",
@@ -1225,7 +3117,20 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-11-02"
+  "last_seen": "2026-11-02",
+  "state": "active"
+ },
+ "oracle:iadugs.fa.ocs.oraclecloud.com/cx_1001": {
+  "kind": "oracle",
+  "host": "iadugs.fa.ocs.oraclecloud.com",
+  "site": "CX_1001",
+  "name": "Legrand",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Intern)",
+  "engineering": true,
+  "last_seen": "2026-11-09"
  },
  "oracle:iawmqy.fa.ocs.oraclecloud.com/careers": {
   "kind": "oracle",
@@ -1235,7 +3140,9 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-11-03"
+  "last_seen": "2026-11-03",
+  "state": "active",
+  "label": "Dell Technologies"
  },
  "oracle:ibqbjb.fa.ocs.oraclecloud.com/cx_1": {
   "kind": "oracle",
@@ -1244,7 +3151,10 @@
   "name": "Honeywell",
   "first_seen": "2026-11-06",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "label": "Honeywell (CX_1)",
+  "last_ok": "2026-11-20"
  },
  "oracle:ibqbjb.fa.ocs.oraclecloud.com/honeywell": {
   "kind": "oracle",
@@ -1253,7 +3163,294 @@
   "name": "Honeywell",
   "first_seen": "2026-10-27",
   "fails": 0,
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "oracle:ibwujb.fa.ocs.oraclecloud.com/cx_1001": {
+  "kind": "oracle",
+  "host": "ibwujb.fa.ocs.oraclecloud.com",
+  "site": "CX_1001",
+  "name": "Ralliant",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Electrical Design Engineer Intern)",
+  "engineering": true,
+  "last_seen": "2026-11-19"
+ },
+ "pinpoint:astrolab": {
+  "kind": "pinpoint",
+  "board": "astrolab",
+  "name": "Astrolab",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "list link (2026-11-20)",
   "last_seen": "2026-11-20"
+ },
+ "pinpoint:impulsespace": {
+  "kind": "pinpoint",
+  "board": "impulsespace",
+  "name": "Impulse Space",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "list link (2026-09-10)",
+  "last_seen": "2026-11-20",
+  "last_ok": "2026-11-20"
+ },
+ "rippling:boom-supersonic": {
+  "kind": "rippling",
+  "board": "boom-supersonic",
+  "name": "Boom Supersonic",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "list link (2026-08-16)",
+  "last_seen": "2026-11-20",
+  "last_ok": "2026-11-20"
+ },
+ "rippling:forterra": {
+  "kind": "rippling",
+  "board": "forterra",
+  "name": "Forterra",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "list link (2026-11-16)",
+  "last_seen": "2026-11-20",
+  "last_ok": "2026-11-20"
+ },
+ "rippling:overland-ai": {
+  "kind": "rippling",
+  "board": "overland-ai",
+  "name": "Overland AI",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "list link (2026-11-20)",
+  "last_seen": "2026-11-20"
+ },
+ "rippling:torus": {
+  "kind": "rippling",
+  "board": "torus",
+  "name": "Torus",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineer Intern (Summer 2027))",
+  "engineering": true,
+  "last_seen": "2026-10-29"
+ },
+ "smartrecruiters:abbvie": {
+  "kind": "smartrecruiters",
+  "board": "AbbVie",
+  "name": "AbbVie",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "3 mechanical/aerospace internships on the lists (e.g. 2026 Combination Product Development Engineering Intern)",
+  "engineering": true,
+  "last_seen": "2026-10-22",
+  "label": "AbbVie",
+  "last_ok": "2026-11-20"
+ },
+ "smartrecruiters:aecom2": {
+  "kind": "smartrecruiters",
+  "board": "AECOM2",
+  "name": "AECOM",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "11 mechanical/aerospace internships on the lists (e.g. Structural Engineering Intern - Bridge & Transportation Stru)",
+  "engineering": true,
+  "last_seen": "2026-11-10",
+  "label": "AECOM",
+  "last_ok": "2026-11-20"
+ },
+ "smartrecruiters:aristanetworks": {
+  "kind": "smartrecruiters",
+  "board": "AristaNetworks",
+  "name": "Arista Networks",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Engineering Intern)",
+  "engineering": true,
+  "last_seen": "2026-09-24"
+ },
+ "smartrecruiters:averydennison": {
+  "kind": "smartrecruiters",
+  "board": "AveryDennison",
+  "name": "Avery Dennison",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Test Engineering Intern)",
+  "engineering": true,
+  "last_seen": "2025-09-05"
+ },
+ "smartrecruiters:boschgroup": {
+  "kind": "smartrecruiters",
+  "board": "BoschGroup",
+  "name": "Robert Bosch Venture Capital",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "13 mechanical/aerospace internships on the lists (e.g. Vehicle Test Engineering Intern)",
+  "engineering": true,
+  "last_seen": "2026-11-04"
+ },
+ "smartrecruiters:continental": {
+  "kind": "smartrecruiters",
+  "board": "Continental",
+  "name": "Continental",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. 2027 Internship - Manufacturing Engineer (Hoosier Racing Tir)",
+  "engineering": true,
+  "last_seen": "2026-09-23"
+ },
+ "smartrecruiters:gdmsi": {
+  "kind": "smartrecruiters",
+  "board": "GDMSI",
+  "name": "General Dynamics UK",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "list link (2026-11-20)",
+  "last_seen": "2026-11-20"
+ },
+ "smartrecruiters:intuitive": {
+  "kind": "smartrecruiters",
+  "board": "Intuitive",
+  "name": "Intuitive Surgical",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "4 mechanical/aerospace internships on the lists (e.g. Robotics Engineer Intern)",
+  "engineering": true,
+  "last_seen": "2026-11-10",
+  "label": "Intuitive Surgical",
+  "last_ok": "2026-11-20"
+ },
+ "smartrecruiters:keenfinity": {
+  "kind": "smartrecruiters",
+  "board": "Keenfinity",
+  "name": "Keenfinity",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "2 mechanical/aerospace internships on the lists (e.g. Electrical Test Engineer Co-op)",
+  "engineering": true,
+  "last_seen": "2026-09-23"
+ },
+ "smartrecruiters:knobelsdorffenterprises": {
+  "kind": "smartrecruiters",
+  "board": "KnobelsdorffEnterprises",
+  "name": "Knobelsdorff Enterprises",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Engineer Intern)",
+  "engineering": true,
+  "last_seen": "2026-09-10"
+ },
+ "smartrecruiters:llnl": {
+  "kind": "smartrecruiters",
+  "board": "LLNL",
+  "name": "Lawrence Livermore National Laboratory",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "list link (2026-08-21)",
+  "last_seen": "2026-11-20",
+  "last_ok": "2026-11-20"
+ },
+ "smartrecruiters:loram1": {
+  "kind": "smartrecruiters",
+  "board": "Loram1",
+  "name": "Loram",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "2 mechanical/aerospace internships on the lists (e.g. Mechanical Engineering Intern)",
+  "engineering": true,
+  "last_seen": "2026-11-11"
+ },
+ "smartrecruiters:renesaselectronics": {
+  "kind": "smartrecruiters",
+  "board": "RenesasElectronics",
+  "name": "Renesas Electronics",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "3 mechanical/aerospace internships on the lists (e.g. Test Engineering Intern)",
+  "engineering": true,
+  "last_seen": "2026-11-19",
+  "label": "Renesas Electronics",
+  "last_ok": "2026-11-20"
+ },
+ "smartrecruiters:respecinc": {
+  "kind": "smartrecruiters",
+  "board": "RESPECInc",
+  "name": "RESPEC",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "3 mechanical/aerospace internships on the lists (e.g. Student Engineering Intern (Mechanical or Electrical))",
+  "engineering": true,
+  "last_seen": "2026-11-09",
+  "label": "RESPEC",
+  "last_ok": "2026-11-20"
+ },
+ "smartrecruiters:sandisk": {
+  "kind": "smartrecruiters",
+  "board": "Sandisk",
+  "name": "Sandisk",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "4 mechanical/aerospace internships on the lists (e.g. Intern - System Design Engineering)",
+  "engineering": true,
+  "last_seen": "2026-03-05",
+  "label": "Sandisk",
+  "last_ok": "2026-11-20"
+ },
+ "smartrecruiters:solidigm": {
+  "kind": "smartrecruiters",
+  "board": "Solidigm",
+  "name": "Solidigm",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "2 mechanical/aerospace internships on the lists (e.g. Hardware & Product Development Engineering Intern)",
+  "engineering": true,
+  "last_seen": "2026-09-07"
+ },
+ "smartrecruiters:wabtec": {
+  "kind": "smartrecruiters",
+  "board": "Wabtec",
+  "name": "Wabtec",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "2 mechanical/aerospace internships on the lists (e.g. Mechanical Engineer Intern - Production Operations)",
+  "engineering": true,
+  "last_seen": "2026-10-08"
+ },
+ "smartrecruiters:westerndigital": {
+  "kind": "smartrecruiters",
+  "board": "WesternDigital",
+  "name": "Western Digital",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "2 mechanical/aerospace internships on the lists (e.g. Hardware Engineering Intern)",
+  "engineering": true,
+  "last_seen": "2026-07-31"
  },
  "successfactors:careers.gulfstream.com": {
   "kind": "successfactors",
@@ -1261,7 +3458,9 @@
   "name": "Gulfstream",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-04"
+  "last_seen": "2026-11-04",
+  "state": "covered",
+  "last_ok": "2026-11-20"
  },
  "successfactors:careers.huntingtoningalls.com": {
   "kind": "successfactors",
@@ -1269,7 +3468,20 @@
   "name": "Huntington Ingalls Industries",
   "first_seen": "2026-10-28",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "successfactors:careers.leggett.com": {
+  "kind": "successfactors",
+  "host": "careers.leggett.com",
+  "name": "Leggett & Platt",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Engineer Intern)",
+  "engineering": true,
+  "last_seen": "2026-04-23"
  },
  "successfactors:careers.qorvo.com": {
   "kind": "successfactors",
@@ -1278,7 +3490,9 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-09-25"
+  "last_seen": "2026-09-25",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "successfactors:careers.safran-dsi.com": {
   "kind": "successfactors",
@@ -1286,7 +3500,19 @@
   "name": "Safran",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active"
+ },
+ "successfactors:careers.skyworksinc.com": {
+  "kind": "successfactors",
+  "host": "careers.skyworksinc.com",
+  "name": "Skyworks",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Summer Intern - Test Engineering)",
+  "engineering": true,
+  "last_seen": "2025-09-18"
  },
  "successfactors:careers.westinghousenuclear.com": {
   "kind": "successfactors",
@@ -1295,7 +3521,19 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-10-16"
+  "last_seen": "2026-10-16",
+  "state": "active"
+ },
+ "successfactors:jobs.bmwgroup.com": {
+  "kind": "successfactors",
+  "host": "jobs.bmwgroup.com",
+  "name": "Rolls-Royce Motorcars",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Intern Technical Service Electrical or Mechanical & Digitali)",
+  "engineering": true,
+  "last_seen": "2026-03-27"
  },
  "successfactors:jobs.l3harris.com": {
   "kind": "successfactors",
@@ -1303,7 +3541,8 @@
   "name": "L3Harris Technologies",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active"
  },
  "successfactors:jobs.ulalaunch.com": {
   "kind": "successfactors",
@@ -1311,7 +3550,132 @@
   "name": "United Launch Alliance",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "successfactors:seagatecareers.com": {
+  "kind": "successfactors",
+  "host": "seagatecareers.com",
+  "name": "Seagate Technology",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "2 mechanical/aerospace internships on the lists (e.g. Systems Hardware Engineering Intern)",
+  "engineering": true,
+  "last_seen": "2025-11-30"
+ },
+ "ukg:https://recruiting.ultipro.com/app1010arai/jobboard/07442cec-d18e-4589-ab15-8342edc29af7": {
+  "kind": "ukg",
+  "board": "https://recruiting.ultipro.com/APP1010ARAI/JobBoard/07442cec-d18e-4589-ab15-8342edc29af7",
+  "name": "Applied Research Associates",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "list link (2026-09-23)",
+  "last_seen": "2026-09-23",
+  "last_ok": "2026-11-20"
+ },
+ "ukg:https://recruiting.ultipro.com/tco1001tcom/jobboard/74e57e92-4355-44d7-8471-3c6eecfda9ef": {
+  "kind": "ukg",
+  "board": "https://recruiting.ultipro.com/TCO1001TCOM/JobBoard/74e57e92-4355-44d7-8471-3c6eecfda9ef",
+  "name": "TCOM",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "list link (2026-09-15)",
+  "last_seen": "2026-10-22",
+  "last_ok": "2026-11-20"
+ },
+ "workable:agile": {
+  "kind": "workable",
+  "board": "agile",
+  "name": "Agile Space Industries",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "name probe (aerospace_companies)",
+  "last_seen": "2026-11-20",
+  "label": "Agile Space Industries",
+  "last_ok": "2026-11-20"
+ },
+ "workable:atomos-space": {
+  "kind": "workable",
+  "board": "atomos-space",
+  "name": "Atomos Space",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "name probe (aerospace_companies)",
+  "last_seen": "2026-11-20",
+  "label": "Atomos Space",
+  "last_ok": "2026-11-20"
+ },
+ "workable:cadillacf1team": {
+  "kind": "workable",
+  "board": "cadillacf1team",
+  "name": "Cadillac Formula 1 Team",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "list link (2026-10-30)",
+  "last_seen": "2026-10-30",
+  "last_ok": "2026-11-20"
+ },
+ "workable:darkhive": {
+  "kind": "workable",
+  "board": "darkhive",
+  "name": "Darkhive",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Engineer Intern - Drone Technology)",
+  "engineering": true,
+  "last_seen": "2025-09-23"
+ },
+ "workable:red-rabbit-robotics": {
+  "kind": "workable",
+  "board": "red-rabbit-robotics",
+  "name": "Red Rabbit Robotics",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Mechatronics Engineer Intern)",
+  "engineering": true,
+  "last_seen": "2026-08-11"
+ },
+ "workable:rise-robotics": {
+  "kind": "workable",
+  "board": "rise-robotics",
+  "name": "Rise Robotics",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical & Test Engineering Intern (Spring 2027))",
+  "engineering": true,
+  "last_seen": "2026-11-03"
+ },
+ "workable:sorting-robotics": {
+  "kind": "workable",
+  "board": "sorting-robotics",
+  "name": "Sorting Robotics",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Robotics Engineer Co-op Intern)",
+  "engineering": true,
+  "last_seen": "2026-08-08"
+ },
+ "workable:terabase-energy": {
+  "kind": "workable",
+  "board": "terabase-energy",
+  "name": "Terabase",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Robotics & Autonomy Engineering Intern)",
+  "engineering": true,
+  "last_seen": "2026-03-31"
  },
  "workday:abb.wd3.myworkdayjobs.com/external_career_page": {
   "kind": "workday",
@@ -1321,7 +3685,9 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-11-09"
+  "last_seen": "2026-11-09",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "workday:aero.wd5.myworkdayjobs.com/external": {
   "kind": "workday",
@@ -1330,7 +3696,9 @@
   "name": "The Aerospace Corporation",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "workday:ag.wd3.myworkdayjobs.com/airbus": {
   "kind": "workday",
@@ -1339,7 +3707,21 @@
   "name": "Airbus",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "workday:airproducts.wd5.myworkdayjobs.com/ap0001": {
+  "kind": "workday",
+  "host": "airproducts.wd5.myworkdayjobs.com",
+  "site": "AP0001",
+  "name": "Air Products",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Summer Intern/Co-op-Mechanical Engineering (2027))",
+  "engineering": true,
+  "last_seen": "2026-08-27"
  },
  "workday:allegion.wd5.myworkdayjobs.com/careers": {
   "kind": "workday",
@@ -1349,7 +3731,9 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-10-02"
+  "last_seen": "2026-10-02",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "workday:alliance.wd3.myworkdayjobs.com/nissanjobs": {
   "kind": "workday",
@@ -1359,7 +3743,9 @@
   "first_seen": "2026-11-14",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-10-19"
+  "last_seen": "2026-10-19",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "workday:amainc.wd12.myworkdayjobs.com/ama_careers": {
   "kind": "workday",
@@ -1368,7 +3754,9 @@
   "name": "Analytical Mechanics Associates",
   "first_seen": "2026-11-03",
   "fails": 0,
-  "last_seen": "2026-11-04"
+  "last_seen": "2026-11-04",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "workday:amat.wd1.myworkdayjobs.com/external": {
   "kind": "workday",
@@ -1378,7 +3766,9 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-10-28"
+  "last_seen": "2026-10-28",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "workday:ambarella.wd108.myworkdayjobs.com/ambarella": {
   "kind": "workday",
@@ -1388,7 +3778,22 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-10-22"
+  "last_seen": "2026-10-22",
+  "state": "active",
+  "label": "Ambarella",
+  "last_ok": "2026-11-20"
+ },
+ "workday:amcor.wd5.myworkdayjobs.com/amcor_external_career_site": {
+  "kind": "workday",
+  "host": "amcor.wd5.myworkdayjobs.com",
+  "site": "amcor_external_career_site",
+  "name": "Amcor",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "2 mechanical/aerospace internships on the lists (e.g. Product Development Engineer Intern)",
+  "engineering": true,
+  "last_seen": "2026-10-20"
  },
  "workday:analogdevices.wd1.myworkdayjobs.com/external": {
   "kind": "workday",
@@ -1398,7 +3803,24 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-11-18"
+  "last_seen": "2026-11-18",
+  "state": "active",
+  "label": "Analog Devices",
+  "last_ok": "2026-11-20"
+ },
+ "workday:aptiv.wd5.myworkdayjobs.com/aptiv_careers": {
+  "kind": "workday",
+  "host": "aptiv.wd5.myworkdayjobs.com",
+  "site": "APTIV_CAREERS",
+  "name": "Aptiv",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Intern - Tooling)",
+  "engineering": true,
+  "last_seen": "2026-10-08",
+  "last_ok": "2026-11-20",
+  "validated": "2026-11-20"
  },
  "workday:asml.wd3.myworkdayjobs.com/asmlext1": {
   "kind": "workday",
@@ -1408,7 +3830,24 @@
   "first_seen": "2026-11-06",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-11-19"
+  "last_seen": "2026-11-19",
+  "state": "active",
+  "label": "ASML",
+  "last_ok": "2026-11-20"
+ },
+ "workday:austalusa.wd1.myworkdayjobs.com/austal": {
+  "kind": "workday",
+  "host": "austalusa.wd1.myworkdayjobs.com",
+  "site": "austal",
+  "name": "Austal USA",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Intern)",
+  "engineering": true,
+  "last_seen": "2026-10-27",
+  "last_ok": "2026-11-20",
+  "validated": "2026-11-20"
  },
  "workday:avav.wd1.myworkdayjobs.com/avav": {
   "kind": "workday",
@@ -1417,7 +3856,9 @@
   "name": "AeroVironment",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "workday:axiomspace.wd5.myworkdayjobs.com/external_career_site": {
   "kind": "workday",
@@ -1426,7 +3867,21 @@
   "name": "Axiom Space",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "workday:badgermeter.wd5.myworkdayjobs.com/us_careersite": {
+  "kind": "workday",
+  "host": "badgermeter.wd5.myworkdayjobs.com",
+  "site": "US_CareerSite",
+  "name": "Badger Meter",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering NPD Intern)",
+  "engineering": true,
+  "last_seen": "2026-10-06"
  },
  "workday:bah.wd1.myworkdayjobs.com/bah_jobs": {
   "kind": "workday",
@@ -1435,7 +3890,45 @@
   "name": "Booz Allen Hamilton",
   "first_seen": "2026-11-05",
   "fails": 0,
-  "last_seen": "2026-11-06"
+  "last_seen": "2026-11-06",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "workday:barr.wd1.myworkdayjobs.com/barrcareers": {
+  "kind": "workday",
+  "host": "barr.wd1.myworkdayjobs.com",
+  "site": "barrcareers",
+  "name": "Barr",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Internship – Mechanical Engineer (Hybrid))",
+  "engineering": true,
+  "last_seen": "2026-09-04"
+ },
+ "workday:biotechne.wd5.myworkdayjobs.com/biotechne": {
+  "kind": "workday",
+  "host": "biotechne.wd5.myworkdayjobs.com",
+  "site": "Biotechne",
+  "name": "Bio-Techne",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "2 mechanical/aerospace internships on the lists (e.g. Hardware Engineering Intern)",
+  "engineering": true,
+  "last_seen": "2026-02-19"
+ },
+ "workday:bloomenergy.wd1.myworkdayjobs.com/bloomenergycareers": {
+  "kind": "workday",
+  "host": "bloomenergy.wd1.myworkdayjobs.com",
+  "site": "bloomenergycareers",
+  "name": "Bloom Energy",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Test Engineering Intern)",
+  "engineering": true,
+  "last_seen": "2025-11-25"
  },
  "workday:blueorigin.wd5.myworkdayjobs.com/blueorigin": {
   "kind": "workday",
@@ -1444,7 +3937,9 @@
   "name": "Blue Origin",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "workday:boeing.wd1.myworkdayjobs.com/external_careers": {
   "kind": "workday",
@@ -1453,7 +3948,8 @@
   "name": "The Boeing Company",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-04"
+  "last_seen": "2026-11-04",
+  "state": "active"
  },
  "workday:boeing.wd1.myworkdayjobs.com/external_subsidiary": {
   "kind": "workday",
@@ -1462,7 +3958,9 @@
   "name": "The Boeing Company",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-04"
+  "last_seen": "2026-11-04",
+  "state": "active",
+  "label": "The Boeing Company"
  },
  "workday:boeing.wd1.myworkdayjobs.com/intern": {
   "kind": "workday",
@@ -1471,7 +3969,9 @@
   "name": "The Boeing Company",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-12"
+  "last_seen": "2026-11-12",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "workday:borgwarner.wd5.myworkdayjobs.com/borgwarner_careers": {
   "kind": "workday",
@@ -1481,7 +3981,9 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-10-28"
+  "last_seen": "2026-10-28",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "workday:bostondynamics.wd1.myworkdayjobs.com/boston_dynamics": {
   "kind": "workday",
@@ -1491,7 +3993,9 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-11-09"
+  "last_seen": "2026-11-09",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "workday:brunswick.wd1.myworkdayjobs.com/search": {
   "kind": "workday",
@@ -1501,7 +4005,9 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-09-03"
+  "last_seen": "2026-09-03",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "workday:caci.wd1.myworkdayjobs.com/external": {
   "kind": "workday",
@@ -1510,7 +4016,57 @@
   "name": "CACI",
   "first_seen": "2026-10-28",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "workday:cadence.wd1.myworkdayjobs.com/external_careers": {
+  "kind": "workday",
+  "host": "cadence.wd1.myworkdayjobs.com",
+  "site": "External_Careers",
+  "name": "Cadence Design Systems",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. SSG Design Engineering Intern)",
+  "engineering": true,
+  "last_seen": "2026-07-16"
+ },
+ "workday:cadence.wd1.myworkdayjobs.com/univ_careers": {
+  "kind": "workday",
+  "host": "cadence.wd1.myworkdayjobs.com",
+  "site": "Univ_Careers",
+  "name": "Cadence Design Systems",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. SSG Design Engineering Intern - Summer 2026)",
+  "engineering": true,
+  "last_seen": "2026-02-27"
+ },
+ "workday:cadence.wd1.myworkdayjobs.com/university_talent": {
+  "kind": "workday",
+  "host": "cadence.wd1.myworkdayjobs.com",
+  "site": "University_Talent",
+  "name": "Cadence Design Systems",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "2 mechanical/aerospace internships on the lists (e.g. SSG Design Engineering Intern)",
+  "engineering": true,
+  "last_seen": "2026-02-27"
+ },
+ "workday:cadence.wd1.myworkdayjobs.com/university_talent_intern": {
+  "kind": "workday",
+  "host": "cadence.wd1.myworkdayjobs.com",
+  "site": "University_Talent_Intern",
+  "name": "Cadence Design Systems",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. SSG Design Engineering Intern)",
+  "engineering": true,
+  "last_seen": "2026-02-27"
  },
  "workday:cae.wd3.myworkdayjobs.com/career": {
   "kind": "workday",
@@ -1519,7 +4075,9 @@
   "name": "CAE",
   "first_seen": "2026-11-02",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "workday:carrier.wd5.myworkdayjobs.com/jobs": {
   "kind": "workday",
@@ -1529,7 +4087,34 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-11-02"
+  "last_seen": "2026-11-02",
+  "state": "active"
+ },
+ "workday:cartech.wd5.myworkdayjobs.com/ctcexternal": {
+  "kind": "workday",
+  "host": "cartech.wd5.myworkdayjobs.com",
+  "site": "CTCExternal",
+  "name": "Carpenter Technology",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Maintenance Intern - Mechanical)",
+  "engineering": true,
+  "last_seen": "2026-10-06",
+  "last_ok": "2026-11-20",
+  "validated": "2026-11-20"
+ },
+ "workday:cat.wd5.myworkdayjobs.com/caterpillarcareers": {
+  "kind": "workday",
+  "host": "cat.wd5.myworkdayjobs.com",
+  "site": "CaterpillarCareers",
+  "name": "Caterpillar Inc.",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Engineering Intern - Product Development Track)",
+  "engineering": true,
+  "last_seen": "2026-07-02"
  },
  "workday:cat.wd5.myworkdayjobs.com/solarturbines": {
   "kind": "workday",
@@ -1539,7 +4124,21 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-10-28"
+  "last_seen": "2026-10-28",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "workday:chartermfg.wd5.myworkdayjobs.com/charter_careers": {
+  "kind": "workday",
+  "host": "chartermfg.wd5.myworkdayjobs.com",
+  "site": "Charter_Careers",
+  "name": "Charter Manufacturing",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "2 mechanical/aerospace internships on the lists (e.g. Mechanical Engineer Intern (Year-Round))",
+  "engineering": true,
+  "last_seen": "2026-10-14"
  },
  "workday:ciena.wd5.myworkdayjobs.com/careers": {
   "kind": "workday",
@@ -1549,7 +4148,10 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-11-16"
+  "last_seen": "2026-11-16",
+  "state": "active",
+  "label": "Ciena",
+  "last_ok": "2026-11-20"
  },
  "workday:cisco.wd5.myworkdayjobs.com/cisco_careers": {
   "kind": "workday",
@@ -1559,7 +4161,10 @@
   "first_seen": "2026-11-06",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-11-17"
+  "last_seen": "2026-11-17",
+  "state": "active",
+  "label": "Cisco",
+  "last_ok": "2026-11-20"
  },
  "workday:citjpl.wd5.myworkdayjobs.com/jobs": {
   "kind": "workday",
@@ -1568,7 +4173,9 @@
   "name": "NASA Jet Propulsion Laboratory",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "workday:cranecompany.wd5.myworkdayjobs.com/careers": {
   "kind": "workday",
@@ -1577,7 +4184,9 @@
   "name": "Crane",
   "first_seen": "2026-11-05",
   "fails": 0,
-  "last_seen": "2026-10-28"
+  "last_seen": "2026-10-28",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "workday:cubic.wd1.myworkdayjobs.com/cubic_global_careers": {
   "kind": "workday",
@@ -1586,7 +4195,10 @@
   "name": "Cubic",
   "first_seen": "2026-10-30",
   "fails": 0,
-  "last_seen": "2026-11-04"
+  "last_seen": "2026-11-04",
+  "state": "active",
+  "label": "Cubic (cubic_global_careers)",
+  "last_ok": "2026-11-20"
  },
  "workday:cubic.wd1.myworkdayjobs.com/cubic_usa_careers": {
   "kind": "workday",
@@ -1595,7 +4207,9 @@
   "name": "Cubic",
   "first_seen": "2026-10-30",
   "fails": 0,
-  "last_seen": "2026-11-09"
+  "last_seen": "2026-11-09",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "workday:curtisswright.wd1.myworkdayjobs.com/cw_external_career_site": {
   "kind": "workday",
@@ -1604,7 +4218,9 @@
   "name": "Curtiss-Wright",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-16"
+  "last_seen": "2026-11-16",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "workday:danaher.wd1.myworkdayjobs.com/danaherjobs": {
   "kind": "workday",
@@ -1614,7 +4230,36 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-09-17"
+  "last_seen": "2026-09-17",
+  "state": "active",
+  "label": "Danaher Corporation",
+  "last_ok": "2026-11-20"
+ },
+ "workday:dell.wd1.myworkdayjobs.com/external": {
+  "kind": "workday",
+  "host": "dell.wd1.myworkdayjobs.com",
+  "site": "External",
+  "name": "Dell Technologies",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Dell CSG Hardware Engineering Intern)",
+  "engineering": true,
+  "last_seen": "2025-09-09",
+  "last_ok": "2026-11-20",
+  "validated": "2026-11-20"
+ },
+ "workday:disney.wd5.myworkdayjobs.com/disneycareerdc": {
+  "kind": "workday",
+  "host": "disney.wd5.myworkdayjobs.com",
+  "site": "disneycareerdc",
+  "name": "The Walt Disney Company",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Mechatronics Engineering Intern)",
+  "engineering": true,
+  "last_seen": "2026-02-17"
  },
  "workday:draper.wd5.myworkdayjobs.com/draper_careers": {
   "kind": "workday",
@@ -1623,7 +4268,9 @@
   "name": "Draper",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "workday:dtna.wd5.myworkdayjobs.com/dtna_external": {
   "kind": "workday",
@@ -1633,7 +4280,10 @@
   "first_seen": "2026-11-12",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-11-17"
+  "last_seen": "2026-11-17",
+  "state": "active",
+  "label": "Daimler Truck",
+  "last_ok": "2026-11-20"
  },
  "workday:ebi.wd5.myworkdayjobs.com/ebadcareers": {
   "kind": "workday",
@@ -1642,7 +4292,9 @@
   "name": "Ensign-Bickford Aerospace & Defense",
   "first_seen": "2026-11-05",
   "fails": 0,
-  "last_seen": "2026-11-10"
+  "last_seen": "2026-11-10",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "workday:elkay.wd1.myworkdayjobs.com/elkay_external": {
   "kind": "workday",
@@ -1652,7 +4304,10 @@
   "first_seen": "2026-11-06",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-11-03"
+  "last_seen": "2026-11-03",
+  "state": "active",
+  "label": "Zurn Elkay Water Solutions",
+  "last_ok": "2026-11-20"
  },
  "workday:entegris.wd1.myworkdayjobs.com/entegriscareers": {
   "kind": "workday",
@@ -1662,7 +4317,48 @@
   "first_seen": "2026-11-13",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-11-13"
+  "last_seen": "2026-11-13",
+  "state": "active",
+  "label": "Entegris",
+  "last_ok": "2026-11-20"
+ },
+ "workday:entrust.wd1.myworkdayjobs.com/entrustcareers": {
+  "kind": "workday",
+  "host": "entrust.wd1.myworkdayjobs.com",
+  "site": "entrustcareers",
+  "name": "Entrust",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "2 mechanical/aerospace internships on the lists (e.g. Mechanical Engineering Co-Op)",
+  "engineering": true,
+  "last_seen": "2026-10-16"
+ },
+ "workday:everestre.wd5.myworkdayjobs.com/careers": {
+  "kind": "workday",
+  "host": "everestre.wd5.myworkdayjobs.com",
+  "site": "careers",
+  "name": "Everest",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. 2027 Everest Design Engineering Internship Program)",
+  "engineering": true,
+  "last_seen": "2026-09-15"
+ },
+ "workday:fermilab.wd5.myworkdayjobs.com/fermilabcareers": {
+  "kind": "workday",
+  "host": "fermilab.wd5.myworkdayjobs.com",
+  "site": "FermilabCareers",
+  "name": "Fermilab",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. VALOR VetTech Mechanical Internship - Summer 2027)",
+  "engineering": true,
+  "last_seen": "2026-10-05",
+  "last_ok": "2026-11-20",
+  "validated": "2026-11-20"
  },
  "workday:fireflyspace.wd115.myworkdayjobs.com/firefly": {
   "kind": "workday",
@@ -1671,7 +4367,9 @@
   "name": "Firefly Aerospace",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "workday:flextronics.wd1.myworkdayjobs.com/careers": {
   "kind": "workday",
@@ -1681,7 +4379,10 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-11-04"
+  "last_seen": "2026-11-04",
+  "state": "active",
+  "label": "Flextronics International",
+  "last_ok": "2026-11-20"
  },
  "workday:flir.wd1.myworkdayjobs.com/flircareers": {
   "kind": "workday",
@@ -1690,7 +4391,20 @@
   "name": "Teledyne",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active"
+ },
+ "workday:foxfactory.wd1.myworkdayjobs.com/fox": {
+  "kind": "workday",
+  "host": "foxfactory.wd1.myworkdayjobs.com",
+  "site": "FOX",
+  "name": "FOX",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Product Development Engineer Intern)",
+  "engineering": true,
+  "last_seen": "2025-11-01"
  },
  "workday:freseniusmedicalcare.wd3.myworkdayjobs.com/fme": {
   "kind": "workday",
@@ -1700,7 +4414,22 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-04-08"
+  "last_seen": "2026-04-08",
+  "state": "active",
+  "label": "Fresenius Medical Care",
+  "last_ok": "2026-11-20"
+ },
+ "workday:gafsgi.wd5.myworkdayjobs.com/gaf_careers": {
+  "kind": "workday",
+  "host": "gafsgi.wd5.myworkdayjobs.com",
+  "site": "GAF_Careers",
+  "name": "GAF",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. R&D Commercial Product Development Engineer Intern)",
+  "engineering": true,
+  "last_seen": "2026-10-28"
  },
  "workday:gdit.wd5.myworkdayjobs.com/external_career_site": {
   "kind": "workday",
@@ -1709,7 +4438,8 @@
   "name": "General Dynamics Information Technology",
   "first_seen": "2026-10-28",
   "fails": 0,
-  "last_seen": "2026-11-17"
+  "last_seen": "2026-11-17",
+  "state": "active"
  },
  "workday:gdit.wd5.myworkdayjobs.com/gdit_earlytalent": {
   "kind": "workday",
@@ -1718,7 +4448,10 @@
   "name": "General Dynamics Information Technology",
   "first_seen": "2026-10-28",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "label": "General Dynamics Information Technology",
+  "last_ok": "2026-11-20"
  },
  "workday:geaerospace.wd5.myworkdayjobs.com/ge_externalsite": {
   "kind": "workday",
@@ -1727,7 +4460,23 @@
   "name": "GE Aerospace",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-19"
+  "last_seen": "2026-11-19",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "workday:gehc.wd5.myworkdayjobs.com/gehc_externalsite": {
+  "kind": "workday",
+  "host": "gehc.wd5.myworkdayjobs.com",
+  "site": "GEHC_ExternalSite",
+  "name": "GE HealthCare",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Internship Mechanical Design)",
+  "engineering": true,
+  "last_seen": "2026-11-10",
+  "last_ok": "2026-11-20",
+  "validated": "2026-11-20"
  },
  "workday:generac.wd5.myworkdayjobs.com/external": {
   "kind": "workday",
@@ -1737,7 +4486,9 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-10-26"
+  "last_seen": "2026-10-26",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "workday:generalmotors.wd5.myworkdayjobs.com/careers_gm": {
   "kind": "workday",
@@ -1747,7 +4498,35 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-11-17"
+  "last_seen": "2026-11-17",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "workday:gevernova.wd5.myworkdayjobs.com/only_confidential_executive_recruiting": {
+  "kind": "workday",
+  "host": "gevernova.wd5.myworkdayjobs.com",
+  "site": "only_confidential_executive_recruiting",
+  "name": "GE Vernova",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Automation and Test Engineering Intern - Spring/Sum)",
+  "engineering": true,
+  "last_seen": "2026-09-09"
+ },
+ "workday:gevernova.wd5.myworkdayjobs.com/vernova_externalsite": {
+  "kind": "workday",
+  "host": "gevernova.wd5.myworkdayjobs.com",
+  "site": "vernova_externalsite",
+  "name": "GE Vernova",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "2 mechanical/aerospace internships on the lists (e.g. Hardware Automation and Test Engineering Intern - Spring/Sum)",
+  "engineering": true,
+  "last_seen": "2026-10-20",
+  "last_ok": "2026-11-20",
+  "validated": "2026-11-20"
  },
  "workday:gi.wd1.myworkdayjobs.com/global_infrastructure": {
   "kind": "workday",
@@ -1757,7 +4536,10 @@
   "first_seen": "2026-11-06",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-11-06"
+  "last_seen": "2026-11-06",
+  "state": "active",
+  "label": "Global Infrastructure",
+  "last_ok": "2026-11-20"
  },
  "workday:globalfoundries.wd1.myworkdayjobs.com/external": {
   "kind": "workday",
@@ -1767,7 +4549,10 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-11-02"
+  "last_seen": "2026-11-02",
+  "state": "active",
+  "label": "GlobalFoundries",
+  "last_ok": "2026-11-20"
  },
  "workday:globalhr.wd5.myworkdayjobs.com/rec_rtx_ext_gateway": {
   "kind": "workday",
@@ -1776,7 +4561,8 @@
   "name": "RTX",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active"
  },
  "workday:gorbel.wd501.myworkdayjobs.com/gorbelcareers": {
   "kind": "workday",
@@ -1786,7 +4572,34 @@
   "first_seen": "2026-11-06",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-11-02"
+  "last_seen": "2026-11-02",
+  "state": "active",
+  "label": "Gorbel",
+  "last_ok": "2026-11-20"
+ },
+ "workday:granite.wd1.myworkdayjobs.com/careers": {
+  "kind": "workday",
+  "host": "granite.wd1.myworkdayjobs.com",
+  "site": "careers",
+  "name": "Granite Construction",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Intern - Design Engineer)",
+  "engineering": true,
+  "last_seen": "2026-11-06"
+ },
+ "workday:gtsgbu.wd3.myworkdayjobs.com/careers": {
+  "kind": "workday",
+  "host": "gtsgbu.wd3.myworkdayjobs.com",
+  "site": "Careers",
+  "name": "Hitachi",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Field Test Engineering Intern)",
+  "engineering": true,
+  "last_seen": "2026-01-30"
  },
  "workday:haier.wd3.myworkdayjobs.com/ge_appliances": {
   "kind": "workday",
@@ -1796,7 +4609,9 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-10-30"
+  "last_seen": "2026-10-30",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "workday:harman.wd3.myworkdayjobs.com/harman": {
   "kind": "workday",
@@ -1806,7 +4621,22 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-04-20"
+  "last_seen": "2026-04-20",
+  "state": "active",
+  "label": "HARMAN International",
+  "last_ok": "2026-11-20"
+ },
+ "workday:heidelbergmaterials.wd3.myworkdayjobs.com/global_hm_career_site": {
+  "kind": "workday",
+  "host": "heidelbergmaterials.wd3.myworkdayjobs.com",
+  "site": "global_hm_career_site",
+  "name": "Heidelberg Materials",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineer Intern)",
+  "engineering": true,
+  "last_seen": "2026-10-13"
  },
  "workday:hendrick.wd5.myworkdayjobs.com/hmscareers": {
   "kind": "workday",
@@ -1815,7 +4645,9 @@
   "name": "Hendrick Motorsports",
   "first_seen": "2026-11-14",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "workday:hexcel.wd5.myworkdayjobs.com/hexcelcareers": {
   "kind": "workday",
@@ -1824,7 +4656,21 @@
   "name": "Hexcel",
   "first_seen": "2026-11-05",
   "fails": 0,
-  "last_seen": "2026-10-28"
+  "last_seen": "2026-10-28",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "workday:highmarkhealth.wd1.myworkdayjobs.com/highmark": {
+  "kind": "workday",
+  "host": "highmarkhealth.wd1.myworkdayjobs.com",
+  "site": "highmark",
+  "name": "Highmark Health",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Data Test Engineering Intern - Multiple Teams)",
+  "engineering": true,
+  "last_seen": "2025-10-02"
  },
  "workday:hitachi.wd1.myworkdayjobs.com/hitachi": {
   "kind": "workday",
@@ -1834,7 +4680,9 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-11-06"
+  "last_seen": "2026-11-06",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "workday:hntb.wd5.myworkdayjobs.com/hntb_careers": {
   "kind": "workday",
@@ -1844,7 +4692,10 @@
   "first_seen": "2026-11-06",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-10-27"
+  "last_seen": "2026-10-27",
+  "state": "active",
+  "label": "HNTB",
+  "last_ok": "2026-11-20"
  },
  "workday:hp.wd5.myworkdayjobs.com/externalcareersite": {
   "kind": "workday",
@@ -1854,7 +4705,10 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-09-28"
+  "last_seen": "2026-09-28",
+  "state": "active",
+  "label": "Hewlett Packard",
+  "last_ok": "2026-11-20"
  },
  "workday:hp.wd5.myworkdayjobs.com/exteu-ac-careersite": {
   "kind": "workday",
@@ -1864,7 +4718,10 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-09-28"
+  "last_seen": "2026-09-28",
+  "state": "active",
+  "label": "Hewlett Packard (EXTEU-AC-CareerSite)",
+  "last_ok": "2026-11-20"
  },
  "workday:hpe.wd5.myworkdayjobs.com/jobsathpe": {
   "kind": "workday",
@@ -1874,7 +4731,22 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-11-09"
+  "last_seen": "2026-11-19",
+  "state": "active",
+  "label": "Hewlett Packard Enterprise",
+  "last_ok": "2026-11-20"
+ },
+ "workday:hypertherm.wd503.myworkdayjobs.com/hypertherm-careers": {
+  "kind": "workday",
+  "host": "hypertherm.wd503.myworkdayjobs.com",
+  "site": "hypertherm-careers",
+  "name": "Hypertherm",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Intern)",
+  "engineering": true,
+  "last_seen": "2026-11-06"
  },
  "workday:imeg.wd1.myworkdaysite.com/imeg_careers": {
   "kind": "workday",
@@ -1885,7 +4757,10 @@
   "first_seen": "2026-11-06",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-10-30"
+  "last_seen": "2026-10-30",
+  "state": "active",
+  "label": "IMEG",
+  "last_ok": "2026-11-20"
  },
  "workday:intel.wd1.myworkdayjobs.com/external": {
   "kind": "workday",
@@ -1895,7 +4770,33 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-11-12"
+  "last_seen": "2026-11-12",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "workday:interpublic.wd5.myworkdayjobs.com/omc": {
+  "kind": "workday",
+  "host": "interpublic.wd5.myworkdayjobs.com",
+  "site": "omc",
+  "name": "Omnicom Group",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Experience Design Engineer Intern Consultant - Design Engine)",
+  "engineering": true,
+  "last_seen": "2026-09-01"
+ },
+ "workday:irhythmtech.wd5.myworkdayjobs.com/irhythm": {
+  "kind": "workday",
+  "host": "irhythmtech.wd5.myworkdayjobs.com",
+  "site": "irhythm",
+  "name": "iRhythm Technologies",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Electrical Test Engineering Co-op)",
+  "engineering": true,
+  "last_seen": "2026-04-17"
  },
  "workday:jabil.wd5.myworkdayjobs.com/jabil_careers": {
   "kind": "workday",
@@ -1905,7 +4806,21 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-11-05"
+  "last_seen": "2026-11-05",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "workday:jci.wd5.myworkdayjobs.com/jci": {
+  "kind": "workday",
+  "host": "jci.wd5.myworkdayjobs.com",
+  "site": "JCI",
+  "name": "Johnson Controls",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "2 mechanical/aerospace internships on the lists (e.g. Embedded Firmware Engineering Intern - Embedded Systems - HV)",
+  "engineering": true,
+  "last_seen": "2026-11-02"
  },
  "workday:jj.wd5.myworkdayjobs.com/jj": {
   "kind": "workday",
@@ -1915,7 +4830,9 @@
   "first_seen": "2026-11-06",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-09-23"
+  "last_seen": "2026-09-23",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "workday:kbr.wd5.myworkdayjobs.com/kbr_careers": {
   "kind": "workday",
@@ -1924,7 +4841,47 @@
   "name": "KBR",
   "first_seen": "2026-10-28",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "workday:kiongroup.wd3.myworkdayjobs.com/kion_scs": {
+  "kind": "workday",
+  "host": "kiongroup.wd3.myworkdayjobs.com",
+  "site": "KION_SCS",
+  "name": "KION Group",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "2 mechanical/aerospace internships on the lists (e.g. RSD Intern - Test Engineering)",
+  "engineering": true,
+  "last_seen": "2026-10-26"
+ },
+ "workday:kiongroup.wd3.myworkdayjobs.com/kiongroup": {
+  "kind": "workday",
+  "host": "kiongroup.wd3.myworkdayjobs.com",
+  "site": "kiongroup",
+  "name": "KION Group",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. RSD Intern - Test Engineering)",
+  "engineering": true,
+  "last_seen": "2026-04-10"
+ },
+ "workday:kla.wd1.myworkdayjobs.com/annarbor": {
+  "kind": "workday",
+  "host": "kla.wd1.myworkdayjobs.com",
+  "site": "AnnArbor",
+  "name": "KLA",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Opto-Mechanical Intern)",
+  "engineering": true,
+  "last_seen": "2026-10-16",
+  "last_ok": "2026-11-20",
+  "validated": "2026-11-20"
  },
  "workday:kla.wd1.myworkdayjobs.com/search": {
   "kind": "workday",
@@ -1934,7 +4891,9 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-11-09"
+  "last_seen": "2026-11-19",
+  "state": "active",
+  "label": "KLA"
  },
  "workday:kla.wd1.myworkdayjobs.com/ur": {
   "kind": "workday",
@@ -1944,7 +4903,22 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-11-12"
+  "last_seen": "2026-11-12",
+  "state": "active",
+  "label": "KLA (UR)",
+  "last_ok": "2026-11-20"
+ },
+ "workday:labcorp.wd1.myworkdayjobs.com/external": {
+  "kind": "workday",
+  "host": "labcorp.wd1.myworkdayjobs.com",
+  "site": "external",
+  "name": "LabCorp",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Intern - Mechanical Engineer)",
+  "engineering": true,
+  "last_seen": "2026-09-14"
  },
  "workday:leidos.wd5.myworkdayjobs.com/external": {
   "kind": "workday",
@@ -1953,7 +4927,46 @@
   "name": "Leidos",
   "first_seen": "2026-11-03",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "workday:lifefitness.wd1.myworkdayjobs.com/searchlfn": {
+  "kind": "workday",
+  "host": "lifefitness.wd1.myworkdayjobs.com",
+  "site": "searchLFN",
+  "name": "Life Fitness",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "2 mechanical/aerospace internships on the lists (e.g. Mechanical Engineering Intern - Ramsey, MN)",
+  "engineering": true,
+  "last_seen": "2026-10-12"
+ },
+ "workday:lumentum.wd5.myworkdayjobs.com/lite": {
+  "kind": "workday",
+  "host": "lumentum.wd5.myworkdayjobs.com",
+  "site": "LITE",
+  "name": "Lumentum",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Internship - Mechanical Engineer)",
+  "engineering": true,
+  "last_seen": "2026-10-19"
+ },
+ "workday:magna.wd3.myworkdaysite.com/magna": {
+  "kind": "workday",
+  "host": "wd3.myworkdaysite.com",
+  "site": "Magna",
+  "tenant": "magna",
+  "name": "Magna",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "2 mechanical/aerospace internships on the lists (e.g. Infrared Systems & Test Engineering Intern)",
+  "engineering": true,
+  "last_seen": "2026-09-14"
  },
  "workday:marvell.wd1.myworkdayjobs.com/marvellcareers": {
   "kind": "workday",
@@ -1963,7 +4976,10 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-11-19"
+  "last_seen": "2026-11-19",
+  "state": "active",
+  "label": "Marvell",
+  "last_ok": "2026-11-20"
  },
  "workday:marvell.wd1.myworkdayjobs.com/marvellcareers2": {
   "kind": "workday",
@@ -1973,7 +4989,34 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-10-05"
+  "last_seen": "2026-10-05",
+  "state": "active",
+  "label": "Marvell (MarvellCareers2)",
+  "last_ok": "2026-11-20"
+ },
+ "workday:masco.wd1.myworkdayjobs.com/deltafaucet": {
+  "kind": "workday",
+  "host": "masco.wd1.myworkdayjobs.com",
+  "site": "deltafaucet",
+  "name": "Delta Faucet",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Engineer Co-op - Electrical Engineering)",
+  "engineering": true,
+  "last_seen": "2026-09-10"
+ },
+ "workday:masco.wd1.myworkdayjobs.com/masco": {
+  "kind": "workday",
+  "host": "masco.wd1.myworkdayjobs.com",
+  "site": "Masco",
+  "name": "Masco",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Engineer Co-op - Electrical Engineering)",
+  "engineering": true,
+  "last_seen": "2026-09-10"
  },
  "workday:maxar.wd1.myworkdayjobs.com/vantor": {
   "kind": "workday",
@@ -1982,7 +5025,32 @@
   "name": "Vantor",
   "first_seen": "2026-10-30",
   "fails": 0,
-  "last_seen": "2026-11-04"
+  "last_seen": "2026-11-04",
+  "state": "active"
+ },
+ "workday:menasha.wd12.myworkdayjobs.com/menashacorp": {
+  "kind": "workday",
+  "host": "menasha.wd12.myworkdayjobs.com",
+  "site": "menashacorp",
+  "name": "Menasha Corporation",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Custom Packaging Design Engineer Co-Op)",
+  "engineering": true,
+  "last_seen": "2026-05-16"
+ },
+ "workday:michelinhr.wd3.myworkdayjobs.com/michelin": {
+  "kind": "workday",
+  "host": "michelinhr.wd3.myworkdayjobs.com",
+  "site": "Michelin",
+  "name": "Michelin",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Summer 2027 Internship: Mechanical Engineer (Emporia, KS))",
+  "engineering": true,
+  "last_seen": "2026-08-31"
  },
  "workday:microchiphr.wd5.myworkdaysite.com/external": {
   "kind": "workday",
@@ -1993,7 +5061,10 @@
   "first_seen": "2026-11-06",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-04-22"
+  "last_seen": "2026-04-22",
+  "state": "active",
+  "label": "Microchip Technology",
+  "last_ok": "2026-11-20"
  },
  "workday:micron.wd1.myworkdayjobs.com/external": {
   "kind": "workday",
@@ -2003,7 +5074,46 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-11-18"
+  "last_seen": "2026-11-18",
+  "state": "active",
+  "label": "Micron Technology",
+  "last_ok": "2026-11-20"
+ },
+ "workday:mii.wd5.myworkdayjobs.com/universityrecruiting": {
+  "kind": "workday",
+  "host": "mii.wd5.myworkdayjobs.com",
+  "site": "universityrecruiting",
+  "name": "Mii",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Design Engineer Intern (Wood Truss))",
+  "engineering": true,
+  "last_seen": "2026-10-20"
+ },
+ "workday:modernatx.wd1.myworkdayjobs.com/m_tx": {
+  "kind": "workday",
+  "host": "modernatx.wd1.myworkdayjobs.com",
+  "site": "M_tx",
+  "name": "Moderna",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "2 mechanical/aerospace internships on the lists (e.g. mRNA Design Engineer Co-op)",
+  "engineering": true,
+  "last_seen": "2026-11-10"
+ },
+ "workday:momentive.wd1.myworkdayjobs.com/mc": {
+  "kind": "workday",
+  "host": "momentive.wd1.myworkdayjobs.com",
+  "site": "MC",
+  "name": "Momentive",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. 2027 Co-Op - Electronics & Aerospace)",
+  "engineering": true,
+  "last_seen": "2026-11-10"
  },
  "workday:moog.wd5.myworkdayjobs.com/moog_external_career_site": {
   "kind": "workday",
@@ -2012,7 +5122,9 @@
   "name": "Moog",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "workday:motorolasolutions.wd5.myworkdayjobs.com/careers": {
   "kind": "workday",
@@ -2022,7 +5134,10 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-11-17"
+  "last_seen": "2026-11-17",
+  "state": "active",
+  "label": "Motorola",
+  "last_ok": "2026-11-20"
  },
  "workday:multimatic.wd10.myworkdayjobs.com/mmec": {
   "kind": "workday",
@@ -2031,7 +5146,9 @@
   "name": "Multimatic",
   "first_seen": "2026-11-14",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "workday:ngc.wd1.myworkdayjobs.com/northrop_grumman_external_site": {
   "kind": "workday",
@@ -2040,7 +5157,9 @@
   "name": "Northrop Grumman",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "workday:nidec.wd1.myworkdayjobs.com/nidec": {
   "kind": "workday",
@@ -2050,7 +5169,9 @@
   "first_seen": "2026-11-19",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-11-19"
+  "last_seen": "2026-11-19",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "workday:nvent.wd5.myworkdayjobs.com/nvent": {
   "kind": "workday",
@@ -2060,7 +5181,10 @@
   "first_seen": "2026-11-06",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-11-04"
+  "last_seen": "2026-11-04",
+  "state": "active",
+  "label": "nVent",
+  "last_ok": "2026-11-20"
  },
  "workday:nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite": {
   "kind": "workday",
@@ -2070,7 +5194,10 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-10-29"
+  "last_seen": "2026-10-29",
+  "state": "active",
+  "label": "NVIDIA",
+  "last_ok": "2026-11-20"
  },
  "workday:nwis.wd12.myworkdayjobs.com/nw": {
   "kind": "workday",
@@ -2079,7 +5206,9 @@
   "name": "Nightwing",
   "first_seen": "2026-11-05",
   "fails": 0,
-  "last_seen": "2026-11-16"
+  "last_seen": "2026-11-16",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "workday:nxp.wd3.myworkdayjobs.com/careers": {
   "kind": "workday",
@@ -2087,9 +5216,27 @@
   "site": "careers",
   "name": "NXP Semiconductors",
   "first_seen": "2026-11-18",
-  "fails": 7,
+  "fails": 8,
   "engineering": true,
-  "last_seen": "2026-09-22"
+  "last_seen": "2026-09-22",
+  "state": "repair",
+  "label": "NXP Semiconductors",
+  "error": "Workday shows its maintenance page for this site: an outage, or the company moved to another hiring system",
+  "fail_since": "2026-11-20",
+  "next_try": "2026-12-04"
+ },
+ "workday:oatey.wd5.myworkdaysite.com/oatey_external_": {
+  "kind": "workday",
+  "host": "wd5.myworkdaysite.com",
+  "site": "Oatey_External_",
+  "tenant": "oatey",
+  "name": "OATEY",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Design Engineering Intern)",
+  "engineering": true,
+  "last_seen": "2026-10-22"
  },
  "workday:oshkoshcorporation.wd5.myworkdayjobs.com/oshkosh": {
   "kind": "workday",
@@ -2099,7 +5246,9 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-10-20"
+  "last_seen": "2026-10-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "workday:pae.wd1.myworkdayjobs.com/amentum_careers": {
   "kind": "workday",
@@ -2108,7 +5257,9 @@
   "name": "Amentum",
   "first_seen": "2026-10-28",
   "fails": 0,
-  "last_seen": "2026-11-17"
+  "last_seen": "2026-11-17",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "workday:parsons.wd5.myworkdayjobs.com/search": {
   "kind": "workday",
@@ -2117,7 +5268,9 @@
   "name": "Parsons",
   "first_seen": "2026-10-28",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "workday:philips.wd3.myworkdayjobs.com/jobs-and-careers": {
   "kind": "workday",
@@ -2127,7 +5280,33 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-11-03"
+  "last_seen": "2026-11-03",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "workday:plexus.wd5.myworkdayjobs.com/plexus_careers": {
+  "kind": "workday",
+  "host": "plexus.wd5.myworkdayjobs.com",
+  "site": "Plexus_Careers",
+  "name": "Plexus",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "2 mechanical/aerospace internships on the lists (e.g. Intern Hardware Engineer)",
+  "engineering": true,
+  "last_seen": "2026-01-12"
+ },
+ "workday:plugpower.wd5.myworkdayjobs.com/plug_power_inc": {
+  "kind": "workday",
+  "host": "plugpower.wd5.myworkdayjobs.com",
+  "site": "Plug_Power_Inc",
+  "name": "Plug Power",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Test Engineering Intern)",
+  "engineering": true,
+  "last_seen": "2025-12-31"
  },
  "workday:radiancetech.wd12.myworkdayjobs.com/radiance_external": {
   "kind": "workday",
@@ -2136,7 +5315,59 @@
   "name": "Radiance Technologies",
   "first_seen": "2026-10-30",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "workday:recar.wd108.myworkdayjobs.com/slatecareers": {
+  "kind": "workday",
+  "host": "recar.wd108.myworkdayjobs.com",
+  "site": "SLATEcareers",
+  "name": "Slate Auto",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "2 mechanical/aerospace internships on the lists (e.g. Intern Prototype Engineer)",
+  "engineering": true,
+  "last_seen": "2026-02-02"
+ },
+ "workday:regalrexnord.wd1.myworkdayjobs.com/careers": {
+  "kind": "workday",
+  "host": "regalrexnord.wd1.myworkdayjobs.com",
+  "site": "careers",
+  "name": "Regal Rexnord",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Engineering Co-op - Mechanical)",
+  "engineering": true,
+  "last_seen": "2026-05-23"
+ },
+ "workday:roche.wd3.myworkdayjobs.com/roche-ext": {
+  "kind": "workday",
+  "host": "roche.wd3.myworkdayjobs.com",
+  "site": "roche-ext",
+  "name": "Roche",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Intern - Systems Engineer - Systems & Hardware Engineering C)",
+  "engineering": true,
+  "last_seen": "2025-12-24"
+ },
+ "workday:rockwellautomation.wd1.myworkdayjobs.com/external-rockwell-automation-early-careers": {
+  "kind": "workday",
+  "host": "rockwellautomation.wd1.myworkdayjobs.com",
+  "site": "External-Rockwell-Automation-Early-Careers",
+  "name": "Rockwell Automation",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Test Engineering Intern)",
+  "engineering": true,
+  "last_seen": "2026-10-14",
+  "last_ok": "2026-11-20",
+  "validated": "2026-11-20"
  },
  "workday:rockwellautomation.wd1.myworkdayjobs.com/external_rockwell_automation": {
   "kind": "workday",
@@ -2146,7 +5377,8 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-11-17"
+  "last_seen": "2026-11-17",
+  "state": "active"
  },
  "workday:rollsroyce.wd3.myworkdayjobs.com/intern_graduate": {
   "kind": "workday",
@@ -2155,7 +5387,59 @@
   "name": "Rolls-Royce",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-19"
+  "last_seen": "2026-11-19",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "workday:saputo.wd5.myworkdayjobs.com/saputo_external_careers": {
+  "kind": "workday",
+  "host": "saputo.wd5.myworkdayjobs.com",
+  "site": "saputo_external_careers",
+  "name": "Saputo",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Packaging Engineering Trainee Intern)",
+  "engineering": true,
+  "last_seen": "2026-04-18"
+ },
+ "workday:sbdinc.wd1.myworkdayjobs.com/stanley_black_decker_career_site": {
+  "kind": "workday",
+  "host": "sbdinc.wd1.myworkdayjobs.com",
+  "site": "Stanley_Black_Decker_Career_Site",
+  "name": "Stanley Black & Decker",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Intern Summer 2027)",
+  "engineering": true,
+  "last_seen": "2026-09-01"
+ },
+ "workday:scj.wd5.myworkdayjobs.com/external_career_site": {
+  "kind": "workday",
+  "host": "scj.wd5.myworkdayjobs.com",
+  "site": "External_Career_Site",
+  "name": "SC Johnson",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Packaging Engineer Intern)",
+  "engineering": true,
+  "last_seen": "2026-05-25"
+ },
+ "workday:sec.wd3.myworkdayjobs.com/samsung_careers": {
+  "kind": "workday",
+  "host": "sec.wd3.myworkdayjobs.com",
+  "site": "Samsung_Careers",
+  "name": "Samsung",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Interoperability – Test Engineering Intern - Iodt)",
+  "engineering": true,
+  "last_seen": "2026-02-03",
+  "last_ok": "2026-11-20",
+  "validated": "2026-11-20"
  },
  "workday:selinc.wd1.myworkdayjobs.com/sel": {
   "kind": "workday",
@@ -2165,7 +5449,9 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-11-09"
+  "last_seen": "2026-11-09",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "workday:sensata.wd1.myworkdayjobs.com/sensata-careers": {
   "kind": "workday",
@@ -2175,7 +5461,10 @@
   "first_seen": "2026-11-06",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-09-16"
+  "last_seen": "2026-09-16",
+  "state": "active",
+  "label": "Sensata",
+  "last_ok": "2026-11-20"
  },
  "workday:sierraspace.wd1.myworkdayjobs.com/sierra_space_external_career_site": {
   "kind": "workday",
@@ -2184,7 +5473,9 @@
   "name": "Sierra Space",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "workday:silabs.wd1.myworkdayjobs.com/siliconlabscareers": {
   "kind": "workday",
@@ -2194,7 +5485,10 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-01-26"
+  "last_seen": "2026-01-26",
+  "state": "active",
+  "label": "Silicon Laboratories",
+  "last_ok": "2026-11-20"
  },
  "workday:slihrms.wd3.myworkdayjobs.com/careers": {
   "kind": "workday",
@@ -2204,7 +5498,22 @@
   "first_seen": "2026-11-06",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-11-04"
+  "last_seen": "2026-11-04",
+  "state": "active",
+  "label": "AtkinsRéalis",
+  "last_ok": "2026-11-20"
+ },
+ "workday:smithnephew.wd5.myworkdayjobs.com/external": {
+  "kind": "workday",
+  "host": "smithnephew.wd5.myworkdayjobs.com",
+  "site": "External",
+  "name": "Smith+Nephew",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "2 mechanical/aerospace internships on the lists (e.g. Intern Mechanical Engineering)",
+  "engineering": true,
+  "last_seen": "2026-10-21"
  },
  "workday:snc.wd1.myworkdayjobs.com/snc_external_career_site": {
   "kind": "workday",
@@ -2213,7 +5522,9 @@
   "name": "Sierra Nevada Corporation",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "workday:starfish.wd501.myworkdayjobs.com/careers": {
   "kind": "workday",
@@ -2222,7 +5533,9 @@
   "name": "Torch Technologies",
   "first_seen": "2026-11-03",
   "fails": 0,
-  "last_seen": "2026-11-04"
+  "last_seen": "2026-11-04",
+  "state": "active",
+  "last_ok": "2026-11-20"
  },
  "workday:stryker.wd1.myworkdayjobs.com/strykercareers": {
   "kind": "workday",
@@ -2232,7 +5545,21 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-10-22"
+  "last_seen": "2026-10-22",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "workday:stvinc.wd5.myworkdayjobs.com/stv": {
+  "kind": "workday",
+  "host": "stvinc.wd5.myworkdayjobs.com",
+  "site": "stv",
+  "name": "STV",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Intern - Summer 2027)",
+  "engineering": true,
+  "last_seen": "2026-10-23"
  },
  "workday:symbotic.wd1.myworkdayjobs.com/symbotic": {
   "kind": "workday",
@@ -2240,9 +5567,40 @@
   "site": "Symbotic",
   "name": "Symbotic",
   "first_seen": "2026-11-19",
-  "fails": 3,
+  "fails": 4,
   "engineering": true,
-  "last_seen": "2025-09-15"
+  "last_seen": "2025-09-15",
+  "state": "covered",
+  "label": "Symbotic (Symbotic)",
+  "error": "Workday shows its maintenance page for this site: an outage, or the company moved to another hiring system",
+  "fail_since": "2026-11-20",
+  "next_try": "2026-11-22"
+ },
+ "workday:symbotic.wd504.myworkdayjobs.com/symbotic": {
+  "kind": "workday",
+  "host": "symbotic.wd504.myworkdayjobs.com",
+  "site": "Symbotic",
+  "name": "Symbotic",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Engineer Intern - Hardware Engineering)",
+  "engineering": true,
+  "last_seen": "2026-09-21",
+  "last_ok": "2026-11-20",
+  "validated": "2026-11-20"
+ },
+ "workday:tandemdiabetes.wd12.myworkdayjobs.com/tandemdiabetes": {
+  "kind": "workday",
+  "host": "tandemdiabetes.wd12.myworkdayjobs.com",
+  "site": "tandemdiabetes",
+  "name": "Tandem Diabetes Care",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Electrical Test Engineer Intern)",
+  "engineering": true,
+  "last_seen": "2026-03-17"
  },
  "workday:thales.wd3.myworkdayjobs.com/careers": {
   "kind": "workday",
@@ -2251,7 +5609,69 @@
   "name": "Thales",
   "first_seen": "2026-10-30",
   "fails": 0,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "workday:thermofisher.wd5.myworkdayjobs.com/thermofishercareers": {
+  "kind": "workday",
+  "host": "thermofisher.wd5.myworkdayjobs.com",
+  "site": "ThermoFisherCareers",
+  "name": "Thermo Fisher Scientific",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "2 mechanical/aerospace internships on the lists (e.g. Systems Integration and Test Engineering Intern)",
+  "engineering": true,
+  "last_seen": "2025-10-29"
+ },
+ "workday:tranetechnologies.wd12.myworkdayjobs.com/trane_technologies_careers": {
+  "kind": "workday",
+  "host": "tranetechnologies.wd12.myworkdayjobs.com",
+  "site": "trane_technologies_careers",
+  "name": "Tranetechnologies",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Co-op)",
+  "engineering": true,
+  "last_seen": "2026-11-05"
+ },
+ "workday:trekbikes.wd1.myworkdayjobs.com/trek": {
+  "kind": "workday",
+  "host": "trekbikes.wd1.myworkdayjobs.com",
+  "site": "TREK",
+  "name": "TREK",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Intern)",
+  "engineering": true,
+  "last_seen": "2026-10-23"
+ },
+ "workday:trimble.wd1.myworkdayjobs.com/trimblecareers": {
+  "kind": "workday",
+  "host": "trimble.wd1.myworkdayjobs.com",
+  "site": "TrimbleCareers",
+  "name": "Trimble",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Engineering Intern - CTCT)",
+  "engineering": true,
+  "last_seen": "2025-10-11"
+ },
+ "workday:tsc.wd12.myworkdayjobs.com/tsc-careers": {
+  "kind": "workday",
+  "host": "tsc.wd12.myworkdayjobs.com",
+  "site": "TSC-Careers",
+  "name": "TSC",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "2 mechanical/aerospace internships on the lists (e.g. Hardware Engineering Co-op)",
+  "engineering": true,
+  "last_seen": "2026-05-12"
  },
  "workday:ttc.wd1.myworkdayjobs.com/toro_external_careers": {
   "kind": "workday",
@@ -2261,7 +5681,21 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-11-12"
+  "last_seen": "2026-11-12",
+  "state": "active",
+  "last_ok": "2026-11-20"
+ },
+ "workday:tysonfoods.wd5.myworkdayjobs.com/tsn": {
+  "kind": "workday",
+  "host": "tysonfoods.wd5.myworkdayjobs.com",
+  "site": "TSN",
+  "name": "Tyson Foods",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Packaging Engineer Intern - Packaging Systems)",
+  "engineering": true,
+  "last_seen": "2026-06-02"
  },
  "workday:valeo.wd3.myworkdayjobs.com/valeo_jobs": {
   "kind": "workday",
@@ -2271,7 +5705,46 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-09-21"
+  "last_seen": "2026-09-21",
+  "state": "active",
+  "label": "Valeo",
+  "last_ok": "2026-11-20"
+ },
+ "workday:veralto.wd1.myworkdayjobs.com/hachjobs": {
+  "kind": "workday",
+  "host": "veralto.wd1.myworkdayjobs.com",
+  "site": "hachjobs",
+  "name": "Veralto",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Engineering Intern - Hardware Engineering)",
+  "engineering": true,
+  "last_seen": "2026-04-13"
+ },
+ "workday:verdantas.wd108.myworkdayjobs.com/verdantas": {
+  "kind": "workday",
+  "host": "verdantas.wd108.myworkdayjobs.com",
+  "site": "Verdantas",
+  "name": "Verdantas",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineer Summer Intern)",
+  "engineering": true,
+  "last_seen": "2026-10-23"
+ },
+ "workday:vermeer.wd5.myworkdayjobs.com/externalcareersite": {
+  "kind": "workday",
+  "host": "vermeer.wd5.myworkdayjobs.com",
+  "site": "externalcareersite",
+  "name": "Vermeer",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "2 mechanical/aerospace internships on the lists (e.g. Test Engineer Intern)",
+  "engineering": true,
+  "last_seen": "2026-08-31"
  },
  "workday:viavisolutions.wd1.myworkdayjobs.com/careers": {
   "kind": "workday",
@@ -2281,7 +5754,22 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-11-09"
+  "last_seen": "2026-11-09",
+  "state": "active",
+  "label": "Viavi Solutions",
+  "last_ok": "2026-11-20"
+ },
+ "workday:wonder.wd1.myworkdayjobs.com/wg": {
+  "kind": "workday",
+  "host": "wonder.wd1.myworkdayjobs.com",
+  "site": "WG",
+  "name": "Wonder",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "2 mechanical/aerospace internships on the lists (e.g. Robotics Systems Engineer Intern)",
+  "engineering": true,
+  "last_seen": "2026-09-04"
  },
  "workday:woodward.wd5.myworkdayjobs.com/woodward": {
   "kind": "workday",
@@ -2290,7 +5778,34 @@
   "name": "Woodward Governor",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-04"
+  "last_seen": "2026-11-04",
+  "state": "active"
+ },
+ "workday:xcelenergy.wd1.myworkdayjobs.com/external": {
+  "kind": "workday",
+  "host": "xcelenergy.wd1.myworkdayjobs.com",
+  "site": "External",
+  "name": "Xcel Energy",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "active",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Substation Design Engineering Intern (Fall/Winter))",
+  "engineering": true,
+  "last_seen": "2026-10-27",
+  "last_ok": "2026-11-20",
+  "validated": "2026-11-20"
+ },
+ "workday:xenergy.wd5.myworkdayjobs.com/x-energyus": {
+  "kind": "workday",
+  "host": "xenergy.wd5.myworkdayjobs.com",
+  "site": "X-energyUS",
+  "name": "X-energy",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "2 mechanical/aerospace internships on the lists (e.g. Mechanical Engineering Internship - Summer 2027)",
+  "engineering": true,
+  "last_seen": "2026-09-17"
  },
  "workday:zebra.wd501.myworkdayjobs.com/zebra_careers": {
   "kind": "workday",
@@ -2300,7 +5815,22 @@
   "first_seen": "2026-11-06",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-11-03"
+  "last_seen": "2026-11-03",
+  "state": "active",
+  "label": "Zebra Technologies",
+  "last_ok": "2026-11-20"
+ },
+ "workday:zekelman.wd12.myworkdayjobs.com/careers": {
+  "kind": "workday",
+  "host": "zekelman.wd12.myworkdayjobs.com",
+  "site": "Careers",
+  "name": "Zekelman Industries",
+  "first_seen": "2026-11-20",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Intern, Mechanical Engineer)",
+  "engineering": true,
+  "last_seen": "2026-09-21"
  },
  "workday:zoll.wd5.myworkdayjobs.com/zollmedicalcorp": {
   "kind": "workday",
@@ -2310,6 +5840,9 @@
   "first_seen": "2026-11-06",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-10-29"
+  "last_seen": "2026-10-29",
+  "state": "active",
+  "label": "ZOLL Medical Corporation",
+  "last_ok": "2026-11-20"
  }
 }
