@@ -356,6 +356,19 @@
   "last_ok": "2026-11-21",
   "validated": "2026-11-20"
  },
+ "ashby:gecko-robotics": {
+  "kind": "ashby",
+  "board": "gecko-robotics",
+  "name": "Gecko Robotics",
+  "first_seen": "2026-11-21",
+  "fails": 0,
+  "state": "active",
+  "via": "name probe (discover seeds)",
+  "last_seen": "2026-11-21",
+  "engineering": true,
+  "label": "Gecko Robotics",
+  "last_ok": "2026-11-21"
+ },
  "ashby:graymatter-robotics": {
   "kind": "ashby",
   "board": "graymatter-robotics",
@@ -1300,6 +1313,19 @@
   "state": "active",
   "last_ok": "2026-11-21"
  },
+ "greenhouse:formic": {
+  "kind": "greenhouse",
+  "board": "formic",
+  "name": "Formic",
+  "first_seen": "2026-11-21",
+  "fails": 0,
+  "state": "active",
+  "via": "name probe (discover seeds)",
+  "last_seen": "2026-11-21",
+  "engineering": true,
+  "label": "Formic",
+  "last_ok": "2026-11-21"
+ },
  "greenhouse:formlabsinternships": {
   "kind": "greenhouse",
   "board": "formlabsinternships",
@@ -1676,10 +1702,14 @@
   "name": "Neptune Medical",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Co-op: Embedded Vision Engineer - Robotic Surgery Video)",
   "engineering": true,
-  "last_seen": "2025-10-26"
+  "last_seen": "2025-10-26",
+  "label": "Neptune Medical",
+  "tried": "2026-11-21",
+  "last_ok": "2026-11-21",
+  "validated": "2026-11-21"
  },
  "greenhouse:neuralink": {
   "kind": "greenhouse",
@@ -1698,10 +1728,14 @@
   "name": "NewsBreak",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Engineering High-Potential Launch Program Intern to Full-Tim)",
   "engineering": true,
-  "last_seen": "2025-11-27"
+  "last_seen": "2025-11-27",
+  "label": "NewsBreak",
+  "tried": "2026-11-21",
+  "last_ok": "2026-11-21",
+  "validated": "2026-11-21"
  },
  "greenhouse:orbitaloperations": {
   "kind": "greenhouse",
@@ -1779,10 +1813,14 @@
   "name": "Pure Storage",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Engineer Intern)",
   "engineering": true,
-  "last_seen": "2026-03-05"
+  "last_seen": "2026-03-05",
+  "label": "Pure Storage",
+  "tried": "2026-11-21",
+  "last_ok": "2026-11-21",
+  "validated": "2026-11-21"
  },
  "greenhouse:rebuildmanufacturing": {
   "kind": "greenhouse",
@@ -1803,10 +1841,14 @@
   "name": "Redwood Materials",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Test Engineering Intern)",
   "engineering": true,
-  "last_seen": "2026-02-02"
+  "last_seen": "2026-02-02",
+  "label": "Redwood Materials",
+  "tried": "2026-11-21",
+  "last_ok": "2026-11-21",
+  "validated": "2026-11-21"
  },
  "greenhouse:relativity": {
   "kind": "greenhouse",
@@ -1834,10 +1876,14 @@
   "name": "RoboForce",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "2 mechanical/aerospace internships on the lists (e.g. Robotics Mechanical Engineering Intern (Fall/Winter 2026))",
   "engineering": true,
-  "last_seen": "2026-10-01"
+  "last_seen": "2026-10-01",
+  "label": "RoboForce",
+  "tried": "2026-11-21",
+  "last_ok": "2026-11-21",
+  "validated": "2026-11-21"
  },
  "greenhouse:rocketfactoryaugsburgag": {
   "kind": "greenhouse",
@@ -1879,10 +1925,14 @@
   "name": "Rugged Robotics",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Intern/Co-op (Spring or Summer 2027))",
   "engineering": true,
-  "last_seen": "2026-10-08"
+  "last_seen": "2026-10-08",
+  "label": "Rugged Robotics",
+  "tried": "2026-11-21",
+  "last_ok": "2026-11-21",
+  "validated": "2026-11-21"
  },
  "greenhouse:samsara": {
   "kind": "greenhouse",
@@ -1890,10 +1940,14 @@
   "name": "Samsara",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Product Design (Mechanical Engineering) Co-Op)",
   "engineering": true,
-  "last_seen": "2026-11-16"
+  "last_seen": "2026-11-16",
+  "label": "Samsara",
+  "tried": "2026-11-21",
+  "last_ok": "2026-11-21",
+  "validated": "2026-11-21"
  },
  "greenhouse:samsungresearchamericainternship": {
   "kind": "greenhouse",
@@ -1901,10 +1955,14 @@
   "name": "Samsung Research America",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Intern - Product Development Engineer - Summer)",
   "engineering": true,
-  "last_seen": "2025-12-17"
+  "last_seen": "2025-12-17",
+  "label": "Samsung Research America",
+  "tried": "2026-11-21",
+  "last_ok": "2026-11-21",
+  "validated": "2026-11-21"
  },
  "greenhouse:samsungsemiconductor": {
   "kind": "greenhouse",
@@ -1924,10 +1982,14 @@
   "name": "Scout Motors",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "2 mechanical/aerospace internships on the lists (e.g. Intern Engineer - R&D - Vehicle & Validation)",
   "engineering": true,
-  "last_seen": "2026-03-04"
+  "last_seen": "2026-03-04",
+  "label": "Scout Motors",
+  "tried": "2026-11-21",
+  "last_ok": "2026-11-21",
+  "validated": "2026-11-21"
  },
  "greenhouse:scoutspace": {
   "kind": "greenhouse",
@@ -2037,10 +2099,14 @@
   "name": "Syska Hennessy Group",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "2 mechanical/aerospace internships on the lists (e.g. Mechanical Engineering Summer Intern)",
   "engineering": true,
-  "last_seen": "2026-10-13"
+  "last_seen": "2026-10-13",
+  "label": "Syska Hennessy Group",
+  "tried": "2026-11-21",
+  "last_ok": "2026-11-21",
+  "validated": "2026-11-21"
  },
  "greenhouse:tempo": {
   "kind": "greenhouse",
@@ -2063,10 +2129,14 @@
   "name": "Tenstorrent",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Intern – Physical Design Engineer - Chiplets)",
   "engineering": true,
-  "last_seen": "2025-10-30"
+  "last_seen": "2025-10-30",
+  "label": "Tenstorrent",
+  "tried": "2026-11-21",
+  "last_ok": "2026-11-21",
+  "validated": "2026-11-21"
  },
  "greenhouse:terranorbitalcorporation": {
   "kind": "greenhouse",
@@ -3212,15 +3282,12 @@
   "site": "CX_1001",
   "name": "Clean Harbors",
   "first_seen": "2026-11-06",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-11-10",
-  "state": "repair",
+  "state": "active",
   "label": "Clean Harbors",
-  "last_ok": "2026-11-20",
-  "error": "HTTP 503",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "last_ok": "2026-11-21"
  },
  "oracle:fa-eowa-saasfaprod1.fa.ocs.oraclecloud.com/csxcareers": {
   "kind": "oracle",
@@ -3853,6 +3920,28 @@
   "last_seen": "2026-11-21",
   "last_ok": "2026-11-21"
  },
+ "ukg:https://recruiting.ultipro.com/wur1001wgna/jobboard/e869ce68-a921-45eb-9467-2c7d2f5970a6": {
+  "kind": "ukg",
+  "board": "https://recruiting.ultipro.com/wur1001wgna/JobBoard/e869ce68-a921-45eb-9467-2c7d2f5970a6",
+  "name": "Würth Elektronik",
+  "first_seen": "2026-11-21",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Lab Test Engineer Intern)",
+  "engineering": true,
+  "last_seen": "2026-11-20"
+ },
+ "ukg:https://recruiting2.ultipro.com/ams1003amsii/jobboard/15976ef7-7f1f-4b2f-8a0c-0e0ac1193dd8": {
+  "kind": "ukg",
+  "board": "https://recruiting2.ultipro.com/AMS1003AMSII/JobBoard/15976ef7-7f1f-4b2f-8a0c-0e0ac1193dd8",
+  "name": "Baltimore Aircoil Company",
+  "first_seen": "2026-11-21",
+  "fails": 0,
+  "state": "candidate",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. HVAC Applications Engineer Intern)",
+  "engineering": true,
+  "last_seen": "2026-11-20"
+ },
  "workable:agile": {
   "kind": "workable",
   "board": "agile",
@@ -4013,6 +4102,55 @@
   "label": "Exponent",
   "last_ok": "2026-11-21"
  },
+ "workable:frontier": {
+  "kind": "workable",
+  "board": "frontier",
+  "name": "Frontier Aerospace",
+  "first_seen": "2026-11-21",
+  "fails": 0,
+  "state": "active",
+  "via": "name probe (aerospace_companies)",
+  "last_seen": "2026-11-21",
+  "label": "Frontier Aerospace",
+  "last_ok": "2026-11-21"
+ },
+ "workable:griffon": {
+  "kind": "workable",
+  "board": "griffon",
+  "name": "Griffon Aerospace",
+  "first_seen": "2026-11-21",
+  "fails": 0,
+  "state": "active",
+  "via": "name probe (aerospace_companies)",
+  "last_seen": "2026-11-21",
+  "label": "Griffon Aerospace",
+  "last_ok": "2026-11-21"
+ },
+ "workable:harley-davidson": {
+  "kind": "workable",
+  "board": "harley-davidson",
+  "name": "Harley-Davidson",
+  "first_seen": "2026-11-21",
+  "fails": 0,
+  "state": "active",
+  "via": "name probe (discover seeds)",
+  "last_seen": "2026-11-21",
+  "engineering": true,
+  "label": "Harley-Davidson",
+  "last_ok": "2026-11-21"
+ },
+ "workable:hedron-space": {
+  "kind": "workable",
+  "board": "hedron-space",
+  "name": "Hedron Space",
+  "first_seen": "2026-11-21",
+  "fails": 0,
+  "state": "active",
+  "via": "name probe (aerospace_companies)",
+  "last_seen": "2026-11-21",
+  "label": "Hedron Space",
+  "last_ok": "2026-11-21"
+ },
  "workable:red-rabbit-robotics": {
   "kind": "workable",
   "board": "red-rabbit-robotics",
@@ -4063,14 +4201,11 @@
   "site": "external_career_page",
   "name": "ABB",
   "first_seen": "2026-11-05",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-11-09",
-  "state": "repair",
-  "last_ok": "2026-11-20",
-  "error": "Workday shows its maintenance page for this site: an outage, or the company moved to another hiring system",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "state": "active",
+  "last_ok": "2026-11-21"
  },
  "workday:aero.wd5.myworkdayjobs.com/external": {
   "kind": "workday",
@@ -4078,13 +4213,10 @@
   "site": "external",
   "name": "The Aerospace Corporation",
   "first_seen": "2026-10-27",
-  "fails": 1,
+  "fails": 0,
   "last_seen": "2026-11-21",
-  "state": "repair",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "state": "active",
+  "last_ok": "2026-11-21"
  },
  "workday:ag.wd3.myworkdayjobs.com/airbus": {
   "kind": "workday",
@@ -4092,13 +4224,10 @@
   "site": "Airbus",
   "name": "Airbus",
   "first_seen": "2026-10-27",
-  "fails": 1,
+  "fails": 0,
   "last_seen": "2026-11-21",
-  "state": "repair",
-  "last_ok": "2026-11-20",
-  "error": "Workday shows its maintenance page for this site: an outage, or the company moved to another hiring system",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "state": "active",
+  "last_ok": "2026-11-21"
  },
  "workday:airproducts.wd5.myworkdayjobs.com/ap0001": {
   "kind": "workday",
@@ -4118,14 +4247,11 @@
   "site": "careers",
   "name": "Allegion",
   "first_seen": "2026-11-05",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-10-02",
-  "state": "repair",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "state": "active",
+  "last_ok": "2026-11-21"
  },
  "workday:alliance.wd3.myworkdayjobs.com/nissanjobs": {
   "kind": "workday",
@@ -4133,14 +4259,11 @@
   "site": "nissanjobs",
   "name": "Nissan",
   "first_seen": "2026-11-14",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-10-19",
-  "state": "repair",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "state": "active",
+  "last_ok": "2026-11-21"
  },
  "workday:amainc.wd12.myworkdayjobs.com/ama_careers": {
   "kind": "workday",
@@ -4159,14 +4282,11 @@
   "site": "External",
   "name": "Applied Materials",
   "first_seen": "2026-11-05",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-10-28",
-  "state": "repair",
-  "last_ok": "2026-11-20",
-  "error": "HTTP 500",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "state": "active",
+  "last_ok": "2026-11-21"
  },
  "workday:ambarella.wd108.myworkdayjobs.com/ambarella": {
   "kind": "workday",
@@ -4199,15 +4319,12 @@
   "site": "External",
   "name": "Analog Devices",
   "first_seen": "2026-11-05",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-11-18",
-  "state": "repair",
+  "state": "active",
   "label": "Analog Devices",
-  "last_ok": "2026-11-20",
-  "error": "Workday shows its maintenance page for this site: an outage, or the company moved to another hiring system",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "last_ok": "2026-11-21"
  },
  "workday:aptiv.wd5.myworkdayjobs.com/aptiv_careers": {
   "kind": "workday",
@@ -4215,16 +4332,13 @@
   "site": "APTIV_CAREERS",
   "name": "Aptiv",
   "first_seen": "2026-11-20",
-  "fails": 1,
-  "state": "repair",
+  "fails": 0,
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Intern - Tooling)",
   "engineering": true,
   "last_seen": "2026-10-08",
-  "last_ok": "2026-11-20",
-  "validated": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "last_ok": "2026-11-21",
+  "validated": "2026-11-20"
  },
  "workday:asml.wd3.myworkdayjobs.com/asmlext1": {
   "kind": "workday",
@@ -4232,15 +4346,12 @@
   "site": "asmlext1",
   "name": "ASML",
   "first_seen": "2026-11-06",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-11-20",
-  "state": "repair",
+  "state": "active",
   "label": "ASML",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "last_ok": "2026-11-21"
  },
  "workday:austalusa.wd1.myworkdayjobs.com/austal": {
   "kind": "workday",
@@ -4248,16 +4359,13 @@
   "site": "austal",
   "name": "Austal USA",
   "first_seen": "2026-11-20",
-  "fails": 1,
-  "state": "repair",
+  "fails": 0,
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Intern)",
   "engineering": true,
   "last_seen": "2026-10-27",
-  "last_ok": "2026-11-20",
-  "validated": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "last_ok": "2026-11-21",
+  "validated": "2026-11-20"
  },
  "workday:avav.wd1.myworkdayjobs.com/avav": {
   "kind": "workday",
@@ -4265,13 +4373,10 @@
   "site": "avav",
   "name": "AeroVironment",
   "first_seen": "2026-10-27",
-  "fails": 1,
+  "fails": 0,
   "last_seen": "2026-11-21",
-  "state": "repair",
-  "last_ok": "2026-11-20",
-  "error": "Workday shows its maintenance page for this site: an outage, or the company moved to another hiring system",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "state": "active",
+  "last_ok": "2026-11-21"
  },
  "workday:axiomspace.wd5.myworkdayjobs.com/external_career_site": {
   "kind": "workday",
@@ -4279,13 +4384,10 @@
   "site": "External_Career_Site",
   "name": "Axiom Space",
   "first_seen": "2026-10-27",
-  "fails": 1,
+  "fails": 0,
   "last_seen": "2026-11-21",
-  "state": "repair",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "state": "active",
+  "last_ok": "2026-11-21"
  },
  "workday:badgermeter.wd5.myworkdayjobs.com/us_careersite": {
   "kind": "workday",
@@ -4305,13 +4407,10 @@
   "site": "BAH_Jobs",
   "name": "Booz Allen Hamilton",
   "first_seen": "2026-11-05",
-  "fails": 1,
+  "fails": 0,
   "last_seen": "2026-11-06",
-  "state": "repair",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "state": "active",
+  "last_ok": "2026-11-21"
  },
  "workday:barr.wd1.myworkdayjobs.com/barrcareers": {
   "kind": "workday",
@@ -4355,13 +4454,10 @@
   "site": "blueorigin",
   "name": "Blue Origin",
   "first_seen": "2026-10-27",
-  "fails": 1,
+  "fails": 0,
   "last_seen": "2026-11-21",
-  "state": "repair",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "state": "active",
+  "last_ok": "2026-11-21"
  },
  "workday:boeing.wd1.myworkdayjobs.com/external_careers": {
   "kind": "workday",
@@ -4390,13 +4486,10 @@
   "site": "INTERN",
   "name": "The Boeing Company",
   "first_seen": "2026-10-27",
-  "fails": 1,
+  "fails": 0,
   "last_seen": "2026-11-12",
-  "state": "repair",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "state": "active",
+  "last_ok": "2026-11-21"
  },
  "workday:borgwarner.wd5.myworkdayjobs.com/borgwarner_careers": {
   "kind": "workday",
@@ -4404,14 +4497,11 @@
   "site": "BorgWarner_Careers",
   "name": "BorgWarner",
   "first_seen": "2026-11-05",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-10-28",
-  "state": "repair",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "state": "active",
+  "last_ok": "2026-11-21"
  },
  "workday:bostondynamics.wd1.myworkdayjobs.com/boston_dynamics": {
   "kind": "workday",
@@ -4419,14 +4509,11 @@
   "site": "Boston_Dynamics",
   "name": "Boston Dynamics",
   "first_seen": "2026-11-05",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-11-09",
-  "state": "repair",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "state": "active",
+  "last_ok": "2026-11-21"
  },
  "workday:brunswick.wd1.myworkdayjobs.com/search": {
   "kind": "workday",
@@ -4434,14 +4521,11 @@
   "site": "search",
   "name": "Brunswick",
   "first_seen": "2026-11-05",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-09-03",
-  "state": "repair",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "state": "active",
+  "last_ok": "2026-11-21"
  },
  "workday:caci.wd1.myworkdayjobs.com/external": {
   "kind": "workday",
@@ -4449,13 +4533,10 @@
   "site": "external",
   "name": "CACI",
   "first_seen": "2026-10-28",
-  "fails": 1,
+  "fails": 0,
   "last_seen": "2026-11-21",
-  "state": "repair",
-  "last_ok": "2026-11-20",
-  "error": "Workday shows its maintenance page for this site: an outage, or the company moved to another hiring system",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "state": "active",
+  "last_ok": "2026-11-21"
  },
  "workday:cadence.wd1.myworkdayjobs.com/external_careers": {
   "kind": "workday",
@@ -4511,13 +4592,10 @@
   "site": "career",
   "name": "CAE",
   "first_seen": "2026-11-02",
-  "fails": 1,
+  "fails": 0,
   "last_seen": "2026-11-21",
-  "state": "repair",
-  "last_ok": "2026-11-20",
-  "error": "Workday shows its maintenance page for this site: an outage, or the company moved to another hiring system",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "state": "active",
+  "last_ok": "2026-11-21"
  },
  "workday:carrier.wd5.myworkdayjobs.com/jobs": {
   "kind": "workday",
@@ -4536,16 +4614,13 @@
   "site": "CTCExternal",
   "name": "Carpenter Technology",
   "first_seen": "2026-11-20",
-  "fails": 1,
-  "state": "repair",
+  "fails": 0,
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Maintenance Intern - Mechanical)",
   "engineering": true,
   "last_seen": "2026-10-06",
-  "last_ok": "2026-11-20",
-  "validated": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "last_ok": "2026-11-21",
+  "validated": "2026-11-20"
  },
  "workday:cat.wd5.myworkdayjobs.com/caterpillarcareers": {
   "kind": "workday",
@@ -4565,14 +4640,11 @@
   "site": "solarturbines",
   "name": "Solar Turbines",
   "first_seen": "2026-11-05",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-10-28",
-  "state": "repair",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "state": "active",
+  "last_ok": "2026-11-21"
  },
  "workday:chartermfg.wd5.myworkdayjobs.com/charter_careers": {
   "kind": "workday",
@@ -4592,15 +4664,12 @@
   "site": "Careers",
   "name": "Ciena",
   "first_seen": "2026-11-05",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-11-16",
-  "state": "repair",
+  "state": "active",
   "label": "Ciena",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "last_ok": "2026-11-21"
  },
  "workday:cisco.wd5.myworkdayjobs.com/cisco_careers": {
   "kind": "workday",
@@ -4608,15 +4677,12 @@
   "site": "cisco_careers",
   "name": "Cisco",
   "first_seen": "2026-11-06",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-11-17",
-  "state": "repair",
+  "state": "active",
   "label": "Cisco",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "last_ok": "2026-11-21"
  },
  "workday:citjpl.wd5.myworkdayjobs.com/jobs": {
   "kind": "workday",
@@ -4624,13 +4690,10 @@
   "site": "Jobs",
   "name": "NASA Jet Propulsion Laboratory",
   "first_seen": "2026-10-27",
-  "fails": 1,
+  "fails": 0,
   "last_seen": "2026-11-21",
-  "state": "repair",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "state": "active",
+  "last_ok": "2026-11-21"
  },
  "workday:cranecompany.wd5.myworkdayjobs.com/careers": {
   "kind": "workday",
@@ -4638,13 +4701,10 @@
   "site": "Careers",
   "name": "Crane",
   "first_seen": "2026-11-05",
-  "fails": 1,
+  "fails": 0,
   "last_seen": "2026-11-11",
-  "state": "repair",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "state": "active",
+  "last_ok": "2026-11-21"
  },
  "workday:cubic.wd1.myworkdayjobs.com/cubic_global_careers": {
   "kind": "workday",
@@ -4652,14 +4712,11 @@
   "site": "cubic_global_careers",
   "name": "Cubic",
   "first_seen": "2026-10-30",
-  "fails": 1,
+  "fails": 0,
   "last_seen": "2026-11-04",
-  "state": "repair",
+  "state": "active",
   "label": "Cubic (cubic_global_careers)",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "last_ok": "2026-11-21"
  },
  "workday:cubic.wd1.myworkdayjobs.com/cubic_usa_careers": {
   "kind": "workday",
@@ -4667,13 +4724,10 @@
   "site": "cubic_USA_careers",
   "name": "Cubic",
   "first_seen": "2026-10-30",
-  "fails": 1,
+  "fails": 0,
   "last_seen": "2026-11-09",
-  "state": "repair",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "state": "active",
+  "last_ok": "2026-11-21"
  },
  "workday:curtisswright.wd1.myworkdayjobs.com/cw_external_career_site": {
   "kind": "workday",
@@ -4681,13 +4735,10 @@
   "site": "cw_external_career_site",
   "name": "Curtiss-Wright",
   "first_seen": "2026-10-27",
-  "fails": 1,
+  "fails": 0,
   "last_seen": "2026-11-16",
-  "state": "repair",
-  "last_ok": "2026-11-20",
-  "error": "Workday shows its maintenance page for this site: an outage, or the company moved to another hiring system",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "state": "active",
+  "last_ok": "2026-11-21"
  },
  "workday:danaher.wd1.myworkdayjobs.com/danaherjobs": {
   "kind": "workday",
@@ -4695,15 +4746,12 @@
   "site": "danaherjobs",
   "name": "Danaher Corporation",
   "first_seen": "2026-11-05",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-09-17",
-  "state": "repair",
+  "state": "active",
   "label": "Danaher Corporation",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "last_ok": "2026-11-21"
  },
  "workday:dell.wd1.myworkdayjobs.com/external": {
   "kind": "workday",
@@ -4741,13 +4789,10 @@
   "site": "Draper_Careers",
   "name": "Draper",
   "first_seen": "2026-10-27",
-  "fails": 1,
+  "fails": 0,
   "last_seen": "2026-11-21",
-  "state": "repair",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "state": "active",
+  "last_ok": "2026-11-21"
  },
  "workday:dtna.wd5.myworkdayjobs.com/dtna_external": {
   "kind": "workday",
@@ -4755,15 +4800,12 @@
   "site": "DTNA_external",
   "name": "Daimler Truck",
   "first_seen": "2026-11-12",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-11-17",
-  "state": "repair",
+  "state": "active",
   "label": "Daimler Truck",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "last_ok": "2026-11-21"
  },
  "workday:ebi.wd5.myworkdayjobs.com/ebadcareers": {
   "kind": "workday",
@@ -4771,13 +4813,10 @@
   "site": "ebadcareers",
   "name": "Ensign-Bickford Aerospace & Defense",
   "first_seen": "2026-11-05",
-  "fails": 1,
+  "fails": 0,
   "last_seen": "2026-11-10",
-  "state": "repair",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "state": "active",
+  "last_ok": "2026-11-21"
  },
  "workday:elkay.wd1.myworkdayjobs.com/elkay_external": {
   "kind": "workday",
@@ -4785,15 +4824,12 @@
   "site": "Elkay_External",
   "name": "Zurn Elkay Water Solutions",
   "first_seen": "2026-11-06",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-11-03",
-  "state": "repair",
+  "state": "active",
   "label": "Zurn Elkay Water Solutions",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "last_ok": "2026-11-21"
  },
  "workday:entegris.wd1.myworkdayjobs.com/entegriscareers": {
   "kind": "workday",
@@ -4801,15 +4837,12 @@
   "site": "entegriscareers",
   "name": "Entegris",
   "first_seen": "2026-11-13",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-11-13",
-  "state": "repair",
+  "state": "active",
   "label": "Entegris",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "last_ok": "2026-11-21"
  },
  "workday:entrust.wd1.myworkdayjobs.com/entrustcareers": {
   "kind": "workday",
@@ -4841,16 +4874,13 @@
   "site": "FermilabCareers",
   "name": "Fermilab",
   "first_seen": "2026-11-20",
-  "fails": 1,
-  "state": "repair",
+  "fails": 0,
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. VALOR VetTech Mechanical Internship - Summer 2027)",
   "engineering": true,
   "last_seen": "2026-10-05",
-  "last_ok": "2026-11-20",
-  "validated": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "last_ok": "2026-11-21",
+  "validated": "2026-11-20"
  },
  "workday:fireflyspace.wd115.myworkdayjobs.com/firefly": {
   "kind": "workday",
@@ -4869,15 +4899,12 @@
   "site": "Careers",
   "name": "Flextronics International",
   "first_seen": "2026-11-05",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-11-04",
-  "state": "repair",
+  "state": "active",
   "label": "Flextronics International",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "last_ok": "2026-11-21"
  },
  "workday:flir.wd1.myworkdayjobs.com/flircareers": {
   "kind": "workday",
@@ -4907,15 +4934,12 @@
   "site": "fme",
   "name": "Fresenius Medical Care",
   "first_seen": "2026-11-05",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-04-08",
-  "state": "repair",
+  "state": "active",
   "label": "Fresenius Medical Care",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "last_ok": "2026-11-21"
  },
  "workday:gafsgi.wd5.myworkdayjobs.com/gaf_careers": {
   "kind": "workday",
@@ -4945,14 +4969,11 @@
   "site": "gdit_earlytalent",
   "name": "General Dynamics Information Technology",
   "first_seen": "2026-10-28",
-  "fails": 1,
+  "fails": 0,
   "last_seen": "2026-11-21",
-  "state": "repair",
+  "state": "active",
   "label": "General Dynamics Information Technology",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "last_ok": "2026-11-21"
  },
  "workday:geaerospace.wd5.myworkdayjobs.com/ge_externalsite": {
   "kind": "workday",
@@ -4960,13 +4981,10 @@
   "site": "ge_externalsite",
   "name": "GE Aerospace",
   "first_seen": "2026-10-27",
-  "fails": 1,
+  "fails": 0,
   "last_seen": "2026-11-19",
-  "state": "repair",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "state": "active",
+  "last_ok": "2026-11-21"
  },
  "workday:gehc.wd5.myworkdayjobs.com/gehc_externalsite": {
   "kind": "workday",
@@ -4974,16 +4992,13 @@
   "site": "GEHC_ExternalSite",
   "name": "GE HealthCare",
   "first_seen": "2026-11-20",
-  "fails": 1,
-  "state": "repair",
+  "fails": 0,
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Internship Mechanical Design)",
   "engineering": true,
   "last_seen": "2026-11-10",
-  "last_ok": "2026-11-20",
-  "validated": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "last_ok": "2026-11-21",
+  "validated": "2026-11-20"
  },
  "workday:generac.wd5.myworkdayjobs.com/external": {
   "kind": "workday",
@@ -4991,14 +5006,11 @@
   "site": "external",
   "name": "Generac",
   "first_seen": "2026-11-05",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-10-26",
-  "state": "repair",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "state": "active",
+  "last_ok": "2026-11-21"
  },
  "workday:generalmotors.wd5.myworkdayjobs.com/careers_gm": {
   "kind": "workday",
@@ -5006,14 +5018,11 @@
   "site": "Careers_GM",
   "name": "General Motors",
   "first_seen": "2026-11-05",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-11-17",
-  "state": "repair",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "state": "active",
+  "last_ok": "2026-11-21"
  },
  "workday:gevernova.wd5.myworkdayjobs.com/only_confidential_executive_recruiting": {
   "kind": "workday",
@@ -5033,16 +5042,13 @@
   "site": "vernova_externalsite",
   "name": "GE Vernova",
   "first_seen": "2026-11-20",
-  "fails": 1,
-  "state": "repair",
+  "fails": 0,
+  "state": "active",
   "via": "2 mechanical/aerospace internships on the lists (e.g. Hardware Automation and Test Engineering Intern - Spring/Sum)",
   "engineering": true,
   "last_seen": "2026-10-20",
-  "last_ok": "2026-11-20",
-  "validated": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "last_ok": "2026-11-21",
+  "validated": "2026-11-20"
  },
  "workday:gi.wd1.myworkdayjobs.com/global_infrastructure": {
   "kind": "workday",
@@ -5050,15 +5056,12 @@
   "site": "Global_Infrastructure",
   "name": "Global Infrastructure",
   "first_seen": "2026-11-06",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-11-06",
-  "state": "repair",
+  "state": "active",
   "label": "Global Infrastructure",
-  "last_ok": "2026-11-20",
-  "error": "Workday shows its maintenance page for this site: an outage, or the company moved to another hiring system",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "last_ok": "2026-11-21"
  },
  "workday:globalfoundries.wd1.myworkdayjobs.com/external": {
   "kind": "workday",
@@ -5066,15 +5069,12 @@
   "site": "External",
   "name": "GlobalFoundries",
   "first_seen": "2026-11-05",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-11-02",
-  "state": "repair",
+  "state": "active",
   "label": "GlobalFoundries",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "last_ok": "2026-11-21"
  },
  "workday:globalhr.wd5.myworkdayjobs.com/rec_rtx_ext_gateway": {
   "kind": "workday",
@@ -5129,14 +5129,11 @@
   "site": "GE_Appliances",
   "name": "GE Appliances",
   "first_seen": "2026-11-05",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-10-30",
-  "state": "repair",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "state": "active",
+  "last_ok": "2026-11-21"
  },
  "workday:harman.wd3.myworkdayjobs.com/harman": {
   "kind": "workday",
@@ -5144,15 +5141,12 @@
   "site": "HARMAN",
   "name": "HARMAN International",
   "first_seen": "2026-11-05",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-04-20",
-  "state": "repair",
+  "state": "active",
   "label": "HARMAN International",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "last_ok": "2026-11-21"
  },
  "workday:heidelbergmaterials.wd3.myworkdayjobs.com/global_hm_career_site": {
   "kind": "workday",
@@ -5172,13 +5166,10 @@
   "site": "HMSCareers",
   "name": "Hendrick Motorsports",
   "first_seen": "2026-11-14",
-  "fails": 1,
+  "fails": 0,
   "last_seen": "2026-11-21",
-  "state": "repair",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "state": "active",
+  "last_ok": "2026-11-21"
  },
  "workday:hexcel.wd5.myworkdayjobs.com/hexcelcareers": {
   "kind": "workday",
@@ -5186,13 +5177,10 @@
   "site": "HexcelCareers",
   "name": "Hexcel",
   "first_seen": "2026-11-05",
-  "fails": 1,
+  "fails": 0,
   "last_seen": "2026-10-28",
-  "state": "repair",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "state": "active",
+  "last_ok": "2026-11-21"
  },
  "workday:highmarkhealth.wd1.myworkdayjobs.com/highmark": {
   "kind": "workday",
@@ -5212,14 +5200,11 @@
   "site": "hitachi",
   "name": "Hitachi Energy",
   "first_seen": "2026-11-05",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-11-06",
-  "state": "repair",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "state": "active",
+  "last_ok": "2026-11-21"
  },
  "workday:hntb.wd5.myworkdayjobs.com/hntb_careers": {
   "kind": "workday",
@@ -5227,15 +5212,12 @@
   "site": "hntb_careers",
   "name": "HNTB",
   "first_seen": "2026-11-06",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-10-27",
-  "state": "repair",
+  "state": "active",
   "label": "HNTB",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "last_ok": "2026-11-21"
  },
  "workday:hp.wd5.myworkdayjobs.com/externalcareersite": {
   "kind": "workday",
@@ -5243,15 +5225,12 @@
   "site": "externalcareersite",
   "name": "Hewlett Packard",
   "first_seen": "2026-11-05",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-09-28",
-  "state": "repair",
+  "state": "active",
   "label": "Hewlett Packard",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "last_ok": "2026-11-21"
  },
  "workday:hp.wd5.myworkdayjobs.com/exteu-ac-careersite": {
   "kind": "workday",
@@ -5259,15 +5238,12 @@
   "site": "EXTEU-AC-CareerSite",
   "name": "Hewlett Packard",
   "first_seen": "2026-11-05",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-09-28",
-  "state": "repair",
+  "state": "active",
   "label": "Hewlett Packard (EXTEU-AC-CareerSite)",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "last_ok": "2026-11-21"
  },
  "workday:hpe.wd5.myworkdayjobs.com/jobsathpe": {
   "kind": "workday",
@@ -5275,15 +5251,12 @@
   "site": "jobsathpe",
   "name": "Hewlett Packard Enterprise",
   "first_seen": "2026-11-05",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-11-19",
-  "state": "repair",
+  "state": "active",
   "label": "Hewlett Packard Enterprise",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "last_ok": "2026-11-21"
  },
  "workday:hypertherm.wd503.myworkdayjobs.com/hypertherm-careers": {
   "kind": "workday",
@@ -5304,15 +5277,12 @@
   "tenant": "imeg",
   "name": "IMEG",
   "first_seen": "2026-11-06",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-10-30",
-  "state": "repair",
+  "state": "active",
   "label": "IMEG",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "last_ok": "2026-11-21"
  },
  "workday:intel.wd1.myworkdayjobs.com/external": {
   "kind": "workday",
@@ -5320,14 +5290,11 @@
   "site": "External",
   "name": "Intel",
   "first_seen": "2026-11-05",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-11-12",
-  "state": "repair",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "state": "active",
+  "last_ok": "2026-11-21"
  },
  "workday:interpublic.wd5.myworkdayjobs.com/omc": {
   "kind": "workday",
@@ -5359,14 +5326,11 @@
   "site": "Jabil_Careers",
   "name": "Jabil",
   "first_seen": "2026-11-05",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-11-05",
-  "state": "repair",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "state": "active",
+  "last_ok": "2026-11-21"
  },
  "workday:jci.wd5.myworkdayjobs.com/jci": {
   "kind": "workday",
@@ -5386,14 +5350,11 @@
   "site": "JJ",
   "name": "Johnson & Johnson",
   "first_seen": "2026-11-06",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-09-23",
-  "state": "repair",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "state": "active",
+  "last_ok": "2026-11-21"
  },
  "workday:kbr.wd5.myworkdayjobs.com/kbr_careers": {
   "kind": "workday",
@@ -5401,13 +5362,10 @@
   "site": "KBR_Careers",
   "name": "KBR",
   "first_seen": "2026-10-28",
-  "fails": 1,
+  "fails": 0,
   "last_seen": "2026-11-21",
-  "state": "repair",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "state": "active",
+  "last_ok": "2026-11-21"
  },
  "workday:kiongroup.wd3.myworkdayjobs.com/kion_scs": {
   "kind": "workday",
@@ -5439,17 +5397,14 @@
   "site": "AnnArbor",
   "name": "KLA",
   "first_seen": "2026-11-20",
-  "fails": 1,
-  "state": "repair",
+  "fails": 0,
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Opto-Mechanical Intern)",
   "engineering": true,
   "last_seen": "2026-10-16",
-  "last_ok": "2026-11-20",
+  "last_ok": "2026-11-21",
   "validated": "2026-11-20",
-  "label": "KLA",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "label": "KLA"
  },
  "workday:kla.wd1.myworkdayjobs.com/search": {
   "kind": "workday",
@@ -5457,15 +5412,12 @@
   "site": "Search",
   "name": "KLA",
   "first_seen": "2026-11-05",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-11-19",
-  "state": "repair",
+  "state": "active",
   "label": "KLA (Search)",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "last_ok": "2026-11-21"
  },
  "workday:kla.wd1.myworkdayjobs.com/ur": {
   "kind": "workday",
@@ -5473,15 +5425,12 @@
   "site": "UR",
   "name": "KLA",
   "first_seen": "2026-11-05",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-11-20",
-  "state": "repair",
+  "state": "active",
   "label": "KLA (UR)",
-  "last_ok": "2026-11-20",
-  "error": "Workday shows its maintenance page for this site: an outage, or the company moved to another hiring system",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "last_ok": "2026-11-21"
  },
  "workday:labcorp.wd1.myworkdayjobs.com/external": {
   "kind": "workday",
@@ -5501,13 +5450,10 @@
   "site": "External",
   "name": "Leidos",
   "first_seen": "2026-11-03",
-  "fails": 1,
+  "fails": 0,
   "last_seen": "2026-11-21",
-  "state": "repair",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "state": "active",
+  "last_ok": "2026-11-21"
  },
  "workday:lifefitness.wd1.myworkdayjobs.com/searchlfn": {
   "kind": "workday",
@@ -5552,15 +5498,12 @@
   "site": "MarvellCareers",
   "name": "Marvell",
   "first_seen": "2026-11-05",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-11-19",
-  "state": "repair",
+  "state": "active",
   "label": "Marvell",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "last_ok": "2026-11-21"
  },
  "workday:marvell.wd1.myworkdayjobs.com/marvellcareers2": {
   "kind": "workday",
@@ -5568,15 +5511,12 @@
   "site": "MarvellCareers2",
   "name": "Marvell",
   "first_seen": "2026-11-05",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-10-05",
-  "state": "repair",
+  "state": "active",
   "label": "Marvell (MarvellCareers2)",
-  "last_ok": "2026-11-20",
-  "error": "Workday shows its maintenance page for this site: an outage, or the company moved to another hiring system",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "last_ok": "2026-11-21"
  },
  "workday:masco.wd1.myworkdayjobs.com/deltafaucet": {
   "kind": "workday",
@@ -5643,15 +5583,12 @@
   "tenant": "microchiphr",
   "name": "Microchip Technology",
   "first_seen": "2026-11-06",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-04-22",
-  "state": "repair",
+  "state": "active",
   "label": "Microchip Technology",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "last_ok": "2026-11-21"
  },
  "workday:micron.wd1.myworkdayjobs.com/external": {
   "kind": "workday",
@@ -5659,15 +5596,12 @@
   "site": "External",
   "name": "Micron Technology",
   "first_seen": "2026-11-05",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-11-18",
-  "state": "repair",
+  "state": "active",
   "label": "Micron Technology",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "last_ok": "2026-11-21"
  },
  "workday:mii.wd5.myworkdayjobs.com/universityrecruiting": {
   "kind": "workday",
@@ -5711,13 +5645,10 @@
   "site": "moog_external_career_site",
   "name": "Moog",
   "first_seen": "2026-10-27",
-  "fails": 1,
+  "fails": 0,
   "last_seen": "2026-11-21",
-  "state": "repair",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "state": "active",
+  "last_ok": "2026-11-21"
  },
  "workday:motorolasolutions.wd5.myworkdayjobs.com/careers": {
   "kind": "workday",
@@ -5725,15 +5656,12 @@
   "site": "Careers",
   "name": "Motorola",
   "first_seen": "2026-11-05",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-11-17",
-  "state": "repair",
+  "state": "active",
   "label": "Motorola",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "last_ok": "2026-11-21"
  },
  "workday:multimatic.wd10.myworkdayjobs.com/mmec": {
   "kind": "workday",
@@ -5752,13 +5680,10 @@
   "site": "Northrop_Grumman_External_Site",
   "name": "Northrop Grumman",
   "first_seen": "2026-10-27",
-  "fails": 1,
+  "fails": 0,
   "last_seen": "2026-11-21",
-  "state": "repair",
-  "last_ok": "2026-11-20",
-  "error": "Workday shows its maintenance page for this site: an outage, or the company moved to another hiring system",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "state": "active",
+  "last_ok": "2026-11-21"
  },
  "workday:nidec.wd1.myworkdayjobs.com/nidec": {
   "kind": "workday",
@@ -5766,14 +5691,11 @@
   "site": "nidec",
   "name": "Nidec",
   "first_seen": "2026-11-19",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-11-19",
-  "state": "repair",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "state": "active",
+  "last_ok": "2026-11-21"
  },
  "workday:nvent.wd5.myworkdayjobs.com/nvent": {
   "kind": "workday",
@@ -5781,15 +5703,12 @@
   "site": "nVent",
   "name": "nVent",
   "first_seen": "2026-11-06",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-11-04",
-  "state": "repair",
+  "state": "active",
   "label": "nVent",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "last_ok": "2026-11-21"
  },
  "workday:nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite": {
   "kind": "workday",
@@ -5797,15 +5716,12 @@
   "site": "NVIDIAExternalCareerSite",
   "name": "NVIDIA",
   "first_seen": "2026-11-05",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-11-19",
-  "state": "repair",
+  "state": "active",
   "label": "NVIDIA",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "last_ok": "2026-11-21"
  },
  "workday:nwis.wd12.myworkdayjobs.com/nw": {
   "kind": "workday",
@@ -5852,14 +5768,11 @@
   "site": "Oshkosh",
   "name": "Oshkosh",
   "first_seen": "2026-11-05",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-10-20",
-  "state": "repair",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "state": "active",
+  "last_ok": "2026-11-21"
  },
  "workday:pae.wd1.myworkdayjobs.com/amentum_careers": {
   "kind": "workday",
@@ -5867,13 +5780,10 @@
   "site": "amentum_careers",
   "name": "Amentum",
   "first_seen": "2026-10-28",
-  "fails": 1,
+  "fails": 0,
   "last_seen": "2026-11-17",
-  "state": "repair",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "state": "active",
+  "last_ok": "2026-11-21"
  },
  "workday:parsons.wd5.myworkdayjobs.com/search": {
   "kind": "workday",
@@ -5881,13 +5791,10 @@
   "site": "search",
   "name": "Parsons",
   "first_seen": "2026-10-28",
-  "fails": 1,
+  "fails": 0,
   "last_seen": "2026-11-21",
-  "state": "repair",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "state": "active",
+  "last_ok": "2026-11-21"
  },
  "workday:philips.wd3.myworkdayjobs.com/jobs-and-careers": {
   "kind": "workday",
@@ -5895,14 +5802,11 @@
   "site": "jobs-and-careers",
   "name": "Philips",
   "first_seen": "2026-11-05",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-11-03",
-  "state": "repair",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "state": "active",
+  "last_ok": "2026-11-21"
  },
  "workday:plexus.wd5.myworkdayjobs.com/plexus_careers": {
   "kind": "workday",
@@ -5981,17 +5885,14 @@
   "site": "External-Rockwell-Automation-Early-Careers",
   "name": "Rockwell Automation",
   "first_seen": "2026-11-20",
-  "fails": 1,
-  "state": "repair",
+  "fails": 0,
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Test Engineering Intern)",
   "engineering": true,
   "last_seen": "2026-10-14",
-  "last_ok": "2026-11-20",
+  "last_ok": "2026-11-21",
   "validated": "2026-11-20",
-  "label": "Rockwell Automation (External-Rockwell-Automation-Early-Careers)",
-  "error": "Workday shows its maintenance page for this site: an outage, or the company moved to another hiring system",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "label": "Rockwell Automation (External-Rockwell-Automation-Early-Careers)"
  },
  "workday:rockwellautomation.wd1.myworkdayjobs.com/external_rockwell_automation": {
   "kind": "workday",
@@ -5999,14 +5900,11 @@
   "site": "External_Rockwell_Automation",
   "name": "Rockwell Automation",
   "first_seen": "2026-11-05",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-11-17",
-  "state": "repair",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "state": "active",
+  "last_ok": "2026-11-21"
  },
  "workday:rollsroyce.wd3.myworkdayjobs.com/intern_graduate": {
   "kind": "workday",
@@ -6014,13 +5912,10 @@
   "site": "Intern_Graduate",
   "name": "Rolls-Royce",
   "first_seen": "2026-10-27",
-  "fails": 1,
-  "last_seen": "2026-11-20",
-  "state": "repair",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "fails": 0,
+  "last_seen": "2026-11-21",
+  "state": "active",
+  "last_ok": "2026-11-21"
  },
  "workday:saputo.wd5.myworkdayjobs.com/saputo_external_careers": {
   "kind": "workday",
@@ -6064,17 +5959,14 @@
   "site": "Samsung_Careers",
   "name": "Samsung",
   "first_seen": "2026-11-20",
-  "fails": 1,
-  "state": "repair",
+  "fails": 0,
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Interoperability – Test Engineering Intern - Iodt)",
   "engineering": true,
   "last_seen": "2026-02-03",
-  "last_ok": "2026-11-20",
+  "last_ok": "2026-11-21",
   "validated": "2026-11-20",
-  "label": "Samsung (Samsung_Careers)",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "label": "Samsung (Samsung_Careers)"
  },
  "workday:selinc.wd1.myworkdayjobs.com/sel": {
   "kind": "workday",
@@ -6082,14 +5974,11 @@
   "site": "SEL",
   "name": "Schweitzer Engineering Laboratories",
   "first_seen": "2026-11-05",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-11-09",
-  "state": "repair",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "state": "active",
+  "last_ok": "2026-11-21"
  },
  "workday:sensata.wd1.myworkdayjobs.com/sensata-careers": {
   "kind": "workday",
@@ -6097,15 +5986,12 @@
   "site": "Sensata-Careers",
   "name": "Sensata",
   "first_seen": "2026-11-06",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-09-16",
-  "state": "repair",
+  "state": "active",
   "label": "Sensata",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "last_ok": "2026-11-21"
  },
  "workday:sierraspace.wd1.myworkdayjobs.com/sierra_space_external_career_site": {
   "kind": "workday",
@@ -6113,13 +5999,10 @@
   "site": "Sierra_Space_External_Career_Site",
   "name": "Sierra Space",
   "first_seen": "2026-10-27",
-  "fails": 1,
+  "fails": 0,
   "last_seen": "2026-11-21",
-  "state": "repair",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "state": "active",
+  "last_ok": "2026-11-21"
  },
  "workday:silabs.wd1.myworkdayjobs.com/siliconlabscareers": {
   "kind": "workday",
@@ -6127,15 +6010,12 @@
   "site": "SiliconlabsCareers",
   "name": "Silicon Laboratories",
   "first_seen": "2026-11-05",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-01-26",
-  "state": "repair",
+  "state": "active",
   "label": "Silicon Laboratories",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "last_ok": "2026-11-21"
  },
  "workday:slihrms.wd3.myworkdayjobs.com/careers": {
   "kind": "workday",
@@ -6143,15 +6023,12 @@
   "site": "careers",
   "name": "AtkinsRéalis",
   "first_seen": "2026-11-06",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-11-04",
-  "state": "repair",
+  "state": "active",
   "label": "AtkinsRéalis",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "last_ok": "2026-11-21"
  },
  "workday:smithnephew.wd5.myworkdayjobs.com/external": {
   "kind": "workday",
@@ -6171,13 +6048,10 @@
   "site": "snc_external_career_site",
   "name": "Sierra Nevada Corporation",
   "first_seen": "2026-10-27",
-  "fails": 1,
+  "fails": 0,
   "last_seen": "2026-11-21",
-  "state": "repair",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "state": "active",
+  "last_ok": "2026-11-21"
  },
  "workday:starfish.wd501.myworkdayjobs.com/careers": {
   "kind": "workday",
@@ -6196,14 +6070,11 @@
   "site": "StrykerCareers",
   "name": "Stryker",
   "first_seen": "2026-11-05",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-10-22",
-  "state": "repair",
-  "last_ok": "2026-11-20",
-  "error": "Workday shows its maintenance page for this site: an outage, or the company moved to another hiring system",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "state": "active",
+  "last_ok": "2026-11-21"
  },
  "workday:stvinc.wd5.myworkdayjobs.com/stv": {
   "kind": "workday",
@@ -6265,13 +6136,10 @@
   "site": "Careers",
   "name": "Thales",
   "first_seen": "2026-10-30",
-  "fails": 1,
+  "fails": 0,
   "last_seen": "2026-11-21",
-  "state": "repair",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "state": "active",
+  "last_ok": "2026-11-21"
  },
  "workday:thermofisher.wd5.myworkdayjobs.com/thermofishercareers": {
   "kind": "workday",
@@ -6339,14 +6207,11 @@
   "site": "Toro_External_Careers",
   "name": "The Toro Company",
   "first_seen": "2026-11-05",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-11-12",
-  "state": "repair",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "state": "active",
+  "last_ok": "2026-11-21"
  },
  "workday:tysonfoods.wd5.myworkdayjobs.com/tsn": {
   "kind": "workday",
@@ -6366,15 +6231,12 @@
   "site": "valeo_jobs",
   "name": "Valeo",
   "first_seen": "2026-11-05",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-09-21",
-  "state": "repair",
+  "state": "active",
   "label": "Valeo",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "last_ok": "2026-11-21"
  },
  "workday:veralto.wd1.myworkdayjobs.com/hachjobs": {
   "kind": "workday",
@@ -6418,15 +6280,12 @@
   "site": "careers",
   "name": "Viavi Solutions",
   "first_seen": "2026-11-05",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-11-09",
-  "state": "repair",
+  "state": "active",
   "label": "Viavi Solutions",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "last_ok": "2026-11-21"
  },
  "workday:wonder.wd1.myworkdayjobs.com/wg": {
   "kind": "workday",
@@ -6447,7 +6306,7 @@
   "name": "Woodward Governor",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-04",
+  "last_seen": "2026-11-21",
   "state": "active"
  },
  "workday:xcelenergy.wd1.myworkdayjobs.com/external": {
@@ -6456,16 +6315,13 @@
   "site": "External",
   "name": "Xcel Energy",
   "first_seen": "2026-11-20",
-  "fails": 1,
-  "state": "repair",
+  "fails": 0,
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Substation Design Engineering Intern (Fall/Winter))",
   "engineering": true,
   "last_seen": "2026-10-27",
-  "last_ok": "2026-11-20",
-  "validated": "2026-11-20",
-  "error": "Workday shows its maintenance page for this site: an outage, or the company moved to another hiring system",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "last_ok": "2026-11-21",
+  "validated": "2026-11-20"
  },
  "workday:xenergy.wd5.myworkdayjobs.com/x-energyus": {
   "kind": "workday",
@@ -6510,14 +6366,11 @@
   "site": "ZOLLMedicalCorp",
   "name": "ZOLL Medical Corporation",
   "first_seen": "2026-11-06",
-  "fails": 1,
+  "fails": 0,
   "engineering": true,
   "last_seen": "2026-10-29",
-  "state": "repair",
+  "state": "active",
   "label": "ZOLL Medical Corporation",
-  "last_ok": "2026-11-20",
-  "error": "Expecting value: line 1 column 1 (char 0)",
-  "fail_since": "2026-11-21",
-  "next_try": "2026-11-21"
+  "last_ok": "2026-11-21"
  }
 }
