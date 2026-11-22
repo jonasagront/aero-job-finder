@@ -335,33 +335,93 @@
   "national technical systems": {
    "d": "2026-11-22",
    "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "near earth autonomy": {
+   "d": "2026-11-22",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "nuro": {
+   "d": "2026-11-22",
+   "r": "greenhouse:nuro (105 openings)"
+  },
+  "nuscale power": {
+   "d": "2026-11-22",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "outpost space": {
+   "d": "2026-11-22",
+   "r": "ashby:outpost (13 openings)"
+  },
+  "overair": {
+   "d": "2026-11-22",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "parker aerospace": {
+   "d": "2026-11-22",
+   "r": "workable:parker (0 openings)"
+  },
+  "parker hannifin": {
+   "d": "2026-11-22",
+   "r": "workable:parker-hannifin (0 openings)"
+  },
+  "penske racing": {
+   "d": "2026-11-22",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "penske racing shocks": {
+   "d": "2026-11-22",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "performance drone works": {
+   "d": "2026-11-22",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "persona ai": {
+   "d": "2026-11-22",
+   "r": "ashby:persona (12 openings)"
+  },
+  "piasecki": {
+   "d": "2026-11-22",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
   }
  },
  "report": {
   "date": "2026-11-22",
   "added": [
    {
-    "name": "Locus Robotics",
+    "name": "Nuro",
     "kind": "greenhouse",
     "via": "name probe (discover seeds)",
-    "openings": 8
+    "openings": 105
    },
    {
-    "name": "Markforged",
-    "kind": "greenhouse",
-    "via": "name probe (discover seeds)",
-    "openings": 0
+    "name": "Outpost Space",
+    "kind": "ashby",
+    "via": "name probe (aerospace_companies)",
+    "openings": 13
    },
    {
-    "name": "Mercury Systems",
+    "name": "Parker Aerospace",
     "kind": "workable",
     "via": "name probe (aerospace_companies)",
     "openings": 0
+   },
+   {
+    "name": "Parker Hannifin",
+    "kind": "workable",
+    "via": "name probe (discover seeds)",
+    "openings": 0
+   },
+   {
+    "name": "Persona Ai",
+    "kind": "ashby",
+    "via": "name probe (discover seeds)",
+    "openings": 12
    }
   ],
   "states": {
-   "active": 427,
-   "candidate": 108,
+   "active": 444,
+   "candidate": 97,
    "covered": 6,
    "repair": 2
   },
@@ -524,138 +584,6 @@
     "next_try": "2026-11-22",
     "last_ok": "",
     "since": "2026-11-22",
-    "moved_to": ""
-   },
-   {
-    "name": "Pivotal Software",
-    "kind": "lever",
-    "via": "2 mechanical/aerospace internships on the lists (e.g. Internship, Flight Test Engineer (Summer 2027))",
-    "link": "https://jobs.lever.co/pivotal",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Qrypt",
-    "kind": "lever",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Engineer Intern)",
-    "link": "https://jobs.lever.co/qrypt",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Simbe Robotics",
-    "kind": "lever",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware / Mechanical Engineering Intern — Spring & Summer 2)",
-    "link": "https://jobs.lever.co/SimbeRobotics",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Thea Energy",
-    "kind": "lever",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Test Engineer Intern)",
-    "link": "https://jobs.lever.co/thea.energy",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Xcimer Energy",
-    "kind": "lever",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Summer 2027 Internship - Mechanical Engineering)",
-    "link": "https://jobs.lever.co/xcimer",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Hologic",
-    "kind": "oracle",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Intern – Engineering - Product Development)",
-    "link": "https://ebwb.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/requisitions?keyword=intern",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "NOV",
-    "kind": "oracle",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Intern)",
-    "link": "https://egay.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_4001/requisitions?keyword=intern",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Masimo",
-    "kind": "oracle",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Intern - Hardware Engineer)",
-    "link": "https://egcu.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/requisitions?keyword=intern",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Garrett Motion",
-    "kind": "oracle",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Garrett Engineering Internship - Mechanical Integration Engi)",
-    "link": "https://ehth.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001/requisitions?keyword=intern",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Sherwin-Williams",
-    "kind": "oracle",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. 2027 Summer Robotics Engineering Co-Op - Middleburg Heights,)",
-    "link": "https://ejhp.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2/requisitions?keyword=intern",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "S&C Electric Company",
-    "kind": "oracle",
-    "via": "2 mechanical/aerospace internships on the lists (e.g. Tool Design Engineer Intern)",
-    "link": "https://ejia.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/requisitions?keyword=intern",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
     "moved_to": ""
    },
    {
@@ -945,6 +873,138 @@
     "last_ok": "",
     "since": "",
     "moved_to": ""
+   },
+   {
+    "name": "Darkhive",
+    "kind": "workable",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Engineer Intern - Drone Technology)",
+    "link": "https://apply.workable.com/darkhive",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Red Rabbit Robotics",
+    "kind": "workable",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Mechatronics Engineer Intern)",
+    "link": "https://apply.workable.com/red-rabbit-robotics",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Rise Robotics",
+    "kind": "workable",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical & Test Engineering Intern (Spring 2027))",
+    "link": "https://apply.workable.com/rise-robotics",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Sorting Robotics",
+    "kind": "workable",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Robotics Engineer Co-op Intern)",
+    "link": "https://apply.workable.com/sorting-robotics",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Terabase",
+    "kind": "workable",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Robotics & Autonomy Engineering Intern)",
+    "link": "https://apply.workable.com/terabase-energy",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Air Products",
+    "kind": "workday",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Summer Intern/Co-op-Mechanical Engineering (2027))",
+    "link": "https://airproducts.wd5.myworkdayjobs.com/AP0001",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Amcor",
+    "kind": "workday",
+    "via": "2 mechanical/aerospace internships on the lists (e.g. Product Development Engineer Intern)",
+    "link": "https://amcor.wd5.myworkdayjobs.com/amcor_external_career_site",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Badger Meter",
+    "kind": "workday",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering NPD Intern)",
+    "link": "https://badgermeter.wd5.myworkdayjobs.com/US_CareerSite",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Barr",
+    "kind": "workday",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Internship – Mechanical Engineer (Hybrid))",
+    "link": "https://barr.wd1.myworkdayjobs.com/barrcareers",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Bio-Techne",
+    "kind": "workday",
+    "via": "2 mechanical/aerospace internships on the lists (e.g. Hardware Engineering Intern)",
+    "link": "https://biotechne.wd5.myworkdayjobs.com/Biotechne",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Bloom Energy",
+    "kind": "workday",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Test Engineering Intern)",
+    "link": "https://bloomenergy.wd1.myworkdayjobs.com/bloomenergycareers",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
    }
   ],
   "unsupported": [
@@ -984,19 +1044,19 @@
     ]
    },
    {
-    "host": "ca.linkedin.com",
-    "count": 2,
-    "companies": [
-     "DataRobot",
-     "MDA"
-    ]
-   },
-   {
     "host": "careers.eutelsat.com",
     "count": 2,
     "companies": [
      "Eutelsat",
      "OneWeb"
+    ]
+   },
+   {
+    "host": "ca.linkedin.com",
+    "count": 2,
+    "companies": [
+     "DataRobot",
+     "MDA"
     ]
    },
    {
@@ -1111,9 +1171,9 @@
    }
   ],
   "probed": {
-   "done": 84,
+   "done": 96,
    "names": 361,
-   "found": 27
+   "found": 32
   }
  }
 }

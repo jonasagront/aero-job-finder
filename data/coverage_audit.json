@@ -20,7 +20,10 @@
   "Rantec Power Systems Inc.": "2026-11-22",
   "Acron Aviation": "2026-11-22",
   "Advanced Robotics for Manufacturing": "2026-11-22",
-  "Pivotal Software": "2026-11-22"
+  "Pivotal Software": "2026-11-22",
+  "Advanced Space": "2026-11-22",
+  "AeroVironment": "2026-11-22",
+  "AnySignal": "2026-11-22"
  },
  "runs": [
   {
@@ -278,6 +281,37 @@
      ],
      "read": "full list, no title filter",
      "openings": 40
+    }
+   ]
+  },
+  {
+   "date": "2026-11-22",
+   "boards": [
+    {
+     "source": "Advanced Space",
+     "kind": "greenhouse",
+     "in_scope": 0,
+     "found": 0,
+     "misses": [],
+     "read": "full list, no title filter",
+     "openings": 6
+    },
+    {
+     "source": "AeroVironment",
+     "kind": "workday",
+     "in_scope": 1,
+     "found": 1,
+     "misses": [],
+     "read": "full list of every opening",
+     "openings": 407
+    },
+    {
+     "source": "AnySignal",
+     "kind": "lever",
+     "in_scope": 0,
+     "found": 0,
+     "misses": [],
+     "error": "HTTP 404"
     }
    ]
   }

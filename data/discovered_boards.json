@@ -581,6 +581,18 @@
   "state": "active",
   "last_ok": "2026-11-22"
  },
+ "ashby:outpost": {
+  "kind": "ashby",
+  "board": "outpost",
+  "name": "Outpost Space",
+  "first_seen": "2026-11-22",
+  "fails": 0,
+  "state": "active",
+  "via": "name probe (aerospace_companies)",
+  "last_seen": "2026-11-22",
+  "label": "Outpost Space",
+  "last_ok": "2026-11-22"
+ },
  "ashby:overviewenergy": {
   "kind": "ashby",
   "board": "overviewenergy",
@@ -595,6 +607,19 @@
   "tried": "2026-11-20",
   "last_ok": "2026-11-22",
   "validated": "2026-11-20"
+ },
+ "ashby:persona": {
+  "kind": "ashby",
+  "board": "persona",
+  "name": "Persona Ai",
+  "first_seen": "2026-11-22",
+  "fails": 0,
+  "state": "active",
+  "via": "name probe (discover seeds)",
+  "last_seen": "2026-11-22",
+  "engineering": true,
+  "label": "Persona Ai",
+  "last_ok": "2026-11-22"
  },
  "ashby:reflect-orbital": {
   "kind": "ashby",
@@ -1757,6 +1782,19 @@
   "tried": "2026-11-21",
   "last_ok": "2026-11-22",
   "validated": "2026-11-21"
+ },
+ "greenhouse:nuro": {
+  "kind": "greenhouse",
+  "board": "nuro",
+  "name": "Nuro",
+  "first_seen": "2026-11-22",
+  "fails": 0,
+  "state": "active",
+  "via": "name probe (discover seeds)",
+  "last_seen": "2026-11-22",
+  "engineering": true,
+  "label": "Nuro",
+  "last_ok": "2026-11-22"
  },
  "greenhouse:orbitaloperations": {
   "kind": "greenhouse",
@@ -3080,10 +3118,14 @@
   "name": "Pivotal Software",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "2 mechanical/aerospace internships on the lists (e.g. Internship, Flight Test Engineer (Summer 2027))",
   "engineering": true,
-  "last_seen": "2026-11-09"
+  "last_seen": "2026-11-09",
+  "label": "Pivotal Software",
+  "tried": "2026-11-22",
+  "last_ok": "2026-11-22",
+  "validated": "2026-11-22"
  },
  "lever:pyka": {
   "kind": "lever",
@@ -3101,10 +3143,14 @@
   "name": "Qrypt",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Engineer Intern)",
   "engineering": true,
-  "last_seen": "2025-10-31"
+  "last_seen": "2025-10-31",
+  "label": "Qrypt",
+  "tried": "2026-11-22",
+  "last_ok": "2026-11-22",
+  "validated": "2026-11-22"
  },
  "lever:reliable": {
   "kind": "lever",
@@ -3146,10 +3192,14 @@
   "name": "Simbe Robotics",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware / Mechanical Engineering Intern — Spring & Summer 2)",
   "engineering": true,
-  "last_seen": "2026-10-24"
+  "last_seen": "2026-10-24",
+  "label": "Simbe Robotics",
+  "tried": "2026-11-22",
+  "last_ok": "2026-11-22",
+  "validated": "2026-11-22"
  },
  "lever:skyways": {
   "kind": "lever",
@@ -3167,10 +3217,14 @@
   "name": "Thea Energy",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Test Engineer Intern)",
   "engineering": true,
-  "last_seen": "2026-08-27"
+  "last_seen": "2026-08-27",
+  "label": "Thea Energy",
+  "tried": "2026-11-22",
+  "last_ok": "2026-11-22",
+  "validated": "2026-11-22"
  },
  "lever:tri": {
   "kind": "lever",
@@ -3201,10 +3255,14 @@
   "name": "Xcimer Energy",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Summer 2027 Internship - Mechanical Engineering)",
   "engineering": true,
-  "last_seen": "2026-09-11"
+  "last_seen": "2026-09-11",
+  "label": "Xcimer Energy",
+  "tried": "2026-11-22",
+  "last_ok": "2026-11-22",
+  "validated": "2026-11-22"
  },
  "lever:zoox": {
   "kind": "lever",
@@ -3234,10 +3292,14 @@
   "name": "Hologic",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Intern – Engineering - Product Development)",
   "engineering": true,
-  "last_seen": "2025-12-12"
+  "last_seen": "2025-12-12",
+  "label": "Hologic",
+  "tried": "2026-11-22",
+  "last_ok": "2026-11-22",
+  "validated": "2026-11-22"
  },
  "oracle:ebxs.fa.us2.oraclecloud.com/cx_2": {
   "kind": "oracle",
@@ -3285,10 +3347,14 @@
   "name": "NOV",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Intern)",
   "engineering": true,
-  "last_seen": "2026-11-10"
+  "last_seen": "2026-11-10",
+  "label": "NOV",
+  "tried": "2026-11-22",
+  "last_ok": "2026-11-22",
+  "validated": "2026-11-22"
  },
  "oracle:egcu.fa.us6.oraclecloud.com/cx": {
   "kind": "oracle",
@@ -3297,10 +3363,14 @@
   "name": "Masimo",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Intern - Hardware Engineer)",
   "engineering": true,
-  "last_seen": "2026-01-06"
+  "last_seen": "2026-01-06",
+  "label": "Masimo",
+  "tried": "2026-11-22",
+  "last_ok": "2026-11-22",
+  "validated": "2026-11-22"
  },
  "oracle:egup.fa.us2.oraclecloud.com/cx": {
   "kind": "oracle",
@@ -3321,10 +3391,14 @@
   "name": "Garrett Motion",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Garrett Engineering Internship - Mechanical Integration Engi)",
   "engineering": true,
-  "last_seen": "2025-11-07"
+  "last_seen": "2025-11-07",
+  "label": "Garrett Motion",
+  "tried": "2026-11-22",
+  "last_ok": "2026-11-22",
+  "validated": "2026-11-22"
  },
  "oracle:eihu.fa.us8.oraclecloud.com/cx": {
   "kind": "oracle",
@@ -3344,10 +3418,14 @@
   "name": "Sherwin-Williams",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. 2027 Summer Robotics Engineering Co-Op - Middleburg Heights,)",
   "engineering": true,
-  "last_seen": "2026-09-29"
+  "last_seen": "2026-09-29",
+  "label": "Sherwin-Williams",
+  "tried": "2026-11-22",
+  "last_ok": "2026-11-22",
+  "validated": "2026-11-22"
  },
  "oracle:ejia.fa.us6.oraclecloud.com/cx_1001": {
   "kind": "oracle",
@@ -3356,10 +3434,14 @@
   "name": "S&C Electric Company",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "2 mechanical/aerospace internships on the lists (e.g. Tool Design Engineer Intern)",
   "engineering": true,
-  "last_seen": "2026-10-07"
+  "last_seen": "2026-10-07",
+  "label": "S&C Electric Company",
+  "tried": "2026-11-22",
+  "last_ok": "2026-11-22",
+  "validated": "2026-11-22"
  },
  "oracle:ejta.fa.us6.oraclecloud.com/cx_2001": {
   "kind": "oracle",
@@ -4298,6 +4380,31 @@
   "label": "Mercury Systems",
   "last_ok": "2026-11-22"
  },
+ "workable:parker": {
+  "kind": "workable",
+  "board": "parker",
+  "name": "Parker Aerospace",
+  "first_seen": "2026-11-22",
+  "fails": 0,
+  "state": "active",
+  "via": "name probe (aerospace_companies)",
+  "last_seen": "2026-11-22",
+  "label": "Parker Aerospace",
+  "last_ok": "2026-11-22"
+ },
+ "workable:parker-hannifin": {
+  "kind": "workable",
+  "board": "parker-hannifin",
+  "name": "Parker Hannifin",
+  "first_seen": "2026-11-22",
+  "fails": 0,
+  "state": "active",
+  "via": "name probe (discover seeds)",
+  "last_seen": "2026-11-22",
+  "engineering": true,
+  "label": "Parker Hannifin",
+  "last_ok": "2026-11-22"
+ },
  "workable:red-rabbit-robotics": {
   "kind": "workable",
   "board": "red-rabbit-robotics",
@@ -4399,6 +4506,20 @@
   "last_seen": "2026-10-02",
   "state": "active",
   "last_ok": "2026-11-22"
+ },
+ "workday:allegion.wd5.myworkdayjobs.com/earlytalent_careers": {
+  "kind": "workday",
+  "host": "allegion.wd5.myworkdayjobs.com",
+  "site": "EarlyTalent_Careers",
+  "name": "Allegion",
+  "first_seen": "2026-11-22",
+  "fails": 0,
+  "state": "active",
+  "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Engineering Intern - Product Lifecycle Engineering)",
+  "engineering": true,
+  "last_seen": "2026-09-11",
+  "last_ok": "2026-11-22",
+  "validated": "2026-11-22"
  },
  "workday:alliance.wd3.myworkdayjobs.com/nissanjobs": {
   "kind": "workday",
