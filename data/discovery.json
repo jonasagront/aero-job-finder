@@ -287,27 +287,81 @@
   "launcher": {
    "d": "2026-11-22",
    "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "legacy motor club": {
+   "d": "2026-11-22",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "locus robotics": {
+   "d": "2026-11-22",
+   "r": "greenhouse:locusrobotics (8 openings)"
+  },
+  "markforged": {
+   "d": "2026-11-22",
+   "r": "greenhouse:markforged (0 openings)"
+  },
+  "mercury systems": {
+   "d": "2026-11-22",
+   "r": "workable:mercury-systems (0 openings)"
+  },
+  "meyer shank": {
+   "d": "2026-11-22",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "meyer shank racing": {
+   "d": "2026-11-22",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "monarch tractor": {
+   "d": "2026-11-22",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "mytra": {
+   "d": "2026-11-22",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "nammo": {
+   "d": "2026-11-22",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "nanoracks": {
+   "d": "2026-11-22",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "national aerospace solutions": {
+   "d": "2026-11-22",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "national technical systems": {
+   "d": "2026-11-22",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
   }
  },
  "report": {
   "date": "2026-11-22",
   "added": [
    {
-    "name": "Kodiak Robotics",
-    "kind": "workable",
+    "name": "Locus Robotics",
+    "kind": "greenhouse",
+    "via": "name probe (discover seeds)",
+    "openings": 8
+   },
+   {
+    "name": "Markforged",
+    "kind": "greenhouse",
     "via": "name probe (discover seeds)",
     "openings": 0
    },
    {
-    "name": "Kratos",
+    "name": "Mercury Systems",
     "kind": "workable",
     "via": "name probe (aerospace_companies)",
     "openings": 0
    }
   ],
   "states": {
-   "active": 414,
-   "candidate": 118,
+   "active": 427,
+   "candidate": 108,
    "covered": 6,
    "repair": 2
   },
@@ -461,135 +515,15 @@
     "moved_to": ""
    },
    {
-    "name": "Rantec Power Systems Inc.",
-    "kind": "jazzhr",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. PCB Design Engineer Intern)",
-    "link": "https://rantecpowersystemsinc.applytojob.com/apply",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "SimIS",
-    "kind": "jazzhr",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Artificial Intelligence Developer Intern - Aerospace/Aviatio)",
-    "link": "https://simisinc.applytojob.com/apply",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Tarana Wireless",
-    "kind": "jazzhr",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Test Engineer Intern)",
-    "link": "https://taranawireless.applytojob.com/apply",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Stryten",
-    "kind": "jibe",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Industrial or Mechanical Engineering Intern)",
-    "link": "https://jobs.stryten.com/jobs?keywords=intern",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
     "name": "AnySignal",
     "kind": "lever",
     "via": "1 mechanical/aerospace internship on the lists (e.g. Intern – Hardware Engineer - Hardware Engineering)",
     "link": "https://jobs.lever.co/anysignal",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
+    "fails": 1,
+    "error": "HTTP 404",
+    "next_try": "2026-11-22",
     "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Bright Machines",
-    "kind": "lever",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Mechatronics Engineering Intern)",
-    "link": "https://jobs.lever.co/brightmachines",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Dexterity",
-    "kind": "lever",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Manufacturing Test Engineer Intern)",
-    "link": "https://jobs.lever.co/dexterity",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Extreme Networks",
-    "kind": "lever",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Intern - Hardware Engineering)",
-    "link": "https://jobs.lever.co/extremenetworks",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Field Ai",
-    "kind": "lever",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineer, Robotics Hardware Intern)",
-    "link": "https://jobs.lever.co/field-ai",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Multiply Labs",
-    "kind": "lever",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Co-op/Intern (Spring 2027))",
-    "link": "https://jobs.lever.co/multiplylabs",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Palantir",
-    "kind": "lever",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Software Engineer Intern - Query Engines)",
-    "link": "https://jobs.lever.co/palantir",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
+    "since": "2026-11-22",
     "moved_to": ""
    },
    {
@@ -891,6 +825,126 @@
     "last_ok": "",
     "since": "",
     "moved_to": ""
+   },
+   {
+    "name": "Loram",
+    "kind": "smartrecruiters",
+    "via": "2 mechanical/aerospace internships on the lists (e.g. Mechanical Engineering Intern)",
+    "link": "https://jobs.smartrecruiters.com/Loram1",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Solidigm",
+    "kind": "smartrecruiters",
+    "via": "2 mechanical/aerospace internships on the lists (e.g. Hardware & Product Development Engineering Intern)",
+    "link": "https://jobs.smartrecruiters.com/Solidigm",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Wabtec",
+    "kind": "smartrecruiters",
+    "via": "2 mechanical/aerospace internships on the lists (e.g. Mechanical Engineer Intern - Production Operations)",
+    "link": "https://jobs.smartrecruiters.com/Wabtec",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Western Digital",
+    "kind": "smartrecruiters",
+    "via": "2 mechanical/aerospace internships on the lists (e.g. Hardware Engineering Intern)",
+    "link": "https://jobs.smartrecruiters.com/WesternDigital",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Leggett & Platt",
+    "kind": "successfactors",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Engineer Intern)",
+    "link": "https://careers.leggett.com/search/?q=intern",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Skyworks",
+    "kind": "successfactors",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Summer Intern - Test Engineering)",
+    "link": "https://careers.skyworksinc.com/search/?q=intern",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Rolls-Royce Motorcars",
+    "kind": "successfactors",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Intern Technical Service Electrical or Mechanical & Digitali)",
+    "link": "https://jobs.bmwgroup.com/search/?q=intern",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Seagate Technology",
+    "kind": "successfactors",
+    "via": "2 mechanical/aerospace internships on the lists (e.g. Systems Hardware Engineering Intern)",
+    "link": "https://seagatecareers.com/search/?q=intern",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Würth Elektronik",
+    "kind": "ukg",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Lab Test Engineer Intern)",
+    "link": "https://recruiting.ultipro.com/wur1001wgna/JobBoard/e869ce68-a921-45eb-9467-2c7d2f5970a6",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Baltimore Aircoil Company",
+    "kind": "ukg",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. HVAC Applications Engineer Intern)",
+    "link": "https://recruiting2.ultipro.com/AMS1003AMSII/JobBoard/15976ef7-7f1f-4b2f-8a0c-0e0ac1193dd8",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
    }
   ],
   "unsupported": [
@@ -920,20 +974,13 @@
    },
    {
     "host": "recruiting.paylocity.com",
-    "count": 4,
+    "count": 5,
     "companies": [
+     "Agile Space",
      "Cigarette Racing",
      "DwyerOmega",
      "North Atlantic Industries",
      "Orbion Space Technology"
-    ]
-   },
-   {
-    "host": "careers.eutelsat.com",
-    "count": 2,
-    "companies": [
-     "Eutelsat",
-     "OneWeb"
     ]
    },
    {
@@ -942,6 +989,14 @@
     "companies": [
      "DataRobot",
      "MDA"
+    ]
+   },
+   {
+    "host": "careers.eutelsat.com",
+    "count": 2,
+    "companies": [
+     "Eutelsat",
+     "OneWeb"
     ]
    },
    {
@@ -1056,9 +1111,9 @@
    }
   ],
   "probed": {
-   "done": 72,
+   "done": 84,
    "names": 361,
-   "found": 24
+   "found": 27
   }
  }
 }

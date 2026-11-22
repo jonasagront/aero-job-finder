@@ -17,7 +17,10 @@
   "Modernizing Medicine": "2026-11-21",
   "AbbVie": "2026-11-22",
   "Abbott": "2026-11-22",
-  "Rantec Power Systems Inc.": "2026-11-22"
+  "Rantec Power Systems Inc.": "2026-11-22",
+  "Acron Aviation": "2026-11-22",
+  "Advanced Robotics for Manufacturing": "2026-11-22",
+  "Pivotal Software": "2026-11-22"
  },
  "runs": [
   {
@@ -206,6 +209,75 @@
      "misses": [],
      "read": "full list, no title filter",
      "openings": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-11-22",
+   "boards": [
+    {
+     "source": "Acron Aviation",
+     "kind": "lever",
+     "in_scope": 0,
+     "found": 0,
+     "misses": [],
+     "read": "full list, no title filter",
+     "openings": 45
+    },
+    {
+     "source": "Advanced Robotics for Manufacturing",
+     "kind": "jazzhr",
+     "in_scope": 0,
+     "found": 0,
+     "misses": [],
+     "read": "full list, no title filter",
+     "openings": 0
+    },
+    {
+     "source": "Pivotal Software",
+     "kind": "lever",
+     "in_scope": 8,
+     "found": 4,
+     "misses": [
+      {
+       "category": "discovery",
+       "why": "the board is only a candidate; it isn't scanned yet",
+       "title": "Internship, Autonomy - Path Planning (Summer 2027)",
+       "url": "https://jobs.lever.co/pivotal/092eb283-16ac-4f68-a6e9-b6a0a9564067",
+       "key": "le:092eb283-16ac-4f68-a6e9-b6a0a9564067",
+       "posted": "2026-11-19",
+       "location": "Palo Alto, CA"
+      },
+      {
+       "category": "discovery",
+       "why": "the board is only a candidate; it isn't scanned yet",
+       "title": "Internship, GNC Engineering (Summer 2027)",
+       "url": "https://jobs.lever.co/pivotal/2c5e6abf-3244-4e46-9c18-fab3fc1c050d",
+       "key": "le:2c5e6abf-3244-4e46-9c18-fab3fc1c050d",
+       "posted": "2026-11-19",
+       "location": "Palo Alto, CA"
+      },
+      {
+       "category": "discovery",
+       "why": "the board is only a candidate; it isn't scanned yet",
+       "title": "Internship, Maintenance, Repair & Overhaul Engineering (Summer 2027)",
+       "url": "https://jobs.lever.co/pivotal/23e45f4a-ab7f-4d45-9ec8-bae2ced5d583",
+       "key": "le:23e45f4a-ab7f-4d45-9ec8-bae2ced5d583",
+       "posted": "2026-11-09",
+       "location": "Palo Alto, CA"
+      },
+      {
+       "category": "discovery",
+       "why": "the board is only a candidate; it isn't scanned yet",
+       "title": "Internship, Quality (Summer 2027)",
+       "url": "https://jobs.lever.co/pivotal/b834685e-f5b7-4d70-a25a-b7c7510f530b",
+       "key": "le:b834685e-f5b7-4d70-a25a-b7c7510f530b",
+       "posted": "2026-11-19",
+       "location": "Palo Alto, CA"
+      }
+     ],
+     "read": "full list, no title filter",
+     "openings": 40
     }
    ]
   }

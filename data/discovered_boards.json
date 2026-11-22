@@ -1568,6 +1568,19 @@
   "last_ok": "2026-11-22",
   "validated": "2026-11-20"
  },
+ "greenhouse:locusrobotics": {
+  "kind": "greenhouse",
+  "board": "locusrobotics",
+  "name": "Locus Robotics",
+  "first_seen": "2026-11-22",
+  "fails": 0,
+  "state": "active",
+  "via": "name probe (discover seeds)",
+  "last_seen": "2026-11-22",
+  "engineering": true,
+  "label": "Locus Robotics",
+  "last_ok": "2026-11-22"
+ },
  "greenhouse:lunarenergy": {
   "kind": "greenhouse",
   "board": "lunarenergy",
@@ -1598,6 +1611,19 @@
   "fails": 0,
   "last_seen": "2026-10-31",
   "state": "active",
+  "last_ok": "2026-11-22"
+ },
+ "greenhouse:markforged": {
+  "kind": "greenhouse",
+  "board": "markforged",
+  "name": "Markforged",
+  "first_seen": "2026-11-22",
+  "fails": 0,
+  "state": "active",
+  "via": "name probe (discover seeds)",
+  "last_seen": "2026-11-22",
+  "engineering": true,
+  "label": "Markforged",
   "last_ok": "2026-11-22"
  },
  "greenhouse:metoxinternationalinc": {
@@ -2373,7 +2399,7 @@
   "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Space Systems Engineering Intern)",
   "engineering": true,
-  "last_seen": "2026-03-20",
+  "last_seen": "2026-11-20",
   "label": "LMI",
   "tried": "2026-11-22",
   "last_ok": "2026-11-22",
@@ -2438,7 +2464,7 @@
   "state": "active",
   "via": "2 mechanical/aerospace internships on the lists (e.g. Test Engineering Intern)",
   "engineering": true,
-  "last_seen": "2025-11-25",
+  "last_seen": "2026-11-13",
   "label": "Rambus",
   "tried": "2026-11-22",
   "last_ok": "2026-11-22",
@@ -2468,7 +2494,7 @@
   "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Intern)",
   "engineering": true,
-  "last_seen": "2025-09-11",
+  "last_seen": "2026-11-17",
   "label": "Steel Dynamics",
   "tried": "2026-11-22",
   "last_ok": "2026-11-22",
@@ -2590,10 +2616,14 @@
   "name": "Rantec Power Systems Inc.",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. PCB Design Engineer Intern)",
   "engineering": true,
-  "last_seen": "2026-07-23"
+  "last_seen": "2026-07-23",
+  "label": "Rantec Power Systems Inc.",
+  "tried": "2026-11-22",
+  "last_ok": "2026-11-22",
+  "validated": "2026-11-22"
  },
  "jazzhr:roush": {
   "kind": "jazzhr",
@@ -2611,10 +2641,14 @@
   "name": "SimIS",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Artificial Intelligence Developer Intern - Aerospace/Aviatio)",
   "engineering": true,
-  "last_seen": "2026-08-21"
+  "last_seen": "2026-08-21",
+  "label": "SimIS",
+  "tried": "2026-11-22",
+  "last_ok": "2026-11-22",
+  "validated": "2026-11-22"
  },
  "jazzhr:spacedynamicslaboratory": {
   "kind": "jazzhr",
@@ -2633,10 +2667,14 @@
   "name": "Tarana Wireless",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Test Engineer Intern)",
   "engineering": true,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "label": "Tarana Wireless",
+  "tried": "2026-11-22",
+  "last_ok": "2026-11-22",
+  "validated": "2026-11-22"
  },
  "jibe:careers.amd.com": {
   "kind": "jibe",
@@ -2739,10 +2777,14 @@
   "name": "Stryten",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Industrial or Mechanical Engineering Intern)",
   "engineering": true,
-  "last_seen": "2026-08-31"
+  "last_seen": "2026-08-31",
+  "label": "Stryten",
+  "tried": "2026-11-22",
+  "last_ok": "2026-11-22",
+  "validated": "2026-11-22"
  },
  "jibe:peraton.jibeapply.com": {
   "kind": "jibe",
@@ -2794,11 +2836,16 @@
   "board": "anysignal",
   "name": "AnySignal",
   "first_seen": "2026-11-20",
-  "fails": 0,
+  "fails": 1,
   "state": "candidate",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Intern – Hardware Engineer - Hardware Engineering)",
   "engineering": true,
-  "last_seen": "2025-11-07"
+  "last_seen": "2025-11-07",
+  "label": "AnySignal",
+  "tried": "2026-11-22",
+  "error": "HTTP 404",
+  "fail_since": "2026-11-22",
+  "next_try": "2026-11-22"
  },
  "lever:arraylabs.io": {
   "kind": "lever",
@@ -2816,10 +2863,14 @@
   "name": "Bright Machines",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Mechatronics Engineering Intern)",
   "engineering": true,
-  "last_seen": "2026-03-26"
+  "last_seen": "2026-03-26",
+  "label": "Bright Machines",
+  "tried": "2026-11-22",
+  "last_ok": "2026-11-22",
+  "validated": "2026-11-22"
  },
  "lever:cesiumastro": {
   "kind": "lever",
@@ -2848,10 +2899,14 @@
   "name": "Dexterity",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Manufacturing Test Engineer Intern)",
   "engineering": true,
-  "last_seen": "2025-10-31"
+  "last_seen": "2025-10-31",
+  "label": "Dexterity",
+  "tried": "2026-11-22",
+  "last_ok": "2026-11-22",
+  "validated": "2026-11-22"
  },
  "lever:diversified-automation": {
   "kind": "lever",
@@ -2891,10 +2946,14 @@
   "name": "Extreme Networks",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Intern - Hardware Engineering)",
   "engineering": true,
-  "last_seen": "2026-03-23"
+  "last_seen": "2026-03-23",
+  "label": "Extreme Networks",
+  "tried": "2026-11-22",
+  "last_ok": "2026-11-22",
+  "validated": "2026-11-22"
  },
  "lever:field-ai": {
   "kind": "lever",
@@ -2902,10 +2961,14 @@
   "name": "Field Ai",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineer, Robotics Hardware Intern)",
   "engineering": true,
-  "last_seen": "2026-10-06"
+  "last_seen": "2026-10-06",
+  "label": "Field Ai",
+  "tried": "2026-11-22",
+  "last_ok": "2026-11-22",
+  "validated": "2026-11-22"
  },
  "lever:foth": {
   "kind": "lever",
@@ -2987,10 +3050,14 @@
   "name": "Multiply Labs",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Co-op/Intern (Spring 2027))",
   "engineering": true,
-  "last_seen": "2026-10-23"
+  "last_seen": "2026-10-23",
+  "label": "Multiply Labs",
+  "tried": "2026-11-22",
+  "last_ok": "2026-11-22",
+  "validated": "2026-11-22"
  },
  "lever:palantir": {
   "kind": "lever",
@@ -2998,10 +3065,14 @@
   "name": "Palantir",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Software Engineer Intern - Query Engines)",
   "engineering": true,
-  "last_seen": "2026-10-20"
+  "last_seen": "2026-10-20",
+  "label": "Palantir",
+  "tried": "2026-11-22",
+  "last_ok": "2026-11-22",
+  "validated": "2026-11-22"
  },
  "lever:pivotal": {
   "kind": "lever",
@@ -4213,6 +4284,18 @@
   "via": "name probe (aerospace_companies)",
   "last_seen": "2026-11-22",
   "label": "Kratos",
+  "last_ok": "2026-11-22"
+ },
+ "workable:mercury-systems": {
+  "kind": "workable",
+  "board": "mercury-systems",
+  "name": "Mercury Systems",
+  "first_seen": "2026-11-22",
+  "fails": 0,
+  "state": "active",
+  "via": "name probe (aerospace_companies)",
+  "last_seen": "2026-11-22",
+  "label": "Mercury Systems",
   "last_ok": "2026-11-22"
  },
  "workable:red-rabbit-robotics": {
