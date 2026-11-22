@@ -89,7 +89,7 @@ history fills more of that in.
 ## Today's top matches
 
 <!-- JOBS:START -->
-**377 Summer 2027 aerospace matches** (2 in Motorsports, 19 Fall 2027 near home, 1227 in All engineering, 142 leads without a direct link) as of Nov 21, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
+**370 Summer 2027 aerospace matches** (2 in Motorsports, 18 Fall 2027 near home, 1179 in All engineering, 149 leads without a direct link) as of Nov 22, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
 
 | Fit | Company | Role | Preferred quals | Required quals | Location | Posted | Apply |
 |---|---|---|---|---|---|---|---|
@@ -100,7 +100,6 @@ history fills more of that in.
 | 90 | Shield AI (f7d8749a-72d6-407c-bf98-292ea630c73a) | 2027 June Co-op - Hardware Test - #6426 | 2 of 2 | 2 of 2 | Dallas, TX, US | 2026-11-12 | [Apply](https://jobs.ashbyhq.com/shield/ec8a822c-ccbf-4b4e-b41c-2f0db5c8342d) |
 | 89 | Intuitive Machines | Guidance, Navigation & Controls (GNC) Intern | 1 of 1 | 3 of 3 | Houston, TX; Houston, TX | 2026-11-13 | [Apply](https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=b0e24f83-6e4d-492d-9d6a-bc0fea197d6a&lang=en_US&locale=en_US&ccId=19000101_000001&jobId=9207519357554_173) |
 | 88 | The Aerospace Corporation | 2027 Structural Engineering Undergraduate Intern | – | 6 of 6 | El Segundo, CA | 2026-11-16 | [Apply](https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/XMLNAME-2027-Structural-Engineering-Undergraduate-Intern_R017211) |
-| 87 | MIT Lincoln Laboratory | Summer Research Program Intern 2027, Fabrication Engineering Integration (Group 07-72) | 5 of 7 | 4 of 4 | Lexington, MA, US | 2026-11-06 | [Apply](https://careers.ll.mit.edu/job/Lexington-Summer-Research-Program-Intern-2027%2C-Fabrication-Engineering-Integration-%28Group-07-72%29-MA-02420/1448734700/) |
 | 87 | Reliable Robotics | Flight Test Integration Engineer Intern (Summer 2027) | 2 of 3 | 2 of 2 | Mountain View, CA | 2026-11-13 | [Apply](https://jobs.ashbyhq.com/reliable-robotics/1d020651-71bb-4e47-baa6-2286dc780d96) |
 | 86 | Intuitive Machines | Assembly Integration & Test Intern | 1 of 1 | 2 of 2 | Houston, TX | 2026-11-13 | [Apply](https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=b0e24f83-6e4d-492d-9d6a-bc0fea197d6a&lang=en_US&locale=en_US&ccId=19000101_000001&jobId=9207519595481_89) |
 | 86 | Lockheed Martin | aerospace engineering intern | 1 of 1 | 3 of 3 | Littleton, CO | 2026-11-12 | [Apply](https://lockheedmartin.eightfold.ai/careers/job/996477909687) |
@@ -118,19 +117,16 @@ history fills more of that in.
 | 82 | MIT Lincoln Laboratory | Summer Research Program Intern 2027, Systems & Analysis (Group 10-09) | 3 of 3 | – | Lexington, MA, US | 2026-11-11 | [Apply](https://careers.ll.mit.edu/job/Lexington-Summer-Research-Program-Intern-2027%2C-Systems-&-Analysis-%28Group-10-09%29-MA-02420/1439633800/) |
 | 82 | The Aerospace Corporation | 2027 Communication Architectures Modeling and Analysis Engineering Grad Intern | – | 5 of 5 | El Segundo, CA | 2026-11-16 | [Apply](https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/XMLNAME-2027-Communication-Architectures-Modeling-and-Analysis-Engineering-Grad-Intern_R017010) |
 | 82 | The Aerospace Corporation | 2027 Communication Architectures Modeling and Analysis Engineering Undergraduate Intern | – | 5 of 5 | El Segundo, CA | 2026-11-16 | [Apply](https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/XMLNAME-2027-Communication-Architectures-Modeling-and-Analysis-Engineering-Undergraduate-Intern_R017009) |
+| 81 | Lockheed Martin | College Student - Technical - N3 | 2.5 of 3 | 4 of 4 | Eagan, MN | 2026-11-11 | [Apply](https://lockheedmartin.eightfold.ai/careers/job/996477473620) |
 <!-- JOBS:END -->
 
 ## Expected soon
 
 <!-- PREDICTED:START -->
-**28 aerospace internships expected in the next 60 days**, from past cycles' posting dates. All of them, with filters: **[Predicted tab](https://jonasagront.github.io/aero-job-finder/#predicted)**
+**25 aerospace internships expected in the next 60 days**, from past cycles' posting dates. All of them, with filters: **[Predicted tab](https://jonasagront.github.io/aero-job-finder/#predicted)**
 
 | Expected | Company | Role | For | Last cycle's posting date | Career site |
 |---|---|---|---|---|---|
-| ~2026-10-31 (due now) | Huntington Ingalls Industries | Engineering Intern | Summer 2027 | 2025-10-31 | [Open](https://careers.huntingtoningalls.com/search/?q=intern) |
-| ~2026-10-31 (due now) | Northwood Space | Site Engineer Intern | Summer 2027 | 2025-10-31 | [Open](https://jobs.ashbyhq.com/NorthwoodSpace) |
-| ~2026-10-31 (due now) | Peraton | Computer Engineering Intern | Summer 2027 | 2025-10-31 | [Open](https://careers-peraton.icims.com/jobs/search?ss=1&searchKeyword=intern) |
-| ~2026-10-31 (due now) | Safran | Engineering Internships! | Fall 2027 | 2025-10-31 | [Open](https://safransed.bamboohr.com/careers) |
 | ~2026-11-01 (due now) | Draper | Microelectronics Integration & Test Summer Intern | Summer 2027 | 2025-11-01 | [Open](https://draper.wd5.myworkdayjobs.com/Draper_Careers) |
 | ~2026-11-04 (due now) | RTX | Intern - Production and Field Support - Onsite | Summer 2027 | 2025-11-04 | [Open](https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway) |
 | ~2026-11-04 (due now) | Space Dynamics Laboratory | Large Language Model Inference & Integration Engineer Intern - C4ISR Systems Division - LLM Inference Pipelines | Summer 2027 | 2025-11-04 | [Open](https://spacedynamicslaboratory.applytojob.com/apply) |
@@ -142,6 +138,10 @@ history fills more of that in.
 | ~2026-11-24 (due now) | Shield AI | Mission Systems Engineering Intern – Summer Intern | Summer 2027 | 2025-11-24 | [Open](https://jobs.lever.co/shieldai) |
 | ~2026-11-25 (due now) | LeoLabs | Hardware Engineering Intern | Summer 2027 | 2025-11-25 | [Open](https://job-boards.greenhouse.io/leolabsinc) |
 | ~2026-11-25 (due now) | LeoLabs | Hardware Engineering Intern | Fall 2027 | 2025-11-25 | [Open](https://job-boards.greenhouse.io/leolabsinc) |
+| ~2026-11-27 (due now) | Shield AI | Intern - Radio Frequency Engineering | Summer 2027 | 2025-11-27 | [Open](https://jobs.lever.co/shieldai) |
+| ~2026-12-01 | Shield AI | Flight Test Engineering Intern | Summer 2027 | 2025-12-01 | [Open](https://jobs.lever.co/shieldai) |
+| ~2026-12-06 | Parsons | Space Systems Engineer Intern | Summer 2027 | 2024-12-06 | [Open](https://parsons.wd5.myworkdayjobs.com/search) |
+| ~2026-12-10 | General Dynamics Mission Systems | Intern Engineer Co-op - Start | Summer 2027 | 2025-12-10 | [Open](https://careers-gdeb.icims.com/jobs/search?ss=1&searchKeyword=intern) |
 <!-- PREDICTED:END -->
 
 ---

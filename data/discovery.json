@@ -239,51 +239,75 @@
   "heico": {
    "d": "2026-11-21",
    "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "hyperloop": {
+   "d": "2026-11-22",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "joe gibbs": {
+   "d": "2026-11-22",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "joe gibbs racing": {
+   "d": "2026-11-22",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "juncos hollinger": {
+   "d": "2026-11-22",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "kaulig": {
+   "d": "2026-11-22",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "kaulig racing": {
+   "d": "2026-11-22",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "kinetx": {
+   "d": "2026-11-22",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "kodiak robotics": {
+   "d": "2026-11-22",
+   "r": "workable:kodiak-robotics (0 openings)"
+  },
+  "kongsberg": {
+   "d": "2026-11-22",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "kratos": {
+   "d": "2026-11-22",
+   "r": "workable:kratos (0 openings)"
+  },
+  "kratos defense": {
+   "d": "2026-11-22",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "launcher": {
+   "d": "2026-11-22",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
   }
  },
  "report": {
-  "date": "2026-11-21",
+  "date": "2026-11-22",
   "added": [
    {
-    "name": "Formic",
-    "kind": "greenhouse",
-    "via": "name probe (discover seeds)",
-    "openings": 71
-   },
-   {
-    "name": "Frontier Aerospace",
-    "kind": "workable",
-    "via": "name probe (aerospace_companies)",
-    "openings": 0
-   },
-   {
-    "name": "Gecko Robotics",
-    "kind": "ashby",
-    "via": "name probe (discover seeds)",
-    "openings": 25
-   },
-   {
-    "name": "Griffon Aerospace",
-    "kind": "workable",
-    "via": "name probe (aerospace_companies)",
-    "openings": 0
-   },
-   {
-    "name": "Harley-Davidson",
+    "name": "Kodiak Robotics",
     "kind": "workable",
     "via": "name probe (discover seeds)",
     "openings": 0
    },
    {
-    "name": "Hedron Space",
+    "name": "Kratos",
     "kind": "workable",
     "via": "name probe (aerospace_companies)",
     "openings": 0
    }
   ],
   "states": {
-   "active": 401,
-   "candidate": 129,
+   "active": 414,
+   "candidate": 118,
    "covered": 6,
    "repair": 2
   },
@@ -305,9 +329,9 @@
     "kind": "workday",
     "via": "1 mechanical/aerospace internship on the lists (e.g. Dell CSG Hardware Engineering Intern)",
     "link": "https://dell.wd1.myworkdayjobs.com/External",
-    "fails": 3,
+    "fails": 4,
     "error": "Workday shows its maintenance page for this site: an outage, or the company moved to another hiring system",
-    "next_try": "2026-11-22",
+    "next_try": "2026-11-24",
     "last_ok": "2026-11-20",
     "since": "2026-11-20",
     "moved_to": ""
@@ -370,7 +394,7 @@
     "fails": 0,
     "error": "",
     "next_try": "",
-    "last_ok": "2026-11-21",
+    "last_ok": "2026-11-22",
     "since": "",
     "moved_to": ""
    },
@@ -434,138 +458,6 @@
     "next_try": "2026-11-21",
     "last_ok": "",
     "since": "2026-11-21",
-    "moved_to": ""
-   },
-   {
-    "name": "Toshiba Global Commerce",
-    "kind": "greenhouse",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Engineer Intern)",
-    "link": "https://job-boards.greenhouse.io/toshibaglobalcommercesolutions",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Virtu Financial",
-    "kind": "greenhouse",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Engineer Intern - FPGA)",
-    "link": "https://job-boards.greenhouse.io/virtu",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Hexagon",
-    "kind": "icims",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Intern)",
-    "link": "https://careers-hexagonpositioning.icims.com/jobs/search?ss=1&searchKeyword=intern",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Humanscale",
-    "kind": "icims",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Electrical Design Engineer Intern)",
-    "link": "https://careers-humanscale.icims.com/jobs/search?ss=1&searchKeyword=intern",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "IQT",
-    "kind": "icims",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Engineering Intern - Rapid Prototyping Group)",
-    "link": "https://careers-iqt.icims.com/jobs/search?ss=1&searchKeyword=intern",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "LMI",
-    "kind": "icims",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Space Systems Engineering Intern)",
-    "link": "https://careers-lmi.icims.com/jobs/search?ss=1&searchKeyword=intern",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Otter Products",
-    "kind": "icims",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Test Engineering Intern)",
-    "link": "https://careers-otterproducts.icims.com/jobs/search?ss=1&searchKeyword=intern",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Rambus",
-    "kind": "icims",
-    "via": "2 mechanical/aerospace internships on the lists (e.g. Test Engineering Intern)",
-    "link": "https://careers-rambus.icims.com/jobs/search?ss=1&searchKeyword=intern",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "SRI International",
-    "kind": "icims",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. RIT Co-op: Test Engineering)",
-    "link": "https://careers-sri.icims.com/jobs/search?ss=1&searchKeyword=intern",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Steel Dynamics",
-    "kind": "icims",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Intern)",
-    "link": "https://careers-steeldynamics.icims.com/jobs/search?ss=1&searchKeyword=intern",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Advanced Robotics for Manufacturing",
-    "kind": "jazzhr",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineer Co-op Intern)",
-    "link": "https://arminstitute.applytojob.com/apply",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
     "moved_to": ""
    },
    {
@@ -867,6 +759,138 @@
     "last_ok": "",
     "since": "",
     "moved_to": ""
+   },
+   {
+    "name": "Mayo Clinic",
+    "kind": "oracle",
+    "via": "2 mechanical/aerospace internships on the lists (e.g. Undergraduate Engineering Intern - Mechanical Design)",
+    "link": "https://fa-euwp-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/requisitions?keyword=intern",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Coherent",
+    "kind": "oracle",
+    "via": "2 mechanical/aerospace internships on the lists (e.g. Intern Thermal Testing Engineer)",
+    "link": "https://hcwp.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/requisitions?keyword=intern",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Rheem",
+    "kind": "oracle",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Systems Test Engineering Co-Op)",
+    "link": "https://hdde.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/requisitions?keyword=intern",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Legrand",
+    "kind": "oracle",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Intern)",
+    "link": "https://iadugs.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/requisitions?keyword=intern",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Ralliant",
+    "kind": "oracle",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Electrical Design Engineer Intern)",
+    "link": "https://ibwujb.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/requisitions?keyword=intern",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Torus",
+    "kind": "rippling",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineer Intern (Summer 2027))",
+    "link": "https://ats.rippling.com/torus/jobs",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Arista Networks",
+    "kind": "smartrecruiters",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Engineering Intern)",
+    "link": "https://jobs.smartrecruiters.com/AristaNetworks",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Avery Dennison",
+    "kind": "smartrecruiters",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Test Engineering Intern)",
+    "link": "https://jobs.smartrecruiters.com/AveryDennison",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Continental",
+    "kind": "smartrecruiters",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. 2027 Internship - Manufacturing Engineer (Hoosier Racing Tir)",
+    "link": "https://jobs.smartrecruiters.com/Continental",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Keenfinity",
+    "kind": "smartrecruiters",
+    "via": "2 mechanical/aerospace internships on the lists (e.g. Electrical Test Engineer Co-op)",
+    "link": "https://jobs.smartrecruiters.com/Keenfinity",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Knobelsdorff Enterprises",
+    "kind": "smartrecruiters",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Engineer Intern)",
+    "link": "https://jobs.smartrecruiters.com/KnobelsdorffEnterprises",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
    }
   ],
   "unsupported": [
@@ -905,19 +929,19 @@
     ]
    },
    {
-    "host": "ca.linkedin.com",
-    "count": 2,
-    "companies": [
-     "DataRobot",
-     "MDA"
-    ]
-   },
-   {
     "host": "careers.eutelsat.com",
     "count": 2,
     "companies": [
      "Eutelsat",
      "OneWeb"
+    ]
+   },
+   {
+    "host": "ca.linkedin.com",
+    "count": 2,
+    "companies": [
+     "DataRobot",
+     "MDA"
     ]
    },
    {
@@ -1032,9 +1056,9 @@
    }
   ],
   "probed": {
-   "done": 60,
+   "done": 72,
    "names": 361,
-   "found": 22
+   "found": 24
   }
  }
 }

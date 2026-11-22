@@ -1,25 +1,25 @@
 {
- "date": "2026-11-21",
- "read": 55535,
- "kept": 1737,
+ "date": "2026-11-22",
+ "read": 55674,
+ "kept": 1664,
  "counts": {
   "title and link checks": {
-   "not an internship": 16200,
-   "not an engineering role": 11649,
-   "not engineering (title or majors listed)": 2742,
+   "not an internship": 16245,
+   "not an engineering role": 11727,
+   "not engineering (title or majors listed)": 2743,
    "not engineering (title)": 1632,
-   "graduate-student role": 770,
-   "full-time, new-grad or trade role (not a student program)": 104,
+   "graduate-student role": 774,
+   "full-time, new-grad or trade role (not a student program)": 105,
    "full-time role (student-sounding title)": 6
   },
   "basic checks": {
-   "posting too old": 4592,
-   "outside the U.S.": 505,
-   "not engineering": 194
+   "posting too old": 4748,
+   "outside the U.S.": 464,
+   "not engineering": 183
   },
   "other": {
-   "lead (no company link) at a company outside aerospace and motorsport": 10686,
-   "closed on the company's own site (still on a list)": 27
+   "lead (no company link) at a company outside aerospace and motorsport": 10659,
+   "closed on the company's own site (still on a list)": 19
   }
  },
  "examples": {
@@ -41,6 +41,24 @@
     "title": "Machinist Apprentice Ausbildung zum Maschinen",
     "url": "https://curtisswright.wd1.myworkdayjobs.com/CW_External_Career_Site/job/Germany-Feuchwangen-ST-211/Machinist-Apprentice-Ausbildung-zum-Maschinen_JR14343",
     "source": "Curtiss-Wright"
+   },
+   {
+    "company": "Caterpillar",
+    "title": "Early Career Welder Trainee",
+    "url": "https://cat.wd5.myworkdayjobs.com/CaterpillarCareers/job/South-Milwaukee-Wisconsin/Early-Career-Welder-Trainee_R0000406371",
+    "source": "Caterpillar"
+   },
+   {
+    "company": "Caterpillar",
+    "title": "GP/WBL Partnership: High School Welding Apprentice Program (Athens GA)",
+    "url": "https://cat.wd5.myworkdayjobs.com/CaterpillarCareers/job/Athens-Georgia/GP-WBL-Partnership--High-School-Welding-Apprentice-Program--Athens-GA-_R0000404282",
+    "source": "Caterpillar"
+   },
+   {
+    "company": "Caterpillar",
+    "title": "GP/WBL Partnership: High School Manufacturing Apprentice Program (Athens GA)",
+    "url": "https://cat.wd5.myworkdayjobs.com/CaterpillarCareers/job/Athens-Georgia/GP-WBL-Partnership--High-School-Manufacturing-Apprentice-Program--Athens-GA-_R0000404281",
+    "source": "Caterpillar"
    },
    {
     "company": "GE HealthCare",
@@ -67,24 +85,6 @@
     "source": "Parsons"
    },
    {
-    "company": "Caterpillar",
-    "title": "Early Career Welder Trainee",
-    "url": "https://cat.wd5.myworkdayjobs.com/CaterpillarCareers/job/South-Milwaukee-Wisconsin/Early-Career-Welder-Trainee_R0000406371",
-    "source": "Caterpillar"
-   },
-   {
-    "company": "Caterpillar",
-    "title": "GP/WBL Partnership: High School Welding Apprentice Program (Athens GA)",
-    "url": "https://cat.wd5.myworkdayjobs.com/CaterpillarCareers/job/Athens-Georgia/GP-WBL-Partnership--High-School-Welding-Apprentice-Program--Athens-GA-_R0000404282",
-    "source": "Caterpillar"
-   },
-   {
-    "company": "Caterpillar",
-    "title": "GP/WBL Partnership: High School Manufacturing Apprentice Program (Athens GA)",
-    "url": "https://cat.wd5.myworkdayjobs.com/CaterpillarCareers/job/Athens-Georgia/GP-WBL-Partnership--High-School-Manufacturing-Apprentice-Program--Athens-GA-_R0000404281",
-    "source": "Caterpillar"
-   },
-   {
     "company": "Airbus",
     "title": "Store and Logistics Assistant (Apprentice)",
     "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Pasay-City/Store-and-Logistics-Assistant--Apprentice-_JR10454485",
@@ -103,15 +103,15 @@
     "source": "Carrier"
    },
    {
-    "company": "Xcel Energy",
-    "title": "Apprentice Relay Technician - Eau Claire, WI",
-    "url": "https://xcelenergy.wd1.myworkdayjobs.com/External/job/Eau-Claire-WI-54703/Apprentice-Relay-Technician---Eau-Claire--WI_JR116613-1",
-    "source": "Xcel Energy"
+    "company": "Abbott",
+    "title": "Therapy Specialist Apprentice – Lombardia",
+    "url": "https://abbott.wd5.myworkdayjobs.com/abbottcareers/job/Italy--Milan--Viale-Edison-110-Edison-Park-Centre/Therapy-Specialist-Apprentice---Lombardia_31167569",
+    "source": "Abbott"
    },
    {
     "company": "Xcel Energy",
-    "title": "Control Room Operator B - Apprentice",
-    "url": "https://xcelenergy.wd1.myworkdayjobs.com/External/job/Hobbs-NM-88241/Control-Room-Operator-B---Apprentice_JR116660-1",
+    "title": "Apprentice Relay Technician - Eau Claire, WI",
+    "url": "https://xcelenergy.wd1.myworkdayjobs.com/External/job/Eau-Claire-WI-54703/Apprentice-Relay-Technician---Eau-Claire--WI_JR116613-1",
     "source": "Xcel Energy"
    }
   ],
@@ -153,6 +153,42 @@
     "source": "General Motors"
    },
    {
+    "company": "Caterpillar",
+    "title": "Environment, Health & Safety Intern",
+    "url": "https://cat.wd5.myworkdayjobs.com/CaterpillarCareers/job/Tullamarine-Victoria/Environment--Health---Safety-Intern_R0000400697",
+    "source": "Caterpillar"
+   },
+   {
+    "company": "Caterpillar",
+    "title": "Rental and Used Intern",
+    "url": "https://cat.wd5.myworkdayjobs.com/CaterpillarCareers/job/Archerfield-Queensland/Rental-and-Used-Intern_R0000405803",
+    "source": "Caterpillar"
+   },
+   {
+    "company": "Caterpillar",
+    "title": "Customer Services Intern",
+    "url": "https://cat.wd5.myworkdayjobs.com/CaterpillarCareers/job/Santiago-Region-Metropolitana-de-Santiago/Customer-Services-Intern_R0000405498",
+    "source": "Caterpillar"
+   },
+   {
+    "company": "Caterpillar",
+    "title": "Machinist Trainee - 3rd Shift - East Peoria Bldg KK - Supplemental",
+    "url": "https://cat.wd5.myworkdayjobs.com/CaterpillarCareers/job/East-Peoria-Illinois/Machinist-Trainee---3rd-Shift---East-Peoria-Bldg-KK---Supplemental_R0000401640",
+    "source": "Caterpillar"
+   },
+   {
+    "company": "Caterpillar",
+    "title": "Machinist Trainee - 2nd Shift - East Peoria Bldg KK - Supplemental",
+    "url": "https://cat.wd5.myworkdayjobs.com/CaterpillarCareers/job/East-Peoria-Illinois/Machinist-Trainee---2nd-Shift---East-Peoria-Bldg-KK---Supplemental_R0000401633",
+    "source": "Caterpillar"
+   },
+   {
+    "company": "Caterpillar",
+    "title": "S&L Intern",
+    "url": "https://cat.wd5.myworkdayjobs.com/CaterpillarCareers/job/Tianjin-Tianjin/S-L-Intern_R0000401509",
+    "source": "Caterpillar"
+   },
+   {
     "company": "Medtronic",
     "title": "Co-op/Apprentice (Non-Tech)",
     "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/Pont-de-Claix-Rhne-Alpes-France/Co-op-Apprentice--Non-Tech-_R82522",
@@ -168,42 +204,6 @@
     "company": "Medtronic",
     "title": "Intern Contracting Team Support",
     "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/Warsaw-Mazowieckie-Poland/Intern-Contracting-Team-Support_R82344-1",
-    "source": "Medtronic"
-   },
-   {
-    "company": "Medtronic",
-    "title": "Co-op/Apprentice (Non-Tech)",
-    "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/Bhubaneswar-Odisha-India/Co-op-Apprentice--Non-Tech-_R81632-1",
-    "source": "Medtronic"
-   },
-   {
-    "company": "Medtronic",
-    "title": "Clinical Technologist Intern - Cardiovascular",
-    "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/Cape-Town-Western-Cape-South-Africa/Clinical-Technologist-Intern---Cardiovascular_R77958",
-    "source": "Medtronic"
-   },
-   {
-    "company": "Medtronic",
-    "title": "Intern Remote Monitoring Support",
-    "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/Madrid-Madrid-Spain/Intern-Remote-Monitoring-Support_R79845",
-    "source": "Medtronic"
-   },
-   {
-    "company": "Medtronic",
-    "title": "NMPH_Intern",
-    "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/Shanghai-Shanghai-China/NMPH-Intern_R82191-1",
-    "source": "Medtronic"
-   },
-   {
-    "company": "Medtronic",
-    "title": "Intern: Graduate( Non-Tech)",
-    "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/Trevoux-Rhne-Alpes-France/Intern--Graduate--Non-Tech-_R82112-1",
-    "source": "Medtronic"
-   },
-   {
-    "company": "Medtronic",
-    "title": "CNC Intern",
-    "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/Changzhou-Jiangsu-China/CNC-Intern_R81485-1",
     "source": "Medtronic"
    }
   ],
@@ -246,12 +246,6 @@
    }
   ],
   "not an engineering role": [
-   {
-    "company": "Ellipsis Labs",
-    "title": "Software Engineer",
-    "url": "https://jobs.ashbyhq.com/ellipsislabs/02136b22-35b1-4b3d-8bef-567c3380a849/application",
-    "source": "Simplify Summer 2027 list"
-   },
    {
     "company": "Doctors Without Borders",
     "title": "Data Science Intern",
@@ -334,6 +328,12 @@
     "company": "Radix Trading",
     "title": "Quantitative Technologist C++ Intern",
     "url": "https://job-boards.greenhouse.io/radixuniversity/jobs/8500265002",
+    "source": "Simplify Summer 2027 list"
+   },
+   {
+    "company": "Sandhills Global",
+    "title": "Software Development Intern",
+    "url": "https://www.sandhills.com/careers-and-internships/details/careers/sandhills/1195/software-development-intern",
     "source": "Simplify Summer 2027 list"
    }
   ],
@@ -523,185 +523,185 @@
   ],
   "not an internship": [
    {
-    "company": "Relativity Space",
-    "title": "Additive Manufacturing Engineer II, PBF",
-    "url": "https://boards.greenhouse.io/relativity/jobs/8615771002?gh_jid=8615771002",
-    "source": "Relativity Space"
+    "company": "SpaceX",
+    "title": "Accountant",
+    "url": "https://boards.greenhouse.io/spacex/jobs/8643277002?gh_jid=8643277002",
+    "source": "SpaceX"
    },
    {
-    "company": "Relativity Space",
-    "title": "Additive Post Processing Technician I, First Shift",
-    "url": "https://boards.greenhouse.io/relativity/jobs/8925714002?gh_jid=8925714002",
-    "source": "Relativity Space"
+    "company": "SpaceX",
+    "title": "Accountant, SI Operations",
+    "url": "https://boards.greenhouse.io/spacex/jobs/8786430002?gh_jid=8786430002",
+    "source": "SpaceX"
    },
    {
-    "company": "Relativity Space",
-    "title": "Additive Post Processing Technician I, Second Shift",
-    "url": "https://boards.greenhouse.io/relativity/jobs/8925631002?gh_jid=8925631002",
-    "source": "Relativity Space"
+    "company": "SpaceX",
+    "title": "Account Executive, Geo Enterprise",
+    "url": "https://boards.greenhouse.io/spacex/jobs/8934419002?gh_jid=8934419002",
+    "source": "SpaceX"
    },
    {
-    "company": "Relativity Space",
-    "title": "Asset Maintenance Technician II, Second Shift",
-    "url": "https://boards.greenhouse.io/relativity/jobs/8801441002?gh_jid=8801441002",
-    "source": "Relativity Space"
+    "company": "SpaceX",
+    "title": "Accounts Payable Manager",
+    "url": "https://boards.greenhouse.io/spacex/jobs/8927122002?gh_jid=8927122002",
+    "source": "SpaceX"
    },
    {
-    "company": "Relativity Space",
-    "title": "Avionics Harness Technician II, First Shift",
-    "url": "https://boards.greenhouse.io/relativity/jobs/8904645002?gh_jid=8904645002",
-    "source": "Relativity Space"
+    "company": "SpaceX",
+    "title": "Accounts Payable Specialist",
+    "url": "https://boards.greenhouse.io/spacex/jobs/8904563002?gh_jid=8904563002",
+    "source": "SpaceX"
    },
    {
-    "company": "Relativity Space",
-    "title": "Avionics Material Planner",
-    "url": "https://boards.greenhouse.io/relativity/jobs/8900093002?gh_jid=8900093002",
-    "source": "Relativity Space"
+    "company": "SpaceX",
+    "title": "Additive Manufacturing Engineer (Raptor)",
+    "url": "https://boards.greenhouse.io/spacex/jobs/8816517002?gh_jid=8816517002",
+    "source": "SpaceX"
    },
    {
-    "company": "Relativity Space",
-    "title": "Avionics Mechanical Engineer II",
-    "url": "https://boards.greenhouse.io/relativity/jobs/8822916002?gh_jid=8822916002",
-    "source": "Relativity Space"
+    "company": "SpaceX",
+    "title": "Additive Manufacturing Specialist (Starlink Development)",
+    "url": "https://boards.greenhouse.io/spacex/jobs/8694545002?gh_jid=8694545002",
+    "source": "SpaceX"
    },
    {
-    "company": "Relativity Space",
-    "title": "Build Reliability Engineer I",
-    "url": "https://boards.greenhouse.io/relativity/jobs/8911813002?gh_jid=8911813002",
-    "source": "Relativity Space"
+    "company": "SpaceX",
+    "title": "Additive Technician (Raptor)",
+    "url": "https://boards.greenhouse.io/spacex/jobs/8942659002?gh_jid=8942659002",
+    "source": "SpaceX"
    },
    {
-    "company": "Relativity Space",
-    "title": "Build Reliability Engineer II",
-    "url": "https://boards.greenhouse.io/relativity/jobs/8918048002?gh_jid=8918048002",
-    "source": "Relativity Space"
+    "company": "SpaceX",
+    "title": "Aerodynamics Engineer (Starship)",
+    "url": "https://boards.greenhouse.io/spacex/jobs/8945991002?gh_jid=8945991002",
+    "source": "SpaceX"
    },
    {
-    "company": "Relativity Space",
-    "title": "CNC Machine Operator I",
-    "url": "https://boards.greenhouse.io/relativity/jobs/8885614002?gh_jid=8885614002",
-    "source": "Relativity Space"
+    "company": "SpaceX",
+    "title": "Aerospace Software Engineer (Starfall)",
+    "url": "https://boards.greenhouse.io/spacex/jobs/8939698002?gh_jid=8939698002",
+    "source": "SpaceX"
    },
    {
-    "company": "Relativity Space",
-    "title": "CNC Machinist II, Second Shift",
-    "url": "https://boards.greenhouse.io/relativity/jobs/8494018002?gh_jid=8494018002",
-    "source": "Relativity Space"
+    "company": "SpaceX",
+    "title": "AMS Verification Engineer (RFIC Engineering)",
+    "url": "https://boards.greenhouse.io/spacex/jobs/8742411002?gh_jid=8742411002",
+    "source": "SpaceX"
    },
    {
-    "company": "Relativity Space",
-    "title": "CNC Operator II, First Shift",
-    "url": "https://boards.greenhouse.io/relativity/jobs/8893495002?gh_jid=8893495002",
-    "source": "Relativity Space"
+    "company": "SpaceX",
+    "title": "AMS Verification Engineer (RFIC Engineering)",
+    "url": "https://boards.greenhouse.io/spacex/jobs/8742211002?gh_jid=8742211002",
+    "source": "SpaceX"
    },
    {
-    "company": "Relativity Space",
-    "title": "CNC Operator II, Second Shift",
-    "url": "https://boards.greenhouse.io/relativity/jobs/8900299002?gh_jid=8900299002",
-    "source": "Relativity Space"
+    "company": "SpaceX",
+    "title": "Antenna Engineer - Parabolic & Waveguide (Starlink)",
+    "url": "https://boards.greenhouse.io/spacex/jobs/8692102002?gh_jid=8692102002",
+    "source": "SpaceX"
    },
    {
-    "company": "Relativity Space",
-    "title": "CNC Setup Operator I, First Shift",
-    "url": "https://boards.greenhouse.io/relativity/jobs/8893454002?gh_jid=8893454002",
-    "source": "Relativity Space"
+    "company": "SpaceX",
+    "title": "Antenna Engineer, Satellites (Starlink)",
+    "url": "https://boards.greenhouse.io/spacex/jobs/8692241002?gh_jid=8692241002",
+    "source": "SpaceX"
    },
    {
-    "company": "Relativity Space",
-    "title": "CNC Setup Operator I, Second Shift",
-    "url": "https://boards.greenhouse.io/relativity/jobs/8900297002?gh_jid=8900297002",
-    "source": "Relativity Space"
+    "company": "SpaceX",
+    "title": "Antenna Engineer (Starlink)",
+    "url": "https://boards.greenhouse.io/spacex/jobs/8621989002?gh_jid=8621989002",
+    "source": "SpaceX"
    }
   ],
   "lead (no company link) at a company outside aerospace and motorsport": [
    {
+    "company": "Blizzard Entertainment",
+    "title": "Blizzard 2027 Summer Internships - Data Platform Engineering",
+    "url": "https://www.google.com/search?q=Blizzard+Entertainment+%22Blizzard+2027+Summer+Internships+-+Data+Platform+Engineering%22",
+    "source": "intern-list.com"
+   },
+   {
+    "company": "Tesla",
+    "title": "Internship, Robotics Technical Program Manager, Optimus Hardware (Summer 2027)",
+    "url": "https://www.google.com/search?q=Tesla+%22Internship%2C+Robotics+Technical+Program+Manager%2C+Optimus+Hardware+%28Summer+2027%29%22",
+    "source": "intern-list.com"
+   },
+   {
+    "company": "Tech World Networking",
+    "title": "Combination Device Intern",
+    "url": "https://www.google.com/search?q=Tech+World+Networking+%22Combination+Device+Intern%22",
+    "source": "intern-list.com"
+   },
+   {
+    "company": "VertoTech",
+    "title": "Engineering/Manufacturing Intern",
+    "url": "https://www.google.com/search?q=VertoTech+%22Engineering%2FManufacturing+Intern%22",
+    "source": "intern-list.com"
+   },
+   {
     "company": "WSP",
-    "title": "Electrical Engineering Intern- Spring 2027",
-    "url": "https://www.google.com/search?q=WSP+%22Electrical+Engineering+Intern-+Spring+2027%22",
+    "title": "Bridge Inpection Intern- Summer 2027",
+    "url": "https://www.google.com/search?q=WSP+%22Bridge+Inpection+Intern-+Summer+2027%22",
     "source": "intern-list.com"
    },
    {
-    "company": "Linde",
-    "title": "Engineering Internship",
-    "url": "https://www.google.com/search?q=Linde+%22Engineering+Internship%22",
+    "company": "Graycor",
+    "title": "Project Engineer Internship, Commercial/Industrial Construction",
+    "url": "https://www.google.com/search?q=Graycor+%22Project+Engineer+Internship%2C+Commercial%2FIndustrial+Construction%22",
     "source": "intern-list.com"
    },
    {
-    "company": "Cadence",
-    "title": "CST Application Engineer Intern - Physical Systems",
-    "url": "https://www.google.com/search?q=Cadence+%22CST+Application+Engineer+Intern+-+Physical+Systems%22",
+    "company": "Sargent & Lundy",
+    "title": "Piping Stress Engineering Intern (Summer 2027)",
+    "url": "https://www.google.com/search?q=Sargent+%26+Lundy+%22Piping+Stress+Engineering+Intern+%28Summer+2027%29%22",
     "source": "intern-list.com"
    },
    {
-    "company": "Skanska",
-    "title": "2027 Summer Internship (Heavy Civil Construction)",
-    "url": "https://www.google.com/search?q=Skanska+%222027+Summer+Internship+%28Heavy+Civil+Construction%29%22",
+    "company": "Enerfab",
+    "title": "Construction Management Internship - Fall 2027",
+    "url": "https://www.google.com/search?q=Enerfab+%22Construction+Management+Internship+-+Fall+2027%22",
     "source": "intern-list.com"
    },
    {
-    "company": "Zimmer Biomet",
-    "title": "2027 Spring and Summer Co-Op, Packaging Engineering",
-    "url": "https://www.google.com/search?q=Zimmer+Biomet+%222027+Spring+and+Summer+Co-Op%2C+Packaging+Engineering%22",
+    "company": "Enerfab",
+    "title": "Construction Management Internship - Summer 2027",
+    "url": "https://www.google.com/search?q=Enerfab+%22Construction+Management+Internship+-+Summer+2027%22",
     "source": "intern-list.com"
    },
    {
-    "company": "RS&H",
-    "title": "Civil Field Engineering Inspection Intern (Summer 27)",
-    "url": "https://www.google.com/search?q=RS%26H+%22Civil+Field+Engineering+Inspection+Intern+%28Summer+27%29%22",
+    "company": "Sargent & Lundy",
+    "title": "Mechanical Engineering Intern - Nuclear (Summer 2027)",
+    "url": "https://www.google.com/search?q=Sargent+%26+Lundy+%22Mechanical+Engineering+Intern+-+Nuclear+%28Summer+2027%29%22",
     "source": "intern-list.com"
    },
    {
-    "company": "TRUMPF",
-    "title": "Assembly Intern",
-    "url": "https://www.google.com/search?q=TRUMPF+%22Assembly+Intern%22",
+    "company": "National Laboratory of the Rockies",
+    "title": "Undergraduate/Graduate (3-12 Month, Remote) Intern - Power System/Power Electronics Modeling",
+    "url": "https://www.google.com/search?q=National+Laboratory+of+the+Rockies+%22Undergraduate%2FGraduate+%283-12+Month%2C+Remote%29+Intern+-+Power+System%2FPower+Electronics+Modeling%22",
     "source": "intern-list.com"
    },
    {
-    "company": "Bowman Consulting",
-    "title": "Civil Engineering Intern - Summer 2027",
-    "url": "https://www.google.com/search?q=Bowman+Consulting+%22Civil+Engineering+Intern+-+Summer+2027%22",
+    "company": "Architecture49 Inc.",
+    "title": "Traffic Engineering Co-op - Spring/Summer 2026",
+    "url": "https://www.google.com/search?q=Architecture49+Inc.+%22Traffic+Engineering+Co-op+-+Spring%2FSummer+2026%22",
     "source": "intern-list.com"
    },
    {
-    "company": "SSOE Group",
-    "title": "Mechanical Designer Part-Time Internship",
-    "url": "https://www.google.com/search?q=SSOE+Group+%22Mechanical+Designer+Part-Time+Internship%22",
+    "company": "WSP in the U.S.",
+    "title": "Water Resources Engineering- Summer 2027",
+    "url": "https://www.google.com/search?q=WSP+in+the+U.S.+%22Water+Resources+Engineering-+Summer+2027%22",
     "source": "intern-list.com"
    },
    {
-    "company": "Skanska",
-    "title": "Heavy Civil Infrastructure Summer 2027 Intern",
-    "url": "https://www.google.com/search?q=Skanska+%22Heavy+Civil+Infrastructure+Summer+2027+Intern%22",
+    "company": "Kiewit",
+    "title": "Civil Engineer Intern (Summer 2027) - Kiewit OGC Engineering",
+    "url": "https://www.google.com/search?q=Kiewit+%22Civil+Engineer+Intern+%28Summer+2027%29+-+Kiewit+OGC+Engineering%22",
     "source": "intern-list.com"
    },
    {
-    "company": "Skanska",
-    "title": "Heavy Civil Infrastructure Summer 2027 Internship",
-    "url": "https://www.google.com/search?q=Skanska+%22Heavy+Civil+Infrastructure+Summer+2027+Internship%22",
-    "source": "intern-list.com"
-   },
-   {
-    "company": "Flex",
-    "title": "Mechanical Engineering Co-Op - Spring 2027",
-    "url": "https://www.google.com/search?q=Flex+%22Mechanical+Engineering+Co-Op+-+Spring+2027%22",
-    "source": "intern-list.com"
-   },
-   {
-    "company": "Siemens",
-    "title": "Building Automation Systems Specialist Internship",
-    "url": "https://www.google.com/search?q=Siemens+%22Building+Automation+Systems+Specialist+Internship%22",
-    "source": "intern-list.com"
-   },
-   {
-    "company": "Siemens",
-    "title": "Building Automation Systems Specialist Internship",
-    "url": "https://www.google.com/search?q=Siemens+%22Building+Automation+Systems+Specialist+Internship%22",
-    "source": "intern-list.com"
-   },
-   {
-    "company": "Arcadis",
-    "title": "Water/Wastewater Intern - Summer 2027",
-    "url": "https://www.google.com/search?q=Arcadis+%22Water%2FWastewater+Intern+-+Summer+2027%22",
+    "company": "FlatironDragados",
+    "title": "Field Engineer Intern",
+    "url": "https://www.google.com/search?q=FlatironDragados+%22Field+Engineer+Intern%22",
     "source": "intern-list.com"
    }
   ],
@@ -737,6 +737,12 @@
     "source": "Sierra Nevada Corporation"
    },
    {
+    "company": "CACI",
+    "title": "Junior Operations and Technology Intern - Spring 2027",
+    "url": "https://caci.wd1.myworkdayjobs.com/External/job/Ashburn-VA-US/Junior-Operations-and-Technology-Intern---Spring-2027_334935",
+    "source": "CACI"
+   },
+   {
     "company": "Northrop Grumman",
     "title": "2027 Critical Skills Development Intern - Remote",
     "url": "https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site/job/United-States-Remote/XMLNAME-2027-Critical-Skills-Development-Intern---Remote_R10261601",
@@ -759,12 +765,6 @@
     "title": "Contracts Intern",
     "url": "https://ebi.wd5.myworkdayjobs.com/ebadcareers/job/Simsbury-CT/Contracts-Intern_REQ107712",
     "source": "Ensign-Bickford Aerospace & Defense"
-   },
-   {
-    "company": "CACI",
-    "title": "Junior Operations and Technology Intern - Spring 2027",
-    "url": "https://caci.wd1.myworkdayjobs.com/External/job/Ashburn-VA-US/Junior-Operations-and-Technology-Intern---Spring-2027_334935",
-    "source": "CACI"
    },
    {
     "company": "Rolls-Royce",
@@ -815,6 +815,24 @@
     "title": "Electrical & Computer Engineering Academic Part Time Intern",
     "url": "https://citjpl.wd5.myworkdayjobs.com/Jobs/job/JPL-Campus/Academic-Part-Time-Intern_R6220",
     "source": "NASA Jet Propulsion Laboratory"
+   },
+   {
+    "company": "Draper",
+    "title": "GNC Systems Engineering Co-Op (Spring 2027)",
+    "url": "https://draper.wd5.myworkdayjobs.com/Draper_Careers/job/Cambridge-MA/GNC-Systems-Engineering-Co-Op--Spring-2027-_JR003131",
+    "source": "Draper"
+   },
+   {
+    "company": "Draper",
+    "title": "GNC Systems Engineering Intern (Summer 2027)",
+    "url": "https://draper.wd5.myworkdayjobs.com/Draper_Careers/job/Cambridge-MA/GNC-Systems-Engineering-Intern--Summer-2027-_JR003129",
+    "source": "Draper"
+   },
+   {
+    "company": "Draper",
+    "title": "Systems Engineering Co-Op (Spring 2027)",
+    "url": "https://draper.wd5.myworkdayjobs.com/Draper_Careers/job/Cambridge-MA/Systems-Engineering-Co-Op--Spring-2027-_JR002882",
+    "source": "Draper"
    },
    {
     "company": "Draper",
@@ -869,24 +887,6 @@
     "title": "Technical Project Manager Intern - Summer 2027",
     "url": "https://caci.wd1.myworkdayjobs.com/External/job/High-Point-NC-US/Technical-Project-Manager-Intern---Summer-2027_333955",
     "source": "CACI"
-   },
-   {
-    "company": "CACI",
-    "title": "Technical Project Manager Intern - Summer 2027",
-    "url": "https://caci.wd1.myworkdayjobs.com/External/job/High-Point-NC-US/Technical-Project-Manager-Intern---Summer-2027_333027",
-    "source": "CACI"
-   },
-   {
-    "company": "Booz Allen Hamilton",
-    "title": "Design and Verification Engineer Intern",
-    "url": "https://bah.wd1.myworkdayjobs.com/BAH_Jobs/job/Beavercreek-OH/Design-and-Verification-Engineer-Intern_R0252482",
-    "source": "Booz Allen Hamilton"
-   },
-   {
-    "company": "Booz Allen Hamilton",
-    "title": "University, Digital Transformation Analyst - Spring Intern",
-    "url": "https://bah.wd1.myworkdayjobs.com/BAH_Jobs/job/Arlington-VA/R0251716-University--Digital-Transformation-Analyst---Spring-Intern_R0252398",
-    "source": "Booz Allen Hamilton"
    }
   ],
   "outside the U.S.": [
@@ -969,19 +969,25 @@
     "source": "GE HealthCare"
    },
    {
+    "company": "GE Vernova",
+    "title": "Grid Eletrical Control Intern",
+    "url": "https://gevernova.wd5.myworkdayjobs.com/Vernova_ExternalSite/job/Queretaro/Grid-Eletrical-Control-Intern_R5048442-1",
+    "source": "GE Vernova"
+   },
+   {
     "company": "Airbus",
     "title": "Working Student (d/f/m) for Application Development in Flight Physics",
     "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Hamburg-Area/Working-Student--d-f-m--for-Application-Development-in-Flight-Physics_JR10450463",
     "source": "Airbus"
-   },
-   {
-    "company": "Airbus",
-    "title": "Internship in divisional strategy",
-    "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Mnchen-Area/Internship-in-divisional-strategy-AD_JR10451960",
-    "source": "Airbus"
    }
   ],
   "closed on the company's own site (still on a list)": [
+   {
+    "company": "ServiceNow",
+    "title": "Associate Forward Deployed Solution Engineer Intern",
+    "url": "https://jobs.smartrecruiters.com/ServiceNow/744000161936128",
+    "source": "Simplify Summer 2027 list"
+   },
    {
     "company": "Lightmatter",
     "title": "Hardware Test Engineering, Intern (Summer 2027)",
@@ -1064,12 +1070,6 @@
     "company": "GlobalFoundries",
     "title": "Advanced Manufacturing Engineering Intern, Process & Equipment (Summer 2027)",
     "url": "https://globalfoundries.wd1.myworkdayjobs.com/External/job/USA---New-York---Malta/Advanced-Manufacturing-Engineering-Intern--Process---Equipment--Summer-2027-_JR-2604599",
-    "source": "Mechanical engineering internships list"
-   },
-   {
-    "company": "GlobalFoundries",
-    "title": "Advanced Manufacturing Engineering Intern, Process & Equipment (Summer 2027)",
-    "url": "https://globalfoundries.wd1.myworkdayjobs.com/External/job/USA---New-York---Malta/Advanced-Manufacturing-Engineering-Intern--Process---Equipment--Summer-2027-_JR-2604600",
     "source": "Mechanical engineering internships list"
    }
   ]

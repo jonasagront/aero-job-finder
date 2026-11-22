@@ -14,7 +14,10 @@
   "Archer": "2026-11-21",
   "ASML": "2026-11-21",
   "AST SpaceMobile": "2026-11-21",
-  "Modernizing Medicine": "2026-11-21"
+  "Modernizing Medicine": "2026-11-21",
+  "AbbVie": "2026-11-22",
+  "Abbott": "2026-11-22",
+  "Rantec Power Systems Inc.": "2026-11-22"
  },
  "runs": [
   {
@@ -171,6 +174,38 @@
      "found": 0,
      "misses": [],
      "error": "HTTP 404"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-22",
+   "boards": [
+    {
+     "source": "AbbVie",
+     "kind": "smartrecruiters",
+     "in_scope": 0,
+     "found": 0,
+     "misses": [],
+     "read": "same searches with higher page caps, no title filter",
+     "openings": 19
+    },
+    {
+     "source": "Abbott",
+     "kind": "workday",
+     "in_scope": 0,
+     "found": 0,
+     "misses": [],
+     "read": "full list of every opening",
+     "openings": 2000
+    },
+    {
+     "source": "Rantec Power Systems Inc.",
+     "kind": "jazzhr",
+     "in_scope": 0,
+     "found": 0,
+     "misses": [],
+     "read": "full list, no title filter",
+     "openings": 1
     }
    ]
   }
