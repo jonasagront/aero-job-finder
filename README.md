@@ -89,7 +89,7 @@ history fills more of that in.
 ## Today's top matches
 
 <!-- JOBS:START -->
-**350 Summer 2027 aerospace matches** (2 in Motorsports, 15 Fall 2027 near home, 1167 in All engineering, 165 leads without a direct link) as of Nov 22, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
+**362 Summer 2027 aerospace matches** (2 in Motorsports, 17 Fall 2027 near home, 1167 in All engineering, 148 leads without a direct link) as of Nov 23, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
 
 | Fit | Company | Role | Preferred quals | Required quals | Location | Posted | Apply |
 |---|---|---|---|---|---|---|---|
@@ -123,11 +123,10 @@ history fills more of that in.
 ## Expected soon
 
 <!-- PREDICTED:START -->
-**25 aerospace internships expected in the next 60 days**, from past cycles' posting dates. All of them, with filters: **[Predicted tab](https://jonasagront.github.io/aero-job-finder/#predicted)**
+**24 aerospace internships expected in the next 60 days**, from past cycles' posting dates. All of them, with filters: **[Predicted tab](https://jonasagront.github.io/aero-job-finder/#predicted)**
 
 | Expected | Company | Role | For | Last cycle's posting date | Career site |
 |---|---|---|---|---|---|
-| ~2026-11-01 (due now) | Draper | Microelectronics Integration & Test Summer Intern | Summer 2027 | 2025-11-01 | [Open](https://draper.wd5.myworkdayjobs.com/Draper_Careers) |
 | ~2026-11-04 (due now) | RTX | Intern - Production and Field Support - Onsite | Summer 2027 | 2025-11-04 | [Open](https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway) |
 | ~2026-11-04 (due now) | Space Dynamics Laboratory | Large Language Model Inference & Integration Engineer Intern - C4ISR Systems Division - LLM Inference Pipelines | Summer 2027 | 2025-11-04 | [Open](https://spacedynamicslaboratory.applytojob.com/apply) |
 | ~2026-11-06 (due now) | Anduril | Perception Engineer Intern | Summer 2027 | 2024-11-06 | [Open](https://job-boards.greenhouse.io/andurilindustries) |
@@ -142,6 +141,7 @@ history fills more of that in.
 | ~2026-12-01 | Shield AI | Flight Test Engineering Intern | Summer 2027 | 2025-12-01 | [Open](https://jobs.lever.co/shieldai) |
 | ~2026-12-06 | Parsons | Space Systems Engineer Intern | Summer 2027 | 2024-12-06 | [Open](https://parsons.wd5.myworkdayjobs.com/search) |
 | ~2026-12-10 | General Dynamics Mission Systems | Intern Engineer Co-op - Start | Summer 2027 | 2025-12-10 | [Open](https://careers-gdeb.icims.com/jobs/search?ss=1&searchKeyword=intern) |
+| ~2026-12-12 | Nightwing | RF Engineering Intern | Summer 2027 | 2025-12-12 | [Open](https://nwis.wd12.myworkdayjobs.com/NW) |
 <!-- PREDICTED:END -->
 
 ---

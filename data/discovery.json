@@ -383,45 +383,71 @@
   "piasecki": {
    "d": "2026-11-22",
    "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "piper aircraft": {
+   "d": "2026-11-23",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "pratt and whitney": {
+   "d": "2026-11-23",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "precision castparts": {
+   "d": "2026-11-23",
+   "r": "workable:precision-castparts (0 openings)"
+  },
+  "radian aerospace": {
+   "d": "2026-11-23",
+   "r": "workable:radian (0 openings)"
+  },
+  "rahal letterman lanigan": {
+   "d": "2026-11-23",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "red cat holdings": {
+   "d": "2026-11-23",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "rfk racing": {
+   "d": "2026-11-23",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "richard childress": {
+   "d": "2026-11-23",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "richard childress racing": {
+   "d": "2026-11-23",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "riley technologies": {
+   "d": "2026-11-23",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "science applications international": {
+   "d": "2026-11-23",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
   }
  },
  "report": {
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "added": [
    {
-    "name": "Nuro",
-    "kind": "greenhouse",
-    "via": "name probe (discover seeds)",
-    "openings": 105
-   },
-   {
-    "name": "Outpost Space",
-    "kind": "ashby",
-    "via": "name probe (aerospace_companies)",
-    "openings": 13
-   },
-   {
-    "name": "Parker Aerospace",
+    "name": "Precision Castparts",
     "kind": "workable",
     "via": "name probe (aerospace_companies)",
     "openings": 0
    },
    {
-    "name": "Parker Hannifin",
+    "name": "Radian Aerospace",
     "kind": "workable",
-    "via": "name probe (discover seeds)",
+    "via": "name probe (aerospace_companies)",
     "openings": 0
-   },
-   {
-    "name": "Persona Ai",
-    "kind": "ashby",
-    "via": "name probe (discover seeds)",
-    "openings": 12
    }
   ],
   "states": {
-   "active": 444,
-   "candidate": 97,
+   "active": 457,
+   "candidate": 86,
    "covered": 6,
    "repair": 2
   },
@@ -508,7 +534,7 @@
     "fails": 0,
     "error": "",
     "next_try": "",
-    "last_ok": "2026-11-22",
+    "last_ok": "2026-11-23",
     "since": "",
     "moved_to": ""
    },
@@ -584,138 +610,6 @@
     "next_try": "2026-11-22",
     "last_ok": "",
     "since": "2026-11-22",
-    "moved_to": ""
-   },
-   {
-    "name": "Fortive",
-    "kind": "oracle",
-    "via": "2 mechanical/aerospace internships on the lists (e.g. Hardware Engineering Intern)",
-    "link": "https://ejta.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001/requisitions?keyword=intern",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "CSX",
-    "kind": "oracle",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Intern)",
-    "link": "https://fa-eowa-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CSXCareers/requisitions?keyword=intern",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "ADT",
-    "kind": "oracle",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Engineering & Connected Devices Intern)",
-    "link": "https://fa-erqb-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/requisitions?keyword=intern",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Mayo Clinic",
-    "kind": "oracle",
-    "via": "2 mechanical/aerospace internships on the lists (e.g. Undergraduate Engineering Intern - Mechanical Design)",
-    "link": "https://fa-euwp-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/requisitions?keyword=intern",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Coherent",
-    "kind": "oracle",
-    "via": "2 mechanical/aerospace internships on the lists (e.g. Intern Thermal Testing Engineer)",
-    "link": "https://hcwp.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/requisitions?keyword=intern",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Rheem",
-    "kind": "oracle",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Systems Test Engineering Co-Op)",
-    "link": "https://hdde.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/requisitions?keyword=intern",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Legrand",
-    "kind": "oracle",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Intern)",
-    "link": "https://iadugs.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/requisitions?keyword=intern",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Ralliant",
-    "kind": "oracle",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Electrical Design Engineer Intern)",
-    "link": "https://ibwujb.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/requisitions?keyword=intern",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Torus",
-    "kind": "rippling",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineer Intern (Summer 2027))",
-    "link": "https://ats.rippling.com/torus/jobs",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Arista Networks",
-    "kind": "smartrecruiters",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Engineering Intern)",
-    "link": "https://jobs.smartrecruiters.com/AristaNetworks",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Avery Dennison",
-    "kind": "smartrecruiters",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Test Engineering Intern)",
-    "link": "https://jobs.smartrecruiters.com/AveryDennison",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
     "moved_to": ""
    },
    {
@@ -1005,6 +899,138 @@
     "last_ok": "",
     "since": "",
     "moved_to": ""
+   },
+   {
+    "name": "Cadence Design Systems",
+    "kind": "workday",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. SSG Design Engineering Intern)",
+    "link": "https://cadence.wd1.myworkdayjobs.com/External_Careers",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Cadence Design Systems",
+    "kind": "workday",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. SSG Design Engineering Intern - Summer 2026)",
+    "link": "https://cadence.wd1.myworkdayjobs.com/Univ_Careers",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Cadence Design Systems",
+    "kind": "workday",
+    "via": "2 mechanical/aerospace internships on the lists (e.g. SSG Design Engineering Intern)",
+    "link": "https://cadence.wd1.myworkdayjobs.com/University_Talent",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Cadence Design Systems",
+    "kind": "workday",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. SSG Design Engineering Intern)",
+    "link": "https://cadence.wd1.myworkdayjobs.com/University_Talent_Intern",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Caterpillar Inc.",
+    "kind": "workday",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Engineering Intern - Product Development Track)",
+    "link": "https://cat.wd5.myworkdayjobs.com/CaterpillarCareers",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Charter Manufacturing",
+    "kind": "workday",
+    "via": "2 mechanical/aerospace internships on the lists (e.g. Mechanical Engineer Intern (Year-Round))",
+    "link": "https://chartermfg.wd5.myworkdayjobs.com/Charter_Careers",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "The Walt Disney Company",
+    "kind": "workday",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Mechatronics Engineering Intern)",
+    "link": "https://disney.wd5.myworkdayjobs.com/disneycareerdc",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Entrust",
+    "kind": "workday",
+    "via": "2 mechanical/aerospace internships on the lists (e.g. Mechanical Engineering Co-Op)",
+    "link": "https://entrust.wd1.myworkdayjobs.com/entrustcareers",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Everest",
+    "kind": "workday",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. 2027 Everest Design Engineering Internship Program)",
+    "link": "https://everestre.wd5.myworkdayjobs.com/careers",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "FOX",
+    "kind": "workday",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Product Development Engineer Intern)",
+    "link": "https://foxfactory.wd1.myworkdayjobs.com/FOX",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "GAF",
+    "kind": "workday",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. R&D Commercial Product Development Engineer Intern)",
+    "link": "https://gafsgi.wd5.myworkdayjobs.com/GAF_Careers",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
    }
   ],
   "unsupported": [
@@ -1171,9 +1197,9 @@
    }
   ],
   "probed": {
-   "done": 96,
+   "done": 107,
    "names": 361,
-   "found": 32
+   "found": 34
   }
  }
 }

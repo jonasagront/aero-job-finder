@@ -23,7 +23,10 @@
   "Pivotal Software": "2026-11-22",
   "Advanced Space": "2026-11-22",
   "AeroVironment": "2026-11-22",
-  "AnySignal": "2026-11-22"
+  "AnySignal": "2026-11-22",
+  "ADT": "2026-11-23",
+  "Aerotech": "2026-11-23",
+  "Continental": "2026-11-23"
  },
  "runs": [
   {
@@ -312,6 +315,38 @@
      "found": 0,
      "misses": [],
      "error": "HTTP 404"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-23",
+   "boards": [
+    {
+     "source": "ADT",
+     "kind": "oracle",
+     "in_scope": 0,
+     "found": 0,
+     "misses": [],
+     "read": "same searches with higher page caps, no title filter",
+     "openings": 0
+    },
+    {
+     "source": "Aerotech",
+     "kind": "jazzhr",
+     "in_scope": 0,
+     "found": 0,
+     "misses": [],
+     "read": "full list, no title filter",
+     "openings": 6
+    },
+    {
+     "source": "Continental",
+     "kind": "smartrecruiters",
+     "in_scope": 0,
+     "found": 0,
+     "misses": [],
+     "read": "same searches with higher page caps, no title filter",
+     "openings": 29
     }
    ]
   }
