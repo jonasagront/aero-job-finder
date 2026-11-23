@@ -301,7 +301,7 @@
   "board": "f7d8749a-72d6-407c-bf98-292ea630c73a",
   "name": "Shield AI",
   "first_seen": "2026-10-28",
-  "fails": 1,
+  "fails": 2,
   "last_seen": "2026-11-23",
   "state": "repair",
   "label": "Shield AI (f7d8749a-72d6-407c-bf98-292ea630c73a)",
@@ -381,7 +381,7 @@
   "state": "active",
   "via": "2 mechanical/aerospace internships on the lists (e.g. Robotics Engineering Intern - Systems & Applications)",
   "engineering": true,
-  "last_seen": "2026-10-28",
+  "last_seen": "2026-11-23",
   "label": "GrayMatter Robotics",
   "tried": "2026-11-20",
   "last_ok": "2026-11-23",
@@ -948,7 +948,7 @@
   "fails": 0,
   "state": "active",
   "via": "list link (2026-09-24)",
-  "last_seen": "2026-11-19",
+  "last_seen": "2026-11-23",
   "label": "General Atomics (25539)",
   "last_ok": "2026-11-23"
  },
@@ -2329,7 +2329,7 @@
   "fails": 0,
   "state": "active",
   "via": "list link (2026-09-16)",
-  "last_seen": "2026-11-11",
+  "last_seen": "2026-11-23",
   "last_ok": "2026-11-23"
  },
  "icims:careers-gdbiw.icims.com": {
@@ -3483,7 +3483,7 @@
   "first_seen": "2026-11-06",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-11-10",
+  "last_seen": "2026-11-23",
   "state": "active",
   "label": "Clean Harbors",
   "last_ok": "2026-11-23"
@@ -3868,7 +3868,7 @@
   "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. 2027 Internship - Manufacturing Engineer (Hoosier Racing Tir)",
   "engineering": true,
-  "last_seen": "2026-09-23",
+  "last_seen": "2026-09-24",
   "label": "Continental",
   "tried": "2026-11-23",
   "last_ok": "2026-11-23",
@@ -4045,7 +4045,7 @@
   "state": "active",
   "via": "2 mechanical/aerospace internships on the lists (e.g. Hardware Engineering Intern)",
   "engineering": true,
-  "last_seen": "2026-07-31",
+  "last_seen": "2026-11-10",
   "label": "Western Digital",
   "tried": "2026-11-23",
   "last_ok": "2026-11-23",
@@ -4209,10 +4209,14 @@
   "name": "Würth Elektronik",
   "first_seen": "2026-11-21",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Lab Test Engineer Intern)",
   "engineering": true,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "label": "Würth Elektronik",
+  "tried": "2026-11-23",
+  "last_ok": "2026-11-23",
+  "validated": "2026-11-23"
  },
  "ukg:https://recruiting2.ultipro.com/ams1003amsii/jobboard/15976ef7-7f1f-4b2f-8a0c-0e0ac1193dd8": {
   "kind": "ukg",
@@ -4220,10 +4224,14 @@
   "name": "Baltimore Aircoil Company",
   "first_seen": "2026-11-21",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. HVAC Applications Engineer Intern)",
   "engineering": true,
-  "last_seen": "2026-11-20"
+  "last_seen": "2026-11-20",
+  "label": "Baltimore Aircoil Company",
+  "tried": "2026-11-23",
+  "last_ok": "2026-11-23",
+  "validated": "2026-11-23"
  },
  "workable:agile": {
   "kind": "workable",
@@ -4342,10 +4350,14 @@
   "name": "Darkhive",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Engineer Intern - Drone Technology)",
   "engineering": true,
-  "last_seen": "2025-09-23"
+  "last_seen": "2025-09-23",
+  "label": "Darkhive",
+  "tried": "2026-11-23",
+  "last_ok": "2026-11-23",
+  "validated": "2026-11-23"
  },
  "workable:dyson": {
   "kind": "workable",
@@ -4526,10 +4538,14 @@
   "name": "Red Rabbit Robotics",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Mechatronics Engineer Intern)",
   "engineering": true,
-  "last_seen": "2026-08-11"
+  "last_seen": "2026-08-11",
+  "label": "Red Rabbit Robotics",
+  "tried": "2026-11-23",
+  "last_ok": "2026-11-23",
+  "validated": "2026-11-23"
  },
  "workable:rise-robotics": {
   "kind": "workable",
@@ -4537,10 +4553,14 @@
   "name": "Rise Robotics",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical & Test Engineering Intern (Spring 2027))",
   "engineering": true,
-  "last_seen": "2026-11-03"
+  "last_seen": "2026-11-03",
+  "label": "Rise Robotics",
+  "tried": "2026-11-23",
+  "last_ok": "2026-11-23",
+  "validated": "2026-11-23"
  },
  "workable:sorting-robotics": {
   "kind": "workable",
@@ -4548,10 +4568,14 @@
   "name": "Sorting Robotics",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Robotics Engineer Co-op Intern)",
   "engineering": true,
-  "last_seen": "2026-08-08"
+  "last_seen": "2026-08-08",
+  "label": "Sorting Robotics",
+  "tried": "2026-11-23",
+  "last_ok": "2026-11-23",
+  "validated": "2026-11-23"
  },
  "workable:southwest-research-institute": {
   "kind": "workable",
@@ -4584,10 +4608,14 @@
   "name": "Terabase",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Robotics & Autonomy Engineering Intern)",
   "engineering": true,
-  "last_seen": "2026-03-31"
+  "last_seen": "2026-03-31",
+  "label": "Terabase",
+  "tried": "2026-11-23",
+  "last_ok": "2026-11-23",
+  "validated": "2026-11-23"
  },
  "workable:terrapower": {
   "kind": "workable",
@@ -4600,6 +4628,31 @@
   "last_seen": "2026-11-23",
   "engineering": true,
   "label": "Terrapower",
+  "last_ok": "2026-11-23"
+ },
+ "workable:voyager": {
+  "kind": "workable",
+  "board": "voyager",
+  "name": "Voyager Space",
+  "first_seen": "2026-11-23",
+  "fails": 0,
+  "state": "active",
+  "via": "name probe (aerospace_companies)",
+  "last_seen": "2026-11-23",
+  "label": "Voyager Space",
+  "last_ok": "2026-11-23"
+ },
+ "workable:zimmer-biomet": {
+  "kind": "workable",
+  "board": "zimmer-biomet",
+  "name": "Zimmer Biomet",
+  "first_seen": "2026-11-23",
+  "fails": 0,
+  "state": "active",
+  "via": "name probe (discover seeds)",
+  "last_seen": "2026-11-23",
+  "engineering": true,
+  "label": "Zimmer Biomet",
   "last_ok": "2026-11-23"
  },
  "workday:abb.wd3.myworkdayjobs.com/external_career_page": {
@@ -4643,10 +4696,14 @@
   "name": "Air Products",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Summer Intern/Co-op-Mechanical Engineering (2027))",
   "engineering": true,
-  "last_seen": "2026-08-27"
+  "last_seen": "2026-08-27",
+  "label": "Air Products",
+  "tried": "2026-11-23",
+  "last_ok": "2026-11-23",
+  "validated": "2026-11-23"
  },
  "workday:allegion.wd5.myworkdayjobs.com/careers": {
   "kind": "workday",
@@ -4730,10 +4787,14 @@
   "name": "Amcor",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "2 mechanical/aerospace internships on the lists (e.g. Product Development Engineer Intern)",
   "engineering": true,
-  "last_seen": "2026-10-20"
+  "last_seen": "2026-10-20",
+  "label": "Amcor",
+  "tried": "2026-11-23",
+  "last_ok": "2026-11-23",
+  "validated": "2026-11-23"
  },
  "workday:analogdevices.wd1.myworkdayjobs.com/external": {
   "kind": "workday",
@@ -4743,7 +4804,7 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-11-18",
+  "last_seen": "2026-11-23",
   "state": "active",
   "label": "Analog Devices",
   "last_ok": "2026-11-23"
@@ -4818,10 +4879,14 @@
   "name": "Badger Meter",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering NPD Intern)",
   "engineering": true,
-  "last_seen": "2026-10-06"
+  "last_seen": "2026-10-06",
+  "label": "Badger Meter",
+  "tried": "2026-11-23",
+  "last_ok": "2026-11-23",
+  "validated": "2026-11-23"
  },
  "workday:bah.wd1.myworkdayjobs.com/bah_jobs": {
   "kind": "workday",
@@ -4841,10 +4906,14 @@
   "name": "Barr",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Internship – Mechanical Engineer (Hybrid))",
   "engineering": true,
-  "last_seen": "2026-09-04"
+  "last_seen": "2026-09-04",
+  "label": "Barr",
+  "tried": "2026-11-23",
+  "last_ok": "2026-11-23",
+  "validated": "2026-11-23"
  },
  "workday:biotechne.wd5.myworkdayjobs.com/biotechne": {
   "kind": "workday",

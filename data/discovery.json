@@ -475,33 +475,59 @@
   "trackhouse racing": {
    "d": "2026-11-23",
    "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "transdigm": {
+   "d": "2026-11-23",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "twg motorsports": {
+   "d": "2026-11-23",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "vecna robotics": {
+   "d": "2026-11-23",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "voyager space": {
+   "d": "2026-11-23",
+   "r": "workable:voyager (0 openings)"
+  },
+  "wayne taylor": {
+   "d": "2026-11-23",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "wayne taylor racing": {
+   "d": "2026-11-23",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "world view": {
+   "d": "2026-11-23",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "zimmer biomet": {
+   "d": "2026-11-23",
+   "r": "workable:zimmer-biomet (0 openings)"
   }
  },
  "report": {
   "date": "2026-11-23",
   "added": [
    {
-    "name": "Southwest Research Institute",
-    "kind": "workable",
-    "via": "name probe (discover seeds)",
-    "openings": 0
-   },
-   {
-    "name": "Teal Drones",
+    "name": "Voyager Space",
     "kind": "workable",
     "via": "name probe (aerospace_companies)",
     "openings": 0
    },
    {
-    "name": "Terrapower",
+    "name": "Zimmer Biomet",
     "kind": "workable",
     "via": "name probe (discover seeds)",
     "openings": 0
    }
   ],
   "states": {
-   "active": 470,
-   "candidate": 75,
+   "active": 483,
+   "candidate": 64,
    "repair": 3,
    "covered": 6
   },
@@ -535,7 +561,7 @@
     "kind": "ashby",
     "via": "list link",
     "link": "https://jobs.ashbyhq.com/f7d8749a-72d6-407c-bf98-292ea630c73a",
-    "fails": 1,
+    "fails": 2,
     "error": "HTTP 404",
     "next_try": "2026-11-23",
     "last_ok": "2026-11-23",
@@ -676,138 +702,6 @@
     "next_try": "2026-11-22",
     "last_ok": "",
     "since": "2026-11-22",
-    "moved_to": ""
-   },
-   {
-    "name": "Würth Elektronik",
-    "kind": "ukg",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Lab Test Engineer Intern)",
-    "link": "https://recruiting.ultipro.com/wur1001wgna/JobBoard/e869ce68-a921-45eb-9467-2c7d2f5970a6",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Baltimore Aircoil Company",
-    "kind": "ukg",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. HVAC Applications Engineer Intern)",
-    "link": "https://recruiting2.ultipro.com/AMS1003AMSII/JobBoard/15976ef7-7f1f-4b2f-8a0c-0e0ac1193dd8",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Darkhive",
-    "kind": "workable",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Engineer Intern - Drone Technology)",
-    "link": "https://apply.workable.com/darkhive",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Red Rabbit Robotics",
-    "kind": "workable",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Mechatronics Engineer Intern)",
-    "link": "https://apply.workable.com/red-rabbit-robotics",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Rise Robotics",
-    "kind": "workable",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical & Test Engineering Intern (Spring 2027))",
-    "link": "https://apply.workable.com/rise-robotics",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Sorting Robotics",
-    "kind": "workable",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Robotics Engineer Co-op Intern)",
-    "link": "https://apply.workable.com/sorting-robotics",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Terabase",
-    "kind": "workable",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Robotics & Autonomy Engineering Intern)",
-    "link": "https://apply.workable.com/terabase-energy",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Air Products",
-    "kind": "workday",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Summer Intern/Co-op-Mechanical Engineering (2027))",
-    "link": "https://airproducts.wd5.myworkdayjobs.com/AP0001",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Amcor",
-    "kind": "workday",
-    "via": "2 mechanical/aerospace internships on the lists (e.g. Product Development Engineer Intern)",
-    "link": "https://amcor.wd5.myworkdayjobs.com/amcor_external_career_site",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Badger Meter",
-    "kind": "workday",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering NPD Intern)",
-    "link": "https://badgermeter.wd5.myworkdayjobs.com/US_CareerSite",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Barr",
-    "kind": "workday",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Internship – Mechanical Engineer (Hybrid))",
-    "link": "https://barr.wd1.myworkdayjobs.com/barrcareers",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
     "moved_to": ""
    },
    {
@@ -1097,6 +991,138 @@
     "last_ok": "",
     "since": "",
     "moved_to": ""
+   },
+   {
+    "name": "LabCorp",
+    "kind": "workday",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Intern - Mechanical Engineer)",
+    "link": "https://labcorp.wd1.myworkdayjobs.com/external",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Life Fitness",
+    "kind": "workday",
+    "via": "2 mechanical/aerospace internships on the lists (e.g. Mechanical Engineering Intern - Ramsey, MN)",
+    "link": "https://lifefitness.wd1.myworkdayjobs.com/searchLFN",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Lumentum",
+    "kind": "workday",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Internship - Mechanical Engineer)",
+    "link": "https://lumentum.wd5.myworkdayjobs.com/LITE",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Magna",
+    "kind": "workday",
+    "via": "2 mechanical/aerospace internships on the lists (e.g. Infrared Systems & Test Engineering Intern)",
+    "link": "https://wd3.myworkdaysite.com/recruiting/magna/Magna",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Delta Faucet",
+    "kind": "workday",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Engineer Co-op - Electrical Engineering)",
+    "link": "https://masco.wd1.myworkdayjobs.com/deltafaucet",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Masco",
+    "kind": "workday",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Engineer Co-op - Electrical Engineering)",
+    "link": "https://masco.wd1.myworkdayjobs.com/Masco",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Menasha Corporation",
+    "kind": "workday",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Custom Packaging Design Engineer Co-Op)",
+    "link": "https://menasha.wd12.myworkdayjobs.com/menashacorp",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Michelin",
+    "kind": "workday",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Summer 2027 Internship: Mechanical Engineer (Emporia, KS))",
+    "link": "https://michelinhr.wd3.myworkdayjobs.com/Michelin",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Mii",
+    "kind": "workday",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Design Engineer Intern (Wood Truss))",
+    "link": "https://mii.wd5.myworkdayjobs.com/universityrecruiting",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Moderna",
+    "kind": "workday",
+    "via": "2 mechanical/aerospace internships on the lists (e.g. mRNA Design Engineer Co-op)",
+    "link": "https://modernatx.wd1.myworkdayjobs.com/M_tx",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Momentive",
+    "kind": "workday",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. 2027 Co-Op - Electronics & Aerospace)",
+    "link": "https://momentive.wd1.myworkdayjobs.com/MC",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
    }
   ],
   "unsupported": [
@@ -1263,9 +1289,9 @@
    }
   ],
   "probed": {
-   "done": 119,
+   "done": 127,
    "names": 361,
-   "found": 37
+   "found": 39
   }
  }
 }

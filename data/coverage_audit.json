@@ -29,7 +29,10 @@
   "Continental": "2026-11-23",
   "Aevex Aerospace": "2026-11-23",
   "Agile Space Industries": "2026-11-23",
-  "Würth Elektronik": "2026-11-23"
+  "Würth Elektronik": "2026-11-23",
+  "Agility Robotics": "2026-11-23",
+  "Air Products": "2026-11-23",
+  "Bio-Techne": "2026-11-23"
  },
  "runs": [
   {
@@ -382,6 +385,38 @@
      "misses": [],
      "read": "same searches with higher page caps, no title filter",
      "openings": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-11-23",
+   "boards": [
+    {
+     "source": "Agility Robotics",
+     "kind": "greenhouse",
+     "in_scope": 0,
+     "found": 0,
+     "misses": [],
+     "read": "full list, no title filter",
+     "openings": 72
+    },
+    {
+     "source": "Air Products",
+     "kind": "workday",
+     "in_scope": 0,
+     "found": 0,
+     "misses": [],
+     "read": "full list of every opening",
+     "openings": 391
+    },
+    {
+     "source": "Bio-Techne",
+     "kind": "workday",
+     "in_scope": 0,
+     "found": 0,
+     "misses": [],
+     "read": "full list of every opening",
+     "openings": 81
     }
    ]
   }
