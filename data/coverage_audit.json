@@ -26,7 +26,10 @@
   "AnySignal": "2026-11-22",
   "ADT": "2026-11-23",
   "Aerotech": "2026-11-23",
-  "Continental": "2026-11-23"
+  "Continental": "2026-11-23",
+  "Aevex Aerospace": "2026-11-23",
+  "Agile Space Industries": "2026-11-23",
+  "Würth Elektronik": "2026-11-23"
  },
  "runs": [
   {
@@ -347,6 +350,38 @@
      "misses": [],
      "read": "same searches with higher page caps, no title filter",
      "openings": 29
+    }
+   ]
+  },
+  {
+   "date": "2026-11-23",
+   "boards": [
+    {
+     "source": "Aevex Aerospace",
+     "kind": "greenhouse",
+     "in_scope": 1,
+     "found": 1,
+     "misses": [],
+     "read": "full list, no title filter",
+     "openings": 64
+    },
+    {
+     "source": "Agile Space Industries",
+     "kind": "workable",
+     "in_scope": 0,
+     "found": 0,
+     "misses": [],
+     "read": "full list, no title filter",
+     "openings": 0
+    },
+    {
+     "source": "Würth Elektronik",
+     "kind": "ukg",
+     "in_scope": 0,
+     "found": 0,
+     "misses": [],
+     "read": "same searches with higher page caps, no title filter",
+     "openings": 2
     }
    ]
   }

@@ -427,29 +427,83 @@
   "science applications international": {
    "d": "2026-11-23",
    "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "senior aerospace": {
+   "d": "2026-11-23",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "sikorsky": {
+   "d": "2026-11-23",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "southwest research institute": {
+   "d": "2026-11-23",
+   "r": "workable:southwest-research-institute (0 openings)"
+  },
+  "spaceflight industries": {
+   "d": "2026-11-23",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "spire motorsports": {
+   "d": "2026-11-23",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "supernal": {
+   "d": "2026-11-23",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "tae technologies": {
+   "d": "2026-11-23",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "teal drones": {
+   "d": "2026-11-23",
+   "r": "workable:teal-drones (0 openings)"
+  },
+  "terrapower": {
+   "d": "2026-11-23",
+   "r": "workable:terrapower (0 openings)"
+  },
+  "toyota racing development": {
+   "d": "2026-11-23",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "trackhouse": {
+   "d": "2026-11-23",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
+  },
+  "trackhouse racing": {
+   "d": "2026-11-23",
+   "r": "no board found on Greenhouse, Lever, Ashby, SmartRecruiters or Workable"
   }
  },
  "report": {
   "date": "2026-11-23",
   "added": [
    {
-    "name": "Precision Castparts",
+    "name": "Southwest Research Institute",
+    "kind": "workable",
+    "via": "name probe (discover seeds)",
+    "openings": 0
+   },
+   {
+    "name": "Teal Drones",
     "kind": "workable",
     "via": "name probe (aerospace_companies)",
     "openings": 0
    },
    {
-    "name": "Radian Aerospace",
+    "name": "Terrapower",
     "kind": "workable",
-    "via": "name probe (aerospace_companies)",
+    "via": "name probe (discover seeds)",
     "openings": 0
    }
   ],
   "states": {
-   "active": 457,
-   "candidate": 86,
-   "covered": 6,
-   "repair": 2
+   "active": 470,
+   "candidate": 75,
+   "repair": 3,
+   "covered": 6
   },
   "repair": [
    {
@@ -474,6 +528,18 @@
     "next_try": "2026-11-24",
     "last_ok": "2026-11-20",
     "since": "2026-11-20",
+    "moved_to": ""
+   },
+   {
+    "name": "Shield AI (f7d8749a-72d6-407c-bf98-292ea630c73a)",
+    "kind": "ashby",
+    "via": "list link",
+    "link": "https://jobs.ashbyhq.com/f7d8749a-72d6-407c-bf98-292ea630c73a",
+    "fails": 1,
+    "error": "HTTP 404",
+    "next_try": "2026-11-23",
+    "last_ok": "2026-11-23",
+    "since": "2026-11-23",
     "moved_to": ""
    }
   ],
@@ -610,138 +676,6 @@
     "next_try": "2026-11-22",
     "last_ok": "",
     "since": "2026-11-22",
-    "moved_to": ""
-   },
-   {
-    "name": "Continental",
-    "kind": "smartrecruiters",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. 2027 Internship - Manufacturing Engineer (Hoosier Racing Tir)",
-    "link": "https://jobs.smartrecruiters.com/Continental",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Keenfinity",
-    "kind": "smartrecruiters",
-    "via": "2 mechanical/aerospace internships on the lists (e.g. Electrical Test Engineer Co-op)",
-    "link": "https://jobs.smartrecruiters.com/Keenfinity",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Knobelsdorff Enterprises",
-    "kind": "smartrecruiters",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Engineer Intern)",
-    "link": "https://jobs.smartrecruiters.com/KnobelsdorffEnterprises",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Loram",
-    "kind": "smartrecruiters",
-    "via": "2 mechanical/aerospace internships on the lists (e.g. Mechanical Engineering Intern)",
-    "link": "https://jobs.smartrecruiters.com/Loram1",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Solidigm",
-    "kind": "smartrecruiters",
-    "via": "2 mechanical/aerospace internships on the lists (e.g. Hardware & Product Development Engineering Intern)",
-    "link": "https://jobs.smartrecruiters.com/Solidigm",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Wabtec",
-    "kind": "smartrecruiters",
-    "via": "2 mechanical/aerospace internships on the lists (e.g. Mechanical Engineer Intern - Production Operations)",
-    "link": "https://jobs.smartrecruiters.com/Wabtec",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Western Digital",
-    "kind": "smartrecruiters",
-    "via": "2 mechanical/aerospace internships on the lists (e.g. Hardware Engineering Intern)",
-    "link": "https://jobs.smartrecruiters.com/WesternDigital",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Leggett & Platt",
-    "kind": "successfactors",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Engineer Intern)",
-    "link": "https://careers.leggett.com/search/?q=intern",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Skyworks",
-    "kind": "successfactors",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Summer Intern - Test Engineering)",
-    "link": "https://careers.skyworksinc.com/search/?q=intern",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Rolls-Royce Motorcars",
-    "kind": "successfactors",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Intern Technical Service Electrical or Mechanical & Digitali)",
-    "link": "https://jobs.bmwgroup.com/search/?q=intern",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Seagate Technology",
-    "kind": "successfactors",
-    "via": "2 mechanical/aerospace internships on the lists (e.g. Systems Hardware Engineering Intern)",
-    "link": "https://seagatecareers.com/search/?q=intern",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
     "moved_to": ""
    },
    {
@@ -1031,6 +965,138 @@
     "last_ok": "",
     "since": "",
     "moved_to": ""
+   },
+   {
+    "name": "GE Vernova",
+    "kind": "workday",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Automation and Test Engineering Intern - Spring/Sum)",
+    "link": "https://gevernova.wd5.myworkdayjobs.com/only_confidential_executive_recruiting",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Granite Construction",
+    "kind": "workday",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Intern - Design Engineer)",
+    "link": "https://granite.wd1.myworkdayjobs.com/careers",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Hitachi",
+    "kind": "workday",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Field Test Engineering Intern)",
+    "link": "https://gtsgbu.wd3.myworkdayjobs.com/Careers",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Heidelberg Materials",
+    "kind": "workday",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineer Intern)",
+    "link": "https://heidelbergmaterials.wd3.myworkdayjobs.com/global_hm_career_site",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Highmark Health",
+    "kind": "workday",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Data Test Engineering Intern - Multiple Teams)",
+    "link": "https://highmarkhealth.wd1.myworkdayjobs.com/highmark",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Hypertherm",
+    "kind": "workday",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Intern)",
+    "link": "https://hypertherm.wd503.myworkdayjobs.com/hypertherm-careers",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Omnicom Group",
+    "kind": "workday",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Experience Design Engineer Intern Consultant - Design Engine)",
+    "link": "https://interpublic.wd5.myworkdayjobs.com/omc",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "iRhythm Technologies",
+    "kind": "workday",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Electrical Test Engineering Co-op)",
+    "link": "https://irhythmtech.wd5.myworkdayjobs.com/irhythm",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Johnson Controls",
+    "kind": "workday",
+    "via": "2 mechanical/aerospace internships on the lists (e.g. Embedded Firmware Engineering Intern - Embedded Systems - HV)",
+    "link": "https://jci.wd5.myworkdayjobs.com/JCI",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "KION Group",
+    "kind": "workday",
+    "via": "2 mechanical/aerospace internships on the lists (e.g. RSD Intern - Test Engineering)",
+    "link": "https://kiongroup.wd3.myworkdayjobs.com/KION_SCS",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "KION Group",
+    "kind": "workday",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. RSD Intern - Test Engineering)",
+    "link": "https://kiongroup.wd3.myworkdayjobs.com/kiongroup",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
    }
   ],
   "unsupported": [
@@ -1070,19 +1136,19 @@
     ]
    },
    {
-    "host": "careers.eutelsat.com",
-    "count": 2,
-    "companies": [
-     "Eutelsat",
-     "OneWeb"
-    ]
-   },
-   {
     "host": "ca.linkedin.com",
     "count": 2,
     "companies": [
      "DataRobot",
      "MDA"
+    ]
+   },
+   {
+    "host": "careers.eutelsat.com",
+    "count": 2,
+    "companies": [
+     "Eutelsat",
+     "OneWeb"
     ]
    },
    {
@@ -1133,13 +1199,6 @@
     ]
    },
    {
-    "host": "tesla.com",
-    "count": 1,
-    "companies": [
-     "Tesla"
-    ]
-   },
-   {
     "host": "janestreet.com",
     "count": 1,
     "companies": [
@@ -1158,6 +1217,13 @@
     "count": 1,
     "companies": [
      "ByteDance"
+    ]
+   },
+   {
+    "host": "tesla.com",
+    "count": 1,
+    "companies": [
+     "Tesla"
     ]
    },
    {
@@ -1197,9 +1263,9 @@
    }
   ],
   "probed": {
-   "done": 107,
+   "done": 119,
    "names": 361,
-   "found": 34
+   "found": 37
   }
  }
 }

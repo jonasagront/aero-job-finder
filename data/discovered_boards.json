@@ -301,11 +301,14 @@
   "board": "f7d8749a-72d6-407c-bf98-292ea630c73a",
   "name": "Shield AI",
   "first_seen": "2026-10-28",
-  "fails": 0,
+  "fails": 1,
   "last_seen": "2026-11-23",
-  "state": "active",
+  "state": "repair",
   "label": "Shield AI (f7d8749a-72d6-407c-bf98-292ea630c73a)",
-  "last_ok": "2026-11-23"
+  "last_ok": "2026-11-23",
+  "error": "HTTP 404",
+  "fail_since": "2026-11-23",
+  "next_try": "2026-11-23"
  },
  "ashby:fab2": {
   "kind": "ashby",
@@ -3839,7 +3842,7 @@
   "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Test Engineering Intern)",
   "engineering": true,
-  "last_seen": "2025-09-05",
+  "last_seen": "2026-09-16",
   "label": "Avery Dennison",
   "tried": "2026-11-23",
   "last_ok": "2026-11-23",
@@ -3862,10 +3865,14 @@
   "name": "Continental",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. 2027 Internship - Manufacturing Engineer (Hoosier Racing Tir)",
   "engineering": true,
-  "last_seen": "2026-09-23"
+  "last_seen": "2026-09-23",
+  "label": "Continental",
+  "tried": "2026-11-23",
+  "last_ok": "2026-11-23",
+  "validated": "2026-11-23"
  },
  "smartrecruiters:dynetics": {
   "kind": "smartrecruiters",
@@ -3910,10 +3917,14 @@
   "name": "Keenfinity",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "2 mechanical/aerospace internships on the lists (e.g. Electrical Test Engineer Co-op)",
   "engineering": true,
-  "last_seen": "2026-09-23"
+  "last_seen": "2026-09-23",
+  "label": "Keenfinity",
+  "tried": "2026-11-23",
+  "last_ok": "2026-11-23",
+  "validated": "2026-11-23"
  },
  "smartrecruiters:knobelsdorffenterprises": {
   "kind": "smartrecruiters",
@@ -3921,10 +3932,14 @@
   "name": "Knobelsdorff Enterprises",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Engineer Intern)",
   "engineering": true,
-  "last_seen": "2026-09-10"
+  "last_seen": "2026-09-10",
+  "label": "Knobelsdorff Enterprises",
+  "tried": "2026-11-23",
+  "last_ok": "2026-11-23",
+  "validated": "2026-11-23"
  },
  "smartrecruiters:llnl": {
   "kind": "smartrecruiters",
@@ -3943,10 +3958,14 @@
   "name": "Loram",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "2 mechanical/aerospace internships on the lists (e.g. Mechanical Engineering Intern)",
   "engineering": true,
-  "last_seen": "2026-11-11"
+  "last_seen": "2026-11-11",
+  "label": "Loram",
+  "tried": "2026-11-23",
+  "last_ok": "2026-11-23",
+  "validated": "2026-11-23"
  },
  "smartrecruiters:renesaselectronics": {
   "kind": "smartrecruiters",
@@ -3993,10 +4012,14 @@
   "name": "Solidigm",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "2 mechanical/aerospace internships on the lists (e.g. Hardware & Product Development Engineering Intern)",
   "engineering": true,
-  "last_seen": "2026-09-07"
+  "last_seen": "2026-09-07",
+  "label": "Solidigm",
+  "tried": "2026-11-23",
+  "last_ok": "2026-11-23",
+  "validated": "2026-11-23"
  },
  "smartrecruiters:wabtec": {
   "kind": "smartrecruiters",
@@ -4004,10 +4027,14 @@
   "name": "Wabtec",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "2 mechanical/aerospace internships on the lists (e.g. Mechanical Engineer Intern - Production Operations)",
   "engineering": true,
-  "last_seen": "2026-10-08"
+  "last_seen": "2026-10-08",
+  "label": "Wabtec",
+  "tried": "2026-11-23",
+  "last_ok": "2026-11-23",
+  "validated": "2026-11-23"
  },
  "smartrecruiters:westerndigital": {
   "kind": "smartrecruiters",
@@ -4015,10 +4042,14 @@
   "name": "Western Digital",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "2 mechanical/aerospace internships on the lists (e.g. Hardware Engineering Intern)",
   "engineering": true,
-  "last_seen": "2026-07-31"
+  "last_seen": "2026-07-31",
+  "label": "Western Digital",
+  "tried": "2026-11-23",
+  "last_ok": "2026-11-23",
+  "validated": "2026-11-23"
  },
  "successfactors:careers.gulfstream.com": {
   "kind": "successfactors",
@@ -4046,10 +4077,14 @@
   "name": "Leggett & Platt",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Engineer Intern)",
   "engineering": true,
-  "last_seen": "2026-04-23"
+  "last_seen": "2026-04-23",
+  "label": "Leggett & Platt",
+  "tried": "2026-11-23",
+  "last_ok": "2026-11-23",
+  "validated": "2026-11-23"
  },
  "successfactors:careers.qorvo.com": {
   "kind": "successfactors",
@@ -4078,10 +4113,14 @@
   "name": "Skyworks",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Summer Intern - Test Engineering)",
   "engineering": true,
-  "last_seen": "2025-09-18"
+  "last_seen": "2025-09-18",
+  "label": "Skyworks",
+  "tried": "2026-11-23",
+  "last_ok": "2026-11-23",
+  "validated": "2026-11-23"
  },
  "successfactors:careers.westinghousenuclear.com": {
   "kind": "successfactors",
@@ -4099,10 +4138,14 @@
   "name": "Rolls-Royce Motorcars",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Intern Technical Service Electrical or Mechanical & Digitali)",
   "engineering": true,
-  "last_seen": "2026-03-27"
+  "last_seen": "2026-03-27",
+  "label": "Rolls-Royce Motorcars",
+  "tried": "2026-11-23",
+  "last_ok": "2026-11-23",
+  "validated": "2026-11-23"
  },
  "successfactors:jobs.l3harris.com": {
   "kind": "successfactors",
@@ -4129,10 +4172,14 @@
   "name": "Seagate Technology",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "2 mechanical/aerospace internships on the lists (e.g. Systems Hardware Engineering Intern)",
   "engineering": true,
-  "last_seen": "2025-11-30"
+  "last_seen": "2025-11-30",
+  "label": "Seagate Technology",
+  "tried": "2026-11-23",
+  "last_ok": "2026-11-23",
+  "validated": "2026-11-23"
  },
  "ukg:https://recruiting.ultipro.com/app1010arai/jobboard/07442cec-d18e-4589-ab15-8342edc29af7": {
   "kind": "ukg",
@@ -4506,6 +4553,31 @@
   "engineering": true,
   "last_seen": "2026-08-08"
  },
+ "workable:southwest-research-institute": {
+  "kind": "workable",
+  "board": "southwest-research-institute",
+  "name": "Southwest Research Institute",
+  "first_seen": "2026-11-23",
+  "fails": 0,
+  "state": "active",
+  "via": "name probe (discover seeds)",
+  "last_seen": "2026-11-23",
+  "engineering": true,
+  "label": "Southwest Research Institute",
+  "last_ok": "2026-11-23"
+ },
+ "workable:teal-drones": {
+  "kind": "workable",
+  "board": "teal-drones",
+  "name": "Teal Drones",
+  "first_seen": "2026-11-23",
+  "fails": 0,
+  "state": "active",
+  "via": "name probe (aerospace_companies)",
+  "last_seen": "2026-11-23",
+  "label": "Teal Drones",
+  "last_ok": "2026-11-23"
+ },
  "workable:terabase-energy": {
   "kind": "workable",
   "board": "terabase-energy",
@@ -4516,6 +4588,19 @@
   "via": "1 mechanical/aerospace internship on the lists (e.g. Robotics & Autonomy Engineering Intern)",
   "engineering": true,
   "last_seen": "2026-03-31"
+ },
+ "workable:terrapower": {
+  "kind": "workable",
+  "board": "terrapower",
+  "name": "Terrapower",
+  "first_seen": "2026-11-23",
+  "fails": 0,
+  "state": "active",
+  "via": "name probe (discover seeds)",
+  "last_seen": "2026-11-23",
+  "engineering": true,
+  "label": "Terrapower",
+  "last_ok": "2026-11-23"
  },
  "workday:abb.wd3.myworkdayjobs.com/external_career_page": {
   "kind": "workday",
@@ -4685,7 +4770,7 @@
   "first_seen": "2026-11-06",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-11-21",
+  "last_seen": "2026-11-22",
   "state": "active",
   "label": "ASML",
   "last_ok": "2026-11-23"
