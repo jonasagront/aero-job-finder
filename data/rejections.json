@@ -1,25 +1,25 @@
 {
  "date": "2026-11-24",
- "read": 56024,
- "kept": 1797,
+ "read": 56445,
+ "kept": 1919,
  "counts": {
   "title and link checks": {
-   "not an internship": 16249,
-   "not an engineering role": 11887,
-   "not engineering (title or majors listed)": 2797,
-   "not engineering (title)": 1655,
-   "graduate-student role": 777,
-   "full-time, new-grad or trade role (not a student program)": 109,
+   "not an internship": 16247,
+   "not an engineering role": 11901,
+   "not engineering (title or majors listed)": 2839,
+   "not engineering (title)": 1721,
+   "graduate-student role": 779,
+   "full-time, new-grad or trade role (not a student program)": 113,
    "full-time role (student-sounding title)": 4
   },
   "basic checks": {
-   "posting too old": 4880,
-   "outside the U.S.": 525,
+   "posting too old": 5052,
+   "outside the U.S.": 548,
    "not engineering": 188
   },
   "other": {
-   "lead (no company link) at a company outside aerospace and motorsport": 10461,
-   "closed on the company's own site (still on a list)": 25
+   "lead (no company link) at a company outside aerospace and motorsport": 10337,
+   "closed on the company's own site (still on a list)": 24
   }
  },
  "examples": {
@@ -49,10 +49,40 @@
     "source": "Rolls-Royce"
    },
    {
+    "company": "Oshkosh",
+    "title": "S2W- Assembler Apprentice",
+    "url": "https://oshkoshcorporation.wd5.myworkdayjobs.com/Oshkosh/job/Jefferson-City-Tennessee-United-States/Assembler-Apprentice_R52249",
+    "source": "Oshkosh"
+   },
+   {
     "company": "Caterpillar",
     "title": "Early Career Welder Trainee",
     "url": "https://cat.wd5.myworkdayjobs.com/CaterpillarCareers/job/South-Milwaukee-Wisconsin/Early-Career-Welder-Trainee_R0000406371",
     "source": "Caterpillar"
+   },
+   {
+    "company": "Medtronic",
+    "title": "Associate Clinical Specialist (CRM): Winter 2026 & Spring 2027 Undergraduates",
+    "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/State-of-Minnesota-United-States-of-America/Associate-Clinical-Specialist--CRM---Winter-2026---Spring-2027-Undergraduates_R80261-1",
+    "source": "Medtronic"
+   },
+   {
+    "company": "Medtronic",
+    "title": "Associate Mapping Specialist: Winter 2026 & Spring 2027 Biomedical Engineering Undergraduates",
+    "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/State-of-Minnesota-United-States-of-America/Associate-Mapping-Specialist--Winter-2026---Spring-2027-Biomedical-Engineering-Undergraduates_R77885-2",
+    "source": "Medtronic"
+   },
+   {
+    "company": "Airbus",
+    "title": "Store and Logistics Assistant (Apprentice)",
+    "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Pasay-City/Store-and-Logistics-Assistant--Apprentice-_JR10454485",
+    "source": "Airbus"
+   },
+   {
+    "company": "Parsons",
+    "title": "Electrician Apprentice",
+    "url": "https://parsons.wd5.myworkdayjobs.com/Search/job/US---GA-Kings-Bay/Electrician-Apprentice_R186273",
+    "source": "Parsons"
    },
    {
     "company": "GE HealthCare",
@@ -73,46 +103,16 @@
     "source": "GE HealthCare"
    },
    {
-    "company": "Medtronic",
-    "title": "Associate Clinical Specialist (CRM): Winter 2026 & Spring 2027 Undergraduates",
-    "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/State-of-Minnesota-United-States-of-America/Associate-Clinical-Specialist--CRM---Winter-2026---Spring-2027-Undergraduates_R80261-1",
-    "source": "Medtronic"
-   },
-   {
-    "company": "Medtronic",
-    "title": "Associate Mapping Specialist: Winter 2026 & Spring 2027 Biomedical Engineering Undergraduates",
-    "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/State-of-Minnesota-United-States-of-America/Associate-Mapping-Specialist--Winter-2026---Spring-2027-Biomedical-Engineering-Undergraduates_R77885-2",
-    "source": "Medtronic"
-   },
-   {
-    "company": "Parsons",
-    "title": "Electrician Apprentice",
-    "url": "https://parsons.wd5.myworkdayjobs.com/Search/job/US---GA-Kings-Bay/Electrician-Apprentice_R186273",
-    "source": "Parsons"
-   },
-   {
-    "company": "GE Vernova",
-    "title": "Early Career Trainee- Solution Architect",
-    "url": "https://gevernova.wd5.myworkdayjobs.com/Vernova_ExternalSite/job/Al-Khobar/Early-Career-Trainee--Solution-Architect_R5059727-2",
-    "source": "GE Vernova"
-   },
-   {
-    "company": "Rockwell Automation",
-    "title": "Youth Apprentice -Prototype Assembler 1",
-    "url": "https://rockwellautomation.wd1.myworkdayjobs.com/External_Rockwell_Automation/job/Ladysmith-Wisconsin-United-States/Youth-Apprentice--Prototype-Assembler-1_R26-8938",
-    "source": "Rockwell Automation"
-   },
-   {
     "company": "Carrier",
     "title": "Commercial HVAC Apprentice Service Technician - UNION",
     "url": "https://carrier.wd5.myworkdayjobs.com/jobs/job/CAL06-CCS-Shreveport-1520-North-Hearne-Avenue-Shreveport-LA-71107-USA/Commercial-HVAC-Apprentice-Service-Technician---UNION_30217552-1",
     "source": "Carrier"
    },
    {
-    "company": "Airbus",
-    "title": "Store and Logistics Assistant (Apprentice)",
-    "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Pasay-City/Store-and-Logistics-Assistant--Apprentice-_JR10454485",
-    "source": "Airbus"
+    "company": "Rockwell Automation",
+    "title": "Youth Apprentice -Prototype Assembler 1",
+    "url": "https://rockwellautomation.wd1.myworkdayjobs.com/External_Rockwell_Automation/job/Ladysmith-Wisconsin-United-States/Youth-Apprentice--Prototype-Assembler-1_R26-8938",
+    "source": "Rockwell Automation"
    }
   ],
   "not engineering (title or majors listed)": [
@@ -189,22 +189,22 @@
     "source": "Caterpillar"
    },
    {
-    "company": "GE HealthCare",
-    "title": "FP&A Cash Analyst Intern - Stagiaire Analyste Financier – FP&A / Trésorerie",
-    "url": "https://gehc.wd5.myworkdayjobs.com/GEHC_ExternalSite/job/Buc/FP-A-Cash-Analyst-Intern---Stagiaire-Analyste-Financier---FP-A---Trsorerie_R4049993-1",
-    "source": "GE HealthCare"
+    "company": "Medtronic",
+    "title": "Intern: Non-Tech",
+    "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/Brampton-Ontario-Canada/Intern--Non-Tech_R82759-1",
+    "source": "Medtronic"
    },
    {
-    "company": "GE HealthCare",
-    "title": "Project Trainee – Project Management",
-    "url": "https://gehc.wd5.myworkdayjobs.com/GEHC_ExternalSite/job/Lindesnes/Project-Trainee---Project-Management_R4048877-2",
-    "source": "GE HealthCare"
+    "company": "Medtronic",
+    "title": "Co-op/Apprentice (Non-Tech)",
+    "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/Paris-le-de-France-France/Stagiaire-Application-IT-Sant-F-H_R81004-1",
+    "source": "Medtronic"
    },
    {
-    "company": "GE HealthCare",
-    "title": "Working Student Clinical Application Development",
-    "url": "https://gehc.wd5.myworkdayjobs.com/GEHC_ExternalSite/job/Munich/Working-Student-Clinical-Application-Development_R4049415-2",
-    "source": "GE HealthCare"
+    "company": "Medtronic",
+    "title": "Swiss Intern-2",
+    "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/Changzhou-Jiangsu-China/Swiss-Intern-2_R82694-1",
+    "source": "Medtronic"
    }
   ],
   "full-time role (student-sounding title)": [
@@ -290,6 +290,18 @@
    },
    {
     "company": "Rolls-Royce Motorcars",
+    "title": "Intern, Intelligent Car & AI CoC- Spring 2027",
+    "url": "https://jobs.bmwgroup.com/job/Intern%2C-Intelligent-Car-&-AI-CoC-Spring-2027/193998-en_US",
+    "source": "Rolls-Royce Motorcars"
+   },
+   {
+    "company": "Rolls-Royce Motorcars",
+    "title": "Intern, Scouting and Academia - Spring 2027",
+    "url": "https://jobs.bmwgroup.com/job/Intern%2C-Scouting-and-Academia-Spring-2027/194209-en_US",
+    "source": "Rolls-Royce Motorcars"
+   },
+   {
+    "company": "Rolls-Royce Motorcars",
     "title": "Compliance Intern (12 Months)",
     "url": "https://jobs.bmwgroup.com/job/Compliance-Intern-%2812-Months%29/198877-en_US",
     "source": "Rolls-Royce Motorcars"
@@ -310,18 +322,6 @@
     "company": "Rolls-Royce Motorcars",
     "title": "Internship BMW Motorrad - Importer Region Africa & Eastern Europe (f/m/x)",
     "url": "https://jobs.bmwgroup.com/job/Internship-BMW-Motorrad-Importer-Region-Africa-&-Eastern-Europe-%28fmx%29/200575-en_US",
-    "source": "Rolls-Royce Motorcars"
-   },
-   {
-    "company": "Rolls-Royce Motorcars",
-    "title": "Intern Residual Value Risk Management (f/m/x)",
-    "url": "https://jobs.bmwgroup.com/job/Intern-Residual-Value-Risk-Management-%28fmx%29/200040-en_US",
-    "source": "Rolls-Royce Motorcars"
-   },
-   {
-    "company": "Rolls-Royce Motorcars",
-    "title": "Corporate Communication Internship",
-    "url": "https://jobs.bmwgroup.com/job/Corporate-Communication-Internship/195204-en_US",
     "source": "Rolls-Royce Motorcars"
    }
   ],
@@ -603,93 +603,93 @@
   ],
   "lead (no company link) at a company outside aerospace and motorsport": [
    {
-    "company": "ByteDance",
-    "title": "Self-Built Engineer Intern (CDN Platform) - 2027 Summer",
-    "url": "https://www.google.com/search?q=ByteDance+%22Self-Built+Engineer+Intern+%28CDN+Platform%29+-+2027+Summer%22",
+    "company": "Atlas Copco Group",
+    "title": "Application Engineer Intern - Houston, TX",
+    "url": "https://www.google.com/search?q=Atlas+Copco+Group+%22Application+Engineer+Intern+-+Houston%2C+TX%22",
     "source": "intern-list.com"
    },
    {
-    "company": "Jacobs",
-    "title": "Environmental and Geospatial Intern - Summer 2027 - Columbus, OH",
-    "url": "https://www.google.com/search?q=Jacobs+%22Environmental+and+Geospatial+Intern+-+Summer+2027+-+Columbus%2C+OH%22",
+    "company": "fairlife",
+    "title": "Project Engineering Intern (Summer 2027)",
+    "url": "https://www.google.com/search?q=fairlife+%22Project+Engineering+Intern+%28Summer+2027%29%22",
     "source": "intern-list.com"
    },
    {
-    "company": "Jacobs",
-    "title": "Engineering & Construction Management Intern - Summer 2027 - Columbus, OH",
-    "url": "https://www.google.com/search?q=Jacobs+%22Engineering+%26+Construction+Management+Intern+-+Summer+2027+-+Columbus%2C+OH%22",
+    "company": "EXP",
+    "title": "Structural Intern - Bridges",
+    "url": "https://www.google.com/search?q=EXP+%22Structural+Intern+-+Bridges%22",
     "source": "intern-list.com"
    },
    {
-    "company": "Jacobs",
-    "title": "Pipe Stress Engineering Intern - Semiconductor",
-    "url": "https://www.google.com/search?q=Jacobs+%22Pipe+Stress+Engineering+Intern+-+Semiconductor%22",
+    "company": "Clyvra",
+    "title": "Test Engineering Intern – EE Major (CLY0050)",
+    "url": "https://www.google.com/search?q=Clyvra+%22Test+Engineering+Intern+%E2%80%93+EE+Major+%28CLY0050%29%22",
     "source": "intern-list.com"
    },
    {
-    "company": "Bolton & Menk, Inc.",
-    "title": "Civil Engineering Intern – Water Resources: Summer 2027",
-    "url": "https://www.google.com/search?q=Bolton+%26+Menk%2C+Inc.+%22Civil+Engineering+Intern+%E2%80%93+Water+Resources%3A+Summer+2027%22",
+    "company": "Mott MacDonald",
+    "title": "Geotechnical Engineering Internship - 2027",
+    "url": "https://www.google.com/search?q=Mott+MacDonald+%22Geotechnical+Engineering+Internship+-+2027%22",
     "source": "intern-list.com"
    },
    {
-    "company": "Serco",
-    "title": "Summer and Winter 2027 Naval Engineering Intern - U.S. Navy Programs",
-    "url": "https://www.google.com/search?q=Serco+%22Summer+and+Winter+2027+Naval+Engineering+Intern+-+U.S.+Navy+Programs%22",
+    "company": "Mott MacDonald",
+    "title": "Geotechnical Engineering Internship - 2027",
+    "url": "https://www.google.com/search?q=Mott+MacDonald+%22Geotechnical+Engineering+Internship+-+2027%22",
     "source": "intern-list.com"
    },
    {
-    "company": "HDR",
-    "title": "Electrical Engineering Intern (Fall 2026)",
-    "url": "https://www.google.com/search?q=HDR+%22Electrical+Engineering+Intern+%28Fall+2026%29%22",
+    "company": "TLD",
+    "title": "Mechanical Engineering Intern",
+    "url": "https://www.google.com/search?q=TLD+%22Mechanical+Engineering+Intern%22",
     "source": "intern-list.com"
    },
    {
-    "company": "HDR",
-    "title": "Electrical Engineering Intern (Fall 2026)",
-    "url": "https://www.google.com/search?q=HDR+%22Electrical+Engineering+Intern+%28Fall+2026%29%22",
+    "company": "M/I Homes, Inc.",
+    "title": "Construction Internship - Columbus Summer 2027",
+    "url": "https://www.google.com/search?q=M%2FI+Homes%2C+Inc.+%22Construction+Internship+-+Columbus+Summer+2027%22",
     "source": "intern-list.com"
    },
    {
-    "company": "HDR",
-    "title": "Electrical Engineering Intern",
-    "url": "https://www.google.com/search?q=HDR+%22Electrical+Engineering+Intern%22",
+    "company": "RS&H",
+    "title": "Civil Engineering Intern (Roadway) - Summer 2027",
+    "url": "https://www.google.com/search?q=RS%26H+%22Civil+Engineering+Intern+%28Roadway%29+-+Summer+2027%22",
     "source": "intern-list.com"
    },
    {
-    "company": "HDR",
-    "title": "Electrical Engineering Intern",
-    "url": "https://www.google.com/search?q=HDR+%22Electrical+Engineering+Intern%22",
+    "company": "Copeland",
+    "title": "Mechanical Engineering Internship Program (Spring & Summer 2027)",
+    "url": "https://www.google.com/search?q=Copeland+%22Mechanical+Engineering+Internship+Program+%28Spring+%26+Summer+2027%29%22",
     "source": "intern-list.com"
    },
    {
-    "company": "Jacobs",
-    "title": "Civil Engineering Intern - Summer 2027",
-    "url": "https://www.google.com/search?q=Jacobs+%22Civil+Engineering+Intern+-+Summer+2027%22",
+    "company": "Avient Corporation",
+    "title": "Laboratory Intern - Fall 2026 Part-Time",
+    "url": "https://www.google.com/search?q=Avient+Corporation+%22Laboratory+Intern+-+Fall+2026+Part-Time%22",
     "source": "intern-list.com"
    },
    {
-    "company": "Jacobs",
-    "title": "Pipe Stress Engineering Intern - Semiconductor",
-    "url": "https://www.google.com/search?q=Jacobs+%22Pipe+Stress+Engineering+Intern+-+Semiconductor%22",
+    "company": "WSP in the U.S.",
+    "title": "Water Resources Engineering- Summer 2027",
+    "url": "https://www.google.com/search?q=WSP+in+the+U.S.+%22Water+Resources+Engineering-+Summer+2027%22",
     "source": "intern-list.com"
    },
    {
-    "company": "Veolia",
-    "title": "Mechanical Engineer Intern",
-    "url": "https://www.google.com/search?q=Veolia+%22Mechanical+Engineer+Intern%22",
+    "company": "CONVERGIX Automation Solutions",
+    "title": "Controls Engineering Intern",
+    "url": "https://www.google.com/search?q=CONVERGIX+Automation+Solutions+%22Controls+Engineering+Intern%22",
     "source": "intern-list.com"
    },
    {
-    "company": "Veolia",
-    "title": "Project Engineering Intern",
-    "url": "https://www.google.com/search?q=Veolia+%22Project+Engineering+Intern%22",
+    "company": "VT Industries",
+    "title": "Materials Engineering Intern",
+    "url": "https://www.google.com/search?q=VT+Industries+%22Materials+Engineering+Intern%22",
     "source": "intern-list.com"
    },
    {
-    "company": "Veolia",
-    "title": "Assemblies Engineering intern",
-    "url": "https://www.google.com/search?q=Veolia+%22Assemblies+Engineering+intern%22",
+    "company": "EXP",
+    "title": "Lighting Design Intern",
+    "url": "https://www.google.com/search?q=EXP+%22Lighting+Design+Intern%22",
     "source": "intern-list.com"
    }
   ],
@@ -714,15 +714,15 @@
    },
    {
     "company": "GE Aerospace",
-    "title": "Quality Intern",
-    "url": "https://geaerospace.wd5.myworkdayjobs.com/GE_ExternalSite/job/Singapore/Quality-Intern_R5043390-1",
-    "source": "GE Aerospace"
-   },
-   {
-    "company": "GE Aerospace",
     "title": "Trainee Manufacturing Engineer / Stážista ve výrobním inženýrství",
     "url": "https://geaerospace.wd5.myworkdayjobs.com/GE_ExternalSite/job/Prague/Manufacturing-Engineering-Trainee_R5041183-1",
     "source": "GE Aerospace"
+   },
+   {
+    "company": "Boeing",
+    "title": "Test & Evaluation Intern 2027 - 12 Month Placement",
+    "url": "https://boeing.wd1.myworkdayjobs.com/EXTERNAL_CAREERS/job/GBR---RAF-Lossiemouth-United-Kingdom/Test---Evaluation-Intern-2027---12-Month-Placement_JR2026530394",
+    "source": "Boeing"
    },
    {
     "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
@@ -735,12 +735,6 @@
     "title": "EH&S Intern",
     "url": "https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/SG-01-SINGAPORE-039-CARE--39-Changi-N-Cres--39-CHANGI-N-CRES-039-CARE/EH-S-Intern_01887928",
     "source": "RTX (Raytheon, Pratt & Whitney, Collins)"
-   },
-   {
-    "company": "Rolls-Royce",
-    "title": "Launch into Account Management (Trainee Account Officer) - Abu Dhabi, UAE",
-    "url": "https://rollsroyce.wd3.myworkdayjobs.com/Intern_Graduate/job/Abu-Dhabi/Launch-into-Account-Management--Trainee-Account-Officer----Abu-Dhabi--UAE_JR6160656",
-    "source": "Rolls-Royce"
    },
    {
     "company": "Rolls-Royce",
@@ -761,16 +755,10 @@
     "source": "Caterpillar"
    },
    {
-    "company": "GE HealthCare",
-    "title": "Sourcing Analyst - Trainee Engineer",
-    "url": "https://gehc.wd5.myworkdayjobs.com/GEHC_ExternalSite/job/Bengaluru/Sourcing-Analyst---Trainee-Engineer_R4049575-1",
-    "source": "GE HealthCare"
-   },
-   {
-    "company": "GE HealthCare",
-    "title": "Digital Programs & Training Project Intern",
-    "url": "https://gehc.wd5.myworkdayjobs.com/GEHC_ExternalSite/job/ITA01-01-Milan-Via-Privata-Galeno-36/Clinical-Education-Project---Digital-Programs-Intern_R4046957",
-    "source": "GE HealthCare"
+    "company": "Medtronic",
+    "title": "Training & Education Intern",
+    "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/Istanbul-Istanbul-Trkiye/Training---Education-Intern_R82184-1",
+    "source": "Medtronic"
    },
    {
     "company": "Medtronic",
@@ -783,98 +771,18 @@
     "title": "Intern engineering",
     "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/Tijuana-Baja-California-Mexico/Intern-engineering_R81781-1",
     "source": "Medtronic"
-   }
-  ],
-  "not engineering": [
-   {
-    "company": "Axiom Space",
-    "title": "Contracts Intern (Summer 2027)",
-    "url": "https://axiomspace.wd5.myworkdayjobs.com/External_Career_Site/job/Houston/Contracts-Intern--Summer-2027-_JR100906",
-    "source": "Axiom Space"
    },
    {
-    "company": "Moog",
-    "title": "Sustainability Intern",
-    "url": "https://moog.wd5.myworkdayjobs.com/MOOG_External_Career_Site/job/Tewkesbury-GBR/Sustainability-Intern_R-26-21221",
-    "source": "Moog"
+    "company": "Medtronic",
+    "title": "Intern Maintenance",
+    "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/Tijuana-Baja-California-Mexico/Intern-Maintenance_R81927-1",
+    "source": "Medtronic"
    },
    {
-    "company": "Sierra Nevada Corporation",
-    "title": "Organizational Change Management (OCM) Intern",
-    "url": "https://snc.wd1.myworkdayjobs.com/SNC_External_Career_Site/job/Sparks-NV/Organizational-Change-Management--OCM--Intern_R0031104",
-    "source": "Sierra Nevada Corporation"
-   },
-   {
-    "company": "Sierra Nevada Corporation",
-    "title": "IT Service Desk Intern (Summer 2027)",
-    "url": "https://snc.wd1.myworkdayjobs.com/SNC_External_Career_Site/job/Lone-Tree-CO/IT-Service-Desk-Intern--Summer-2027-_R0031251",
-    "source": "Sierra Nevada Corporation"
-   },
-   {
-    "company": "CACI",
-    "title": "Junior Operations and Technology Intern - Spring 2027",
-    "url": "https://caci.wd1.myworkdayjobs.com/External/job/Ashburn-VA-US/Junior-Operations-and-Technology-Intern---Spring-2027_334935",
-    "source": "CACI"
-   },
-   {
-    "company": "Northrop Grumman",
-    "title": "2027 Critical Skills Development Intern - Remote",
-    "url": "https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site/job/United-States-Remote/XMLNAME-2027-Critical-Skills-Development-Intern---Remote_R10261601",
-    "source": "Northrop Grumman"
-   },
-   {
-    "company": "Ensign-Bickford Aerospace & Defense",
-    "title": "Contracts Intern",
-    "url": "https://ebi.wd5.myworkdayjobs.com/ebadcareers/job/Simsbury-CT/Contracts-Intern_REQ107712",
-    "source": "Ensign-Bickford Aerospace & Defense"
-   },
-   {
-    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
-    "title": "Digital Technology Vendor Management Co-op REMOTE",
-    "url": "https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-CT-REMOTE/Digital-Technology-Vendor-Management-Co-op-REMOTE_01890848",
-    "source": "RTX (Raytheon, Pratt & Whitney, Collins)"
-   },
-   {
-    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
-    "title": "Contracts Intern (Summer 2027)",
-    "url": "https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-GA-REMOTE/Contracts-Intern--Summer-2027-_01890708",
-    "source": "RTX (Raytheon, Pratt & Whitney, Collins)"
-   },
-   {
-    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
-    "title": "Skillbridge: Lab Lead Intern",
-    "url": "https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-AZ-TUCSON-9020--9020-S-Rita-Rd--BLDG-9020/Skillbridge--Lab-Lead-Intern_01889400",
-    "source": "RTX (Raytheon, Pratt & Whitney, Collins)"
-   },
-   {
-    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
-    "title": "Supplier Account Manager Co-Op (Spring/Summer 2027)",
-    "url": "https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-CT-WINDSOR-LOCKS-B2--1-Hamilton-Rd--BLDG-2/Supplier-Account-Manager-Co-Op--Spring-Summer-2027-_01880833",
-    "source": "RTX (Raytheon, Pratt & Whitney, Collins)"
-   },
-   {
-    "company": "Rolls-Royce",
-    "title": "Working Student Project Management (w/m/d)",
-    "url": "https://rollsroyce.wd3.myworkdayjobs.com/Intern_Graduate/job/Oberursel/Working-Student-Project-Management--w-m-d-_JR6162509",
-    "source": "Rolls-Royce"
-   },
-   {
-    "company": "Rolls-Royce",
-    "title": "Purchasing - Co-op",
-    "url": "https://rollsroyce.wd3.myworkdayjobs.com/Intern_Graduate/job/Mankato/Purchasing---Co-op_JR6163635",
-    "source": "Rolls-Royce"
-   },
-   {
-    "company": "Rolls-Royce",
-    "title": "Inventory Control – Co-op",
-    "url": "https://rollsroyce.wd3.myworkdayjobs.com/Intern_Graduate/job/Mankato/Inventory-Control---Co-op_JR6163507",
-    "source": "Rolls-Royce"
-   },
-   {
-    "company": "Rolls-Royce",
-    "title": "Intern, Commercial",
-    "url": "https://rollsroyce.wd3.myworkdayjobs.com/Intern_Graduate/job/Seletar-SG-SE/Intern--Commercial_JR6158190",
-    "source": "Rolls-Royce"
+    "company": "Medtronic",
+    "title": "NextGen Academy Intern: Field Support",
+    "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/Eindhoven-Noord-Brabant-Netherlands/NextGen-Academy-Intern--Sales_R71339-1",
+    "source": "Medtronic"
    }
   ],
   "posting too old": [
@@ -907,6 +815,12 @@
     "title": "Manufacturing Engineering Ops Co-Op (Summer/Fall 2027)",
     "url": "https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-FL-MELBOURNE-308--1100-W-Hibiscus-Blvd--BLDG-308/Manufacturing-Engineering-Ops-Co-Op--Summer-Fall-2027-_01886462",
     "source": "RTX (Raytheon, Pratt & Whitney, Collins)"
+   },
+   {
+    "company": "Airbus",
+    "title": "ACOLSL-intern",
+    "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Tianjin---FAL-TJ-WC/ACOLSL-intern_JR10455886",
+    "source": "Airbus"
    },
    {
     "company": "Parsons",
@@ -961,19 +875,105 @@
     "title": "Civil Engineer Intern - Summer 2027",
     "url": "https://parsons.wd5.myworkdayjobs.com/Search/job/US---GA-Atlanta/Civil-Engineer-Intern---Summer-2027_R187852",
     "source": "Parsons"
+   }
+  ],
+  "not engineering": [
+   {
+    "company": "Moog",
+    "title": "Sustainability Intern",
+    "url": "https://moog.wd5.myworkdayjobs.com/MOOG_External_Career_Site/job/Tewkesbury-GBR/Sustainability-Intern_R-26-21221",
+    "source": "Moog"
    },
    {
-    "company": "Parsons",
-    "title": "Bridge and Structural Intern",
-    "url": "https://parsons.wd5.myworkdayjobs.com/Search/job/US---WA-Seattle/Bridge-and-Structural-Intern_R187778",
-    "source": "Parsons"
+    "company": "Sierra Nevada Corporation",
+    "title": "Organizational Change Management (OCM) Intern",
+    "url": "https://snc.wd1.myworkdayjobs.com/SNC_External_Career_Site/job/Sparks-NV/Organizational-Change-Management--OCM--Intern_R0031104",
+    "source": "Sierra Nevada Corporation"
+   },
+   {
+    "company": "Sierra Nevada Corporation",
+    "title": "IT Service Desk Intern (Summer 2027)",
+    "url": "https://snc.wd1.myworkdayjobs.com/SNC_External_Career_Site/job/Lone-Tree-CO/IT-Service-Desk-Intern--Summer-2027-_R0031251",
+    "source": "Sierra Nevada Corporation"
+   },
+   {
+    "company": "CACI",
+    "title": "Junior Operations and Technology Intern - Spring 2027",
+    "url": "https://caci.wd1.myworkdayjobs.com/External/job/Ashburn-VA-US/Junior-Operations-and-Technology-Intern---Spring-2027_334935",
+    "source": "CACI"
+   },
+   {
+    "company": "Northrop Grumman",
+    "title": "2027 Critical Skills Development Intern - Remote",
+    "url": "https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site/job/United-States-Remote/XMLNAME-2027-Critical-Skills-Development-Intern---Remote_R10261601",
+    "source": "Northrop Grumman"
+   },
+   {
+    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
+    "title": "Digital Technology Vendor Management Co-op REMOTE",
+    "url": "https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-CT-REMOTE/Digital-Technology-Vendor-Management-Co-op-REMOTE_01890848",
+    "source": "RTX (Raytheon, Pratt & Whitney, Collins)"
+   },
+   {
+    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
+    "title": "Contracts Intern (Summer 2027)",
+    "url": "https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-GA-REMOTE/Contracts-Intern--Summer-2027-_01890708",
+    "source": "RTX (Raytheon, Pratt & Whitney, Collins)"
+   },
+   {
+    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
+    "title": "Skillbridge: Lab Lead Intern",
+    "url": "https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-AZ-TUCSON-9020--9020-S-Rita-Rd--BLDG-9020/Skillbridge--Lab-Lead-Intern_01889400",
+    "source": "RTX (Raytheon, Pratt & Whitney, Collins)"
+   },
+   {
+    "company": "RTX (Raytheon, Pratt & Whitney, Collins)",
+    "title": "Supplier Account Manager Co-Op (Spring/Summer 2027)",
+    "url": "https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-CT-WINDSOR-LOCKS-B2--1-Hamilton-Rd--BLDG-2/Supplier-Account-Manager-Co-Op--Spring-Summer-2027-_01880833",
+    "source": "RTX (Raytheon, Pratt & Whitney, Collins)"
+   },
+   {
+    "company": "Ensign-Bickford Aerospace & Defense",
+    "title": "Contracts Intern",
+    "url": "https://ebi.wd5.myworkdayjobs.com/ebadcareers/job/Simsbury-CT/Contracts-Intern_REQ107712",
+    "source": "Ensign-Bickford Aerospace & Defense"
+   },
+   {
+    "company": "Rolls-Royce",
+    "title": "Working Student Project Management (w/m/d)",
+    "url": "https://rollsroyce.wd3.myworkdayjobs.com/Intern_Graduate/job/Oberursel/Working-Student-Project-Management--w-m-d-_JR6162509",
+    "source": "Rolls-Royce"
+   },
+   {
+    "company": "Rolls-Royce",
+    "title": "Purchasing - Co-op",
+    "url": "https://rollsroyce.wd3.myworkdayjobs.com/Intern_Graduate/job/Mankato/Purchasing---Co-op_JR6163635",
+    "source": "Rolls-Royce"
+   },
+   {
+    "company": "Rolls-Royce",
+    "title": "Inventory Control – Co-op",
+    "url": "https://rollsroyce.wd3.myworkdayjobs.com/Intern_Graduate/job/Mankato/Inventory-Control---Co-op_JR6163507",
+    "source": "Rolls-Royce"
+   },
+   {
+    "company": "Rolls-Royce",
+    "title": "Intern, Commercial",
+    "url": "https://rollsroyce.wd3.myworkdayjobs.com/Intern_Graduate/job/Seletar-SG-SE/Intern--Commercial_JR6158190",
+    "source": "Rolls-Royce"
+   },
+   {
+    "company": "Rolls-Royce",
+    "title": "Intern, Service Order Management",
+    "url": "https://rollsroyce.wd3.myworkdayjobs.com/Intern_Graduate/job/Tukang/Intern--Service-Order-Management_JR6158168",
+    "source": "Rolls-Royce"
    }
   ],
   "closed on the company's own site (still on a list)": [
    {
-    "company": "HP Inc.",
-    "title": "Performance Engineering Co-op",
-    "url": "https://hp.wd5.myworkdayjobs.com/EXTEU-AC-CareerSite/job/Fort-Collins-Colorado-United-States-of-America/Performance-Engineering-Co-op_UNI4986-1",
+    "company": "RTX",
+    "title": "Advanced Effector Guidance Systems Electrical Engineer Intern",
+    "url": "https://globalhr.wd5.myworkdayjobs.com/fr-CA/Private_Posting_No_TMP/job/US-AZ-TUCSON-M02--1151-E-Hermans-Rd--BLDG-M02/Advanced-Effector-Guidance-Systems-Electrical-Engineer-Intern--Summer-2027-_01870393-1",
     "source": "Simplify Summer 2027 list"
    },
    {

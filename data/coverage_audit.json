@@ -35,7 +35,10 @@
   "Bio-Techne": "2026-11-23",
   "AirCapture": "2026-11-24",
   "Airbus": "2026-11-24",
-  "Caterpillar Inc.": "2026-11-24"
+  "Caterpillar Inc.": "2026-11-24",
+  "Albedo": "2026-11-24",
+  "Allegion": "2026-11-24",
+  "Johnson Controls": "2026-11-24"
  },
  "runs": [
   {
@@ -452,6 +455,84 @@
      "misses": [],
      "read": "full list of every opening",
      "openings": 979
+    }
+   ]
+  },
+  {
+   "date": "2026-11-24",
+   "boards": [
+    {
+     "source": "Albedo",
+     "kind": "greenhouse",
+     "in_scope": 0,
+     "found": 0,
+     "misses": [],
+     "read": "full list, no title filter",
+     "openings": 10
+    },
+    {
+     "source": "Allegion",
+     "kind": "workday",
+     "in_scope": 0,
+     "found": 0,
+     "misses": [],
+     "read": "full list of every opening",
+     "openings": 312
+    },
+    {
+     "source": "Johnson Controls",
+     "kind": "workday",
+     "in_scope": 5,
+     "found": 0,
+     "misses": [
+      {
+       "category": "discovery",
+       "why": "the board is only a candidate; it isn't scanned yet",
+       "title": "Mechanical Engineering Intern",
+       "url": "https://jci.wd5.myworkdayjobs.com/JCI/job/New-Freedom-Pennsylvania-United-States-of-America/Intern-Ugrad-Tech-US-CA_WD30286070",
+       "key": "wd:jci:wd30286070",
+       "posted": "2026-11-23",
+       "location": "New Freedom-Pennsylvania-United States of America"
+      },
+      {
+       "category": "discovery",
+       "why": "the board is only a candidate; it isn't scanned yet",
+       "title": "Production Engineering Co-Op",
+       "url": "https://jci.wd5.myworkdayjobs.com/JCI/job/Burlington-Massachusetts-United-States-of-America/Production-Engineering-Co-Op_EB00075404",
+       "key": "wd:jci:eb00075404",
+       "posted": "2026-11-20",
+       "location": "Burlington-Massachusetts-United States of America"
+      },
+      {
+       "category": "discovery",
+       "why": "the board is only a candidate; it isn't scanned yet",
+       "title": "Mechanical Engineering Intern / Compressor Team",
+       "url": "https://jci.wd5.myworkdayjobs.com/JCI/job/Waynesboro-Pennsylvania-United-States-of-America/Mechanical-Engineering-Intern---Compressor-Team_WD30285226",
+       "key": "wd:jci:wd30285226",
+       "posted": "2026-11-17",
+       "location": "Waynesboro-Pennsylvania-United States of America"
+      },
+      {
+       "category": "discovery",
+       "why": "the board is only a candidate; it isn't scanned yet",
+       "title": "Materials Engineering Intern",
+       "url": "https://jci.wd5.myworkdayjobs.com/JCI/job/Milwaukee-Wisconsin-United-States-of-America/Materials-Engineering-Intern_WD30285102",
+       "key": "wd:jci:wd30285102",
+       "posted": "2026-11-17",
+       "location": "Milwaukee-Wisconsin-United States of America"
+      },
+      {
+       "category": "discovery",
+       "why": "the board is only a candidate; it isn't scanned yet",
+       "title": "Electrical Engineering Intern",
+       "url": "https://jci.wd5.myworkdayjobs.com/JCI/job/Glendale-Wisconsin-United-States-of-America/Electrical-Engineering-Intern_WD30285272",
+       "key": "wd:jci:wd30285272",
+       "posted": "2026-11-17",
+       "location": "Glendale-Wisconsin-United States of America"
+      }
+     ],
+     "read": "full list of every opening",
+     "openings": 2848
     }
    ]
   }

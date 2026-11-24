@@ -5221,7 +5221,7 @@
   "name": "Crane",
   "first_seen": "2026-11-05",
   "fails": 0,
-  "last_seen": "2026-11-11",
+  "last_seen": "2026-11-23",
   "state": "active",
   "last_ok": "2026-11-24"
  },
@@ -5454,10 +5454,14 @@
   "name": "FOX",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Product Development Engineer Intern)",
   "engineering": true,
-  "last_seen": "2025-11-01"
+  "last_seen": "2025-11-01",
+  "label": "FOX",
+  "tried": "2026-11-24",
+  "last_ok": "2026-11-24",
+  "validated": "2026-11-24"
  },
  "workday:freseniusmedicalcare.wd3.myworkdayjobs.com/fme": {
   "kind": "workday",
@@ -5479,10 +5483,14 @@
   "name": "GAF",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. R&D Commercial Product Development Engineer Intern)",
   "engineering": true,
-  "last_seen": "2026-10-28"
+  "last_seen": "2026-10-28",
+  "label": "GAF",
+  "tried": "2026-11-24",
+  "last_ok": "2026-11-24",
+  "validated": "2026-11-24"
  },
  "workday:gdit.wd5.myworkdayjobs.com/external_career_site": {
   "kind": "workday",
@@ -5562,10 +5570,14 @@
   "name": "GE Vernova",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Automation and Test Engineering Intern - Spring/Sum)",
   "engineering": true,
-  "last_seen": "2026-09-09"
+  "last_seen": "2026-09-09",
+  "label": "GE Vernova (only_confidential_executive_recruiting)",
+  "tried": "2026-11-24",
+  "last_ok": "2026-11-24",
+  "validated": "2026-11-24"
  },
  "workday:gevernova.wd5.myworkdayjobs.com/vernova_externalsite": {
   "kind": "workday",
@@ -5637,10 +5649,14 @@
   "name": "Granite Construction",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Intern - Design Engineer)",
   "engineering": true,
-  "last_seen": "2026-11-06"
+  "last_seen": "2026-11-06",
+  "label": "Granite Construction",
+  "tried": "2026-11-24",
+  "last_ok": "2026-11-24",
+  "validated": "2026-11-24"
  },
  "workday:gtsgbu.wd3.myworkdayjobs.com/careers": {
   "kind": "workday",
@@ -5648,11 +5664,16 @@
   "site": "Careers",
   "name": "Hitachi",
   "first_seen": "2026-11-20",
-  "fails": 0,
+  "fails": 1,
   "state": "candidate",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Field Test Engineering Intern)",
   "engineering": true,
-  "last_seen": "2026-01-30"
+  "last_seen": "2026-01-30",
+  "label": "Hitachi",
+  "tried": "2026-11-24",
+  "error": "Workday shows its maintenance page for this site: an outage, or the company moved to another hiring system",
+  "fail_since": "2026-11-24",
+  "next_try": "2026-11-24"
  },
  "workday:haier.wd3.myworkdayjobs.com/ge_appliances": {
   "kind": "workday",
@@ -5686,10 +5707,14 @@
   "name": "Heidelberg Materials",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineer Intern)",
   "engineering": true,
-  "last_seen": "2026-10-13"
+  "last_seen": "2026-10-13",
+  "label": "Heidelberg Materials",
+  "tried": "2026-11-24",
+  "last_ok": "2026-11-24",
+  "validated": "2026-11-24"
  },
  "workday:hendrick.wd5.myworkdayjobs.com/hmscareers": {
   "kind": "workday",
@@ -5720,10 +5745,14 @@
   "name": "Highmark Health",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Data Test Engineering Intern - Multiple Teams)",
   "engineering": true,
-  "last_seen": "2025-10-02"
+  "last_seen": "2025-10-02",
+  "label": "Highmark Health",
+  "tried": "2026-11-24",
+  "last_ok": "2026-11-24",
+  "validated": "2026-11-24"
  },
  "workday:hitachi.wd1.myworkdayjobs.com/hitachi": {
   "kind": "workday",
@@ -5796,10 +5825,14 @@
   "name": "Hypertherm",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Intern)",
   "engineering": true,
-  "last_seen": "2026-11-06"
+  "last_seen": "2026-11-06",
+  "label": "Hypertherm",
+  "tried": "2026-11-24",
+  "last_ok": "2026-11-24",
+  "validated": "2026-11-24"
  },
  "workday:imeg.wd1.myworkdaysite.com/imeg_careers": {
   "kind": "workday",
@@ -5834,10 +5867,14 @@
   "name": "Omnicom Group",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Experience Design Engineer Intern Consultant - Design Engine)",
   "engineering": true,
-  "last_seen": "2026-09-01"
+  "last_seen": "2026-09-01",
+  "label": "Omnicom Group",
+  "tried": "2026-11-24",
+  "last_ok": "2026-11-24",
+  "validated": "2026-11-24"
  },
  "workday:irhythmtech.wd5.myworkdayjobs.com/irhythm": {
   "kind": "workday",
@@ -5846,10 +5883,14 @@
   "name": "iRhythm Technologies",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Electrical Test Engineering Co-op)",
   "engineering": true,
-  "last_seen": "2026-04-17"
+  "last_seen": "2026-04-17",
+  "label": "iRhythm Technologies",
+  "tried": "2026-11-24",
+  "last_ok": "2026-11-24",
+  "validated": "2026-11-24"
  },
  "workday:jabil.wd5.myworkdayjobs.com/jabil_careers": {
   "kind": "workday",

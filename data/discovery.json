@@ -513,8 +513,8 @@
   "date": "2026-11-24",
   "added": [],
   "states": {
-   "active": 493,
-   "candidate": 54,
+   "active": 502,
+   "candidate": 45,
    "covered": 7,
    "repair": 2
   },
@@ -704,123 +704,15 @@
     "moved_to": ""
    },
    {
-    "name": "FOX",
-    "kind": "workday",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Product Development Engineer Intern)",
-    "link": "https://foxfactory.wd1.myworkdayjobs.com/FOX",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "GAF",
-    "kind": "workday",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. R&D Commercial Product Development Engineer Intern)",
-    "link": "https://gafsgi.wd5.myworkdayjobs.com/GAF_Careers",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "GE Vernova",
-    "kind": "workday",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Automation and Test Engineering Intern - Spring/Sum)",
-    "link": "https://gevernova.wd5.myworkdayjobs.com/only_confidential_executive_recruiting",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Granite Construction",
-    "kind": "workday",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Intern - Design Engineer)",
-    "link": "https://granite.wd1.myworkdayjobs.com/careers",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
     "name": "Hitachi",
     "kind": "workday",
     "via": "1 mechanical/aerospace internship on the lists (e.g. Field Test Engineering Intern)",
     "link": "https://gtsgbu.wd3.myworkdayjobs.com/Careers",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
+    "fails": 1,
+    "error": "Workday shows its maintenance page for this site: an outage, or the company moved to another hiring system",
+    "next_try": "2026-11-24",
     "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Heidelberg Materials",
-    "kind": "workday",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineer Intern)",
-    "link": "https://heidelbergmaterials.wd3.myworkdayjobs.com/global_hm_career_site",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Highmark Health",
-    "kind": "workday",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Data Test Engineering Intern - Multiple Teams)",
-    "link": "https://highmarkhealth.wd1.myworkdayjobs.com/highmark",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Hypertherm",
-    "kind": "workday",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Intern)",
-    "link": "https://hypertherm.wd503.myworkdayjobs.com/hypertherm-careers",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Omnicom Group",
-    "kind": "workday",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Experience Design Engineer Intern Consultant - Design Engine)",
-    "link": "https://interpublic.wd5.myworkdayjobs.com/omc",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "iRhythm Technologies",
-    "kind": "workday",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Electrical Test Engineering Co-op)",
-    "link": "https://irhythmtech.wd5.myworkdayjobs.com/irhythm",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
+    "since": "2026-11-24",
     "moved_to": ""
    },
    {
@@ -1110,6 +1002,114 @@
     "last_ok": "",
     "since": "",
     "moved_to": ""
+   },
+   {
+    "name": "STV",
+    "kind": "workday",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Intern - Summer 2027)",
+    "link": "https://stvinc.wd5.myworkdayjobs.com/stv",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Tandem Diabetes Care",
+    "kind": "workday",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Electrical Test Engineer Intern)",
+    "link": "https://tandemdiabetes.wd12.myworkdayjobs.com/tandemdiabetes",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Thermo Fisher Scientific",
+    "kind": "workday",
+    "via": "2 mechanical/aerospace internships on the lists (e.g. Systems Integration and Test Engineering Intern)",
+    "link": "https://thermofisher.wd5.myworkdayjobs.com/ThermoFisherCareers",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Tranetechnologies",
+    "kind": "workday",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Co-op)",
+    "link": "https://tranetechnologies.wd12.myworkdayjobs.com/trane_technologies_careers",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "TREK",
+    "kind": "workday",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Intern)",
+    "link": "https://trekbikes.wd1.myworkdayjobs.com/TREK",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Trimble",
+    "kind": "workday",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Engineering Intern - CTCT)",
+    "link": "https://trimble.wd1.myworkdayjobs.com/TrimbleCareers",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "TSC",
+    "kind": "workday",
+    "via": "2 mechanical/aerospace internships on the lists (e.g. Hardware Engineering Co-op)",
+    "link": "https://tsc.wd12.myworkdayjobs.com/TSC-Careers",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Tyson Foods",
+    "kind": "workday",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Packaging Engineer Intern - Packaging Systems)",
+    "link": "https://tysonfoods.wd5.myworkdayjobs.com/TSN",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Veralto",
+    "kind": "workday",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Engineering Intern - Hardware Engineering)",
+    "link": "https://veralto.wd1.myworkdayjobs.com/hachjobs",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
    }
   ],
   "unsupported": [
@@ -1154,6 +1154,14 @@
     "companies": [
      "DataRobot",
      "MDA"
+    ]
+   },
+   {
+    "host": "careers.viasat.com",
+    "count": 2,
+    "companies": [
+     "RigNet",
+     "Viasat"
     ]
    },
    {
@@ -1265,13 +1273,6 @@
     "count": 1,
     "companies": [
      "Peak Energy"
-    ]
-   },
-   {
-    "host": "amazon.jobs",
-    "count": 1,
-    "companies": [
-     "Amazon"
     ]
    }
   ],

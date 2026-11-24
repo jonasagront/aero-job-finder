@@ -1,25 +1,25 @@
-# 167 new internships, 2 deadlines soon, 3 sources failing (Nov 24)
+# 189 new internships, 2 deadlines soon, 3 sources failing (Nov 24)
 
 ## New since the last digest (best fits first)
 
-- **93** Western Digital: [Summer 2027 Intern - Hardware Engineering](https://jobs.smartrecruiters.com/WesternDigital/744000160975864-summer-2027-intern-hardware-engineering) · San Jose, CA, United States · posted 2026-11-10 · All engineering
 - **88** General Motors: [2027 Summer Intern – Global Product Development](https://generalmotors.wd5.myworkdayjobs.com/Careers_GM/job/Warren-Michigan-United-States-of-America/XMLNAME-2027-Summer-Intern---Global-Product-Development_JR-202624624) · Warren, Michigan, United States of America; Pontiac, Michiga · posted 2026-11-23 · All engineering
 - **88** Paccar: [Summer 2027 - Mechanical Design Engineer Intern](https://jobs.paccar.com/job/Kirkland-Summer-2027-Mechanical-Design-Engineer-Intern-WA-98033/1451437133/) · Kirkland, WA, US, 98033 · posted 2026-11-24 · All engineering
-- **87** Lockheed Martin: [Aeronautical Engineering Intern](https://lockheedmartin.eightfold.ai/careers/job/996478125490) · King of Prussia, PA · posted 2026-11-23 · All engineering
+- **82** Boston Dynamics: [Platform Mechanical Engineer Co-Op](https://bostondynamics.wd1.myworkdayjobs.com/Boston_Dynamics/job/Waltham-Office-POST/Platform-Mechanical-Engineer-Co-Op_R3416) · Waltham Office (POST) · posted 2026-11-24 · All engineering
 - **81** Johns Hopkins Applied Physics Laboratory: [2027 Internship - Optical, Electrical, or Computer Engineer - Imaging Systems](https://careers.jhuapl.edu/jobs/59996) · Laurel, Maryland · posted 2026-11-23 · All engineering
-- **78** Fortive: [Mechanical Engineering Intern](https://ejta.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001/job/10826) · Irvine, CA, United States · posted 2026-11-23 · All engineering
-- **78** Wabtec: [Transducer Manufacturing Engineering Co-Op](https://jobs.smartrecruiters.com/Wabtec/3743990016822316-transducer-manufacturing-engineering-co-op) · Waltham, MA, United States · posted 2026-11-12 · All engineering
+- **80** Apex Space: [Mechanical Ground Systems Engineering Internship (Summer 2027)](https://jobs.ashbyhq.com/apex-technology-inc/e34724bd-0db2-4433-9352-7ad49d37e627) · Los Angeles · posted 2026-11-24 · Summer 2027
+- **79** GE Vernova: [GE Vernova Engineering Automation Internship - Summer 2027](https://gevernova.wd5.myworkdayjobs.com/Vernova_ExternalSite/job/Charleroi-USA/GE-Vernova-Engineering-Automation-Internship---Summer-2027_R5059697-2) · Charleroi USA · posted 2026-11-24 · All engineering
+- **79** GE Vernova (only_confidential_executive_recruiting): [GE Vernova Engineering Automation Internship - Summer 2027](https://gevernova.wd5.myworkdayjobs.com/Only_Confidential_Executive_Recruiting/job/Charleroi-USA/GE-Vernova-Engineering-Automation-Internship---Summer-2027_R5059697-1) · Charleroi USA · posted 2026-11-24 · All engineering
+- **77** GE Vernova: [GE Vernova Manufacturing Quality & Digital Work Instructions Internship - Summer 2027](https://gevernova.wd5.myworkdayjobs.com/Vernova_ExternalSite/job/Charleroi-USA/GE-Vernova-Manufacturing-Quality---Digital-Work-Instructions-Internship---Summer-2027_R5059702-2) · Charleroi USA · posted 2026-11-24 · All engineering
+- **77** GE Vernova (only_confidential_executive_recruiting): [GE Vernova Pivot to Value (P2V) Value Engineering Internship 2027](https://gevernova.wd5.myworkdayjobs.com/Only_Confidential_Executive_Recruiting/job/Greenville/GE-Vernova-Pivot-to-Value--P2V--Value-Engineering-Internship-2027_R5057971-1) · Greenville; Schenectady · posted 2026-11-09 · All engineering
+- **77** GE Vernova (only_confidential_executive_recruiting): [GE Vernova Manufacturing Quality & Digital Work Instructions Internship - Summer 2027](https://gevernova.wd5.myworkdayjobs.com/Only_Confidential_Executive_Recruiting/job/Charleroi-USA/GE-Vernova-Manufacturing-Quality---Digital-Work-Instructions-Internship---Summer-2027_R5059702-1) · Charleroi USA · posted 2026-11-24 · All engineering
 - **75** Airbus: [Discover I 2027-2028 Structural Dynamics and Aeroelasticity Intern](https://ag.wd3.myworkdayjobs.com/Airbus/job/Getafe-Area/Discover-I-2027-2028-Structural-Dynamics-and-Aeroelasticity-Intern_JR10458278) · Getafe Area · posted 2026-11-24 · Summer 2027
 - **75** Draper: [Materials and Chemistry Engineering Intern (Summer 2027)](https://draper.wd5.myworkdayjobs.com/Draper_Careers/job/Cambridge-MA/Materials-and-Chemistry-Engineering-Intern--Summer-2027-_JR003177) · Cambridge, MA · posted 2026-11-23 · Summer 2027
-- **75** General Dynamics OTS: [Intern, Technical Support (Mechanical Engineering)](https://careers-gd-ots.icims.com/jobs/37874/intern%2c-technical-support-%28mechanical-engineering%29/job) · US-VT-Colchester · posted 2026-11-23 · All engineering
-- **75** Skyworks: [Product Line Winter/Spring Co-Op (Jan - June '27)](https://careers.skyworksinc.com/job/Product-Line-WinterSpring-Co-Op-%28Jan-June-'27%29/79108-en_US) · Newbury Park, CA, USA · posted 2026-11-17 · All engineering _(uncertain: Field taken from the majors the description lists)_
+- **75** Gorbel: [Mechanical Engineering Co-Op](https://gorbel.wd501.myworkdayjobs.com/gorbelcareers/job/USA-New-York-Victor/Mechanical-Engineering-Co-Op_REQ-2026-2343-1) · USA, New York, Victor · posted 2026-11-24 · All engineering
 - **74** Draper: [Space GNC Intern (Summer 2027)](https://draper.wd5.myworkdayjobs.com/Draper_Careers/job/Houston-TX/Space-GNC-Intern--Summer-2027-_JR003127) · Houston, TX · posted 2026-11-23 · All engineering
 - **73** Lockheed Martin: [College Intern - Scientist](https://lockheedmartin.eightfold.ai/careers/job/996477675469) · Sunnyvale, CA · posted 2026-11-23 · All engineering _(uncertain: Field taken from the majors the description lists)_
-- **73** MITRE: [Sensor Engineer - Intern](https://careers.mitre.org/us/en/job/R118104) · Bedford, Massachusetts, United States of America; McLean, Vi · posted 2026-11-23 · All engineering
-- **72** Teledyne FLIR: [Engineering Intern - Fall](https://flir.wd1.myworkdayjobs.com/flircareers/job/US---North-Falmouth-MA/Engineering-Intern---Fall_REQ34030) · US - North Falmouth, MA · posted 2026-11-23 · Summer 2027
-- ...and 152 more
+- ...and 174 more
 
-All 201 newly found (34 only in All opportunities): https://jonasagront.github.io/aero-job-finder/#unread
+All 226 newly found (37 only in All opportunities): https://jonasagront.github.io/aero-job-finder/#unread
 
 ## Program deadlines in the next 3 weeks (verified on the official pages)
 
@@ -28,10 +28,9 @@ All 201 newly found (34 only in All opportunities): https://jonasagront.github.i
 
 ## Collection problems
 
-- Dell Technologies (External): stale — Workday shows its maintenance page for this site: an outage, or the company moved to another hiring system (never worked) — check by hand: https://dell.wd1.myworkdayjobs.com/External
-- Shield AI (f7d8749a-72d6-407c-bf98-292ea630c73a): stale — HTTP 404 (last worked 2026-11-23) — check by hand: https://jobs.ashbyhq.com/f7d8749a-72d6-407c-bf98-292ea630c73a
+- Hitachi: failed — Workday shows its maintenance page for this site: an outage, or the company moved to another hiring system (never worked) — check by hand: https://gtsgbu.wd3.myworkdayjobs.com/Careers
+- Dell Technologies (External): stale — skipped: retry scheduled for 2026-11-28 after 5 failed runs (Workday shows its maintenance page for this site: an outage, or the company moved to another hiring system) (never worked) — check by hand: https://dell.wd1.myworkdayjobs.com/External
 - NXP Semiconductors: stale — skipped: retry scheduled for 2026-12-04 after 8 failed runs (Workday shows its maintenance page for this site: an outage, or the company moved to another hiring system) (never worked) — check by hand: https://nxp.wd3.myworkdayjobs.com/careers
-- Applied Materials: dropped from about 6 postings to 0
 - 3 sources read only partly this run (postings they didn't return are kept, not treated as closed)
 
 Full page: https://jonasagront.github.io/aero-job-finder/
