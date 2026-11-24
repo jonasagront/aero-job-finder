@@ -32,7 +32,10 @@
   "Würth Elektronik": "2026-11-23",
   "Agility Robotics": "2026-11-23",
   "Air Products": "2026-11-23",
-  "Bio-Techne": "2026-11-23"
+  "Bio-Techne": "2026-11-23",
+  "AirCapture": "2026-11-24",
+  "Airbus": "2026-11-24",
+  "Caterpillar Inc.": "2026-11-24"
  },
  "runs": [
   {
@@ -417,6 +420,38 @@
      "misses": [],
      "read": "full list of every opening",
      "openings": 81
+    }
+   ]
+  },
+  {
+   "date": "2026-11-24",
+   "boards": [
+    {
+     "source": "AirCapture",
+     "kind": "greenhouse",
+     "in_scope": 0,
+     "found": 0,
+     "misses": [],
+     "read": "full list, no title filter",
+     "openings": 5
+    },
+    {
+     "source": "Airbus",
+     "kind": "workday",
+     "in_scope": 42,
+     "found": 42,
+     "misses": [],
+     "read": "full list of every opening",
+     "openings": 1994
+    },
+    {
+     "source": "Caterpillar Inc.",
+     "kind": "workday",
+     "in_scope": 2,
+     "found": 2,
+     "misses": [],
+     "read": "full list of every opening",
+     "openings": 979
     }
    ]
   }

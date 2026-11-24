@@ -510,26 +510,13 @@
   }
  },
  "report": {
-  "date": "2026-11-23",
-  "added": [
-   {
-    "name": "Voyager Space",
-    "kind": "workable",
-    "via": "name probe (aerospace_companies)",
-    "openings": 0
-   },
-   {
-    "name": "Zimmer Biomet",
-    "kind": "workable",
-    "via": "name probe (discover seeds)",
-    "openings": 0
-   }
-  ],
+  "date": "2026-11-24",
+  "added": [],
   "states": {
-   "active": 483,
-   "candidate": 64,
-   "repair": 3,
-   "covered": 6
+   "active": 493,
+   "candidate": 54,
+   "covered": 7,
+   "repair": 2
   },
   "repair": [
    {
@@ -549,27 +536,27 @@
     "kind": "workday",
     "via": "1 mechanical/aerospace internship on the lists (e.g. Dell CSG Hardware Engineering Intern)",
     "link": "https://dell.wd1.myworkdayjobs.com/External",
-    "fails": 4,
+    "fails": 5,
     "error": "Workday shows its maintenance page for this site: an outage, or the company moved to another hiring system",
-    "next_try": "2026-11-24",
+    "next_try": "2026-11-28",
     "last_ok": "2026-11-20",
     "since": "2026-11-20",
     "moved_to": ""
-   },
+   }
+  ],
+  "moved": [
    {
     "name": "Shield AI (f7d8749a-72d6-407c-bf98-292ea630c73a)",
     "kind": "ashby",
     "via": "list link",
     "link": "https://jobs.ashbyhq.com/f7d8749a-72d6-407c-bf98-292ea630c73a",
-    "fails": 2,
+    "fails": 3,
     "error": "HTTP 404",
-    "next_try": "2026-11-23",
+    "next_try": "2026-11-25",
     "last_ok": "2026-11-23",
     "since": "2026-11-23",
     "moved_to": ""
-   }
-  ],
-  "moved": [
+   },
    {
     "name": "Mach Industries (mach)",
     "kind": "ashby",
@@ -626,7 +613,7 @@
     "fails": 0,
     "error": "",
     "next_try": "",
-    "last_ok": "2026-11-23",
+    "last_ok": "2026-11-24",
     "since": "",
     "moved_to": ""
    },
@@ -705,130 +692,10 @@
     "moved_to": ""
    },
    {
-    "name": "Bio-Techne",
-    "kind": "workday",
-    "via": "2 mechanical/aerospace internships on the lists (e.g. Hardware Engineering Intern)",
-    "link": "https://biotechne.wd5.myworkdayjobs.com/Biotechne",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Bloom Energy",
-    "kind": "workday",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Test Engineering Intern)",
-    "link": "https://bloomenergy.wd1.myworkdayjobs.com/bloomenergycareers",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Cadence Design Systems",
-    "kind": "workday",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. SSG Design Engineering Intern)",
-    "link": "https://cadence.wd1.myworkdayjobs.com/External_Careers",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Cadence Design Systems",
-    "kind": "workday",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. SSG Design Engineering Intern - Summer 2026)",
-    "link": "https://cadence.wd1.myworkdayjobs.com/Univ_Careers",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Cadence Design Systems",
-    "kind": "workday",
-    "via": "2 mechanical/aerospace internships on the lists (e.g. SSG Design Engineering Intern)",
-    "link": "https://cadence.wd1.myworkdayjobs.com/University_Talent",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Cadence Design Systems",
-    "kind": "workday",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. SSG Design Engineering Intern)",
-    "link": "https://cadence.wd1.myworkdayjobs.com/University_Talent_Intern",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
     "name": "Caterpillar Inc.",
     "kind": "workday",
     "via": "1 mechanical/aerospace internship on the lists (e.g. Engineering Intern - Product Development Track)",
     "link": "https://cat.wd5.myworkdayjobs.com/CaterpillarCareers",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Charter Manufacturing",
-    "kind": "workday",
-    "via": "2 mechanical/aerospace internships on the lists (e.g. Mechanical Engineer Intern (Year-Round))",
-    "link": "https://chartermfg.wd5.myworkdayjobs.com/Charter_Careers",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "The Walt Disney Company",
-    "kind": "workday",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Mechatronics Engineering Intern)",
-    "link": "https://disney.wd5.myworkdayjobs.com/disneycareerdc",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Entrust",
-    "kind": "workday",
-    "via": "2 mechanical/aerospace internships on the lists (e.g. Mechanical Engineering Co-Op)",
-    "link": "https://entrust.wd1.myworkdayjobs.com/entrustcareers",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Everest",
-    "kind": "workday",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. 2027 Everest Design Engineering Internship Program)",
-    "link": "https://everestre.wd5.myworkdayjobs.com/careers",
     "fails": 0,
     "error": "",
     "next_try": "",
@@ -1117,6 +984,126 @@
     "kind": "workday",
     "via": "1 mechanical/aerospace internship on the lists (e.g. 2027 Co-Op - Electronics & Aerospace)",
     "link": "https://momentive.wd1.myworkdayjobs.com/MC",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "OATEY",
+    "kind": "workday",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Design Engineering Intern)",
+    "link": "https://wd5.myworkdaysite.com/recruiting/oatey/Oatey_External_",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Plexus",
+    "kind": "workday",
+    "via": "2 mechanical/aerospace internships on the lists (e.g. Intern Hardware Engineer)",
+    "link": "https://plexus.wd5.myworkdayjobs.com/Plexus_Careers",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Plug Power",
+    "kind": "workday",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Test Engineering Intern)",
+    "link": "https://plugpower.wd5.myworkdayjobs.com/Plug_Power_Inc",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Slate Auto",
+    "kind": "workday",
+    "via": "2 mechanical/aerospace internships on the lists (e.g. Intern Prototype Engineer)",
+    "link": "https://recar.wd108.myworkdayjobs.com/SLATEcareers",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Regal Rexnord",
+    "kind": "workday",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Engineering Co-op - Mechanical)",
+    "link": "https://regalrexnord.wd1.myworkdayjobs.com/careers",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Roche",
+    "kind": "workday",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Intern - Systems Engineer - Systems & Hardware Engineering C)",
+    "link": "https://roche.wd3.myworkdayjobs.com/roche-ext",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Saputo",
+    "kind": "workday",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Packaging Engineering Trainee Intern)",
+    "link": "https://saputo.wd5.myworkdayjobs.com/saputo_external_careers",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Stanley Black & Decker",
+    "kind": "workday",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Intern Summer 2027)",
+    "link": "https://sbdinc.wd1.myworkdayjobs.com/Stanley_Black_Decker_Career_Site",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "SC Johnson",
+    "kind": "workday",
+    "via": "1 mechanical/aerospace internship on the lists (e.g. Packaging Engineer Intern)",
+    "link": "https://scj.wd5.myworkdayjobs.com/External_Career_Site",
+    "fails": 0,
+    "error": "",
+    "next_try": "",
+    "last_ok": "",
+    "since": "",
+    "moved_to": ""
+   },
+   {
+    "name": "Smith+Nephew",
+    "kind": "workday",
+    "via": "2 mechanical/aerospace internships on the lists (e.g. Intern Mechanical Engineering)",
+    "link": "https://smithnephew.wd5.myworkdayjobs.com/External",
     "fails": 0,
     "error": "",
     "next_try": "",
