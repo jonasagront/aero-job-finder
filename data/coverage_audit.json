@@ -38,7 +38,10 @@
   "Caterpillar Inc.": "2026-11-24",
   "Albedo": "2026-11-24",
   "Allegion": "2026-11-24",
-  "Johnson Controls": "2026-11-24"
+  "Johnson Controls": "2026-11-24",
+  "Allegion (EarlyTalent_Careers)": "2026-11-25",
+  "Allen Control Systems": "2026-11-25",
+  "Hitachi": "2026-11-25"
  },
  "runs": [
   {
@@ -533,6 +536,37 @@
      ],
      "read": "full list of every opening",
      "openings": 2848
+    }
+   ]
+  },
+  {
+   "date": "2026-11-25",
+   "boards": [
+    {
+     "source": "Allegion (EarlyTalent_Careers)",
+     "kind": "workday",
+     "in_scope": 0,
+     "found": 0,
+     "misses": [],
+     "read": "full list of every opening",
+     "openings": 37
+    },
+    {
+     "source": "Allen Control Systems",
+     "kind": "ashby",
+     "in_scope": 0,
+     "found": 0,
+     "misses": [],
+     "read": "full list, no title filter",
+     "openings": 19
+    },
+    {
+     "source": "Hitachi",
+     "kind": "workday",
+     "in_scope": 0,
+     "found": 0,
+     "misses": [],
+     "error": "HTTP 403"
     }
    ]
   }
