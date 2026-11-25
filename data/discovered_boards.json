@@ -252,7 +252,7 @@
   "name": "Distributed Spectrum",
   "first_seen": "2026-10-28",
   "fails": 0,
-  "last_seen": "2026-10-29",
+  "last_seen": "2026-11-25",
   "state": "active",
   "last_ok": "2026-11-25"
  },
@@ -1767,7 +1767,7 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-08-21",
+  "last_seen": "2026-11-24",
   "state": "active",
   "last_ok": "2026-11-25"
  },
@@ -3714,7 +3714,7 @@
   "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Electrical Design Engineer Intern)",
   "engineering": true,
-  "last_seen": "2026-11-24",
+  "last_seen": "2026-11-25",
   "label": "Ralliant",
   "tried": "2026-11-23",
   "last_ok": "2026-11-25",
@@ -5168,7 +5168,7 @@
   "first_seen": "2026-11-05",
   "fails": 0,
   "engineering": true,
-  "last_seen": "2026-10-28",
+  "last_seen": "2026-11-24",
   "state": "active",
   "last_ok": "2026-11-25"
  },
@@ -5925,7 +5925,7 @@
   "state": "active",
   "via": "2 mechanical/aerospace internships on the lists (e.g. Embedded Firmware Engineering Intern - Embedded Systems - HV)",
   "engineering": true,
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-23",
   "label": "Johnson Controls",
   "tried": "2026-11-25",
   "last_ok": "2026-11-25",
@@ -5964,7 +5964,7 @@
   "state": "active",
   "via": "2 mechanical/aerospace internships on the lists (e.g. RSD Intern - Test Engineering)",
   "engineering": true,
-  "last_seen": "2026-10-26",
+  "last_seen": "2026-11-09",
   "label": "KION Group",
   "tried": "2026-11-25",
   "last_ok": "2026-11-25",
@@ -5980,7 +5980,7 @@
   "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. RSD Intern - Test Engineering)",
   "engineering": true,
-  "last_seen": "2026-04-10",
+  "last_seen": "2026-11-09",
   "label": "KION Group (kiongroup)",
   "tried": "2026-11-25",
   "last_ok": "2026-11-25",
@@ -6181,7 +6181,7 @@
   "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Custom Packaging Design Engineer Co-Op)",
   "engineering": true,
-  "last_seen": "2026-05-16",
+  "last_seen": "2026-11-13",
   "label": "Menasha Corporation",
   "tried": "2026-11-25",
   "last_ok": "2026-11-25",
@@ -6194,10 +6194,14 @@
   "name": "Michelin",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Summer 2027 Internship: Mechanical Engineer (Emporia, KS))",
   "engineering": true,
-  "last_seen": "2026-08-31"
+  "last_seen": "2026-08-31",
+  "label": "Michelin",
+  "tried": "2026-11-25",
+  "last_ok": "2026-11-25",
+  "validated": "2026-11-25"
  },
  "workday:microchiphr.wd5.myworkdaysite.com/external": {
   "kind": "workday",
@@ -6232,11 +6236,16 @@
   "site": "universityrecruiting",
   "name": "Mii",
   "first_seen": "2026-11-20",
-  "fails": 0,
+  "fails": 1,
   "state": "candidate",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Design Engineer Intern (Wood Truss))",
   "engineering": true,
-  "last_seen": "2026-10-20"
+  "last_seen": "2026-10-20",
+  "label": "Mii",
+  "tried": "2026-11-25",
+  "error": "Workday shows its maintenance page for this site: an outage, or the company moved to another hiring system",
+  "fail_since": "2026-11-25",
+  "next_try": "2026-11-25"
  },
  "workday:modernatx.wd1.myworkdayjobs.com/m_tx": {
   "kind": "workday",
@@ -6245,10 +6254,14 @@
   "name": "Moderna",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "2 mechanical/aerospace internships on the lists (e.g. mRNA Design Engineer Co-op)",
   "engineering": true,
-  "last_seen": "2026-11-10"
+  "last_seen": "2026-11-10",
+  "label": "Moderna",
+  "tried": "2026-11-25",
+  "last_ok": "2026-11-25",
+  "validated": "2026-11-25"
  },
  "workday:momentive.wd1.myworkdayjobs.com/mc": {
   "kind": "workday",
@@ -6257,10 +6270,14 @@
   "name": "Momentive",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. 2027 Co-Op - Electronics & Aerospace)",
   "engineering": true,
-  "last_seen": "2026-11-10"
+  "last_seen": "2026-11-10",
+  "label": "Momentive",
+  "tried": "2026-11-25",
+  "last_ok": "2026-11-25",
+  "validated": "2026-11-25"
  },
  "workday:moog.wd5.myworkdayjobs.com/moog_external_career_site": {
   "kind": "workday",
@@ -6380,10 +6397,14 @@
   "name": "OATEY",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Design Engineering Intern)",
   "engineering": true,
-  "last_seen": "2026-10-22"
+  "last_seen": "2026-10-22",
+  "label": "OATEY",
+  "tried": "2026-11-25",
+  "last_ok": "2026-11-25",
+  "validated": "2026-11-25"
  },
  "workday:oshkoshcorporation.wd5.myworkdayjobs.com/oshkosh": {
   "kind": "workday",
@@ -6437,11 +6458,16 @@
   "site": "Plexus_Careers",
   "name": "Plexus",
   "first_seen": "2026-11-20",
-  "fails": 0,
+  "fails": 1,
   "state": "candidate",
   "via": "2 mechanical/aerospace internships on the lists (e.g. Intern Hardware Engineer)",
   "engineering": true,
-  "last_seen": "2026-01-12"
+  "last_seen": "2026-01-12",
+  "label": "Plexus",
+  "tried": "2026-11-25",
+  "error": "Workday shows its maintenance page for this site: an outage, or the company moved to another hiring system",
+  "fail_since": "2026-11-25",
+  "next_try": "2026-11-25"
  },
  "workday:plugpower.wd5.myworkdayjobs.com/plug_power_inc": {
   "kind": "workday",
@@ -6450,10 +6476,14 @@
   "name": "Plug Power",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Test Engineering Intern)",
   "engineering": true,
-  "last_seen": "2025-12-31"
+  "last_seen": "2025-12-31",
+  "label": "Plug Power",
+  "tried": "2026-11-25",
+  "last_ok": "2026-11-25",
+  "validated": "2026-11-25"
  },
  "workday:radiancetech.wd12.myworkdayjobs.com/radiance_external": {
   "kind": "workday",
@@ -6473,10 +6503,14 @@
   "name": "Slate Auto",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "2 mechanical/aerospace internships on the lists (e.g. Intern Prototype Engineer)",
   "engineering": true,
-  "last_seen": "2026-02-02"
+  "last_seen": "2026-02-02",
+  "label": "Slate Auto",
+  "tried": "2026-11-25",
+  "last_ok": "2026-11-25",
+  "validated": "2026-11-25"
  },
  "workday:regalrexnord.wd1.myworkdayjobs.com/careers": {
   "kind": "workday",
@@ -6485,10 +6519,14 @@
   "name": "Regal Rexnord",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Engineering Co-op - Mechanical)",
   "engineering": true,
-  "last_seen": "2026-05-23"
+  "last_seen": "2026-05-23",
+  "label": "Regal Rexnord",
+  "tried": "2026-11-25",
+  "last_ok": "2026-11-25",
+  "validated": "2026-11-25"
  },
  "workday:roche.wd3.myworkdayjobs.com/roche-ext": {
   "kind": "workday",
@@ -6497,10 +6535,14 @@
   "name": "Roche",
   "first_seen": "2026-11-20",
   "fails": 0,
-  "state": "candidate",
+  "state": "active",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Intern - Systems Engineer - Systems & Hardware Engineering C)",
   "engineering": true,
-  "last_seen": "2025-12-24"
+  "last_seen": "2025-12-24",
+  "label": "Roche",
+  "tried": "2026-11-25",
+  "last_ok": "2026-11-25",
+  "validated": "2026-11-25"
  },
  "workday:rockwellautomation.wd1.myworkdayjobs.com/external-rockwell-automation-early-careers": {
   "kind": "workday",

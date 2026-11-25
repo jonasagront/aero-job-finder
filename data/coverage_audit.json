@@ -41,7 +41,10 @@
   "Johnson Controls": "2026-11-24",
   "Allegion (EarlyTalent_Careers)": "2026-11-25",
   "Allen Control Systems": "2026-11-25",
-  "Hitachi": "2026-11-25"
+  "Hitachi": "2026-11-25",
+  "Alloy Enterprises": "2026-11-25",
+  "Ambarella": "2026-11-25",
+  "Saputo": "2026-11-25"
  },
  "runs": [
   {
@@ -567,6 +570,38 @@
      "found": 0,
      "misses": [],
      "error": "HTTP 403"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-25",
+   "boards": [
+    {
+     "source": "Alloy Enterprises",
+     "kind": "ashby",
+     "in_scope": 0,
+     "found": 0,
+     "misses": [],
+     "read": "full list, no title filter",
+     "openings": 5
+    },
+    {
+     "source": "Ambarella",
+     "kind": "workday",
+     "in_scope": 0,
+     "found": 0,
+     "misses": [],
+     "read": "full list of every opening",
+     "openings": 48
+    },
+    {
+     "source": "Saputo",
+     "kind": "workday",
+     "in_scope": 0,
+     "found": 0,
+     "misses": [],
+     "read": "full list of every opening",
+     "openings": 361
     }
    ]
   }

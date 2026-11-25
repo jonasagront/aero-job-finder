@@ -89,7 +89,7 @@ history fills more of that in.
 ## Today's top matches
 
 <!-- JOBS:START -->
-**378 Summer 2027 aerospace matches** (3 in Motorsports, 15 Fall 2027 near home, 1289 in All engineering, 6 leads without a direct link) as of Nov 25, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
+**374 Summer 2027 aerospace matches** (2 in Motorsports, 14 Fall 2027 near home, 1341 in All engineering, 167 leads without a direct link) as of Nov 25, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
 
 | Fit | Company | Role | Preferred quals | Required quals | Location | Posted | Apply |
 |---|---|---|---|---|---|---|---|
@@ -101,7 +101,6 @@ history fills more of that in.
 | 88 | MIT Lincoln Laboratory | Summer Research Program Intern 2027, Mechanical Engineering (Group 07-71) 🆕 | – | – | Lexington, MA, US | 2026-11-25 | [Apply](https://careers.ll.mit.edu/job/Lexington-Summer-Research-Program-Intern-2027%2C-Mechanical-Engineering-%28Group-07-71%29-MA-02420/1434255400/) |
 | 87 | Reliable Robotics | Flight Test Integration Engineer Intern (Summer 2027) | 2 of 3 | 2 of 2 | Mountain View, CA | 2026-11-13 | [Apply](https://jobs.ashbyhq.com/reliable-robotics/1d020651-71bb-4e47-baa6-2286dc780d96) |
 | 86 | Intuitive Machines | Assembly Integration & Test Intern | 1 of 1 | 2 of 2 | Houston, TX | 2026-11-13 | [Apply](https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=b0e24f83-6e4d-492d-9d6a-bc0fea197d6a&lang=en_US&locale=en_US&ccId=19000101_000001&jobId=9207519595481_89) |
-| 86 | Lockheed Martin | aerospace engineering intern | 1 of 1 | 3 of 3 | Littleton, CO | 2026-11-12 | [Apply](https://lockheedmartin.eightfold.ai/careers/job/996477909687) |
 | 85 | MIT Lincoln Laboratory | Summer Research Program Intern 2027, Advanced Sensor Systems and Test Beds (Group 03-33) | 1 of 1 | 4 of 4 | Lexington, MA, US | 2026-11-17 | [Apply](https://careers.ll.mit.edu/job/Lexington-Summer-Research-Program-Intern-2027%2C-Advanced-Sensor-Systems-and-Test-Beds-%28Group-03-33%29-MA-02420/1441287700/) |
 | 85 | Lockheed Martin | Aeronautical Engineering Intern | 3 of 4 | 3 of 3 | King of Prussia, PA | 2026-11-23 | [Apply](https://lockheedmartin.eightfold.ai/careers/job/996478125490) |
 | 85 | Sandia National Laboratories | Intern, R&D Graduate Year Round - Concentrating Solar Thermal Technologies, Onsite | – | 2 of 2 | Albuquerque, NM, USA | 2026-11-19 | [Apply](https://sandia.jobs/535112F90DDF471BB17D1255B71A36D925) |
@@ -118,6 +117,7 @@ history fills more of that in.
 | 82 | The Aerospace Corporation | 2027 Communication Architectures Modeling and Analysis Engineering Grad Intern | – | 5 of 5 | El Segundo, CA | 2026-11-16 | [Apply](https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/XMLNAME-2027-Communication-Architectures-Modeling-and-Analysis-Engineering-Grad-Intern_R017010) |
 | 82 | The Aerospace Corporation | 2027 Communication Architectures Modeling and Analysis Engineering Undergraduate Intern | – | 5 of 5 | El Segundo, CA | 2026-11-16 | [Apply](https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/XMLNAME-2027-Communication-Architectures-Modeling-and-Analysis-Engineering-Undergraduate-Intern_R017009) |
 | 81 | Lockheed Martin | College Student - Technical - N3 | 2.5 of 3 | 4 of 4 | Eagan, MN | 2026-11-11 | [Apply](https://lockheedmartin.eightfold.ai/careers/job/996477473620) |
+| 81 | MIT Lincoln Laboratory | Summer Research Program Intern 2027, Space Systems Analysis and Test (Group 09-95) | 3 of 3 | – | Lexington, MA, US | 2026-11-17 | [Apply](https://careers.ll.mit.edu/job/Lexington-Summer-Research-Program-Intern-2027%2C-Space-Systems-Analysis-and-Test-%28Group-09-95%29-MA-02420/1441316600/) |
 <!-- JOBS:END -->
 
 ## Expected soon
