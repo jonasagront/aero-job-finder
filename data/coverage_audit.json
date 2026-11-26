@@ -47,7 +47,10 @@
   "Saputo": "2026-11-25",
   "Amcor": "2026-11-26",
   "Andrenam": "2026-11-26",
-  "Mii": "2026-11-26"
+  "Mii": "2026-11-26",
+  "Amentum": "2026-11-26",
+  "Anduril": "2026-11-26",
+  "Plexus": "2026-11-26"
  },
  "runs": [
   {
@@ -636,6 +639,37 @@
      "found": 0,
      "misses": [],
      "error": "HTTP 401"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-26",
+   "boards": [
+    {
+     "source": "Amentum",
+     "kind": "workday",
+     "in_scope": 2,
+     "found": 2,
+     "misses": [],
+     "read": "full list of every opening",
+     "openings": 2802
+    },
+    {
+     "source": "Anduril",
+     "kind": "greenhouse",
+     "in_scope": 4,
+     "found": 4,
+     "misses": [],
+     "read": "full list, no title filter",
+     "openings": 2600
+    },
+    {
+     "source": "Plexus",
+     "kind": "workday",
+     "in_scope": 0,
+     "found": 0,
+     "misses": [],
+     "error": "HTTP 422"
     }
    ]
   }
