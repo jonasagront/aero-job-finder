@@ -44,7 +44,10 @@
   "Hitachi": "2026-11-25",
   "Alloy Enterprises": "2026-11-25",
   "Ambarella": "2026-11-25",
-  "Saputo": "2026-11-25"
+  "Saputo": "2026-11-25",
+  "Amcor": "2026-11-26",
+  "Andrenam": "2026-11-26",
+  "Mii": "2026-11-26"
  },
  "runs": [
   {
@@ -602,6 +605,37 @@
      "misses": [],
      "read": "full list of every opening",
      "openings": 361
+    }
+   ]
+  },
+  {
+   "date": "2026-11-26",
+   "boards": [
+    {
+     "source": "Amcor",
+     "kind": "workday",
+     "in_scope": 3,
+     "found": 3,
+     "misses": [],
+     "read": "full list of every opening",
+     "openings": 772
+    },
+    {
+     "source": "Andrenam",
+     "kind": "gem",
+     "in_scope": 0,
+     "found": 0,
+     "misses": [],
+     "read": "full list, no title filter",
+     "openings": 21
+    },
+    {
+     "source": "Mii",
+     "kind": "workday",
+     "in_scope": 0,
+     "found": 0,
+     "misses": [],
+     "error": "HTTP 401"
     }
    ]
   }

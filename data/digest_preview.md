@@ -1,4 +1,4 @@
-# 220 new internships, 2 deadlines soon, 4 sources failing (Nov 25)
+# 164 new internships, 2 deadlines soon, 3 sources failing (Nov 26)
 
 ## New since the last digest (best fits first)
 
@@ -11,25 +11,24 @@
 - **85** Lockheed Martin: [Satellite Operations Intern](https://lockheedmartin.eightfold.ai/careers/job/996477890213) · Sunnyvale, CA · posted 2026-11-24 · Summer 2027
 - **85** Regal Rexnord: [Application Engineering Co-Op (Summer 2027)](https://regalrexnord.wd1.myworkdayjobs.com/Careers/job/Fort-Wayne-Indiana-United-States/Application-Engineering-Co-Op--Summer-2027-_R26_06206) · Fort Wayne, Indiana, United States · posted 2026-11-17 · All engineering
 - **82** Astrolab: [Production Engineering Intern](https://astrolab.pinpointhq.com/en/postings/83e7e8c4-dddf-4884-8b8e-39b03587f5de) · Hawthorne, California · posted 2026-11-24 · All engineering
-- **82** Boston Dynamics: [Platform Mechanical Engineer Co-Op](https://bostondynamics.wd1.myworkdayjobs.com/Boston_Dynamics/job/Waltham-Office-POST/Platform-Mechanical-Engineer-Co-Op_R3416) · Waltham Office (POST) · posted 2026-11-24 · All engineering
+- **81** Firestorm Labs: [Field Engineering Intern](https://jobs.gem.com/firestorm/am9icG9zdDrnrtsfLHPI0s2AXbtv-ZpN) · San Diego, United States · posted 2026-11-25 · All engineering
 - **81** Johnson Controls: [Materials Engineering Intern](https://jci.wd5.myworkdayjobs.com/JCI/job/Milwaukee-Wisconsin-United-States-of-America/Materials-Engineering-Intern_WD30285102) · Milwaukee-Wisconsin-United States of America · posted 2026-11-17 · All engineering
-- **80** Apex Space: [Mechanical Ground Systems Engineering Internship (Summer 2027)](https://jobs.ashbyhq.com/apex-technology-inc/e34724bd-0db2-4433-9352-7ad49d37e627) · Los Angeles · posted 2026-11-24 · Summer 2027
-- **79** GE Vernova: [GE Vernova Engineering Automation Internship - Summer 2027](https://gevernova.wd5.myworkdayjobs.com/Vernova_ExternalSite/job/Charleroi-USA/GE-Vernova-Engineering-Automation-Internship---Summer-2027_R5059697-2) · Charleroi USA · posted 2026-11-24 · All engineering
-- **79** GE Vernova (only_confidential_executive_recruiting): [GE Vernova Engineering Automation Internship - Summer 2027](https://gevernova.wd5.myworkdayjobs.com/Only_Confidential_Executive_Recruiting/job/Charleroi-USA/GE-Vernova-Engineering-Automation-Internship---Summer-2027_R5059697-1) · Charleroi USA · posted 2026-11-24 · All engineering
-- **77** GE Vernova: [GE Vernova Manufacturing Quality & Digital Work Instructions Internship - Summer 2027](https://gevernova.wd5.myworkdayjobs.com/Vernova_ExternalSite/job/Charleroi-USA/GE-Vernova-Manufacturing-Quality---Digital-Work-Instructions-Internship---Summer-2027_R5059702-2) · Charleroi USA · posted 2026-11-24 · All engineering
-- ...and 205 more
+- **79** Oshkosh: [Motorsports Internship (Summer 2027)](https://oshkoshcorporation.wd5.myworkdayjobs.com/Oshkosh/job/New-Hudson-Michigan-United-States/Intern_R52308) · New Hudson, Michigan, United States · posted 2026-11-25 · Motorsports
+- **77** Roche: [2027 Summer Intern - Microfluidic Systems Integration Research](https://roche.wd3.myworkdayjobs.com/roche-ext/job/Santa-Clara/XMLNAME-2027-Summer-Intern---Microfluidic-Systems-Integration-Research_202611-129392) · Santa Clara · posted 2026-11-18 · All engineering
+- **76** Trane Technologies: [Manufacturing Engineering Intern](https://careers.tranetechnologies.com/global/en/job/JR-20529) · Grand Rapids, Michigan, United States of America · posted 2026-11-25 · All engineering
+- **76** Tranetechnologies: [Manufacturing Engineering Intern](https://tranetechnologies.wd12.myworkdayjobs.com/Trane_Technologies_Careers/job/Grand-Rapids-Michigan/Manufacturing-Engineering-Intern_JR-20529) · Grand Rapids, Michigan · posted 2026-11-25 · All engineering
+- ...and 149 more
 
-All 275 newly found (55 only in All opportunities): https://jonasagront.github.io/aero-job-finder/#unread
+All 245 newly found (81 only in All opportunities): https://jonasagront.github.io/aero-job-finder/#unread
 
 ## Program deadlines in the next 3 weeks (verified on the official pages)
 
-- 2026-11-30 (5 days): Naval Research Enterprise Internship Program (NREIP), Summer 2027 — https://www.navalsteminterns.us/internships/connect/students/
-- 2026-12-04 (9 days): DoD SMART Scholarship-for-Service, Summer 2027 — https://www.smartscholarship.org/smart
+- 2026-11-30 (4 days): Naval Research Enterprise Internship Program (NREIP), Summer 2027 — https://www.navalsteminterns.us/internships/connect/students/
+- 2026-12-04 (8 days): DoD SMART Scholarship-for-Service, Summer 2027 — https://www.smartscholarship.org/smart
 
 ## Collection problems
 
-- Mii: failed — Workday shows its maintenance page for this site: an outage, or the company moved to another hiring system (never worked) — check by hand: https://mii.wd5.myworkdayjobs.com/universityrecruiting
-- Plexus: failed — Workday shows its maintenance page for this site: an outage, or the company moved to another hiring system (never worked) — check by hand: https://plexus.wd5.myworkdayjobs.com/Plexus_Careers
+- Dawn Aerospace: failed — HTTP 404 (last worked 2026-11-25) — check by hand: https://job-boards.greenhouse.io/dawnaerospace
 - Dell Technologies (External): stale — skipped: retry scheduled for 2026-11-28 after 5 failed runs (Workday shows its maintenance page for this site: an outage, or the company moved to another hiring system) (never worked) — check by hand: https://dell.wd1.myworkdayjobs.com/External
 - NXP Semiconductors: stale — skipped: retry scheduled for 2026-12-04 after 8 failed runs (Workday shows its maintenance page for this site: an outage, or the company moved to another hiring system) (never worked) — check by hand: https://nxp.wd3.myworkdayjobs.com/careers
 - 3 sources read only partly this run (postings they didn't return are kept, not treated as closed)

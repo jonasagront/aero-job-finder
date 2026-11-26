@@ -510,13 +510,13 @@
   }
  },
  "report": {
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "added": [],
   "states": {
-   "active": 521,
-   "candidate": 27,
+   "active": 531,
+   "candidate": 17,
    "covered": 7,
-   "repair": 2
+   "repair": 3
   },
   "repair": [
    {
@@ -541,6 +541,18 @@
     "next_try": "2026-11-28",
     "last_ok": "2026-11-20",
     "since": "2026-11-20",
+    "moved_to": ""
+   },
+   {
+    "name": "Dawn Aerospace",
+    "kind": "greenhouse",
+    "via": "list link",
+    "link": "https://job-boards.greenhouse.io/dawnaerospace",
+    "fails": 1,
+    "error": "HTTP 404",
+    "next_try": "2026-11-26",
+    "last_ok": "2026-11-25",
+    "since": "2026-11-26",
     "moved_to": ""
    }
   ],
@@ -613,7 +625,7 @@
     "fails": 0,
     "error": "",
     "next_try": "",
-    "last_ok": "2026-11-25",
+    "last_ok": "2026-11-26",
     "since": "",
     "moved_to": ""
    },
@@ -737,126 +749,6 @@
     "next_try": "2026-11-25",
     "last_ok": "",
     "since": "2026-11-25",
-    "moved_to": ""
-   },
-   {
-    "name": "Saputo",
-    "kind": "workday",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Packaging Engineering Trainee Intern)",
-    "link": "https://saputo.wd5.myworkdayjobs.com/saputo_external_careers",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Stanley Black & Decker",
-    "kind": "workday",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Intern Summer 2027)",
-    "link": "https://sbdinc.wd1.myworkdayjobs.com/Stanley_Black_Decker_Career_Site",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "SC Johnson",
-    "kind": "workday",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Packaging Engineer Intern)",
-    "link": "https://scj.wd5.myworkdayjobs.com/External_Career_Site",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Smith+Nephew",
-    "kind": "workday",
-    "via": "2 mechanical/aerospace internships on the lists (e.g. Intern Mechanical Engineering)",
-    "link": "https://smithnephew.wd5.myworkdayjobs.com/External",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "STV",
-    "kind": "workday",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Intern - Summer 2027)",
-    "link": "https://stvinc.wd5.myworkdayjobs.com/stv",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Tandem Diabetes Care",
-    "kind": "workday",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Electrical Test Engineer Intern)",
-    "link": "https://tandemdiabetes.wd12.myworkdayjobs.com/tandemdiabetes",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Thermo Fisher Scientific",
-    "kind": "workday",
-    "via": "2 mechanical/aerospace internships on the lists (e.g. Systems Integration and Test Engineering Intern)",
-    "link": "https://thermofisher.wd5.myworkdayjobs.com/ThermoFisherCareers",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Tranetechnologies",
-    "kind": "workday",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Co-op)",
-    "link": "https://tranetechnologies.wd12.myworkdayjobs.com/trane_technologies_careers",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "TREK",
-    "kind": "workday",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Intern)",
-    "link": "https://trekbikes.wd1.myworkdayjobs.com/TREK",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
-    "moved_to": ""
-   },
-   {
-    "name": "Trimble",
-    "kind": "workday",
-    "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Engineering Intern - CTCT)",
-    "link": "https://trimble.wd1.myworkdayjobs.com/TrimbleCareers",
-    "fails": 0,
-    "error": "",
-    "next_try": "",
-    "last_ok": "",
-    "since": "",
     "moved_to": ""
    },
    {
