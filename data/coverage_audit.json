@@ -6,7 +6,7 @@
   "ABB": "2026-11-20",
   "AECOM": "2026-11-20",
   "Niantic Spatial": "2026-11-20",
-  "10x Genomics": "2026-11-20",
+  "10x Genomics": "2026-11-27",
   "ALSO": "2026-11-20",
   "Atomic Semi": "2026-11-27",
   "AMCA": "2026-11-21",
@@ -54,7 +54,9 @@
   "Analog Devices": "2026-11-27",
   "Antares": "2026-11-27",
   "Analytical Mechanics Associates": "2026-11-27",
-  "Apex Space": "2026-11-27"
+  "Apex Space": "2026-11-27",
+  "Applied Materials": "2026-11-27",
+  "Applied Research Associates": "2026-11-27"
  },
  "runs": [
   {
@@ -733,6 +735,47 @@
     {
      "source": "Atomic Semi",
      "kind": "ashby",
+     "in_scope": 0,
+     "found": 0,
+     "misses": [],
+     "error": "HTTP 404"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-27",
+   "boards": [
+    {
+     "source": "Applied Materials",
+     "kind": "workday",
+     "in_scope": 1,
+     "found": 0,
+     "misses": [
+      {
+       "category": "collection",
+       "why": "the board's searches didn't return it to the scan (a copy from another source was dropped: lead (no company link) at a company outside aerospace and motorsport)",
+       "title": "2027 Spring Process Engineer Co-op - Doctorate (Gloucester, MA)",
+       "url": "https://amat.wd1.myworkdayjobs.com/External/job/GloucesterMA/XMLNAME-2027-Spring-Process-Engineer-Co-op---Doctorate--Gloucester--MA-_R2633258",
+       "key": "wd:amat:r2633258",
+       "posted": "2026-11-14",
+       "location": "Gloucester,MA"
+      }
+     ],
+     "read": "full list of every opening",
+     "openings": 2000
+    },
+    {
+     "source": "Applied Research Associates",
+     "kind": "ukg",
+     "in_scope": 0,
+     "found": 0,
+     "misses": [],
+     "read": "same searches with higher page caps, no title filter",
+     "openings": 3
+    },
+    {
+     "source": "10x Genomics",
+     "kind": "greenhouse",
      "in_scope": 0,
      "found": 0,
      "misses": [],

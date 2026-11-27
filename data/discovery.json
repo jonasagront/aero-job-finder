@@ -511,13 +511,7 @@
  },
  "report": {
   "date": "2026-11-27",
-  "added": [
-   {
-    "name": "Modernizing Medicine",
-    "kind": "workday",
-    "via": "replacement for greenhouse:modernizingmedicineinc (failing since 2026-11-21)"
-   }
-  ],
+  "added": [],
   "states": {
    "active": 541,
    "candidate": 8,
@@ -539,6 +533,18 @@
     "moved_to": ""
    },
    {
+    "name": "Dawn Aerospace",
+    "kind": "greenhouse",
+    "via": "list link",
+    "link": "https://job-boards.greenhouse.io/dawnaerospace",
+    "fails": 5,
+    "error": "HTTP 404",
+    "next_try": "2026-12-01",
+    "last_ok": "2026-11-25",
+    "since": "2026-11-26",
+    "moved_to": ""
+   },
+   {
     "name": "Dell Technologies (External)",
     "kind": "workday",
     "via": "1 mechanical/aerospace internship on the lists (e.g. Dell CSG Hardware Engineering Intern)",
@@ -548,18 +554,6 @@
     "next_try": "2026-11-28",
     "last_ok": "2026-11-20",
     "since": "2026-11-20",
-    "moved_to": ""
-   },
-   {
-    "name": "Dawn Aerospace",
-    "kind": "greenhouse",
-    "via": "list link",
-    "link": "https://job-boards.greenhouse.io/dawnaerospace",
-    "fails": 4,
-    "error": "HTTP 404",
-    "next_try": "2026-11-29",
-    "last_ok": "2026-11-25",
-    "since": "2026-11-26",
     "moved_to": ""
    }
   ],

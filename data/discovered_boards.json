@@ -1243,13 +1243,13 @@
   "board": "dawnaerospace",
   "name": "Dawn Aerospace",
   "first_seen": "2026-10-28",
-  "fails": 4,
+  "fails": 5,
   "last_seen": "2026-11-11",
   "state": "repair",
   "last_ok": "2026-11-25",
   "error": "HTTP 404",
   "fail_since": "2026-11-26",
-  "next_try": "2026-11-29"
+  "next_try": "2026-12-01"
  },
  "greenhouse:defenseunicorns": {
   "kind": "greenhouse",
@@ -5558,7 +5558,7 @@
   "name": "GE Aerospace",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-19",
+  "last_seen": "2026-11-27",
   "state": "active",
   "last_ok": "2026-11-27"
  },
@@ -6298,7 +6298,9 @@
   "fails": 0,
   "state": "active",
   "via": "replacement for greenhouse:modernizingmedicineinc (failing since 2026-11-21)",
-  "engineering": true
+  "engineering": true,
+  "label": "Modernizing Medicine",
+  "last_ok": "2026-11-27"
  },
  "workday:momentive.wd1.myworkdayjobs.com/mc": {
   "kind": "workday",
