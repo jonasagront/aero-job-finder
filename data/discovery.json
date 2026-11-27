@@ -510,7 +510,7 @@
   }
  },
  "report": {
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "added": [],
   "states": {
    "active": 540,
@@ -548,9 +548,9 @@
     "kind": "greenhouse",
     "via": "list link",
     "link": "https://job-boards.greenhouse.io/dawnaerospace",
-    "fails": 2,
+    "fails": 3,
     "error": "HTTP 404",
-    "next_try": "2026-11-26",
+    "next_try": "2026-11-28",
     "last_ok": "2026-11-25",
     "since": "2026-11-26",
     "moved_to": ""
@@ -625,7 +625,7 @@
     "fails": 0,
     "error": "",
     "next_try": "",
-    "last_ok": "2026-11-26",
+    "last_ok": "2026-11-27",
     "since": "",
     "moved_to": ""
    },
@@ -648,9 +648,9 @@
     "kind": "ashby",
     "via": "2 mechanical/aerospace internships on the lists (e.g. Packaging Engineering Intern)",
     "link": "https://jobs.ashbyhq.com/atomicsemi",
-    "fails": 2,
+    "fails": 3,
     "error": "HTTP 404",
-    "next_try": "2026-11-26",
+    "next_try": "2026-11-28",
     "last_ok": "",
     "since": "2026-11-20",
     "moved_to": ""
@@ -660,9 +660,9 @@
     "kind": "greenhouse",
     "via": "2 mechanical/aerospace internships on the lists (e.g. Intern – Instrument Hardware Engineering)",
     "link": "https://job-boards.greenhouse.io/10xgenomics",
-    "fails": 2,
+    "fails": 3,
     "error": "HTTP 404",
-    "next_try": "2026-11-26",
+    "next_try": "2026-11-28",
     "last_ok": "",
     "since": "2026-11-20",
     "moved_to": ""
@@ -684,9 +684,9 @@
     "kind": "greenhouse",
     "via": "1 mechanical/aerospace internship on the lists (e.g. Product Development Intern - AI & ML Engineering)",
     "link": "https://job-boards.greenhouse.io/modernizingmedicineinc",
-    "fails": 1,
+    "fails": 2,
     "error": "HTTP 404",
-    "next_try": "2026-11-21",
+    "next_try": "2026-11-27",
     "last_ok": "",
     "since": "2026-11-21",
     "moved_to": ""
@@ -696,9 +696,9 @@
     "kind": "lever",
     "via": "1 mechanical/aerospace internship on the lists (e.g. Intern – Hardware Engineer - Hardware Engineering)",
     "link": "https://jobs.lever.co/anysignal",
-    "fails": 1,
+    "fails": 2,
     "error": "HTTP 404",
-    "next_try": "2026-11-22",
+    "next_try": "2026-11-27",
     "last_ok": "",
     "since": "2026-11-22",
     "moved_to": ""
@@ -720,9 +720,9 @@
     "kind": "workday",
     "via": "1 mechanical/aerospace internship on the lists (e.g. Field Test Engineering Intern)",
     "link": "https://gtsgbu.wd3.myworkdayjobs.com/Careers",
-    "fails": 1,
+    "fails": 2,
     "error": "Workday shows its maintenance page for this site: an outage, or the company moved to another hiring system",
-    "next_try": "2026-11-24",
+    "next_try": "2026-11-27",
     "last_ok": "",
     "since": "2026-11-24",
     "moved_to": ""
@@ -732,9 +732,9 @@
     "kind": "workday",
     "via": "1 mechanical/aerospace internship on the lists (e.g. Design Engineer Intern (Wood Truss))",
     "link": "https://mii.wd5.myworkdayjobs.com/universityrecruiting",
-    "fails": 1,
+    "fails": 2,
     "error": "Workday shows its maintenance page for this site: an outage, or the company moved to another hiring system",
-    "next_try": "2026-11-25",
+    "next_try": "2026-11-27",
     "last_ok": "",
     "since": "2026-11-25",
     "moved_to": ""
@@ -744,9 +744,9 @@
     "kind": "workday",
     "via": "2 mechanical/aerospace internships on the lists (e.g. Intern Hardware Engineer)",
     "link": "https://plexus.wd5.myworkdayjobs.com/Plexus_Careers",
-    "fails": 1,
+    "fails": 2,
     "error": "Workday shows its maintenance page for this site: an outage, or the company moved to another hiring system",
-    "next_try": "2026-11-25",
+    "next_try": "2026-11-27",
     "last_ok": "",
     "since": "2026-11-25",
     "moved_to": ""
@@ -806,6 +806,14 @@
     ]
    },
    {
+    "host": "careers.hpe.com",
+    "count": 2,
+    "companies": [
+     "Hpe Simplivity",
+     "Nimble Storage"
+    ]
+   },
+   {
     "host": "careers.eutelsat.com",
     "count": 2,
     "companies": [
@@ -827,14 +835,6 @@
     "companies": [
      "Ilmor",
      "York Space Systems"
-    ]
-   },
-   {
-    "host": "careers.hpe.com",
-    "count": 2,
-    "companies": [
-     "Hpe Simplivity",
-     "Nimble Storage"
     ]
    },
    {

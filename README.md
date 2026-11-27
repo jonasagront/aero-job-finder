@@ -89,7 +89,7 @@ history fills more of that in.
 ## Today's top matches
 
 <!-- JOBS:START -->
-**370 Summer 2027 aerospace matches** (3 in Motorsports, 16 Fall 2027 near home, 1294 in All engineering, 152 leads without a direct link) as of Nov 26, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
+**349 Summer 2027 aerospace matches** (3 in Motorsports, 14 Fall 2027 near home, 1220 in All engineering, 146 leads without a direct link) as of Nov 27, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
 
 | Fit | Company | Role | Preferred quals | Required quals | Location | Posted | Apply |
 |---|---|---|---|---|---|---|---|
@@ -113,17 +113,17 @@ history fills more of that in.
 | 83 | Reliable Robotics | Hardware Test Engineering Intern (Summer 2027) | 2.5 of 3 | 3.5 of 6 | Mountain View, CA | 2026-11-13 | [Apply](https://jobs.ashbyhq.com/reliable-robotics/0af72d5a-87b7-49a1-b49e-424d28758c9e) |
 | 82 | Safran Defense & Space | Mechanical Engineering Internship | – | 4 of 4 | Bedford, NH, US, 03110 | 2026-11-14 | [Apply](https://careers.safran-dsi.com/job/Bedford-Mechanical-Engineering-Internship-NH-03110/1431029700/) |
 | 82 | Scout Space | Mechanical Engineering Intern (Summer 2027) | 1 of 1 | 3 of 3 | Reston, VA | 2026-11-19 | [Apply](https://job-boards.greenhouse.io/scoutspace/jobs/5489237008) |
-| 82 | MIT Lincoln Laboratory | Summer Research Program Intern 2027, Systems & Analysis (Group 10-09) | 3 of 3 | – | Lexington, MA, US | 2026-11-11 | [Apply](https://careers.ll.mit.edu/job/Lexington-Summer-Research-Program-Intern-2027%2C-Systems-&-Analysis-%28Group-10-09%29-MA-02420/1439633800/) |
 | 82 | The Aerospace Corporation | 2027 Communication Architectures Modeling and Analysis Engineering Grad Intern | – | 5 of 5 | El Segundo, CA | 2026-11-16 | [Apply](https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/XMLNAME-2027-Communication-Architectures-Modeling-and-Analysis-Engineering-Grad-Intern_R017010) |
 | 82 | The Aerospace Corporation | 2027 Communication Architectures Modeling and Analysis Engineering Undergraduate Intern | – | 5 of 5 | El Segundo, CA | 2026-11-16 | [Apply](https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/XMLNAME-2027-Communication-Architectures-Modeling-and-Analysis-Engineering-Undergraduate-Intern_R017009) |
 | 81 | MIT Lincoln Laboratory | Summer Research Program Intern 2027, Space Systems Analysis and Test (Group 09-95) | 3 of 3 | – | Lexington, MA, US | 2026-11-17 | [Apply](https://careers.ll.mit.edu/job/Lexington-Summer-Research-Program-Intern-2027%2C-Space-Systems-Analysis-and-Test-%28Group-09-95%29-MA-02420/1441316600/) |
 | 81 | Airbus | #Discover I 2027-2028 Aerodynamics Intern | – | 4 of 4 | Getafe | 2026-11-17 | [Apply](https://ag.wd3.myworkdayjobs.com/Airbus/job/Getafe/XMLNAME--Discover-I-2027-2028-Aerodynamics-Intern_JR10458142) |
+| 80 | Apex Space | Mechanical Ground Systems Engineering Internship (Summer 2027) | 3.5 of 7 | 6 of 6 | Los Angeles | 2026-11-24 | [Apply](https://jobs.ashbyhq.com/apex-technology-inc/e34724bd-0db2-4433-9352-7ad49d37e627) |
 <!-- JOBS:END -->
 
 ## Expected soon
 
 <!-- PREDICTED:START -->
-**21 aerospace internships expected in the next 60 days**, from past cycles' posting dates. All of them, with filters: **[Predicted tab](https://jonasagront.github.io/aero-job-finder/#predicted)**
+**22 aerospace internships expected in the next 60 days**, from past cycles' posting dates. All of them, with filters: **[Predicted tab](https://jonasagront.github.io/aero-job-finder/#predicted)**
 
 | Expected | Company | Role | For | Last cycle's posting date | Career site |
 |---|---|---|---|---|---|

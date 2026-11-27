@@ -11,7 +11,7 @@
   "Atomic Semi": "2026-11-20",
   "AMCA": "2026-11-21",
   "AMD": "2026-11-21",
-  "Archer": "2026-11-21",
+  "Archer": "2026-11-27",
   "ASML": "2026-11-21",
   "AST SpaceMobile": "2026-11-21",
   "Modernizing Medicine": "2026-11-21",
@@ -50,7 +50,9 @@
   "Mii": "2026-11-26",
   "Amentum": "2026-11-26",
   "Anduril": "2026-11-26",
-  "Plexus": "2026-11-26"
+  "Plexus": "2026-11-26",
+  "Analog Devices": "2026-11-27",
+  "Antares": "2026-11-27"
  },
  "runs": [
   {
@@ -670,6 +672,38 @@
      "found": 0,
      "misses": [],
      "error": "HTTP 422"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-27",
+   "boards": [
+    {
+     "source": "Analog Devices",
+     "kind": "workday",
+     "in_scope": 11,
+     "found": 11,
+     "misses": [],
+     "read": "full list of every opening",
+     "openings": 762
+    },
+    {
+     "source": "Antares",
+     "kind": "ashby",
+     "in_scope": 0,
+     "found": 0,
+     "misses": [],
+     "read": "full list, no title filter",
+     "openings": 84
+    },
+    {
+     "source": "Archer",
+     "kind": "greenhouse",
+     "in_scope": 0,
+     "found": 0,
+     "misses": [],
+     "read": "full list, no title filter",
+     "openings": 79
     }
    ]
   }
