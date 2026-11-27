@@ -8,7 +8,7 @@
   "Niantic Spatial": "2026-11-20",
   "10x Genomics": "2026-11-20",
   "ALSO": "2026-11-20",
-  "Atomic Semi": "2026-11-20",
+  "Atomic Semi": "2026-11-27",
   "AMCA": "2026-11-21",
   "AMD": "2026-11-21",
   "Archer": "2026-11-27",
@@ -52,7 +52,9 @@
   "Anduril": "2026-11-26",
   "Plexus": "2026-11-26",
   "Analog Devices": "2026-11-27",
-  "Antares": "2026-11-27"
+  "Antares": "2026-11-27",
+  "Analytical Mechanics Associates": "2026-11-27",
+  "Apex Space": "2026-11-27"
  },
  "runs": [
   {
@@ -704,6 +706,37 @@
      "misses": [],
      "read": "full list, no title filter",
      "openings": 79
+    }
+   ]
+  },
+  {
+   "date": "2026-11-27",
+   "boards": [
+    {
+     "source": "Analytical Mechanics Associates",
+     "kind": "workday",
+     "in_scope": 0,
+     "found": 0,
+     "misses": [],
+     "read": "full list of every opening",
+     "openings": 21
+    },
+    {
+     "source": "Apex Space",
+     "kind": "ashby",
+     "in_scope": 2,
+     "found": 2,
+     "misses": [],
+     "read": "full list, no title filter",
+     "openings": 141
+    },
+    {
+     "source": "Atomic Semi",
+     "kind": "ashby",
+     "in_scope": 0,
+     "found": 0,
+     "misses": [],
+     "error": "HTTP 404"
     }
    ]
   }
