@@ -89,22 +89,18 @@ history fills more of that in.
 ## Today's top matches
 
 <!-- JOBS:START -->
-**344 Summer 2027 aerospace matches** (3 in Motorsports, 14 Fall 2027 near home, 1208 in All engineering, 148 leads without a direct link) as of Nov 27, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
+**326 Summer 2027 aerospace matches** (2 in Motorsports, 13 Fall 2027 near home, 1091 in All engineering, 204 leads without a direct link) as of Nov 28, 2026. Full list with filters: **[open the job page](https://jonasagront.github.io/aero-job-finder/)**
 
 | Fit | Company | Role | Preferred quals | Required quals | Location | Posted | Apply |
 |---|---|---|---|---|---|---|---|
-| 98 | GE Aerospace | Working Student – Thermal Systems Design / CFD Analysis (m/f/d) | 4 of 4 | 6 of 6 | Garching | 2026-11-12 | [Apply](https://geaerospace.wd5.myworkdayjobs.com/GE_ExternalSite/job/Garching/Working-Student---Thermal-Systems-Design---CFD-Analysis--m-f-d-_R5043154-2) |
 | 90 | Intuitive Machines | Satellite Mission Operations Intern – Altus | 3 of 4 | 2 of 2 | Houston, TX; Houston, TX | 2026-11-13 | [Apply](https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=b0e24f83-6e4d-492d-9d6a-bc0fea197d6a&lang=en_US&locale=en_US&ccId=19000101_000001&jobId=9207519358072_165) |
-| 90 | Shield AI (shield) | 2027 June Co-op - Hardware Test - #6426 | 2 of 2 | 2 of 2 | Dallas, TX, US | 2026-11-12 | [Apply](https://jobs.ashbyhq.com/shield/ec8a822c-ccbf-4b4e-b41c-2f0db5c8342d) |
 | 89 | Intuitive Machines | Guidance, Navigation & Controls (GNC) Intern | 1 of 1 | 3 of 3 | Houston, TX; Houston, TX | 2026-11-13 | [Apply](https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=b0e24f83-6e4d-492d-9d6a-bc0fea197d6a&lang=en_US&locale=en_US&ccId=19000101_000001&jobId=9207519357554_173) |
 | 88 | MIT Lincoln Laboratory | Summer Research Program Intern 2027, Mechanical Engineering (Group 07-71) | – | – | Lexington, MA, US | 2026-11-25 | [Apply](https://careers.ll.mit.edu/job/Lexington-Summer-Research-Program-Intern-2027%2C-Mechanical-Engineering-%28Group-07-71%29-MA-02420/1434255400/) |
 | 87 | Reliable Robotics | Flight Test Integration Engineer Intern (Summer 2027) | 2 of 3 | 2 of 2 | Mountain View, CA | 2026-11-13 | [Apply](https://jobs.ashbyhq.com/reliable-robotics/1d020651-71bb-4e47-baa6-2286dc780d96) |
 | 86 | Intuitive Machines | Assembly Integration & Test Intern | 1 of 1 | 2 of 2 | Houston, TX | 2026-11-13 | [Apply](https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=b0e24f83-6e4d-492d-9d6a-bc0fea197d6a&lang=en_US&locale=en_US&ccId=19000101_000001&jobId=9207519595481_89) |
-| 86 | Lockheed Martin | aerospace engineering intern | 1 of 1 | 3 of 3 | Littleton, CO | 2026-11-12 | [Apply](https://lockheedmartin.eightfold.ai/careers/job/996477909687) |
 | 85 | MIT Lincoln Laboratory | Summer Research Program Intern 2027, Advanced Sensor Systems and Test Beds (Group 03-33) | 1 of 1 | 4 of 4 | Lexington, MA, US | 2026-11-17 | [Apply](https://careers.ll.mit.edu/job/Lexington-Summer-Research-Program-Intern-2027%2C-Advanced-Sensor-Systems-and-Test-Beds-%28Group-03-33%29-MA-02420/1441287700/) |
 | 85 | Lockheed Martin | Aeronautical Engineering Intern | 3 of 4 | 3 of 3 | King of Prussia, PA | 2026-11-23 | [Apply](https://lockheedmartin.eightfold.ai/careers/job/996478125490) |
 | 85 | Sandia National Laboratories | Intern, R&D Graduate Year Round - Concentrating Solar Thermal Technologies, Onsite | – | 2 of 2 | Albuquerque, NM, USA | 2026-11-19 | [Apply](https://sandia.jobs/535112F90DDF471BB17D1255B71A36D925) |
-| 85 | GE Aerospace | Test and Manufacturing Operations Intern - Bohemia, NY - Summer 2027 | 4.5 of 7 | 8.5 of 9 | Bohemia | 2026-11-12 | [Apply](https://geaerospace.wd5.myworkdayjobs.com/GE_ExternalSite/job/Bohemia/Test-and-Manufacturing-Operations-Intern---Bohemia--NY---Summer-2027_R5042960-1) |
 | 85 | Lockheed Martin | Satellite Operations Intern | 3.5 of 5 | 3 of 3 | Sunnyvale, CA | 2026-11-24 | [Apply](https://lockheedmartin.eightfold.ai/careers/job/996477890213) |
 | 84 | Howmet Aerospace | Process Engineer Co-Op | 2 of 2 | 2 of 2 | LaPorte, IN, United States | 2026-11-20 | [Apply](https://fa-exty-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/120667) |
 | 84 | Intuitive Machines | Structures and Design Intern | 3 of 5 | 3 of 3 | Houston, TX; Houston, TX | 2026-11-17 | [Apply](https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=b0e24f83-6e4d-492d-9d6a-bc0fea197d6a&lang=en_US&locale=en_US&ccId=19000101_000001&jobId=9207523114195_165) |
@@ -118,16 +114,19 @@ history fills more of that in.
 | 81 | MIT Lincoln Laboratory | Summer Research Program Intern 2027, Space Systems Analysis and Test (Group 09-95) | 3 of 3 | – | Lexington, MA, US | 2026-11-17 | [Apply](https://careers.ll.mit.edu/job/Lexington-Summer-Research-Program-Intern-2027%2C-Space-Systems-Analysis-and-Test-%28Group-09-95%29-MA-02420/1441316600/) |
 | 81 | Airbus | #Discover I 2027-2028 Aerodynamics Intern | – | 4 of 4 | Getafe | 2026-11-17 | [Apply](https://ag.wd3.myworkdayjobs.com/Airbus/job/Getafe/XMLNAME--Discover-I-2027-2028-Aerodynamics-Intern_JR10458142) |
 | 80 | Apex Space | Mechanical Ground Systems Engineering Internship (Summer 2027) | 3.5 of 7 | 6 of 6 | Los Angeles | 2026-11-24 | [Apply](https://jobs.ashbyhq.com/apex-technology-inc/e34724bd-0db2-4433-9352-7ad49d37e627) |
+| 80 | MIT Lincoln Laboratory | Summer Research Program Intern 2027, Structural & Thermal-Fluids Engineering (Group Group 07-74) | – | 0.5 of 1 | Lexington, MA, US | 2026-11-19 | [Apply](https://careers.ll.mit.edu/job/Lexington-Summer-Research-Program-Intern-2027%2C-Structural-&-Thermal-Fluids-Engineering-%28Group-Group-07-74%29-MA-02420/1442417400/) |
+| 80 | MIT Lincoln Laboratory | Rapid Prototyping Aero/Mech Co-Op - Group 77 | – | 2 of 2 | Lexington, MA, US | 2026-11-20 | [Apply](https://careers.ll.mit.edu/job/Lexington-Rapid-Prototyping-AeroMech-Co-Op-Group-77-MA-02420/1423005300/) |
+| 80 | MIT Lincoln Laboratory | Structural & Thermal-Fluids Engineering Co-Op (Spring/Summer 2027) - Group 07-74 | – | 0.5 of 1 | Lexington, MA, US | 2026-11-18 | [Apply](https://careers.ll.mit.edu/job/Lexington-Structural-&-Thermal-Fluids-Engineering-Co-Op-%28SpringSummer-2027%29-Group-07-74-MA-02420/1451968600/) |
+| 79 | Intuitive Machines | Lunar Lander Mission Operations Intern | 2 of 3 | 2 of 2 | Houston, TX | 2026-11-13 | [Apply](https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=b0e24f83-6e4d-492d-9d6a-bc0fea197d6a&lang=en_US&locale=en_US&ccId=19000101_000001&jobId=9207519357554_215) |
 <!-- JOBS:END -->
 
 ## Expected soon
 
 <!-- PREDICTED:START -->
-**22 aerospace internships expected in the next 60 days**, from past cycles' posting dates. All of them, with filters: **[Predicted tab](https://jonasagront.github.io/aero-job-finder/#predicted)**
+**21 aerospace internships expected in the next 60 days**, from past cycles' posting dates. All of them, with filters: **[Predicted tab](https://jonasagront.github.io/aero-job-finder/#predicted)**
 
 | Expected | Company | Role | For | Last cycle's posting date | Career site |
 |---|---|---|---|---|---|
-| ~2026-11-06 (due now) | Anduril | Perception Engineer Intern | Summer 2027 | 2024-11-06 | [Open](https://job-boards.greenhouse.io/andurilindustries) |
 | ~2026-11-08 (due now) | Leidos | AI Explainability Engineer Intern | Summer 2027 | 2024-11-08 | [Open](https://leidos.wd5.myworkdayjobs.com/External) |
 | ~2026-11-13 (due now) | Northrop Grumman | Engineering Intern - Radford VA | Summer 2027 | 2025-11-13 | [Open](https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site) |
 | ~2026-11-21 (due now) | Leidos | Aerospace AI/ML Intern | Summer 2027 | 2025-11-11 | [Open](https://leidos.wd5.myworkdayjobs.com/External) |
@@ -142,6 +141,7 @@ history fills more of that in.
 | ~2026-12-13 | Zipline | Embedded Engineering Intern | Summer 2027 | 2025-12-13 | [Open](https://job-boards.greenhouse.io/flyzipline) |
 | ~2026-12-16 | Draper | Electronics Integration & Test Intern | Summer 2027 | 2025-12-16 | [Open](https://draper.wd5.myworkdayjobs.com/Draper_Careers) |
 | ~2026-12-17 | Parsons | Exploitation – And Analysis Engineer Intern - Test | Summer 2027 | 2024-12-17 | [Open](https://parsons.wd5.myworkdayjobs.com/search) |
+| ~2027-01-01 | Parsons | Computer Engineer Intern | Summer 2027 | 2025-11-25 | [Open](https://parsons.wd5.myworkdayjobs.com/search) |
 <!-- PREDICTED:END -->
 
 ---

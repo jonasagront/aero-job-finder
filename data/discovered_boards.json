@@ -8,7 +8,7 @@
   "state": "active",
   "via": "list link (2026-11-18)",
   "last_seen": "2026-11-21",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "adp:b0e24f83-6e4d-492d-9d6a-bc0fea197d6a": {
   "kind": "adp",
@@ -18,8 +18,8 @@
   "fails": 0,
   "state": "active",
   "via": "list link (2026-11-13)",
-  "last_seen": "2026-11-27",
-  "last_ok": "2026-11-27"
+  "last_seen": "2026-11-28",
+  "last_ok": "2026-11-28"
  },
  "applicantpro:roushyates.isolvedhire.com": {
   "kind": "applicantpro",
@@ -30,7 +30,7 @@
   "state": "active",
   "via": "list link (2026-11-12)",
   "last_seen": "2026-11-12",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "applicantpro:xbowsystems.applicantpro.com": {
   "kind": "applicantpro",
@@ -40,7 +40,7 @@
   "fails": 0,
   "state": "active",
   "via": "list link (2026-10-27)",
-  "last_seen": "2026-11-27"
+  "last_seen": "2026-11-28"
  },
  "ashby:allen-control-systems": {
   "kind": "ashby",
@@ -48,9 +48,9 @@
   "name": "Allen Control Systems",
   "first_seen": "2026-10-30",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "ashby:alloyenterprises": {
   "kind": "ashby",
@@ -64,7 +64,7 @@
   "last_seen": "2026-03-25",
   "label": "Alloy Enterprises",
   "tried": "2026-11-20",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-20"
  },
  "ashby:antares": {
@@ -73,7 +73,7 @@
   "name": "Antares Nuclear",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active"
  },
  "ashby:apex-technology-inc": {
@@ -82,7 +82,7 @@
   "name": "Apex",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active"
  },
  "ashby:atomicsemi": {
@@ -90,16 +90,16 @@
   "board": "atomicsemi",
   "name": "Atomic Semi",
   "first_seen": "2026-11-20",
-  "fails": 3,
+  "fails": 4,
   "state": "candidate",
   "via": "2 mechanical/aerospace internships on the lists (e.g. Packaging Engineering Intern)",
   "engineering": true,
   "last_seen": "2026-03-30",
   "label": "Atomic Semi",
-  "tried": "2026-11-27",
+  "tried": "2026-11-28",
   "error": "HTTP 404",
   "fail_since": "2026-11-20",
-  "next_try": "2026-11-28"
+  "next_try": "2026-11-30"
  },
  "ashby:base-power": {
   "kind": "ashby",
@@ -110,7 +110,7 @@
   "engineering": true,
   "last_seen": "2026-10-30",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "ashby:bedrock-robotics": {
   "kind": "ashby",
@@ -121,7 +121,7 @@
   "engineering": true,
   "last_seen": "2026-10-12",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "ashby:bracket-bot": {
   "kind": "ashby",
@@ -135,7 +135,7 @@
   "last_seen": "2026-09-23",
   "label": "Bracket Bot",
   "tried": "2026-11-20",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-20"
  },
  "ashby:bridgeneurotech": {
@@ -150,7 +150,7 @@
   "last_seen": "2026-11-11",
   "label": "Bridge Neurotech",
   "tried": "2026-11-20",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-20"
  },
  "ashby:carbon-robotics": {
@@ -164,7 +164,7 @@
   "last_seen": "2026-11-20",
   "engineering": true,
   "label": "Carbon Robotics",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "ashby:constellationspace": {
   "kind": "ashby",
@@ -172,9 +172,9 @@
   "name": "Constellation Space",
   "first_seen": "2026-10-28",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "ashby:contoro": {
   "kind": "ashby",
@@ -188,7 +188,7 @@
   "last_seen": "2026-09-16",
   "label": "Contoro",
   "tried": "2026-11-20",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-20"
  },
  "ashby:cowboyspace": {
@@ -197,9 +197,9 @@
   "name": "Cowboy Space",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "ashby:cyvl": {
   "kind": "ashby",
@@ -213,7 +213,7 @@
   "last_seen": "2026-09-14",
   "label": "Cyvl",
   "tried": "2026-11-20",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-20"
  },
  "ashby:d-matrix": {
@@ -228,7 +228,7 @@
   "last_seen": "2026-05-21",
   "label": "d-Matrix",
   "tried": "2026-11-20",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-20"
  },
  "ashby:dedalus-labs": {
@@ -243,7 +243,7 @@
   "last_seen": "2026-08-15",
   "label": "Dedalus Labs",
   "tried": "2026-11-20",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-20"
  },
  "ashby:distributed-spectrum": {
@@ -252,9 +252,9 @@
   "name": "Distributed Spectrum",
   "first_seen": "2026-10-28",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "ashby:eightsleep": {
   "kind": "ashby",
@@ -268,7 +268,7 @@
   "last_seen": "2026-09-02",
   "label": "Eight Sleep",
   "tried": "2026-11-20",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-20"
  },
  "ashby:elveo": {
@@ -277,9 +277,9 @@
   "name": "Lynk Global",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "ashby:epianeuro": {
   "kind": "ashby",
@@ -293,7 +293,7 @@
   "last_seen": "2026-08-15",
   "label": "Epia Neuro",
   "tried": "2026-11-20",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-20"
  },
  "ashby:f7d8749a-72d6-407c-bf98-292ea630c73a": {
@@ -319,7 +319,7 @@
   "engineering": true,
   "last_seen": "2026-09-05",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "ashby:firstordereffects": {
   "kind": "ashby",
@@ -327,9 +327,9 @@
   "name": "First Order Effects",
   "first_seen": "2026-10-28",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "ashby:formenergy": {
   "kind": "ashby",
@@ -342,7 +342,7 @@
   "last_seen": "2026-11-21",
   "engineering": true,
   "label": "Form Energy",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "ashby:fourth-power": {
   "kind": "ashby",
@@ -356,7 +356,7 @@
   "last_seen": "2026-10-27",
   "label": "Fourth Power",
   "tried": "2026-11-20",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-20"
  },
  "ashby:gecko-robotics": {
@@ -370,7 +370,7 @@
   "last_seen": "2026-11-21",
   "engineering": true,
   "label": "Gecko Robotics",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "ashby:graymatter-robotics": {
   "kind": "ashby",
@@ -384,7 +384,7 @@
   "last_seen": "2026-11-23",
   "label": "GrayMatter Robotics",
   "tried": "2026-11-20",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-20"
  },
  "ashby:gritt": {
@@ -399,7 +399,7 @@
   "last_seen": "2026-08-24",
   "label": "Gritt",
   "tried": "2026-11-20",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-20"
  },
  "ashby:gumloop": {
@@ -414,7 +414,7 @@
   "last_seen": "2026-07-16",
   "label": "Gumloop",
   "tried": "2026-11-20",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-20"
  },
  "ashby:h3x-technologies": {
@@ -423,9 +423,9 @@
   "name": "H3X Technologies",
   "first_seen": "2026-11-03",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "ashby:hadrian-automation": {
   "kind": "ashby",
@@ -433,9 +433,9 @@
   "name": "Hadrian",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "ashby:heron-power": {
   "kind": "ashby",
@@ -446,7 +446,7 @@
   "engineering": true,
   "last_seen": "2026-06-23",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "ashby:human-computer-lab": {
   "kind": "ashby",
@@ -460,7 +460,7 @@
   "last_seen": "2026-07-24",
   "label": "Human Computer Lab",
   "tried": "2026-11-20",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-20"
  },
  "ashby:hypercubic": {
@@ -472,7 +472,7 @@
   "last_seen": "2026-11-04",
   "state": "active",
   "label": "Hypercubic",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "ashby:iceye": {
   "kind": "ashby",
@@ -480,9 +480,9 @@
   "name": "ICEYE",
   "first_seen": "2026-10-30",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "ashby:mach": {
   "kind": "ashby",
@@ -507,7 +507,7 @@
   "last_seen": "2026-11-18",
   "state": "active",
   "label": "Matician",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "ashby:meter": {
   "kind": "ashby",
@@ -521,7 +521,7 @@
   "last_seen": "2026-10-10",
   "label": "Meter",
   "tried": "2026-11-20",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-20"
  },
  "ashby:mindrobotics": {
@@ -536,7 +536,7 @@
   "last_seen": "2026-08-13",
   "label": "Mind Robotics",
   "tried": "2026-11-20",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-20"
  },
  "ashby:niantic-spatial": {
@@ -551,7 +551,7 @@
   "last_seen": "2026-08-06",
   "label": "Niantic Spatial",
   "tried": "2026-11-20",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-20"
  },
  "ashby:northwoodspace": {
@@ -560,9 +560,9 @@
   "name": "Northwood Space",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "ashby:odys-aviation": {
   "kind": "ashby",
@@ -570,9 +570,9 @@
   "name": "Odys Aviation",
   "first_seen": "2026-10-30",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "ashby:oligo": {
   "kind": "ashby",
@@ -582,7 +582,7 @@
   "fails": 0,
   "last_seen": "2026-11-04",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "ashby:outpost": {
   "kind": "ashby",
@@ -594,7 +594,7 @@
   "via": "name probe (aerospace_companies)",
   "last_seen": "2026-11-22",
   "label": "Outpost Space",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "ashby:overviewenergy": {
   "kind": "ashby",
@@ -608,7 +608,7 @@
   "last_seen": "2026-09-17",
   "label": "Overview Energy",
   "tried": "2026-11-20",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-20"
  },
  "ashby:persona": {
@@ -622,7 +622,7 @@
   "last_seen": "2026-11-22",
   "engineering": true,
   "label": "Persona Ai",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "ashby:reflect-orbital": {
   "kind": "ashby",
@@ -630,9 +630,9 @@
   "name": "Reflect Orbital",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "ashby:reframesystems": {
   "kind": "ashby",
@@ -646,7 +646,7 @@
   "last_seen": "2026-08-06",
   "label": "Reframe Systems",
   "tried": "2026-11-20",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-20"
  },
  "ashby:regent": {
@@ -655,10 +655,10 @@
   "name": "REGENT",
   "first_seen": "2026-11-04",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
   "label": "REGENT (regent)",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "ashby:reliable-robotics": {
   "kind": "ashby",
@@ -666,9 +666,9 @@
   "name": "Reliable Robotics",
   "first_seen": "2026-11-14",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "ashby:ridealso": {
   "kind": "ashby",
@@ -682,7 +682,7 @@
   "last_seen": "2025-11-26",
   "label": "ALSO",
   "tried": "2026-11-20",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-20"
  },
  "ashby:rivianvw.tech": {
@@ -697,7 +697,7 @@
   "last_seen": "2026-10-22",
   "label": "Rivian and Volkswagen Group Technologies",
   "tried": "2026-11-20",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-20"
  },
  "ashby:saronic": {
@@ -706,9 +706,9 @@
   "name": "Saronic",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "ashby:scout-ai": {
   "kind": "ashby",
@@ -716,9 +716,9 @@
   "name": "Scout AI",
   "first_seen": "2026-10-28",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "ashby:shield": {
   "kind": "ashby",
@@ -726,10 +726,10 @@
   "name": "Shield AI",
   "first_seen": "2026-11-11",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
   "label": "Shield AI (shield)",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "ashby:skyband%20systems": {
   "kind": "ashby",
@@ -737,9 +737,9 @@
   "name": "Skyband Systems",
   "first_seen": "2026-11-03",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "ashby:skydio": {
   "kind": "ashby",
@@ -747,9 +747,9 @@
   "name": "Skydio",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "ashby:starpath.space": {
   "kind": "ashby",
@@ -757,9 +757,9 @@
   "name": "Starpath",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "ashby:swarmaero": {
   "kind": "ashby",
@@ -767,9 +767,9 @@
   "name": "Swarm Aero",
   "first_seen": "2026-10-28",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "ashby:the-exploration-company": {
   "kind": "ashby",
@@ -777,9 +777,9 @@
   "name": "The Exploration Company",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "ashby:trener-robotics": {
   "kind": "ashby",
@@ -793,7 +793,7 @@
   "last_seen": "2026-11-20",
   "label": "Trener Robotics",
   "tried": "2026-11-21",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-21"
  },
  "ashby:turion-space": {
@@ -804,7 +804,7 @@
   "fails": 0,
   "last_seen": "2026-02-06",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "ashby:unitxlabs": {
   "kind": "ashby",
@@ -818,7 +818,7 @@
   "last_seen": "2026-08-21",
   "label": "UnitX",
   "tried": "2026-11-20",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-20"
  },
  "ashby:windborne-systems": {
@@ -829,7 +829,7 @@
   "fails": 0,
   "last_seen": "2026-11-05",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "ashby:xona-space": {
   "kind": "ashby",
@@ -837,9 +837,9 @@
   "name": "Xona Space Systems",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "bamboohr:astroscale": {
   "kind": "bamboohr",
@@ -849,8 +849,8 @@
   "fails": 0,
   "state": "active",
   "via": "list link (2026-11-20)",
-  "last_seen": "2026-11-27",
-  "last_ok": "2026-11-27"
+  "last_seen": "2026-11-28",
+  "last_ok": "2026-11-28"
  },
  "bamboohr:bluecanyontech": {
   "kind": "bamboohr",
@@ -874,7 +874,7 @@
   "last_seen": "2026-11-17",
   "label": "Canyon AeroConnect",
   "tried": "2026-11-20",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-20"
  },
  "bamboohr:lunaroutpost": {
@@ -885,8 +885,8 @@
   "fails": 0,
   "state": "active",
   "via": "list link (2026-09-15)",
-  "last_seen": "2026-11-27",
-  "last_ok": "2026-11-27"
+  "last_seen": "2026-11-28",
+  "last_ok": "2026-11-28"
  },
  "bamboohr:punchcut": {
   "kind": "bamboohr",
@@ -900,7 +900,7 @@
   "last_seen": "2026-11-17",
   "label": "Punchcut",
   "tried": "2026-11-20",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-20"
  },
  "bamboohr:safransed": {
@@ -923,8 +923,8 @@
   "fails": 0,
   "state": "active",
   "via": "list link (2026-11-20)",
-  "last_seen": "2026-11-27",
-  "last_ok": "2026-11-27"
+  "last_seen": "2026-11-28",
+  "last_ok": "2026-11-28"
  },
  "bamboohr:specteraerospace": {
   "kind": "bamboohr",
@@ -934,8 +934,8 @@
   "fails": 0,
   "state": "active",
   "via": "list link (2026-08-13)",
-  "last_seen": "2026-11-27",
-  "last_ok": "2026-11-27"
+  "last_seen": "2026-11-28",
+  "last_ok": "2026-11-28"
  },
  "brassring:25539/5310": {
   "kind": "brassring",
@@ -950,7 +950,7 @@
   "via": "list link (2026-09-24)",
   "last_seen": "2026-11-24",
   "label": "General Atomics (25539)",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "breezy:benchmark-space-systems-inc": {
   "kind": "breezy",
@@ -960,7 +960,7 @@
   "fails": 0,
   "state": "active",
   "via": "list link (2026-10-26)",
-  "last_seen": "2026-11-27"
+  "last_seen": "2026-11-28"
  },
  "breezy:seasats": {
   "kind": "breezy",
@@ -974,7 +974,7 @@
   "last_seen": "2026-10-02",
   "label": "Seasats",
   "tried": "2026-11-20",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-20"
  },
  "gem:andrenam": {
@@ -985,8 +985,8 @@
   "fails": 0,
   "state": "active",
   "via": "list link (2026-10-23)",
-  "last_seen": "2026-11-27",
-  "last_ok": "2026-11-27"
+  "last_seen": "2026-11-28",
+  "last_ok": "2026-11-28"
  },
  "gem:astroforge-io": {
   "kind": "gem",
@@ -996,8 +996,8 @@
   "fails": 0,
   "state": "active",
   "via": "list link (2026-10-05)",
-  "last_seen": "2026-11-27",
-  "last_ok": "2026-11-27"
+  "last_seen": "2026-11-28",
+  "last_ok": "2026-11-28"
  },
  "gem:firestorm": {
   "kind": "gem",
@@ -1008,7 +1008,7 @@
   "state": "active",
   "via": "list link (2026-11-25)",
   "last_seen": "2026-11-25",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "gem:nominal": {
   "kind": "gem",
@@ -1018,24 +1018,24 @@
   "fails": 0,
   "state": "active",
   "via": "list link (2026-09-20)",
-  "last_seen": "2026-11-27",
-  "last_ok": "2026-11-27"
+  "last_seen": "2026-11-28",
+  "last_ok": "2026-11-28"
  },
  "greenhouse:10xgenomics": {
   "kind": "greenhouse",
   "board": "10xgenomics",
   "name": "10x Genomics",
   "first_seen": "2026-11-20",
-  "fails": 3,
+  "fails": 4,
   "state": "candidate",
   "via": "2 mechanical/aerospace internships on the lists (e.g. Intern – Instrument Hardware Engineering)",
   "engineering": true,
   "last_seen": "2026-01-17",
   "label": "10x Genomics",
-  "tried": "2026-11-27",
+  "tried": "2026-11-28",
   "error": "HTTP 404",
   "fail_since": "2026-11-20",
-  "next_try": "2026-11-28"
+  "next_try": "2026-11-30"
  },
  "greenhouse:advancedspace": {
   "kind": "greenhouse",
@@ -1045,7 +1045,7 @@
   "fails": 0,
   "last_seen": "2026-11-04",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:aevexaerospace": {
   "kind": "greenhouse",
@@ -1053,9 +1053,9 @@
   "name": "Aevex Aerospace",
   "first_seen": "2026-10-28",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:aircapture": {
   "kind": "greenhouse",
@@ -1069,7 +1069,7 @@
   "last_seen": "2026-03-23",
   "label": "AirCapture",
   "tried": "2026-11-20",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-20"
  },
  "greenhouse:albedo": {
@@ -1080,7 +1080,7 @@
   "fails": 0,
   "last_seen": "2026-11-04",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:amca": {
   "kind": "greenhouse",
@@ -1094,7 +1094,7 @@
   "last_seen": "2026-09-04",
   "label": "AMCA",
   "tried": "2026-11-20",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-20"
  },
  "greenhouse:andurilindustries": {
@@ -1103,9 +1103,9 @@
   "name": "Anduril",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:arcboatcompany": {
   "kind": "greenhouse",
@@ -1117,7 +1117,7 @@
   "last_seen": "2026-10-07",
   "state": "active",
   "label": "Arc",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:archer56": {
   "kind": "greenhouse",
@@ -1140,7 +1140,7 @@
   "last_seen": "2025-10-28",
   "state": "active",
   "label": "Astera Labs",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:asteraearlycareer2027": {
   "kind": "greenhouse",
@@ -1152,7 +1152,7 @@
   "last_seen": "2026-10-13",
   "state": "active",
   "label": "Astera Labs (asteraearlycareer2027)",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:astranis": {
   "kind": "greenhouse",
@@ -1160,9 +1160,9 @@
   "name": "Astranis",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:astronicscorporation": {
   "kind": "greenhouse",
@@ -1172,7 +1172,7 @@
   "fails": 0,
   "last_seen": "2026-11-20",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:astspacemobile": {
   "kind": "greenhouse",
@@ -1182,7 +1182,7 @@
   "fails": 0,
   "last_seen": "2026-11-11",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:axiscompany": {
   "kind": "greenhouse",
@@ -1196,7 +1196,7 @@
   "last_seen": "2026-10-06",
   "label": "Axis Automation",
   "tried": "2026-11-20",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-20"
  },
  "greenhouse:blacksky": {
@@ -1207,7 +1207,7 @@
   "fails": 0,
   "last_seen": "2026-11-04",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:bluestaq": {
   "kind": "greenhouse",
@@ -1215,9 +1215,9 @@
   "name": "Bluestaq",
   "first_seen": "2026-10-28",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:castelioncorporation": {
   "kind": "greenhouse",
@@ -1225,9 +1225,9 @@
   "name": "Castelion",
   "first_seen": "2026-10-29",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:chaosindustries": {
   "kind": "greenhouse",
@@ -1243,13 +1243,13 @@
   "board": "dawnaerospace",
   "name": "Dawn Aerospace",
   "first_seen": "2026-10-28",
-  "fails": 5,
+  "fails": 6,
   "last_seen": "2026-11-11",
   "state": "repair",
   "last_ok": "2026-11-25",
   "error": "HTTP 404",
   "fail_since": "2026-11-26",
-  "next_try": "2026-12-01"
+  "next_try": "2026-12-06"
  },
  "greenhouse:defenseunicorns": {
   "kind": "greenhouse",
@@ -1257,9 +1257,9 @@
   "name": "Defense Unicorns",
   "first_seen": "2026-10-28",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:diligentrobotics": {
   "kind": "greenhouse",
@@ -1272,7 +1272,7 @@
   "last_seen": "2026-11-20",
   "engineering": true,
   "label": "Diligent Robotics",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:doordashusa": {
   "kind": "greenhouse",
@@ -1286,7 +1286,7 @@
   "last_seen": "2026-10-22",
   "label": "DoorDash",
   "tried": "2026-11-21",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-21"
  },
  "greenhouse:eikontherapeutics": {
@@ -1301,7 +1301,7 @@
   "last_seen": "2026-02-20",
   "label": "Eikon Therapeutics",
   "tried": "2026-11-21",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-21"
  },
  "greenhouse:fervoenergy": {
@@ -1315,7 +1315,7 @@
   "last_seen": "2026-11-21",
   "engineering": true,
   "label": "Fervo Energy",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:figureai": {
   "kind": "greenhouse",
@@ -1327,7 +1327,7 @@
   "via": "1 mechanical/aerospace internship on the lists (e.g. Integration & Test - Mechanical Engineering Intern [Winter 2)",
   "engineering": true,
   "last_seen": "2026-11-02",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-20"
  },
  "greenhouse:flyzipline": {
@@ -1336,9 +1336,9 @@
   "name": "Zipline",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:formic": {
   "kind": "greenhouse",
@@ -1351,7 +1351,7 @@
   "last_seen": "2026-11-21",
   "engineering": true,
   "label": "Formic",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:formlabsinternships": {
   "kind": "greenhouse",
@@ -1365,7 +1365,7 @@
   "last_seen": "2026-09-21",
   "label": "Formlabsinternships",
   "tried": "2026-11-21",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-21"
  },
  "greenhouse:freeformfuturecorp": {
@@ -1374,9 +1374,9 @@
   "name": "Freeform",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:generalgalactic": {
   "kind": "greenhouse",
@@ -1384,9 +1384,9 @@
   "name": "General Galactic",
   "first_seen": "2026-10-28",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:generalmatter": {
   "kind": "greenhouse",
@@ -1400,7 +1400,7 @@
   "last_seen": "2026-09-01",
   "label": "General Matter",
   "tried": "2026-11-21",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-21"
  },
  "greenhouse:gitai": {
@@ -1409,9 +1409,9 @@
   "name": "GITAI",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:graviticsinc": {
   "kind": "greenhouse",
@@ -1419,9 +1419,9 @@
   "name": "Gravitics",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:harbingermotors": {
   "kind": "greenhouse",
@@ -1432,7 +1432,7 @@
   "engineering": true,
   "last_seen": "2026-10-09",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:hawkeye360": {
   "kind": "greenhouse",
@@ -1440,9 +1440,9 @@
   "name": "HawkEye 360",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:heartaerospace": {
   "kind": "greenhouse",
@@ -1452,7 +1452,7 @@
   "fails": 0,
   "last_seen": "2026-10-29",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:hevenaerotech": {
   "kind": "greenhouse",
@@ -1462,7 +1462,7 @@
   "fails": 0,
   "last_seen": "2026-11-08",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:hpiq": {
   "kind": "greenhouse",
@@ -1474,7 +1474,7 @@
   "last_seen": "2026-10-27",
   "state": "active",
   "label": "HP IQ",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:imc": {
   "kind": "greenhouse",
@@ -1488,7 +1488,7 @@
   "last_seen": "2026-07-01",
   "label": "IMC Trading",
   "tried": "2026-11-21",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-21"
  },
  "greenhouse:inspiremedicalsystemsinc": {
@@ -1503,7 +1503,7 @@
   "last_seen": "2025-11-05",
   "label": "Inspire Medical Systems",
   "tried": "2026-11-21",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-21"
  },
  "greenhouse:internshiplist2000": {
@@ -1518,7 +1518,7 @@
   "last_seen": "2026-05-07",
   "label": "Geotab",
   "tried": "2026-11-21",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-21"
  },
  "greenhouse:inversionspace": {
@@ -1527,9 +1527,9 @@
   "name": "Inversion Space",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:jetzero": {
   "kind": "greenhouse",
@@ -1539,7 +1539,7 @@
   "fails": 0,
   "last_seen": "2026-10-05",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:k2spacecorporation": {
   "kind": "greenhouse",
@@ -1547,9 +1547,9 @@
   "name": "K2 Space",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:kairospower": {
   "kind": "greenhouse",
@@ -1561,7 +1561,7 @@
   "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical and Manufacturing Engineering Internship - Summer)",
   "engineering": true,
   "last_seen": "2026-07-23",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-20"
  },
  "greenhouse:katalyst": {
@@ -1581,7 +1581,7 @@
   "fails": 0,
   "last_seen": "2026-11-11",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:lightmatter": {
   "kind": "greenhouse",
@@ -1593,7 +1593,7 @@
   "last_seen": "2026-11-17",
   "state": "active",
   "label": "Lightmatter",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:lilasciences": {
   "kind": "greenhouse",
@@ -1607,7 +1607,7 @@
   "last_seen": "2026-10-26",
   "label": "Lila Sciences",
   "tried": "2026-11-20",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-20"
  },
  "greenhouse:locusrobotics": {
@@ -1621,7 +1621,7 @@
   "last_seen": "2026-11-22",
   "engineering": true,
   "label": "Locus Robotics",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:lunarenergy": {
   "kind": "greenhouse",
@@ -1633,7 +1633,7 @@
   "last_seen": "2026-10-29",
   "state": "active",
   "label": "Lunar Energy",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:machindustries": {
   "kind": "greenhouse",
@@ -1641,9 +1641,9 @@
   "name": "Mach Industries",
   "first_seen": "2026-11-05",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:mantari": {
   "kind": "greenhouse",
@@ -1653,7 +1653,7 @@
   "fails": 0,
   "last_seen": "2026-10-31",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:markforged": {
   "kind": "greenhouse",
@@ -1666,7 +1666,7 @@
   "last_seen": "2026-11-22",
   "engineering": true,
   "label": "Markforged",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:metoxinternationalinc": {
   "kind": "greenhouse",
@@ -1680,7 +1680,7 @@
   "last_seen": "2026-11-04",
   "label": "MetOx International",
   "tried": "2026-11-21",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-21"
  },
  "greenhouse:mill": {
@@ -1695,7 +1695,7 @@
   "last_seen": "2026-09-24",
   "label": "Mill",
   "tried": "2026-11-21",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-21"
  },
  "greenhouse:modernizingmedicineinc": {
@@ -1727,7 +1727,7 @@
   "last_seen": "2026-10-26",
   "label": "Morph Labs",
   "tried": "2026-11-20",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-20"
  },
  "greenhouse:morsecorpcoop": {
@@ -1738,7 +1738,7 @@
   "fails": 0,
   "last_seen": "2026-10-14",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:muonspace": {
   "kind": "greenhouse",
@@ -1746,9 +1746,9 @@
   "name": "Muon Space",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:neptunemedical": {
   "kind": "greenhouse",
@@ -1762,7 +1762,7 @@
   "last_seen": "2026-11-19",
   "label": "Neptune Medical",
   "tried": "2026-11-21",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-21"
  },
  "greenhouse:nerostechnologies": {
@@ -1773,7 +1773,7 @@
   "fails": 0,
   "state": "active",
   "via": "list link (2026-11-22)",
-  "last_seen": "2026-11-27"
+  "last_seen": "2026-11-28"
  },
  "greenhouse:neuralink": {
   "kind": "greenhouse",
@@ -1784,7 +1784,7 @@
   "engineering": true,
   "last_seen": "2026-11-24",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:newsbreak": {
   "kind": "greenhouse",
@@ -1798,7 +1798,7 @@
   "last_seen": "2025-11-27",
   "label": "NewsBreak",
   "tried": "2026-11-21",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-21"
  },
  "greenhouse:nuro": {
@@ -1812,7 +1812,7 @@
   "last_seen": "2026-11-22",
   "engineering": true,
   "label": "Nuro",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:orbitaloperations": {
   "kind": "greenhouse",
@@ -1820,9 +1820,9 @@
   "name": "Orbital Operations",
   "first_seen": "2026-10-28",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:pacificfusion": {
   "kind": "greenhouse",
@@ -1834,7 +1834,7 @@
   "via": "2 mechanical/aerospace internships on the lists (e.g. Summer 2027 Internship- Mechanical Engineering)",
   "engineering": true,
   "last_seen": "2026-11-20",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-20"
  },
  "greenhouse:parallel": {
@@ -1847,7 +1847,7 @@
   "last_seen": "2026-10-26",
   "state": "active",
   "label": "Parallel Systems",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:pathrobotics": {
   "kind": "greenhouse",
@@ -1859,7 +1859,7 @@
   "via": "2 mechanical/aerospace internships on the lists (e.g. Manufacturing Design Engineering Internship - Spring 2027)",
   "engineering": true,
   "last_seen": "2026-10-23",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-20"
  },
  "greenhouse:peakenergy": {
@@ -1872,7 +1872,7 @@
   "last_seen": "2026-10-28",
   "state": "active",
   "label": "Peak Energy",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:planetlabs": {
   "kind": "greenhouse",
@@ -1880,9 +1880,9 @@
   "name": "Planet",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:purestorage": {
   "kind": "greenhouse",
@@ -1896,7 +1896,7 @@
   "last_seen": "2026-03-05",
   "label": "Pure Storage",
   "tried": "2026-11-21",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-21"
  },
  "greenhouse:rebuildmanufacturing": {
@@ -1909,7 +1909,7 @@
   "via": "2 mechanical/aerospace internships on the lists (e.g. Process & Mechanical Engineer Co-op/Intern)",
   "engineering": true,
   "last_seen": "2026-11-02",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-20"
  },
  "greenhouse:redwoodmaterials": {
@@ -1924,7 +1924,7 @@
   "last_seen": "2026-02-02",
   "label": "Redwood Materials",
   "tried": "2026-11-21",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-21"
  },
  "greenhouse:relativity": {
@@ -1933,9 +1933,9 @@
   "name": "Relativity Space",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:rendezvousrobotics": {
   "kind": "greenhouse",
@@ -1943,9 +1943,9 @@
   "name": "Rendezvous Robotics",
   "first_seen": "2026-11-02",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:roboforce": {
   "kind": "greenhouse",
@@ -1959,7 +1959,7 @@
   "last_seen": "2026-10-01",
   "label": "RoboForce",
   "tried": "2026-11-21",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-21"
  },
  "greenhouse:rocketfactoryaugsburgag": {
@@ -1970,9 +1970,9 @@
   "fails": 0,
   "state": "active",
   "via": "list link (2026-11-20)",
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "label": "Rocket Factory Augsburg",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:rocketlab": {
   "kind": "greenhouse",
@@ -1980,7 +1980,7 @@
   "name": "Rocket Lab USA",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active"
  },
  "greenhouse:rsinternboard": {
@@ -2008,7 +2008,7 @@
   "last_seen": "2026-10-08",
   "label": "Rugged Robotics",
   "tried": "2026-11-21",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-21"
  },
  "greenhouse:samsara": {
@@ -2023,7 +2023,7 @@
   "last_seen": "2026-11-16",
   "label": "Samsara",
   "tried": "2026-11-21",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-21"
  },
  "greenhouse:samsungresearchamericainternship": {
@@ -2038,7 +2038,7 @@
   "last_seen": "2025-12-17",
   "label": "Samsung Research America",
   "tried": "2026-11-21",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-21"
  },
  "greenhouse:samsungsemiconductor": {
@@ -2051,7 +2051,7 @@
   "last_seen": "2026-11-24",
   "state": "active",
   "label": "Samsung",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:scoutmotors": {
   "kind": "greenhouse",
@@ -2065,7 +2065,7 @@
   "last_seen": "2026-03-04",
   "label": "Scout Motors",
   "tried": "2026-11-21",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-21"
  },
  "greenhouse:scoutspace": {
@@ -2074,9 +2074,9 @@
   "name": "Scout Space",
   "first_seen": "2026-11-19",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:sharkninjaoperatingllc": {
   "kind": "greenhouse",
@@ -2087,7 +2087,7 @@
   "engineering": true,
   "last_seen": "2026-11-13",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:singlestore": {
   "kind": "greenhouse",
@@ -2099,7 +2099,7 @@
   "last_seen": "2026-09-22",
   "state": "active",
   "label": "SingleStore",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:skyryse": {
   "kind": "greenhouse",
@@ -2109,7 +2109,7 @@
   "fails": 0,
   "last_seen": "2026-10-31",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:spaceium": {
   "kind": "greenhouse",
@@ -2117,9 +2117,9 @@
   "name": "Spaceium",
   "first_seen": "2026-10-30",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:spacekinetic": {
   "kind": "greenhouse",
@@ -2127,9 +2127,9 @@
   "name": "Space Kinetic",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:spacex": {
   "kind": "greenhouse",
@@ -2137,9 +2137,9 @@
   "name": "SpaceX",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:star-catcher": {
   "kind": "greenhouse",
@@ -2149,7 +2149,7 @@
   "fails": 0,
   "last_seen": "2026-11-19",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:stokespacetechnologies": {
   "kind": "greenhouse",
@@ -2157,7 +2157,7 @@
   "name": "STOKE Space Technologies",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active"
  },
  "greenhouse:stratolaunch": {
@@ -2166,9 +2166,9 @@
   "name": "Stratolaunch",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:syskahennessy": {
   "kind": "greenhouse",
@@ -2182,7 +2182,7 @@
   "last_seen": "2026-10-13",
   "label": "Syska Hennessy Group",
   "tried": "2026-11-21",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-21"
  },
  "greenhouse:tempo": {
@@ -2197,7 +2197,7 @@
   "last_seen": "2026-11-14",
   "label": "Tempo",
   "tried": "2026-11-20",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-20"
  },
  "greenhouse:tenstorrentuniversity": {
@@ -2212,7 +2212,7 @@
   "last_seen": "2025-10-30",
   "label": "Tenstorrent",
   "tried": "2026-11-21",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-21"
  },
  "greenhouse:terranorbitalcorporation": {
@@ -2223,7 +2223,7 @@
   "fails": 0,
   "last_seen": "2026-11-04",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:toshibaglobalcommercesolutions": {
   "kind": "greenhouse",
@@ -2237,7 +2237,7 @@
   "last_seen": "2026-08-18",
   "label": "Toshiba Global Commerce",
   "tried": "2026-11-22",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-22"
  },
  "greenhouse:trueanomalyinc": {
@@ -2246,9 +2246,9 @@
   "name": "True Anomaly",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:ursamajor": {
   "kind": "greenhouse",
@@ -2256,7 +2256,7 @@
   "name": "Ursa Major Technologies",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active"
  },
  "greenhouse:vardaspace": {
@@ -2265,9 +2265,9 @@
   "name": "Varda Space",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:vast": {
   "kind": "greenhouse",
@@ -2275,7 +2275,7 @@
   "name": "Vast",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active"
  },
  "greenhouse:verkada": {
@@ -2288,7 +2288,7 @@
   "last_seen": "2026-09-02",
   "state": "active",
   "label": "Verkada",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:virtu": {
   "kind": "greenhouse",
@@ -2302,7 +2302,7 @@
   "last_seen": "2026-07-31",
   "label": "Virtu Financial",
   "tried": "2026-11-22",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-22"
  },
  "greenhouse:voyagertechnologiesinc": {
@@ -2311,9 +2311,9 @@
   "name": "Voyager Technologies",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "greenhouse:zone5technologies": {
   "kind": "greenhouse",
@@ -2323,7 +2323,7 @@
   "fails": 0,
   "last_seen": "2026-11-04",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "icims:careers-cirrusaircraft.icims.com": {
   "kind": "icims",
@@ -2334,7 +2334,7 @@
   "state": "active",
   "via": "list link (2026-10-19)",
   "last_seen": "2026-11-03",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "icims:careers-gd-ots.icims.com": {
   "kind": "icims",
@@ -2345,7 +2345,7 @@
   "state": "active",
   "via": "list link (2026-09-16)",
   "last_seen": "2026-11-23",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "icims:careers-gdbiw.icims.com": {
   "kind": "icims",
@@ -2356,7 +2356,7 @@
   "state": "active",
   "via": "list link (2026-09-28)",
   "last_seen": "2026-09-28",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "icims:careers-gdeb.icims.com": {
   "kind": "icims",
@@ -2376,8 +2376,8 @@
   "fails": 0,
   "state": "active",
   "via": "list link (2026-10-26)",
-  "last_seen": "2026-11-27",
-  "last_ok": "2026-11-27"
+  "last_seen": "2026-11-28",
+  "last_ok": "2026-11-28"
  },
  "icims:careers-hexagonpositioning.icims.com": {
   "kind": "icims",
@@ -2391,7 +2391,7 @@
   "last_seen": "2026-06-03",
   "label": "Hexagon",
   "tried": "2026-11-22",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-22"
  },
  "icims:careers-humanscale.icims.com": {
@@ -2406,7 +2406,7 @@
   "last_seen": "2026-08-19",
   "label": "Humanscale",
   "tried": "2026-11-22",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-22"
  },
  "icims:careers-iqt.icims.com": {
@@ -2421,7 +2421,7 @@
   "last_seen": "2026-09-21",
   "label": "IQT",
   "tried": "2026-11-22",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-22"
  },
  "icims:careers-iridium.icims.com": {
@@ -2432,8 +2432,8 @@
   "fails": 0,
   "state": "active",
   "via": "list link (2026-09-30)",
-  "last_seen": "2026-11-27",
-  "last_ok": "2026-11-27"
+  "last_seen": "2026-11-28",
+  "last_ok": "2026-11-28"
  },
  "icims:careers-jobyaviation.icims.com": {
   "kind": "icims",
@@ -2443,8 +2443,8 @@
   "fails": 0,
   "state": "active",
   "via": "list link (2026-10-17)",
-  "last_seen": "2026-11-27",
-  "last_ok": "2026-11-27"
+  "last_seen": "2026-11-28",
+  "last_ok": "2026-11-28"
  },
  "icims:careers-lmi.icims.com": {
   "kind": "icims",
@@ -2458,7 +2458,7 @@
   "last_seen": "2026-11-20",
   "label": "LMI",
   "tried": "2026-11-22",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-22"
  },
  "icims:careers-magaero.icims.com": {
@@ -2470,7 +2470,7 @@
   "state": "active",
   "via": "list link (2026-08-24)",
   "last_seen": "2026-08-24",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "icims:careers-otterproducts.icims.com": {
   "kind": "icims",
@@ -2484,7 +2484,7 @@
   "last_seen": "2026-03-23",
   "label": "Otter Products",
   "tried": "2026-11-22",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-22"
  },
  "icims:careers-peraton.icims.com": {
@@ -2495,8 +2495,8 @@
   "fails": 0,
   "state": "active",
   "via": "list link (2026-06-01)",
-  "last_seen": "2026-11-27",
-  "last_ok": "2026-11-27"
+  "last_seen": "2026-11-28",
+  "last_ok": "2026-11-28"
  },
  "icims:careers-persistentsystems.icims.com": {
   "kind": "icims",
@@ -2509,7 +2509,7 @@
   "engineering": true,
   "last_seen": "2026-06-22",
   "label": "Persistent Systems",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "icims:careers-qinetiqus.icims.com": {
   "kind": "icims",
@@ -2519,8 +2519,8 @@
   "fails": 0,
   "state": "active",
   "via": "list link (2026-11-24)",
-  "last_seen": "2026-11-27",
-  "last_ok": "2026-11-27"
+  "last_seen": "2026-11-28",
+  "last_ok": "2026-11-28"
  },
  "icims:careers-rambus.icims.com": {
   "kind": "icims",
@@ -2534,7 +2534,7 @@
   "last_seen": "2026-11-13",
   "label": "Rambus",
   "tried": "2026-11-22",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-22"
  },
  "icims:careers-sri.icims.com": {
@@ -2549,7 +2549,7 @@
   "last_seen": "2026-02-13",
   "label": "SRI International",
   "tried": "2026-11-22",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-22"
  },
  "icims:careers-steeldynamics.icims.com": {
@@ -2564,7 +2564,7 @@
   "last_seen": "2026-11-17",
   "label": "Steel Dynamics",
   "tried": "2026-11-22",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-22"
  },
  "icims:careers-stellantsystems.icims.com": {
@@ -2576,7 +2576,7 @@
   "state": "active",
   "via": "list link (2026-03-24)",
   "last_seen": "2026-04-09",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "icims:careers-werfen.icims.com": {
   "kind": "icims",
@@ -2589,7 +2589,7 @@
   "engineering": true,
   "last_seen": "2026-10-09",
   "label": "Werfen",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "icims:careersus-shure.icims.com": {
   "kind": "icims",
@@ -2602,7 +2602,7 @@
   "engineering": true,
   "last_seen": "2026-11-07",
   "label": "Shure",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "icims:jobs-sierralobo.icims.com": {
   "kind": "icims",
@@ -2613,7 +2613,7 @@
   "state": "active",
   "via": "list link (2026-09-14)",
   "last_seen": "2026-11-05",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "icims:uscareers-lennox.icims.com": {
   "kind": "icims",
@@ -2636,7 +2636,7 @@
   "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Internship or Co-op 2027)",
   "engineering": true,
   "last_seen": "2026-08-31",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-20"
  },
  "jazzhr:arminstitute": {
@@ -2651,7 +2651,7 @@
   "last_seen": "2026-08-03",
   "label": "Advanced Robotics for Manufacturing",
   "tried": "2026-11-22",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-22"
  },
  "jazzhr:busek": {
@@ -2663,7 +2663,7 @@
   "state": "active",
   "via": "list link (2026-11-25)",
   "last_seen": "2026-11-25",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "jazzhr:liquidpiston": {
   "kind": "jazzhr",
@@ -2674,7 +2674,7 @@
   "state": "active",
   "via": "list link (2026-09-09)",
   "last_seen": "2026-10-15",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "jazzhr:offworld": {
   "kind": "jazzhr",
@@ -2684,9 +2684,9 @@
   "fails": 0,
   "state": "active",
   "via": "list link (2026-11-20)",
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "label": "OffWorld",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "jazzhr:rantecpowersystemsinc": {
   "kind": "jazzhr",
@@ -2700,7 +2700,7 @@
   "last_seen": "2026-07-23",
   "label": "Rantec Power Systems Inc.",
   "tried": "2026-11-22",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-22"
  },
  "jazzhr:roush": {
@@ -2725,7 +2725,7 @@
   "last_seen": "2026-08-21",
   "label": "SimIS",
   "tried": "2026-11-22",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-22"
  },
  "jazzhr:spacedynamicslaboratory": {
@@ -2736,8 +2736,8 @@
   "fails": 0,
   "state": "active",
   "via": "list link (2026-10-20)",
-  "last_seen": "2026-11-27",
-  "last_ok": "2026-11-27"
+  "last_seen": "2026-11-28",
+  "last_ok": "2026-11-28"
  },
  "jazzhr:taranawireless": {
   "kind": "jazzhr",
@@ -2751,7 +2751,7 @@
   "last_seen": "2026-11-20",
   "label": "Tarana Wireless",
   "tried": "2026-11-22",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-22"
  },
  "jibe:careers.amd.com": {
@@ -2764,7 +2764,7 @@
   "last_seen": "2026-08-21",
   "state": "active",
   "label": "AMD",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "jibe:careers.arcfield.com": {
   "kind": "jibe",
@@ -2774,7 +2774,7 @@
   "fails": 0,
   "last_seen": "2026-11-10",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "jibe:careers.garmin.com": {
   "kind": "jibe",
@@ -2785,7 +2785,7 @@
   "engineering": true,
   "last_seen": "2026-10-21",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "jibe:careers.gov2x.com": {
   "kind": "jibe",
@@ -2793,9 +2793,9 @@
   "name": "V2X",
   "first_seen": "2026-11-02",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "jibe:careers.jhuapl.edu": {
   "kind": "jibe",
@@ -2803,9 +2803,9 @@
   "name": "Johns Hopkins Applied Physics Laboratory",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "jibe:careers.rivian.com": {
   "kind": "jibe",
@@ -2816,7 +2816,7 @@
   "engineering": true,
   "last_seen": "2026-10-13",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "jibe:careers.spiritaero.com": {
   "kind": "jibe",
@@ -2826,7 +2826,7 @@
   "fails": 0,
   "last_seen": "2026-11-04",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "jibe:careers.viasat.com": {
   "kind": "jibe",
@@ -2834,7 +2834,7 @@
   "name": "ViaSat",
   "first_seen": "2026-11-05",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active"
  },
  "jibe:jobs.keysight.com": {
@@ -2847,7 +2847,7 @@
   "last_seen": "2026-10-23",
   "state": "active",
   "label": "Keysight Technologies",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "jibe:jobs.stryten.com": {
   "kind": "jibe",
@@ -2861,7 +2861,7 @@
   "last_seen": "2026-08-31",
   "label": "Stryten",
   "tried": "2026-11-22",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-22"
  },
  "jibe:peraton.jibeapply.com": {
@@ -2870,10 +2870,10 @@
   "name": "Peraton",
   "first_seen": "2026-10-31",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
   "label": "Peraton (peraton.jibeapply.com)",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "jibe:se.jibeapply.com": {
   "kind": "jibe",
@@ -2885,7 +2885,7 @@
   "via": "2 mechanical/aerospace internships on the lists (e.g. Electronics Hardware Engineer Co-op)",
   "engineering": true,
   "last_seen": "2026-10-07",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-20",
   "label": "Schneider Electric (se.jibeapply.com)"
  },
@@ -2895,9 +2895,9 @@
   "name": "Systems Planning and Analysis",
   "first_seen": "2026-11-06",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "lever:acronaviation": {
   "kind": "lever",
@@ -2905,25 +2905,25 @@
   "name": "Acron Aviation",
   "first_seen": "2026-10-30",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "lever:anysignal": {
   "kind": "lever",
   "board": "anysignal",
   "name": "AnySignal",
   "first_seen": "2026-11-20",
-  "fails": 3,
+  "fails": 4,
   "state": "candidate",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Intern – Hardware Engineer - Hardware Engineering)",
   "engineering": true,
   "last_seen": "2025-11-07",
   "label": "AnySignal",
-  "tried": "2026-11-27",
+  "tried": "2026-11-28",
   "error": "HTTP 404",
   "fail_since": "2026-11-22",
-  "next_try": "2026-11-28"
+  "next_try": "2026-11-30"
  },
  "lever:arraylabs.io": {
   "kind": "lever",
@@ -2933,7 +2933,7 @@
   "fails": 0,
   "last_seen": "2026-10-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "lever:brightmachines": {
   "kind": "lever",
@@ -2947,7 +2947,7 @@
   "last_seen": "2026-03-26",
   "label": "Bright Machines",
   "tried": "2026-11-22",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-22"
  },
  "lever:cesiumastro": {
@@ -2956,9 +2956,9 @@
   "name": "CesiumAstro",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "lever:cfsenergy": {
   "kind": "lever",
@@ -2969,7 +2969,7 @@
   "engineering": true,
   "last_seen": "2026-10-30",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "lever:dexterity": {
   "kind": "lever",
@@ -2983,7 +2983,7 @@
   "last_seen": "2025-10-31",
   "label": "Dexterity",
   "tried": "2026-11-22",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-22"
  },
  "lever:diversified-automation": {
@@ -2996,7 +2996,7 @@
   "last_seen": "2026-10-29",
   "state": "active",
   "label": "Diversified Automation",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "lever:dodmg": {
   "kind": "lever",
@@ -3006,7 +3006,7 @@
   "fails": 0,
   "last_seen": "2026-11-04",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "lever:espace": {
   "kind": "lever",
@@ -3014,9 +3014,9 @@
   "name": "E-Space",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "lever:extremenetworks": {
   "kind": "lever",
@@ -3030,7 +3030,7 @@
   "last_seen": "2026-03-23",
   "label": "Extreme Networks",
   "tried": "2026-11-22",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-22"
  },
  "lever:field-ai": {
@@ -3045,7 +3045,7 @@
   "last_seen": "2026-10-06",
   "label": "Field Ai",
   "tried": "2026-11-22",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-22"
  },
  "lever:foth": {
@@ -3058,7 +3058,7 @@
   "last_seen": "2026-09-02",
   "state": "active",
   "label": "FOTH",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "lever:hermeus": {
   "kind": "lever",
@@ -3066,9 +3066,9 @@
   "name": "Hermeus",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "lever:ispace-inc": {
   "kind": "lever",
@@ -3085,9 +3085,9 @@
   "name": "Layup Parts",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "lever:leolabs-2": {
   "kind": "lever",
@@ -3108,9 +3108,9 @@
   "name": "Loft Orbital",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "lever:machinalabs": {
   "kind": "lever",
@@ -3118,9 +3118,9 @@
   "name": "Machina Labs",
   "first_seen": "2026-11-03",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "lever:multiplylabs": {
   "kind": "lever",
@@ -3134,7 +3134,7 @@
   "last_seen": "2026-10-23",
   "label": "Multiply Labs",
   "tried": "2026-11-22",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-22"
  },
  "lever:palantir": {
@@ -3149,7 +3149,7 @@
   "last_seen": "2026-10-20",
   "label": "Palantir",
   "tried": "2026-11-22",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-22"
  },
  "lever:pivotal": {
@@ -3164,7 +3164,7 @@
   "last_seen": "2026-11-19",
   "label": "Pivotal Software",
   "tried": "2026-11-22",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-22"
  },
  "lever:pyka": {
@@ -3175,7 +3175,7 @@
   "fails": 0,
   "last_seen": "2026-09-09",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "lever:qrypt": {
   "kind": "lever",
@@ -3189,7 +3189,7 @@
   "last_seen": "2025-10-31",
   "label": "Qrypt",
   "tried": "2026-11-22",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-22"
  },
  "lever:reliable": {
@@ -3201,7 +3201,7 @@
   "last_seen": "2025-10-31",
   "state": "active",
   "label": "Reliable Robotics (reliable)",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "lever:saronic": {
   "kind": "lever",
@@ -3224,7 +3224,7 @@
   "fails": 0,
   "last_seen": "2026-11-14",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "lever:simberobotics": {
   "kind": "lever",
@@ -3238,7 +3238,7 @@
   "last_seen": "2026-10-24",
   "label": "Simbe Robotics",
   "tried": "2026-11-22",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-22"
  },
  "lever:skyways": {
@@ -3249,7 +3249,7 @@
   "fails": 0,
   "last_seen": "2026-11-04",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "lever:thea.energy": {
   "kind": "lever",
@@ -3263,7 +3263,7 @@
   "last_seen": "2026-08-27",
   "label": "Thea Energy",
   "tried": "2026-11-22",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-22"
  },
  "lever:tri": {
@@ -3276,7 +3276,7 @@
   "via": "1 mechanical/aerospace internship on the lists (e.g. Robotics Intern, Mechanical Engineering)",
   "engineering": true,
   "last_seen": "2026-11-05",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-20"
  },
  "lever:westair": {
@@ -3287,7 +3287,7 @@
   "fails": 0,
   "last_seen": "2026-11-04",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "lever:xcimer": {
   "kind": "lever",
@@ -3301,7 +3301,7 @@
   "last_seen": "2026-09-11",
   "label": "Xcimer Energy",
   "tried": "2026-11-22",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-22"
  },
  "lever:zoox": {
@@ -3313,7 +3313,7 @@
   "engineering": true,
   "last_seen": "2026-11-06",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "oracle:cva.fa.us1.oraclecloud.com/cx_3": {
   "kind": "oracle",
@@ -3322,7 +3322,7 @@
   "name": "Standard Aero",
   "first_seen": "2026-10-30",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active"
  },
  "oracle:ebwb.fa.us2.oraclecloud.com/cx": {
@@ -3338,7 +3338,7 @@
   "last_seen": "2025-12-12",
   "label": "Hologic",
   "tried": "2026-11-22",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-22"
  },
  "oracle:ebxs.fa.us2.oraclecloud.com/cx_2": {
@@ -3352,7 +3352,7 @@
   "last_seen": "2026-09-25",
   "state": "active",
   "label": "Michael Baker International",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "oracle:edbz.fa.us2.oraclecloud.com/cx": {
   "kind": "oracle",
@@ -3365,7 +3365,7 @@
   "last_seen": "2026-11-19",
   "state": "active",
   "label": "Texas Instruments",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "oracle:efds.fa.em5.oraclecloud.com/cx_1": {
   "kind": "oracle",
@@ -3378,7 +3378,7 @@
   "last_seen": "2026-11-19",
   "state": "active",
   "label": "Ford Motor Company",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "oracle:egay.fa.us6.oraclecloud.com/cx_4001": {
   "kind": "oracle",
@@ -3393,7 +3393,7 @@
   "last_seen": "2026-11-10",
   "label": "NOV",
   "tried": "2026-11-22",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-22"
  },
  "oracle:egcu.fa.us6.oraclecloud.com/cx": {
@@ -3409,7 +3409,7 @@
   "last_seen": "2026-01-06",
   "label": "Masimo",
   "tried": "2026-11-22",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-22"
  },
  "oracle:egup.fa.us2.oraclecloud.com/cx": {
@@ -3422,7 +3422,7 @@
   "engineering": true,
   "last_seen": "2026-10-02",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "oracle:ehth.fa.em2.oraclecloud.com/cx_2001": {
   "kind": "oracle",
@@ -3437,7 +3437,7 @@
   "last_seen": "2025-11-07",
   "label": "Garrett Motion",
   "tried": "2026-11-22",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-22"
  },
  "oracle:eihu.fa.us8.oraclecloud.com/cx": {
@@ -3449,7 +3449,7 @@
   "fails": 0,
   "last_seen": "2026-11-16",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "oracle:ejhp.fa.us6.oraclecloud.com/cx_2": {
   "kind": "oracle",
@@ -3464,7 +3464,7 @@
   "last_seen": "2026-09-29",
   "label": "Sherwin-Williams",
   "tried": "2026-11-22",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-22"
  },
  "oracle:ejia.fa.us6.oraclecloud.com/cx_1001": {
@@ -3480,7 +3480,7 @@
   "last_seen": "2026-10-07",
   "label": "S&C Electric Company",
   "tried": "2026-11-22",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-22"
  },
  "oracle:ejta.fa.us6.oraclecloud.com/cx_2001": {
@@ -3496,7 +3496,7 @@
   "last_seen": "2026-10-15",
   "label": "Fortive",
   "tried": "2026-11-23",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-23"
  },
  "oracle:emit.fa.ca3.oraclecloud.com/cx_2001": {
@@ -3510,7 +3510,7 @@
   "last_seen": "2026-11-20",
   "state": "active",
   "label": "WSP",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "oracle:epyc.fa.us2.oraclecloud.com/cx_1001": {
   "kind": "oracle",
@@ -3523,7 +3523,7 @@
   "last_seen": "2026-11-23",
   "state": "active",
   "label": "Clean Harbors",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "oracle:fa-eowa-saasfaprod1.fa.ocs.oraclecloud.com/csxcareers": {
   "kind": "oracle",
@@ -3538,7 +3538,7 @@
   "last_seen": "2026-09-04",
   "label": "CSX",
   "tried": "2026-11-23",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-23"
  },
  "oracle:fa-erqb-saasfaprod1.fa.ocs.oraclecloud.com/cx_1": {
@@ -3554,7 +3554,7 @@
   "last_seen": "2026-10-16",
   "label": "ADT",
   "tried": "2026-11-23",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-23"
  },
  "oracle:fa-espx-saasfaprod1.fa.ocs.oraclecloud.com/cx_1": {
@@ -3567,7 +3567,7 @@
   "engineering": true,
   "last_seen": "2026-11-18",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "oracle:fa-euwp-saasfaprod1.fa.ocs.oraclecloud.com/cx_1": {
   "kind": "oracle",
@@ -3582,7 +3582,7 @@
   "last_seen": "2026-11-02",
   "label": "Mayo Clinic",
   "tried": "2026-11-23",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-23"
  },
  "oracle:fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com/cx_1": {
@@ -3596,7 +3596,7 @@
   "last_seen": "2026-11-16",
   "state": "active",
   "label": "Nokia",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "oracle:fa-exty-saasfaprod1.fa.ocs.oraclecloud.com/cx_1": {
   "kind": "oracle",
@@ -3605,9 +3605,9 @@
   "name": "Howmet Aerospace",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "oracle:hctz.fa.us2.oraclecloud.com/cx_1001": {
   "kind": "oracle",
@@ -3620,7 +3620,7 @@
   "last_seen": "2026-10-22",
   "state": "active",
   "label": "onsemi",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "oracle:hcwp.fa.us2.oraclecloud.com/cx_1": {
   "kind": "oracle",
@@ -3635,7 +3635,7 @@
   "last_seen": "2026-03-19",
   "label": "Coherent",
   "tried": "2026-11-23",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-23"
  },
  "oracle:hdde.fa.us2.oraclecloud.com/cx": {
@@ -3651,7 +3651,7 @@
   "last_seen": "2026-01-22",
   "label": "Rheem",
   "tried": "2026-11-23",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-23"
  },
  "oracle:hdhl.fa.us6.oraclecloud.com/cx_1": {
@@ -3665,7 +3665,7 @@
   "last_seen": "2026-11-25",
   "state": "active",
   "label": "Stantec",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "oracle:hdjq.fa.us2.oraclecloud.com/cx_1": {
   "kind": "oracle",
@@ -3691,7 +3691,7 @@
   "last_seen": "2026-11-23",
   "label": "Legrand",
   "tried": "2026-11-23",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-23"
  },
  "oracle:iawmqy.fa.ocs.oraclecloud.com/careers": {
@@ -3705,7 +3705,7 @@
   "last_seen": "2026-11-03",
   "state": "active",
   "label": "Dell Technologies",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "oracle:ibqbjb.fa.ocs.oraclecloud.com/cx_1": {
   "kind": "oracle",
@@ -3714,10 +3714,10 @@
   "name": "Honeywell",
   "first_seen": "2026-11-06",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
   "label": "Honeywell (CX_1)",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "oracle:ibqbjb.fa.ocs.oraclecloud.com/honeywell": {
   "kind": "oracle",
@@ -3726,9 +3726,9 @@
   "name": "Honeywell",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "oracle:ibwujb.fa.ocs.oraclecloud.com/cx_1001": {
   "kind": "oracle",
@@ -3743,7 +3743,7 @@
   "last_seen": "2026-11-25",
   "label": "Ralliant",
   "tried": "2026-11-23",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-23"
  },
  "oracle:icfcjb.fa.ocs.oraclecloud.com/aerospace": {
@@ -3755,9 +3755,9 @@
   "fails": 0,
   "state": "active",
   "via": "list link (2026-11-20)",
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "label": "Honeywell Aerospace",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "pinpoint:astrolab": {
   "kind": "pinpoint",
@@ -3767,8 +3767,8 @@
   "fails": 0,
   "state": "active",
   "via": "list link (2026-11-20)",
-  "last_seen": "2026-11-27",
-  "last_ok": "2026-11-27"
+  "last_seen": "2026-11-28",
+  "last_ok": "2026-11-28"
  },
  "pinpoint:impulsespace": {
   "kind": "pinpoint",
@@ -3778,8 +3778,8 @@
   "fails": 0,
   "state": "active",
   "via": "list link (2026-09-10)",
-  "last_seen": "2026-11-27",
-  "last_ok": "2026-11-27"
+  "last_seen": "2026-11-28",
+  "last_ok": "2026-11-28"
  },
  "rippling:boom-supersonic": {
   "kind": "rippling",
@@ -3789,8 +3789,8 @@
   "fails": 0,
   "state": "active",
   "via": "list link (2026-08-16)",
-  "last_seen": "2026-11-27",
-  "last_ok": "2026-11-27"
+  "last_seen": "2026-11-28",
+  "last_ok": "2026-11-28"
  },
  "rippling:forterra": {
   "kind": "rippling",
@@ -3800,8 +3800,8 @@
   "fails": 0,
   "state": "active",
   "via": "list link (2026-11-16)",
-  "last_seen": "2026-11-27",
-  "last_ok": "2026-11-27"
+  "last_seen": "2026-11-28",
+  "last_ok": "2026-11-28"
  },
  "rippling:overland-ai": {
   "kind": "rippling",
@@ -3811,8 +3811,8 @@
   "fails": 0,
   "state": "active",
   "via": "list link (2026-11-20)",
-  "last_seen": "2026-11-27",
-  "last_ok": "2026-11-27"
+  "last_seen": "2026-11-28",
+  "last_ok": "2026-11-28"
  },
  "rippling:torus": {
   "kind": "rippling",
@@ -3826,7 +3826,7 @@
   "last_seen": "2026-10-29",
   "label": "Torus",
   "tried": "2026-11-23",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-23"
  },
  "smartrecruiters:abbvie": {
@@ -3840,7 +3840,7 @@
   "engineering": true,
   "last_seen": "2026-10-22",
   "label": "AbbVie",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "smartrecruiters:aecom2": {
   "kind": "smartrecruiters",
@@ -3853,7 +3853,7 @@
   "engineering": true,
   "last_seen": "2026-11-23",
   "label": "AECOM",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "smartrecruiters:aristanetworks": {
   "kind": "smartrecruiters",
@@ -3867,7 +3867,7 @@
   "last_seen": "2026-09-24",
   "label": "Arista Networks",
   "tried": "2026-11-23",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-23"
  },
  "smartrecruiters:averydennison": {
@@ -3882,7 +3882,7 @@
   "last_seen": "2026-09-16",
   "label": "Avery Dennison",
   "tried": "2026-11-23",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-23"
  },
  "smartrecruiters:boschgroup": {
@@ -3908,7 +3908,7 @@
   "last_seen": "2026-09-24",
   "label": "Continental",
   "tried": "2026-11-23",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-23"
  },
  "smartrecruiters:dynetics": {
@@ -3921,7 +3921,7 @@
   "via": "name probe (aerospace_companies)",
   "last_seen": "2026-11-20",
   "label": "Dynetics",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "smartrecruiters:gdmsi": {
   "kind": "smartrecruiters",
@@ -3931,9 +3931,9 @@
   "fails": 0,
   "state": "active",
   "via": "list link (2026-11-20)",
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "label": "General Dynamics UK",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "smartrecruiters:intuitive": {
   "kind": "smartrecruiters",
@@ -3946,7 +3946,7 @@
   "engineering": true,
   "last_seen": "2026-11-16",
   "label": "Intuitive Surgical",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "smartrecruiters:keenfinity": {
   "kind": "smartrecruiters",
@@ -3960,7 +3960,7 @@
   "last_seen": "2026-09-23",
   "label": "Keenfinity",
   "tried": "2026-11-23",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-23"
  },
  "smartrecruiters:knobelsdorffenterprises": {
@@ -3975,7 +3975,7 @@
   "last_seen": "2026-09-10",
   "label": "Knobelsdorff Enterprises",
   "tried": "2026-11-23",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-23"
  },
  "smartrecruiters:llnl": {
@@ -3987,7 +3987,7 @@
   "state": "active",
   "via": "list link (2026-08-21)",
   "last_seen": "2026-11-20",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "smartrecruiters:loram1": {
   "kind": "smartrecruiters",
@@ -4001,7 +4001,7 @@
   "last_seen": "2026-11-11",
   "label": "Loram",
   "tried": "2026-11-23",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-23"
  },
  "smartrecruiters:renesaselectronics": {
@@ -4015,7 +4015,7 @@
   "engineering": true,
   "last_seen": "2026-11-19",
   "label": "Renesas Electronics",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "smartrecruiters:respecinc": {
   "kind": "smartrecruiters",
@@ -4028,7 +4028,7 @@
   "engineering": true,
   "last_seen": "2026-11-09",
   "label": "RESPEC",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "smartrecruiters:sandisk": {
   "kind": "smartrecruiters",
@@ -4041,7 +4041,7 @@
   "engineering": true,
   "last_seen": "2026-03-05",
   "label": "Sandisk",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "smartrecruiters:solidigm": {
   "kind": "smartrecruiters",
@@ -4055,7 +4055,7 @@
   "last_seen": "2026-09-07",
   "label": "Solidigm",
   "tried": "2026-11-23",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-23"
  },
  "smartrecruiters:wabtec": {
@@ -4070,7 +4070,7 @@
   "last_seen": "2026-10-08",
   "label": "Wabtec",
   "tried": "2026-11-23",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-23"
  },
  "smartrecruiters:westerndigital": {
@@ -4085,7 +4085,7 @@
   "last_seen": "2026-11-10",
   "label": "Western Digital",
   "tried": "2026-11-23",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-23"
  },
  "successfactors:careers.gulfstream.com": {
@@ -4096,7 +4096,7 @@
   "fails": 0,
   "last_seen": "2026-11-04",
   "state": "covered",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "successfactors:careers.huntingtoningalls.com": {
   "kind": "successfactors",
@@ -4104,9 +4104,9 @@
   "name": "Huntington Ingalls Industries",
   "first_seen": "2026-10-28",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "successfactors:careers.leggett.com": {
   "kind": "successfactors",
@@ -4120,7 +4120,7 @@
   "last_seen": "2026-04-23",
   "label": "Leggett & Platt",
   "tried": "2026-11-23",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-23"
  },
  "successfactors:careers.qorvo.com": {
@@ -4132,7 +4132,7 @@
   "engineering": true,
   "last_seen": "2026-09-25",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "successfactors:careers.safran-dsi.com": {
   "kind": "successfactors",
@@ -4140,9 +4140,9 @@
   "name": "Safran",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "successfactors:careers.skyworksinc.com": {
   "kind": "successfactors",
@@ -4156,7 +4156,7 @@
   "last_seen": "2025-09-18",
   "label": "Skyworks",
   "tried": "2026-11-23",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-23"
  },
  "successfactors:careers.westinghousenuclear.com": {
@@ -4181,7 +4181,7 @@
   "last_seen": "2026-03-27",
   "label": "Rolls-Royce Motorcars",
   "tried": "2026-11-23",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-23"
  },
  "successfactors:jobs.l3harris.com": {
@@ -4190,7 +4190,7 @@
   "name": "L3Harris Technologies",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active"
  },
  "successfactors:jobs.ulalaunch.com": {
@@ -4201,7 +4201,7 @@
   "fails": 0,
   "last_seen": "2026-11-20",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "successfactors:seagatecareers.com": {
   "kind": "successfactors",
@@ -4215,7 +4215,7 @@
   "last_seen": "2025-11-30",
   "label": "Seagate Technology",
   "tried": "2026-11-23",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-23"
  },
  "ukg:https://recruiting.ultipro.com/app1010arai/jobboard/07442cec-d18e-4589-ab15-8342edc29af7": {
@@ -4226,8 +4226,8 @@
   "fails": 0,
   "state": "active",
   "via": "list link (2026-09-23)",
-  "last_seen": "2026-11-27",
-  "last_ok": "2026-11-27"
+  "last_seen": "2026-11-28",
+  "last_ok": "2026-11-28"
  },
  "ukg:https://recruiting.ultipro.com/tco1001tcom/jobboard/74e57e92-4355-44d7-8471-3c6eecfda9ef": {
   "kind": "ukg",
@@ -4237,8 +4237,8 @@
   "fails": 0,
   "state": "active",
   "via": "list link (2026-09-15)",
-  "last_seen": "2026-11-27",
-  "last_ok": "2026-11-27"
+  "last_seen": "2026-11-28",
+  "last_ok": "2026-11-28"
  },
  "ukg:https://recruiting.ultipro.com/wur1001wgna/jobboard/e869ce68-a921-45eb-9467-2c7d2f5970a6": {
   "kind": "ukg",
@@ -4252,7 +4252,7 @@
   "last_seen": "2026-11-20",
   "label": "Würth Elektronik",
   "tried": "2026-11-23",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-23"
  },
  "ukg:https://recruiting2.ultipro.com/ams1003amsii/jobboard/15976ef7-7f1f-4b2f-8a0c-0e0ac1193dd8": {
@@ -4267,7 +4267,7 @@
   "last_seen": "2026-11-20",
   "label": "Baltimore Aircoil Company",
   "tried": "2026-11-23",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-23"
  },
  "workable:agile": {
@@ -4280,7 +4280,7 @@
   "via": "name probe (aerospace_companies)",
   "last_seen": "2026-11-20",
   "label": "Agile Space Industries",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "workable:atomos-space": {
   "kind": "workable",
@@ -4292,7 +4292,7 @@
   "via": "name probe (aerospace_companies)",
   "last_seen": "2026-11-20",
   "label": "Atomos Space",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "workable:barnes-aerospace": {
   "kind": "workable",
@@ -4304,7 +4304,7 @@
   "via": "name probe (aerospace_companies)",
   "last_seen": "2026-11-20",
   "label": "Barnes Aerospace",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "workable:battelle": {
   "kind": "workable",
@@ -4317,7 +4317,7 @@
   "last_seen": "2026-11-20",
   "engineering": true,
   "label": "Battelle",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "workable:boston-scientific": {
   "kind": "workable",
@@ -4330,7 +4330,7 @@
   "last_seen": "2026-11-20",
   "engineering": true,
   "label": "Boston Scientific",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "workable:built-robotics": {
   "kind": "workable",
@@ -4343,7 +4343,7 @@
   "last_seen": "2026-11-20",
   "engineering": true,
   "label": "Built Robotics",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "workable:cadillacf1team": {
   "kind": "workable",
@@ -4354,7 +4354,7 @@
   "state": "active",
   "via": "list link (2026-10-30)",
   "last_seen": "2026-10-30",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "workable:collins-aerospace": {
   "kind": "workable",
@@ -4366,7 +4366,7 @@
   "via": "name probe (aerospace_companies)",
   "last_seen": "2026-11-20",
   "label": "Collins Aerospace",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "workable:corning": {
   "kind": "workable",
@@ -4379,7 +4379,7 @@
   "last_seen": "2026-11-20",
   "engineering": true,
   "label": "Corning",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "workable:darkhive": {
   "kind": "workable",
@@ -4393,7 +4393,7 @@
   "last_seen": "2025-09-23",
   "label": "Darkhive",
   "tried": "2026-11-23",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-23"
  },
  "workable:dyson": {
@@ -4407,7 +4407,7 @@
   "last_seen": "2026-11-20",
   "engineering": true,
   "label": "Dyson",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "workable:elbit": {
   "kind": "workable",
@@ -4419,7 +4419,7 @@
   "via": "name probe (aerospace_companies)",
   "last_seen": "2026-11-21",
   "label": "Elbit America",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "workable:exponent": {
   "kind": "workable",
@@ -4432,7 +4432,7 @@
   "last_seen": "2026-11-21",
   "engineering": true,
   "label": "Exponent",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "workable:frontier": {
   "kind": "workable",
@@ -4444,7 +4444,7 @@
   "via": "name probe (aerospace_companies)",
   "last_seen": "2026-11-21",
   "label": "Frontier Aerospace",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "workable:griffon": {
   "kind": "workable",
@@ -4456,7 +4456,7 @@
   "via": "name probe (aerospace_companies)",
   "last_seen": "2026-11-21",
   "label": "Griffon Aerospace",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "workable:harley-davidson": {
   "kind": "workable",
@@ -4469,7 +4469,7 @@
   "last_seen": "2026-11-21",
   "engineering": true,
   "label": "Harley-Davidson",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "workable:hedron-space": {
   "kind": "workable",
@@ -4481,7 +4481,7 @@
   "via": "name probe (aerospace_companies)",
   "last_seen": "2026-11-21",
   "label": "Hedron Space",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "workable:kodiak-robotics": {
   "kind": "workable",
@@ -4494,7 +4494,7 @@
   "last_seen": "2026-11-22",
   "engineering": true,
   "label": "Kodiak Robotics",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "workable:kratos": {
   "kind": "workable",
@@ -4506,7 +4506,7 @@
   "via": "name probe (aerospace_companies)",
   "last_seen": "2026-11-22",
   "label": "Kratos",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "workable:mercury-systems": {
   "kind": "workable",
@@ -4518,7 +4518,7 @@
   "via": "name probe (aerospace_companies)",
   "last_seen": "2026-11-22",
   "label": "Mercury Systems",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "workable:parker": {
   "kind": "workable",
@@ -4530,7 +4530,7 @@
   "via": "name probe (aerospace_companies)",
   "last_seen": "2026-11-22",
   "label": "Parker Aerospace",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "workable:parker-hannifin": {
   "kind": "workable",
@@ -4543,7 +4543,7 @@
   "last_seen": "2026-11-22",
   "engineering": true,
   "label": "Parker Hannifin",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "workable:precision-castparts": {
   "kind": "workable",
@@ -4555,7 +4555,7 @@
   "via": "name probe (aerospace_companies)",
   "last_seen": "2026-11-23",
   "label": "Precision Castparts",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "workable:radian": {
   "kind": "workable",
@@ -4567,7 +4567,7 @@
   "via": "name probe (aerospace_companies)",
   "last_seen": "2026-11-23",
   "label": "Radian Aerospace",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "workable:red-rabbit-robotics": {
   "kind": "workable",
@@ -4581,7 +4581,7 @@
   "last_seen": "2026-08-11",
   "label": "Red Rabbit Robotics",
   "tried": "2026-11-23",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-23"
  },
  "workable:rise-robotics": {
@@ -4596,7 +4596,7 @@
   "last_seen": "2026-11-03",
   "label": "Rise Robotics",
   "tried": "2026-11-23",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-23"
  },
  "workable:sorting-robotics": {
@@ -4611,7 +4611,7 @@
   "last_seen": "2026-08-08",
   "label": "Sorting Robotics",
   "tried": "2026-11-23",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-23"
  },
  "workable:southwest-research-institute": {
@@ -4625,7 +4625,7 @@
   "last_seen": "2026-11-23",
   "engineering": true,
   "label": "Southwest Research Institute",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "workable:teal-drones": {
   "kind": "workable",
@@ -4637,7 +4637,7 @@
   "via": "name probe (aerospace_companies)",
   "last_seen": "2026-11-23",
   "label": "Teal Drones",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "workable:terabase-energy": {
   "kind": "workable",
@@ -4651,7 +4651,7 @@
   "last_seen": "2026-03-31",
   "label": "Terabase",
   "tried": "2026-11-23",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-23"
  },
  "workable:terrapower": {
@@ -4665,7 +4665,7 @@
   "last_seen": "2026-11-23",
   "engineering": true,
   "label": "Terrapower",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "workable:voyager": {
   "kind": "workable",
@@ -4677,7 +4677,7 @@
   "via": "name probe (aerospace_companies)",
   "last_seen": "2026-11-23",
   "label": "Voyager Space",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "workable:zimmer-biomet": {
   "kind": "workable",
@@ -4690,7 +4690,7 @@
   "last_seen": "2026-11-23",
   "engineering": true,
   "label": "Zimmer Biomet",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "workday:abb.wd3.myworkdayjobs.com/external_career_page": {
   "kind": "workday",
@@ -4698,11 +4698,14 @@
   "site": "external_career_page",
   "name": "ABB",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-09",
-  "state": "active",
-  "last_ok": "2026-11-27"
+  "state": "repair",
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:aero.wd5.myworkdayjobs.com/external": {
   "kind": "workday",
@@ -4710,10 +4713,13 @@
   "site": "external",
   "name": "The Aerospace Corporation",
   "first_seen": "2026-10-27",
-  "fails": 0,
-  "last_seen": "2026-11-27",
-  "state": "active",
-  "last_ok": "2026-11-27"
+  "fails": 1,
+  "last_seen": "2026-11-28",
+  "state": "repair",
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:ag.wd3.myworkdayjobs.com/airbus": {
   "kind": "workday",
@@ -4721,10 +4727,13 @@
   "site": "Airbus",
   "name": "Airbus",
   "first_seen": "2026-10-27",
-  "fails": 0,
-  "last_seen": "2026-11-27",
-  "state": "active",
-  "last_ok": "2026-11-27"
+  "fails": 1,
+  "last_seen": "2026-11-28",
+  "state": "repair",
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:airproducts.wd5.myworkdayjobs.com/ap0001": {
   "kind": "workday",
@@ -4732,15 +4741,18 @@
   "site": "AP0001",
   "name": "Air Products",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Summer Intern/Co-op-Mechanical Engineering (2027))",
   "engineering": true,
   "last_seen": "2026-08-27",
   "label": "Air Products",
   "tried": "2026-11-23",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-23"
+  "validated": "2026-11-23",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:allegion.wd5.myworkdayjobs.com/careers": {
   "kind": "workday",
@@ -4748,11 +4760,14 @@
   "site": "careers",
   "name": "Allegion",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-10-02",
-  "state": "active",
-  "last_ok": "2026-11-27"
+  "state": "repair",
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:allegion.wd5.myworkdayjobs.com/earlytalent_careers": {
   "kind": "workday",
@@ -4760,14 +4775,17 @@
   "site": "EarlyTalent_Careers",
   "name": "Allegion",
   "first_seen": "2026-11-22",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Engineering Intern - Product Lifecycle Engineering)",
   "engineering": true,
   "last_seen": "2026-09-11",
   "last_ok": "2026-11-27",
   "validated": "2026-11-22",
-  "label": "Allegion (EarlyTalent_Careers)"
+  "label": "Allegion (EarlyTalent_Careers)",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:alliance.wd3.myworkdayjobs.com/nissanjobs": {
   "kind": "workday",
@@ -4775,11 +4793,14 @@
   "site": "nissanjobs",
   "name": "Nissan",
   "first_seen": "2026-11-14",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-10-19",
-  "state": "active",
-  "last_ok": "2026-11-27"
+  "state": "repair",
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:amainc.wd12.myworkdayjobs.com/ama_careers": {
   "kind": "workday",
@@ -4790,7 +4811,7 @@
   "fails": 0,
   "last_seen": "2026-11-04",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "workday:amat.wd1.myworkdayjobs.com/external": {
   "kind": "workday",
@@ -4798,11 +4819,14 @@
   "site": "External",
   "name": "Applied Materials",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-10-28",
-  "state": "active",
-  "last_ok": "2026-11-27"
+  "state": "repair",
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:ambarella.wd108.myworkdayjobs.com/ambarella": {
   "kind": "workday",
@@ -4815,7 +4839,7 @@
   "last_seen": "2026-10-22",
   "state": "active",
   "label": "Ambarella",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "workday:amcor.wd5.myworkdayjobs.com/amcor_external_career_site": {
   "kind": "workday",
@@ -4823,15 +4847,18 @@
   "site": "amcor_external_career_site",
   "name": "Amcor",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "2 mechanical/aerospace internships on the lists (e.g. Product Development Engineer Intern)",
   "engineering": true,
   "last_seen": "2026-10-20",
   "label": "Amcor",
   "tried": "2026-11-23",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-23"
+  "validated": "2026-11-23",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:analogdevices.wd1.myworkdayjobs.com/external": {
   "kind": "workday",
@@ -4839,12 +4866,15 @@
   "site": "External",
   "name": "Analog Devices",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-23",
-  "state": "active",
+  "state": "repair",
   "label": "Analog Devices",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:aptiv.wd5.myworkdayjobs.com/aptiv_careers": {
   "kind": "workday",
@@ -4852,13 +4882,16 @@
   "site": "APTIV_CAREERS",
   "name": "Aptiv",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Intern - Tooling)",
   "engineering": true,
   "last_seen": "2026-10-08",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-20"
+  "validated": "2026-11-20",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:asml.wd3.myworkdayjobs.com/asmlext1": {
   "kind": "workday",
@@ -4866,12 +4899,15 @@
   "site": "asmlext1",
   "name": "ASML",
   "first_seen": "2026-11-06",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-25",
-  "state": "active",
+  "state": "repair",
   "label": "ASML",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:austalusa.wd1.myworkdayjobs.com/austal": {
   "kind": "workday",
@@ -4879,13 +4915,16 @@
   "site": "austal",
   "name": "Austal USA",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Intern)",
   "engineering": true,
   "last_seen": "2026-10-27",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-20"
+  "validated": "2026-11-20",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:avav.wd1.myworkdayjobs.com/avav": {
   "kind": "workday",
@@ -4893,10 +4932,13 @@
   "site": "avav",
   "name": "AeroVironment",
   "first_seen": "2026-10-27",
-  "fails": 0,
-  "last_seen": "2026-11-27",
-  "state": "active",
-  "last_ok": "2026-11-27"
+  "fails": 1,
+  "last_seen": "2026-11-28",
+  "state": "repair",
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:axiomspace.wd5.myworkdayjobs.com/external_career_site": {
   "kind": "workday",
@@ -4904,10 +4946,13 @@
   "site": "External_Career_Site",
   "name": "Axiom Space",
   "first_seen": "2026-10-27",
-  "fails": 0,
+  "fails": 1,
   "last_seen": "2026-11-25",
-  "state": "active",
-  "last_ok": "2026-11-27"
+  "state": "repair",
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:badgermeter.wd5.myworkdayjobs.com/us_careersite": {
   "kind": "workday",
@@ -4915,15 +4960,18 @@
   "site": "US_CareerSite",
   "name": "Badger Meter",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering NPD Intern)",
   "engineering": true,
   "last_seen": "2026-10-06",
   "label": "Badger Meter",
   "tried": "2026-11-23",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-23"
+  "validated": "2026-11-23",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:bah.wd1.myworkdayjobs.com/bah_jobs": {
   "kind": "workday",
@@ -4931,10 +4979,13 @@
   "site": "BAH_Jobs",
   "name": "Booz Allen Hamilton",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "last_seen": "2026-11-06",
-  "state": "active",
-  "last_ok": "2026-11-27"
+  "state": "repair",
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:barr.wd1.myworkdayjobs.com/barrcareers": {
   "kind": "workday",
@@ -4942,15 +4993,18 @@
   "site": "barrcareers",
   "name": "Barr",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Internship – Mechanical Engineer (Hybrid))",
   "engineering": true,
   "last_seen": "2026-11-25",
   "label": "Barr",
   "tried": "2026-11-23",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-23"
+  "validated": "2026-11-23",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:biotechne.wd5.myworkdayjobs.com/biotechne": {
   "kind": "workday",
@@ -4958,15 +5012,18 @@
   "site": "Biotechne",
   "name": "Bio-Techne",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "2 mechanical/aerospace internships on the lists (e.g. Hardware Engineering Intern)",
   "engineering": true,
   "last_seen": "2026-02-19",
   "label": "Bio-Techne",
   "tried": "2026-11-24",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-24"
+  "validated": "2026-11-24",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:bloomenergy.wd1.myworkdayjobs.com/bloomenergycareers": {
   "kind": "workday",
@@ -4974,15 +5031,18 @@
   "site": "bloomenergycareers",
   "name": "Bloom Energy",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Test Engineering Intern)",
   "engineering": true,
   "last_seen": "2025-11-25",
   "label": "Bloom Energy",
   "tried": "2026-11-24",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-24"
+  "validated": "2026-11-24",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:blueorigin.wd5.myworkdayjobs.com/blueorigin": {
   "kind": "workday",
@@ -4990,10 +5050,13 @@
   "site": "blueorigin",
   "name": "Blue Origin",
   "first_seen": "2026-10-27",
-  "fails": 0,
-  "last_seen": "2026-11-27",
-  "state": "active",
-  "last_ok": "2026-11-27"
+  "fails": 1,
+  "last_seen": "2026-11-28",
+  "state": "repair",
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:boeing.wd1.myworkdayjobs.com/external_careers": {
   "kind": "workday",
@@ -5022,10 +5085,13 @@
   "site": "INTERN",
   "name": "The Boeing Company",
   "first_seen": "2026-10-27",
-  "fails": 0,
+  "fails": 1,
   "last_seen": "2026-11-23",
-  "state": "active",
-  "last_ok": "2026-11-27"
+  "state": "repair",
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:borgwarner.wd5.myworkdayjobs.com/borgwarner_careers": {
   "kind": "workday",
@@ -5033,11 +5099,14 @@
   "site": "BorgWarner_Careers",
   "name": "BorgWarner",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-10-28",
-  "state": "active",
-  "last_ok": "2026-11-27"
+  "state": "repair",
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:bostondynamics.wd1.myworkdayjobs.com/boston_dynamics": {
   "kind": "workday",
@@ -5045,11 +5114,14 @@
   "site": "Boston_Dynamics",
   "name": "Boston Dynamics",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-24",
-  "state": "active",
-  "last_ok": "2026-11-27"
+  "state": "repair",
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:brunswick.wd1.myworkdayjobs.com/search": {
   "kind": "workday",
@@ -5057,11 +5129,14 @@
   "site": "search",
   "name": "Brunswick",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-09-03",
-  "state": "active",
-  "last_ok": "2026-11-27"
+  "state": "repair",
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:caci.wd1.myworkdayjobs.com/external": {
   "kind": "workday",
@@ -5069,10 +5144,13 @@
   "site": "external",
   "name": "CACI",
   "first_seen": "2026-10-28",
-  "fails": 0,
-  "last_seen": "2026-11-27",
-  "state": "active",
-  "last_ok": "2026-11-27"
+  "fails": 1,
+  "last_seen": "2026-11-28",
+  "state": "repair",
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:cadence.wd1.myworkdayjobs.com/external_careers": {
   "kind": "workday",
@@ -5080,15 +5158,18 @@
   "site": "External_Careers",
   "name": "Cadence Design Systems",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "1 mechanical/aerospace internship on the lists (e.g. SSG Design Engineering Intern)",
   "engineering": true,
   "last_seen": "2026-11-25",
   "label": "Cadence Design Systems",
   "tried": "2026-11-24",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-24"
+  "validated": "2026-11-24",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:cadence.wd1.myworkdayjobs.com/univ_careers": {
   "kind": "workday",
@@ -5096,15 +5177,18 @@
   "site": "Univ_Careers",
   "name": "Cadence Design Systems",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "1 mechanical/aerospace internship on the lists (e.g. SSG Design Engineering Intern - Summer 2026)",
   "engineering": true,
   "last_seen": "2026-02-27",
   "label": "Cadence Design Systems (Univ_Careers)",
   "tried": "2026-11-24",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-24"
+  "validated": "2026-11-24",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:cadence.wd1.myworkdayjobs.com/university_talent": {
   "kind": "workday",
@@ -5112,15 +5196,18 @@
   "site": "University_Talent",
   "name": "Cadence Design Systems",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "2 mechanical/aerospace internships on the lists (e.g. SSG Design Engineering Intern)",
   "engineering": true,
   "last_seen": "2026-02-27",
   "label": "Cadence Design Systems (University_Talent)",
   "tried": "2026-11-24",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-24"
+  "validated": "2026-11-24",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:cadence.wd1.myworkdayjobs.com/university_talent_intern": {
   "kind": "workday",
@@ -5128,15 +5215,18 @@
   "site": "University_Talent_Intern",
   "name": "Cadence Design Systems",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "1 mechanical/aerospace internship on the lists (e.g. SSG Design Engineering Intern)",
   "engineering": true,
   "last_seen": "2026-02-27",
   "label": "Cadence Design Systems (University_Talent_Intern)",
   "tried": "2026-11-24",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-24"
+  "validated": "2026-11-24",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:cae.wd3.myworkdayjobs.com/career": {
   "kind": "workday",
@@ -5144,10 +5234,13 @@
   "site": "career",
   "name": "CAE",
   "first_seen": "2026-11-02",
-  "fails": 0,
-  "last_seen": "2026-11-27",
-  "state": "active",
-  "last_ok": "2026-11-27"
+  "fails": 1,
+  "last_seen": "2026-11-28",
+  "state": "repair",
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:carrier.wd5.myworkdayjobs.com/jobs": {
   "kind": "workday",
@@ -5166,13 +5259,16 @@
   "site": "CTCExternal",
   "name": "Carpenter Technology",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Maintenance Intern - Mechanical)",
   "engineering": true,
   "last_seen": "2026-10-06",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-20"
+  "validated": "2026-11-20",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:cat.wd5.myworkdayjobs.com/caterpillarcareers": {
   "kind": "workday",
@@ -5192,11 +5288,14 @@
   "site": "solarturbines",
   "name": "Solar Turbines",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-24",
-  "state": "active",
-  "last_ok": "2026-11-27"
+  "state": "repair",
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:chartermfg.wd5.myworkdayjobs.com/charter_careers": {
   "kind": "workday",
@@ -5204,15 +5303,18 @@
   "site": "Charter_Careers",
   "name": "Charter Manufacturing",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "2 mechanical/aerospace internships on the lists (e.g. Mechanical Engineer Intern (Year-Round))",
   "engineering": true,
   "last_seen": "2026-10-14",
   "label": "Charter Manufacturing",
   "tried": "2026-11-24",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-24"
+  "validated": "2026-11-24",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:ciena.wd5.myworkdayjobs.com/careers": {
   "kind": "workday",
@@ -5220,12 +5322,15 @@
   "site": "Careers",
   "name": "Ciena",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-16",
-  "state": "active",
+  "state": "repair",
   "label": "Ciena",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:cisco.wd5.myworkdayjobs.com/cisco_careers": {
   "kind": "workday",
@@ -5233,12 +5338,15 @@
   "site": "cisco_careers",
   "name": "Cisco",
   "first_seen": "2026-11-06",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-17",
-  "state": "active",
+  "state": "repair",
   "label": "Cisco",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:citjpl.wd5.myworkdayjobs.com/jobs": {
   "kind": "workday",
@@ -5246,10 +5354,13 @@
   "site": "Jobs",
   "name": "NASA Jet Propulsion Laboratory",
   "first_seen": "2026-10-27",
-  "fails": 0,
-  "last_seen": "2026-11-27",
-  "state": "active",
-  "last_ok": "2026-11-27"
+  "fails": 1,
+  "last_seen": "2026-11-28",
+  "state": "repair",
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:cranecompany.wd5.myworkdayjobs.com/careers": {
   "kind": "workday",
@@ -5257,10 +5368,13 @@
   "site": "Careers",
   "name": "Crane",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "last_seen": "2026-11-23",
-  "state": "active",
-  "last_ok": "2026-11-27"
+  "state": "repair",
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:cubic.wd1.myworkdayjobs.com/cubic_global_careers": {
   "kind": "workday",
@@ -5268,11 +5382,14 @@
   "site": "cubic_global_careers",
   "name": "Cubic",
   "first_seen": "2026-10-30",
-  "fails": 0,
+  "fails": 1,
   "last_seen": "2026-11-04",
-  "state": "active",
+  "state": "repair",
   "label": "Cubic (cubic_global_careers)",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:cubic.wd1.myworkdayjobs.com/cubic_usa_careers": {
   "kind": "workday",
@@ -5280,10 +5397,13 @@
   "site": "cubic_USA_careers",
   "name": "Cubic",
   "first_seen": "2026-10-30",
-  "fails": 0,
+  "fails": 1,
   "last_seen": "2026-11-09",
-  "state": "active",
-  "last_ok": "2026-11-27"
+  "state": "repair",
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:curtisswright.wd1.myworkdayjobs.com/cw_external_career_site": {
   "kind": "workday",
@@ -5291,10 +5411,13 @@
   "site": "cw_external_career_site",
   "name": "Curtiss-Wright",
   "first_seen": "2026-10-27",
-  "fails": 0,
+  "fails": 1,
   "last_seen": "2026-11-16",
-  "state": "active",
-  "last_ok": "2026-11-27"
+  "state": "repair",
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:danaher.wd1.myworkdayjobs.com/danaherjobs": {
   "kind": "workday",
@@ -5302,12 +5425,15 @@
   "site": "danaherjobs",
   "name": "Danaher Corporation",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-09-17",
-  "state": "active",
+  "state": "repair",
   "label": "Danaher Corporation",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:dell.wd1.myworkdayjobs.com/external": {
   "kind": "workday",
@@ -5315,7 +5441,7 @@
   "site": "External",
   "name": "Dell Technologies",
   "first_seen": "2026-11-20",
-  "fails": 5,
+  "fails": 6,
   "state": "repair",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Dell CSG Hardware Engineering Intern)",
   "engineering": true,
@@ -5325,7 +5451,7 @@
   "label": "Dell Technologies (External)",
   "error": "Workday shows its maintenance page for this site: an outage, or the company moved to another hiring system",
   "fail_since": "2026-11-20",
-  "next_try": "2026-11-28"
+  "next_try": "2026-12-06"
  },
  "workday:disney.wd5.myworkdayjobs.com/disneycareerdc": {
   "kind": "workday",
@@ -5333,15 +5459,18 @@
   "site": "disneycareerdc",
   "name": "The Walt Disney Company",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Mechatronics Engineering Intern)",
   "engineering": true,
   "last_seen": "2026-02-17",
   "label": "The Walt Disney Company",
   "tried": "2026-11-24",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-24"
+  "validated": "2026-11-24",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:draper.wd5.myworkdayjobs.com/draper_careers": {
   "kind": "workday",
@@ -5349,10 +5478,13 @@
   "site": "Draper_Careers",
   "name": "Draper",
   "first_seen": "2026-10-27",
-  "fails": 0,
-  "last_seen": "2026-11-27",
-  "state": "active",
-  "last_ok": "2026-11-27"
+  "fails": 1,
+  "last_seen": "2026-11-28",
+  "state": "repair",
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:dtna.wd5.myworkdayjobs.com/dtna_external": {
   "kind": "workday",
@@ -5360,12 +5492,15 @@
   "site": "DTNA_external",
   "name": "Daimler Truck",
   "first_seen": "2026-11-12",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-17",
-  "state": "active",
+  "state": "repair",
   "label": "Daimler Truck",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:ebi.wd5.myworkdayjobs.com/ebadcareers": {
   "kind": "workday",
@@ -5373,10 +5508,13 @@
   "site": "ebadcareers",
   "name": "Ensign-Bickford Aerospace & Defense",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "last_seen": "2026-11-10",
-  "state": "active",
-  "last_ok": "2026-11-27"
+  "state": "repair",
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:elkay.wd1.myworkdayjobs.com/elkay_external": {
   "kind": "workday",
@@ -5384,12 +5522,15 @@
   "site": "Elkay_External",
   "name": "Zurn Elkay Water Solutions",
   "first_seen": "2026-11-06",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-03",
-  "state": "active",
+  "state": "repair",
   "label": "Zurn Elkay Water Solutions",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:entegris.wd1.myworkdayjobs.com/entegriscareers": {
   "kind": "workday",
@@ -5397,12 +5538,15 @@
   "site": "entegriscareers",
   "name": "Entegris",
   "first_seen": "2026-11-13",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-13",
-  "state": "active",
+  "state": "repair",
   "label": "Entegris",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:entrust.wd1.myworkdayjobs.com/entrustcareers": {
   "kind": "workday",
@@ -5410,15 +5554,18 @@
   "site": "entrustcareers",
   "name": "Entrust",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "2 mechanical/aerospace internships on the lists (e.g. Mechanical Engineering Co-Op)",
   "engineering": true,
   "last_seen": "2026-10-16",
   "label": "Entrust",
   "tried": "2026-11-24",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-24"
+  "validated": "2026-11-24",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:everestre.wd5.myworkdayjobs.com/careers": {
   "kind": "workday",
@@ -5426,15 +5573,18 @@
   "site": "careers",
   "name": "Everest",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "1 mechanical/aerospace internship on the lists (e.g. 2027 Everest Design Engineering Internship Program)",
   "engineering": true,
   "last_seen": "2026-09-15",
   "label": "Everest",
   "tried": "2026-11-24",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-24"
+  "validated": "2026-11-24",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:fermilab.wd5.myworkdayjobs.com/fermilabcareers": {
   "kind": "workday",
@@ -5442,13 +5592,16 @@
   "site": "FermilabCareers",
   "name": "Fermilab",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "1 mechanical/aerospace internship on the lists (e.g. VALOR VetTech Mechanical Internship - Summer 2027)",
   "engineering": true,
   "last_seen": "2026-10-05",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-20"
+  "validated": "2026-11-20",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:fireflyspace.wd115.myworkdayjobs.com/firefly": {
   "kind": "workday",
@@ -5457,9 +5610,9 @@
   "name": "Firefly Aerospace",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "workday:flextronics.wd1.myworkdayjobs.com/careers": {
   "kind": "workday",
@@ -5467,12 +5620,15 @@
   "site": "Careers",
   "name": "Flextronics International",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-04",
-  "state": "active",
+  "state": "repair",
   "label": "Flextronics International",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:flir.wd1.myworkdayjobs.com/flircareers": {
   "kind": "workday",
@@ -5481,7 +5637,7 @@
   "name": "Teledyne",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active"
  },
  "workday:foxfactory.wd1.myworkdayjobs.com/fox": {
@@ -5490,15 +5646,18 @@
   "site": "FOX",
   "name": "FOX",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Product Development Engineer Intern)",
   "engineering": true,
   "last_seen": "2025-11-01",
   "label": "FOX",
   "tried": "2026-11-24",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-24"
+  "validated": "2026-11-24",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:freseniusmedicalcare.wd3.myworkdayjobs.com/fme": {
   "kind": "workday",
@@ -5506,12 +5665,15 @@
   "site": "fme",
   "name": "Fresenius Medical Care",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-04-08",
-  "state": "active",
+  "state": "repair",
   "label": "Fresenius Medical Care",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:gafsgi.wd5.myworkdayjobs.com/gaf_careers": {
   "kind": "workday",
@@ -5519,15 +5681,18 @@
   "site": "GAF_Careers",
   "name": "GAF",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "1 mechanical/aerospace internship on the lists (e.g. R&D Commercial Product Development Engineer Intern)",
   "engineering": true,
   "last_seen": "2026-10-28",
   "label": "GAF",
   "tried": "2026-11-24",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-24"
+  "validated": "2026-11-24",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:gdit.wd5.myworkdayjobs.com/external_career_site": {
   "kind": "workday",
@@ -5545,11 +5710,14 @@
   "site": "gdit_earlytalent",
   "name": "General Dynamics Information Technology",
   "first_seen": "2026-10-28",
-  "fails": 0,
-  "last_seen": "2026-11-27",
-  "state": "active",
+  "fails": 1,
+  "last_seen": "2026-11-28",
+  "state": "repair",
   "label": "General Dynamics Information Technology",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:geaerospace.wd5.myworkdayjobs.com/ge_externalsite": {
   "kind": "workday",
@@ -5557,10 +5725,13 @@
   "site": "ge_externalsite",
   "name": "GE Aerospace",
   "first_seen": "2026-10-27",
-  "fails": 0,
+  "fails": 1,
   "last_seen": "2026-11-27",
-  "state": "active",
-  "last_ok": "2026-11-27"
+  "state": "repair",
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:gehc.wd5.myworkdayjobs.com/gehc_externalsite": {
   "kind": "workday",
@@ -5568,13 +5739,16 @@
   "site": "GEHC_ExternalSite",
   "name": "GE HealthCare",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Internship Mechanical Design)",
   "engineering": true,
   "last_seen": "2026-11-10",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-20"
+  "validated": "2026-11-20",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:generac.wd5.myworkdayjobs.com/external": {
   "kind": "workday",
@@ -5582,11 +5756,14 @@
   "site": "external",
   "name": "Generac",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-10-26",
-  "state": "active",
-  "last_ok": "2026-11-27"
+  "state": "repair",
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:generalmotors.wd5.myworkdayjobs.com/careers_gm": {
   "kind": "workday",
@@ -5594,11 +5771,14 @@
   "site": "Careers_GM",
   "name": "General Motors",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-17",
-  "state": "active",
-  "last_ok": "2026-11-27"
+  "state": "repair",
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:gevernova.wd5.myworkdayjobs.com/only_confidential_executive_recruiting": {
   "kind": "workday",
@@ -5606,15 +5786,18 @@
   "site": "only_confidential_executive_recruiting",
   "name": "GE Vernova",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Automation and Test Engineering Intern - Spring/Sum)",
   "engineering": true,
   "last_seen": "2026-09-09",
   "label": "GE Vernova (only_confidential_executive_recruiting)",
   "tried": "2026-11-24",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-24"
+  "validated": "2026-11-24",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:gevernova.wd5.myworkdayjobs.com/vernova_externalsite": {
   "kind": "workday",
@@ -5622,13 +5805,16 @@
   "site": "vernova_externalsite",
   "name": "GE Vernova",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "2 mechanical/aerospace internships on the lists (e.g. Hardware Automation and Test Engineering Intern - Spring/Sum)",
   "engineering": true,
   "last_seen": "2026-10-20",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-20"
+  "validated": "2026-11-20",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:gi.wd1.myworkdayjobs.com/global_infrastructure": {
   "kind": "workday",
@@ -5636,12 +5822,15 @@
   "site": "Global_Infrastructure",
   "name": "Global Infrastructure",
   "first_seen": "2026-11-06",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-06",
-  "state": "active",
+  "state": "repair",
   "label": "Global Infrastructure",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:globalfoundries.wd1.myworkdayjobs.com/external": {
   "kind": "workday",
@@ -5649,12 +5838,15 @@
   "site": "External",
   "name": "GlobalFoundries",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-02",
-  "state": "active",
+  "state": "repair",
   "label": "GlobalFoundries",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:globalhr.wd5.myworkdayjobs.com/rec_rtx_ext_gateway": {
   "kind": "workday",
@@ -5663,7 +5855,7 @@
   "name": "RTX",
   "first_seen": "2026-10-27",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active"
  },
  "workday:gorbel.wd501.myworkdayjobs.com/gorbelcareers": {
@@ -5677,7 +5869,7 @@
   "last_seen": "2026-11-02",
   "state": "active",
   "label": "Gorbel",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "workday:granite.wd1.myworkdayjobs.com/careers": {
   "kind": "workday",
@@ -5685,15 +5877,18 @@
   "site": "careers",
   "name": "Granite Construction",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Intern - Design Engineer)",
   "engineering": true,
   "last_seen": "2026-11-06",
   "label": "Granite Construction",
   "tried": "2026-11-24",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-24"
+  "validated": "2026-11-24",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:gtsgbu.wd3.myworkdayjobs.com/careers": {
   "kind": "workday",
@@ -5701,16 +5896,16 @@
   "site": "Careers",
   "name": "Hitachi",
   "first_seen": "2026-11-20",
-  "fails": 3,
+  "fails": 4,
   "state": "candidate",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Field Test Engineering Intern)",
   "engineering": true,
   "last_seen": "2026-01-30",
   "label": "Hitachi",
-  "tried": "2026-11-27",
-  "error": "Workday shows its maintenance page for this site: an outage, or the company moved to another hiring system",
+  "tried": "2026-11-28",
+  "error": "Expecting value: line 1 column 1 (char 0)",
   "fail_since": "2026-11-24",
-  "next_try": "2026-11-28"
+  "next_try": "2026-11-30"
  },
  "workday:haier.wd3.myworkdayjobs.com/ge_appliances": {
   "kind": "workday",
@@ -5718,11 +5913,14 @@
   "site": "GE_Appliances",
   "name": "GE Appliances",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-10-30",
-  "state": "active",
-  "last_ok": "2026-11-27"
+  "state": "repair",
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:harman.wd3.myworkdayjobs.com/harman": {
   "kind": "workday",
@@ -5730,12 +5928,15 @@
   "site": "HARMAN",
   "name": "HARMAN International",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-04-20",
-  "state": "active",
+  "state": "repair",
   "label": "HARMAN International",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:heidelbergmaterials.wd3.myworkdayjobs.com/global_hm_career_site": {
   "kind": "workday",
@@ -5743,15 +5944,18 @@
   "site": "global_hm_career_site",
   "name": "Heidelberg Materials",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineer Intern)",
   "engineering": true,
   "last_seen": "2026-10-13",
   "label": "Heidelberg Materials",
   "tried": "2026-11-24",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-24"
+  "validated": "2026-11-24",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:hendrick.wd5.myworkdayjobs.com/hmscareers": {
   "kind": "workday",
@@ -5759,10 +5963,13 @@
   "site": "HMSCareers",
   "name": "Hendrick Motorsports",
   "first_seen": "2026-11-14",
-  "fails": 0,
-  "last_seen": "2026-11-27",
-  "state": "active",
-  "last_ok": "2026-11-27"
+  "fails": 1,
+  "last_seen": "2026-11-28",
+  "state": "repair",
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:hexcel.wd5.myworkdayjobs.com/hexcelcareers": {
   "kind": "workday",
@@ -5770,10 +5977,13 @@
   "site": "HexcelCareers",
   "name": "Hexcel",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "last_seen": "2026-10-28",
-  "state": "active",
-  "last_ok": "2026-11-27"
+  "state": "repair",
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:highmarkhealth.wd1.myworkdayjobs.com/highmark": {
   "kind": "workday",
@@ -5781,15 +5991,18 @@
   "site": "highmark",
   "name": "Highmark Health",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Data Test Engineering Intern - Multiple Teams)",
   "engineering": true,
   "last_seen": "2025-10-02",
   "label": "Highmark Health",
   "tried": "2026-11-24",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-24"
+  "validated": "2026-11-24",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:hitachi.wd1.myworkdayjobs.com/hitachi": {
   "kind": "workday",
@@ -5797,11 +6010,14 @@
   "site": "hitachi",
   "name": "Hitachi Energy",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-06",
-  "state": "active",
-  "last_ok": "2026-11-27"
+  "state": "repair",
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:hntb.wd5.myworkdayjobs.com/hntb_careers": {
   "kind": "workday",
@@ -5809,12 +6025,15 @@
   "site": "hntb_careers",
   "name": "HNTB",
   "first_seen": "2026-11-06",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-10-27",
-  "state": "active",
+  "state": "repair",
   "label": "HNTB",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:hp.wd5.myworkdayjobs.com/externalcareersite": {
   "kind": "workday",
@@ -5822,12 +6041,15 @@
   "site": "externalcareersite",
   "name": "Hewlett Packard",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-09-28",
-  "state": "active",
+  "state": "repair",
   "label": "Hewlett Packard",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:hp.wd5.myworkdayjobs.com/exteu-ac-careersite": {
   "kind": "workday",
@@ -5835,12 +6057,15 @@
   "site": "EXTEU-AC-CareerSite",
   "name": "Hewlett Packard",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-09-28",
-  "state": "active",
+  "state": "repair",
   "label": "Hewlett Packard (EXTEU-AC-CareerSite)",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:hpe.wd5.myworkdayjobs.com/jobsathpe": {
   "kind": "workday",
@@ -5848,12 +6073,15 @@
   "site": "jobsathpe",
   "name": "Hewlett Packard Enterprise",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-19",
-  "state": "active",
+  "state": "repair",
   "label": "Hewlett Packard Enterprise",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:hypertherm.wd503.myworkdayjobs.com/hypertherm-careers": {
   "kind": "workday",
@@ -5868,7 +6096,7 @@
   "last_seen": "2026-11-06",
   "label": "Hypertherm",
   "tried": "2026-11-24",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-24"
  },
  "workday:imeg.wd1.myworkdaysite.com/imeg_careers": {
@@ -5878,12 +6106,15 @@
   "tenant": "imeg",
   "name": "IMEG",
   "first_seen": "2026-11-06",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-10-30",
-  "state": "active",
+  "state": "repair",
   "label": "IMEG",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:intel.wd1.myworkdayjobs.com/external": {
   "kind": "workday",
@@ -5891,11 +6122,14 @@
   "site": "External",
   "name": "Intel",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-12",
-  "state": "active",
-  "last_ok": "2026-11-27"
+  "state": "repair",
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:interpublic.wd5.myworkdayjobs.com/omc": {
   "kind": "workday",
@@ -5903,15 +6137,18 @@
   "site": "omc",
   "name": "Omnicom Group",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Experience Design Engineer Intern Consultant - Design Engine)",
   "engineering": true,
   "last_seen": "2026-09-01",
   "label": "Omnicom Group",
   "tried": "2026-11-24",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-24"
+  "validated": "2026-11-24",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:irhythmtech.wd5.myworkdayjobs.com/irhythm": {
   "kind": "workday",
@@ -5919,15 +6156,18 @@
   "site": "irhythm",
   "name": "iRhythm Technologies",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Electrical Test Engineering Co-op)",
   "engineering": true,
   "last_seen": "2026-04-17",
   "label": "iRhythm Technologies",
   "tried": "2026-11-24",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-24"
+  "validated": "2026-11-24",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:jabil.wd5.myworkdayjobs.com/jabil_careers": {
   "kind": "workday",
@@ -5935,11 +6175,14 @@
   "site": "Jabil_Careers",
   "name": "Jabil",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-05",
-  "state": "active",
-  "last_ok": "2026-11-27"
+  "state": "repair",
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:jci.wd5.myworkdayjobs.com/jci": {
   "kind": "workday",
@@ -5947,15 +6190,18 @@
   "site": "JCI",
   "name": "Johnson Controls",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "2 mechanical/aerospace internships on the lists (e.g. Embedded Firmware Engineering Intern - Embedded Systems - HV)",
   "engineering": true,
   "last_seen": "2026-11-25",
   "label": "Johnson Controls",
   "tried": "2026-11-25",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-25"
+  "validated": "2026-11-25",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:jj.wd5.myworkdayjobs.com/jj": {
   "kind": "workday",
@@ -5963,11 +6209,14 @@
   "site": "JJ",
   "name": "Johnson & Johnson",
   "first_seen": "2026-11-06",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-09-23",
-  "state": "active",
-  "last_ok": "2026-11-27"
+  "state": "repair",
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:kbr.wd5.myworkdayjobs.com/kbr_careers": {
   "kind": "workday",
@@ -5975,10 +6224,13 @@
   "site": "KBR_Careers",
   "name": "KBR",
   "first_seen": "2026-10-28",
-  "fails": 0,
-  "last_seen": "2026-11-27",
-  "state": "active",
-  "last_ok": "2026-11-27"
+  "fails": 1,
+  "last_seen": "2026-11-28",
+  "state": "repair",
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:kiongroup.wd3.myworkdayjobs.com/kion_scs": {
   "kind": "workday",
@@ -5986,15 +6238,18 @@
   "site": "KION_SCS",
   "name": "KION Group",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "2 mechanical/aerospace internships on the lists (e.g. RSD Intern - Test Engineering)",
   "engineering": true,
   "last_seen": "2026-11-09",
   "label": "KION Group",
   "tried": "2026-11-25",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-25"
+  "validated": "2026-11-25",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:kiongroup.wd3.myworkdayjobs.com/kiongroup": {
   "kind": "workday",
@@ -6002,15 +6257,18 @@
   "site": "kiongroup",
   "name": "KION Group",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "1 mechanical/aerospace internship on the lists (e.g. RSD Intern - Test Engineering)",
   "engineering": true,
   "last_seen": "2026-11-09",
   "label": "KION Group (kiongroup)",
   "tried": "2026-11-25",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-25"
+  "validated": "2026-11-25",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:kla.wd1.myworkdayjobs.com/annarbor": {
   "kind": "workday",
@@ -6018,14 +6276,17 @@
   "site": "AnnArbor",
   "name": "KLA",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Opto-Mechanical Intern)",
   "engineering": true,
   "last_seen": "2026-10-16",
   "last_ok": "2026-11-27",
   "validated": "2026-11-20",
-  "label": "KLA"
+  "label": "KLA",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:kla.wd1.myworkdayjobs.com/search": {
   "kind": "workday",
@@ -6033,12 +6294,15 @@
   "site": "Search",
   "name": "KLA",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-19",
-  "state": "active",
+  "state": "repair",
   "label": "KLA (Search)",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:kla.wd1.myworkdayjobs.com/ur": {
   "kind": "workday",
@@ -6046,12 +6310,15 @@
   "site": "UR",
   "name": "KLA",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-20",
-  "state": "active",
+  "state": "repair",
   "label": "KLA (UR)",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:labcorp.wd1.myworkdayjobs.com/external": {
   "kind": "workday",
@@ -6059,15 +6326,18 @@
   "site": "external",
   "name": "LabCorp",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Intern - Mechanical Engineer)",
   "engineering": true,
   "last_seen": "2026-09-14",
   "label": "LabCorp",
   "tried": "2026-11-25",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-25"
+  "validated": "2026-11-25",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:leidos.wd5.myworkdayjobs.com/external": {
   "kind": "workday",
@@ -6075,10 +6345,13 @@
   "site": "External",
   "name": "Leidos",
   "first_seen": "2026-11-03",
-  "fails": 0,
-  "last_seen": "2026-11-27",
-  "state": "active",
-  "last_ok": "2026-11-27"
+  "fails": 1,
+  "last_seen": "2026-11-28",
+  "state": "repair",
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:lifefitness.wd1.myworkdayjobs.com/searchlfn": {
   "kind": "workday",
@@ -6086,15 +6359,18 @@
   "site": "searchLFN",
   "name": "Life Fitness",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "2 mechanical/aerospace internships on the lists (e.g. Mechanical Engineering Intern - Ramsey, MN)",
   "engineering": true,
   "last_seen": "2026-10-12",
   "label": "Life Fitness",
   "tried": "2026-11-25",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-25"
+  "validated": "2026-11-25",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:lumentum.wd5.myworkdayjobs.com/lite": {
   "kind": "workday",
@@ -6102,15 +6378,18 @@
   "site": "LITE",
   "name": "Lumentum",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Internship - Mechanical Engineer)",
   "engineering": true,
   "last_seen": "2026-10-19",
   "label": "Lumentum",
   "tried": "2026-11-25",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-25"
+  "validated": "2026-11-25",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:magna.wd3.myworkdaysite.com/magna": {
   "kind": "workday",
@@ -6119,15 +6398,18 @@
   "tenant": "magna",
   "name": "Magna",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "2 mechanical/aerospace internships on the lists (e.g. Infrared Systems & Test Engineering Intern)",
   "engineering": true,
   "last_seen": "2026-09-14",
   "label": "Magna",
   "tried": "2026-11-25",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-25"
+  "validated": "2026-11-25",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:marvell.wd1.myworkdayjobs.com/marvellcareers": {
   "kind": "workday",
@@ -6135,12 +6417,15 @@
   "site": "MarvellCareers",
   "name": "Marvell",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-19",
-  "state": "active",
+  "state": "repair",
   "label": "Marvell",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:marvell.wd1.myworkdayjobs.com/marvellcareers2": {
   "kind": "workday",
@@ -6148,12 +6433,15 @@
   "site": "MarvellCareers2",
   "name": "Marvell",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-10-05",
-  "state": "active",
+  "state": "repair",
   "label": "Marvell (MarvellCareers2)",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:masco.wd1.myworkdayjobs.com/deltafaucet": {
   "kind": "workday",
@@ -6161,15 +6449,18 @@
   "site": "deltafaucet",
   "name": "Delta Faucet",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Engineer Co-op - Electrical Engineering)",
   "engineering": true,
   "last_seen": "2026-09-10",
   "label": "Delta Faucet",
   "tried": "2026-11-25",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-25"
+  "validated": "2026-11-25",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:masco.wd1.myworkdayjobs.com/masco": {
   "kind": "workday",
@@ -6177,15 +6468,18 @@
   "site": "Masco",
   "name": "Masco",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Engineer Co-op - Electrical Engineering)",
   "engineering": true,
   "last_seen": "2026-09-10",
   "label": "Masco",
   "tried": "2026-11-25",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-25"
+  "validated": "2026-11-25",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:maxar.wd1.myworkdayjobs.com/vantor": {
   "kind": "workday",
@@ -6210,7 +6504,7 @@
   "last_seen": "2026-11-13",
   "label": "Menasha Corporation",
   "tried": "2026-11-25",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-25"
  },
  "workday:michelinhr.wd3.myworkdayjobs.com/michelin": {
@@ -6219,15 +6513,18 @@
   "site": "Michelin",
   "name": "Michelin",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Summer 2027 Internship: Mechanical Engineer (Emporia, KS))",
   "engineering": true,
   "last_seen": "2026-08-31",
   "label": "Michelin",
   "tried": "2026-11-25",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-25"
+  "validated": "2026-11-25",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:microchiphr.wd5.myworkdaysite.com/external": {
   "kind": "workday",
@@ -6236,12 +6533,15 @@
   "tenant": "microchiphr",
   "name": "Microchip Technology",
   "first_seen": "2026-11-06",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-04-22",
-  "state": "active",
+  "state": "repair",
   "label": "Microchip Technology",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:micron.wd1.myworkdayjobs.com/external": {
   "kind": "workday",
@@ -6249,12 +6549,15 @@
   "site": "External",
   "name": "Micron Technology",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-18",
-  "state": "active",
+  "state": "repair",
   "label": "Micron Technology",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:mii.wd5.myworkdayjobs.com/universityrecruiting": {
   "kind": "workday",
@@ -6262,16 +6565,16 @@
   "site": "universityrecruiting",
   "name": "Mii",
   "first_seen": "2026-11-20",
-  "fails": 3,
+  "fails": 4,
   "state": "candidate",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Design Engineer Intern (Wood Truss))",
   "engineering": true,
   "last_seen": "2026-10-20",
   "label": "Mii",
-  "tried": "2026-11-27",
-  "error": "Workday shows its maintenance page for this site: an outage, or the company moved to another hiring system",
+  "tried": "2026-11-28",
+  "error": "Expecting value: line 1 column 1 (char 0)",
   "fail_since": "2026-11-25",
-  "next_try": "2026-11-28"
+  "next_try": "2026-11-30"
  },
  "workday:modernatx.wd1.myworkdayjobs.com/m_tx": {
   "kind": "workday",
@@ -6279,15 +6582,18 @@
   "site": "M_tx",
   "name": "Moderna",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "2 mechanical/aerospace internships on the lists (e.g. mRNA Design Engineer Co-op)",
   "engineering": true,
   "last_seen": "2026-11-24",
   "label": "Moderna",
   "tried": "2026-11-25",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-25"
+  "validated": "2026-11-25",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:modmed.wd501.myworkdayjobs.com/modmed12": {
   "kind": "workday",
@@ -6300,7 +6606,7 @@
   "via": "replacement for greenhouse:modernizingmedicineinc (failing since 2026-11-21)",
   "engineering": true,
   "label": "Modernizing Medicine",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "workday:momentive.wd1.myworkdayjobs.com/mc": {
   "kind": "workday",
@@ -6308,15 +6614,18 @@
   "site": "MC",
   "name": "Momentive",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "1 mechanical/aerospace internship on the lists (e.g. 2027 Co-Op - Electronics & Aerospace)",
   "engineering": true,
   "last_seen": "2026-11-10",
   "label": "Momentive",
   "tried": "2026-11-25",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-25"
+  "validated": "2026-11-25",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:moog.wd5.myworkdayjobs.com/moog_external_career_site": {
   "kind": "workday",
@@ -6324,10 +6633,13 @@
   "site": "moog_external_career_site",
   "name": "Moog",
   "first_seen": "2026-10-27",
-  "fails": 0,
-  "last_seen": "2026-11-27",
-  "state": "active",
-  "last_ok": "2026-11-27"
+  "fails": 1,
+  "last_seen": "2026-11-28",
+  "state": "repair",
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:motorolasolutions.wd5.myworkdayjobs.com/careers": {
   "kind": "workday",
@@ -6335,12 +6647,15 @@
   "site": "Careers",
   "name": "Motorola",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-17",
-  "state": "active",
+  "state": "repair",
   "label": "Motorola",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:multimatic.wd10.myworkdayjobs.com/mmec": {
   "kind": "workday",
@@ -6349,9 +6664,9 @@
   "name": "Multimatic",
   "first_seen": "2026-11-14",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "workday:ngc.wd1.myworkdayjobs.com/northrop_grumman_external_site": {
   "kind": "workday",
@@ -6359,10 +6674,13 @@
   "site": "Northrop_Grumman_External_Site",
   "name": "Northrop Grumman",
   "first_seen": "2026-10-27",
-  "fails": 0,
-  "last_seen": "2026-11-27",
-  "state": "active",
-  "last_ok": "2026-11-27"
+  "fails": 1,
+  "last_seen": "2026-11-28",
+  "state": "repair",
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:nidec.wd1.myworkdayjobs.com/nidec": {
   "kind": "workday",
@@ -6370,11 +6688,14 @@
   "site": "nidec",
   "name": "Nidec",
   "first_seen": "2026-11-19",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-19",
-  "state": "active",
-  "last_ok": "2026-11-27"
+  "state": "repair",
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:nvent.wd5.myworkdayjobs.com/nvent": {
   "kind": "workday",
@@ -6382,12 +6703,15 @@
   "site": "nVent",
   "name": "nVent",
   "first_seen": "2026-11-06",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-04",
-  "state": "active",
+  "state": "repair",
   "label": "nVent",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite": {
   "kind": "workday",
@@ -6395,12 +6719,15 @@
   "site": "NVIDIAExternalCareerSite",
   "name": "NVIDIA",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-19",
-  "state": "active",
+  "state": "repair",
   "label": "NVIDIA",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:nwis.wd12.myworkdayjobs.com/nw": {
   "kind": "workday",
@@ -6411,7 +6738,7 @@
   "fails": 0,
   "last_seen": "2026-11-16",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "workday:nxp.wd3.myworkdayjobs.com/careers": {
   "kind": "workday",
@@ -6435,15 +6762,18 @@
   "tenant": "oatey",
   "name": "OATEY",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Design Engineering Intern)",
   "engineering": true,
   "last_seen": "2026-11-20",
   "label": "OATEY",
   "tried": "2026-11-25",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-25"
+  "validated": "2026-11-25",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:oshkoshcorporation.wd5.myworkdayjobs.com/oshkosh": {
   "kind": "workday",
@@ -6451,11 +6781,14 @@
   "site": "Oshkosh",
   "name": "Oshkosh",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-10-20",
-  "state": "active",
-  "last_ok": "2026-11-27"
+  "state": "repair",
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:pae.wd1.myworkdayjobs.com/amentum_careers": {
   "kind": "workday",
@@ -6463,10 +6796,13 @@
   "site": "amentum_careers",
   "name": "Amentum",
   "first_seen": "2026-10-28",
-  "fails": 0,
-  "last_seen": "2026-11-24",
-  "state": "active",
-  "last_ok": "2026-11-27"
+  "fails": 1,
+  "last_seen": "2026-11-28",
+  "state": "repair",
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:parsons.wd5.myworkdayjobs.com/search": {
   "kind": "workday",
@@ -6474,10 +6810,13 @@
   "site": "search",
   "name": "Parsons",
   "first_seen": "2026-10-28",
-  "fails": 0,
-  "last_seen": "2026-11-27",
-  "state": "active",
-  "last_ok": "2026-11-27"
+  "fails": 1,
+  "last_seen": "2026-11-28",
+  "state": "repair",
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:philips.wd3.myworkdayjobs.com/jobs-and-careers": {
   "kind": "workday",
@@ -6485,11 +6824,14 @@
   "site": "jobs-and-careers",
   "name": "Philips",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-03",
-  "state": "active",
-  "last_ok": "2026-11-27"
+  "state": "repair",
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:plexus.wd5.myworkdayjobs.com/plexus_careers": {
   "kind": "workday",
@@ -6497,16 +6839,16 @@
   "site": "Plexus_Careers",
   "name": "Plexus",
   "first_seen": "2026-11-20",
-  "fails": 3,
+  "fails": 4,
   "state": "candidate",
   "via": "2 mechanical/aerospace internships on the lists (e.g. Intern Hardware Engineer)",
   "engineering": true,
   "last_seen": "2026-01-12",
   "label": "Plexus",
-  "tried": "2026-11-27",
+  "tried": "2026-11-28",
   "error": "Workday shows its maintenance page for this site: an outage, or the company moved to another hiring system",
   "fail_since": "2026-11-25",
-  "next_try": "2026-11-28"
+  "next_try": "2026-11-30"
  },
  "workday:plugpower.wd5.myworkdayjobs.com/plug_power_inc": {
   "kind": "workday",
@@ -6514,15 +6856,18 @@
   "site": "Plug_Power_Inc",
   "name": "Plug Power",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Test Engineering Intern)",
   "engineering": true,
   "last_seen": "2025-12-31",
   "label": "Plug Power",
   "tried": "2026-11-25",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-25"
+  "validated": "2026-11-25",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:radiancetech.wd12.myworkdayjobs.com/radiance_external": {
   "kind": "workday",
@@ -6531,9 +6876,9 @@
   "name": "Radiance Technologies",
   "first_seen": "2026-10-30",
   "fails": 0,
-  "last_seen": "2026-11-27",
+  "last_seen": "2026-11-28",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "workday:recar.wd108.myworkdayjobs.com/slatecareers": {
   "kind": "workday",
@@ -6548,7 +6893,7 @@
   "last_seen": "2026-02-02",
   "label": "Slate Auto",
   "tried": "2026-11-25",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-25"
  },
  "workday:regalrexnord.wd1.myworkdayjobs.com/careers": {
@@ -6557,15 +6902,18 @@
   "site": "careers",
   "name": "Regal Rexnord",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Engineering Co-op - Mechanical)",
   "engineering": true,
   "last_seen": "2026-05-23",
   "label": "Regal Rexnord",
   "tried": "2026-11-25",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-25"
+  "validated": "2026-11-25",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:roche.wd3.myworkdayjobs.com/roche-ext": {
   "kind": "workday",
@@ -6573,15 +6921,18 @@
   "site": "roche-ext",
   "name": "Roche",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Intern - Systems Engineer - Systems & Hardware Engineering C)",
   "engineering": true,
   "last_seen": "2026-11-18",
   "label": "Roche",
   "tried": "2026-11-25",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-25"
+  "validated": "2026-11-25",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:rockwellautomation.wd1.myworkdayjobs.com/external-rockwell-automation-early-careers": {
   "kind": "workday",
@@ -6589,14 +6940,17 @@
   "site": "External-Rockwell-Automation-Early-Careers",
   "name": "Rockwell Automation",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Test Engineering Intern)",
   "engineering": true,
   "last_seen": "2026-10-14",
   "last_ok": "2026-11-27",
   "validated": "2026-11-20",
-  "label": "Rockwell Automation (External-Rockwell-Automation-Early-Careers)"
+  "label": "Rockwell Automation (External-Rockwell-Automation-Early-Careers)",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:rockwellautomation.wd1.myworkdayjobs.com/external_rockwell_automation": {
   "kind": "workday",
@@ -6604,11 +6958,14 @@
   "site": "External_Rockwell_Automation",
   "name": "Rockwell Automation",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-17",
-  "state": "active",
-  "last_ok": "2026-11-27"
+  "state": "repair",
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:rollsroyce.wd3.myworkdayjobs.com/intern_graduate": {
   "kind": "workday",
@@ -6616,10 +6973,13 @@
   "site": "Intern_Graduate",
   "name": "Rolls-Royce",
   "first_seen": "2026-10-27",
-  "fails": 0,
-  "last_seen": "2026-11-27",
-  "state": "active",
-  "last_ok": "2026-11-27"
+  "fails": 1,
+  "last_seen": "2026-11-28",
+  "state": "repair",
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:saputo.wd5.myworkdayjobs.com/saputo_external_careers": {
   "kind": "workday",
@@ -6627,15 +6987,18 @@
   "site": "saputo_external_careers",
   "name": "Saputo",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Packaging Engineering Trainee Intern)",
   "engineering": true,
   "last_seen": "2026-11-11",
   "label": "Saputo",
   "tried": "2026-11-26",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-26"
+  "validated": "2026-11-26",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:sbdinc.wd1.myworkdayjobs.com/stanley_black_decker_career_site": {
   "kind": "workday",
@@ -6643,15 +7006,18 @@
   "site": "Stanley_Black_Decker_Career_Site",
   "name": "Stanley Black & Decker",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Intern Summer 2027)",
   "engineering": true,
   "last_seen": "2026-11-12",
   "label": "Stanley Black & Decker",
   "tried": "2026-11-26",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-26"
+  "validated": "2026-11-26",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:scj.wd5.myworkdayjobs.com/external_career_site": {
   "kind": "workday",
@@ -6659,15 +7025,18 @@
   "site": "External_Career_Site",
   "name": "SC Johnson",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Packaging Engineer Intern)",
   "engineering": true,
   "last_seen": "2026-05-25",
   "label": "SC Johnson",
   "tried": "2026-11-26",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-26"
+  "validated": "2026-11-26",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:sec.wd3.myworkdayjobs.com/samsung_careers": {
   "kind": "workday",
@@ -6675,14 +7044,17 @@
   "site": "Samsung_Careers",
   "name": "Samsung",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Interoperability – Test Engineering Intern - Iodt)",
   "engineering": true,
   "last_seen": "2026-02-03",
   "last_ok": "2026-11-27",
   "validated": "2026-11-20",
-  "label": "Samsung (Samsung_Careers)"
+  "label": "Samsung (Samsung_Careers)",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:selinc.wd1.myworkdayjobs.com/sel": {
   "kind": "workday",
@@ -6690,11 +7062,14 @@
   "site": "SEL",
   "name": "Schweitzer Engineering Laboratories",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-09",
-  "state": "active",
-  "last_ok": "2026-11-27"
+  "state": "repair",
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:sensata.wd1.myworkdayjobs.com/sensata-careers": {
   "kind": "workday",
@@ -6702,12 +7077,15 @@
   "site": "Sensata-Careers",
   "name": "Sensata",
   "first_seen": "2026-11-06",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-09-16",
-  "state": "active",
+  "state": "repair",
   "label": "Sensata",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:sierraspace.wd1.myworkdayjobs.com/sierra_space_external_career_site": {
   "kind": "workday",
@@ -6715,10 +7093,13 @@
   "site": "Sierra_Space_External_Career_Site",
   "name": "Sierra Space",
   "first_seen": "2026-10-27",
-  "fails": 0,
-  "last_seen": "2026-11-27",
-  "state": "active",
-  "last_ok": "2026-11-27"
+  "fails": 1,
+  "last_seen": "2026-11-28",
+  "state": "repair",
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:silabs.wd1.myworkdayjobs.com/siliconlabscareers": {
   "kind": "workday",
@@ -6726,12 +7107,15 @@
   "site": "SiliconlabsCareers",
   "name": "Silicon Laboratories",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-01-26",
-  "state": "active",
+  "state": "repair",
   "label": "Silicon Laboratories",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:slihrms.wd3.myworkdayjobs.com/careers": {
   "kind": "workday",
@@ -6739,12 +7123,15 @@
   "site": "careers",
   "name": "AtkinsRéalis",
   "first_seen": "2026-11-06",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-04",
-  "state": "active",
+  "state": "repair",
   "label": "AtkinsRéalis",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:smithnephew.wd5.myworkdayjobs.com/external": {
   "kind": "workday",
@@ -6752,15 +7139,18 @@
   "site": "External",
   "name": "Smith+Nephew",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "2 mechanical/aerospace internships on the lists (e.g. Intern Mechanical Engineering)",
   "engineering": true,
   "last_seen": "2026-10-21",
   "label": "Smith+Nephew",
   "tried": "2026-11-26",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-26"
+  "validated": "2026-11-26",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:snc.wd1.myworkdayjobs.com/snc_external_career_site": {
   "kind": "workday",
@@ -6768,10 +7158,13 @@
   "site": "snc_external_career_site",
   "name": "Sierra Nevada Corporation",
   "first_seen": "2026-10-27",
-  "fails": 0,
-  "last_seen": "2026-11-27",
-  "state": "active",
-  "last_ok": "2026-11-27"
+  "fails": 1,
+  "last_seen": "2026-11-28",
+  "state": "repair",
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:starfish.wd501.myworkdayjobs.com/careers": {
   "kind": "workday",
@@ -6782,7 +7175,7 @@
   "fails": 0,
   "last_seen": "2026-11-04",
   "state": "active",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "workday:stryker.wd1.myworkdayjobs.com/strykercareers": {
   "kind": "workday",
@@ -6790,11 +7183,14 @@
   "site": "StrykerCareers",
   "name": "Stryker",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-25",
-  "state": "active",
-  "last_ok": "2026-11-27"
+  "state": "repair",
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:stvinc.wd5.myworkdayjobs.com/stv": {
   "kind": "workday",
@@ -6802,15 +7198,18 @@
   "site": "stv",
   "name": "STV",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Intern - Summer 2027)",
   "engineering": true,
   "last_seen": "2026-10-23",
   "label": "STV",
   "tried": "2026-11-26",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-26"
+  "validated": "2026-11-26",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:symbotic.wd1.myworkdayjobs.com/symbotic": {
   "kind": "workday",
@@ -6838,7 +7237,7 @@
   "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Engineer Intern - Hardware Engineering)",
   "engineering": true,
   "last_seen": "2026-09-21",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-20",
   "label": "Symbotic (Symbotic)"
  },
@@ -6855,7 +7254,7 @@
   "last_seen": "2026-03-17",
   "label": "Tandem Diabetes Care",
   "tried": "2026-11-26",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-26"
  },
  "workday:thales.wd3.myworkdayjobs.com/careers": {
@@ -6864,10 +7263,13 @@
   "site": "Careers",
   "name": "Thales",
   "first_seen": "2026-10-30",
-  "fails": 0,
-  "last_seen": "2026-11-27",
-  "state": "active",
-  "last_ok": "2026-11-27"
+  "fails": 1,
+  "last_seen": "2026-11-28",
+  "state": "repair",
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:thermofisher.wd5.myworkdayjobs.com/thermofishercareers": {
   "kind": "workday",
@@ -6875,15 +7277,18 @@
   "site": "ThermoFisherCareers",
   "name": "Thermo Fisher Scientific",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "2 mechanical/aerospace internships on the lists (e.g. Systems Integration and Test Engineering Intern)",
   "engineering": true,
   "last_seen": "2026-11-12",
   "label": "Thermo Fisher Scientific",
   "tried": "2026-11-26",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-26"
+  "validated": "2026-11-26",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:tranetechnologies.wd12.myworkdayjobs.com/trane_technologies_careers": {
   "kind": "workday",
@@ -6898,7 +7303,7 @@
   "last_seen": "2026-11-05",
   "label": "Tranetechnologies",
   "tried": "2026-11-26",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-26"
  },
  "workday:trekbikes.wd1.myworkdayjobs.com/trek": {
@@ -6907,15 +7312,18 @@
   "site": "TREK",
   "name": "TREK",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Mechanical Engineering Intern)",
   "engineering": true,
   "last_seen": "2026-10-23",
   "label": "TREK",
   "tried": "2026-11-26",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-26"
+  "validated": "2026-11-26",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:trimble.wd1.myworkdayjobs.com/trimblecareers": {
   "kind": "workday",
@@ -6923,15 +7331,18 @@
   "site": "TrimbleCareers",
   "name": "Trimble",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Hardware Engineering Intern - CTCT)",
   "engineering": true,
   "last_seen": "2025-10-11",
   "label": "Trimble",
   "tried": "2026-11-26",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-26"
+  "validated": "2026-11-26",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:tsc.wd12.myworkdayjobs.com/tsc-careers": {
   "kind": "workday",
@@ -6946,7 +7357,7 @@
   "last_seen": "2026-11-18",
   "label": "TSC",
   "tried": "2026-11-26",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-26"
  },
  "workday:ttc.wd1.myworkdayjobs.com/toro_external_careers": {
@@ -6955,11 +7366,14 @@
   "site": "Toro_External_Careers",
   "name": "The Toro Company",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-12",
-  "state": "active",
-  "last_ok": "2026-11-27"
+  "state": "repair",
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:tysonfoods.wd5.myworkdayjobs.com/tsn": {
   "kind": "workday",
@@ -6967,15 +7381,18 @@
   "site": "TSN",
   "name": "Tyson Foods",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Packaging Engineer Intern - Packaging Systems)",
   "engineering": true,
   "last_seen": "2026-06-02",
   "label": "Tyson Foods",
   "tried": "2026-11-26",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-26"
+  "validated": "2026-11-26",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:valeo.wd3.myworkdayjobs.com/valeo_jobs": {
   "kind": "workday",
@@ -6983,12 +7400,15 @@
   "site": "valeo_jobs",
   "name": "Valeo",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-09-21",
-  "state": "active",
+  "state": "repair",
   "label": "Valeo",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:veralto.wd1.myworkdayjobs.com/hachjobs": {
   "kind": "workday",
@@ -6996,15 +7416,18 @@
   "site": "hachjobs",
   "name": "Veralto",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Engineering Intern - Hardware Engineering)",
   "engineering": true,
   "last_seen": "2026-04-13",
   "label": "Veralto",
   "tried": "2026-11-26",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-26"
+  "validated": "2026-11-26",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:verdantas.wd108.myworkdayjobs.com/verdantas": {
   "kind": "workday",
@@ -7019,7 +7442,7 @@
   "last_seen": "2026-10-23",
   "label": "Verdantas",
   "tried": "2026-11-26",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-26"
  },
  "workday:vermeer.wd5.myworkdayjobs.com/externalcareersite": {
@@ -7028,15 +7451,18 @@
   "site": "externalcareersite",
   "name": "Vermeer",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "2 mechanical/aerospace internships on the lists (e.g. Test Engineer Intern)",
   "engineering": true,
   "last_seen": "2026-08-31",
   "label": "Vermeer",
   "tried": "2026-11-26",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-26"
+  "validated": "2026-11-26",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:viavisolutions.wd1.myworkdayjobs.com/careers": {
   "kind": "workday",
@@ -7044,12 +7470,15 @@
   "site": "careers",
   "name": "Viavi Solutions",
   "first_seen": "2026-11-05",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-11-09",
-  "state": "active",
+  "state": "repair",
   "label": "Viavi Solutions",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:wonder.wd1.myworkdayjobs.com/wg": {
   "kind": "workday",
@@ -7057,15 +7486,18 @@
   "site": "WG",
   "name": "Wonder",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "2 mechanical/aerospace internships on the lists (e.g. Robotics Systems Engineer Intern)",
   "engineering": true,
   "last_seen": "2026-09-04",
   "label": "Wonder",
   "tried": "2026-11-26",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-26"
+  "validated": "2026-11-26",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:woodward.wd5.myworkdayjobs.com/woodward": {
   "kind": "workday",
@@ -7083,13 +7515,16 @@
   "site": "External",
   "name": "Xcel Energy",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "1 mechanical/aerospace internship on the lists (e.g. Substation Design Engineering Intern (Fall/Winter))",
   "engineering": true,
   "last_seen": "2026-10-27",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-20"
+  "validated": "2026-11-20",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:xenergy.wd5.myworkdayjobs.com/x-energyus": {
   "kind": "workday",
@@ -7097,15 +7532,18 @@
   "site": "X-energyUS",
   "name": "X-energy",
   "first_seen": "2026-11-20",
-  "fails": 0,
-  "state": "active",
+  "fails": 1,
+  "state": "repair",
   "via": "2 mechanical/aerospace internships on the lists (e.g. Mechanical Engineering Internship - Summer 2027)",
   "engineering": true,
   "last_seen": "2026-09-17",
   "label": "X-energy",
   "tried": "2026-11-26",
   "last_ok": "2026-11-27",
-  "validated": "2026-11-26"
+  "validated": "2026-11-26",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  },
  "workday:zebra.wd501.myworkdayjobs.com/zebra_careers": {
   "kind": "workday",
@@ -7118,7 +7556,7 @@
   "last_seen": "2026-11-03",
   "state": "active",
   "label": "Zebra Technologies",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-28"
  },
  "workday:zekelman.wd12.myworkdayjobs.com/careers": {
   "kind": "workday",
@@ -7133,7 +7571,7 @@
   "last_seen": "2026-09-21",
   "label": "Zekelman Industries",
   "tried": "2026-11-26",
-  "last_ok": "2026-11-27",
+  "last_ok": "2026-11-28",
   "validated": "2026-11-26"
  },
  "workday:zoll.wd5.myworkdayjobs.com/zollmedicalcorp": {
@@ -7142,11 +7580,14 @@
   "site": "ZOLLMedicalCorp",
   "name": "ZOLL Medical Corporation",
   "first_seen": "2026-11-06",
-  "fails": 0,
+  "fails": 1,
   "engineering": true,
   "last_seen": "2026-10-29",
-  "state": "active",
+  "state": "repair",
   "label": "ZOLL Medical Corporation",
-  "last_ok": "2026-11-27"
+  "last_ok": "2026-11-27",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "fail_since": "2026-11-28",
+  "next_try": "2026-11-28"
  }
 }

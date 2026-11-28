@@ -35,7 +35,7 @@
   "Bio-Techne": "2026-11-23",
   "AirCapture": "2026-11-24",
   "Airbus": "2026-11-24",
-  "Caterpillar Inc.": "2026-11-24",
+  "Caterpillar Inc.": "2026-11-28",
   "Albedo": "2026-11-24",
   "Allegion": "2026-11-24",
   "Johnson Controls": "2026-11-24",
@@ -56,7 +56,9 @@
   "Analytical Mechanics Associates": "2026-11-27",
   "Apex Space": "2026-11-27",
   "Applied Materials": "2026-11-27",
-  "Applied Research Associates": "2026-11-27"
+  "Applied Research Associates": "2026-11-27",
+  "Apptronik": "2026-11-28",
+  "Aptiv": "2026-11-28"
  },
  "runs": [
   {
@@ -780,6 +782,36 @@
      "found": 0,
      "misses": [],
      "error": "HTTP 404"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-28",
+   "boards": [
+    {
+     "source": "Apptronik",
+     "kind": "greenhouse",
+     "in_scope": 0,
+     "found": 0,
+     "misses": [],
+     "read": "full list, no title filter",
+     "openings": 87
+    },
+    {
+     "source": "Aptiv",
+     "kind": "workday",
+     "in_scope": 0,
+     "found": 0,
+     "misses": [],
+     "error": "Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+     "source": "Caterpillar Inc.",
+     "kind": "workday",
+     "in_scope": 0,
+     "found": 0,
+     "misses": [],
+     "error": "Expecting value: line 1 column 1 (char 0)"
     }
    ]
   }
